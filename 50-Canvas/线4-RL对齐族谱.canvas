@@ -1,0 +1,310 @@
+{
+ "nodes": [
+  {
+   "id": "title",
+   "x": -184,
+   "y": -988,
+   "width": 640,
+   "height": 150,
+   "type": "text",
+   "text": "# 线4 · RL与对齐族谱\n一个目标两条路：在线（PPO→GRPO→R1）与离线（DPO系）；浅蓝 = 轻量采样路线",
+   "color": "3"
+  },
+  {
+   "id": "trpo",
+   "x": 0,
+   "y": 0,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/04-强化学习与对齐/Trust Region Policy Optimization（TRPO）.md"
+  },
+  {
+   "id": "ppo",
+   "x": 920,
+   "y": 0,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/04-强化学习与对齐/Proximal Policy Optimization Algorithms（PPO）.md"
+  },
+  {
+   "id": "gae",
+   "x": 0,
+   "y": 760,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/04-强化学习与对齐/High-Dimensional Continuous Control Using Generalized Advantage Estimation（GAE）.md"
+  },
+  {
+   "id": "rlhf",
+   "x": 0,
+   "y": 1520,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/04-强化学习与对齐/Deep reinforcement learning from human preferences（RLHF）.md"
+  },
+  {
+   "id": "lab",
+   "x": 920,
+   "y": 1520,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/04-强化学习与对齐/A General Language Assistant as a Laboratory for Alignment（Assistant Lab）.md"
+  },
+  {
+   "id": "instruct",
+   "x": 1840,
+   "y": 1520,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/04-强化学习与对齐/Training language models to follow instructions with human feedback（InstructGPT）.md"
+  },
+  {
+   "id": "cai",
+   "x": 2760,
+   "y": 1520,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/04-强化学习与对齐/Constitutional AI- Harmlessness from AI Feedback（CAI）.md"
+  },
+  {
+   "id": "selfrw",
+   "x": 3680,
+   "y": 1520,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/04-强化学习与对齐/Self-Rewarding Language Models.md"
+  },
+  {
+   "id": "dpo",
+   "x": 1840,
+   "y": 2280,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/04-强化学习与对齐/Direct Preference Optimization- Your Language Model is Secretly a Reward Model（DPO）.md",
+   "color": "5"
+  },
+  {
+   "id": "ipo",
+   "x": 2760,
+   "y": 2280,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/04-强化学习与对齐/A General Theoretical Paradigm to Understand Learning from Human Preferences（IPO）.md"
+  },
+  {
+   "id": "kto",
+   "x": 3680,
+   "y": 2280,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/04-强化学习与对齐/KTO- Model Alignment as Prospect Theoretic Optimization（KTO）.md"
+  },
+  {
+   "id": "orpo",
+   "x": 2760,
+   "y": 3040,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/04-强化学习与对齐/ORPO- Monolithic Preference Optimization without Reference Model（ORPO）.md"
+  },
+  {
+   "id": "simpo",
+   "x": 3680,
+   "y": 3040,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/04-强化学习与对齐/SimPO- Simple Preference Optimization with a Reference-Free Reward（SimPO）.md"
+  },
+  {
+   "id": "dsm",
+   "x": 1840,
+   "y": 3800,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/04-强化学习与对齐/DeepSeekMath- Pushing the Limits of Mathematical Reasoning in Open Language Models（DeepSeekMath）.md"
+  },
+  {
+   "id": "r1",
+   "x": 2760,
+   "y": 3800,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/04-强化学习与对齐/DeepSeek-R1- Incentivizing Reasoning Capability in LLMs via Reinforcement Learning（R1）.md"
+  },
+  {
+   "id": "bon",
+   "x": 0,
+   "y": 2280,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/04-强化学习与对齐/Statistical Rejection Sampling Improves Preference Optimization（BoN）.md",
+   "color": "5"
+  },
+  {
+   "id": "raft",
+   "x": 920,
+   "y": 2280,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/04-强化学习与对齐/RAFT- Reward rAnked FineTuning for Generative Foundation Model Alignment（RAFT）.md",
+   "color": "5"
+  }
+ ],
+ "edges": [
+  {
+   "id": "e0",
+   "fromNode": "trpo",
+   "fromSide": "right",
+   "toNode": "ppo",
+   "toSide": "left",
+   "label": "简化：二阶信赖域→一阶裁剪"
+  },
+  {
+   "id": "e1",
+   "fromNode": "gae",
+   "fromSide": "bottom",
+   "toNode": "trpo",
+   "toSide": "top",
+   "label": "配套：优势估计器"
+  },
+  {
+   "id": "e2",
+   "fromNode": "gae",
+   "fromSide": "bottom",
+   "toNode": "ppo",
+   "toSide": "top",
+   "label": "配套：优势估计器"
+  },
+  {
+   "id": "e3",
+   "fromNode": "rlhf",
+   "fromSide": "right",
+   "toNode": "lab",
+   "toSide": "left",
+   "label": "机器人→通用助手实验台"
+  },
+  {
+   "id": "e4",
+   "fromNode": "lab",
+   "fromSide": "right",
+   "toNode": "instruct",
+   "toSide": "left",
+   "label": "方法→LLM规模化落地"
+  },
+  {
+   "id": "e5",
+   "fromNode": "rlhf",
+   "fromSide": "right",
+   "toNode": "instruct",
+   "toSide": "left",
+   "label": "范式搬进LLM（三阶段定型）"
+  },
+  {
+   "id": "e6",
+   "fromNode": "instruct",
+   "fromSide": "right",
+   "toNode": "cai",
+   "toSide": "left",
+   "label": "数据源：人类标注→宪法AI"
+  },
+  {
+   "id": "e7",
+   "fromNode": "cai",
+   "fromSide": "right",
+   "toNode": "selfrw",
+   "toSide": "left",
+   "label": "更彻底：AI反馈→自我奖励"
+  },
+  {
+   "id": "e8",
+   "fromNode": "instruct",
+   "fromSide": "right",
+   "toNode": "dpo",
+   "toSide": "left",
+   "label": "简化：闭式化去RM去RL",
+   "color": "6"
+  },
+  {
+   "id": "e9",
+   "fromNode": "dpo",
+   "fromSide": "right",
+   "toNode": "ipo",
+   "toSide": "left",
+   "label": "修正：过优化病（有界目标）"
+  },
+  {
+   "id": "e10",
+   "fromNode": "dpo",
+   "fromSide": "right",
+   "toNode": "kto",
+   "toSide": "left",
+   "label": "放宽：成对→单标签（前景理论）"
+  },
+  {
+   "id": "e11",
+   "fromNode": "dpo",
+   "fromSide": "right",
+   "toNode": "orpo",
+   "toSide": "left",
+   "label": "简化：去参考+单阶段"
+  },
+  {
+   "id": "e12",
+   "fromNode": "dpo",
+   "fromSide": "right",
+   "toNode": "simpo",
+   "toSide": "left",
+   "label": "简化：去参考+长度归一"
+  },
+  {
+   "id": "e13",
+   "fromNode": "ppo",
+   "fromSide": "right",
+   "toNode": "dsm",
+   "toSide": "left",
+   "label": "简化：去critic（组相对优势GRPO）"
+  },
+  {
+   "id": "e14",
+   "fromNode": "dsm",
+   "fromSide": "right",
+   "toNode": "r1",
+   "toSide": "left",
+   "label": "扩展：数学→通用推理+规则奖励"
+  },
+  {
+   "id": "e15",
+   "fromNode": "bon",
+   "fromSide": "right",
+   "toNode": "raft",
+   "toSide": "left",
+   "label": "推理筛选→训练闭环"
+  },
+  {
+   "id": "e16",
+   "fromNode": "instruct",
+   "fromSide": "bottom",
+   "toNode": "bon",
+   "toSide": "top",
+   "label": "轻量替代：采样+筛选",
+   "color": "5"
+  }
+ ]
+}

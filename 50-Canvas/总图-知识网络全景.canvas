@@ -1,0 +1,303 @@
+{
+ "nodes": [
+  {
+   "id": "title",
+   "x": -184,
+   "y": -988,
+   "width": 640,
+   "height": 150,
+   "type": "text",
+   "text": "# 总图 · AI 算法发展总体方向（跨线全景）\n这一张回答\"AI 算法整体怎么走到今天、往哪去\"：绿色 = 缩放定律时间轴；青色 = 九条线的算法枢纽；紫边 = 统一/对偶关系。各线内部细部见 9 张分图",
+   "color": "3"
+  },
+  {
+   "id": "gpt3",
+   "x": 920,
+   "y": 0,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/01-架构演进/Language Models are Few-Shot Learners（GPT-3）.md",
+   "color": "4"
+  },
+  {
+   "id": "laws",
+   "x": 1840,
+   "y": 0,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/01-架构演进/Scaling Laws for Neural Language Models（Scaling Laws）.md",
+   "color": "4"
+  },
+  {
+   "id": "chinchilla",
+   "x": 2760,
+   "y": 0,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/10-标杆锚点/Training Compute-Optimal Large Language Models（Chinchilla）.md",
+   "color": "4"
+  },
+  {
+   "id": "gpt4",
+   "x": 3680,
+   "y": 0,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/10-标杆锚点/GPT-4 Technical Report（GPT-4）.md",
+   "color": "4"
+  },
+  {
+   "id": "tf",
+   "x": 920,
+   "y": 760,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "20-Algorithms/Transformer.md",
+   "color": "5"
+  },
+  {
+   "id": "gan",
+   "x": 0,
+   "y": 1520,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "20-Algorithms/生成对抗网络.md",
+   "color": "5"
+  },
+  {
+   "id": "diff",
+   "x": 1840,
+   "y": 1520,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "20-Algorithms/扩散模型.md",
+   "color": "5"
+  },
+  {
+   "id": "fm",
+   "x": 2760,
+   "y": 1520,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "20-Algorithms/流匹配.md",
+   "color": "5"
+  },
+  {
+   "id": "cm",
+   "x": 3680,
+   "y": 1520,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "20-Algorithms/一致性模型.md",
+   "color": "5"
+  },
+  {
+   "id": "rlhf",
+   "x": 920,
+   "y": 2280,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "20-Algorithms/RLHF.md",
+   "color": "5"
+  },
+  {
+   "id": "dpo",
+   "x": 1840,
+   "y": 2280,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "20-Algorithms/DPO系（离线偏好优化）.md",
+   "color": "5"
+  },
+  {
+   "id": "grpo",
+   "x": 2760,
+   "y": 2280,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "20-Algorithms/GRPO与RLVR.md",
+   "color": "5"
+  },
+  {
+   "id": "ssm",
+   "x": 0,
+   "y": 3040,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "20-Algorithms/SSM序列架构（Mamba系）.md",
+   "color": "5"
+  },
+  {
+   "id": "moe",
+   "x": 920,
+   "y": 3040,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "20-Algorithms/混合专家（MoE）.md",
+   "color": "5"
+  },
+  {
+   "id": "peft",
+   "x": 1840,
+   "y": 3040,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "20-Algorithms/参数高效微调（PEFT）.md",
+   "color": "5"
+  },
+  {
+   "id": "wmodel",
+   "x": 2760,
+   "y": 3040,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "20-Algorithms/世界模型.md",
+   "color": "5"
+  }
+ ],
+ "edges": [
+  {
+   "id": "e0",
+   "fromNode": "gpt3",
+   "fromSide": "right",
+   "toNode": "laws",
+   "toSide": "left",
+   "label": "实证→规律",
+   "color": "4"
+  },
+  {
+   "id": "e1",
+   "fromNode": "laws",
+   "fromSide": "right",
+   "toNode": "chinchilla",
+   "toSide": "left",
+   "label": "修正（数据权重×3）",
+   "color": "4"
+  },
+  {
+   "id": "e2",
+   "fromNode": "chinchilla",
+   "fromSide": "right",
+   "toNode": "gpt4",
+   "toSide": "left",
+   "label": "最优配比→工程巅峰",
+   "color": "4"
+  },
+  {
+   "id": "e3",
+   "fromNode": "tf",
+   "fromSide": "right",
+   "toNode": "rlhf",
+   "toSide": "left",
+   "label": "LLM即策略"
+  },
+  {
+   "id": "e4",
+   "fromNode": "rlhf",
+   "fromSide": "right",
+   "toNode": "dpo",
+   "toSide": "left",
+   "label": "闭式化（离线路线）",
+   "color": "6"
+  },
+  {
+   "id": "e5",
+   "fromNode": "rlhf",
+   "fromSide": "right",
+   "toNode": "grpo",
+   "toSide": "left",
+   "label": "在线路线（去critic）"
+  },
+  {
+   "id": "e6",
+   "fromNode": "tf",
+   "fromSide": "right",
+   "toNode": "diff",
+   "toSide": "left",
+   "label": "骨干+cross-attn条件注入"
+  },
+  {
+   "id": "e7",
+   "fromNode": "gan",
+   "fromSide": "right",
+   "toNode": "diff",
+   "toSide": "left",
+   "label": "路线竞争：被扩散反超"
+  },
+  {
+   "id": "e8",
+   "fromNode": "diff",
+   "fromSide": "right",
+   "toNode": "fm",
+   "toSide": "left",
+   "label": "≡ 同族统一（换参数化）",
+   "color": "6"
+  },
+  {
+   "id": "e9",
+   "fromNode": "diff",
+   "fromSide": "right",
+   "toNode": "cm",
+   "toSide": "left",
+   "label": "少步加速（蒸馏线）"
+  },
+  {
+   "id": "e10",
+   "fromNode": "tf",
+   "fromSide": "right",
+   "toNode": "ssm",
+   "toSide": "left",
+   "label": "复杂度挑战→SSD对偶统一",
+   "color": "6"
+  },
+  {
+   "id": "e11",
+   "fromNode": "tf",
+   "fromSide": "right",
+   "toNode": "moe",
+   "toSide": "left",
+   "label": "FFN稀疏化"
+  },
+  {
+   "id": "e12",
+   "fromNode": "tf",
+   "fromSide": "right",
+   "toNode": "peft",
+   "toSide": "left",
+   "label": "冻结主干+轻适配"
+  },
+  {
+   "id": "e13",
+   "fromNode": "diff",
+   "fromSide": "right",
+   "toNode": "wmodel",
+   "toSide": "left",
+   "label": "生成式世界模型（Sora/Genie）"
+  },
+  {
+   "id": "e14",
+   "fromNode": "fm",
+   "fromSide": "right",
+   "toNode": "wmodel",
+   "toSide": "left",
+   "label": "JEPA之外的主流生成骨干",
+   "color": "5"
+  }
+ ]
+}

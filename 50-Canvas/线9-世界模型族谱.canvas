@@ -1,0 +1,132 @@
+{
+ "nodes": [
+  {
+   "id": "title",
+   "x": -184,
+   "y": -988,
+   "width": 640,
+   "height": 150,
+   "type": "text",
+   "text": "# 线9 · 世界模型族谱\n三路线并行：重建式（Dreamer）· 预测式（JEPA）· 生成式（Genie/Sora）",
+   "color": "3"
+  },
+  {
+   "id": "wm",
+   "x": 0,
+   "y": 0,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/09-世界模型与JEPA/World Models（世界模型）.md"
+  },
+  {
+   "id": "dreamer",
+   "x": 920,
+   "y": 0,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/09-世界模型与JEPA/Dream to Control- Learning Behaviors by Latent Imagination（Dreamer）.md"
+  },
+  {
+   "id": "dreamerv3",
+   "x": 1840,
+   "y": 0,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/09-世界模型与JEPA/Mastering Diverse Domains through World Models（DreamerV3）.md"
+  },
+  {
+   "id": "vjepa",
+   "x": 0,
+   "y": 760,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/09-世界模型与JEPA/Revisiting Feature Prediction for Learning Visual Representations from Video（V-JEPA）.md",
+   "color": "5"
+  },
+  {
+   "id": "vjepa2",
+   "x": 920,
+   "y": 760,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/09-世界模型与JEPA/V-JEPA 2- Self-Supervised Video Models Enable Understanding, Prediction and Planning（V-JEPA 2）.md",
+   "color": "5"
+  },
+  {
+   "id": "genie",
+   "x": 2760,
+   "y": 760,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/09-世界模型与JEPA/Genie- Generative Interactive Environments（Genie）.md"
+  },
+  {
+   "id": "genie2",
+   "x": 3680,
+   "y": 760,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/09-世界模型与JEPA/Genie 2- A Large-Scale Foundation World Model（Genie 2）.md"
+  },
+  {
+   "id": "routes",
+   "x": 1840,
+   "y": 1520,
+   "width": 560,
+   "height": 220,
+   "type": "text",
+   "text": "**三路线对照表**\n- 重建式：像素/潜变量重建（Dreamer系）\n- 预测式：表征空间预测，拒绝生成（JEPA/LeCun）\n- 生成式：完整可交互世界（Genie/Sora）\n2025-26 最大争论：视频生成=世界模拟器？",
+   "color": "3"
+  }
+ ],
+ "edges": [
+  {
+   "id": "e0",
+   "fromNode": "wm",
+   "fromSide": "right",
+   "toNode": "dreamer",
+   "toSide": "left",
+   "label": "概念→潜空间RL实用化"
+  },
+  {
+   "id": "e1",
+   "fromNode": "dreamer",
+   "fromSide": "right",
+   "toNode": "dreamerv3",
+   "toSide": "left",
+   "label": "跨域稳定+规模化（Minecraft钻石）"
+  },
+  {
+   "id": "e2",
+   "fromNode": "vjepa",
+   "fromSide": "right",
+   "toNode": "vjepa2",
+   "toSide": "left",
+   "label": "理解→预测+规划（机器人零样本）",
+   "color": "5"
+  },
+  {
+   "id": "e3",
+   "fromNode": "genie",
+   "fromSide": "right",
+   "toNode": "genie2",
+   "toSide": "left",
+   "label": "2D动作发现→3D世界生成"
+  },
+  {
+   "id": "e4",
+   "fromNode": "dreamerv3",
+   "fromSide": "bottom",
+   "toNode": "routes",
+   "toSide": "top",
+   "color": "3"
+  }
+ ]
+}

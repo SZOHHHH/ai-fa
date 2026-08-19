@@ -1,0 +1,246 @@
+{
+ "nodes": [
+  {
+   "id": "title",
+   "x": 0,
+   "y": 0,
+   "width": 1200,
+   "height": 200,
+   "type": "text",
+   "text": "# 研究矩阵全景（12 矩阵 · 机会格战况 2026-08-19）\n\n🔴 已占死 | 🚩 部分占/竞争中 | 🌱 存活\n敌情终复查报告见 00-Meta/敌情终复查报告",
+   "color": 1
+  },
+  {
+   "id": "m_acc",
+   "x": 0,
+   "y": 760,
+   "width": 560,
+   "height": 240,
+   "type": "text",
+   "text": "**生成模型加速矩阵**\n\n🔴 视频×FM（AnyFlow封顶）\n🔴 流×离散（FS-DFM）\n🌱 **格③ FM×矩匹配×蒸馏**（唯一头部存活，三面被围）",
+   "color": 2
+  },
+  {
+   "id": "m_paradigm",
+   "x": 920,
+   "y": 760,
+   "width": 560,
+   "height": 240,
+   "type": "text",
+   "text": "**生成建模范式矩阵**\n\n🔴 流×离散码本\n范式统一线持续活跃（Generator Matching）",
+   "color": 2
+  },
+  {
+   "id": "m_distill",
+   "x": 1840,
+   "y": 760,
+   "width": 560,
+   "height": 240,
+   "type": "text",
+   "text": "**蒸馏域矩阵**\n\n🔴 OPD 主格（五连占）\n🔴 混合奖励格（G-OPD等五连）\nOPD×FM 新前线（Any-OPD/OPTD）",
+   "color": 2
+  },
+  {
+   "id": "m_rl",
+   "x": 0,
+   "y": 1520,
+   "width": 560,
+   "height": 240,
+   "type": "text",
+   "text": "**RL 稳定化矩阵**\n\n🔴 PRM×GRPO（GRPO-PRM 证明隐式PRM）\n🚩 序列级×理论（LF-clip 部分）\nDAPO/Dr.GRPO 偏置修正已占",
+   "color": 2
+  },
+  {
+   "id": "m_pref",
+   "x": 920,
+   "y": 1520,
+   "width": 560,
+   "height": 240,
+   "type": "text",
+   "text": "**偏好优化矩阵**\n\n🚩 自我奖励×无参考（PSR 半占）\n去RL化趋势终点：无参考无奖励无对",
+   "color": 2
+  },
+  {
+   "id": "m_reason",
+   "x": 1840,
+   "y": 1520,
+   "width": 560,
+   "height": 240,
+   "type": "text",
+   "text": "**推理增强矩阵**\n\n🔴 测试时标度律（PSL 可证版 NeurIPS25）\n🔴 PRM×GRPO 合围\n分解-聚合母题贯穿",
+   "color": 2
+  },
+  {
+   "id": "m_arch",
+   "x": 0,
+   "y": 2280,
+   "width": 560,
+   "height": 240,
+   "type": "text",
+   "text": "**序列架构演进矩阵**\n\n🌱 线性注意力×缩放律（升温中）\n🔴 IO感知（DeltaNet并行）\n混合配方=生产标配（Kimi Linear/Qwen3-Next）",
+   "color": 2
+  },
+  {
+   "id": "m_compress",
+   "x": 920,
+   "y": 2280,
+   "width": 560,
+   "height": 240,
+   "type": "text",
+   "text": "**模型压缩矩阵**\n\n🚩 KV×量化（KIVI/KVQuant/InfoKV 五连）\n量化×预训练介入度（BitNet）",
+   "color": 2
+  },
+  {
+   "id": "m_long",
+   "x": 1840,
+   "y": 2280,
+   "width": 560,
+   "height": 240,
+   "type": "text",
+   "text": "**长上下文机制矩阵**\n\n外推管线收束（YaRN 终点）\n率失真统一语言未做（分析型机会）",
+   "color": 2
+  },
+  {
+   "id": "m_moe",
+   "x": 0,
+   "y": 3040,
+   "width": 560,
+   "height": 240,
+   "type": "text",
+   "text": "**MoE 路由矩阵**\n\n🔴 去偏路由（DeepSeek bias 法生产验证）\n粒度轴：token→专家→块",
+   "color": 2
+  },
+  {
+   "id": "m_mm",
+   "x": 920,
+   "y": 3040,
+   "width": 560,
+   "height": 240,
+   "type": "text",
+   "text": "**多模态对齐矩阵**\n\n🚩 JEPA×生成头（VL-JEPA 近邻已踩）\n视频=交叉热点坐标",
+   "color": 2
+  },
+  {
+   "id": "m_world",
+   "x": 1840,
+   "y": 3040,
+   "width": 560,
+   "height": 240,
+   "type": "text",
+   "text": "**世界模型矩阵**\n\n🔴 潜动作 7 连占（3R2D→FLAM/SWIRL）\n🔴 接口可辨识性理论侧被填\n评测独立成域（WorldExam）",
+   "color": 2
+  },
+  {
+   "id": "insight",
+   "x": 0,
+   "y": 3800,
+   "width": 1200,
+   "height": 220,
+   "type": "text",
+   "text": "**跨线共振思想（idea 土壤）**\n\n1. 聚合替代锚定（MeanFlow/GSPO/Self-Consistency/OPD自锚——五线开花）\n2. 判别-生成对偶（CLIP↔生成对齐、JEPA↔像素）\n3. 软硬对偶（裁剪↔软门控、TopK↔SoftMoE）\n4. 粒度轴（token→序列→组→步）",
+   "color": 2
+  },
+  {
+   "id": "dead",
+   "x": 1840,
+   "y": 3800,
+   "width": 560,
+   "height": 220,
+   "type": "text",
+   "text": "**死格档案（防重复踩坑）**\n\n🚫 SSM×KV压缩（结构死格）\n🚫 对比×早期融合（目标不匹配）\n😴 纯提示×链、卷积×长依赖\n⚠️ 隐式×像素（大厂重器格）",
+   "color": 2
+  }
+ ],
+ "edges": [
+  {
+   "id": "e0",
+   "fromNode": "m_acc",
+   "fromSide": "right",
+   "toNode": "m_distill",
+   "toSide": "left",
+   "label": "蒸馏脊（#loss/distillation）",
+   "color": "3"
+  },
+  {
+   "id": "e1",
+   "fromNode": "m_distill",
+   "fromSide": "right",
+   "toNode": "m_rl",
+   "toSide": "left",
+   "label": "OPD = RL 换锚（G-OPD 证明）",
+   "color": "3"
+  },
+  {
+   "id": "e2",
+   "fromNode": "m_rl",
+   "fromSide": "right",
+   "toNode": "m_reason",
+   "toSide": "left",
+   "label": "PRM×GRPO 公共格",
+   "color": "3"
+  },
+  {
+   "id": "e3",
+   "fromNode": "m_pref",
+   "fromSide": "right",
+   "toNode": "m_rl",
+   "toSide": "left",
+   "label": "去RL化 vs 在线化对偶",
+   "color": "3"
+  },
+  {
+   "id": "e4",
+   "fromNode": "m_arch",
+   "fromSide": "right",
+   "toNode": "m_long",
+   "toSide": "left",
+   "label": "线性显存共同目标",
+   "color": "3"
+  },
+  {
+   "id": "e5",
+   "fromNode": "m_compress",
+   "fromSide": "right",
+   "toNode": "m_long",
+   "toSide": "left",
+   "label": "KV 行共享",
+   "color": "3"
+  },
+  {
+   "id": "e6",
+   "fromNode": "m_moe",
+   "fromSide": "right",
+   "toNode": "m_mm",
+   "toSide": "left",
+   "label": "注意力=专家类比",
+   "color": "3"
+  },
+  {
+   "id": "e7",
+   "fromNode": "m_world",
+   "fromSide": "right",
+   "toNode": "m_mm",
+   "toSide": "left",
+   "label": "判别-生成对偶汇",
+   "color": "3"
+  },
+  {
+   "id": "e8",
+   "fromNode": "m_world",
+   "fromSide": "right",
+   "toNode": "m_reason",
+   "toSide": "left",
+   "label": "世界模型=推理链类比",
+   "color": "3"
+  },
+  {
+   "id": "e9",
+   "fromNode": "m_paradigm",
+   "fromSide": "right",
+   "toNode": "m_acc",
+   "toSide": "left",
+   "label": "存在→效率分工",
+   "color": "3"
+  }
+ ]
+}

@@ -1,0 +1,249 @@
+{
+ "nodes": [
+  {
+   "id": "title",
+   "x": -184,
+   "y": -988,
+   "width": 640,
+   "height": 150,
+   "type": "text",
+   "text": "# 线3 · 后处理族谱\n三条子线：蒸馏 / PEFT / 量化+剪枝——目标一致：让大模型变小变便宜",
+   "color": "3"
+  },
+  {
+   "id": "kd",
+   "x": 0,
+   "y": 0,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/03-后处理/Distilling the Knowledge in a Neural Network（KD）.md"
+  },
+  {
+   "id": "distil",
+   "x": 920,
+   "y": 0,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/03-后处理/DistilBERT, a distilled version of BERT- smaller, faster, cheaper and lighter（DistilBERT）.md"
+  },
+  {
+   "id": "tiny",
+   "x": 1840,
+   "y": 0,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/03-后处理/TinyBERT- Distilling BERT for Natural Language Understanding（TinyBERT）.md"
+  },
+  {
+   "id": "theseus",
+   "x": 2760,
+   "y": 0,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/03-后处理/BERT-of-Theseus- Compressing BERT by Progressive Module Replacing（Theseus）.md"
+  },
+  {
+   "id": "adapter",
+   "x": 0,
+   "y": 760,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/03-后处理/Parameter-Efficient Transfer Learning for NLP（Adapter）.md"
+  },
+  {
+   "id": "prefix",
+   "x": 920,
+   "y": 760,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/03-后处理/Prefix-Tuning- Optimizing Continuous Prompts for Generation（Prefix-Tuning）.md"
+  },
+  {
+   "id": "lora",
+   "x": 1840,
+   "y": 760,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/03-后处理/LoRA- Low-Rank Adaptation of Large Language Models（LoRA）.md"
+  },
+  {
+   "id": "qlora",
+   "x": 2760,
+   "y": 760,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/03-后处理/QLoRA- Efficient Finetuning of Quantized LLMs（QLoRA）.md"
+  },
+  {
+   "id": "dora",
+   "x": 3680,
+   "y": 760,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/03-后处理/DoRA- Weight-Decomposed Low-Rank Adaptation（DoRA）.md"
+  },
+  {
+   "id": "int8",
+   "x": 0,
+   "y": 1520,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/03-后处理/LLM.int8()- 8-bit Matrix Multiplication for Transformers at Scale（LLM.int8）.md"
+  },
+  {
+   "id": "gptq",
+   "x": 920,
+   "y": 1520,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/03-后处理/GPTQ- Accurate Post-Training Quantization for Generative Pre-trained Transformers（GPTQ）.md"
+  },
+  {
+   "id": "smooth",
+   "x": 1840,
+   "y": 1520,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/03-后处理/SmoothQuant- Accurate and Efficient Post-Training Quantization for Large Language Models（SmoothQuant）.md"
+  },
+  {
+   "id": "awq",
+   "x": 2760,
+   "y": 1520,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/03-后处理/AWQ- Activation-aware Weight Quantization for LLM Compression and Acceleration（AWQ）.md"
+  },
+  {
+   "id": "lottery",
+   "x": 0,
+   "y": 2280,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/03-后处理/The Lottery Ticket Hypothesis- Finding Sparse, Trainable Neural Networks（Lottery Ticket）.md"
+  },
+  {
+   "id": "sparsegpt",
+   "x": 920,
+   "y": 2280,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/03-后处理/A Simple and Effective Pruning Approach for Large Language Models（SparseGPT）.md"
+  },
+  {
+   "id": "moe_note",
+   "x": 2760,
+   "y": 2280,
+   "width": 420,
+   "height": 150,
+   "type": "text",
+   "text": "**稀疏MoE**（Shazeer 2017）→ 见 [[线5-MoE族谱]]：参数稀疏化的另一支",
+   "color": "3"
+  }
+ ],
+ "edges": [
+  {
+   "id": "e0",
+   "fromNode": "kd",
+   "fromSide": "right",
+   "toNode": "distil",
+   "toSide": "left",
+   "label": "应用：LLM蒸馏时代开启"
+  },
+  {
+   "id": "e1",
+   "fromNode": "distil",
+   "fromSide": "right",
+   "toNode": "tiny",
+   "toSide": "left",
+   "label": "改进：输出对齐→全栈对齐"
+  },
+  {
+   "id": "e2",
+   "fromNode": "distil",
+   "fromSide": "right",
+   "toNode": "theseus",
+   "toSide": "left",
+   "label": "改进：一次性→渐进替换"
+  },
+  {
+   "id": "e3",
+   "fromNode": "adapter",
+   "fromSide": "right",
+   "toNode": "prefix",
+   "toSide": "left",
+   "label": "变位：层内→注意力输入侧"
+  },
+  {
+   "id": "e4",
+   "fromNode": "adapter",
+   "fromSide": "right",
+   "toNode": "lora",
+   "toSide": "left",
+   "label": "改进：串行延迟→旁路零开销"
+  },
+  {
+   "id": "e5",
+   "fromNode": "lora",
+   "fromSide": "right",
+   "toNode": "qlora",
+   "toSide": "left",
+   "label": "组合：+4bit量化基座"
+  },
+  {
+   "id": "e6",
+   "fromNode": "lora",
+   "fromSide": "right",
+   "toNode": "dora",
+   "toSide": "left",
+   "label": "改进：+幅度/方向分解"
+  },
+  {
+   "id": "e7",
+   "fromNode": "int8",
+   "fromSide": "right",
+   "toNode": "gptq",
+   "toSide": "left",
+   "label": "发现异常值→二阶误差补偿"
+  },
+  {
+   "id": "e8",
+   "fromNode": "int8",
+   "fromSide": "right",
+   "toNode": "smooth",
+   "toSide": "left",
+   "label": "分治→难度转移（同数学异方向）"
+  },
+  {
+   "id": "e9",
+   "fromNode": "gptq",
+   "fromSide": "right",
+   "toNode": "awq",
+   "toSide": "left",
+   "label": "重补偿→轻量等效缩放"
+  },
+  {
+   "id": "e10",
+   "fromNode": "lottery",
+   "fromSide": "right",
+   "toNode": "sparsegpt",
+   "toSide": "left",
+   "label": "哲学对照：重训找子网→一步剪大网"
+  }
+ ]
+}

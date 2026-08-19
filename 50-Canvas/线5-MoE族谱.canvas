@@ -1,0 +1,144 @@
+{
+ "nodes": [
+  {
+   "id": "title",
+   "x": -184,
+   "y": -988,
+   "width": 640,
+   "height": 150,
+   "type": "text",
+   "text": "# 线5 · MoE族谱\n一条路由演进线：稀疏门控→Transformer化→极简→开源→专业化",
+   "color": "3"
+  },
+  {
+   "id": "shazeer",
+   "x": 0,
+   "y": 0,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/03-后处理/Outrageously Large Neural Networks- The Sparsely-Gated Mixture-of-Experts Layer（稀疏MoE）.md"
+  },
+  {
+   "id": "gshard",
+   "x": 920,
+   "y": 0,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/05-MoE/GShard- Scaling Giant Models with Conditional Computation and Automatic Sharding（GShard）.md"
+  },
+  {
+   "id": "switch",
+   "x": 1840,
+   "y": 0,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/05-MoE/Switch Transformers- Scaling to Trillion Parameter Models with Simple and Efficient Spars（Switch）.md"
+  },
+  {
+   "id": "glam",
+   "x": 2760,
+   "y": 0,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/05-MoE/GLaM- Efficient Scaling of Language Models with Mixture-of-Experts（GLaM）.md"
+  },
+  {
+   "id": "ec",
+   "x": 1840,
+   "y": 760,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/05-MoE/Mixture-of-Experts with Expert Choice Routing（Expert Choice）.md"
+  },
+  {
+   "id": "softmoe",
+   "x": 2760,
+   "y": 760,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/05-MoE/From Sparse to Soft Mixtures of Experts（Soft MoE）.md"
+  },
+  {
+   "id": "mixtral",
+   "x": 3680,
+   "y": 0,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/05-MoE/Mixtral of Experts（Mixtral）.md"
+  },
+  {
+   "id": "dsmoe",
+   "x": 4600,
+   "y": 0,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/05-MoE/DeepSeekMoE- Towards Ultimate Expert Specialization in Mixture-of-Experts Language Model（DeepSeekMoE）.md"
+  }
+ ],
+ "edges": [
+  {
+   "id": "e0",
+   "fromNode": "shazeer",
+   "fromSide": "right",
+   "toNode": "gshard",
+   "toSide": "left",
+   "label": "LSTM层→Transformer FFN"
+  },
+  {
+   "id": "e1",
+   "fromNode": "gshard",
+   "fromSide": "right",
+   "toNode": "switch",
+   "toSide": "left",
+   "label": "简化：top-2→top-1"
+  },
+  {
+   "id": "e2",
+   "fromNode": "switch",
+   "fromSide": "right",
+   "toNode": "glam",
+   "toSide": "left",
+   "label": "规模化：能耗经济学实证"
+  },
+  {
+   "id": "e3",
+   "fromNode": "glam",
+   "fromSide": "right",
+   "toNode": "mixtral",
+   "toSide": "left",
+   "label": "闭源→开源时代"
+  },
+  {
+   "id": "e4",
+   "fromNode": "mixtral",
+   "fromSide": "right",
+   "toNode": "dsmoe",
+   "toSide": "left",
+   "label": "改进：粗粒度→细粒度+共享专家"
+  },
+  {
+   "id": "e5",
+   "fromNode": "switch",
+   "fromSide": "right",
+   "toNode": "ec",
+   "toSide": "left",
+   "label": "反转：token选→专家选（天然均衡）"
+  },
+  {
+   "id": "e6",
+   "fromNode": "switch",
+   "fromSide": "right",
+   "toNode": "softmoe",
+   "toSide": "left",
+   "label": "松弛：离散路由→连续可导"
+  }
+ ]
+}

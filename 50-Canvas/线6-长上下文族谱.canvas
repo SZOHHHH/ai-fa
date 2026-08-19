@@ -1,0 +1,156 @@
+{
+ "nodes": [
+  {
+   "id": "title",
+   "x": -184,
+   "y": -988,
+   "width": 640,
+   "height": 150,
+   "type": "text",
+   "text": "# 线6 · 长上下文族谱\n两条正交战线：注意力稀疏化（上）与位置编码手术（中）；绿 = 系统级",
+   "color": "3"
+  },
+  {
+   "id": "longformer",
+   "x": 0,
+   "y": 0,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/06-长上下文/Longformer- The Long-Document Transformer（Longformer）.md"
+  },
+  {
+   "id": "bigbird",
+   "x": 920,
+   "y": 0,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/06-长上下文/Big Bird- Transformers for Longer Sequences（BigBird）.md"
+  },
+  {
+   "id": "performer",
+   "x": 1840,
+   "y": 0,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/06-长上下文/Rethinking Attention with Performers（Performer）.md"
+  },
+  {
+   "id": "ring",
+   "x": 2760,
+   "y": 0,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/06-长上下文/Ring Attention with Blockwise Transformers for Near-Infinite Context（Ring Attention）.md",
+   "color": "4"
+  },
+  {
+   "id": "moba",
+   "x": 3680,
+   "y": 0,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/06-长上下文/MoBA- Mixture of Block Attention for Long-Context LLMs（MoBA）.md"
+  },
+  {
+   "id": "nsa",
+   "x": 4600,
+   "y": 0,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/06-长上下文/Native Sparse Attention- Hardware-Aligned and Natively Trainable Sparse Attention（NSA）.md"
+  },
+  {
+   "id": "pi",
+   "x": 2760,
+   "y": 760,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/06-长上下文/Extending Context Window of Large Language Models via Positional Interpolation（PI）.md"
+  },
+  {
+   "id": "yarn",
+   "x": 3680,
+   "y": 760,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/06-长上下文/YaRN- Efficient Context Window Extension of Large Language Models（YaRN）.md"
+  },
+  {
+   "id": "stream",
+   "x": 2760,
+   "y": 1520,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/06-长上下文/Efficient Streaming Language Models with Attention Sinks（StreamingLLM）.md"
+  },
+  {
+   "id": "infini",
+   "x": 3680,
+   "y": 1520,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/06-长上下文/Leave No Context Behind- Efficient Infinite Context Transformers with Infini-attention（Infini-attention）.md"
+  }
+ ],
+ "edges": [
+  {
+   "id": "e0",
+   "fromNode": "longformer",
+   "fromSide": "right",
+   "toNode": "bigbird",
+   "toSide": "left",
+   "label": "工程直觉→理论保证（图灵完备）"
+  },
+  {
+   "id": "e1",
+   "fromNode": "bigbird",
+   "fromSide": "right",
+   "toNode": "performer",
+   "toSide": "left",
+   "label": "稀疏（精确）→核近似（O(n)）"
+  },
+  {
+   "id": "e2",
+   "fromNode": "performer",
+   "fromSide": "bottom",
+   "toNode": "moba",
+   "toSide": "top",
+   "label": "演进：随机近似→学习式块路由（2025）"
+  },
+  {
+   "id": "e3",
+   "fromNode": "moba",
+   "fromSide": "right",
+   "toNode": "nsa",
+   "toSide": "left",
+   "label": "同期双雄：块路由→三分支原生稀疏"
+  },
+  {
+   "id": "e4",
+   "fromNode": "pi",
+   "fromSide": "right",
+   "toNode": "yarn",
+   "toSide": "left",
+   "label": "改进：均匀压缩→频率谱+温度修正",
+   "color": "6"
+  },
+  {
+   "id": "e5",
+   "fromNode": "stream",
+   "fromSide": "right",
+   "toNode": "infini",
+   "toSide": "left",
+   "label": "平行：保sink原始→压成参数记忆"
+  }
+ ]
+}

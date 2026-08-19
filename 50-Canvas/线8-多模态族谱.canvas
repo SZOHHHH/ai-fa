@@ -1,0 +1,181 @@
+{
+ "nodes": [
+  {
+   "id": "title",
+   "x": -184,
+   "y": -988,
+   "width": 640,
+   "height": 150,
+   "type": "text",
+   "text": "# 线8 · 多模态族谱\n对齐预训练（左）→ VLM三代（中）→ 视频/统一模态（右）",
+   "color": "3"
+  },
+  {
+   "id": "clip",
+   "x": 0,
+   "y": 0,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/08-多模态/Learning Transferable Visual Models From Natural Language Supervision（CLIP）.md"
+  },
+  {
+   "id": "align",
+   "x": 920,
+   "y": 0,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/08-多模态/Scaling Up Visual and Vision-Language Representation Learning With Noisy Text Supervision（ALIGN）.md"
+  },
+  {
+   "id": "lit",
+   "x": 1840,
+   "y": 0,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/08-多模态/LiT- Zero-Shot Transfer with Locked-image text Tuning（LiT）.md"
+  },
+  {
+   "id": "flamingo",
+   "x": 2760,
+   "y": 0,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/08-多模态/Flamingo- a Visual Language Model for Few-Shot Learning（Flamingo）.md"
+  },
+  {
+   "id": "blip2",
+   "x": 3680,
+   "y": 0,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/08-多模态/BLIP-2- Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Lan（BLIP-2）.md"
+  },
+  {
+   "id": "llava",
+   "x": 4600,
+   "y": 0,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/08-多模态/Visual Instruction Tuning（LLaVA）.md"
+  },
+  {
+   "id": "minigpt",
+   "x": 3680,
+   "y": 760,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/08-多模态/MiniGPT-4- Enhancing Vision-Language Understanding with Advanced Large Language Models（MiniGPT-4）.md"
+  },
+  {
+   "id": "whisper",
+   "x": 0,
+   "y": 760,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/08-多模态/Robust Speech Recognition via Large-Scale Weak Supervision（Whisper）.md"
+  },
+  {
+   "id": "videopoet",
+   "x": 2760,
+   "y": 1520,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/08-多模态/VideoPoet- A Large Language Model for Zero-Shot Video Generation（VideoPoet）.md"
+  },
+  {
+   "id": "sora",
+   "x": 3680,
+   "y": 1520,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/08-多模态/Sora 技术报告- Video Generation Models as World Simulators（Sora）.md"
+  },
+  {
+   "id": "chameleon",
+   "x": 4600,
+   "y": 1520,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/08-多模态/Chameleon- Mixed-Modal Early-Fusion Foundation Models（Chameleon）.md"
+  }
+ ],
+ "edges": [
+  {
+   "id": "e0",
+   "fromNode": "clip",
+   "fromSide": "right",
+   "toNode": "align",
+   "toSide": "left",
+   "label": "平行互证：噪声规模路线"
+  },
+  {
+   "id": "e1",
+   "fromNode": "clip",
+   "fromSide": "right",
+   "toNode": "lit",
+   "toSide": "left",
+   "label": "消融：双塔同训→锁定视觉塔"
+  },
+  {
+   "id": "e2",
+   "fromNode": "clip",
+   "fromSide": "right",
+   "toNode": "flamingo",
+   "toSide": "left",
+   "label": "复用：CLIP当视觉编码器"
+  },
+  {
+   "id": "e3",
+   "fromNode": "flamingo",
+   "fromSide": "right",
+   "toNode": "blip2",
+   "toSide": "left",
+   "label": "改进：插层→Q-Former桥"
+  },
+  {
+   "id": "e4",
+   "fromNode": "blip2",
+   "fromSide": "right",
+   "toNode": "llava",
+   "toSide": "left",
+   "label": "简化：复杂桥→线性投影"
+  },
+  {
+   "id": "e5",
+   "fromNode": "blip2",
+   "fromSide": "right",
+   "toNode": "minigpt",
+   "toSide": "left",
+   "label": "复用：Q-Former+两阶段策略"
+  },
+  {
+   "id": "e6",
+   "fromNode": "videopoet",
+   "fromSide": "right",
+   "toNode": "sora",
+   "toSide": "left",
+   "label": "路线之争：自回归vs扩散（2024）",
+   "color": "6"
+  },
+  {
+   "id": "e7",
+   "fromNode": "llava",
+   "fromSide": "right",
+   "toNode": "chameleon",
+   "toSide": "left",
+   "label": "路线对照：晚融合→早融合统一token",
+   "color": "6"
+  }
+ ]
+}

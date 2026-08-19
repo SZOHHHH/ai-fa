@@ -1,0 +1,360 @@
+{
+ "nodes": [
+  {
+   "id": "title",
+   "x": -184,
+   "y": -988,
+   "width": 640,
+   "height": 150,
+   "type": "text",
+   "text": "# 线1 · 架构演进（主干线）\n主题：**AI 用什么骨架处理序列**——CNN→Transformer→SSM/混合的主干更替，加上让主干可实用的组件优化（RoPE/Flash/GQA/MLA）。**其余八条线都建在这条主干之上**。\n读法：左→右 = 时间；紫 = 组件支线；橙 = 后Transformer支线",
+   "color": "3"
+  },
+  {
+   "id": "alexnet",
+   "x": 0,
+   "y": 0,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/01-架构演进/ImageNet Classification with Deep Convolutional Neural Networks（AlexNet）.md"
+  },
+  {
+   "id": "transformer",
+   "x": 920,
+   "y": 0,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/01-架构演进/Attention Is All You Need（Transformer）.md"
+  },
+  {
+   "id": "gpt1",
+   "x": 1840,
+   "y": 0,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/01-架构演进/Improving Language Understanding by Generative Pre-Training（GPT-1）.md"
+  },
+  {
+   "id": "gpt2",
+   "x": 2760,
+   "y": 0,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/01-架构演进/Language Models are Unsupervised Multitask Learners（GPT-2）.md"
+  },
+  {
+   "id": "gpt3",
+   "x": 3680,
+   "y": 0,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/01-架构演进/Language Models are Few-Shot Learners（GPT-3）.md"
+  },
+  {
+   "id": "laws",
+   "x": 4600,
+   "y": 0,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/01-架构演进/Scaling Laws for Neural Language Models（Scaling Laws）.md",
+   "color": "4"
+  },
+  {
+   "id": "llama",
+   "x": 5520,
+   "y": 0,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/01-架构演进/LLaMA- Open and Efficient Foundation Language Models（LLaMA）.md"
+  },
+  {
+   "id": "resnet",
+   "x": 0,
+   "y": 760,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/01-架构演进/Deep Residual Learning for Image Recognition（ResNet）.md"
+  },
+  {
+   "id": "bert",
+   "x": 1840,
+   "y": 760,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/01-架构演进/BERT- Pre-training of Deep Bidirectional Transformers for Language Understanding（BERT）.md"
+  },
+  {
+   "id": "vit",
+   "x": 3680,
+   "y": 760,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/01-架构演进/An Image is Worth 16x16 Words- Transformers for Image Recognition at Scale（ViT）.md"
+  },
+  {
+   "id": "rope",
+   "x": 920,
+   "y": 1520,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/01-架构演进/RoFormer- Enhanced Transformer with Rotary Position Embedding（RoPE）.md",
+   "color": "6"
+  },
+  {
+   "id": "flash",
+   "x": 1840,
+   "y": 1520,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/01-架构演进/FlashAttention- Fast and Memory-Efficient Exact Attention with IO-Awareness（FlashAttention）.md",
+   "color": "6"
+  },
+  {
+   "id": "gqa",
+   "x": 2760,
+   "y": 1520,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/01-架构演进/GQA- Training Generalized Multi-Query Transformer Models from Multi-Head Checkoffs（GQA）.md",
+   "color": "6"
+  },
+  {
+   "id": "mla",
+   "x": 3680,
+   "y": 1520,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/01-架构演进/DeepSeek-V2- A Strong, Economical, and Efficient Mixture-of-Experts Language Model（MLA）.md",
+   "color": "6"
+  },
+  {
+   "id": "mamba",
+   "x": 0,
+   "y": 2280,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/01-架构演进/Mamba- Linear-Time Sequence Modeling with Selective State Spaces（Mamba）.md",
+   "color": "2"
+  },
+  {
+   "id": "mamba2",
+   "x": 920,
+   "y": 2280,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/01-架构演进/Transformers are SSMs- Generalized Models and Efficient Algorithms Through Structured St（Mamba-2）.md",
+   "color": "2"
+  },
+  {
+   "id": "jamba",
+   "x": 1840,
+   "y": 2280,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/01-架构演进/Jamba- A Hybrid Transformer-Mamba Language Model（Jamba）.md",
+   "color": "2"
+  },
+  {
+   "id": "rwkv",
+   "x": 0,
+   "y": 3040,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/01-架构演进/RWKV- Reinventing RNNs for the Transformer Era（RWKV）.md",
+   "color": "2"
+  },
+  {
+   "id": "retnet",
+   "x": 920,
+   "y": 3040,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/01-架构演进/Retentive Network- A Successor to Transformer for Large Language Models（RetNet）.md",
+   "color": "2"
+  }
+ ],
+ "edges": [
+  {
+   "id": "e0",
+   "fromNode": "alexnet",
+   "fromSide": "right",
+   "toNode": "transformer",
+   "toSide": "left",
+   "label": "奠基：GPU+深度网络时代"
+  },
+  {
+   "id": "e1",
+   "fromNode": "resnet",
+   "fromSide": "right",
+   "toNode": "transformer",
+   "toSide": "left",
+   "label": "奠基：残差使深网络可训"
+  },
+  {
+   "id": "e2",
+   "fromNode": "transformer",
+   "fromSide": "right",
+   "toNode": "gpt1",
+   "toSide": "left",
+   "label": "扩展：生成式预训练范式"
+  },
+  {
+   "id": "e3",
+   "fromNode": "gpt1",
+   "fromSide": "right",
+   "toNode": "gpt2",
+   "toSide": "left",
+   "label": "扩展：规模化+零样本"
+  },
+  {
+   "id": "e4",
+   "fromNode": "gpt2",
+   "fromSide": "right",
+   "toNode": "gpt3",
+   "toSide": "left",
+   "label": "扩展：175B+上下文学习"
+  },
+  {
+   "id": "e5",
+   "fromNode": "gpt3",
+   "fromSide": "right",
+   "toNode": "laws",
+   "toSide": "left",
+   "label": "同团队：总结规模规律",
+   "color": "4"
+  },
+  {
+   "id": "e6",
+   "fromNode": "laws",
+   "fromSide": "right",
+   "toNode": "llama",
+   "toSide": "left",
+   "label": "规模科学→开源配方（经Chinchilla修正）",
+   "color": "4"
+  },
+  {
+   "id": "e7",
+   "fromNode": "transformer",
+   "fromSide": "right",
+   "toNode": "bert",
+   "toSide": "left",
+   "label": "平行：双向理解路线"
+  },
+  {
+   "id": "e8",
+   "fromNode": "transformer",
+   "fromSide": "right",
+   "toNode": "vit",
+   "toSide": "left",
+   "label": "扩展：patch化进视觉"
+  },
+  {
+   "id": "e9",
+   "fromNode": "transformer",
+   "fromSide": "right",
+   "toNode": "rope",
+   "toSide": "left",
+   "label": "组件：位置编码",
+   "color": "6"
+  },
+  {
+   "id": "e10",
+   "fromNode": "transformer",
+   "fromSide": "right",
+   "toNode": "flash",
+   "toSide": "left",
+   "label": "组件：IO优化（数学不变）",
+   "color": "6"
+  },
+  {
+   "id": "e11",
+   "fromNode": "transformer",
+   "fromSide": "right",
+   "toNode": "gqa",
+   "toSide": "left",
+   "label": "组件：KV头优化",
+   "color": "6"
+  },
+  {
+   "id": "e12",
+   "fromNode": "gqa",
+   "fromSide": "right",
+   "toNode": "mla",
+   "toSide": "left",
+   "label": "改进：头削减→低秩压缩",
+   "color": "6"
+  },
+  {
+   "id": "e13",
+   "fromNode": "transformer",
+   "fromSide": "right",
+   "toNode": "mamba",
+   "toSide": "left",
+   "label": "挑战：O(n²)→线性时间",
+   "color": "2"
+  },
+  {
+   "id": "e14",
+   "fromNode": "mamba",
+   "fromSide": "right",
+   "toNode": "mamba2",
+   "toSide": "left",
+   "label": "统一：SSD对偶（与注意力同族）",
+   "color": "6"
+  },
+  {
+   "id": "e15",
+   "fromNode": "mamba2",
+   "fromSide": "right",
+   "toNode": "jamba",
+   "toSide": "left",
+   "label": "实用化：混合架构"
+  },
+  {
+   "id": "e16",
+   "fromNode": "transformer",
+   "fromSide": "right",
+   "toNode": "rwkv",
+   "toSide": "left",
+   "label": "平行：注意力线性化",
+   "color": "2"
+  },
+  {
+   "id": "e17",
+   "fromNode": "transformer",
+   "fromSide": "right",
+   "toNode": "retnet",
+   "toSide": "left",
+   "label": "平行：三形式等价",
+   "color": "2"
+  },
+  {
+   "id": "e18",
+   "fromNode": "retnet",
+   "fromSide": "bottom",
+   "toNode": "mamba2",
+   "toSide": "top",
+   "label": "被SSD理论收编",
+   "color": "6"
+  }
+ ]
+}

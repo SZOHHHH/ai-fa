@@ -1,0 +1,181 @@
+{
+ "nodes": [
+  {
+   "id": "title",
+   "x": -184,
+   "y": -988,
+   "width": 640,
+   "height": 150,
+   "type": "text",
+   "text": "# 线7 · 推理模型族谱\n提示工程（上）→ 自举训练（中）→ RL涌现+测试时缩放（下）",
+   "color": "3"
+  },
+  {
+   "id": "cot",
+   "x": 0,
+   "y": 0,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）.md"
+  },
+  {
+   "id": "selfcon",
+   "x": 920,
+   "y": 0,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/07-推理模型/Self-Consistency Improves Chain of Thought Reasoning in Language Models（Self-Consistency）.md"
+  },
+  {
+   "id": "tot",
+   "x": 1840,
+   "y": 0,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/07-推理模型/Tree of Thoughts- Deliberate Problem Solving with Large Language Models（ToT）.md"
+  },
+  {
+   "id": "l2m",
+   "x": 0,
+   "y": 760,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/07-推理模型/Least-to-Most Prompting Enables Complex Reasoning in Large Language Models（Least-to-Most）.md"
+  },
+  {
+   "id": "react",
+   "x": 920,
+   "y": 760,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/07-推理模型/ReAct- Synergizing Reasoning and Acting in Language Models（ReAct）.md"
+  },
+  {
+   "id": "star",
+   "x": 1840,
+   "y": 760,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/07-推理模型/STaR- Bootstrapping Reasoning With Reasoning（STaR）.md"
+  },
+  {
+   "id": "prm",
+   "x": 0,
+   "y": 1520,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/07-推理模型/Let's Verify Step by Step（PRM）.md"
+  },
+  {
+   "id": "r1",
+   "x": 920,
+   "y": 1520,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/04-强化学习与对齐/DeepSeek-R1- Incentivizing Reasoning Capability in LLMs via Reinforcement Learning（R1）.md"
+  },
+  {
+   "id": "s1",
+   "x": 1840,
+   "y": 1520,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/07-推理模型/s1- Simple test-time scaling（s1）.md"
+  },
+  {
+   "id": "ttc",
+   "x": 2760,
+   "y": 1520,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/07-推理模型/Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Param（Test-Time Compute）.md",
+   "color": "4"
+  }
+ ],
+ "edges": [
+  {
+   "id": "e0",
+   "fromNode": "cot",
+   "fromSide": "right",
+   "toNode": "selfcon",
+   "toSide": "left",
+   "label": "增强：单链→多链投票（边缘化）"
+  },
+  {
+   "id": "e1",
+   "fromNode": "cot",
+   "fromSide": "right",
+   "toNode": "tot",
+   "toSide": "left",
+   "label": "扩展：链→树（搜索化）"
+  },
+  {
+   "id": "e2",
+   "fromNode": "cot",
+   "fromSide": "right",
+   "toNode": "l2m",
+   "toSide": "left",
+   "label": "扩展：步骤→结构化分解"
+  },
+  {
+   "id": "e3",
+   "fromNode": "cot",
+   "fromSide": "right",
+   "toNode": "react",
+   "toSide": "left",
+   "label": "扩展：推理→+行动（Agent范式）"
+  },
+  {
+   "id": "e4",
+   "fromNode": "cot",
+   "fromSide": "right",
+   "toNode": "star",
+   "toSide": "left",
+   "label": "内化：提示→自举进权重"
+  },
+  {
+   "id": "e5",
+   "fromNode": "star",
+   "fromSide": "right",
+   "toNode": "r1",
+   "toSide": "left",
+   "label": "极限化：数据筛选→纯RL涌现"
+  },
+  {
+   "id": "e6",
+   "fromNode": "prm",
+   "fromSide": "right",
+   "toNode": "r1",
+   "toSide": "left",
+   "label": "路线对照：过程奖励→规则结果奖励",
+   "color": "6"
+  },
+  {
+   "id": "e7",
+   "fromNode": "r1",
+   "fromSide": "right",
+   "toNode": "s1",
+   "toSide": "left",
+   "label": "对照：纯RL→1k数据SFT"
+  },
+  {
+   "id": "e8",
+   "fromNode": "s1",
+   "fromSide": "right",
+   "toNode": "ttc",
+   "toSide": "left",
+   "label": "工程配方→定量科学",
+   "color": "4"
+  }
+ ]
+}

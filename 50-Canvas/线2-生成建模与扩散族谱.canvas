@@ -1,0 +1,537 @@
+{
+ "nodes": [
+  {
+   "id": "title",
+   "x": -184,
+   "y": -988,
+   "width": 640,
+   "height": 150,
+   "type": "text",
+   "text": "# 线2 · 生成建模与扩散族谱\n三代叙事：变分/对抗 → 扩散统一 → 流匹配合流 → 蒸馏加速",
+   "color": "3"
+  },
+  {
+   "id": "vae",
+   "x": 0,
+   "y": 0,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/02-生成建模与扩散/Auto-Encoding Variational Bayes（VAE）.md"
+  },
+  {
+   "id": "gan",
+   "x": 920,
+   "y": 0,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/02-生成建模与扩散/Generative Adversarial Networks（GAN）.md"
+  },
+  {
+   "id": "ddpm",
+   "x": 1840,
+   "y": 0,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/02-生成建模与扩散/Denoising Diffusion Probabilistic Models（DDPM）.md"
+  },
+  {
+   "id": "adm",
+   "x": 2760,
+   "y": 0,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/02-生成建模与扩散/Diffusion Models Beat GANs on Image Synthesis（ADM）.md"
+  },
+  {
+   "id": "ldm",
+   "x": 3680,
+   "y": 0,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/02-生成建模与扩散/High-Resolution Image Synthesis with Latent Diffusion Models（LDM）.md"
+  },
+  {
+   "id": "dit",
+   "x": 4600,
+   "y": 0,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/02-生成建模与扩散/Scalable Diffusion Models with Transformers（DiT）.md"
+  },
+  {
+   "id": "vqvae",
+   "x": 0,
+   "y": 760,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/02-生成建模与扩散/Neural Discrete Representation Learning（VQ-VAE）.md"
+  },
+  {
+   "id": "vqgan",
+   "x": 920,
+   "y": 760,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/02-生成建模与扩散/Taming Transformers for High-Resolution Image Synthesis（VQGAN）.md"
+  },
+  {
+   "id": "smld",
+   "x": 1840,
+   "y": 760,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/02-生成建模与扩散/Generative Modeling by Estimating Gradients of the Data Distribution（SMLD）.md"
+  },
+  {
+   "id": "ssde",
+   "x": 2760,
+   "y": 760,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/02-生成建模与扩散/Score-Based Generative Modeling through Stochastic Differential Equations（Score-SDE）.md"
+  },
+  {
+   "id": "edm",
+   "x": 3680,
+   "y": 760,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/02-生成建模与扩散/Elucidating the Design Space of Diffusion-Based Generative Models（EDM）.md"
+  },
+  {
+   "id": "cfg",
+   "x": 4600,
+   "y": 760,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/02-生成建模与扩散/Classifier-Free Diffusion Guidance（CFG）.md"
+  },
+  {
+   "id": "unet",
+   "x": 0,
+   "y": 1520,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/02-生成建模与扩散/U-Net- Convolutional Networks for Biomedical Image Segmentation（U-Net）.md"
+  },
+  {
+   "id": "ddim",
+   "x": 920,
+   "y": 1520,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/02-生成建模与扩散/Denoising Diffusion Implicit Models（DDIM）.md"
+  },
+  {
+   "id": "fm",
+   "x": 1840,
+   "y": 1520,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/02-生成建模与扩散/Flow Matching for Generative Modeling（流匹配）.md",
+   "color": "5"
+  },
+  {
+   "id": "rf",
+   "x": 2760,
+   "y": 1520,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/02-生成建模与扩散/Flow Straight and Fast- Learning to Generate and Transfer Data with Rectified Flow（矩形流）.md",
+   "color": "5"
+  },
+  {
+   "id": "si",
+   "x": 3680,
+   "y": 1520,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/02-生成建模与扩散/Building Normalizing Flows with Stochastic Interpolants（随机插值）.md",
+   "color": "5"
+  },
+  {
+   "id": "pdist",
+   "x": 920,
+   "y": 2280,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/02-生成建模与扩散/Progressive Distillation for Fast Sampling of Diffusion Models（渐进蒸馏）.md"
+  },
+  {
+   "id": "cm",
+   "x": 1840,
+   "y": 2280,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/02-生成建模与扩散/Consistency Models（一致性模型）.md"
+  },
+  {
+   "id": "dmd",
+   "x": 2760,
+   "y": 2280,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）.md"
+  },
+  {
+   "id": "dmd2",
+   "x": 3680,
+   "y": 2280,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/02-生成建模与扩散/Improved Distribution Matching Distillation for Fast Image Synthesis（DMD2）.md"
+  },
+  {
+   "id": "meanflow",
+   "x": 1840,
+   "y": 3040,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/02-生成建模与扩散/Mean Flows for One-step Generative Modeling（MeanFlow）.md",
+   "color": "5"
+  },
+  {
+   "id": "mfd",
+   "x": 2760,
+   "y": 3040,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/02-生成建模与扩散/Mean Flow Distillation - Robust and Stable Distillation for Flow Matching Models（MFD）.md",
+   "color": "5"
+  },
+  {
+   "id": "imm",
+   "x": 3680,
+   "y": 3040,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/02-生成建模与扩散/Inductive Moment Matching（IMM）.md",
+   "color": "5"
+  },
+  {
+   "id": "ayf",
+   "x": 4600,
+   "y": 3040,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/02-生成建模与扩散/Align Your Flow- Scaling Continuous-Time Flow Map Distillation（AYF）.md",
+   "color": "5"
+  },
+  {
+   "id": "lcm",
+   "x": 920,
+   "y": 3040,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/02-生成建模与扩散/Latent Consistency Models- Synthesizing High-Resolution Images with Few-Step Inference（LCM）.md"
+  },
+  {
+   "id": "mcm",
+   "x": 0,
+   "y": 3040,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/02-生成建模与扩散/Multistep Consistency Models（MCM）.md"
+  },
+  {
+   "id": "deis",
+   "x": 0,
+   "y": 3800,
+   "width": 320,
+   "height": 250,
+   "type": "file",
+   "file": "10-Papers/02-生成建模与扩散/Fast Sampling of Diffusion Models with Exponential Integrator（DEIS）.md",
+   "color": "4"
+  },
+  {
+   "id": "matrix_note",
+   "x": 3680,
+   "y": 3800,
+   "width": 700,
+   "height": 220,
+   "type": "text",
+   "text": "**研究矩阵**（11 张全景）见 [[60-Matrices/生成模型加速矩阵]]·[[60-Matrices/生成建模范式矩阵]]·[[60-Matrices/RL稳定化矩阵]]·[[60-Matrices/偏好优化矩阵]]·[[60-Matrices/序列架构演进矩阵]]·[[60-Matrices/模型压缩矩阵]]·[[60-Matrices/MoE路由矩阵]]·[[60-Matrices/长上下文机制矩阵]]·[[60-Matrices/推理增强矩阵]]·[[60-Matrices/多模态对齐矩阵]]·[[60-Matrices/世界模型矩阵]]——空白格 = 机会格（如 FM×矩匹配×蒸馏）",
+   "color": "3"
+  }
+ ],
+ "edges": [
+  {
+   "id": "e0",
+   "fromNode": "vae",
+   "fromSide": "right",
+   "toNode": "ddpm",
+   "toSide": "left",
+   "label": "扩展：单步隐变量→整条马尔可夫链"
+  },
+  {
+   "id": "e1",
+   "fromNode": "gan",
+   "fromSide": "right",
+   "toNode": "adm",
+   "toSide": "left",
+   "label": "被反超（扩散加冕之战）"
+  },
+  {
+   "id": "e2",
+   "fromNode": "ddpm",
+   "fromSide": "right",
+   "toNode": "smld",
+   "toSide": "left",
+   "label": "平行同源（变分派 vs score派）"
+  },
+  {
+   "id": "e3",
+   "fromNode": "smld",
+   "fromSide": "right",
+   "toNode": "ssde",
+   "toSide": "left",
+   "label": "被统一：VE-SDE",
+   "color": "6"
+  },
+  {
+   "id": "e4",
+   "fromNode": "ddpm",
+   "fromSide": "right",
+   "toNode": "ssde",
+   "toSide": "left",
+   "label": "被统一：VP-SDE",
+   "color": "6"
+  },
+  {
+   "id": "e5",
+   "fromNode": "ssde",
+   "fromSide": "right",
+   "toNode": "edm",
+   "toSide": "left",
+   "label": "改进：设计空间系统消融"
+  },
+  {
+   "id": "e6",
+   "fromNode": "ddpm",
+   "fromSide": "right",
+   "toNode": "adm",
+   "toSide": "left",
+   "label": "改进：架构+分类器引导"
+  },
+  {
+   "id": "e7",
+   "fromNode": "adm",
+   "fromSide": "right",
+   "toNode": "cfg",
+   "toSide": "left",
+   "label": "简化：去分类器化"
+  },
+  {
+   "id": "e8",
+   "fromNode": "vae",
+   "fromSide": "right",
+   "toNode": "vqvae",
+   "toSide": "left",
+   "label": "扩展：连续→离散隐空间"
+  },
+  {
+   "id": "e9",
+   "fromNode": "vqvae",
+   "fromSide": "right",
+   "toNode": "vqgan",
+   "toSide": "left",
+   "label": "组合：+感知损失+自回归先验"
+  },
+  {
+   "id": "e10",
+   "fromNode": "vqgan",
+   "fromSide": "right",
+   "toNode": "ldm",
+   "toSide": "top",
+   "label": "奠基：感知压缩器"
+  },
+  {
+   "id": "e11",
+   "fromNode": "ddpm",
+   "fromSide": "right",
+   "toNode": "ldm",
+   "toSide": "left",
+   "label": "搬进潜空间（省算力两个量级）"
+  },
+  {
+   "id": "e12",
+   "fromNode": "unet",
+   "fromSide": "right",
+   "toNode": "dit",
+   "toSide": "left",
+   "label": "骨干被替换：U-Net→Transformer"
+  },
+  {
+   "id": "e13",
+   "fromNode": "ldm",
+   "fromSide": "right",
+   "toNode": "dit",
+   "toSide": "left",
+   "label": "骨干升级路线"
+  },
+  {
+   "id": "e14",
+   "fromNode": "ddpm",
+   "fromSide": "right",
+   "toNode": "ddim",
+   "toSide": "left",
+   "label": "扩展：非马尔可夫+确定性采样"
+  },
+  {
+   "id": "e15",
+   "fromNode": "ssde",
+   "fromSide": "right",
+   "toNode": "fm",
+   "toSide": "left",
+   "label": "ODE视角→直接学速度场",
+   "color": "6"
+  },
+  {
+   "id": "e16",
+   "fromNode": "fm",
+   "fromSide": "right",
+   "toNode": "rf",
+   "toSide": "left",
+   "label": "平行同构（直线+reflow）",
+   "color": "6"
+  },
+  {
+   "id": "e17",
+   "fromNode": "fm",
+   "fromSide": "right",
+   "toNode": "si",
+   "toSide": "left",
+   "label": "被统一：插值框架（含ELBO证明）",
+   "color": "6"
+  },
+  {
+   "id": "e18",
+   "fromNode": "ddim",
+   "fromSide": "bottom",
+   "toNode": "pdist",
+   "toSide": "top",
+   "label": "提供教师轨迹"
+  },
+  {
+   "id": "e19",
+   "fromNode": "pdist",
+   "fromSide": "right",
+   "toNode": "cm",
+   "toSide": "left",
+   "label": "演进：步数减半→一步自洽"
+  },
+  {
+   "id": "e20",
+   "fromNode": "cm",
+   "fromSide": "right",
+   "toNode": "dmd",
+   "toSide": "left",
+   "label": "路线切换：轨迹自洽→分布匹配"
+  },
+  {
+   "id": "e21",
+   "fromNode": "dmd",
+   "fromSide": "right",
+   "toNode": "dmd2",
+   "toSide": "left",
+   "label": "改进：+回归项+GAN项+CFG蒸馏"
+  },
+  {
+   "id": "e22",
+   "fromNode": "lcm",
+   "fromSide": "bottom",
+   "toNode": "mfd",
+   "toSide": "top",
+   "label": "范式：潜空间蒸馏→FM原生蒸馏",
+   "color": "5"
+  },
+  {
+   "id": "e23",
+   "fromNode": "fm",
+   "fromSide": "right",
+   "toNode": "meanflow",
+   "toSide": "left",
+   "label": "平均速度：瞬时→时间积分（免蒸馏）",
+   "color": "5"
+  },
+  {
+   "id": "e24",
+   "fromNode": "meanflow",
+   "fromSide": "right",
+   "toNode": "mfd",
+   "toSide": "left",
+   "label": "范式：从头→蒸馏预训练（ICML26占格）",
+   "color": "5"
+  },
+  {
+   "id": "e25",
+   "fromNode": "fm",
+   "fromSide": "right",
+   "toNode": "imm",
+   "toSide": "left",
+   "label": "矩匹配：前二阶矩充分性",
+   "color": "5"
+  },
+  {
+   "id": "e26",
+   "fromNode": "cm",
+   "fromSide": "right",
+   "toNode": "ayf",
+   "toSide": "left",
+   "label": "推广：单端点→任意端点flow map",
+   "color": "5"
+  },
+  {
+   "id": "e27",
+   "fromNode": "cm",
+   "fromSide": "bottom",
+   "toNode": "mcm",
+   "toSide": "top",
+   "label": "推广：单段→多段网格"
+  },
+  {
+   "id": "e28",
+   "fromNode": "cm",
+   "fromSide": "right",
+   "toNode": "lcm",
+   "toSide": "left",
+   "label": "移植：像素→潜空间（+LoRA）"
+  },
+  {
+   "id": "e29",
+   "fromNode": "ddim",
+   "fromSide": "right",
+   "toNode": "deis",
+   "toSide": "left",
+   "label": "一阶→指数积分器高阶（训练-free）",
+   "color": "4"
+  }
+ ]
+}

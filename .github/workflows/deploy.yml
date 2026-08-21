@@ -1,0 +1,71 @@
+name: deploy-site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Download Quartz 4.5.2
+        run: |
+          curl -sL https://codeload.github.com/jackyzha0/quartz/tar.gz/refs/tags/v4.5.2 | tar xz --strip-components=1
+          npm install --no-audit --no-fund
+
+      - name: Prepare content
+        run: |
+          rm -rf content
+          mkdir content
+          cp -r 00-Meta 10-Papers 20-Algorithms 30-Formulas 40-Concepts 50-Canvas 60-Matrices index.md content/
+
+      - name: Configure Quartz
+        run: |
+          node -e "
+          const fs = require('fs');
+          let c = fs.readFileSync('quartz.config.ts', 'utf8');
+          c = c.replace('pageTitle: \"Quartz 4\"', 'pageTitle: \"AI Formula Atlas\"');
+          c = c.replace('pageTitleSuffix: \"\"', 'pageTitleSuffix: \" · AI 公式图谱\"');
+          c = c.replace(/analytics: \{\s*provider: \"plausible\",\s*\}/, 'analytics: null');
+          c = c.replace('locale: \"en-US\"', 'locale: \"zh-CN\"');
+          c = c.replace('baseUrl: \"quartz.jzhao.xyz\"', 'baseUrl: \"szohhhh.github.io/ai-fa\"');
+          c = c.replace('fontOrigin: \"googleFonts\"', 'fontOrigin: \"builtin\"');
+          c = c.replace(/      \/\/ Comment out CustomOgImages[^\n]*\n      Plugin\.CustomOgImages\(\),\n/, '');
+          fs.writeFileSync('quartz.config.ts', c);
+          console.log('quartz.config.ts configured');
+          "
+
+      - name: Build site
+        run: npx quartz build -o public
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,7 +1,7 @@
 ---
 type: paper
 title: Neural Discrete Representation Learning
-aliases: [VQ-[[Auto-Encoding Variational Bayes（VAE）|VAE]], Neural Discrete Representation Learning]
+aliases: ["VQ-VAE", Neural Discrete Representation Learning]
 year: 2017
 authors: [Aaron van den Oord, Oriol Vinyals, Koray Kavukcuoglu]
 venue: NeurIPS 2017

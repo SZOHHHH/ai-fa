@@ -1,6 +1,6 @@
 ---
 type: paper
-title: Wasserstein [[Generative Adversarial Networks（GAN）|GAN]]
+title: "Wasserstein GAN"
 aliases: [WGAN, Wasserstein GAN]
 year: 2017
 authors: [Martin Arjovsky, Soumith Chintala, Léon Bottou]

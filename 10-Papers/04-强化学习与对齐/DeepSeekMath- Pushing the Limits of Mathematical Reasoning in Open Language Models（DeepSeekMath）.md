@@ -1,7 +1,7 @@
 ---
 type: paper
 title: DeepSeekMath - Pushing the Limits of Mathematical Reasoning in Open Language Models
-aliases: [DeepSeekMath, [[GRPO与RLVR|GRPO]]提出论文]
+aliases: [DeepSeekMath, "GRPO提出论文"]
 year: 2024
 authors: [Zhihong Shao, Peiyi Wang, Qihao Zhu, Runxin Xu, Junxiao Song, et al.]
 venue: arXiv 2024

@@ -1,6 +1,6 @@
 ---
 type: paper
-title: [[Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）|CoT]]-Valve- Length-Compressible Chain-of-Thought Tuning
+title: "CoT-Valve- Length-Compressible Chain-of-Thought Tuning"
 aliases: [CoT-Valve]
 year: 2025
 authors: [（arXiv）]

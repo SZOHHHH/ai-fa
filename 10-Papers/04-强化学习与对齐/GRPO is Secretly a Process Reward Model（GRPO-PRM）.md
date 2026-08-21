@@ -1,7 +1,7 @@
 ---
 type: paper
 layer: 占位
-title: [[GRPO与RLVR|GRPO]] is Secretly a Process Reward Model
+title: "GRPO is Secretly a Process Reward Model"
 aliases: [GRPO-PRM]
 year: 2025
 authors: [Michael Sullivan, Alexander Koller (Saarland)]

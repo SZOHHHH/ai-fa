@@ -1,7 +1,7 @@
 ---
 type: paper
 layer: 占位
-title: [[Mean Flows for One-step Generative Modeling（MeanFlow）|MeanFlow]]-TSE- One-Step Generative Target Speaker Extraction with Mean Flow
+title: "MeanFlow-TSE- One-Step Generative Target Speaker Extraction with Mean Flow"
 aliases: [MeanFlow-TSE]
 year: 2025
 authors: [（arXiv）]

@@ -7,7 +7,7 @@ authors: [Jack Parker-Holder, et al. (Google DeepMind)]
 venue: DeepMind 技术博客（无论文）
 arxiv: "无（deepmind.google/discover/blog/genie-2-a-large-scale-foundation-world-model）"
 pdf: none
-source_note: 纯博客报告——自回归潜扩散世界模型，按 [[00-Meta/论文来源策略]] 兜底处理
+source_note: "纯博客报告——自回归潜扩散世界模型，按 00-Meta/论文来源策略 兜底处理"
 line: 世界模型与JEPA
 matrix_coords: [隐式(纯视频), 显式像素, 纯离线视频]
 tags: [paper]

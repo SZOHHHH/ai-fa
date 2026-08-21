@@ -8,7 +8,7 @@ venue: ACL 2024
 arxiv: "2312.08935"
 pdf: 已下载（PDF/）
 line: 推理模型
-matrix_coords: [训练注入, 链, 过程奖励([[Let's Verify Step by Step（PRM）|PRM]])]
+matrix_coords: [训练注入, 链, 过程奖励(PRM)]
 tags: [paper]
 ---
 

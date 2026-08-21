@@ -7,7 +7,7 @@ authors: [OpenAI（Tim Brooks, Bill Peebles 等）]
 venue: OpenAI 技术报告（无 PDF，仅网页）
 arxiv: "无（openai.com/research/video-generation-models-as-world-simulators）"
 pdf: none
-source_note: 纯网页报告——视觉 transformer + [[Scalable Diffusion Models with Transformers（DiT）|DiT]] + 时空 patch；按 [[00-Meta/论文来源策略]] 兜底处理
+source_note: "纯网页报告——视觉 transformer + DiT + 时空 patch；按 00-Meta/论文来源策略 兜底处理"
 line: 多模态
 matrix_coords: [生成接口, 生成(条件LM), 完全早期融合]
 tags: [paper]

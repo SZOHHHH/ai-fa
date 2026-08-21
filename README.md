@@ -2,6 +2,10 @@
 
 **给数学基础薄弱、想进入算法领域的学习者的 AI 论文知识网络**——公式优先、直觉先行、可验证。
 
+[![Online Site](https://img.shields.io/badge/online-site-8A2BE2)](https://szohhhh.github.io/ai-fa/) [![CI](https://github.com/SZOHHHH/ai-fa/actions/workflows/check.yml/badge.svg)](https://github.com/SZOHHHH/ai-fa/actions) [![License: CC BY-NC 4.0](https://img.shields.io/badge/content-CC_BY--NC_4.0-blue)](./LICENSE-CONTENT) [![License: MIT](https://img.shields.io/badge/code-MIT-yellow)](./LICENSE-CODE)
+
+**🌐 在线浏览（无需安装 Obsidian）**：https://szohhhh.github.io/ai-fa/ —— 站点随本仓库 push 自动重建。
+
 ## 这是什么
 
 一个以**数学公式与推导**为主导的 Obsidian 知识库：307 张论文卡（覆盖 10 条研究主线）+ 17 个算法实体 + 61 个公式实体 + 44 个概念实体 + 12 张研究矩阵，构成四类实体交叉的双网络（论文演化网 + 数学公式网）。

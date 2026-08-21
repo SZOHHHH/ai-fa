@@ -1,6 +1,6 @@
 ---
 type: meta
-title: "AI Formula Atlas · AI 公式图谱"
+title: "AI Formula Atlas"
 tags: [home]
 ---
 

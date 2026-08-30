@@ -43,7 +43,7 @@ $$
 
 ## 6. 影响与占位意义
 
-距敌方核查日仅 9 天——占坑速度的活证据。
+方向占坑速度的活证据（同类工作密集出现）。
 
 > 近邻同族：[[Any-OPD- Heterogeneous On-Policy Distillation for Flow-Matching Models via Representation-Space Bridging（Any-OPD）]] · [[CausalOPD- First-Wrong-Step Supervision for Distilling Causal Chain Reasoning（CausalOPD）]]
 > 数学根基（占位层）：[[策略梯度定理]]

@@ -4,7 +4,7 @@ layer: 占位
 title: Distribution Matching Distillation without Fake Score Network
 aliases: [FSF-DMD]
 year: 2026
-authors: [（arXiv，赵桉竞品）]
+authors: [arXiv]
 venue: arXiv 2026
 arxiv: "2605.19256"
 pdf: 已下载（PDF/）
@@ -17,12 +17,12 @@ tags: [paper, 占位层]
 
 ## 1. 一句话贡献
 
-去掉 fake-score 网络的分布匹配蒸馏——**组内赵桉的竞品论文**（RS 红线之一）。
+去掉 fake-score 网络的分布匹配蒸馏。
 
 ## 2. 核心贡献
 
 1. 去掉 fake-score 网络的分布匹配蒸馏
-2. 组内赵桉的竞品论文（RS 红线之一）。
+2. 去除 fake-score 网络：省一份学生侧网络的开销，规避其训练不稳定性。
 
 ## 3. 方法概要
 

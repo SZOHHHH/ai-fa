@@ -1,0 +1,55 @@
+---
+title: "概念 Concepts"
+type: concept
+description: "术语与观念实体：on-policy、模式坍塌、去噪……论文里看不懂的词，来这里查零基础解释。"
+tags: [section]
+---
+
+# 概念 Concepts
+
+> 术语与观念实体：on-policy、模式坍塌、去噪……论文里看不懂的词，来这里查零基础解释。
+
+- [[40-Concepts/贝尔曼方程|贝尔曼方程]]
+- [[40-Concepts/贝叶斯公式|贝叶斯公式]]
+- [[40-Concepts/采样器|采样器]]
+- [[40-Concepts/策略梯度定理|策略梯度定理]]
+- [[40-Concepts/常微分方程（ODE）|常微分方程]]
+- [[40-Concepts/低秩分解|低秩分解]]
+- [[40-Concepts/范数|范数]]
+- [[40-Concepts/概率分布|概率分布]]
+- [[40-Concepts/高斯分布|高斯分布]]
+- [[40-Concepts/广义优势估计GAE|广义优势估计]]
+- [[40-Concepts/过程奖励与结果奖励（PRM-ORM）|过程奖励模型]]
+- [[40-Concepts/朗之万动力学|朗之万动力学]]
+- [[40-Concepts/量化|量化]]
+- [[40-Concepts/马尔可夫决策过程|马尔可夫决策过程]]
+- [[40-Concepts/马尔可夫链|马尔可夫链]]
+- [[40-Concepts/内积|内积]]
+- [[40-Concepts/能量模型|能量模型]]
+- [[40-Concepts/期望|期望]]
+- [[40-Concepts/视觉语言模型（VLM）|视觉语言模型]]
+- [[40-Concepts/思维链（CoT）|思维链]]
+- [[40-Concepts/随机微分方程（SDE）|随机微分方程]]
+- [[40-Concepts/梯度|梯度]]
+- [[40-Concepts/条件概率|条件概率]]
+- [[40-Concepts/维纳过程|维纳过程]]
+- [[40-Concepts/位置编码|位置编码]]
+- [[40-Concepts/温度参数|温度参数]]
+- [[40-Concepts/稀疏与线性注意力|稀疏注意力]]
+- [[40-Concepts/信赖域|信赖域]]
+- [[40-Concepts/知识蒸馏|知识蒸馏]]
+- [[40-Concepts/重参数化|重参数化]]
+- [[40-Concepts/重要性采样|重要性采样]]
+- [[40-Concepts/注意力机制|缩放点积注意力]]
+- [[40-Concepts/Bradley-Terry模型|Bradley-Terry模型]]
+- [[40-Concepts/ELBO|证据下界]]
+- [[40-Concepts/Jensen-Shannon散度|Jensen-Shannon散度]]
+- [[40-Concepts/Jensen不等式|Jensen不等式]]
+- [[40-Concepts/JEPA联合嵌入预测架构|JEPA]]
+- [[40-Concepts/KL散度|KL散度]]
+- [[40-Concepts/KV缓存|KV缓存]]
+- [[40-Concepts/Lipschitz连续|Lipschitz连续]]
+- [[40-Concepts/RL中的log导数技巧|log导数技巧]]
+- [[40-Concepts/Score函数|Score函数]]
+- [[40-Concepts/softmax函数|softmax函数]]
+- [[40-Concepts/Wasserstein距离|Wasserstein距离]]

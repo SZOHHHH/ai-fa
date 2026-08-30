@@ -35,21 +35,12 @@ jobs:
           mkdir content
           cp -r 00-Meta 10-Papers 20-Algorithms 30-Formulas 40-Concepts 50-Canvas 60-Matrices index.md content/
 
-      - name: Configure Quartz
+      - name: Apply Quartz customization
         run: |
-          node -e "
-          const fs = require('fs');
-          let c = fs.readFileSync('quartz.config.ts', 'utf8');
-          c = c.replace('pageTitle: \"Quartz 4\"', 'pageTitle: \"AI Formula Atlas\"');
-          c = c.replace('pageTitleSuffix: \"\"', 'pageTitleSuffix: \" · AI 公式图谱\"');
-          c = c.replace(/analytics: \{\s*provider: \"plausible\",\s*\}/, 'analytics: null');
-          c = c.replace('locale: \"en-US\"', 'locale: \"zh-CN\"');
-          c = c.replace('baseUrl: \"quartz.jzhao.xyz\"', 'baseUrl: \"szohhhh.github.io/ai-fa\"');
-          c = c.replace('fontOrigin: \"googleFonts\"', 'fontOrigin: \"builtin\"');
-          c = c.replace(/      \/\/ Comment out CustomOgImages[^\n]*\n      Plugin\.CustomOgImages\(\),\n/, '');
-          fs.writeFileSync('quartz.config.ts', c);
-          console.log('quartz.config.ts configured');
-          "
+          cp quartz-patch/quartz.config.ts quartz-patch/quartz.layout.ts .
+          cp -r quartz-patch/quartz/* quartz/
+          rm -rf quartz-patch
+          echo "quartz customization applied (config/layout/TopNav/custom.scss)"
 
       - name: Build site
         run: npx quartz build -o public

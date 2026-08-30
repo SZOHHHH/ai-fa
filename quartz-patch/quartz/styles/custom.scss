@@ -20,3 +20,18 @@
     padding: 0.3rem 0.15rem;
   }
 }
+
+// ===== 反向链接面板：同款间距 + 分隔线（B47 续，用户令）=====
+.backlinks > ul {
+  & > li {
+    & > a {
+      display: block;
+      padding: 0.3rem 0.15rem;
+      border-bottom: 1px dashed rgba(136, 136, 136, 0.28);
+    }
+
+    &:last-child > a {
+      border-bottom: none;
+    }
+  }
+}

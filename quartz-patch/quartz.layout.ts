@@ -64,14 +64,14 @@ export const defaultContentPageLayout: PageLayout = {
         }
       },
       sortFn: (a, b) => {
+        // ⚠️ 序列化 fns 里禁止嵌套函数定义（esbuild keep-names 会注入 __name 调用，
+        //    而 new Function 沙箱里没有 __name → ReferenceError → 整个目录树渲染中断）
         if (a.isFolder !== b.isFolder) {
           return a.isFolder ? -1 : 1
         }
-        // 00-Meta 沉底；其余按目录名数字前缀排序（01-架构演进 → 1）
-        const rank = (n) => (n.slugSegment === "00-Meta" ? 999 : parseInt(n.slugSegment) || 500)
-        const r = rank(a) - rank(b)
-        if (r !== 0) return r
-        return a.displayName.localeCompare(b.displayName, "zh-CN", { numeric: true })
+        const ra = a.slugSegment === "00-Meta" ? 999 : parseInt(a.slugSegment) || 500
+        const rb = b.slugSegment === "00-Meta" ? 999 : parseInt(b.slugSegment) || 500
+        return ra !== rb ? ra - rb : a.displayName.localeCompare(b.displayName, "zh-CN", { numeric: true })
       },
     }),
   ],
@@ -122,13 +122,13 @@ export const defaultListPageLayout: PageLayout = {
         }
       },
       sortFn: (a, b) => {
+        // ⚠️ 序列化 fns 里禁止嵌套函数定义（esbuild keep-names 注入 __name，new Function 沙箱没有）
         if (a.isFolder !== b.isFolder) {
           return a.isFolder ? -1 : 1
         }
-        const rank = (n) => (n.slugSegment === "00-Meta" ? 999 : parseInt(n.slugSegment) || 500)
-        const r = rank(a) - rank(b)
-        if (r !== 0) return r
-        return a.displayName.localeCompare(b.displayName, "zh-CN", { numeric: true })
+        const ra = a.slugSegment === "00-Meta" ? 999 : parseInt(a.slugSegment) || 500
+        const rb = b.slugSegment === "00-Meta" ? 999 : parseInt(b.slugSegment) || 500
+        return ra !== rb ? ra - rb : a.displayName.localeCompare(b.displayName, "zh-CN", { numeric: true })
       },
     }),
   ],

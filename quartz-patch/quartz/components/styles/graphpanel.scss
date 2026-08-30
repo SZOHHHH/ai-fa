@@ -1,0 +1,194 @@
+.graph-panel-host {
+  display: contents;
+}
+
+// 右下角悬浮按钮
+.graph-panel-fab {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 997;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--darkgray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+  transition:
+    transform 0.15s ease,
+    color 0.15s ease;
+
+  &:hover {
+    color: var(--secondary);
+    transform: translateY(-2px);
+  }
+}
+
+// 浮窗本体（visibility/opacity 隐藏而非 display:none——保住容器尺寸供 d3 渲染）
+.graph-panel {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 5.25rem;
+  z-index: 998;
+  width: min(780px, 92vw);
+  height: min(560px, 68vh);
+  border-radius: 14px;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(8px) scale(0.98);
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease,
+    visibility 0.2s;
+
+  &.open {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+    transform: none;
+  }
+
+  & .graph-panel-head {
+    flex: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 0.9rem;
+    border-bottom: 1px solid var(--lightgray);
+
+    & .graph-panel-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--dark);
+    }
+
+    & .graph-panel-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+
+      & button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 1.8rem;
+        height: 1.8rem;
+        border-radius: 6px;
+        border: 1px solid var(--lightgray);
+        background: transparent;
+        color: var(--darkgray);
+        cursor: pointer;
+
+        &:hover {
+          color: var(--secondary);
+          border-color: var(--gray);
+        }
+      }
+    }
+  }
+
+  // 图谱画布铺满剩余空间（必须有确定高度，d3 才能渲染）
+  & .graph-container {
+    flex: 1 1 auto;
+    min-height: 0;
+    width: 100%;
+
+    & svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+// 首页全库图谱入口按钮（渲染在正文之后）
+.home-graph-entry {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0 0.5rem;
+
+  & .home-graph-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 1rem 2.2rem;
+    border-radius: 12px;
+    border: 1px solid var(--lightgray);
+    background: var(--highlight);
+    color: var(--secondary);
+    cursor: pointer;
+    font-family: var(--bodyFont);
+    transition:
+      transform 0.15s ease,
+      border-color 0.15s ease;
+
+    & span {
+      font-size: 1.05rem;
+      font-weight: 600;
+    }
+
+    & .hint {
+      font-size: 0.8rem;
+      font-weight: 400;
+      color: var(--gray);
+    }
+
+    &:hover {
+      transform: translateY(-2px);
+      border-color: var(--tertiary);
+    }
+  }
+}
+
+// 移动端浮窗放大到近全屏
+@media mobile {
+  .graph-panel {
+    right: 0.5rem;
+    left: 0.5rem;
+    bottom: 4.75rem;
+    width: auto;
+    height: 60vh;
+  }
+}
+
+// 全屏全库图谱浮层（stock 规则在 .graph > .global-graph-outer 作用域下，本组件结构不同需自带）
+.graph-panel-host > .global-graph-outer {
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100%;
+  backdrop-filter: blur(4px);
+  display: none;
+  overflow: hidden;
+
+  &.active {
+    display: inline-block;
+  }
+
+  & > .global-graph-container {
+    border: 1px solid var(--lightgray);
+    background-color: var(--light);
+    border-radius: 5px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80vh;
+    width: 80vw;
+  }
+}

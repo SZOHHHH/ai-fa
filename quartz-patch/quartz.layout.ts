@@ -37,7 +37,7 @@ export const defaultContentPageLayout: PageLayout = {
       // 以下三个函数会被 toString() 序列化后在浏览器执行——必须自包含，不得捕获外部变量
       filterFn: (node) => {
         const seg = node.slugSegment
-        return seg !== "tags" && seg !== "50-canvas" && seg !== "index"
+        return seg !== "tags" && seg !== "50-Canvas" && seg !== "index"
       },
       mapFn: (node) => {
         if (!node.isFolder) return
@@ -60,7 +60,7 @@ export const defaultContentPageLayout: PageLayout = {
           return a.isFolder ? -1 : 1
         }
         // 00-meta 沉底；其余按目录名数字前缀排序（01-架构演进 → 1）
-        const rank = (n) => (n.slugSegment === "00-meta" ? 999 : parseInt(n.slugSegment) || 500)
+        const rank = (n) => (n.slugSegment === "00-Meta" ? 999 : parseInt(n.slugSegment) || 500)
         const r = rank(a) - rank(b)
         if (r !== 0) return r
         return a.displayName.localeCompare(b.displayName, "zh-CN", { numeric: true })
@@ -84,7 +84,7 @@ export const defaultListPageLayout: PageLayout = {
       folderClickBehavior: "link",
       filterFn: (node) => {
         const seg = node.slugSegment
-        return seg !== "tags" && seg !== "50-canvas" && seg !== "index"
+        return seg !== "tags" && seg !== "50-Canvas" && seg !== "index"
       },
       mapFn: (node) => {
         if (!node.isFolder) return
@@ -106,7 +106,7 @@ export const defaultListPageLayout: PageLayout = {
         if (a.isFolder !== b.isFolder) {
           return a.isFolder ? -1 : 1
         }
-        const rank = (n) => (n.slugSegment === "00-meta" ? 999 : parseInt(n.slugSegment) || 500)
+        const rank = (n) => (n.slugSegment === "00-Meta" ? 999 : parseInt(n.slugSegment) || 500)
         const r = rank(a) - rank(b)
         if (r !== 0) return r
         return a.displayName.localeCompare(b.displayName, "zh-CN", { numeric: true })

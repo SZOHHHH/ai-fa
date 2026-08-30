@@ -18,36 +18,42 @@ if (!fs.existsSync(ROOT)) {
 const SECTIONS = [
   {
     dir: "10-Papers",
+    type: "paper",
     title: "论文 Papers",
     blurb:
       "307 张论文卡 · 10 条研究主线。每张卡七节结构，核心是「核心公式 + 逐项直觉解释」——公式看不懂时，点进它链接的公式/概念卡就是零基础解释。",
   },
   {
     dir: "20-Algorithms",
+    type: "algo",
     title: "算法 Algorithms",
     blurb:
       "算法族实体：把数学公式组装成可运行步骤的「菜谱」。每个算法卡说明流程、复杂度、与组成公式的关系。",
   },
   {
     dir: "30-Formulas",
+    type: "formula",
     title: "公式 Formulas",
     blurb:
       "数学对象实体：定义、推导、直觉解释、被哪些论文使用。论文卡里的每个核心公式在这里都有独立身份。",
   },
   {
     dir: "40-Concepts",
+    type: "concept",
     title: "概念 Concepts",
     blurb:
       "术语与观念实体：on-policy、模式坍塌、去噪……论文里看不懂的词，来这里查零基础解释。",
   },
   {
     dir: "60-Matrices",
+    type: "matrix",
     title: "研究矩阵 Matrices",
     blurb:
       "多维研究版图：每格一篇代表作。看方向之间的相邻、对偶与空白——既是导航，也是选题雷达。",
   },
   {
     dir: "00-Meta",
+    type: "meta",
     title: "规范与设置",
     blurb:
       "知识库的底层治理文档：记号规范、矩阵规范、建模指南、论文来源策略。日常浏览可忽略本节。",
@@ -125,7 +131,7 @@ for (const sec of SECTIONS) {
     body = renderList(all, sec.dir);
   }
 
-  const md = `---\ntitle: "${sec.title}"\ndescription: "${sec.blurb.replace(/"/g, "”")}"\ntags: [section]\n---\n\n# ${sec.title}\n\n> ${sec.blurb}\n\n${body}\n`;
+  const md = `---\ntitle: "${sec.title}"\ntype: ${sec.type || "section"}\ndescription: "${sec.blurb.replace(/"/g, "”")}"\ntags: [section]\n---\n\n# ${sec.title}\n\n> ${sec.blurb}\n\n${body}\n`;
   fs.writeFileSync(path.join(absDir, "index.md"), md);
   console.log(`✓ ${sec.dir}/index.md（${all.length} 条目，${subDirs.length} 组）`);
 }

@@ -4,7 +4,7 @@ import { classNames } from "../util/lang"
 import { pathToRoot, resolveRelative, SimpleSlug } from "../util/path"
 
 // 顶部主导航：把六个内容板块提升为一级入口（对应 dist 顶层目录）
-// 注意：slug 一律小写连字符（Quartz slugify 规则），显示名由各目录 index.md 的 title 提供
+// ⚠️ slug 保留目录原始大小写（00-Meta / 10-Papers）——Linux CI 产物大小写敏感，小写硬编码=死链
 interface NavItem {
   title: string
   slug?: SimpleSlug // 缺省 = 首页（pathToRoot）
@@ -13,12 +13,12 @@ interface NavItem {
 
 const navItems: NavItem[] = [
   { title: "首页", prefix: "" },
-  { title: "论文", slug: "10-papers" as SimpleSlug, prefix: "10-papers" },
-  { title: "公式", slug: "30-formulas" as SimpleSlug, prefix: "30-formulas" },
-  { title: "概念", slug: "40-concepts" as SimpleSlug, prefix: "40-concepts" },
-  { title: "算法", slug: "20-algorithms" as SimpleSlug, prefix: "20-algorithms" },
-  { title: "矩阵", slug: "60-matrices" as SimpleSlug, prefix: "60-matrices" },
-  { title: "规范", slug: "00-meta" as SimpleSlug, prefix: "00-meta" },
+  { title: "论文", slug: "10-Papers" as SimpleSlug, prefix: "10-Papers" },
+  { title: "公式", slug: "30-Formulas" as SimpleSlug, prefix: "30-Formulas" },
+  { title: "概念", slug: "40-Concepts" as SimpleSlug, prefix: "40-Concepts" },
+  { title: "算法", slug: "20-Algorithms" as SimpleSlug, prefix: "20-Algorithms" },
+  { title: "矩阵", slug: "60-Matrices" as SimpleSlug, prefix: "60-Matrices" },
+  { title: "规范", slug: "00-Meta" as SimpleSlug, prefix: "00-Meta" },
 ]
 
 const TopNav: QuartzComponent = ({ fileData, displayClass }: QuartzComponentProps) => {

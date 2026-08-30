@@ -33,7 +33,7 @@ jobs:
         run: |
           rm -rf content
           mkdir content
-          cp -r 00-Meta 10-Papers 20-Algorithms 30-Formulas 40-Concepts 50-Canvas 60-Matrices index.md content/
+          cp -r 00-Meta 10-Papers 20-Algorithms 30-Formulas 40-Concepts 50-Canvas 60-Matrices index.md LICENSE-CONTENT LICENSE-CODE content/
 
       - name: Apply Quartz customization
         run: |

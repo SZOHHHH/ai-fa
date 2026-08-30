@@ -24,7 +24,7 @@ const localCfg = {
   repelForce: 2.0,
   centerForce: 1.0,
   linkDistance: 120,
-  fontSize: 1.35,
+  fontSize: 0.81, // 用户令：标签缩至原 1.35 的 60%
   opacityScale: 3,
   removeTags: [],
   showTags: false,

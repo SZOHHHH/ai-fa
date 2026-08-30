@@ -1,6 +1,6 @@
 # AI Formula Atlas
 
-**给数学基础薄弱、想进入算法领域的学习者的 AI 论文知识网络**——公式优先、直觉先行、可验证。
+**以公式链路为骨架的 AI 算法知识网络**——每篇论文都从数学根基讲起：公式优先、直觉先行、可验证。
 
 [![Online Site](https://img.shields.io/badge/online-site-8A2BE2)](https://szohhhh.github.io/ai-fa/) [![CI](https://github.com/SZOHHHH/ai-fa/actions/workflows/check.yml/badge.svg)](https://github.com/SZOHHHH/ai-fa/actions) [![License: CC BY-NC 4.0](https://img.shields.io/badge/content-CC_BY--NC_4.0-blue)](./LICENSE-CONTENT) [![License: MIT](https://img.shields.io/badge/code-MIT-yellow)](./LICENSE-CODE)
 
@@ -10,7 +10,7 @@
 
 一个以**数学公式与推导**为主导的 Obsidian 知识库：307 张论文卡（覆盖 10 条研究主线）+ 17 个算法实体 + 61 个公式实体 + 44 个概念实体 + 12 张研究矩阵，构成四类实体交叉的双网络（论文演化网 + 数学公式网）。
 
-## 三件别人没做的事
+## 核心创新点
 
 1. **公式优先**：每张论文卡核心是"核心公式 + 逐项直觉解释"，不是摘要罗列。统一记号规范（t∈[0,1]、x₀/z/ε_θ/v_θ…），非主流论文符号用对照表换算
 2. **可验证**：`node tools/check_links.js` 保证 0 红链、frontmatter 类型正确——CI 红链即构建失败

@@ -4,12 +4,7 @@ import * as Component from "./quartz/components"
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
-  header: [
-    Component.TopNav(),
-    Component.Search(),
-    Component.ReaderMode(),
-    Component.Darkmode(),
-  ],
+  header: [],
   afterBody: [],
   footer: Component.Footer({
     links: {
@@ -30,11 +25,24 @@ export const defaultContentPageLayout: PageLayout = {
     Component.TagList(),
   ],
   left: [
+    Component.PageTitle(),
+    Component.MobileOnly(Component.Spacer()),
+    Component.Flex({
+      components: [
+        {
+          Component: Component.Search(),
+          grow: true,
+        },
+        { Component: Component.Darkmode() },
+        { Component: Component.ReaderMode() },
+      ],
+    }),
     Component.Explorer({
       title: "目录",
       folderDefaultState: "collapsed",
       folderClickBehavior: "link",
       // 以下三个函数会被 toString() 序列化后在浏览器执行——必须自包含，不得捕获外部变量
+      // ⚠️ slugSegment 保留原始大小写（00-Meta、50-Canvas）
       filterFn: (node) => {
         const seg = node.slugSegment
         return seg !== "tags" && seg !== "50-Canvas" && seg !== "index"
@@ -59,7 +67,7 @@ export const defaultContentPageLayout: PageLayout = {
         if (a.isFolder !== b.isFolder) {
           return a.isFolder ? -1 : 1
         }
-        // 00-meta 沉底；其余按目录名数字前缀排序（01-架构演进 → 1）
+        // 00-Meta 沉底；其余按目录名数字前缀排序（01-架构演进 → 1）
         const rank = (n) => (n.slugSegment === "00-Meta" ? 999 : parseInt(n.slugSegment) || 500)
         const r = rank(a) - rank(b)
         if (r !== 0) return r
@@ -78,6 +86,17 @@ export const defaultContentPageLayout: PageLayout = {
 export const defaultListPageLayout: PageLayout = {
   beforeBody: [Component.Breadcrumbs(), Component.ArticleTitle(), Component.ContentMeta()],
   left: [
+    Component.PageTitle(),
+    Component.MobileOnly(Component.Spacer()),
+    Component.Flex({
+      components: [
+        {
+          Component: Component.Search(),
+          grow: true,
+        },
+        { Component: Component.Darkmode() },
+      ],
+    }),
     Component.Explorer({
       title: "目录",
       folderDefaultState: "collapsed",

@@ -1,0 +1,22 @@
+@use "./base.scss";
+
+// put your custom CSS here!
+
+// ===== Explorer 目录条目间距 + 分隔线（B46，用户令：条目间无间隔）=====
+.explorer .explorer-content {
+  // 文件条目：上下留白 + 底部淡虚线分隔
+  & ul li > a {
+    display: block;
+    padding: 0.3rem 0.15rem;
+    border-bottom: 1px dashed rgba(136, 136, 136, 0.28);
+  }
+
+  & ul li:last-child > a {
+    border-bottom: none;
+  }
+
+  // 文件夹行：同样留白（不画线，靠缩进区分层级）
+  & ul li .folder-container .folder-button {
+    padding: 0.3rem 0.15rem;
+  }
+}

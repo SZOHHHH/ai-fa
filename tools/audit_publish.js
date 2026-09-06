@@ -18,7 +18,7 @@ const warnings = [];
 for (const f of [
   "70-Ideas", "80-Lessons", "CLAUDE.md", ".obsidian", ".claudian", "release",
   "attachments", "10-Papers/PDF", "MVP总体计划.md", "扩充计划-至300篇.md",
-  "开源产品方案.md", "敌情终复查报告.md", "全景机会格图.md",
+  "开源产品方案.md", "敌情终复查报告.md", "全景机会格图.md", "daily/",
 ]) {
   if (fs.existsSync(path.join(ROOT, f))) issues.push("泄漏: 禁发布文件/目录 " + f);
 }

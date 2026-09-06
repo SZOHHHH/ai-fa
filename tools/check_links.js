@@ -25,8 +25,8 @@ for (const f of files) {
   const ty = (m[1].match(/type:\s*(\w+)/) || [])[1];
   const p = norm(f);
   const expect = p.includes('/10-Papers/') ? 'paper' : p.includes('/20-Algorithms/') ? 'algo'
-    : p.includes('/30-Formulas/') ? 'formula' : p.includes('/40-Concepts/') ? 'concept' : p.includes('/80-Lessons/') ? 'lesson' : p.includes('/60-Matrices/') ? 'matrix' : p.includes('/70-Ideas/') ? 'idea' : 'meta';
-  if (ty !== expect) typeErr.push(p + ' got:' + ty + ' expect:' + expect);
+    : p.includes('/30-Formulas/') ? 'formula' : p.includes('/40-Concepts/') ? 'concept' : p.includes('/80-Lessons/') ? 'lesson' : p.includes('/60-Matrices/') ? 'matrix' : p.includes('/70-Ideas/') ? 'idea' : p.includes('/00-Meta/daily/') ? 'daily' : 'meta';
+  if (ty !== expect && !p.startsWith('00-Meta/daily/')) typeErr.push(p + ' got:' + ty + ' expect:' + expect);
   let mm; wikiRe.lastIndex = 0;
   while ((mm = wikiRe.exec(t))) {
     const target = mm[1].replace(/[\s\\]+$/, '').trim();

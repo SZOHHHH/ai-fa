@@ -22,7 +22,7 @@ $$D_{\mathrm{KL}}(P \,\|\, Q) = \mathbb{E}_{x \sim P}\!\left[ \log \frac{P(x)}{Q
 - **不对称**：$D_{\mathrm{KL}}(P\|Q) \neq D_{\mathrm{KL}}(Q\|P)$
   - 前向 KL $D_{\mathrm{KL}}(P\|Q)$：质量覆盖（Q 被迫覆盖 P 的所有模式）→ "均值搜索"
   - 反向 KL $D_{\mathrm{KL}}(Q\|P)$：模式坍缩（Q 集中在 P 的单一众数）→ GAN 早期坍缩、VAE 的选择
-- **与交叉熵**：$D_{\mathrm{KL}}(P\|Q) = H(P, Q) - H(P)$，当 $H(P)$ 固定时最小化 KL = 最小化交叉熵 = 分类损失
+- **与交叉熵**：$D_{\mathrm{KL}}(P\|Q) = H(P, Q) - H(P)$，当 $H(P)$ 固定时最小化 KL = 最小化交叉熵（[[30-Formulas/交叉熵]]）= 分类损失
 - **与 ELBO**：见 [[30-Formulas/ELBO目标]]—— $\log p(x) = \text{ELBO} + D_{\mathrm{KL}}(q \| p_\theta)$，所以最大化 ELBO = 最小化近似后验与真后验的差距
 - **两个高斯的 KL 有闭式解**（扩散论文反复使用）
 

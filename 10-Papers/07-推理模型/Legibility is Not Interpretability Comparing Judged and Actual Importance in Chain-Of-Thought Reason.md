@@ -1,6 +1,6 @@
 ---
 type: paper
-title: Legibility is Not Interpretability: Comparing Judged and Actual Importance in Chain-Of-Thought Reasoning
+title: "Legibility is Not Interpretability: Comparing Judged and Actual Importance in Chain-Of-Thought Reasoning"
 aliases: []
 year: 2026
 authors: [Kevin Du]

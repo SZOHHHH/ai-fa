@@ -1,6 +1,6 @@
 ---
 type: paper
-title: Puffin-World: Scaling a Unified Multimodal Model with Native 3D World States
+title: "Puffin-World: Scaling a Unified Multimodal Model with Native 3D World States"
 aliases: []
 year: 2026
 authors: [Kang Liao]

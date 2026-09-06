@@ -1,6 +1,6 @@
 ---
 type: paper
-title: Sequential Beats Joint: On the Interplay between On-Policy Distillation and RLVR
+title: "Sequential Beats Joint: On the Interplay between On-Policy Distillation and RLVR"
 aliases: []
 year: 2026
 authors: [Boyan Li]

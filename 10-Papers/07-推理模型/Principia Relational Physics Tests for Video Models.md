@@ -1,6 +1,6 @@
 ---
 type: paper
-title: Principia: Relational Physics Tests for Video Models
+title: "Principia: Relational Physics Tests for Video Models"
 aliases: []
 year: 2026
 authors: [Varun Varma Thozhiyoor]

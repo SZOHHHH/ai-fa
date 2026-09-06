@@ -1,6 +1,6 @@
 ---
 type: paper
-title: GIFT: Guided Intermediate Feature Training via Action-Oriented Structural Supervision for Robotic Manipulation
+title: "GIFT: Guided Intermediate Feature Training via Action-Oriented Structural Supervision for Robotic Manipulation"
 aliases: []
 year: 2026
 authors: [Yupeng Zheng]

@@ -1,6 +1,6 @@
 ---
 type: paper
-title: Continuous Actions from Discrete Minds: Latent-Aligned Planning for End-to-End Autonomous Driving
+title: "Continuous Actions from Discrete Minds: Latent-Aligned Planning for End-to-End Autonomous Driving"
 aliases: []
 year: 2026
 authors: [Ruoyu Yao]

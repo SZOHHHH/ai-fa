@@ -1,6 +1,6 @@
 ---
 type: paper
-title: SelfLift: Accelerating Few-Step Diffusion via Self-Recovering Resolution Transition
+title: "SelfLift: Accelerating Few-Step Diffusion via Self-Recovering Resolution Transition"
 aliases: []
 year: 2026
 authors: [Tingyan Wen]

@@ -1,6 +1,6 @@
 ---
 type: paper
-title: CORE: Improving Compositional Reasoning in MLLM Embedding via Reranker Distillation
+title: "CORE: Improving Compositional Reasoning in MLLM Embedding via Reranker Distillation"
 aliases: []
 year: 2026
 authors: [Tingyu Song]

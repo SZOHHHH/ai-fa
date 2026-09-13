@@ -20,7 +20,7 @@ $$\mathrm{softmax}(z)_i = \frac{\exp(z_i)}{\sum_{j=1}^{n} \exp(z_j)}$$
 - **数值稳定实现**：减最大值 $\mathrm{softmax}(z)_i = \frac{e^{z_i - \max z}}{\sum_j e^{z_j - \max z}}$（数学等价、防溢出）
 - **梯度**：$\frac{\partial p_i}{\partial z_j} = p_i(\delta_{ij} - p_j)$——简洁的雅可比结构
 - **与 log 配对**：$\log\mathrm{softmax}$ 数值稳定（logsumexp 技巧），交叉熵损失的标准实现
-- **与 [[40-Concepts/Bradley-Terry模型]] 同构**：BT 偏好概率就是两选项的 softmax
+- **与 [[40-Concepts/Bradley-Terry模型]] 同构**：BT 偏好概率就是两选项的 softmax，也即 [[40-Concepts/sigmoid函数]]（sigmoid = 二类 softmax 的差分形式）
 - **与 [[40-Concepts/能量模型]] 玻尔兹曼分布同构**：softmax = 能量的玻尔兹曼归一化（离散版）——统计物理、RL 决策、注意力共享同一数学
 
 ## 3. 为什么 AI 需要它
@@ -29,7 +29,7 @@ $$\mathrm{softmax}(z)_i = \frac{\exp(z_i)}{\sum_{j=1}^{n} \exp(z_j)}$$
 |---|---|
 | [[40-Concepts/注意力机制]] | 相关系数 → 注意力权重 |
 | 语言模型输出层 | logits → 下一个 token 的概率分布 |
-| [[30-Formulas/DPO损失]] | $\log\sigma$ 的 sigmoid 是两选项 softmax 特例 |
+| [[30-Formulas/DPO损失]] | $\log\sigma$ 的 sigmoid 是两选项 softmax 特例（[[40-Concepts/sigmoid函数]]） |
 | 策略离散化 | RL 离散动作的策略头 |
 | MoE 路由 | Soft MoE 的专家加权（[[20-Algorithms/混合专家（MoE）]]） |
 
@@ -43,4 +43,6 @@ $$\mathrm{softmax}(z)_i = \frac{\exp(z_i)}{\sum_{j=1}^{n} \exp(z_j)}$$
 
 - [[40-Concepts/能量模型]]：连续版玻尔兹曼
 - [[40-Concepts/Bradley-Terry模型]]：二选项特例
+- [[40-Concepts/sigmoid函数]]：K=2 时的差分形式
+- [[40-Concepts/独热编码（One-Hot）]]：采样/argmax 的出口形态
 - [[40-Concepts/梯度]]：雅可比结构

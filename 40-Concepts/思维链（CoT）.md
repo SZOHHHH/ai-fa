@@ -30,6 +30,9 @@ $$p(y \mid x) = \frac{p(y, z \mid x)}{p(z \mid x, y)} \le p(y, z \mid x)$$
 | [[10-Papers/07-推理模型/Tree of Thoughts- Deliberate Problem Solving with Large Language Models（ToT）]] | 链 → 树（搜索化） |
 | [[10-Papers/07-推理模型/ReAct- Synergizing Reasoning and Acting in Language Models（ReAct）]] | 推理+行动交织 |
 | R1/o1 | RL 训练自发长 CoT（见 [[10-Papers/04-强化学习与对齐/DeepSeek-R1- Incentivizing Reasoning Capability in LLMs via Reinforcement Learning（R1）]]） |
+| [[10-Papers/07-推理模型/Structural Process Supervision for Latent Chain-of-Thought Reasoning（PMPS）]] | 显式→潜压缩：原型过程监督 |
+| [[10-Papers/07-推理模型/Think Wider - Mitigating Latent Rank Collapse in Implicit Chain-of-Thought Reasoning（WIDER）]] | 潜推理的秩坍缩与谱正则 |
+| [[10-Papers/07-推理模型/Answer-Distribution Trajectories - A Stochastic-Dynamics View of LLM Reasoning（ADT）]] | 推理过程的分布动力学读法 |
 
 ## 4. 常见误区
 

@@ -20,6 +20,8 @@ tags: [algo]
 | [[10-Papers/04-强化学习与对齐/DeepSeekMath- Pushing the Limits of Mathematical Reasoning in Open Language Models（DeepSeekMath）]] | 提出 GRPO（数学推理场景验证） | 2024 |
 | [[10-Papers/04-强化学习与对齐/DeepSeek-R1- Incentivizing Reasoning Capability in LLMs via Reinforcement Learning（R1）]] | 纯 RL 训出推理能力（RLVR 范式宣言） | 2025 |
 | Dr. GRPO（2025） | 修长度/难度偏置（去 std 归一化） | 2025 |
+| [[10-Papers/04-强化学习与对齐/ThinkPrior Zero-Rollout Difficulty Priors for Cold-Start Prompt Selection in RLVR]] | 零 rollout 难度先验：冷启动挑 prompt，避开零优势静默组（省 39% rollout 浪费） | 2026 |
+| [[10-Papers/04-强化学习与对齐/Eliciting Self-Verification in Multimodal Reasoning Agents with Reinforcement Learning]] | GRPO 训多模态智能体自发自我验证（SVRL） | 2026 |
 | （概念源）Karpathy 2025 趋势论：RLVR = LLM 训练新阶段 | — |
 
 ## 3. 核心公式

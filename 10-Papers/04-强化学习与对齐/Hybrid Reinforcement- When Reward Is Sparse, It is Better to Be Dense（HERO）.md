@@ -47,7 +47,7 @@ $$
 ---
 
 > 谱系枢纽：[[Direct Preference Optimization- Your Language Model is Secretly a Reward Model（DPO）]]（图谱连通入口）
-> 近邻同族：[[Learning beyond Teacher- Generalized On-Policy Distillation with Reward Extrapolation（G-OPD）]] · [[Process Reinforcement through Implicit Rewards（PRIME）]]
+> 近邻同族：[[Learning beyond Teacher- Generalized On-Policy Distillation with Reward Extrapolation（G-OPD）]] · [[Process Reinforcement through Implicit Rewards（PRIME）]] · [[Environments as Scaffold Enriching Feedback to Bootstrap Self-Evolving Agents in Long-Horizon Tasks]]（环境侧富反馈路线，LLM 智能体域）
 > 数学根基（占位层）：[[策略梯度定理]]
 > 数学根基：[[REINFORCE目标]]
 

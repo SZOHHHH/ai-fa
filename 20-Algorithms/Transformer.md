@@ -40,7 +40,7 @@ tags: [algo]
 |---|---|---|
 | 编码器系（BERT） | 双向掩码 + MLM | [[10-Papers/01-架构演进/BERT- Pre-training of Deep Bidirectional Transformers for Language Understanding（BERT）]] |
 | 解码器系（GPT） | 因果掩码自回归 | GPT 系 / LLaMA |
-- 现代化组件替换 | 正弦PE→RoPE、LayerNorm→RMSNorm、ReLU→SwiGLU | LLaMA 配方 |
+- 现代化组件替换 | 正弦PE→RoPE、LayerNorm→RMSNorm、ReLU→SwiGLU（[[40-Concepts/激活函数族]]） | LLaMA 配方 |
 | 骨干替换 | 注意力→SSM | [[10-Papers/01-架构演进/Mamba- Linear-Time Sequence Modeling with Selective State Spaces（Mamba）]] |
 | 稀疏化 | FFN→MoE | [[20-Algorithms/混合专家（MoE）]] |
 | 视觉化 | patch 化进 Transformer | [[10-Papers/01-架构演进/An Image is Worth 16x16 Words- Transformers for Image Recognition at Scale（ViT）]] |

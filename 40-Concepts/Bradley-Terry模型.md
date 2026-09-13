@@ -14,7 +14,7 @@ tags: [concept]
 **形式**：
 $$p(y^+ \succ y^- \mid x) = \frac{\exp r(x, y^+)}{\exp r(x, y^+) + \exp r(x, y^-)} = \sigma\!\left( r(x, y^+) - r(x, y^-) \right)$$
 - $r(x, y)$：潜在奖励/分数（人类偏好 induce 出来的标量）
-- $\sigma$：sigmoid
+- $\sigma$：[[40-Concepts/sigmoid函数|sigmoid]]（= 二选项 softmax，见同构注）
 - **反向解出奖励**（DPO 的钥匙）：给定偏好数据与最优策略，$r(x,y) = \beta \log \frac{\pi(y\mid x)}{\pi_{\text{ref}}(y\mid x)} + \beta \log Z(x)$——奖励被策略对数比表达！
 
 ## 2. 数学形式
@@ -43,4 +43,5 @@ $$p(y^+ \succ y^- \mid x) = \frac{\exp r(x, y^+)}{\exp r(x, y^+) + \exp r(x, y^-
 
 - [[40-Concepts/KL散度]]：RLHF 目标里的正则（与 BT 相遇处）
 - [[40-Concepts/期望]]：似然最大化
+- [[40-Concepts/sigmoid函数]]：BT 偏好概率的函数载体
 - [[30-Formulas/DPO损失]]：最重要的派生公式

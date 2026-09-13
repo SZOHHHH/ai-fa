@@ -49,6 +49,7 @@ $$\mathcal{L}_{\text{DPO}}(\theta) = -\,\mathbb{E}_{(x,\, y^+,\, y^-)\sim\mathca
 
 - [[40-Concepts/Bradley-Terry模型]]：偏好似然骨架
 - [[40-Concepts/KL散度]]：β 的来源
+- [[40-Concepts/sigmoid函数]]：$\log\sigma$ 骨架件（数值稳定实现与饱和刹车）
 - [[40-Concepts/期望]]：数据集期望
 - [[40-Concepts/梯度]]：梯度权重 $\sigma$ 的自适应机制
 

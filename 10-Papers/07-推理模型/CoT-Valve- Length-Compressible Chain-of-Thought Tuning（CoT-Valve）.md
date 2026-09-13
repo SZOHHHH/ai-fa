@@ -48,6 +48,6 @@ $$
 
 undefined
 
-> 近邻同族：[[Kimi k1.5- Scaling Reinforcement Learning with LLMs（Kimi k1.5）]] · [[Let's Verify Step by Step（PRM）]]
+> 近邻同族：[[Kimi k1.5- Scaling Reinforcement Learning with LLMs（Kimi k1.5）]] · [[Let's Verify Step by Step（PRM）]] · 后续压缩线：[[Structural Process Supervision for Latent Chain-of-Thought Reasoning（PMPS）]] · [[Astar-Thought-V2 - Efficient Latent Reasoning via Geometric Dynamics of LLM（Astar-Thought-V2）]] · 长度的隐藏代价见 [[Does Deeper Reasoning Compromise Alignment - Revealing and Mitigating Alignment Collapse in LRMs（ALR）]]
 
 > 数学根基：[[思维链（CoT）]]

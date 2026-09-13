@@ -31,6 +31,7 @@ for (const f of files) {
   while ((mm = wikiRe.exec(t))) {
     const target = mm[1].replace(/[\s\\]+$/, '').trim();
     if (target.startsWith('http') || target === '…' || target.includes('…')) continue;
+    if (/\.(mp4|webm|mov|png|jpe?g|gif|webp|svg|ico|avif|pdf|canvas)$/i.test(target)) continue; // 媒体/canvas 嵌入非笔记链（9/10 立法：视频嵌入引入）
     const ok = names.has(target)
       || (target.includes('/') && [...paths].some(p => p.endsWith('/' + target + '.md') || p === ROOT + '/' + target + '.md'));
     if (!ok) bad.push(norm(f).split('/').pop() + ' -> [[' + target + ']]');

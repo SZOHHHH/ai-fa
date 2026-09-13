@@ -43,6 +43,7 @@ tags: [paper]
 
 - DPO 系论文的标配引用（"过优化"讨论源头）
 - 影响后续损失设计的理论检查习惯
+- 2026 延续：[[A Better Spur Should Start From Each Objective]]（MMPO——多目标 RL 场景的多边际偏好优化，数据/梯度/约束三层干预）
 
 ## 7. 读前须知
 

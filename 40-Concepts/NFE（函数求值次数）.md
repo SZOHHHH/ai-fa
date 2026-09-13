@@ -39,4 +39,4 @@ $$\text{NFE} = \text{去噪步数} = \text{每生成一张图/一帧，调用了
 - ← 概念源头：[[40-Concepts/常微分方程（ODE）|常微分方程（ODE）]]（数值积分的计数单位）、[[40-Concepts/采样器]]
 - ← 采样语境：[[30-Formulas/概率流ODE]]（扩散采样=积分它，步数即 NFE）
 - ← 每次求值在问什么：[[40-Concepts/Score函数]]（调一次去噪网络 ≈ 问一次 score 场）
-- 应用侧：[[10-Papers/09-世界模型与JEPA/Diffusion for World Modeling- Visual Details Matter in Atari（DIAMOND）|DIAMOND]]（每帧 3 NFE = 想象训练主成本）、[[10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）|DMD]]（蒸馏到 1 NFE 的代表）
+- 应用侧：[[10-Papers/09-世界模型与JEPA/Diffusion for World Modeling- Visual Details Matter in Atari（DIAMOND）|DIAMOND]]（每帧 3 NFE = 想象训练主成本）、[[10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）|DMD]]（蒸馏到 1 NFE 的代表）、[[10-Papers/02-生成建模与扩散/Distilled Continuous Diffusion Language Models Can Write Code in Few Steps---or One|PlaidQ]]（语言域少步蒸馏：K+1 NFE 计数、K=1 处 DMD 失效需配对监督）

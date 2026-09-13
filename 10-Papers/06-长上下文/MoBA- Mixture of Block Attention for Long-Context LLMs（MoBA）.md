@@ -43,6 +43,7 @@ tags: [paper]
 
 - Kimi 长上下文生产技术；"attention 的 MoE 化"设计空间打开
 - 后续（MoBA++、混合稀疏模式）持续迭代
+- 体系结构侧延伸（2026-09）：[[AMEND Audited Margins Enable Nonblocking Drops in GPU-PIM LLM Decoding]]——同为块级选择，MoBA 在模型侧门控路由，AMEND 在 GPU-PIM 硬件侧用已审计 margin 预测判决
 
 ## 7. 读前须知
 

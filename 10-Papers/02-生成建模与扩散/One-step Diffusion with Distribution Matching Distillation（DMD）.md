@@ -47,6 +47,7 @@ tags: [paper]
 ## 6. 影响与后续
 
 - [[Improved Distribution Matching Distillation for Fast Image Synthesis（DMD2）|DMD2]]（2024）：加教师CFG、少步扩展，效果再上台阶
+- 语言域移植：[[Distilled Continuous Diffusion Language Models Can Write Code in Few Steps---or One|PlaidQ]]（2026）把 DMD+DMD2 配方搬进连续扩散 LM 的 4/8/16 步蒸馏，并发现 K=1 时 DMD 失效需换配对轨迹监督
 - SDXL-Turbo / SD-Turbo 商用一步生成的主要技术来源
 - "分布级蒸馏 + 对抗补细节"配方被广泛复制
 

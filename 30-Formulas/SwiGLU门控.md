@@ -19,7 +19,7 @@ $$
 
 门控线性单元的 Swish 变体
 
-**直觉**：门控×双路投影——Transformer FFN 现代默认
+**直觉**：门控×双路投影——Transformer FFN 现代默认（族谱定位见 [[40-Concepts/激活函数族]]，Swish = $x\sigma(x)$ 用 [[40-Concepts/sigmoid函数|sigmoid]] 自门控）
 
 ## 本命论文
 

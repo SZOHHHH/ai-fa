@@ -43,6 +43,7 @@ tags: [paper]
 
 - 流式/边缘部署标配技巧；KV 驱逐策略（H2O 等）研究由此展开
 - "softmax 必须有 sink"的理解进入架构设计（SoftMax-off-one 等变体）
+- 诊断谱系延续（2026-09）：[[Do New Attention Mechanisms Actually Fix Attention Sinks at Million-Token Context]]（SinkProbe）把 sink 测量推到 1M 窗口并归因——**训练目标而非架构**产生 sink；工程利用面另见 [[Fine-Tuning a KV Cache Concatenation-Aware Model or Recomputing KV Caches Why Not Both]]（EPIC 以块内 sink 位置选重算 token）
 
 ## 7. 读前须知
 

@@ -47,7 +47,7 @@ KV 压缩格第 5 篇，竞争白热化
 ---
 
 > 谱系枢纽：[[Denoising Diffusion Probabilistic Models（DDPM）]]（图谱连通入口）
-> 近邻同族：[[Dodo- Dynamic Contextual Compression for Decoder-only LMs（Dodo）]] · [[Efficient Streaming Language Models with Attention Sinks（StreamingLLM）]]
+> 近邻同族：[[Dodo- Dynamic Contextual Compression for Decoder-only LMs（Dodo）]] · [[Efficient Streaming Language Models with Attention Sinks（StreamingLLM）]] · [[Fine-Tuning a KV Cache Concatenation-Aware Model or Recomputing KV Caches Why Not Both]]（KV 复用/重算轴，2026-09） · [[SequenceO1 End-to-End Ultra-Long (100K) Sequence Modeling in Recommendation with Low-Rank Caching]]（定长草图压缩轴，2026-09）
 > 数学根基（占位层）：[[KV缓存]]
 
 ## 7. 读前须知

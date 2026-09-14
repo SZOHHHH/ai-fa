@@ -1,6 +1,4 @@
 ---
-> ★ 中文速览（9/7 Tier B）：提出 action-sufficiency gap（视觉丰富≠控制有用），用动作导向的结构监督（几何/可供性/目标三类信号）从**头**引导 WM 中间特征；核心消融：no-injection>injection——监督只走梯度不进推理流。
-> ★ 敌情研判：🟡 E1 思想撞词（已精读划界）：他们教特征学什么（内容侧），我们逼蒸馏保什么（信号侧）；no-injection 消融背书读出头设计——E1 论文可引。
 type: paper
 title: "GIFT: Guided Intermediate Feature Training via Action-Oriented Structural Supervision for Robotic Manipulation"
 aliases: [GIFT, 动作充分性差距引导中间特征训练]
@@ -13,6 +11,9 @@ line: 世界模型与JEPA
 matrix_coords: [表征监督(动作充分性), 中间特征, 机器人模仿(VLA/WAM)]
 tags: [paper]
 ---
+
+> ★ 中文速览（9/7）：提出 action-sufficiency gap（视觉丰富≠控制有用），用动作导向的结构监督（几何/可供性/目标三类信号）从**头**引导 WM 中间特征；核心消融：no-injection>injection——监督只走梯度不进推理流。
+> ★ 敌情研判：🟡 E1 思想撞词（已精读划界）：他们教特征学什么（内容侧），我们逼蒸馏保什么（信号侧）；no-injection 消融背书读出头设计——E1 论文可引。
 
 # GIFT（动作充分性差距：用几何-可供性-目标三路监督塑造中间特征）
 

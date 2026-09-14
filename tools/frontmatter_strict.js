@@ -10,6 +10,18 @@ let bad = 0;
 const check = (p) => {
   const c = fs.readFileSync(p, 'utf8');
   const fm = c.slice(0, c.indexOf('\n---', 3));
+  // ── 结构检查（2026-09-14 CI 事故立法）：GIFT 卡曾因速览引用块插进 --- 与字段之间炸 Quartz ──
+  const lines = c.split('\n');
+  if (lines[0] === '---') {
+    let close = -1;
+    for (let i = 1; i < Math.min(lines.length, 40); i++) if (lines[i] === '---') { close = i; break; }
+    if (close === -1) { console.log('❌ ' + path.relative(ROOT, p) + ' | frontmatter 无闭合 ---'); bad++; }
+    else for (let i = 1; i < close; i++) {
+      const ln = lines[i];
+      if (/^\s*>/.test(ln) || /^#{1,6}\s/.test(ln)) { console.log('❌ ' + path.relative(ROOT, p) + ' | frontmatter 内混入非 YAML 行(第' + (i + 1) + '行): ' + ln.slice(0, 50)); bad++; break; }
+      if (!/^[A-Za-z_][\w-]*\s*:|^\s+-\s|^\s{2,}\S|^<!--|^\s*$/.test(ln)) { console.log('❌ ' + path.relative(ROOT, p) + ' | frontmatter 疑似非 YAML(第' + (i + 1) + '行): ' + ln.slice(0, 50)); bad++; break; }
+    }
+  }
   for (const fld of FIELDS) {
     const m = fm.match(new RegExp('^' + fld + ':\\s*(.+)$', 'm'));
     if (!m) continue;

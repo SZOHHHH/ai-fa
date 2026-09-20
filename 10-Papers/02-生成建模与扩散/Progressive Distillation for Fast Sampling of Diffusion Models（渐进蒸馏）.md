@@ -9,6 +9,7 @@ arxiv: "2202.00512"
 line: 生成建模与扩散
 matrix_coords: [扩散/score, 像素空间, 蒸馏(轨迹)]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # Progressive Distillation（渐进蒸馏）

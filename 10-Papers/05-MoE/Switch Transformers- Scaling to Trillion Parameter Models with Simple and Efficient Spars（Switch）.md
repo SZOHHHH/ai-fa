@@ -9,6 +9,7 @@ arxiv: "2101.03961"
 line: MoE
 matrix_coords: [token级, Top-K稀疏路由, 容量因子]
 tags: [paper]
+pdf: 未下载
 ---
 
 # Switch Transformer

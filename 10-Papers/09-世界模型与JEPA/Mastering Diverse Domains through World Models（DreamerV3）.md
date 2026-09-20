@@ -9,6 +9,7 @@ arxiv: "2301.04104"
 line: 世界模型与JEPA
 matrix_coords: [奖励驱动(RL内部模型), 潜在状态, 游戏控制(RL)]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # DreamerV3（一套超参通吃 150+ 域的通用世界模型 RL）

@@ -9,6 +9,7 @@ arxiv: "1512.03385"
 line: 架构演进
 matrix_coords: [CNN, —, 无状态]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # ResNet（残差网络）

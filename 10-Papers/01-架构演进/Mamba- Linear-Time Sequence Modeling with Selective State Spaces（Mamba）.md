@@ -9,6 +9,7 @@ arxiv: "2312.00752"
 line: 架构演进
 matrix_coords: [循环/状态, IO感知, 有状态]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # Mamba（选择性状态空间）

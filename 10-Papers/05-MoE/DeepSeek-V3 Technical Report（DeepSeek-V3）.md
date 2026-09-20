@@ -40,6 +40,7 @@ $$
 ## 6. 影响与占位意义
 
 B18 奠基补齐：MoE 线的当代旗舰锚点。
+- → 后继补记（260918）：[[10-Papers/05-MoE/DeepSeek-V4.1-Flash Pushing the Limits of KV Cache Compression|DeepSeek-V4.1-Flash]]（552B 多模态 MoE 后继：把 MLA 以降的 KV 压缩推到极限，主打长 horizon agent 的重输入负载）
 
 > 近邻同族：[[DeepSeekMoE- Towards Ultimate Expert Specialization in Mixture-of-Experts Language Model（DeepSeekMoE）]]
 

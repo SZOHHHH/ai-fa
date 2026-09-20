@@ -9,6 +9,7 @@ arxiv: "2303.01469"
 line: 生成建模与扩散
 matrix_coords: [扩散/score, 像素空间, 一致性(自举)]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # Consistency Models（一致性模型）

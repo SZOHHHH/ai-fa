@@ -9,6 +9,7 @@ arxiv: "2212.04356"
 line: 多模态
 matrix_coords: [编码器接口, 匹配, 接口级]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # Whisper（语音识别）

@@ -52,6 +52,7 @@ undefined
 > 谱系枢纽：[[Longformer- The Long-Document Transformer（Longformer）]]（图谱连通入口）
 
 > 近邻同族：[[Efficient Streaming Language Models with Attention Sinks（StreamingLLM）]] · [[Information-Aware KV Cache Compression for Long Reasoning（InfoKV）]]
+> 近邻同族（续，260919）：[[10-Papers/06-长上下文/Video-HolmesV2 Can MLLMs Reason with Spatio-Temporal Audio-Visual Evidence in Long Videos|Video-HolmesV2]]（长视频侧 token 压缩：音-文本引导蒸馏高价值推理线索，对抗"证据-上下文"权衡）
 
 > 数学根基：[[KV缓存]]
 

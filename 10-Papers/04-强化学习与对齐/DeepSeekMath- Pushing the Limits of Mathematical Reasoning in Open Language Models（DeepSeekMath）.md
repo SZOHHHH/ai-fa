@@ -9,6 +9,7 @@ arxiv: "2402.03300"
 line: 强化学习与对齐
 matrix_coords: [RLVR(可验证), RL目标(在线), 有]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # DeepSeekMath（GRPO 出处）

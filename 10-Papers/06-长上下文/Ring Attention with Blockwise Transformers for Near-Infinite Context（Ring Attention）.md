@@ -9,6 +9,7 @@ arxiv: "2310.01889"
 line: 长上下文
 matrix_coords: [系统/流式, 注意力结构层, 分块分布式]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # Ring Attention
@@ -43,6 +44,7 @@ tags: [paper]
 
 - 长上下文训练基础设施（Llama-3-128k、百万上下文研究）
 - Ring-FlashAttention3 等工程演进
+- 后继补记（260919）：[[10-Papers/06-长上下文/Block Parallelism For Efficient Distributed Long-Context Diffusion Language Model Training|Block Parallelism]]（CP 的 BDLM 专用继任：块所有权并行+上下文分片，corrupted KV 不再跨卡——序列维并行的通信维度重构）
 
 ## 7. 读前须知
 

@@ -9,6 +9,7 @@ arxiv: "2105.05233"
 line: 生成建模与扩散
 matrix_coords: [扩散/score, 像素空间, score匹配]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # Diffusion Models Beat GANs（分类器引导 ADM）

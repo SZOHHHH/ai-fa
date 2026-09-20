@@ -9,6 +9,7 @@ arxiv: "1912.01603"
 line: 世界模型与JEPA
 matrix_coords: [奖励驱动(RL内部模型), 潜在状态, 游戏控制(RL)]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # Dreamer（潜空间想象 RL：世界模型成为通用 RL 引擎）
@@ -53,6 +54,8 @@ $$\max_\theta\;\mathbb{E}_{s_{1:H}\sim p_\phi}\Big[\;V_\lambda\big(s_{1:H}\big)\
 - "世界模型+想象训练"成为模型基 RL 的主流形态；DreamerV2/V3/Stochastic Dreamer 持续迭代；
 - 梯度穿梦的技术被扩散世界模型直接继承（DIAMOND 的 actor-critic 在扩散梦里用同样的 λ-return+自举结构）；
 - 局限：模型误差进梯度（长梦漂移）；潜空间丢信息（"压缩即伤害"争论由后续像素路线发起）。
+
+- → 后继补记（260914）：[[10-Papers/09-世界模型与JEPA/RodForesight - A World Model Enhanced Diffusion Policy for Slender and Material Agnostic Rod Insertion（杆件插装）|RodForesight]]（想象用途变体：在想象中"选择"而非"训练"——WM 预演评估候选动作块）
 
 ## 7. 读前须知
 

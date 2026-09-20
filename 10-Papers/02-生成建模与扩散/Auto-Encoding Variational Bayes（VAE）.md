@@ -9,6 +9,7 @@ arxiv: "1312.6114"
 line: 生成建模与扩散
 matrix_coords: [变分, 像素空间, 重参数]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # Auto-Encoding Variational Bayes（VAE）

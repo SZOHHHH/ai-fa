@@ -9,6 +9,7 @@ arxiv: "2405.14867"
 line: 生成建模与扩散
 matrix_coords: [扩散/score, 像素空间, 蒸馏(分布匹配)]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # DMD2（分布匹配蒸馏二代）

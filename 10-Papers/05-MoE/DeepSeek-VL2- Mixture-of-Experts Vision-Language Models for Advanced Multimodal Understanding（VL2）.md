@@ -43,6 +43,7 @@ MoE×多模态交叉的第一批代表（DeepSeek 系）
 ## 6. 影响后续
 
 需要：DeepSeekMoE 细粒度专家（库内有卡）；动态 tiling=粒度轴思想在视觉输入侧的应用
+- → 后继补记（260918）：[[10-Papers/05-MoE/Multi-View Mixture-of-Experts with Vision-Language Reranking for Cross-View Object Geo-Localization|MVLGeo]]（MoE×视觉语言家族应用面扩张：多视角统一+VLM 重排序做跨视角地理定位）
 
 ## 7. 读前须知
 

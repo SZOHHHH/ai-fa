@@ -9,6 +9,7 @@ arxiv: "2002.02925"
 line: 后处理与压缩
 matrix_coords: [知识(行为), 蒸馏, 微调期]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # BERT-of-Theseus（模块替换压缩）

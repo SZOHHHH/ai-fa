@@ -45,3 +45,8 @@ $$p(y \mid x) = \frac{p(y, z \mid x)}{p(z \mid x, y)} \le p(y, z \mid x)$$
 - [[40-Concepts/马尔可夫链]]：生成即逐步展开
 - [[40-Concepts/期望]]：Self-Consistency 的边缘化视角
 - [[30-Formulas/GRPO目标]]：R1 时代 CoT 被 RL 塑形
+
+- → 后继补记（260916）：[[10-Papers/07-推理模型/Continuous Actions from Discrete Minds Latent-Aligned Planning for End-to-End Autonomous Driving|Continuous Actions from Discrete Minds]]（CoT 落地控制：离散推理到连续动作）
+
+- → 后继补记（260916）：[[10-Papers/07-推理模型/Legibility is Not Interpretability Comparing Judged and Actual Importance in Chain-Of-Thought Reason|Legibility is Not Interpretability]]（CoT 语义审计：可读≠可解释）
+- → 后继补记（260917）：[[10-Papers/03-后处理/Rollback the World, Keep the Reflection Rollback-Induced Reflection for Long-Horizon LLM Agents|RIR]]（反思记忆=CoT 的经验固化形态：回滚环境状态但保留从被弃轨迹蒸馏的结构化反思，指导后续决策）

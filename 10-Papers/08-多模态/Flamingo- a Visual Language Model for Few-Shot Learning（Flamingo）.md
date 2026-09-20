@@ -9,6 +9,7 @@ arxiv: "2204.14198"
 line: 多模态
 matrix_coords: [投影接口, 生成(条件LM), 深对齐]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # Flamingo

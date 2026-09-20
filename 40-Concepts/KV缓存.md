@@ -27,6 +27,7 @@ $$\text{KV Cache} = 2 \times n_{\text{layers}} \times n_{\text{ctx}} \times h_{\
   2. 压缩表示：MLA 低秩潜在 → [[10-Papers/01-架构演进/DeepSeek-V2- A Strong, Economical, and Efficient Mixture-of-Experts Language Model（MLA）]]
   3. 投机采样/前缀共享：系统层方案
 - **PagedAttention**：操作系统式分页管理碎片化 cache（vLLM 核心）
+- → 压缩极限新锚（260918）：[[10-Papers/05-MoE/DeepSeek-V4.1-Flash Pushing the Limits of KV Cache Compression|DeepSeek-V4.1-Flash]]（552B 多模态 MoE 正面攻坚 prefill 计算+HBM/SSD 存储+传输带宽三重瓶颈）
 - 与 [[30-Formulas/注意力计算复杂度]] 联动：prefill 是 compute-bound、decode 是 memory-bound
 
 ## 3. 为什么 AI 需要它

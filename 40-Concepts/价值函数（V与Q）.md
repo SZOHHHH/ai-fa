@@ -44,3 +44,5 @@ $$V^\pi(s)=\sum_a\pi(a\mid s)\,Q^\pi(s,a),\qquad Q^\pi(s,a)=r(s,a)+\gamma\,\math
 - ← 数学地基：[[40-Concepts/马尔可夫决策过程]]（价值定义在 MDP 上）、[[40-Concepts/贝尔曼方程]]（价值的递归分解）、[[40-Concepts/期望]]（定义即条件期望）
 - → 消费者：[[40-Concepts/策略梯度定理]]（V 作 baseline）、[[40-Concepts/TD误差与自举]]（学习它的误差信号）、[[40-Concepts/广义优势估计GAE]]（V 与 Q 之差的平滑版）
 - 论文侧：[[10-Papers/04-强化学习与对齐/Playing Atari with Deep Reinforcement Learning（DQN）|DQN]]（从像素直接学 Q）；世界模型系（Dreamer/DIAMOND）的 critic 头=V
+
+- → 后继补记（260916）：[[10-Papers/04-强化学习与对齐/TreeFI Value-Aware Statistical Fault Injection for Deep Neural Networks|TreeFI]]（V 函数当诊断仪表：价值感知故障注入）

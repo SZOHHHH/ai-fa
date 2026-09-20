@@ -9,6 +9,7 @@ arxiv: "1406.2661"
 line: 生成建模与扩散
 matrix_coords: [对抗, 像素空间, 对抗(矩匹配)]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # Generative Adversarial Networks（GAN）

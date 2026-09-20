@@ -22,6 +22,7 @@ tags: [algo]
 | Dr. GRPO（2025） | 修长度/难度偏置（去 std 归一化） | 2025 |
 | [[10-Papers/04-强化学习与对齐/ThinkPrior Zero-Rollout Difficulty Priors for Cold-Start Prompt Selection in RLVR]] | 零 rollout 难度先验：冷启动挑 prompt，避开零优势静默组（省 39% rollout 浪费） | 2026 |
 | [[10-Papers/04-强化学习与对齐/Eliciting Self-Verification in Multimodal Reasoning Agents with Reinforcement Learning]] | GRPO 训多模态智能体自发自我验证（SVRL） | 2026 |
+| [[10-Papers/04-强化学习与对齐/Salesforce Koa An Enterprise Language Model for Agentic Tool Use]] | GRPO 工业化：Agent Script 规格展开成仿真任务+接地任务解决奖励（企业智能体工具使用） | 2026 |
 | （概念源）Karpathy 2025 趋势论：RLVR = LLM 训练新阶段 | — |
 
 ## 3. 核心公式
@@ -54,3 +55,7 @@ tags: [algo]
 | 典型用途 | 通用对齐 | 推理/可验证任务 | 快速对齐 |
 
 **RLVR 的一句话定位**：把"对齐"从"听人类的"扩展到"听事实的"——奖励来自可验证世界（编译器、单元测试、答案核对），这是 2025 后推理模型训练的主干。
+
+- → 后继补记（260916）：[[10-Papers/07-推理模型/Sequential Beats Joint On the Interplay between On-Policy Distillation and RLVR|Sequential Beats Joint]]（OPD-then-RLVR 串行胜过加权联合（0911 ⑦推荐））
+
+- → 后继补记（260916）：[[10-Papers/07-推理模型/Spurious Advantage Hidden in GRPO|Spurious Advantage]]（GRPO 的隐性优势缺陷诊断）

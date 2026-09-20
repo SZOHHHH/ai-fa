@@ -1,7 +1,7 @@
 ---
 type: paper
-title: "A*-Thought-V2: Efficient Latent Reasoning via Geometric Dynamics of LLM"
-aliases: [A*-Thought-V2]
+title: "Astar-Thought-V2: Efficient Latent Reasoning via Geometric Dynamics of LLM"
+aliases: [Astar-Thought-V2]
 year: 2026
 authors: [Xiaoang Xu, Siyuan Liu, Shuo Wang, et al.]
 venue: arXiv 2609.07821（2026-09-07，北邮 + OpenBMB 等）

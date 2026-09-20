@@ -8,6 +8,7 @@ venue: NeurIPS 2022
 arxiv: "2203.15556"
 line: 标杆锚点
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # Chinchilla（算力最优）

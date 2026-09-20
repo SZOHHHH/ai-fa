@@ -9,6 +9,7 @@ arxiv: "2402.09353"
 line: 后处理与压缩
 matrix_coords: [权重, 低秩, 微调期]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # DoRA

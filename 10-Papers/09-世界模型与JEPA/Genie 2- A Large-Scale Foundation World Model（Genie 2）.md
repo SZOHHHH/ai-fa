@@ -46,6 +46,9 @@ tags: [paper]
 - "世界模型=游戏引擎"叙事的最强公开证据；具身训练环境合成（sim-to-real 数据工厂）
 - 与 Sora 系的边界：交互性 vs 影视级画质
 
+- → 后继补记（260914）：[[10-Papers/09-世界模型与JEPA/Pelican-Sim 1.0 - A General World Model Simulator for Embodied Intelligence（具身WM仿真器）|Pelican-Sim 1.0]]（具身域的"通用基础 WM"实例：统一动作空间跨本体+渲染式动作注入）
+- → 后继补记（260918）：[[10-Papers/02-生成建模与扩散/Astronex-World 1.0 Real-Time Interactive World Model Foundation|Astronex-World 1.0]]（开源侧"基础交互 WM"新锚：两卡 L20 后训练 Wan2.2 先验，因果形态单卡实时流式）
+
 ## 7. 读前须知
 
 [[20-Algorithms/世界模型]]、[[10-Papers/09-世界模型与JEPA/Genie- Generative Interactive Environments（Genie）]]、[[10-Papers/08-多模态/Sora 技术报告- Video Generation Models as World Simulators（Sora）]]

@@ -9,6 +9,7 @@ arxiv: "2203.02155"
 line: 强化学习与对齐
 matrix_coords: [成对比较, RL目标(在线), 有]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # InstructGPT
@@ -45,6 +46,7 @@ tags: [paper]
 - ChatGPT 的技术底座；"对齐税"（alignment tax）概念实证
 - 催生 Alpaca/self-instruct 等指令数据生态
 - 三阶段范式被 [[Direct Preference Optimization- Your Language Model is Secretly a Reward Model（DPO）|DPO]] 论文当作靶子（"两步就够了"）
+- → 后继补记（260916）：[[10-Papers/05-MoE/Good Pretraining, Bad SFT Checkpoint Quality Across the Training Stack|Good Pretraining, Bad SFT]]（"预训练指标好≠SFT 后好"——三阶段范式的 checkpoint 质量横切视角）
 
 ## 7. 读前须知
 

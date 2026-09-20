@@ -9,6 +9,7 @@ arxiv: "2305.14314"
 line: 后处理与压缩
 matrix_coords: [适配参数, 量化, 微调期]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # QLoRA

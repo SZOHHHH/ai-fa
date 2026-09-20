@@ -53,6 +53,8 @@ $$\tilde x_t=\mathrm{noise}\big(x_t,\,\sigma_{k_t}\big),\qquad \mathcal{L}=\math
 - "稳定长视频生成"的关键技巧源头之一（部分去噪记忆）；
 - 局限：训练/推理组合空间大、调参面宽；逐帧噪声条件使框架重（比 DIAMOND 式单帧链贵）。
 
+- → 后继补记（260914）：[[10-Papers/09-世界模型与JEPA/VideoTok4D - A 4D-Aware Video Tokenizer for Compact World Representation（4D视频分词器）|VideoTok4D]]（"在什么粒度组织序列+扩散"的又一数据点：解耦 token 空间上的扩散先验）
+
 ## 7. 读前须知
 
 - **必前置**：[[30-Formulas/DDPM前向过程]]、[[40-Concepts/注意力机制]]；

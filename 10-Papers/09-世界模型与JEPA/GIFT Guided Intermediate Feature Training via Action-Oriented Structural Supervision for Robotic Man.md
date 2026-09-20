@@ -69,6 +69,8 @@ tags: [paper]
 - 方法论上确立两个可迁移结论：①**监督只走梯度不走推理**（no-injection 优于 injection）——"表征塑造"与"输入增广"的分离实验设计干净，此后类似设计都绕不开引用这张消融表；②**跨动作范式通用的表征原则**（同一 λ 配方直接迁移回归/扩散/IDM 三种头）；
 - 对我们：E1 论文 Related Work 的"表征侧近邻"必引+一段划界；其消融（Table 4 各路监督分扰动类型的增益：几何救相机扰动、可供性救初始状态扰动、目标救背景/噪声）提供了"结构×扰动类型"对应关系的现成证据格式，E1 消融表可借鉴此布局呈现"读出项×游戏类型"。
 
+- → 后继补记（260914）：[[10-Papers/09-世界模型与JEPA/RodForesight - A World Model Enhanced Diffusion Policy for Slender and Material Agnostic Rod Insertion（杆件插装）|RodForesight]]（机器人操作域邻格：动作导向监督 vs 动作条件预测评估）
+
 ## 7. 读前须知
 
 - **必前置**：[[40-Concepts/逆动力学（IDM）]]（WAM-IDM 变体的动作机制）、[[40-Concepts/知识蒸馏]]（教师特征对齐的母框架——注意本文不是严格蒸馏：VGGT 是特征教师非生成教师）、[[20-Algorithms/世界模型]]（WAM 语境）；

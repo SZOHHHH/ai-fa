@@ -9,6 +9,7 @@ arxiv: "2010.02502"
 line: 生成建模与扩散
 matrix_coords: [扩散/score, 像素空间, 积分器(确定性采样)]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # Denoising Diffusion Implicit Models（DDIM）

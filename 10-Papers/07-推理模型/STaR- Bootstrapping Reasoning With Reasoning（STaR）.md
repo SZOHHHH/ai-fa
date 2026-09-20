@@ -9,6 +9,7 @@ arxiv: "2203.14465"
 line: 推理模型
 matrix_coords: [自我引导, 链, 自举(合理性过滤)]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # STaR（自举推理）

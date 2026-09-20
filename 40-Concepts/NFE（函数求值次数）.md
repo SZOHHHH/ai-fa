@@ -40,3 +40,7 @@ $$\text{NFE} = \text{去噪步数} = \text{每生成一张图/一帧，调用了
 - ← 采样语境：[[30-Formulas/概率流ODE]]（扩散采样=积分它，步数即 NFE）
 - ← 每次求值在问什么：[[40-Concepts/Score函数]]（调一次去噪网络 ≈ 问一次 score 场）
 - 应用侧：[[10-Papers/09-世界模型与JEPA/Diffusion for World Modeling- Visual Details Matter in Atari（DIAMOND）|DIAMOND]]（每帧 3 NFE = 想象训练主成本）、[[10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）|DMD]]（蒸馏到 1 NFE 的代表）、[[10-Papers/02-生成建模与扩散/Distilled Continuous Diffusion Language Models Can Write Code in Few Steps---or One|PlaidQ]]（语言域少步蒸馏：K+1 NFE 计数、K=1 处 DMD 失效需配对监督）
+
+- → 后继补记（260916）：[[10-Papers/01-架构演进/LookThere! Sparse Vision by Reinforced Selection|LookThere!]]（视觉输入端的 NFE 削减：强化学习选关键像素）
+- → 后继补记（260917）：[[10-Papers/02-生成建模与扩散/StrucPhysVideo Learning Physical Dynamics from Structured Captions and Robot Actions|StrucPhysVideo]]（少步蒸馏落交互 WM：IA2V 动作条件自回归 rollout 压到 4 步去噪/帧——蒸馏动机=rollout 效率、评估=Physics-IQ 生成指标，无决策维度；与 E1"少步×决策保真"格的差异实证）
+- → 后继补记（260919）：[[10-Papers/02-生成建模与扩散/AlayaVista Streaming World Modeling from Panoramic States to Perspective Video|AlayaVista]]（双分支 4 步蒸馏落流式全景 WM：一致性蒸馏初始化→Self-Forcing+++分布匹配；动机=流式效率、评估=视觉质量/相机可控——无决策维度，E1 对照组再+1）

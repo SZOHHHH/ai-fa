@@ -9,6 +9,7 @@ arxiv: "1803.10122"
 line: 世界模型与JEPA
 matrix_coords: [像素重建(生成式), 显式像素, 游戏控制(RL)]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # World Models（世界模型奠基之作）

@@ -9,6 +9,7 @@ arxiv: "2405.16852"
 line: 生成建模与扩散
 matrix_coords: [扩散, EM矩匹配, 蒸馏预训练]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # EM Distillation（EM 蒸馏）

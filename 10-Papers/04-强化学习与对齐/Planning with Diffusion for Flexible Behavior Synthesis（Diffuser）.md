@@ -60,3 +60,5 @@ $$p_\theta(\tau\mid\mathcal{C})\;\propto\;p_\theta(\tau)\cdot p(\mathcal{C}\mid\
 - **必前置**：[[30-Formulas/DDPM训练目标]]、[[30-Formulas/无分类器引导（CFG）]]、[[40-Concepts/后验采样与planning-as-inference]]；
 - **易混点**：①Diffuser 生成的是**整条 (s,a) 轨迹**，不是只生成动作（状态也被生成/协调）；②它与"世界模型蒸馏"无直接关系（离线 vs 在线交互、低维 vs 像素）；③inpainting 钉住的是**轨迹的首尾状态**，"动作是生成的"这一点容易读漏；
 - **读法建议**：图 1（"规划=去噪"概念图）→ 图 2（约束钉住的采样过程）→ §3.2 引导公式；实验看 Maze2D 目标到达即可。
+
+- → 后继补记（260916）：[[10-Papers/02-生成建模与扩散/Solaris Towards Interfaces That Are Generated, Not Coded|Solaris]]（扩散规划走出游戏/机器人：生成式接口）

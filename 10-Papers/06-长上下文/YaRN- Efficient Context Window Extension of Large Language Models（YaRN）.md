@@ -9,6 +9,7 @@ arxiv: "2309.00071"
 line: 长上下文
 matrix_coords: [位置外推, 位置表示层, 旋转角度缩放]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # YaRN
@@ -43,6 +44,8 @@ NTK-aware 插值 + 注意力温度修正 + 渐进外推——RoPE 扩展方法�
 
 - 事实标准之一（vLLM 等推理框架内置）；Qwen/DeepSeek 长上下文引用
 - "频率谱手术"成为 RoPE 扩展的通用语言
+
+- → 后继补记（260914）：[[10-Papers/06-长上下文/AdaRoPE - Not All Attention Heads Should Rotate and Scale Equally（自适应RoPE）|AdaRoPE]]（实证本卡式"统一缩放"外推次优：逐头缩放更保短上下文性能）
 
 ## 7. 读前须知
 

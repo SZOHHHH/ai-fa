@@ -9,6 +9,7 @@ arxiv: "2403.19887"
 line: 架构演进
 matrix_coords: [混合, KV压缩, 混合状态]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # Jamba（混合架构）

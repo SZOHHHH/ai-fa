@@ -9,6 +9,7 @@ arxiv: "2002.05202"
 line: 架构演进
 matrix_coords: [全注意力, 归一化/激活, 无状态]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # SwiGLU（GLU 变体）

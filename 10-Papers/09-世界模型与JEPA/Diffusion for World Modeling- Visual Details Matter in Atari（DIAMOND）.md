@@ -53,6 +53,9 @@ $$x_{t+1}\;\sim\;p_\theta\big(x\,\big|\,x_{t-3:t},\,a_{t-3:t}\big)\ \text{（扩
 - 附录 L 的步数消融与图 4 的叠影可视化，成为"生成保真与决策可用"讨论中被反复引用的两个图；
 - 局限：每帧 3 次去噪前向使想象训练昂贵（串行链，GPU 并行救不了）；40 游戏平均分仍低于非想象训练混血方法（如 EfficientZero）；单种子消融的步数结论有待多 seed 复核。
 
+- → 后继补记（260914）：[[10-Papers/09-世界模型与JEPA/Pelican-Sim 1.0 - A General World Model Simulator for Embodied Intelligence（具身WM仿真器）|Pelican-Sim 1.0]]（像素级动作条件 WM 在机器人域的对应物；其少步蒸馏目标仍是生成指标——对照本卡"视觉细节决策相关"论点的反面镜）
+- → 后继补记（260918）：[[10-Papers/02-生成建模与扩散/Astronex-World 1.0 Real-Time Interactive World Model Foundation|Astronex-World 1.0]]（"扩散当动力学"从游戏域放大到 5B 视频先验的基础模型化对应物；其少步蒸馏配运动保持正则但目标仍是生成指标——E1 决策保真格仍空）
+
 ## 7. 读前须知
 
 - **必前置**：[[10-Papers/02-生成建模与扩散/Elucidating the Design Space of Diffusion-Based Generative Models（EDM）|EDM]]、[[40-Concepts/NFE（函数求值次数）]]、[[Dream to Control- Learning Behaviors by Latent Imagination（Dreamer）|Dreamer]]；

@@ -9,6 +9,7 @@ arxiv: "2204.13902"
 line: 生成建模与扩散
 matrix_coords: [扩散, 积分器/调度, 无训练]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # DEIS（指数积分器快采样）

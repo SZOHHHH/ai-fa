@@ -5,7 +5,9 @@ const ROOT = path.resolve(__dirname, '..');
 const files = [];
 function walk(d) {
   for (const f of fs.readdirSync(d)) {
-    if (f === 'dist') continue; // 发布副本不参与库级验收
+    // 库级验收只扫内容区：dist=发布副本 / node_modules=依赖包文档 / site+atlas=自研前端工程区
+    // （260917 立法：工程目录的 md=依赖 README+构建副本，不属库内容——B49"检查器口径对齐"教训应验）
+    if (f === 'dist' || f === 'node_modules' || f === 'site' || f === 'atlas') continue;
     const p = path.join(d, f);
     const s = fs.statSync(p);
     if (s.isDirectory() && !f.startsWith('.')) walk(p);

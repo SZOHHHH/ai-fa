@@ -8,6 +8,7 @@ venue: JMLR 2023
 arxiv: "2204.02311"
 line: 标杆锚点
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # PaLM

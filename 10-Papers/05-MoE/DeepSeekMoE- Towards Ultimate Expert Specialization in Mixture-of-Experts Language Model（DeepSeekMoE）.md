@@ -9,6 +9,7 @@ arxiv: "2401.06066"
 line: MoE
 matrix_coords: [token级, 细粒度分段, 辅助均衡损失]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # DeepSeekMoE
@@ -44,6 +45,8 @@ tags: [paper]
 
 - DeepSeek-V2/V3/R1 的 MoE 骨架——低成本训练的组件之一
 - "共享专家"被 Qwen 等广泛采纳
+
+- → 后继补记（260914）：[[10-Papers/05-MoE/SMELT - Scaling Laws for Compute-Matched MoE Looped Transformers（循环MoE缩放律）|SMELT]]（MoE×循环深度复用的计算匹配 scaling）、[[10-Papers/09-世界模型与JEPA/Pelican-Sim 1.0 - A General World Model Simulator for Embodied Intelligence（具身WM仿真器）|Pelican-Sim 1.0]]（稀疏 MoE 吸收动作模态/异构动力学的具身 WM 实例）
 
 ## 7. 读前须知
 

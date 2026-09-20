@@ -9,6 +9,7 @@ arxiv: "2210.02747"
 line: 生成建模与扩散
 matrix_coords: [流, 像素空间, 回归(CFM)]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # Flow Matching（流匹配）

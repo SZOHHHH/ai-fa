@@ -9,6 +9,7 @@ arxiv: "2311.18828"
 line: 生成建模与扩散
 matrix_coords: [扩散/score, 像素空间, 蒸馏(分布匹配)]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # DMD（分布匹配蒸馏）
@@ -49,6 +50,7 @@ tags: [paper]
 - [[Improved Distribution Matching Distillation for Fast Image Synthesis（DMD2）|DMD2]]（2024）：加教师CFG、少步扩展，效果再上台阶
 - 语言域移植：[[Distilled Continuous Diffusion Language Models Can Write Code in Few Steps---or One|PlaidQ]]（2026）把 DMD+DMD2 配方搬进连续扩散 LM 的 4/8/16 步蒸馏，并发现 K=1 时 DMD 失效需换配对轨迹监督
 - SDXL-Turbo / SD-Turbo 商用一步生成的主要技术来源
+- 噪声段调度（260916）：[[CrossDistill Balancing Quality and Diversity via Trajectory-Level Hybrid Few-Step Distillation|CrossDistill]]（2026）把 DMD 装进低噪段 $[0,\tau^\star]$、高噪段留给轨迹保持目标——"DM 只管细节锐化、不管全局模式"的区间化用法（其反向调度对照证明 DM 放高噪段会压掉种子级分支）
 - "分布级蒸馏 + 对抗补细节"配方被广泛复制
 
 ## 7. 读前须知

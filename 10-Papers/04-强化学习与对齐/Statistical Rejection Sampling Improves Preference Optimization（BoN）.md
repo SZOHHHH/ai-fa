@@ -9,6 +9,7 @@ arxiv: "2309.06657"
 line: 强化学习与对齐
 matrix_coords: [评分/排序, RL目标(在线), 有]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # BoN（拒绝采样偏好优化）

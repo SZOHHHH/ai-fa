@@ -9,6 +9,7 @@ arxiv: "1711.00937"
 line: 生成建模与扩散
 matrix_coords: [变分, 离散码本, ELBO重加权]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # Neural Discrete Representation Learning（VQ-VAE）
@@ -45,6 +46,7 @@ tags: [paper]
 - 被 [[10-Papers/02-生成建模与扩散/Taming Transformers for High-Resolution Image Synthesis（VQGAN）]] 发展为 VQGAN（+感知损失+Transformer 先验）
 - 奠基了 DALL·E 系与视频 tokenizer（Sora 报告中的时空 patch 压缩一脉）
 - 与 [[High-Resolution Image Synthesis with Latent Diffusion Models（LDM）|LDM]] 的连续 AE 形成压缩器两大流派
+- 生成式检索分支（260916）：RQ-VAE 语义前缀成为 [[10-Papers/04-强化学习与对齐/VARG Value-Aware and Ranking-Aligned Generative Retrieval for Dynamic E-commerce Search|VARG]]（天猫搜索）的"物品地址"——离散码本从重建工具变检索接口
 
 ## 7. 读前须知
 

@@ -9,6 +9,7 @@ arxiv: "1706.03741"
 line: 强化学习与对齐
 matrix_coords: [成对比较, RL目标(在线), 有]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # Deep RL from Human Preferences（RLHF 开山）
@@ -46,6 +47,7 @@ tags: [paper]
 - 被 [[Training language models to follow instructions with human feedback（InstructGPT）|InstructGPT]] 搬进 LLM——ChatGPT 的直系技术源头
 - 作者群（Christiano/Leike/Brown/Amodei）后来构成 OpenAI 与 Anthropic 的核心——论文即"对齐"事业起点
 - "reward hacking / scalable oversight" 研究议程由此展开
+- → 后继补记（260916）：[[10-Papers/04-强化学习与对齐/Concept-Level Risk and Calibration for Governance in Diffusion Foundation Models|Concept-Level Risk]]（治理视角延伸到扩散基础模型——风险与校准的概念级度量）
 
 ## 7. 读前须知
 

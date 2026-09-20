@@ -25,6 +25,8 @@ tags: [algo]
 | [[10-Papers/05-MoE/From Sparse to Soft Mixtures of Experts（Soft MoE）]] | 连续软混合（离散路由的连续松弛） | 2023 |
 | [[10-Papers/05-MoE/Mixtral of Experts（Mixtral）]] | 开源 MoE 8×7B 顶流 | 2024 |
 | [[10-Papers/05-MoE/DeepSeekMoE- Towards Ultimate Expert Specialization in Mixture-of-Experts Language Model（DeepSeekMoE）]] | 细粒度专家 + 共享专家 | 2024 |
+| [[10-Papers/05-MoE/Chimaera A Mixture-of-Graph-Experts Architecture for Cross-Task and Cross-Dataset Graph Learning]] | MoE 思想跨域移植（图学习跨任务/跨数据集） | 2026 |
+| [[10-Papers/05-MoE/Data Scarcity and Model Sparsity Mixtures-of-Experts Overfit More to Repeated Data]] | 稀疏性风险实证（MoE 更易过拟合重复数据） | 2026 |
 
 ## 3. 核心公式（B4 批建公式页，此处先列骨架）
 
@@ -58,3 +60,6 @@ tags: [algo]
 | 风险点 | — | 负载不均、路由坍缩、专家冗余 |
 
 **与 [[30-Formulas/MLA多头潜在注意力]] 的分工**：MLA 省推理 KV cache、MoE 省激活 FLOPs——DeepSeek 系"省资源双剑客"。
+
+- → 后继补记（260916）：[[10-Papers/01-架构演进/ACE Adaptive Calibration-Free Expert Skipping for MoE-based LLMs|ACE]]（MoE 推理效率轴：免校准专家跳过）
+- → 后继补记（260918）：[[10-Papers/05-MoE/Higher-order pruning of experts in mixture-of-experts language models|HOPE]]（专家剪枝从一阶可加假设升级到二阶协作目标）、[[10-Papers/05-MoE/Infinite-Parameter LLMs Generating and Adapting Weights from Live Data|Infinite-Parameter LLMs]]（静态专家池→活数据生成权重的变体轴）

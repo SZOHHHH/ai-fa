@@ -9,6 +9,7 @@ arxiv: "2405.21060"
 line: 架构演进
 matrix_coords: [循环/状态, IO感知, 有状态]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # Mamba-2（SSD 状态空间对偶）

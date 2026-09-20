@@ -46,3 +46,5 @@ tags: [concept]
 - [[30-Formulas/CLIP对比损失]]：对齐预训练
 - [[40-Concepts/注意力机制]]：连接层的载体
 - [[20-Algorithms/世界模型]]：视频理解的世界模型视角
+
+- → 后继补记（260916）：[[10-Papers/07-推理模型/CORE Improving Compositional Reasoning in MLLM Embedding via Reranker Distillation|CORE]]（MLLM 嵌入的组合推理：重排器蒸馏）

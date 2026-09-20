@@ -9,6 +9,7 @@ arxiv: "2205.10625"
 line: 推理模型
 matrix_coords: [提示触发, 递归分解, 无奖励(上下文)]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # Least-to-Most（由易到难）

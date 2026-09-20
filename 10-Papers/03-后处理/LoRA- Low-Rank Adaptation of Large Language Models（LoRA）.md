@@ -9,6 +9,7 @@ arxiv: "2106.09685"
 line: 后处理与压缩
 matrix_coords: [适配参数, 低秩, 微调期]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # LoRA

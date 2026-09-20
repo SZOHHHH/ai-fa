@@ -9,6 +9,7 @@ arxiv: "2006.16668"
 line: MoE
 matrix_coords: [token级, Top-K稀疏路由, 辅助均衡损失]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # GShard

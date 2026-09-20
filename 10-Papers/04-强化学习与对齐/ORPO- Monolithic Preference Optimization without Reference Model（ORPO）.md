@@ -9,6 +9,7 @@ arxiv: "2403.07691"
 line: 强化学习与对齐
 matrix_coords: [成对比较, 无参考, 无]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # ORPO

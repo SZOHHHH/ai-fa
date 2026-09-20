@@ -9,6 +9,7 @@ arxiv: "2312.14125"
 line: 多模态
 matrix_coords: [生成接口, 生成(条件LM), 完全早期融合]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # VideoPoet

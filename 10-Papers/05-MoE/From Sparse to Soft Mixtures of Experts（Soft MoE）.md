@@ -9,6 +9,7 @@ arxiv: "2308.00951"
 line: MoE
 matrix_coords: [token级, 软混合, 无需(软路由)]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # Soft MoE

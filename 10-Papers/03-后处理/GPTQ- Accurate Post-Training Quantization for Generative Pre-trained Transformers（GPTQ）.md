@@ -9,6 +9,7 @@ arxiv: "2210.17323"
 line: 后处理与压缩
 matrix_coords: [权重, 量化, 训练后]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # GPTQ

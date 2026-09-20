@@ -32,6 +32,7 @@ layer: 占位
 ## 5. 与前作/矩阵关系
 - 线锚：[[20-Algorithms/GRPO与RLVR]] · 数学根基 [[30-Formulas/GRPO目标]]（零优势静默组=组相对优势结构问题）
 - 近邻同族：[[GRPO is Secretly a Process Reward Model（GRPO-PRM）]]（同查 GRPO 组内信号结构）· [[DAPO- An Open-Source LLM Reinforcement Learning System at Scale（DAPO）]]（动态采样同样对付全对/全错组浪费；ThinkPrior 改在数据侧选 prompt，省掉 rollout）
+- 后到同族（260916）：[[Not All Prompts Are Equal Exploration-Guided Prompt Scaffolding for Multimodal Reinforcement Post-Tr]]（EPS 全程动态改 prompt 分布+教师脚手架改写低效用 prompt——与本文互补：冷启动"选" vs 全程"养"，两卡互挂）
 
 ## 6. 影响后续
 （待精读）

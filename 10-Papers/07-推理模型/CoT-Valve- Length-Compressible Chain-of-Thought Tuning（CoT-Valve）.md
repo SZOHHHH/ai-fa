@@ -39,6 +39,7 @@ $$
 ## 5. 与前作/矩阵关系
 
 长度控制三线（s1/k1.5/CoT-Valve）的参数化代表
+- →后继（开销控制家族扩容）：[[SKIP a Self-knowledge-guided Step-wise Preference Learning Framework for Concise Reasoning]]（训练侧按自我知识自适应步数）· [[OBC-Prune Outcome-Based Calibration for Large Reasoning Model Pruning]]（压缩侧按结果贡献保参数）——token 数与参数数两条开销轴自此都有代表
 
 ## 6. 影响后续
 

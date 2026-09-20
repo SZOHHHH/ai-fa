@@ -48,5 +48,7 @@ layer: 占位
 机器人 WAM "从零预训练+缩放规律"的旗舰证据（30k 小时数据、跨本体迁移、技能覆盖-成功相关）；确立"单步生成器=可微世界-动作接口"范式，IDM 可独立吃无标注轨迹预训练。对游戏域 WAM（DIAMOND 系）构成路线压力：单步从零 vs 多步蒸馏之争。
 > 敌情备注（260909）：与 E1（少步生成轴：MeanFlow 从零单步=蒸馏之外的平行路线，无决策保真度量）与 E2（后验反推轴：IDM=p(a|o,s,未来视觉) 即 p(a|x_t,goal) 的机器人版）双轴近邻不撞车，详见晨报 260909 研判；其 IDM 头工程（流匹配动作头/动作恢复探针）与 KASO（生成未来×录制动作的模式失配警示）对两轨皆有直接参照价值。
 
+- → 后继补记（260914）：[[10-Papers/09-世界模型与JEPA/RodForesight - A World Model Enhanced Diffusion Policy for Slender and Material Agnostic Rod Insertion（杆件插装）|RodForesight]]（机器人操作×WM：把 WM 用作预执行评估器而非训练信号）
+
 ## 7. 读前须知
 [[30-Formulas/条件流匹配损失]]与[[20-Algorithms/流匹配]]（流生成基础）、[[Mean Flows for One-step Generative Modeling（MeanFlow）]]（平均速度场思想）、[[40-Concepts/逆动力学（IDM）]]（由果找因的可解性地图）、[[40-Concepts/ELBO]]/[[30-Formulas/VQ-VAE目标]]（自编码器潜空间一族）、动作多模态（同一目标多种完成方式→回归 vs 生成式头的差别）。

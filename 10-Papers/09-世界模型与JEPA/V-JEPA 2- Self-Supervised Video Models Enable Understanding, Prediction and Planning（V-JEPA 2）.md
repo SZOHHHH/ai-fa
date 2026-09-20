@@ -9,6 +9,7 @@ arxiv: "2506.09985"
 line: 世界模型与JEPA
 matrix_coords: [特征预测(JEPA系), 潜在状态, 可操作(动作条件)]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # V-JEPA 2

@@ -23,6 +23,7 @@ $$p(y^+ \succ y^- \mid x) = \frac{\exp r(x, y^+)}{\exp r(x, y^+) + \exp r(x, y^-
 - **与 RLHF 的连接**：奖励模型 $r_\phi$ 的训练损失 = BT 模型的负对数似然（见 [[30-Formulas/RLHF目标]]）
 - **与 DPO 的连接**：把 BT 的闭式奖励代回 RLHF 目标 → [[30-Formulas/DPO损失]]——"奖励模型"被彻底内嵌
 - **局限**：只建模成对偏好，不建模"好多少"（打分模型/回归头如 KTO 所批评）
+- **与 EARS 的连接（260916）**：[[10-Papers/04-强化学习与对齐/Specifying Reward Functions for RL Without Environment Sampling|EARS]] 把 BT 偏好比较搬进 LLM 构造的"想象轨迹特征空间"——不采真轨迹也能从偏好对学特征权重
 
 ## 3. 为什么 AI 鄙需要它
 

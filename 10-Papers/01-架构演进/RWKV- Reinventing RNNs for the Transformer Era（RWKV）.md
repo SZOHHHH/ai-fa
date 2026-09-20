@@ -9,6 +9,7 @@ arxiv: "2305.13048"
 line: 架构演进
 matrix_coords: [循环/状态, 位置编码, 有状态]
 tags: [paper]
+pdf: 未下载
 ---
 
 # RWKV

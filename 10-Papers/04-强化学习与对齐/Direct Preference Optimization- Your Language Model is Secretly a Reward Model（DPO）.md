@@ -9,6 +9,7 @@ arxiv: "2305.18290"
 line: 强化学习与对齐
 matrix_coords: [成对比较, BT排序损失, 有]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # Direct Preference Optimization（DPO）

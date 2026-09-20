@@ -42,4 +42,5 @@ tags: [concept]
 
 - [[40-Concepts/贝尔曼方程]]：$V(z_t)$ 即中间状态的价值函数——PRM 是"推理的 critic"
 - [[40-Concepts/思维链（CoT）]]：作用对象
+- [[10-Papers/04-强化学习与对齐/The Imitation Game When LLMs Learn to Reason Like Programs via Code-Centric Reasoning Data Synthesis]]（MIMIC 的 Code-Instrumented Reward：代码插桩的中间执行状态=免费过程监督，免外部 PRM 的另一路径，260916 挂）
 - [[30-Formulas/GRPO目标]]：另一条路线

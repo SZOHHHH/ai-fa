@@ -9,6 +9,7 @@ arxiv: "2307.08621"
 line: 架构演进
 matrix_coords: [线性注意力, 位置编码, 有状态]
 tags: [paper]
+pdf: 未下载
 ---
 
 # RetNet（保留网络）

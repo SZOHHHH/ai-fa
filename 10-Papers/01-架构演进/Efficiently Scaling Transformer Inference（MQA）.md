@@ -9,6 +9,7 @@ arxiv: "2211.05102"
 line: 架构演进
 matrix_coords: [全注意力, KV压缩, 无状态]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # MQA（多查询注意力）

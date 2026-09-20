@@ -9,6 +9,7 @@ arxiv: "2104.09864"
 line: 架构演进
 matrix_coords: [全注意力, 位置编码, 无状态]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # RoFormer（RoPE 旋转位置编码）
@@ -44,6 +45,8 @@ tags: [paper]
 - LLaMA/Qwen/DeepSeek/GPT-NeoX 全系默认
 - 线 6 的手术对象：PI/NTK/YaRN 全在调 RoPE 的 base（B5 批回填）
 - 生成侧：Flux/SD3 等 [[Scalable Diffusion Models with Transformers（DiT）|DiT]] 也用类似旋转思路处理时间步外的位置
+
+- → 后继补记（260914）：[[10-Papers/06-长上下文/AdaRoPE - Not All Attention Heads Should Rotate and Scale Equally（自适应RoPE）|AdaRoPE]]（直接改造本卡"全局统一频率表"假设：逐头可学习频率+缩放）
 
 ## 7. 读前须知
 

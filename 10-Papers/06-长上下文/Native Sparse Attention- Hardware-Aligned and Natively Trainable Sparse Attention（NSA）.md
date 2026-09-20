@@ -45,6 +45,9 @@ $$o_t = \sum_{b \in \{\text{comp, sel, slide}\}} g_{t,b}\cdot \mathrm{Attn}_b\bi
 
 ACL 2025 正式收录；与 MoBA 并列 2025 稀疏注意力双塔；[[60-Matrices/长上下文机制矩阵]] §3 "稀疏×原生训练"格的主占位（生产验证）。硬件对齐路线延伸（2026-09）：[[AMEND Audited Margins Enable Nonblocking Drops in GPU-PIM LLM Decoding]]——将对齐目标从 tensor core 内核推进到存内计算（HBM-PIM）层。
 
+- → 后继补记（260914）：[[10-Papers/06-长上下文/SAS - Simple Attention Sparsification via End-to-End Optimization of Context Ranking（端到端稀疏注意力）|SAS]]（训练后稀疏化的目标对齐改进：端到端门控替代注意力分布蒸馏）
+- → 后继补记（260914）：[[10-Papers/06-长上下文/RouteRelay - Event-Triggered Cross-Layer Route Reuse for Efficient Dynamic Sparse Attention（跨层路由复用）|RouteRelay]]（router-agnostic 的路由开销优化：跨层复用+事件触发重路由）
+
 ## 7. 读前须知
 
 - 需要：softmax 注意力的块化计算（[[30-Formulas/注意力核心公式]]）

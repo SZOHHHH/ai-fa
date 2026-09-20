@@ -9,6 +9,7 @@ arxiv: "2401.04088"
 line: MoE
 matrix_coords: [token级, Top-K稀疏路由, 辅助均衡损失]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # Mixtral
@@ -43,6 +44,9 @@ tags: [paper]
 
 - DeepSeek 系、Qwen-MoE、DBRX 等跟进——开源 MoE 竞赛
 - 专家路由可解释性讨论进入大众视野
+
+- → 后继补记（260914）：[[10-Papers/05-MoE/SMELT - Scaling Laws for Compute-Matched MoE Looped Transformers（循环MoE缩放律）|SMELT]]（MoE 骨干上叠循环化的 scaling law 实证）
+- → 后继补记（260916）：[[10-Papers/05-MoE/How Fragile Is Safety Alignment at Frontier Scale A Single-Direction Attack on a 320B MoE|How Fragile]]（320B MoE 安全对齐的单方向攻击——MoE 规模化后的安全边界）
 
 ## 7. 读前须知
 

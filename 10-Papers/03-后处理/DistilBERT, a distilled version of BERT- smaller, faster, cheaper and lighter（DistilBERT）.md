@@ -9,6 +9,7 @@ arxiv: "1910.01108"
 line: 后处理与压缩
 matrix_coords: [知识(行为), 蒸馏, 微调期]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # DistilBERT
@@ -43,6 +44,8 @@ tags: [paper]
 
 - Hugging Face 生态默认小模型；端侧部署标配
 - TinyBERT（[[10-Papers/03-后处理/TinyBERT- Distilling BERT for Natural Language Understanding（TinyBERT）]]）两层蒸馏进一步逼近
+
+- → 后继补记（260914）：[[10-Papers/03-后处理/Breaking the Token Ceiling - Distilling Smaller Stronger Byte Models（字节蒸馏scaling）|Token Ceiling（字节蒸馏scaling）]]（固定 tokenization 蒸馏（本卡路线） vs 学生表征可选择的蒸馏 scaling）
 
 ## 7. 读前须知
 

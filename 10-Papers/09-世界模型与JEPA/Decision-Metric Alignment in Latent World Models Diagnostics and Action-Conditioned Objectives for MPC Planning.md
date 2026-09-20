@@ -35,6 +35,7 @@ JEPA 世界模型解码再好，"到目标的 latent 欧氏距离"也不保证�
 
 - 谱系锚：[[20-Algorithms/世界模型]]，[[30-Formulas/MCTS置信上界]]
 - **哨兵研判（9/10 补扫）**：🟢→强同盟（今日最重要的手工补录）：**E1 命题的 latent 版同构**——"latent 距离（表征保真）不保证任务排序（决策保真）"正是我们"像素保真≠决策保真"在潜空间的镜像表述；且修复件恰好是 IDM 头（与 E2 同款）。8/19 发文、哨兵盲区期（每日链 9/6 才建）错过——本次补录。E1 理论章 + E2 动机节双挂。
+- 工程域外部证据（260915）：[[10-Papers/09-世界模型与JEPA/From Prediction to Decision - World-Model-Guided Action Selection for Continuous Pile Excavation（挖掘WAM）|WAM 挖掘]]——固定提案器、只换选择规则的消融把 WM 价值落成决策级数字（铲数 −17.1%）；"预测保真≠决策保真"的机器人域实例，E1 动机节可并列引用。
 
 ## 6. 影响后续
 

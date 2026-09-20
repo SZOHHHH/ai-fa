@@ -9,6 +9,7 @@ arxiv: "2208.07339"
 line: 后处理与压缩
 matrix_coords: [权重, 量化, 训练后]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # LLM.int8()
@@ -43,6 +44,7 @@ tags: [paper]
 
 - 异常值成为 LLM 量化领域的核心研究对象
 - bitsandbytes 库广泛采用；QLoRA 的 NF4 双重量化承接思想
+- → 后继补记（260916）：[[10-Papers/03-后处理/SpQR- A Sparse-Quantized Representation for Near-Lossless LLM Weight Compression（SpQR）|SpQR]]（同作者 Dettmers 把"异常值隔离"从 8bit 行级推到 3-4bit 列级稀疏——近无损边缘部署）
 
 ## 7. 读前须知
 

@@ -9,6 +9,7 @@ arxiv: "2502.13189"
 line: 长上下文
 matrix_coords: [稀疏注意力, 训练/数据层, 可学习路由]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # MoBA（块注意力混合）
@@ -44,6 +45,9 @@ tags: [paper]
 - Kimi 长上下文生产技术；"attention 的 MoE 化"设计空间打开
 - 后续（MoBA++、混合稀疏模式）持续迭代
 - 体系结构侧延伸（2026-09）：[[AMEND Audited Margins Enable Nonblocking Drops in GPU-PIM LLM Decoding]]——同为块级选择，MoBA 在模型侧门控路由，AMEND 在 GPU-PIM 硬件侧用已审计 margin 预测判决
+
+- → 后继补记（260914）：[[10-Papers/06-长上下文/SAS - Simple Attention Sparsification via End-to-End Optimization of Context Ranking（端到端稀疏注意力）|SAS]]（块路由选择器的端到端训练路线）、[[10-Papers/06-长上下文/RouteRelay - Event-Triggered Cross-Layer Route Reuse for Efficient Dynamic Sparse Attention（跨层路由复用）|RouteRelay]]（块路由的跨层复用省打分）
+- → 后继补记（260919）：[[10-Papers/06-长上下文/On-Demand Attention Language Models Know When to Recall|On-Demand Attention]]（"何时读全局"的收益预测路线：轻量 recall 头按预测收益触发全局注意力——MoBA 选读哪些块，ODA 先决要不要读）
 
 ## 7. 读前须知
 

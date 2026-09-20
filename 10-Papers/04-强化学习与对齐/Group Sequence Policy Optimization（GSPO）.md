@@ -9,6 +9,7 @@ arxiv: "2507.18071"
 line: 强化学习与对齐
 matrix_coords: [PPO系, 序列级重要性, 在线RL]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # GSPO（组序列策略优化）
@@ -43,6 +44,7 @@ tags: [paper]
 
 - Qwen3 全系 RL 基座；"比率粒度"成为 RL 稳定化矩阵的轴（token/序列/组）
 - 学术界跟进序列级重要性分析
+- 段级粒度跟进（260916）：[[HISPO Hierarchical Importance-Sampling Policy Optimization with Entropy-Derived Segments|HISPO]] 在 token 级（GRPO/DAPO）与序列级（本文）之间插入熵导出连续段级 IS 修正——"比率粒度"轴再添一格
 
 ## 7. 读前须知
 

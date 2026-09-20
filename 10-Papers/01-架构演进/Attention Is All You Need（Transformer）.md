@@ -9,6 +9,7 @@ arxiv: "1706.03762"
 line: 架构演进
 matrix_coords: [全注意力, IO感知, 无状态]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # Attention Is All You Need（Transformer）

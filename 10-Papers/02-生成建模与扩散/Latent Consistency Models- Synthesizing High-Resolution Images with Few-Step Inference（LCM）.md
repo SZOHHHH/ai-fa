@@ -9,6 +9,7 @@ arxiv: "2310.04378"
 line: 生成建模与扩散
 matrix_coords: [潜扩散, 一致性, 蒸馏预训练]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # LCM（潜一致性模型）

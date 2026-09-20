@@ -57,6 +57,8 @@ tags: [paper, 每日推荐]
 - 给门控注意力的已发表结论划出**规模边界**（其 ~1M 参数阶梯上未复现），提醒机制声明需在部署规模复查
 - 谱系定位：sink 研究"发现（StreamingLLM）→ 利用（KV 驱逐/EPIC）→ 修复（门控）→ **审计**（本文）"四阶段的审计段
 
+- → 后继补记（260914）：[[10-Papers/05-MoE/SMELT - Scaling Laws for Compute-Matched MoE Looped Transformers（循环MoE缩放律）|SMELT]]（跨设定证据补记：计算路径改变（层循环两次）同样削 sink——支持"sink 是训练动态产物"结论）
+
 ## 7. 读前须知
 
 - 前置：[[30-Formulas/注意力核心公式]] · [[40-Concepts/softmax函数]]（归一性是根源）· [[Efficient Streaming Language Models with Attention Sinks（StreamingLLM）]]（sink 命名与流式背景）

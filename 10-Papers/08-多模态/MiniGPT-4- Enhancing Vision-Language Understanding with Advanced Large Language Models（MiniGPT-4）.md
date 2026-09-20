@@ -9,6 +9,7 @@ arxiv: "2304.10592"
 line: 多模态
 matrix_coords: [投影接口, 生成(条件LM), 接口级]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # MiniGPT-4

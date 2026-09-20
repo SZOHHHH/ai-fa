@@ -39,6 +39,7 @@ $$
 ## 5. 与前作/矩阵关系
 
 PRM 自动化标注的事实标准；RS 库已收
+- →后继：[[OBC-Prune Outcome-Based Calibration for Large Reasoning Model Pruning]]（结果信号反哺步级的路线从训练奖励延伸到压缩校准——蒙特卡洛步分换成注意力抑制干预的因果分）
 
 ## 6. 影响后续
 

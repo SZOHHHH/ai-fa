@@ -8,6 +8,7 @@ venue: arXiv 2023
 arxiv: "2303.08774"
 line: 标杆锚点
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # GPT-4 技术报告

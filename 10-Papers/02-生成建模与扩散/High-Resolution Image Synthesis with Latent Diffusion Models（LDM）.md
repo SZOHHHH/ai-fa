@@ -9,6 +9,7 @@ arxiv: "2112.10752"
 line: 生成建模与扩散
 matrix_coords: [扩散/score, 潜空间, score匹配]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # Latent Diffusion Models（LDM / Stable Diffusion）

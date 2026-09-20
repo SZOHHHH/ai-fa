@@ -9,6 +9,7 @@ arxiv: "2403.06807"
 line: 生成建模与扩散
 matrix_coords: [扩散, 一致性, 蒸馏预训练]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # Multistep CM（多步一致性）

@@ -8,6 +8,7 @@ venue: TMLR 2022
 arxiv: "2206.07682"
 line: 标杆锚点
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # 涌现能力（Emergent Abilities）

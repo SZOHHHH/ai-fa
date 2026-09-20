@@ -9,6 +9,7 @@ arxiv: "2306.15595"
 line: 长上下文
 matrix_coords: [位置外推, 位置表示层, 旋转角度缩放]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # 位置插值 PI
@@ -43,6 +44,8 @@ tags: [paper]
 
 - 所有上下文扩展方法的祖师爷；NTK/YaRN/Dynamic NTK 全部引用
 - LLaMA-Long、Qwen 等长版本的技术底座之一
+
+- → 后继补记（260914）：[[10-Papers/06-长上下文/AdaRoPE - Not All Attention Heads Should Rotate and Scale Equally（自适应RoPE）|AdaRoPE]]（位置编码自适应路线延伸：从全局插值到逐头频率学习）
 
 ## 7. 读前须知
 

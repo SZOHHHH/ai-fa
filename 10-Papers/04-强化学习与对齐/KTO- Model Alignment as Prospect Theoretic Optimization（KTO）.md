@@ -9,6 +9,7 @@ arxiv: "2402.01306"
 line: 强化学习与对齐
 matrix_coords: [评分/排序, 闭式/单侧, 有]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # KTO

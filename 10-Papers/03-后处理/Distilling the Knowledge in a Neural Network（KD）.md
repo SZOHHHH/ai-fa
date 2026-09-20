@@ -9,6 +9,7 @@ arxiv: "1503.02531"
 line: 后处理与压缩
 matrix_coords: [知识(行为), 蒸馏, 训练后]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # 蒸馏（Hinton KD：暗知识的发现）
@@ -51,6 +52,8 @@ $$\mathcal{L}_{distill}\;=\;\tau^2\,\mathrm{KL}\Big(\mathrm{softmax}\big(z_T/\ta
 - 温度成为通用旋钮（对比学习/RLHF/测试时缩放都在用）；
 - 局限：软标签的信息量受教师质量封顶（教师错得自信→学生学错得深）；容量差距过大时蒸馏失效（容量鸿沟问题）。
 
+- → 后继补记（260914）：[[10-Papers/03-后处理/Breaking the Token Ceiling - Distilling Smaller Stronger Byte Models（字节蒸馏scaling）|Token Ceiling（字节蒸馏scaling）]]（蒸馏×表征选择的首个大规模 scaling 研究：byte 学生渐近天花板高于 token 学生）
+
 ## 7. 读前须知
 
 - **必前置**：[[40-Concepts/KL散度]]、[[40-Concepts/温度参数]]、[[30-Formulas/交叉熵]]、[[40-Concepts/知识蒸馏]]；
@@ -58,3 +61,5 @@ $$\mathcal{L}_{distill}\;=\;\tau^2\,\mathrm{KL}\Big(\mathrm{softmax}\big(z_T/\ta
 - **读法建议**：正文仅 9 页；§2（暗知识直觉）+ §2.1（公式）精读，实验快速过；配套 [[30-Formulas/蒸馏损失]] 公式卡一起看。
 
 > 核心公式：[[30-Formulas/蒸馏损失]] · [[30-Formulas/归一化温度与蒸馏]]
+
+- → 后继补记（260916）：[[10-Papers/01-架构演进/Importance-Aware Low-Rank Distillation of Diffusion Transformers|Importance-Aware Low-Rank]]（KD 的架构感知变体：DiT 低秩蒸馏）

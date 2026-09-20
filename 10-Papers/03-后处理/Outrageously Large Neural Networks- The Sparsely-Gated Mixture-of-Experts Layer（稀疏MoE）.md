@@ -9,6 +9,7 @@ arxiv: "1701.06538"
 line: 后处理与压缩
 matrix_coords: [token级, Top-K稀疏路由, "辅助均衡损失]  # 主坐标：MoE路由矩阵；压缩视角见 [[60-Matrices/模型压缩矩阵]"]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # 稀疏门控 MoE 层

@@ -9,6 +9,7 @@ arxiv: "2404.08471"
 line: 世界模型与JEPA
 matrix_coords: [特征预测(JEPA系), 潜在状态, 纯离线视频]
 tags: [paper]
+pdf: 已下载（PDF/）
 ---
 
 # V-JEPA（视频 JEPA）

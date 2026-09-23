@@ -126,7 +126,7 @@ function GraphCanvas({ view, index }) {
     //             ②按住时节点外围画半透明环形进度条（CSS transition 1s 填满），满=可拖
     const fsPx = view.mode === 'paper' ? 4 : 8;          // 论文窗名称全显（4px），数学窗截断（8px）
     const labelOf = (id) => index?.[id]?.title || id.split('/').pop();
-    const HOLD_MS = 1000;
+    const HOLD_MS = 500;   // 260923 用户令：1s→0.5s（环形进度条同步 0.5s 填满）
     let t0 = 0, dragging = false;
     for (const n of nodes) {
       const g = mk('g', { style: 'cursor:pointer' });

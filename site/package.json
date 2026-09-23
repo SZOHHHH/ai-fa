@@ -1,0 +1,24 @@
+{
+  "name": "ai-fa-site",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev --port 5177",
+    "build": "node scripts/prepare-content.mjs && astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/react": "^4.2.0",
+    "@tweenjs/tween.js": "^25.0.0",
+    "astro": "^5.5.0",
+    "cytoscape": "^3.30.0",
+    "d3": "^7.9.0",
+    "katex": "^0.16.21",
+    "pixi.js": "^8.20.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "rehype-katex": "^7.0.1",
+    "remark-math": "^6.0.0"
+  }
+}

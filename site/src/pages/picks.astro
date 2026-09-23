@@ -1,0 +1,96 @@
+---
+import Base from '../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import fs from 'node:fs';
+const B = import.meta.env.BASE_URL;
+
+const docs = await getCollection('docs');
+
+// 精读层（frontmatter layer 字段）
+const deep = docs.filter(d => /精读/.test(d.data.layer || '') && d.id.startsWith('10-Papers/'));
+const oneLiner = (d) => {
+  const m = (d.body || '').match(/## 1\.\s*[^\n]*\n+([^\n]+)/);
+  return m ? m[1].replace(/[*$`\[\]]/g, '').slice(0, 130) : '';
+};
+
+// 每条线的招牌：入度最高的卡（contentIndex 构建）
+let hubByLine = [];
+try {
+  const idx = JSON.parse(fs.readFileSync('public/static/contentIndex.json', 'utf8'));
+  const ids = new Set(Object.keys(idx));
+  const inDeg = new Map();
+  for (const [slug, e] of Object.entries(idx)) {
+    for (const t of e.links || []) if (ids.has(t)) inDeg.set(t, (inDeg.get(t) || 0) + 1);
+  }
+  const LINE_ZH = { '05-MoE': 'MoE 混合专家' };
+  const byLine = new Map();
+  for (const slug of ids) {
+    const m = slug.match(/^10-Papers\/([^/]+)\//);
+    if (!m) continue;
+    const line = m[1];
+    const d = inDeg.get(slug) || 0;
+    if (!byLine.has(line) || d > byLine.get(line).d) byLine.set(line, { slug, d });
+  }
+  hubByLine = [...byLine.entries()].sort((a, b) => a[0].localeCompare(b[0]))
+    .map(([line, { slug, d }]) => ({
+      line, name: LINE_ZH[line] || line.replace(/^\d+-/, ''),
+      title: idx[slug]?.title || slug.split('/').pop(), slug, d,
+    }));
+} catch {}
+---
+<Base title="精读 · ai-fa" active="picks">
+  <div class="wrap pk">
+    <header class="phead">
+      <h1 class="display">精读</h1>
+      <p>卡分三层：占位（待建）→ 精化（摘要核实）→ 精读（PDF 深读）。这里是读得最深的那些，和每条线的招牌。</p>
+    </header>
+
+    <section>
+      <h2 class="display sec">读得最深</h2>
+      <ol class="deep">
+        {deep.map(d => (
+          <li>
+            <a href={`${B}explore/${d.id.replace(/\.md$/, '')}`}>
+              <span class="t">{d.data.title}</span>
+            </a>
+            <p>{oneLiner(d)}</p>
+            {d.data.venue && <span class="v">{d.data.venue}</span>}
+          </li>
+        ))}
+      </ol>
+    </section>
+
+    <section>
+      <h2 class="display sec">每条线的招牌 <span class="sub">按被引用次数</span></h2>
+      <ol class="hubs">
+        {hubByLine.map(h => (
+          <li>
+            <span class="ln">{h.name}</span>
+            <a href={`${B}explore/${h.slug}`}>{h.title}</a>
+            <span class="hd">↔ {h.d}</span>
+          </li>
+        ))}
+      </ol>
+    </section>
+  </div>
+</Base>
+
+<style>
+  .pk { padding: 48px 24px 0; max-width: 1060px; }
+  .phead { border-bottom: 2px solid var(--ink); padding-bottom: 20px; margin-bottom: 8px; }
+  .phead h1 { font-size: 40px; margin: 0 0 12px; }
+  .phead p { font-family: var(--font-fs); font-size: 20px; color: var(--ink-2); max-width: 28em; margin: 0; }
+  .sec { font-size: 32px; margin: 50px 0 14px; }
+  .sec .sub { font-size: 20px; font-family: var(--font-body); font-weight: 400; color: var(--muted); margin-left: 12px; }
+  .deep { list-style: none; margin: 0; padding: 0; }
+  .deep li { padding: 28px 8px; border-bottom: 1px solid var(--hairline); }
+  .deep .t { font-family: var(--font-display); font-size: 28px; font-weight: 700; color: var(--ink); }
+  .deep a:hover .t { color: var(--ink-blue); }
+  .deep p { margin: 10px 0 8px; font-family: var(--font-fs); font-size: 20px; color: var(--ink-2); line-height: 1.7; max-width: 32em; }
+  .deep .v { font-size: 20px; color: var(--muted); }
+  .hubs { list-style: none; margin: 0; padding: 0; }
+  .hubs li { display: flex; align-items: baseline; gap: 18px; padding: 20px 8px; border-bottom: 1px solid var(--hairline); }
+  .hubs .ln { font-size: 20px; color: var(--muted); flex: none; width: 260px; }
+  .hubs a { font-family: var(--font-display); font-size: 24px; font-weight: 700; }
+  .hubs .hd { margin-left: auto; font-family: var(--font-mono); font-size: 20px; color: var(--ink-blue); flex: none; }
+</style>

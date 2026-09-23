@@ -36,6 +36,8 @@ JEPA 世界模型解码再好，"到目标的 latent 欧氏距离"也不保证�
 - 谱系锚：[[20-Algorithms/世界模型]]，[[30-Formulas/MCTS置信上界]]
 - **哨兵研判（9/10 补扫）**：🟢→强同盟（今日最重要的手工补录）：**E1 命题的 latent 版同构**——"latent 距离（表征保真）不保证任务排序（决策保真）"正是我们"像素保真≠决策保真"在潜空间的镜像表述；且修复件恰好是 IDM 头（与 E2 同款）。8/19 发文、哨兵盲区期（每日链 9/6 才建）错过——本次补录。E1 理论章 + E2 动机节双挂。
 - 工程域外部证据（260915）：[[10-Papers/09-世界模型与JEPA/From Prediction to Decision - World-Model-Guided Action Selection for Continuous Pile Excavation（挖掘WAM）|WAM 挖掘]]——固定提案器、只换选择规则的消融把 WM 价值落成决策级数字（铲数 −17.1%）；"预测保真≠决策保真"的机器人域实例，E1 动机节可并列引用。
+- 工程域外部证据（260923）：[[10-Papers/09-世界模型与JEPA/ForeDrive Foresight-Guided End-to-End Autonomous Driving with a Planning-Relevant Latent World Model|ForeDrive]]——驾驶域最干净的消融实证：辅助预测损失单独只 +0.1 PDMS、把预测未来喂进规划器才 +0.7；潜预测对齐最好的变体（两阶段冻结 WM）PDMS 反而最低（87.9 vs 全联合 89.9）——"预测最优表征≠规划有用表征"直接实锤，E1 动机节头号外部证据。
+- 评测学表亲（260923）：[[10-Papers/04-强化学习与对齐/Toward Auditable and Calibrated AI for Dementia-Related Crash Severity Prediction A Selective Deferr|Crash Triage Deferral]]——"准确率≠分诊效用"的公共服务域版本（非对称漏分代价+校准+选择性推迟），跨域同族但无 WM/RL 内涵，仅作动机引例。
 
 ## 6. 影响后续
 

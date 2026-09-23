@@ -34,7 +34,7 @@ $$\hat{A}_{i,t} = \hat{A}_i = \frac{r_i - \mathrm{mean}(\{r_1, \dots, r_G\})}{\m
 - **去 critic**：PPO 需要 $V_\phi$ 网络算优势 → 显存翻倍、训练抖。GRPO：**同一题让模型做 G 遍，组内标准化**当优势——"比同组平均好就是正优势"
 - **为什么组内基线合法**：蒙特卡洛基线（同状态多个回报取均值）的无偏替代——正是 [[40-Concepts/贝尔曼方程]] 误区区说的"组均值 = V 的蒙特卡洛替身"
 - **数学可读性**：整个目标 = PPO 裁剪项 + KL 锚 + 换掉的优势估计器——**三处改动，一个不剩**
-- **代价**：每个 prompt 要生成 G 个样本（推理成本 ×G）；稀疏奖励下组内全对/全错时优势全零（梯度消失）
+- **代价**：每个 prompt 要生成 G 个样本（推理成本 ×G）；稀疏奖励下组内全对/全错时优势全零（梯度消失）——[[Video-HopChain Multi-Hop Questions and Confidence-Gated Exploration for Video Reasoning Models|Video-HopChain]] 的 CGE 专修此病（零方差组屏蔽最自信 token 重采制造组内对照）
 - `#loss/expectation-of-ratio`
 
 ## 4. 出处
@@ -58,3 +58,4 @@ $$\hat{A}_{i,t} = \hat{A}_i = \frac{r_i - \mathrm{mean}(\{r_1, \dots, r_G\})}{\m
 - 对比 [[30-Formulas/DPO损失]]：在线采样组对比 vs 离线成对对比
 - → **服务于** R1 的纯 RL 训练路线（[[10-Papers/04-强化学习与对齐/DeepSeek-R1- Incentivizing Reasoning Capability in LLMs via Reinforcement Learning（R1）]]，与线 7 交叉）
 - → **被修正**：Dr. GRPO（长度偏置）——"每个后面的算法优化前面"的最新一环
+- → **被解释**：[[PACT From Credit Assignment to Critic Alignment|PACT]] 唯一表示定理——token 级信用=条件奖励预测的鞅差分，响应级基线（组均值一族）与真信用期望梯度等价、只是统计效率更粗，给"组内标准化为何合法"补了信用级证明

@@ -1,0 +1,59 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+const B = import.meta.env.BASE_URL;
+
+const docs = await getCollection('docs');
+const CATS = [
+  ['10-Papers', '论文', 'var(--t-paper)', '七节论文卡：一句话贡献 → 读前须知'],
+  ['30-Formulas', '公式', 'var(--t-formula)', '核心公式实体，中文直觉注解'],
+  ['40-Concepts', '概念', 'var(--t-concept)', '数学与机器学习概念卡'],
+  ['20-Algorithms', '算法', 'var(--t-algo)', '算法实体与本命论文群'],
+  ['60-Matrices', '机会格矩阵', 'var(--t-matrix)', '研究矩阵与机会格全景'],
+  ['00-Meta', '导览', 'var(--t-meta)', '规范、记号与使用指南'],
+];
+const stats = CATS.map(([dir, label, color, desc]) => ({
+  dir, label, color, desc,
+  n: docs.filter(d => d.id.replace(/\.md$/, '').startsWith(dir + '/')).length,
+})).filter(c => c.n > 0);
+---
+<Base title="全库浏览 · ai-fa" active="explore">
+  <div class="wrap lib">
+    <nav class="crumbs"><a href={B}>首页</a> › <b>全库</b></nav>
+    <header class="dirhead">
+      <h1 class="display">全库浏览</h1>
+      <span class="count">{docs.length} 篇 · {stats.length} 类</span>
+    </header>
+    <ul class="cats">
+      {stats.map(c => (
+        <li>
+          <a href={`${B}explore/${c.dir}`}>
+            <i style={{ background: c.color }} />
+            <span class="cn">{c.label}</span>
+            <span class="cd">{c.desc}</span>
+            <span class="cnum">{c.n}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+    <p class="hint">提示：每类下按研究线/子目录继续分层浏览；或去 <a href={B + "atlas"}>图谱工作台</a> 顺着连接走。</p>
+  </div>
+</Base>
+
+<style>
+  .lib { padding: 48px 24px 0; max-width: 1060px; }
+  .crumbs { font-size: 20px; color: var(--muted); margin-bottom: 22px; }
+  .dirhead { display: flex; align-items: baseline; gap: 16px; border-bottom: 2px solid var(--ink); padding-bottom: 18px; margin-bottom: 22px; }
+  .dirhead h1 { font-size: 40px; margin: 0; }
+  .count { font-size: 20px; color: var(--muted); margin-left: auto; }
+  .cats { list-style: none; margin: 0; padding: 0; }
+  .cats li { border-bottom: 1px solid var(--hairline); }
+  .cats a { display: flex; align-items: baseline; gap: 16px; padding: 26px 8px; color: var(--ink); }
+  .cats a:hover { text-decoration: none; }
+  .cats a:hover .cn { color: var(--ink-blue); }
+  .cats i { width: 11px; height: 11px; border-radius: 50%; align-self: center; flex: none; }
+  .cn { font-family: var(--font-display); font-size: 28px; font-weight: 700; flex: none; }
+  .cd { font-family: var(--font-fs); font-size: 20px; color: var(--muted); }
+  .cnum { margin-left: auto; font-family: var(--font-mono); font-size: 20px; color: var(--ink-2); flex: none; }
+  .hint { margin-top: 30px; font-family: var(--font-fs); font-size: 20px; color: var(--muted); }
+</style>

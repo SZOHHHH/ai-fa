@@ -51,3 +51,5 @@ pdf: 已下载（PDF/）
 [[30-Formulas/注意力核心公式]]、[[30-Formulas/注意力计算复杂度]]、[[40-Concepts/softmax函数]]（在线化的对象）
 
 > 近邻同族：[[An Image is Worth 16x16 Words- Transformers for Image Recognition at Scale（ViT）]] · [[Attention Is All You Need（Transformer）]]
+
+> 近邻同族补记（260921）：[[10-Papers/01-架构演进/Understanding and Exploiting Diagonal Attention Sparsity in Autoregressive Image Generation|Diagonal Attention Sparsity]]（AR 图像生成的对角稀疏注意力：在其核上叠块稀疏，3.1× 吞吐、<2% 质量损失）

@@ -41,6 +41,7 @@ layer: 占位
 - 线锚：[[20-Algorithms/世界模型]]（生成式路线向控制接口的延伸——WAM=世界模型+动作头）
 - ← 方法基座：[[Mean Flows for One-step Generative Modeling（MeanFlow）]]（SVP=其条件化+多视角+掩码轨迹扩展）；CoAE 初始化自 DC-AE（128→512 通道，库内无卡）
 - ≡ 同族机器人 WAM：[[LaWAM- Latent World Action Models for Efficient Dynamics-Aware Robot Policies（LaWAM）]]（潜空间 WAM）；前身 GE-Act 1.0（并行动作支路，库内无卡，本代改为显式未来接口）
+- ≡ 同族（模态扩展，260922 建卡）：[[DexTacWAM A Visuo-Tactile World-Action Model for Dexterous Manipulation]]——视觉-触觉 WAM：五指触觉沿视角轴注入视频扩散 WM 联合去噪，把"接触演化"做进世界状态（消融 74.7→26.6 证明状态化 vs 条件化的差别）
 - ↔ 对照 [[Diffusion for World Modeling- Visual Details Matter in Atari（DIAMOND）]]：同为"生成式 WM 出未来"，但域（机器人操作 vs 游戏 RL）、生成方式（从零单步流 vs 多步扩散）、下游（IDM 反推 vs 策略在 WM 内训练）三处全不同——**E1 主线正面对照位**
 - 概念链：[[40-Concepts/逆动力学（IDM）]]（imagine-then-act 家族最新成员）· [[30-Formulas/条件流匹配损失]]（SVP 与 IDM 双双落在流匹配框架）
 

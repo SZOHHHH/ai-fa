@@ -53,3 +53,5 @@ undefined
 > 数学根基：[[策略梯度定理]]
 
 > 数学根基：[[REINFORCE目标]]
+
+> 近邻同族补记（260921）：[[10-Papers/01-架构演进/EnterpriseVal Quantifying the Efficacy, Reliability and Value of Generative AI in the Enterprise|EnterpriseVal]]（校准 LLM 评审×盲评专家经预测驱动推断扩表→企业部署两级决策门）

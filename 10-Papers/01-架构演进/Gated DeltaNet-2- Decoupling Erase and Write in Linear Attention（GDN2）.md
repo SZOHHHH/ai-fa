@@ -45,6 +45,8 @@ $$
 
 "混合架构=少数全注意力+多数线性注意力"配方在 Qwen3-Next/Kimi Linear 落地的 2026 延续。
 
+→ 视频域延伸（260922）：[[Video DeltaNet A Video-Native Hybrid Attention for Livestream Video Generation]]——把 GDN 的门控/衰减 delta 规则推广为**帧级**更新（整帧空间 token 的 key 相关性联合塑形写入，免任意 patch 顺序）+双向线性记忆，与局部 Softmax 混合注入视频 DiT，8 步蒸馏后 14.3s 768p 去噪 6.70s（8×B200）。
+
 > 近邻同族：[[Parallelizing Linear Transformers with the Delta Rule over Sequence Length（DeltaNet并行）]] · [[Retentive Network- A Successor to Transformer for Large Language Models（RetNet）]]
 > 数学根基（占位层）：[[状态空间模型方程]] · [[选择机制]] · [[稀疏与线性注意力]]
 > 核心公式：[[矩阵指数时间衰减]]

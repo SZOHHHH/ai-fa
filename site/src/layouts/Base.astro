@@ -1,0 +1,43 @@
+---
+import 'katex/dist/katex.min.css';
+import '../styles/tokens.css';
+import '../styles/search.css';
+import SearchBox from '../components/SearchBox.jsx';
+const B = import.meta.env.BASE_URL;
+const { title = 'ai-fa · 从数学根基讲起', active = '' } = Astro.props;
+---
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <header class="masthead">
+      <div class="wrap">
+        <a href={B} class="brand" style="text-decoration:none">ai<em>-</em>fa</a>
+        <span class="tagline">从数学根基讲起</span>
+        <SearchBox client:load />
+        <nav>
+          <a href={B + "explore"} class={active === 'explore' ? 'on' : ''}>全库</a>
+          <a href={B + "atlas"} class={active === 'atlas' ? 'on' : ''}>图谱</a>
+          <a href={B + "lines"} class={active === 'lines' ? 'on' : ''}>研究线</a>
+          <a href={B + "picks"} class={active === 'picks' ? 'on' : ''}>精读</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="colophon">
+      <div class="wrap" style="display:flex;gap:18px;flex-wrap:wrap">
+        <span>ai-fa 知识库 · 每篇论文拆到公式与直觉</span>
+        <span>·</span>
+        <a href={B + "atlas"}>知识图谱</a>
+        <span>·</span>
+        <span>自研站 v0.1（Astro）· Quartz 版并存</span>
+      </div>
+    </footer>
+  </body>
+</html>

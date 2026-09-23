@@ -62,3 +62,4 @@ $$p_\theta(\tau\mid\mathcal{C})\;\propto\;p_\theta(\tau)\cdot p(\mathcal{C}\mid\
 - **读法建议**：图 1（"规划=去噪"概念图）→ 图 2（约束钉住的采样过程）→ §3.2 引导公式；实验看 Maze2D 目标到达即可。
 
 - → 后继补记（260916）：[[10-Papers/02-生成建模与扩散/Solaris Towards Interfaces That Are Generated, Not Coded|Solaris]]（扩散规划走出游戏/机器人：生成式接口）
+- → 后继补记（260921）：[[10-Papers/04-强化学习与对齐/OneBid A Unified Auto-Bidding Foundation Model for Diverse oCPX Advertising Scenarios|OneBid]]（生成式序列决策（DT 谱系）的工业全量部署：竞价基础模型，CROP 离线安全后训练）

@@ -1,0 +1,72 @@
+---
+import Base from '../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+const B = import.meta.env.BASE_URL;
+
+const docs = await getCollection('docs');
+const DESC = {
+  '01-架构演进': 'Transformer 谱系与注意力机制——从 Attention Is All You Need 到 RoPE、FlashAttention、Mamba 的主干演化。',
+  '02-生成建模与扩散': 'DDPM 到 DMD 的生成引擎全谱系——扩散、流匹配与少步蒸馏，世界模型的数学地基。',
+  '03-后处理': '压缩三轴：蒸馏、量化、剪枝——部署侧的效率军火库。',
+  '04-强化学习与对齐': '策略梯度到偏好优化——RLHF/DPO 谱系与游戏强化学习。',
+  '05-MoE': '混合专家架构——稀疏激活的规模化路线。',
+  '06-长上下文': '位置外推与稀疏注意力——把窗口撑到百万 token。',
+  '07-推理模型': '思维链与测试时计算——推理即计算的范式。',
+  '08-多模态': 'CLIP 到视觉语言模型——跨模态的对齐与融合。',
+  '09-世界模型与JEPA': '从 World Models 到 DIAMOND——预测式表征与可交互世界模型。',
+  '10-标杆锚点': 'GPT-4、Chinchilla 等能力参照系——scaling 时代的度量衡。',
+};
+const LINE_ZH = { '05-MoE': 'MoE 混合专家' };
+const lines = [...new Set(docs
+  .map(d => d.id.replace(/\.md$/, '').match(/^10-Papers\/([^/]+)\//)?.[1])
+  .filter(Boolean))]
+  .sort()
+  .map(l => ({
+    dir: l,
+    name: LINE_ZH[l] || l.replace(/^\d+-/, ''),
+    no: l.split('-')[0],
+    desc: DESC[l] || '',
+    n: docs.filter(d => d.id.replace(/\.md$/, '').startsWith(`10-Papers/${l}/`)).length,
+  }));
+---
+<Base title="研究线 · ai-fa" active="lines">
+  <div class="wrap lp">
+    <header class="lhead">
+      <h1 class="display">研究线</h1>
+      <p>知识库的十条经线——每条线是一族互相引用的论文，从奠基到前沿按序生长。</p>
+      <span class="count">{lines.reduce((a, l) => a + l.n, 0)} 篇 · {lines.length} 条线</span>
+    </header>
+    <ol class="llist">
+      {lines.map(l => (
+        <li>
+          <a href={`${B}explore/10-Papers/${l.dir}`}>
+            <span class="no">{l.no}</span>
+            <span class="body">
+              <span class="name">{l.name}</span>
+              <span class="desc">{l.desc}</span>
+            </span>
+            <span class="n">{l.n} 篇 →</span>
+          </a>
+        </li>
+      ))}
+    </ol>
+  </div>
+</Base>
+
+<style>
+  .lp { padding: 48px 24px 0; max-width: 1060px; }
+  .lhead { border-bottom: 2px solid var(--ink); padding-bottom: 20px; margin-bottom: 8px; position: relative; }
+  .lhead h1 { font-size: 40px; margin: 0 0 12px; }
+  .lhead p { font-family: var(--font-fs); font-size: 20px; color: var(--ink-2); max-width: 26em; margin: 0; }
+  .lhead .count { position: absolute; right: 0; bottom: 24px; font-size: 20px; color: var(--muted); }
+  .llist { list-style: none; margin: 0; padding: 0; }
+  .llist li { border-bottom: 1px solid var(--hairline); }
+  .llist a { display: flex; gap: 28px; align-items: baseline; padding: 28px 8px; color: var(--ink); }
+  .llist a:hover { text-decoration: none; }
+  .llist a:hover .name { color: var(--ink-blue); }
+  .llist .no { font-family: var(--font-mono); font-size: 20px; color: var(--ink-blue); flex: none; width: 40px; }
+  .llist .body { display: flex; flex-direction: column; gap: 7px; }
+  .llist .name { font-family: var(--font-display); font-size: 28px; font-weight: 700; }
+  .llist .desc { font-family: var(--font-fs); font-size: 20px; color: var(--muted); line-height: 1.6; }
+  .llist .n { margin-left: auto; font-size: 20px; color: var(--muted); flex: none; }
+</style>

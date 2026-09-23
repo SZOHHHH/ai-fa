@@ -50,3 +50,5 @@ pdf: 已下载（PDF/）
 ## 7. 读前须知
 
 [[20-Algorithms/Transformer]]、[[30-Formulas/注意力核心公式]]、[[40-Concepts/softmax函数]]
+
+- → 后继补记（260921）：[[10-Papers/01-架构演进/Not All Irregularity Is Equal Causally Isolating a Rare Failure Mode in Japanese Morphological Infle|Not All Irregularity Is Equal]]（字符级形态谱系的稀有子类错误诊断：日语变形 97% 精度下 <1% 子类贡献 30-43% 残差）

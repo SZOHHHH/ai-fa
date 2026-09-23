@@ -37,7 +37,7 @@ $$\hat{A}_t^{\text{GAE}(\gamma, \lambda)} = \sum_{l=0}^{\infty} (\gamma\lambda)^
 
 - **误区**：$\lambda$ 是折扣——不是！$\gamma$ 管折扣，$\lambda$ 管估计器的混合比例，职责分离
 - **误区**：GAE 消除偏差——只是**可调**偏差-方差，$\lambda\in(0,1)$ 时两者兼有
-- **误区**：GAE 需要 critic 完美——critic 误差是偏差来源，$\lambda$ 小则更依赖 critic
+- **误区**：GAE 需要 critic 完美——critic 误差是偏差来源，$\lambda$ 小则更依赖 critic。[[PACT From Credit Assignment to Critic Alignment|PACT]] 给出定量版：有界结果奖励下 token 信用近似稀疏（$\mathbb{E}[\sum C_i^2] = \text{Var}(R) \le 1/4$），$\lambda<1$ 的中段 critic 误差可与真信用同量级甚至更大；$\lambda=1$ 时中段误差全消、只剩前缀误差 $\hat A_t^1 = R - \hat V_{t-1}$——R1 的"$\lambda=1$ 更好"经验由此获解释
 
 ## 5. 相关概念
 

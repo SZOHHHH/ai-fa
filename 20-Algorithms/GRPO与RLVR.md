@@ -59,3 +59,7 @@ tags: [algo]
 - → 后继补记（260916）：[[10-Papers/07-推理模型/Sequential Beats Joint On the Interplay between On-Policy Distillation and RLVR|Sequential Beats Joint]]（OPD-then-RLVR 串行胜过加权联合（0911 ⑦推荐））
 
 - → 后继补记（260916）：[[10-Papers/07-推理模型/Spurious Advantage Hidden in GRPO|Spurious Advantage]]（GRPO 的隐性优势缺陷诊断）
+
+- → 后继补记（260923）：[[10-Papers/04-强化学习与对齐/Sometimes You Gotta Run Before You Can Walk Run-then-Walk Scheduling Strategy for VLM Autonomous Dri|Run-then-Walk]]（GRPO 的**目标函数课程**：同数据同算法只按阶段切换奖励——Run 进度探索→Walk 安全修复，VLM 驾驶 RL epoch 省 40-50%）
+
+- → 后继补记（260923）：[[10-Papers/04-强化学习与对齐/Video-HopChain Multi-Hop Questions and Confidence-Gated Exploration for Video Reasoning Models|Video-HopChain]]（RLVR 数据合成+零方差组第三条修法：CGE 屏蔽最自信 token 重采制造组内对照，与 ThinkPrior 的冷启动挑题互补）

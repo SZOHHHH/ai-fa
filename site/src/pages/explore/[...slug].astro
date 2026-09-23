@@ -1,0 +1,196 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection, render } from 'astro:content';
+const B = import.meta.env.BASE_URL;
+
+export async function getStaticPaths() {
+  const docs = await getCollection('docs');
+  const clean = (s) => s.replace(/\.md$/, '');
+  const leaf = docs.map(d => ({ params: { slug: clean(d.id) }, props: { doc: d, list: null } }));
+  const dirSet = new Set();
+  for (const d of docs) {
+    const parts = clean(d.id).split('/');
+    for (let i = 1; i <= parts.length - 1; i++) dirSet.add(parts.slice(0, i).join('/'));
+  }
+  const dirs = [...dirSet].filter(dir => !docs.some(d => clean(d.id) === dir))
+    .map(dir => ({ params: { slug: dir }, props: { doc: null, list: docs.filter(d => clean(d.id).startsWith(dir + '/')) } }));
+  return [...leaf, ...dirs];
+}
+
+const { doc, list } = Astro.props;
+
+const KIND = {
+  '10-Papers': ['论文', 'var(--t-paper)'], '30-Formulas': ['公式', 'var(--t-formula)'],
+  '40-Concepts': ['概念', 'var(--t-concept)'], '20-Algorithms': ['算法', 'var(--t-algo)'],
+  '60-Matrices': ['矩阵', 'var(--t-matrix)'], '00-Meta': ['导览', 'var(--t-meta)'],
+};
+const DIR_ZH = { '10-Papers': '论文', '20-Algorithms': '算法', '30-Formulas': '公式', '40-Concepts': '概念', '60-Matrices': '机会格矩阵', '00-Meta': '导览' };
+const kindOf = (id) => KIND[id.split('/')[0]] || ['文档', 'var(--t-meta)'];
+const pretty = (s) => DIR_ZH[s] || s.replace(/^\d+-/, '');
+
+// ── 叶子（内容页）视图模型 ──
+let Content = null, headings = [], fm = {}, parentHref = '', parentLabel = '', kindLabel = '', kindColor = '';
+if (doc) {
+  fm = doc.data;
+  const r = await render(doc);
+  Content = r.Content; headings = r.headings.filter(h => h.depth === 2);
+  [kindLabel, kindColor] = kindOf(doc.id);
+  const parent = doc.id.replace(/\.md$/, '').split('/').slice(0, -1).join('/');
+  parentHref = `${B}explore/${parent}`;
+  parentLabel = pretty(parent.split('/').pop());
+}
+
+// ── 目录页视图模型 ──
+let dirSlug = '', dirParts = [], dirTitle = '', isTop = false, crumbs = [], subs = [], entries = [];
+if (!doc) {
+  dirSlug = String(Astro.params.slug);
+  dirParts = dirSlug.split('/');
+  isTop = dirParts.length === 1;
+  dirTitle = pretty(dirParts[dirParts.length - 1]);
+  [kindLabel, kindColor] = kindOf(dirSlug);
+  crumbs = [{ href: B + 'explore', label: '全库' }];
+  dirParts.slice(0, -1).forEach((p, i) => {
+    crumbs.push({ href: `${B}explore/${dirParts.slice(0, i + 1).join('/')}`, label: pretty(p) });
+  });
+  const sorted = [...list].sort((a, b) => String(a.data.title || a.id).localeCompare(String(b.data.title || b.id), 'zh'));
+  subs = [...new Set(sorted.map(d => d.id.replace(/\.md$/, '').split('/')[dirParts.length]).filter(Boolean))];
+  const cleanId = (d) => d.id.replace(/\.md$/, '');
+  entries = sorted.map(d => {
+    const id = cleanId(d);
+    const isLeaf = id.split('/').length === dirParts.length + 1;
+    const href = isLeaf ? `${B}explore/${id}` : `${B}explore/${id.split('/').slice(0, dirParts.length + 1).join('/')}`;
+    const m = (d.body || '').match(/## 1\.\s*[^\n]*\n+([^\n]+)/);
+    const teaser = m ? m[1].replace(/[*$`\[\]]/g, '').slice(0, 90) : '';
+    const [, c] = kindOf(id);
+    return { href, title: d.data.title || id.split('/').pop(), year: d.data.year || '', teaser, color: c };
+  });
+}
+---
+<Base title={doc ? `${fm.title || doc.id} · ai-fa` : `${dirTitle} · ai-fa`} active="explore">
+  {doc ? (
+    <div class="wrap page">
+      <aside class="side">
+        <nav class="crumb"><a href={parentHref}>‹ {parentLabel}</a></nav>
+        <div class="k" style={`color:${kindColor}`}>{kindLabel}{fm.year ? ' · ' + fm.year : ''}</div>
+        <div class="lines">
+          {fm.line && <div>研究线 · {fm.line}</div>}
+          {fm.venue && <div class="venue">{fm.venue}</div>}
+        </div>
+        {headings.length > 0 && (
+          <nav class="toc">{headings.map(h => <a href={`#${h.slug}`}>{h.text}</a>)}</nav>
+        )}
+        {Array.isArray(fm.tags) && fm.tags.length > 0 && (
+          <div class="tags">{fm.tags.filter(t => t !== 'paper').map(t => <span>{t}</span>)}</div>
+        )}
+      </aside>
+      <article class="doc">
+        <header>
+          <h1 class="display">{fm.title || doc.id.split('/').pop()}</h1>
+          {Array.isArray(fm.aliases) && fm.aliases.length > 0 && (
+            <div class="aliases">{fm.aliases.map(a => <code>{a}</code>)}</div>
+          )}
+          {Array.isArray(fm.authors) && fm.authors.length > 0 && (
+            <div class="authors">{fm.authors.slice(0, 6).join('，')}{fm.authors.length > 6 ? ' 等' : ''}</div>
+          )}
+        </header>
+        <div class="body"><Content /></div>
+        {fm.matrix_coords && (
+          <footer class="coords"><span class="anno">矩阵坐标：{fm.matrix_coords}</span></footer>
+        )}
+      </article>
+    </div>
+  ) : (
+    <div class="wrap dirpage">
+      <nav class="crumbs">
+        {crumbs.map(c => <span><a href={c.href}>{c.label}</a> › </span>)}
+        <b>{dirTitle}</b>
+      </nav>
+      <header class="dirhead">
+        <h1 class="display">{dirTitle} <span class="k" style={`color:${kindColor}`}>{kindLabel}</span></h1>
+        <span class="count">{list.length} 条</span>
+      </header>
+      {subs.length > 0 && (
+        <nav class="subnav">
+          {subs.map(s => <a href={`${B}explore/${dirSlug}/${s}`}>{pretty(s)}</a>)}
+        </nav>
+      )}
+      <ul class="entries">
+        {entries.map(e => (
+          <li>
+            <a href={e.href}>
+              <i style={{ background: e.color }} />
+              <span class="et">{e.title}</span>
+              {e.year && <span class="ey">{e.year}</span>}
+            </a>
+            {e.teaser && <p class="ep">{e.teaser}</p>}
+          </li>
+        ))}
+      </ul>
+    </div>
+  )}
+</Base>
+
+<style>
+  /* ── 内容页 ── */
+  .page { display: grid; grid-template-columns: 280px minmax(0, 1fr); gap: 50px; padding: 48px 24px 0; }
+  .side { position: sticky; top: 104px; align-self: start; font-size: 20px; }
+  .side .crumb { margin-bottom: 13px; }
+  .side .crumb a { font-size: 20px; color: var(--muted); }
+  .side .crumb a:hover { color: var(--ink-blue); }
+  .side .k { font-weight: 700; letter-spacing: 2px; font-size: 20px; margin-bottom: 9px; }
+  .side .lines { color: var(--ink-2); margin-bottom: 20px; }
+  .side .venue { color: var(--muted); font-size: 20px; margin-top: 4px; }
+  .toc { display: flex; flex-direction: column; gap: 9px; border-left: 2px solid var(--hairline); padding-left: 16px; margin-bottom: 20px; }
+  .toc a { color: var(--ink-2); font-size: 20px; line-height: 1.5; }
+  .toc a:hover { color: var(--ink-blue); }
+  .toc a::before { content: "§ "; color: var(--muted); font-family: var(--font-mono); font-size: 0.7em; }
+  .tags { display: flex; flex-wrap: wrap; gap: 7px; }
+  .tags span { font-size: 20px; color: var(--muted); border: 1px solid var(--hairline); border-radius: 999px; padding: 3px 13px; }
+  .doc { max-width: var(--w-read); }
+  .doc header { border-bottom: 1px solid var(--hairline); padding-bottom: 24px; margin-bottom: 32px; }
+  .doc h1 { font-size: 40px; line-height: 1.3; margin: 0 0 13px; }
+  .aliases { display: flex; gap: 9px; flex-wrap: wrap; margin-bottom: 9px; }
+  .aliases code { font-family: var(--font-mono); font-size: 20px; color: var(--ink-blue); background: var(--ink-blue-soft); padding: 3px 11px; border-radius: 6px; }
+  .authors { font-family: var(--font-fs); font-size: 20px; color: var(--muted); }
+  .doc :global(h2) { font-family: var(--font-display); font-size: 32px; margin: 48px 0 18px; }
+  .doc :global(h2)::before { content: "§ "; color: var(--ink-blue); font-size: 0.75em; }
+  .doc :global(h3) { font-size: 24px; margin: 32px 0 13px; }
+  .doc :global(p) { margin: 0 0 16px; }
+  .doc :global(ul), .doc :global(ol) { padding-left: 1.5em; margin: 0 0 16px; }
+  .doc :global(li) { margin-bottom: 7px; }
+  .doc :global(blockquote) { margin: 22px 0; padding: 18px 24px; background: var(--panel-2); border-left: 4px solid var(--ink-blue); border-radius: 0 8px 8px 0; }
+  .doc :global(blockquote p) { margin: 0; }
+  .doc :global(table) { border-collapse: collapse; width: 100%; margin: 22px 0; font-size: 20px; }
+  .doc :global(th) { text-align: left; border-bottom: 2px solid var(--ink); padding: 11px 15px; font-weight: 600; }
+  .doc :global(td) { border-bottom: 1px solid var(--hairline); padding: 11px 15px; }
+  .doc :global(code) { font-family: var(--font-mono); font-size: 0.88em; background: var(--panel-2); border: 1px solid var(--hairline); border-radius: 5px; padding: 2px 7px; }
+  .doc :global(pre) { background: #1e1e1d; color: #e8e6df; padding: 20px 22px; border-radius: 8px; overflow-x: auto; font-size: 20px; line-height: 1.6; }
+  .doc :global(pre code) { background: none; border: none; color: inherit; padding: 0; }
+  .doc :global(hr) { border: none; border-top: 1px solid var(--hairline); margin: 36px 0; }
+  /* 公式排版：复杂公式=块级公式卡（mathComplexity 插件分流），单符号行内自然 */
+  .doc :global(.katex-display) { margin: 26px 0; padding: 16px 12px; background: var(--panel); border: 1px solid var(--hairline); border-radius: 8px; overflow-x: auto; font-size: 20px; }
+  .coords { margin-top: 44px; padding-top: 18px; border-top: 1px dashed var(--hairline); }
+  /* ── 目录页 ── */
+  .dirpage { padding: 48px 24px 0; max-width: 1120px; }
+  .crumbs { font-size: 20px; color: var(--muted); margin-bottom: 22px; }
+  .crumbs a { color: var(--muted); }
+  .crumbs a:hover { color: var(--ink-blue); }
+  .crumbs b { color: var(--ink-2); font-weight: 600; }
+  .dirhead { display: flex; align-items: baseline; gap: 18px; border-bottom: 2px solid var(--ink); padding-bottom: 18px; margin-bottom: 8px; }
+  .dirhead h1 { font-size: 40px; margin: 0; }
+  .dirhead .k { font-size: 20px; letter-spacing: 3px; font-weight: 700; }
+  .dirhead .count { font-size: 20px; color: var(--muted); margin-left: auto; }
+  .subnav { display: flex; flex-wrap: wrap; gap: 9px; padding: 18px 0; border-bottom: 1px solid var(--hairline); margin-bottom: 9px; }
+  .subnav a { font-size: 20px; padding: 7px 20px; border: 1px solid var(--hairline); border-radius: 999px; color: var(--ink-2); background: var(--panel); }
+  .subnav a:hover { border-color: var(--ink-blue); color: var(--ink-blue); text-decoration: none; }
+  .entries { list-style: none; margin: 0; padding: 0; }
+  .entries li { padding: 20px 6px 18px; border-bottom: 1px solid var(--hairline); }
+  .entries a { display: flex; align-items: baseline; gap: 15px; color: var(--ink); }
+  .entries a:hover { text-decoration: none; }
+  .entries a:hover .et { color: var(--ink-blue); }
+  .entries i { width: 10px; height: 10px; border-radius: 50%; flex: none; align-self: center; }
+  .entries .et { font-family: var(--font-display); font-size: 24px; font-weight: 700; }
+  .entries .ey { margin-left: auto; font-family: var(--font-mono); font-size: 20px; color: var(--muted); flex: none; }
+  .entries .ep { margin: 7px 0 0 25px; font-family: var(--font-fs); font-size: 20px; color: var(--muted); line-height: 1.6; }
+  @media (max-width: 1100px) { .page { grid-template-columns: 1fr; } .side { position: static; } }
+</style>

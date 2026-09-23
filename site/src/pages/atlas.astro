@@ -1,0 +1,16 @@
+---
+import Base from '../layouts/Base.astro';
+import QuartzGraph from '../components/QuartzGraph.jsx';
+import '../styles/graph.css';
+---
+<Base title="知识图谱 · ai-fa" active="atlas">
+  <div class="qg-app">
+    <div class="qg-bar">
+      <span class="qg-title">全库知识图谱</span>
+      <span class="qg-hint">滚轮缩放 · 拖动节点 · 点击进入条目 · <i class="dot-teal"></i> 已读 <i class="dot-gray"></i> 未读</span>
+    </div>
+    <div class="qg-stage">
+      <QuartzGraph client:only="react" />
+    </div>
+  </div>
+</Base>

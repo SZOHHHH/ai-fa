@@ -1,0 +1,15 @@
+/* 图谱页（Quartz 引擎移植版——轻盈力导向，出版色适配，24~64 大字版） */
+.qg-app { display: flex; flex-direction: column; height: calc(100vh - 92px); }
+.qg-boot { display: grid; place-items: center; height: 50vh; color: var(--muted); font-size: 20px; }
+
+.qg-bar { display: flex; align-items: baseline; gap: 22px; padding: 15px 30px;
+  border-bottom: 1px solid var(--hairline); background: var(--paper); flex-wrap: wrap; }
+.qg-title { font-family: var(--font-display); font-size: 24px; font-weight: 700; }
+.qg-hint { font-family: var(--font-fs); font-size: 20px; color: var(--muted); display: inline-flex; align-items: center; gap: 7px; }
+.dot-teal, .dot-gray { width: 11px; height: 11px; border-radius: 50%; display: inline-block; }
+.dot-teal { background: #1baf7a; }
+.dot-gray { background: #898781; margin-left: 7px; }
+
+.qg-stage { position: relative; flex: 1; min-height: 0; }
+.qg-canvas { position: absolute; inset: 0; overflow: hidden; }
+.qg-canvas canvas { display: block; }

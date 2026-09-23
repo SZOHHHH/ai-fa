@@ -32,6 +32,7 @@ layer: 占位
 ## 5. 与前作/矩阵关系
 - 线锚：[[40-Concepts/马尔可夫决策过程]]（预测只为服务于决策：服务水平才是真目标函数）· 同组同盟 [[10-Papers/04-强化学习与对齐/VARG Value-Aware and Ranking-Aligned Generative Retrieval for Dynamic E-commerce Search|VARG]]（模型指标对齐业务/决策指标的 decision-aware 组）
 - 命题同盟：[[10-Papers/09-世界模型与JEPA/Reconstructing Is Not Acting Action-Centric Latent Dynamics Modeling|ACT-LAM]]（同日"代理指标≠下游决策质量"——预测域版与 LAM 域版互证）
+- → 后继补记（260922）：[[Conformalized Safe Feasible Sets in Uncertain Decision Systems]]（decision-aware 的统计保证侧：DISC 跳过"标签预测"中间事件、直接校准"安全可行集⊆真可行集"，更弱中间事件换更大可行域——与本文"别拿代理指标当目标"同一纲领）
 
 ## 6. 影响后续
 （待精读）

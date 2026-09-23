@@ -51,6 +51,7 @@ pdf: 已下载（PDF/）
 - 语言域移植：[[Distilled Continuous Diffusion Language Models Can Write Code in Few Steps---or One|PlaidQ]]（2026）把 DMD+DMD2 配方搬进连续扩散 LM 的 4/8/16 步蒸馏，并发现 K=1 时 DMD 失效需换配对轨迹监督
 - SDXL-Turbo / SD-Turbo 商用一步生成的主要技术来源
 - 噪声段调度（260916）：[[CrossDistill Balancing Quality and Diversity via Trajectory-Level Hybrid Few-Step Distillation|CrossDistill]]（2026）把 DMD 装进低噪段 $[0,\tau^\star]$、高噪段留给轨迹保持目标——"DM 只管细节锐化、不管全局模式"的区间化用法（其反向调度对照证明 DM 放高噪段会压掉种子级分支）
+- 蒸馏边界最小化（260922）：[[GestureFAR Streaming Co-Speech Gesture Generation with Flow Autoregression]]（2026）把 DMD 系分布匹配+一致性用于"仅流头"单步蒸馏——冻结 AR 骨干与分词器、只蒸逐 token 流匹配头，流式手势实时生成；蒸馏粒度从整网缩到一个头
 - "分布级蒸馏 + 对抗补细节"配方被广泛复制
 
 ## 7. 读前须知

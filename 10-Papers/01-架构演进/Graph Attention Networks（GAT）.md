@@ -52,3 +52,5 @@ undefined
 > 数学根基：[[注意力机制]]
 
 > 数学根基：[[注意力核心公式]]
+
+> 近邻同族补记（260921）：[[10-Papers/01-架构演进/Relational Attention for Data-Efficient Language Modeling|Relational Attention]]（关系注意力与自注意力解耦→数据高效语言建模，BabyLM 严格赛道 6/55）

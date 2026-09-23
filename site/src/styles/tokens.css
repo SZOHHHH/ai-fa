@@ -1,0 +1,67 @@
+/* ai-fa 自研站设计系统 —— 浅色出版阅读风 · 大字版 24~64px（260916 定稿）
+   语义：纸白冷调 / 墨水蓝批注 / 宋体报头 + 宋体正文 + 仿宋语气 / § 节符
+   字号阶梯：24 辅助 · 26 正文 · 28 条目/按钮/导航 · 30-32 区块与线名 · 34-36 大节/报头 · 44-46 页题/大数字 · 64 hero */
+:root {
+  --paper: #f4f4f2;          /* 纸面（冷调，非奶油） */
+  --panel: #ffffff;          /* 阅读面板 */
+  --panel-2: #faf9f7;        /* 次级面板 */
+  --ink: #1a1a19;            /* 墨 */
+  --ink-2: #52514e;          /* 次级墨 */
+  --muted: #898781;          /* 弱化 */
+  --hairline: #e1e0d9;       /* 发丝线 */
+  --ink-blue: #104281;       /* 钢笔墨水蓝——全站唯一强调 */
+  --ink-blue-soft: rgba(16, 66, 129, 0.08);
+
+  --font-display: "Noto Serif SC", "Source Han Serif SC", "Songti SC", "SimSun", serif;
+  --font-body: "Noto Serif SC", "Source Han Serif SC", "Songti SC", "SimSun", serif;
+  --font-fs: FangSong, "仿宋", STFangsong, "Noto Serif SC", serif;   /* 仿宋：批注/引文语气 */
+  --font-mono: "Cascadia Code", Consolas, "SF Mono", monospace;       /* 数据/年份/编号保留等宽 */
+
+  --w-wide: 1200px;
+  --w-read: 860px;
+  --radius: 10px;
+  --shadow: 0 1px 3px rgba(26, 26, 25, 0.06), 0 8px 28px rgba(26, 26, 25, 0.05);
+}
+
+/* 实体类型色（与图谱一致——全站类型系统统一） */
+:root {
+  --t-paper: #2a78d6;
+  --t-formula: #eb6834;
+  --t-concept: #1baf7a;
+  --t-algo: #eda100;
+  --t-matrix: #898781;
+  --t-meta: #a5a49e;
+}
+
+html { background: var(--paper); color: var(--ink); font-family: var(--font-body); }
+body { margin: 0; font-size: 24px; line-height: 1.8; -webkit-font-smoothing: antialiased; }
+* { box-sizing: border-box; }
+a { color: var(--ink-blue); text-decoration: none; }
+a:hover { text-decoration: underline; text-underline-offset: 4px; }
+::selection { background: var(--ink-blue-soft); }
+[id] { scroll-margin-top: 104px; }   /* sticky 报头不遮锚点 */
+
+.wrap { max-width: var(--w-wide); margin: 0 auto; padding: 0 30px; }
+
+/* ── 顶栏：报头式（大字宣言版）── */
+.masthead { border-bottom: 1px solid var(--hairline); background: var(--paper);
+  position: sticky; top: 0; z-index: 50; backdrop-filter: blur(8px); }
+.masthead .wrap { display: flex; align-items: baseline; gap: 24px; height: 92px; }
+.masthead .brand { font-family: var(--font-display); font-size: 32px; font-weight: 900; letter-spacing: 0.5px; color: var(--ink); }
+.masthead .brand em { font-style: normal; color: var(--ink-blue); }
+.masthead .tagline { font-family: var(--font-fs); font-size: 20px; color: var(--muted); letter-spacing: 5px; }
+.masthead nav { margin-left: auto; display: flex; gap: 28px; }
+.masthead nav a { font-family: var(--font-display); font-size: 24px; font-weight: 600; color: var(--ink-2); }
+.masthead nav a:hover { color: var(--ink-blue); text-decoration: none; }
+.masthead nav a.on { color: var(--ink-blue); font-weight: 900; }
+
+/* ── 页脚 ── */
+.colophon { border-top: 1px solid var(--hairline); margin-top: 76px; padding: 28px 0 42px;
+  font-size: 20px; color: var(--muted); display: flex; gap: 18px; flex-wrap: wrap; }
+
+/* ── 出版物标题 ── */
+.display { font-family: var(--font-display); font-weight: 700; line-height: 1.28; letter-spacing: 0.3px; }
+
+/* KaTeX 批注样式（签名元素：公式+墨水批注——仿宋语气） */
+.anno { font-family: var(--font-fs); font-size: 20px; color: var(--ink-blue); line-height: 1.75; }
+.anno::before { content: "※ "; }

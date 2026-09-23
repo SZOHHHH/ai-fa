@@ -45,6 +45,8 @@ $$
 
 动作表征细分占位（B10 孵化 #2 的邻格活动证据）。
 
+> → 后继补记（260922）：[[MotionJEPA Preventing Temporal Feature Collapse by Capturing Visual Changes in Latent Space]]——差分对偶：本文预测**潜差分**（动作效应显式化，需动作标签），MotionJEPA 预测**差分图像的嵌入**（视觉变化显式化，零动作标签防坍缩）；两者共答"潜空间里变化信息放哪"。
+
 ---
 
 > 谱系枢纽：[[Dream to Control- Learning Behaviors by Latent Imagination（Dreamer）]]（图谱连通入口）

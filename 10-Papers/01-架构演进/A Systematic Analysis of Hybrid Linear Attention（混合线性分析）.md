@@ -64,3 +64,5 @@ $$
 ## 7. 读前须知
 
 需要：状态空间模型方程；delta 规则；chunk 并行扫描
+
+> 后继补记（260921）：[[10-Papers/01-架构演进/dQwen3.5 Hybrid-Attention Diffusion Language Models|dQwen3.5]]（混合注意力-RNN 骨干适配成扩散 LM：RNN 因果难双向化，但同等损失省一半 token）

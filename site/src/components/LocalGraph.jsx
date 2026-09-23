@@ -122,7 +122,7 @@ function GraphCanvas({ view, index }) {
     for (const n of nodes) {
       const g = mk('g', { style: 'cursor:pointer' });
       g.appendChild(mk('circle', { r: n.center ? 7 : 4.2, fill: n.center ? '#104281' : colorOf(n.id) }));
-      const t = mk('text', { y: -10, 'text-anchor': 'middle', style: 'font-size:6.6px;font-family:var(--font-fs);fill:#4a4944' });
+      const t = mk('text', { y: -10, 'text-anchor': 'middle', style: 'font-size:8px;font-family:var(--font-fs);fill:#4a4944' });
       t.textContent = (index?.[n.id]?.title || n.id.split('/').pop()).slice(0, 14);
       g.appendChild(t);
       dotsG.appendChild(g);

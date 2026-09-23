@@ -121,36 +121,55 @@ function GraphCanvas({ view, index }) {
       return { e, l };
     });
 
-    // ── 节点：按住 ≥1s 才进入拖拽（260923 用户令：点一下就动太灵敏）；短按松手=点击直达 ──
+    // ── 节点：按住 ≥1s 解锁拖拽（环形进度条反馈）；短按松手=点击直达 ──
+    // 260923 两修：①拖不动根因=接管时 if(!ev.active) 被手势活跃挡住、仿真从未 restart——改无条件 restart；
+    //             ②按住时节点外围画半透明环形进度条（CSS transition 1s 填满），满=可拖
     const fsPx = view.mode === 'paper' ? 4 : 8;          // 论文窗名称全显（4px），数学窗截断（8px）
     const labelOf = (id) => index?.[id]?.title || id.split('/').pop();
     const HOLD_MS = 1000;
     let t0 = 0, dragging = false;
     for (const n of nodes) {
       const g = mk('g', { style: 'cursor:pointer' });
-      g.appendChild(mk('circle', { r: n.center ? 7 : 4.2, fill: n.center ? '#104281' : colorOf(n.id) }));
+      const nodeR = n.center ? 7 : 4.2;
+      const ringR = nodeR + 5, CIRC = 2 * Math.PI * ringR;
+      const ring = mk('circle', { r: ringR, fill: 'none', stroke: '#104281', 'stroke-width': 2.5, 'stroke-linecap': 'round', 'stroke-dasharray': CIRC, transform: 'rotate(-90)' });
+      ring.style.pointerEvents = 'none'; ring.style.opacity = '0'; ring.style.strokeDashoffset = CIRC;
+      g.appendChild(ring);
+      g.appendChild(mk('circle', { r: nodeR, fill: n.center ? '#104281' : colorOf(n.id) }));
       const t = mk('text', { y: -8, 'text-anchor': 'middle', style: `font-size:${fsPx}px;font-family:var(--font-fs);fill:#4a4944` });
       t.textContent = view.mode === 'paper' ? labelOf(n.id) : labelOf(n.id).slice(0, 14);
       g.appendChild(t);
       dotsG.appendChild(g);
       n.__el = g;
+      const ringStart = () => {
+        ring.style.transition = 'none';
+        ring.style.opacity = '0.45';
+        ring.style.strokeDashoffset = CIRC;
+        requestAnimationFrame(() => requestAnimationFrame(() => {
+          ring.style.transition = `stroke-dashoffset ${HOLD_MS}ms linear`;
+          ring.style.strokeDashoffset = '0';
+        }));
+      };
+      const ringClear = () => { ring.style.transition = 'none'; ring.style.opacity = '0'; ring.style.strokeDashoffset = CIRC; };
       // 节点上的指针事件不冒泡到 svg 的 zoom（否则拖节点变成平移画布）
       g.addEventListener('pointerdown', (ev) => ev.stopPropagation());
       select(g).datum(n).call(
         drag()
-          .on('start', (ev) => { t0 = Date.now(); dragging = false; })
+          .on('start', () => { t0 = Date.now(); dragging = false; ringStart(); })
           .on('drag', (ev, d) => {
             if (Date.now() - t0 < HOLD_MS) return;               // 按住不足 1s：忽略移动（节点留在力导向位置）
-            if (!dragging) {                                      // 满 1s：此刻接管节点
+            if (!dragging) {                                      // 满 1s：接管节点（环满态提示已解锁）
               dragging = true;
-              if (!ev.active) sim.alphaTarget(0.3).restart();
+              sim.alphaTarget(0.3).restart();                     // 无条件——drag 事件里 ev.active=1，条件式永远跳过（上版拖不动的根因）
               d.fx = d.x; d.fy = d.y;
+              ring.style.transition = 'none'; ring.style.opacity = '0.9'; ring.style.strokeDashoffset = '0';
             }
             d.fx = zoomT.invertX(ev.x); d.fy = zoomT.invertY(ev.y);
           })
           .on('end', (ev, d) => {
+            ringClear();
             if (dragging) {                                       // 拖过：释放回仿真
-              if (!ev.active) sim.alphaTarget(0);
+              sim.alphaTarget(0);
               d.fx = null; d.fy = null;
             } else if (!n.center) {                               // 未进入拖拽=点击 → 直达
               window.location.href = `${import.meta.env.BASE_URL}explore/` + n.id;

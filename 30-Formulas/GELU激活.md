@@ -1,28 +1,62 @@
 ---
 type: formula
+formula_id: GELU
 title: GELU激活
-status: active
+aliases: [GELU激活, GELU, Gaussian Error Linear Unit, 高斯误差线性单元]
+domain: 架构
 tags: [formula]
 ---
 
-# GELU激活
+# GELU 激活
 
-## 标准形式
+## 1. 标准形式
 
+$$\mathrm{GELU}(x) = x\,\Phi(x) \;\approx\; 0.5x\Big(1 + \tanh\!\big(\sqrt{2/\pi}\,(x + 0.044715\,x^3)\big)\Big)$$
+$\Phi(x)$=标准正态 CDF（[[40-Concepts/高斯分布]] 的累积分布：$\Phi(0)=0.5$、$\Phi(2)\approx0.977$）。tanh 式是工程近似（最大误差 ~0.003，快且够准）。
 
-$$
-\mathrm{GELU}(x)=x\Phi(x)\approx 0.5x(1+\tanh(\sqrt{2/\pi}(x+0.044715x^3)))
-$$
+## 2. 教程：五个点手算 + 概率门控读法
 
+**第 1 步：五个点算一遍。**
+| $x$ | $\Phi(x)$ | $x\Phi(x)$ | 对照 ReLU |
+|---|---|---|---|
+| $-2$ | $0.023$ | $-0.045$ | $0$ |
+| $-0.5$ | $0.309$ | $-0.154$ | $0$ |
+| $0$ | $0.5$ | $0$ | $0$ |
+| $0.5$ | $0.691$ | $0.346$ | $0.5$ |
+| $2$ | $0.977$ | $1.955$ | $2$ |
 
-## 一句话
+**第 2 步：读出与 ReLU 的三点差异。** ①**负区留活口**：$-0.5\to-0.154$（ReLU 归零）——小负信号按概率放行一点，负得离谱才真正关门（$-2\to-0.045$）；②**处处可导**（原点也平滑——ReLU 的折角消失）；③**正区几乎同款**（$2\to1.955$ vs 2：大正值时 $\Phi\to1$ 退化为恒等）。
 
-概率门控线性单元
+**第 3 步：概率门控的正确读法（不是"软化"）。** $\Phi(x)$ 读作"**x 像正态分布哪一段的概率**"：输出=输入×通过概率——**每个神经元按自身输入的大小自行决定开多大门**（x 越大概率越接近 1）。思想谱系：ReLU 硬门（0/1）→ Swish 自门控 $x\sigma(x)$（sigmoid 门）→ GELU 概率门（正态 CDF 门）——三者的门函数越来越"软"，见 [[40-Concepts/激活函数族]] §2 族谱。
 
-**直觉**：[[40-Concepts/ReLU]] 的软开关版（族谱定位见 [[40-Concepts/激活函数族]]：sigmoid→ReLU→Swish→GELU 的平滑化主线）
+**第 4 步：tanh 近似验证一个点。** $x=0.5$：$\sqrt{2/\pi}\approx0.798$，内层 $= 0.798\times(0.5+0.044715\times0.125) = 0.798\times0.5056 \approx 0.4034$；$\tanh(0.4034)\approx0.3825$；$0.5\times0.5\times(1+0.3825) = 0.346$ ✓ 与精确 CDF 版一致——**两条公式在实用精度内等价**。
 
-## 本命论文
+**第 5 步：为什么 BERT/GPT 系选它。** 原论文实验：NLP 任务上 GELU 略优于 ReLU/ELU（平滑带来的一点训练红利+文化惯性）；现代 LLaMA 系已转 SwiGLU（[[30-Formulas/SwiGLU门控]]）——**GELU 的历史地位：把"概率门控"思想带进主流的过渡者**。
 
-[[Gaussian Error Linear Units（GELU）]] · 相关论文：SwiGLU
+## 3. 表示对照表
 
-> 待办：精读时补"表示对照表"（不同论文的符号差异换算）
+| 表示名 | 公式核心 | 出处 | 说明 |
+|---|---|---|---|
+| 精确版 | $x\Phi(x)$ | [[Gaussian Error Linear Units（GELU）]] | CDF 需 erf 函数 |
+| tanh 近似（工程默认） | 如 §1 | 同上 | max 误差 0.003 |
+| sigmoid 近似 | $x\sigma(1.702x)$ | 同上 | 更快更糙 |
+
+## 4. 直觉解释
+
+- **"按输入的分布位置决定放行量"**——门函数从硬开关进化为概率阀
+- 平滑保证处处有梯度（含原点），深网络+强正则下稳定性实证显著（[[40-Concepts/激活函数族]] §4）
+- 与 [[40-Concepts/sigmoid函数]] 的分工：sigmoid 做"门"（0~1），被门控的 $x$ 做"货"——门控线性思想（现代 FFN 标配）的早期形态
+
+## 5. 数学概念分解
+
+- [[40-Concepts/高斯分布]]：$\Phi$ 即其 CDF
+- [[40-Concepts/ReLU]]：被软化的原型
+- [[40-Concepts/激活函数族]]：族谱定位（平滑化主线第三站）
+- [[40-Concepts/sigmoid函数]]：Swish 的门（近亲）
+
+## 6. 与其他公式的关系
+
+- ← 前身：[[40-Concepts/ReLU]]（硬门）
+- ↔ 同代：Swish/SiLU（$x\sigma(x)$，门函数不同）
+- → 后继：[[30-Formulas/SwiGLU门控]]（门控思想放大到双路投影，LLaMA 配方）
+- ↑ 使用处：BERT/GPT-1/2/3 的 FFN 激活（[[20-Algorithms/Transformer]]）

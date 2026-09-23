@@ -32,7 +32,7 @@ tags: [algo]
 
 ## 4. 数学概念分解
 
-[[40-Concepts/注意力机制]]、[[40-Concepts/softmax函数]]、[[40-Concepts/内积]]、[[40-Concepts/梯度]]（残差反传）、[[40-Concepts/期望]]（自回归似然）
+[[40-Concepts/注意力机制]]、[[40-Concepts/softmax函数]]、[[40-Concepts/内积]]、[[40-Concepts/梯度]]（残差反传）、[[40-Concepts/期望]]（自回归似然）、[[20-Algorithms/多层感知机（MLP）]]（FFN 本体）、[[40-Concepts/Tokenization（分词）]]（序列入口）
 
 ## 5. 变体与演进
 

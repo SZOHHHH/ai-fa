@@ -50,3 +50,4 @@ $$\text{KV Cache} = 2 \times n_{\text{layers}} \times n_{\text{ctx}} \times h_{\
 - [[40-Concepts/注意力机制]]：缓存的对象
 - [[30-Formulas/注意力计算复杂度]]：性能模型
 - [[20-Algorithms/混合专家（MoE）]]：参数显存优化的另一极（权重稀疏 vs 缓存压缩）
+- [[40-Concepts/Tokenization（分词）]]：缓存与计价以 token 为单位

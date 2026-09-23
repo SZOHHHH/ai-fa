@@ -51,3 +51,4 @@ $$
 > 近邻同族：[[Bag of Tricks for Efficient Text Classification（FastText）]]
 
 > 数学根基：[[Adam更新规则]] · [[梯度]]
+- → 正则语义：权重衰减=权重收缩正则（[[40-Concepts/过拟合与正则化]]）；优化器谱系上位卡：[[20-Algorithms/梯度下降与优化器谱系]]

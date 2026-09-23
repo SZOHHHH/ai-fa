@@ -2,7 +2,7 @@
 // 圆钮常驻右下角 → 点击展开邻域小图：中心=当前卡，邻居=出链∪入链（封顶 36，按度排序）
 // 渲染=SVG + d3-force（节点少，无需 WebGL）；配色=类型色点（出版 tokens）+中心墨蓝
 import React, { useEffect, useMemo, useRef, useState } from 'react';
-import { forceSimulation, forceManyBody, forceLink, forceCollide, forceX, forceY } from 'd3';
+import { forceSimulation, forceManyBody, forceLink, forceCollide, forceX, forceY, drag, zoom, zoomIdentity, select } from 'd3';
 
 const TYPE_COLOR = {
   '10-Papers': 'var(--t-paper)', '20-Algorithms': 'var(--t-algo)', '30-Formulas': 'var(--t-formula)',
@@ -72,7 +72,7 @@ export default function LocalGraph({ slug }) {
               : view.nodes.length <= 1 ? <div className="lg-err">此卡暂无站内连接</div>
               : <GraphCanvas view={view} index={index} />}
           </div>
-          <div className="lg-foot">点击节点直达 · 中心=本卡</div>
+          <div className="lg-foot">点击节点直达 · 拖动节点 · 滚轮缩放 · 空白处平移</div>
         </div>
       )}
     </>
@@ -86,6 +86,7 @@ function GraphCanvas({ view, index }) {
     const W = el.clientWidth || 440, H = el.clientHeight || 330;
     const nodes = view.nodes.map(n => ({ ...n }));
     const links = view.links.map(l => ({ ...l }));
+    const idx = new Map(nodes.map(n => [n.id, n]));
     const sim = forceSimulation(nodes)
       .force('charge', forceManyBody().strength(-120))
       .force('link', forceLink(links).id(d => d.id).distance(d => d.thin ? 34 : 52).strength(d => d.thin ? 0.15 : 0.9))
@@ -95,34 +96,67 @@ function GraphCanvas({ view, index }) {
       .stop();
 
     const svg = el.querySelector('svg');
-    const edges = svg.querySelector('.lg-edges'), dots = svg.querySelector('.lg-dots'), labels = svg.querySelector('.lg-labels');
-    const mk = (tag, attrs) => { const e = document.createElementNS('http://www.w3.org/2000/svg', tag); for (const k in attrs) e.setAttribute(k, attrs[k]); return e; };
+    const rootG = svg.querySelector('.lg-root');
+    const edgesG = rootG.querySelector('.lg-edges'), dotsG = rootG.querySelector('.lg-dots');
+    const NS = 'http://www.w3.org/2000/svg';
+    const mk = (tag, attrs) => { const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); return e; };
 
-    const idx = new Map(nodes.map(n => [n.id, n]));
-    const lineEls = links.map(l => { const e = mk('line', { stroke: '#d8d6cf', 'stroke-width': 1 }); edges.appendChild(e); return { e, l }; });
-    const nodeEls = nodes.map(n => {
+    // ── 画布缩放+平移（滚轮/拖空白；rootG 整体 transform）──
+    let zoomT = zoomIdentity;
+    select(svg).call(
+      zoom().scaleExtent([0.4, 3])
+        .on('zoom', (ev) => {
+          zoomT = ev.transform;
+          rootG.setAttribute('transform', `translate(${zoomT.x},${zoomT.y}) scale(${zoomT.k})`);
+        })
+    );
+
+    const lineEls = links.map(l => {
+      const e = mk('line', { stroke: l.thin ? '#e5e3dc' : '#d2d0c8', 'stroke-width': l.thin ? 0.8 : 1.2 });
+      edgesG.appendChild(e);
+      return { e, l };
+    });
+
+    // ── 节点：拖拽（固定 fx/fy）+ 松手短按无位移=点击直达 ──
+    let t0 = 0, p0 = null;
+    for (const n of nodes) {
       const g = mk('g', { style: 'cursor:pointer' });
-      g.appendChild(mk('circle', { r: n.center ? 7 : 4, fill: n.center ? '#104281' : colorOf(n.id), stroke: n.center ? '#104281' : 'none' }));
-      const t = mk('text', { x: 0, y: -9, 'text-anchor': 'middle', style: 'font-size:11px;font-family:var(--font-fs);fill:#4a4944' });
+      g.appendChild(mk('circle', { r: n.center ? 7 : 4.2, fill: n.center ? '#104281' : colorOf(n.id) }));
+      const t = mk('text', { y: -10, 'text-anchor': 'middle', style: 'font-size:11px;font-family:var(--font-fs);fill:#4a4944' });
       t.textContent = (index?.[n.id]?.title || n.id.split('/').pop()).slice(0, 14);
       g.appendChild(t);
-      dots.appendChild(g);
-      g.addEventListener('click', (ev) => {
-        ev.stopPropagation();
-        if (!n.center) window.location.href = `${import.meta.env.BASE_URL}explore/` + n.id;
-      });
-      return { g, circle: g.querySelector('circle'), text: t, n };
-    });
+      dotsG.appendChild(g);
+      n.__el = g;
+      // 节点上的指针事件不冒泡到 svg 的 zoom（否则拖节点变成平移画布）
+      g.addEventListener('pointerdown', (ev) => ev.stopPropagation());
+      select(g).datum(n).call(
+        drag()
+          .on('start', (ev, d) => {
+            if (!ev.active) sim.alphaTarget(0.3).restart();
+            d.fx = d.x; d.fy = d.y; t0 = Date.now(); p0 = [ev.x, ev.y];
+          })
+          .on('drag', (ev, d) => { d.fx = zoomT.invertX(ev.x); d.fy = zoomT.invertY(ev.y); })
+          .on('end', (ev, d) => {
+            if (!ev.active) sim.alphaTarget(0);
+            d.fx = null; d.fy = null;
+            const moved = p0 && Math.hypot(ev.x - p0[0], ev.y - p0[1]) > 5;
+            if (Date.now() - t0 < 350 && !moved && !n.center) {
+              window.location.href = `${import.meta.env.BASE_URL}explore/` + n.id;
+            }
+          })
+      );
+    }
 
     sim.on('tick', () => {
       for (const { e, l } of lineEls) {
-        e.setAttribute('x1', idx.get(l.source.id).x); e.setAttribute('y1', idx.get(l.source.id).y);
-        e.setAttribute('x2', idx.get(l.target.id).x); e.setAttribute('y2', idx.get(l.target.id).y);
+        const s = idx.get(l.source.id), t2 = idx.get(l.target.id);
+        e.setAttribute('x1', s.x); e.setAttribute('y1', s.y);
+        e.setAttribute('x2', t2.x); e.setAttribute('y2', t2.y);
       }
-      for (const { g, n } of nodeEls) g.setAttribute('transform', `translate(${n.x},${n.y})`);
+      for (const n of nodes) n.__el.setAttribute('transform', `translate(${n.x},${n.y})`);
     });
     sim.restart();
-    return () => sim.stop();
+    return () => { sim.stop(); select(svg).on('.zoom', null); };
   }, [view]);
-  return <div ref={ref} className="lg-canvas-wrap"><svg width="100%" height="100%"><g className="lg-edges" /><g className="lg-dots" /><g className="lg-labels" /></svg></div>;
+  return <div ref={ref} className="lg-canvas-wrap"><svg width="100%" height="100%"><g className="lg-root"><g className="lg-edges" /><g className="lg-dots" /></g></svg></div>;
 }

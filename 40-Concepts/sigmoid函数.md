@@ -52,3 +52,4 @@ $$\sigma(x) = \frac{1}{1+e^{-x}} = \frac{e^x}{1+e^x}$$
 - [[40-Concepts/激活函数族]]：sigmoid 作为激活的兴衰史（饱和 → 被 ReLU 系取代）
 - [[40-Concepts/概率分布]]：Bernoulli 分布链接函数出身
 - [[40-Concepts/梯度]]：自封闭求导
+- [[40-Concepts/线性模型（回归与分类）]]：sigmoid+交叉熵=逻辑回归——分类的第 0 课

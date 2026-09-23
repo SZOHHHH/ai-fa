@@ -7,6 +7,7 @@ authors: [Aakanksha Chowdhery, Sharan Narang, Jacob Devlin, et al.]
 venue: JMLR 2023
 arxiv: "2204.02311"
 line: 标杆锚点
+matrix_coords: [全注意力, 缩放律, 无状态]
 tags: [paper]
 pdf: 已下载（PDF/）
 ---

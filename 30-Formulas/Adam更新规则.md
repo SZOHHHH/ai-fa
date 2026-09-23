@@ -24,5 +24,6 @@ Adam优化器的一阶二阶矩自适应更新
 ## 本命论文
 
 [[Adam- A Method for Stochastic Optimization（Adam）]] · 相关论文：AdamW
+- 谱系上位卡：[[20-Algorithms/梯度下降与优化器谱系]]（GD→SGD→Momentum→Adam/AdamW 的进化史与选型表）
 
 > 待办：精读时补"表示对照表"（不同论文的符号差异换算）

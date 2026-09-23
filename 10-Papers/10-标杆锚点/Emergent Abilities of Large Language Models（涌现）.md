@@ -7,6 +7,7 @@ authors: [Jason Wei, Yi Tay, Rishi Bommasani, et al.]
 venue: TMLR 2022
 arxiv: "2206.07682"
 line: 标杆锚点
+matrix_coords: [全注意力, 缩放律, 无状态]
 tags: [paper]
 pdf: 已下载（PDF/）
 ---

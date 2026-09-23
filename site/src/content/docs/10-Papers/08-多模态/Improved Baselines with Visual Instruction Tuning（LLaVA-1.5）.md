@@ -29,11 +29,11 @@ MLP 替换线性投影；响应格式化数据；更高分辨率输入。
 
 
 $$
-V = \mathrm{MLP}\big(\mathrm{[CLIP](/explore/10-Papers/08-多模态/Learning Transferable Visual Models From Natural Language Supervision（CLIP）)}(I)\big)\ \text{(双线性视觉词表)}
+V = \mathrm{MLP}\big(\mathrm{[CLIP](/ai-fa/explore/10-Papers/08-多模态/Learning Transferable Visual Models From Natural Language Supervision（CLIP）)}(I)\big)\ \text{(双线性视觉词表)}
 $$
 
 
-**直觉**：← [Visual Instruction Tuning](/explore/10-Papers/08-多模态/Visual Instruction Tuning（LLaVA）)（库内）；→ LLaVA-NeXT 系；投影接口路线的社区标准
+**直觉**：← [Visual Instruction Tuning](/ai-fa/explore/10-Papers/08-多模态/Visual Instruction Tuning（LLaVA）)（库内）；→ LLaVA-NeXT 系；投影接口路线的社区标准
 
 ## 5. 与前作/矩阵关系
 
@@ -47,6 +47,6 @@ $$
 
 undefined
 
-> 近邻同族：[BLIP-2 - Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models](/explore/10-Papers/08-多模态/BLIP-2- Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Lan（BLIP-2）) · [Flamingo - a Visual Language Model for Few-Shot Learning](/explore/10-Papers/08-多模态/Flamingo- a Visual Language Model for Few-Shot Learning（Flamingo）)
+> 近邻同族：[BLIP-2 - Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models](/ai-fa/explore/10-Papers/08-多模态/BLIP-2- Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Lan（BLIP-2）) · [Flamingo - a Visual Language Model for Few-Shot Learning](/ai-fa/explore/10-Papers/08-多模态/Flamingo- a Visual Language Model for Few-Shot Learning（Flamingo）)
 
-> 数学根基：[三层感知机投影](/explore/30-Formulas/三层感知机投影) · [CLIP对比损失](/explore/30-Formulas/CLIP对比损失) · [注意力核心公式](/explore/30-Formulas/注意力核心公式)
+> 数学根基：[三层感知机投影](/ai-fa/explore/30-Formulas/三层感知机投影) · [CLIP对比损失](/ai-fa/explore/30-Formulas/CLIP对比损失) · [注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)

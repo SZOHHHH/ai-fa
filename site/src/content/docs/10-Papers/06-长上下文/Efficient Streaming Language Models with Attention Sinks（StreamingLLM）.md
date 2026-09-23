@@ -33,21 +33,21 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- [稀疏与线性注意力](/explore/40-Concepts/稀疏与线性注意力) 保留/压缩家族行
+- [稀疏与线性注意力](/ai-fa/explore/40-Concepts/稀疏与线性注意力) 保留/压缩家族行
 
 ## 5. 与前作的关系
 
-- 与 [Longformer - The Long-Document Transformer](/explore/10-Papers/06-长上下文/Longformer- The Long-Document Transformer（Longformer）) 的 global token 呼应（但 Longformer 是设计、Sink 是发现）
+- 与 [Longformer - The Long-Document Transformer](/ai-fa/explore/10-Papers/06-长上下文/Longformer- The Long-Document Transformer（Longformer）) 的 global token 呼应（但 Longformer 是设计、Sink 是发现）
 - 修正了朴素滑窗（如 [Mistral 滑窗]）的隐含缺陷
 
 ## 6. 影响与后续
 
 - 流式/边缘部署标配技巧；KV 驱逐策略（H2O 等）研究由此展开
 - "softmax 必须有 sink"的理解进入架构设计（SoftMax-off-one 等变体）
-- 诊断谱系延续（2026-09）：[Do New Attention Mechanisms Actually Fix Attention Sinks at Million-Token Context?](/explore/10-Papers/06-长上下文/Do New Attention Mechanisms Actually Fix Attention Sinks at Million-Token Context)（SinkProbe）把 sink 测量推到 1M 窗口并归因——**训练目标而非架构**产生 sink；工程利用面另见 [Fine-Tuning a KV Cache Concatenation-Aware Model or Recomputing KV Caches? Why Not Both?](/explore/10-Papers/06-长上下文/Fine-Tuning a KV Cache Concatenation-Aware Model or Recomputing KV Caches Why Not Both)（EPIC 以块内 sink 位置选重算 token）
+- 诊断谱系延续（2026-09）：[Do New Attention Mechanisms Actually Fix Attention Sinks at Million-Token Context?](/ai-fa/explore/10-Papers/06-长上下文/Do New Attention Mechanisms Actually Fix Attention Sinks at Million-Token Context)（SinkProbe）把 sink 测量推到 1M 窗口并归因——**训练目标而非架构**产生 sink；工程利用面另见 [Fine-Tuning a KV Cache Concatenation-Aware Model or Recomputing KV Caches? Why Not Both?](/ai-fa/explore/10-Papers/06-长上下文/Fine-Tuning a KV Cache Concatenation-Aware Model or Recomputing KV Caches Why Not Both)（EPIC 以块内 sink 位置选重算 token）
 
-- → 后继补记（260914）：[SMELT](/explore/10-Papers/05-MoE/SMELT - Scaling Laws for Compute-Matched MoE Looped Transformers（循环MoE缩放律）)（又一"非架构手段削 sink"证据：第二次循环减少 attention sink、质量移向内容 token）
+- → 后继补记（260914）：[SMELT](/ai-fa/explore/10-Papers/05-MoE/SMELT - Scaling Laws for Compute-Matched MoE Looped Transformers（循环MoE缩放律）)（又一"非架构手段削 sink"证据：第二次循环减少 attention sink、质量移向内容 token）
 
 ## 7. 读前须知
 
-[注意力核心公式](/explore/30-Formulas/注意力核心公式)、[softmax函数](/explore/40-Concepts/softmax函数)（归一性是根源）、[KV缓存](/explore/40-Concepts/KV缓存)
+[注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)、[softmax函数](/ai-fa/explore/40-Concepts/softmax函数)（归一性是根源）、[KV缓存](/ai-fa/explore/40-Concepts/KV缓存)

@@ -39,7 +39,7 @@ pdf: 已下载（PDF/）
 ## 5. 与前作的关系
 
 - 前置于 Chinchilla（B6 标杆批回填链接）：同一问题两次回答
-- 与 [Language Models are Few-Shot Learners](/explore/10-Papers/01-架构演进/Language Models are Few-Shot Learners（GPT-3）) 同团队——GPT-3 的规模选择背后是它
+- 与 [Language Models are Few-Shot Learners](/ai-fa/explore/10-Papers/01-架构演进/Language Models are Few-Shot Learners（GPT-3）) 同团队——GPT-3 的规模选择背后是它
 
 ## 6. 影响与后续
 
@@ -51,6 +51,6 @@ pdf: 已下载（PDF/）
 
 无重数学门槛；建议与 Chinchilla 对照读（同公式不同拟合）
 
-> 近邻同族：[An Image is Worth 16x16 Words - Transformers for Image Recognition at Scale](/explore/10-Papers/01-架构演进/An Image is Worth 16x16 Words- Transformers for Image Recognition at Scale（ViT）) · [Attention Is All You Need](/explore/10-Papers/01-架构演进/Attention Is All You Need（Transformer）)
+> 近邻同族：[An Image is Worth 16x16 Words - Transformers for Image Recognition at Scale](/ai-fa/explore/10-Papers/01-架构演进/An Image is Worth 16x16 Words- Transformers for Image Recognition at Scale（ViT）) · [Attention Is All You Need](/ai-fa/explore/10-Papers/01-架构演进/Attention Is All You Need（Transformer）)
 
-> 数学根基：[注意力核心公式](/explore/30-Formulas/注意力核心公式)
+> 数学根基：[注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)

@@ -33,12 +33,12 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- 补偿式与 [量化误差与异常值](/explore/30-Formulas/量化误差与异常值) §2 GPTQ 行同构——剪枝=量化到 {0} 的特例：**剪枝与量化统一框架**
+- 补偿式与 [量化误差与异常值](/ai-fa/explore/30-Formulas/量化误差与异常值) §2 GPTQ 行同构——剪枝=量化到 {0} 的特例：**剪枝与量化统一框架**
 
 ## 5. 与前作的关系
 
-- 直接扩展 [GPTQ - Accurate Post-Training Quantization for Generative Pre-trained Transformers](/explore/10-Papers/03-后处理/GPTQ- Accurate Post-Training Quantization for Generative Pre-trained Transformers（GPTQ）)（同作者）
-- 对照 [The Lottery Ticket Hypothesis - Finding Sparse, Trainable Neural Networks](/explore/10-Papers/03-后处理/The Lottery Ticket Hypothesis- Finding Sparse, Trainable Neural Networks（Lottery Ticket）)：重训找子网 vs 一步剪大网——两条剪枝哲学
+- 直接扩展 [GPTQ - Accurate Post-Training Quantization for Generative Pre-trained Transformers](/ai-fa/explore/10-Papers/03-后处理/GPTQ- Accurate Post-Training Quantization for Generative Pre-trained Transformers（GPTQ）)（同作者）
+- 对照 [The Lottery Ticket Hypothesis - Finding Sparse, Trainable Neural Networks](/ai-fa/explore/10-Papers/03-后处理/The Lottery Ticket Hypothesis- Finding Sparse, Trainable Neural Networks（Lottery Ticket）)：重训找子网 vs 一步剪大网——两条剪枝哲学
 
 ## 6. 影响与后续
 
@@ -47,4 +47,4 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[GPTQ - Accurate Post-Training Quantization for Generative Pre-trained Transformers](/explore/10-Papers/03-后处理/GPTQ- Accurate Post-Training Quantization for Generative Pre-trained Transformers（GPTQ）)（先读）、[量化](/explore/40-Concepts/量化)
+[GPTQ - Accurate Post-Training Quantization for Generative Pre-trained Transformers](/ai-fa/explore/10-Papers/03-后处理/GPTQ- Accurate Post-Training Quantization for Generative Pre-trained Transformers（GPTQ）)（先读）、[量化](/ai-fa/explore/40-Concepts/量化)

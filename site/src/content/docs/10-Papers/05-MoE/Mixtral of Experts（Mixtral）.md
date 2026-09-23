@@ -33,23 +33,23 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- [MoE门控公式](/explore/30-Formulas/MoE门控公式)（Switch 系 top-2 配置）
+- [MoE门控公式](/ai-fa/explore/30-Formulas/MoE门控公式)（Switch 系 top-2 配置）
 
 ## 5. 与前作的关系
 
-- 开源化了 [Switch Transformers - Scaling to Trillion Parameter Models with Simple and Efficient Sparsity](/explore/10-Papers/05-MoE/Switch Transformers- Scaling to Trillion Parameter Models with Simple and Efficient Spars（Switch）)/GLaM 路线（此前 MoE 皆闭源）
-- 与 [LLaMA - Open and Efficient Foundation Language Models](/explore/10-Papers/01-架构演进/LLaMA- Open and Efficient Foundation Language Models（LLaMA）) 稠密路线正面竞争
+- 开源化了 [Switch Transformers - Scaling to Trillion Parameter Models with Simple and Efficient Sparsity](/ai-fa/explore/10-Papers/05-MoE/Switch Transformers- Scaling to Trillion Parameter Models with Simple and Efficient Spars（Switch）)/GLaM 路线（此前 MoE 皆闭源）
+- 与 [LLaMA - Open and Efficient Foundation Language Models](/ai-fa/explore/10-Papers/01-架构演进/LLaMA- Open and Efficient Foundation Language Models（LLaMA）) 稠密路线正面竞争
 
 ## 6. 影响与后续
 
 - DeepSeek 系、Qwen-MoE、DBRX 等跟进——开源 MoE 竞赛
 - 专家路由可解释性讨论进入大众视野
 
-- → 后继补记（260914）：[SMELT](/explore/10-Papers/05-MoE/SMELT - Scaling Laws for Compute-Matched MoE Looped Transformers（循环MoE缩放律）)（MoE 骨干上叠循环化的 scaling law 实证）
-- → 后继补记（260916）：[How Fragile](/explore/10-Papers/05-MoE/How Fragile Is Safety Alignment at Frontier Scale A Single-Direction Attack on a 320B MoE)（320B MoE 安全对齐的单方向攻击——MoE 规模化后的安全边界）
+- → 后继补记（260914）：[SMELT](/ai-fa/explore/10-Papers/05-MoE/SMELT - Scaling Laws for Compute-Matched MoE Looped Transformers（循环MoE缩放律）)（MoE 骨干上叠循环化的 scaling law 实证）
+- → 后继补记（260916）：[How Fragile](/ai-fa/explore/10-Papers/05-MoE/How Fragile Is Safety Alignment at Frontier Scale A Single-Direction Attack on a 320B MoE)（320B MoE 安全对齐的单方向攻击——MoE 规模化后的安全边界）
 
 ## 7. 读前须知
 
-[混合专家（MoE）](/explore/20-Algorithms/混合专家（MoE）)、[MoE门控公式](/explore/30-Formulas/MoE门控公式)
+[混合专家（MoE）](/ai-fa/explore/20-Algorithms/混合专家（MoE）)、[MoE门控公式](/ai-fa/explore/30-Formulas/MoE门控公式)
 
-> 谱系成员（9）：[Auxiliary-Loss-Free Load Balancing Strategy for Mixture-of-Experts](/explore/10-Papers/05-MoE/Auxiliary-Loss-Free Load Balancing Strategy for Mixture-of-Experts（无辅助损失MoE）) · [DeepSeek-V3 Technical Report](/explore/10-Papers/05-MoE/DeepSeek-V3 Technical Report（DeepSeek-V3）) · [DeepSeek-VL2- Mixture-of-Experts Vision-Language Models for Advanced Multimodal Understanding](/explore/10-Papers/05-MoE/DeepSeek-VL2- Mixture-of-Experts Vision-Language Models for Advanced Multimodal Understanding（VL2）) · [DeepSeekMoE - Towards Ultimate Expert Specialization in Mixture-of-Experts Language Models](/explore/10-Papers/05-MoE/DeepSeekMoE- Towards Ultimate Expert Specialization in Mixture-of-Experts Language Model（DeepSeekMoE）) · [From Sparse to Soft Mixtures of Experts](/explore/10-Papers/05-MoE/From Sparse to Soft Mixtures of Experts（Soft MoE）) · [GLaM - Efficient Scaling of Language Models with Mixture-of-Experts](/explore/10-Papers/05-MoE/GLaM- Efficient Scaling of Language Models with Mixture-of-Experts（GLaM）) · [GShard - Scaling Giant Models with Conditional Computation and Automatic Sharding](/explore/10-Papers/05-MoE/GShard- Scaling Giant Models with Conditional Computation and Automatic Sharding（GShard）) · [Mixture-of-Experts with Expert Choice Routing](/explore/10-Papers/05-MoE/Mixture-of-Experts with Expert Choice Routing（Expert Choice）) · [Switch Transformers - Scaling to Trillion Parameter Models with Simple and Efficient Sparsity](/explore/10-Papers/05-MoE/Switch Transformers- Scaling to Trillion Parameter Models with Simple and Efficient Spars（Switch）)
+> 谱系成员（9）：[Auxiliary-Loss-Free Load Balancing Strategy for Mixture-of-Experts](/ai-fa/explore/10-Papers/05-MoE/Auxiliary-Loss-Free Load Balancing Strategy for Mixture-of-Experts（无辅助损失MoE）) · [DeepSeek-V3 Technical Report](/ai-fa/explore/10-Papers/05-MoE/DeepSeek-V3 Technical Report（DeepSeek-V3）) · [DeepSeek-VL2- Mixture-of-Experts Vision-Language Models for Advanced Multimodal Understanding](/ai-fa/explore/10-Papers/05-MoE/DeepSeek-VL2- Mixture-of-Experts Vision-Language Models for Advanced Multimodal Understanding（VL2）) · [DeepSeekMoE - Towards Ultimate Expert Specialization in Mixture-of-Experts Language Models](/ai-fa/explore/10-Papers/05-MoE/DeepSeekMoE- Towards Ultimate Expert Specialization in Mixture-of-Experts Language Model（DeepSeekMoE）) · [From Sparse to Soft Mixtures of Experts](/ai-fa/explore/10-Papers/05-MoE/From Sparse to Soft Mixtures of Experts（Soft MoE）) · [GLaM - Efficient Scaling of Language Models with Mixture-of-Experts](/ai-fa/explore/10-Papers/05-MoE/GLaM- Efficient Scaling of Language Models with Mixture-of-Experts（GLaM）) · [GShard - Scaling Giant Models with Conditional Computation and Automatic Sharding](/ai-fa/explore/10-Papers/05-MoE/GShard- Scaling Giant Models with Conditional Computation and Automatic Sharding（GShard）) · [Mixture-of-Experts with Expert Choice Routing](/ai-fa/explore/10-Papers/05-MoE/Mixture-of-Experts with Expert Choice Routing（Expert Choice）) · [Switch Transformers - Scaling to Trillion Parameter Models with Simple and Efficient Sparsity](/ai-fa/explore/10-Papers/05-MoE/Switch Transformers- Scaling to Trillion Parameter Models with Simple and Efficient Spars（Switch）)

@@ -36,8 +36,8 @@ layer: 精化层（摘要级+摘要核实，PDF 待深读）
 （待 PDF 精读补全——摘要级暂记直觉）事件触发条件形如 $$\text{score}(\text{哨兵}) > \min_{j \in \text{top-}k} \text{score}(j)$$ 才重路由：**路由的惰性求值——"没证据表明该变就不重算"，省下的是层间冗余的整块打分矩阵**。概率界部分（漏检挑战者）是经典的随机采样覆盖论证。
 
 ## 5. 与前作/矩阵关系
-- ← 谱系：动态稀疏注意力路由族 [MoBA](/explore/10-Papers/06-长上下文/MoBA- Mixture of Block Attention for Long-Context LLMs（MoBA）)（块级路由）、[NSA](/explore/10-Papers/06-长上下文/Native Sparse Attention- Hardware-Aligned and Natively Trainable Sparse Attention（NSA）)（硬件对齐稀疏注意力）——RouteRelay 是 router-agnostic 的开销优化层，可叠加在这些路由器上。
-- 概念链：[稀疏与线性注意力](/explore/40-Concepts/稀疏与线性注意力)。
+- ← 谱系：动态稀疏注意力路由族 [MoBA](/ai-fa/explore/10-Papers/06-长上下文/MoBA- Mixture of Block Attention for Long-Context LLMs（MoBA）)（块级路由）、[NSA](/ai-fa/explore/10-Papers/06-长上下文/Native Sparse Attention- Hardware-Aligned and Natively Trainable Sparse Attention（NSA）)（硬件对齐稀疏注意力）——RouteRelay 是 router-agnostic 的开销优化层，可叠加在这些路由器上。
+- 概念链：[稀疏与线性注意力](/ai-fa/explore/40-Concepts/稀疏与线性注意力)。
 - 方法论呼应：事件触发/惰性求值思想（预注册"何时必须重算"）与实验系统中"按需重评估"的节约逻辑同构——库内工程效率线参考。
 
 ## 6. 影响后续
@@ -45,5 +45,5 @@ layer: 精化层（摘要级+摘要核实，PDF 待深读）
 - 与 E1/E2 无域重叠（LLM 推理工程 vs 像素扩散 WM），纯效率工程格。
 
 ## 7. 读前须知
-- 前置：动态稀疏注意力基本流程（query 块→key 块路由）——先看 [MoBA](/explore/10-Papers/06-长上下文/MoBA- Mixture of Block Attention for Long-Context LLMs（MoBA）) 卡；top-k 选择的概念。
+- 前置：动态稀疏注意力基本流程（query 块→key 块路由）——先看 [MoBA](/ai-fa/explore/10-Papers/06-长上下文/MoBA- Mixture of Block Attention for Long-Context LLMs（MoBA）) 卡；top-k 选择的概念。
 - 理论部分（稳定性条件/概率界）需要基础概率；公式待 PDF 深读补第 4 节。

@@ -39,12 +39,12 @@ $$\mathcal{L}(\theta)\;=\;\mathbb{E}_{(s,a,r,s')\sim\mathcal{D}_{\text{replay}}}
 
 **直觉解释**：右边两项是"新证据"与"旧估价"的差（TD 误差的平方版）；关键在两个细节——①期望下标是**回放池**而非当前策略（这就是 off-policy）；②目标里的 Q 戴着旧参数 $$\bar\theta$$（这就是目标网络）。梯度**只穿 $$Q_\theta$$ 不穿目标**（目标当常数，对应实践里的 stop-gradient）。
 
-- 需要的前置：[贝尔曼方程](/explore/40-Concepts/贝尔曼方程)（$$Q^*=r+\gamma\max Q^*$$ 的影子）、[TD误差与自举](/explore/40-Concepts/TD误差与自举)（损失即 TD 误差平方）、[on-policy与off-policy](/explore/40-Concepts/on-policy与off-policy)（回放池=行为分布 $$\mu$$）、[价值函数（V与Q）](/explore/40-Concepts/价值函数（V与Q）)（为什么选 Q 不选 V：$$\arg\max$$ 直接选动作，无需展开策略）
+- 需要的前置：[贝尔曼方程](/ai-fa/explore/40-Concepts/贝尔曼方程)（$$Q^*=r+\gamma\max Q^*$$ 的影子）、[TD误差与自举](/ai-fa/explore/40-Concepts/TD误差与自举)（损失即 TD 误差平方）、[on-policy与off-policy](/ai-fa/explore/40-Concepts/on-policy与off-policy)（回放池=行为分布 $$\mu$$）、[价值函数（V与Q）](/ai-fa/explore/40-Concepts/价值函数（V与Q）)（为什么选 Q 不选 V：$$\arg\max$$ 直接选动作，无需展开策略）
 
 ## 5. 与前作/矩阵关系
 
 - ← **Q-learning**（Watkins 1989，表格时代）：DQN=它的函数逼近版，贡献是把"表格+查表"换成"CNN+梯度"并活了下来；
-- ← [RL中的log导数技巧](/explore/40-Concepts/RL中的log导数技巧) 之前的世界：整个价值学习路线（TD/GQ/Neural Fitted Q）都在与"发散"搏斗，DQN 用两个工程件先稳住了实践；
+- ← [RL中的log导数技巧](/ai-fa/explore/40-Concepts/RL中的log导数技巧) 之前的世界：整个价值学习路线（TD/GQ/Neural Fitted Q）都在与"发散"搏斗，DQN 用两个工程件先稳住了实践；
 - ≡ 与策略梯度路线（REINFORCE→PPO）平行：**价值 off-policy 家族 vs 策略 on-policy 家族**——矩阵上占"无模型×价值"格。
 
 ## 6. 影响与后续
@@ -56,6 +56,6 @@ $$\mathcal{L}(\theta)\;=\;\mathbb{E}_{(s,a,r,s')\sim\mathcal{D}_{\text{replay}}}
 
 ## 7. 读前须知
 
-- **必前置**：[贝尔曼方程](/explore/40-Concepts/贝尔曼方程)、[价值函数（V与Q）](/explore/40-Concepts/价值函数（V与Q）)、[TD误差与自举](/explore/40-Concepts/TD误差与自举)、[on-policy与off-policy](/explore/40-Concepts/on-policy与off-policy)；
+- **必前置**：[贝尔曼方程](/ai-fa/explore/40-Concepts/贝尔曼方程)、[价值函数（V与Q）](/ai-fa/explore/40-Concepts/价值函数（V与Q）)、[TD误差与自举](/ai-fa/explore/40-Concepts/TD误差与自举)、[on-policy与off-policy](/ai-fa/explore/40-Concepts/on-policy与off-policy)；
 - **易混点**：①DQN 输出的是**每个动作一个数**（|A| 维），不是概率分布——策略是隐式的 $$\arg\max$$；②"目标网络"不是第二个用途不同的网络，是**同一网络的冷冻副本**；③ε-greedy 的 ε 与折扣 γ 是两个不相干的东西（探索强度 vs 远见程度）；
 - **读法建议**：正文 3 页，先把图 1（架构）与算法 1 对着看；然后直接跳 2015 Nature 版的 49 游戏表感受"通用性"主张。

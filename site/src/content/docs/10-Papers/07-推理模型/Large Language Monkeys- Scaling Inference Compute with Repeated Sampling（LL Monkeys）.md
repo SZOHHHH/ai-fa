@@ -35,7 +35,7 @@ $$
 $$
 
 
-**直觉**：→ [Provable Scaling Laws for the Test-Time Compute of Large Language Models](/explore/10-Papers/07-推理模型/Provable Scaling Laws for the Test-Time Compute of Large Language Models（PSL）)（B16 可证版）；与 Test-Time Compute（库内）互补（采样聚合 vs 搜索分配）
+**直觉**：→ [Provable Scaling Laws for the Test-Time Compute of Large Language Models](/ai-fa/explore/10-Papers/07-推理模型/Provable Scaling Laws for the Test-Time Compute of Large Language Models（PSL）)（B16 可证版）；与 Test-Time Compute（库内）互补（采样聚合 vs 搜索分配）
 
 ## 5. 与前作/矩阵关系
 
@@ -49,6 +49,6 @@ $$
 
 undefined
 
-> 近邻同族：[Controlled Decoding from Language Models](/explore/10-Papers/07-推理模型/Controlled Decoding from Language Models（CD）)
+> 近邻同族：[Controlled Decoding from Language Models](/ai-fa/explore/10-Papers/07-推理模型/Controlled Decoding from Language Models（CD）)
 
-> 数学根基：[思维链（CoT）](/explore/40-Concepts/思维链（CoT）)
+> 数学根基：[思维链（CoT）](/ai-fa/explore/40-Concepts/思维链（CoT）)

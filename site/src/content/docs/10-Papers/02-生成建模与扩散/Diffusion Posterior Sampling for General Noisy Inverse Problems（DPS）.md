@@ -38,14 +38,14 @@ $$\hat\epsilon_t\;=\;\epsilon_\theta(x_t,t)\;-\;\sqrt{1-\bar\alpha_t}\;\zeta_t\,
 
 **直觉解释**：第一项是扩散先验自己的"去噪方向"（往数据流形拉）；第二项是观测的"拉力"（往满足测量那边拉）——每一步都在两种力之间走钢丝，最终落在"既像真实数据、又解释了观测"的区域。**为什么用 $$x_0'$$ 而不是 $$x_t$$ 算残差**：观测模型定义在干净图上，$$x_t$$ 还带着噪声，先一步预测干净版本再对照——这一步近似是它比早期方法稳的关键。
 
-- 需要的前置：[贝叶斯公式](/explore/40-Concepts/贝叶斯公式)（后验=先验×似然）、[Score函数](/explore/40-Concepts/Score函数)（分数叠加=方向叠加）、[DDPM训练目标](/explore/30-Formulas/DDPM训练目标)、[后验采样与planning-as-inference](/explore/40-Concepts/后验采样与planning-as-inference)
+- 需要的前置：[贝叶斯公式](/ai-fa/explore/40-Concepts/贝叶斯公式)（后验=先验×似然）、[Score函数](/ai-fa/explore/40-Concepts/Score函数)（分数叠加=方向叠加）、[DDPM训练目标](/ai-fa/explore/30-Formulas/DDPM训练目标)、[后验采样与planning-as-inference](/ai-fa/explore/40-Concepts/后验采样与planning-as-inference)
 
 ## 5. 与前作/矩阵关系
 
 - ← 图像逆问题的扩散解法一线（Song 等 2021 的修复、RePaint 的重采样、MCG 的流形约束）——DPS 把它们统一成"通用似然引导"；
-- ← 数学近亲：[无分类器引导（CFG）](/explore/30-Formulas/无分类器引导（CFG）)（训练时条件）与经典 [贝叶斯公式](/explore/40-Concepts/贝叶斯公式) 推断；
+- ← 数学近亲：[无分类器引导（CFG）](/ai-fa/explore/30-Formulas/无分类器引导（CFG）)（训练时条件）与经典 [贝叶斯公式](/ai-fa/explore/40-Concepts/贝叶斯公式) 推断；
 - → ΠGDM（伪逆引导闭式近似）、DAPS（退火后验采样）、共轭梯度引导（CGD）……"引导式后验"小家族；
-- → 在决策语境的潜在用法：把"未来帧=goal"当观测 $$y$$、把动作（或未来轨迹）当 $$x$$——**由果找因的引导式实现**（与 [Diffuser](/explore/10-Papers/04-强化学习与对齐/Planning with Diffusion for Flexible Behavior Synthesis（Diffuser）) 的 inpainting 硬钉路线互补）。
+- → 在决策语境的潜在用法：把"未来帧=goal"当观测 $$y$$、把动作（或未来轨迹）当 $$x$$——**由果找因的引导式实现**（与 [Diffuser](/ai-fa/explore/10-Papers/04-强化学习与对齐/Planning with Diffusion for Flexible Behavior Synthesis（Diffuser）) 的 inpainting 硬钉路线互补）。
 
 ## 6. 影响与后续
 
@@ -55,6 +55,6 @@ $$\hat\epsilon_t\;=\;\epsilon_\theta(x_t,t)\;-\;\sqrt{1-\bar\alpha_t}\;\zeta_t\,
 
 ## 7. 读前须知
 
-- **必前置**：[贝叶斯公式](/explore/40-Concepts/贝叶斯公式)、[Score函数](/explore/40-Concepts/Score函数)、[DDPM训练目标](/explore/30-Formulas/DDPM训练目标)、[后验采样与planning-as-inference](/explore/40-Concepts/后验采样与planning-as-inference)；
+- **必前置**：[贝叶斯公式](/ai-fa/explore/40-Concepts/贝叶斯公式)、[Score函数](/ai-fa/explore/40-Concepts/Score函数)、[DDPM训练目标](/ai-fa/explore/30-Formulas/DDPM训练目标)、[后验采样与planning-as-inference](/ai-fa/explore/40-Concepts/后验采样与planning-as-inference)；
 - **易混点**：①DPS 采的是**内容后验** $$p(x\mid y)$$，不是动作后验——用到决策上需要自己定义"观测=目标的映射"；②它与 CFG 的区别=测试时任意似然 vs 训练时已知条件类；③$$\mathcal{A}$$（观测算子）必须可微或可绕（不可微时用代理或有限差分）；
 - **读法建议**：§3.1（公式推导两页）+ 图 2（噪声水平感知的定性对比）；实验部分按兴趣选读。

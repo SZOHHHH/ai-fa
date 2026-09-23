@@ -49,8 +49,8 @@ undefined
 
 ---
 
-> 谱系枢纽：[GPT-4 Technical Report](/explore/10-Papers/10-标杆锚点/GPT-4 Technical Report（GPT-4）)（图谱连通入口）
+> 谱系枢纽：[GPT-4 Technical Report](/ai-fa/explore/10-Papers/10-标杆锚点/GPT-4 Technical Report（GPT-4）)（图谱连通入口）
 
-> 近邻同族：[Gemini 1.5- Unlocking Multimodal Understanding Across Millions of Tokens of Context](/explore/10-Papers/10-标杆锚点/Gemini 1.5- Unlocking Multimodal Understanding Across Millions of Tokens of Context（Gemini 1.5）) · [MixEval- Deriving Wisdom of the Crowd from LLM Benchmark Mixtures](/explore/10-Papers/10-标杆锚点/MixEval- Deriving Wisdom of the Crowd from LLM Benchmark Mixtures（MixEval）)
+> 近邻同族：[Gemini 1.5- Unlocking Multimodal Understanding Across Millions of Tokens of Context](/ai-fa/explore/10-Papers/10-标杆锚点/Gemini 1.5- Unlocking Multimodal Understanding Across Millions of Tokens of Context（Gemini 1.5）) · [MixEval- Deriving Wisdom of the Crowd from LLM Benchmark Mixtures](/ai-fa/explore/10-Papers/10-标杆锚点/MixEval- Deriving Wisdom of the Crowd from LLM Benchmark Mixtures（MixEval）)
 
-> 数学根基：[注意力机制](/explore/40-Concepts/注意力机制)
+> 数学根基：[注意力机制](/ai-fa/explore/40-Concepts/注意力机制)

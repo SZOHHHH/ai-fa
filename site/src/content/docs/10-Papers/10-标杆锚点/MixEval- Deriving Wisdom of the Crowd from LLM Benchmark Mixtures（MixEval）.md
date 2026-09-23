@@ -33,7 +33,7 @@ $$
 $$
 
 
-**直觉**：线10 评测侧；→ [Length-Controlled AlpacaEval- A Simple Way to Debias Automatic Evaluators](/explore/10-Papers/10-标杆锚点/Length-Controlled AlpacaEval- A Simple Way to Debias Automatic Evaluators（AlpacaEval2）)（本批，自动评测偏差）——评测方法学双卡
+**直觉**：线10 评测侧；→ [Length-Controlled AlpacaEval- A Simple Way to Debias Automatic Evaluators](/ai-fa/explore/10-Papers/10-标杆锚点/Length-Controlled AlpacaEval- A Simple Way to Debias Automatic Evaluators（AlpacaEval2）)（本批，自动评测偏差）——评测方法学双卡
 
 ## 5. 与前作/矩阵关系
 
@@ -47,6 +47,6 @@ $$
 
 undefined
 
-> 近邻同族：[Gemini 1.5- Unlocking Multimodal Understanding Across Millions of Tokens of Context](/explore/10-Papers/10-标杆锚点/Gemini 1.5- Unlocking Multimodal Understanding Across Millions of Tokens of Context（Gemini 1.5）) · [Large Language Models- A Survey](/explore/10-Papers/10-标杆锚点/Large Language Models- A Survey（LLM Survey 2024）)
+> 近邻同族：[Gemini 1.5- Unlocking Multimodal Understanding Across Millions of Tokens of Context](/ai-fa/explore/10-Papers/10-标杆锚点/Gemini 1.5- Unlocking Multimodal Understanding Across Millions of Tokens of Context（Gemini 1.5）) · [Large Language Models- A Survey](/ai-fa/explore/10-Papers/10-标杆锚点/Large Language Models- A Survey（LLM Survey 2024）)
 
-> 数学根基：[注意力机制](/explore/40-Concepts/注意力机制)
+> 数学根基：[注意力机制](/ai-fa/explore/40-Concepts/注意力机制)

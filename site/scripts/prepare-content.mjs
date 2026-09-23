@@ -9,13 +9,18 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const UP = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
-const SRC = fs.existsSync(path.join(UP, '10-Papers')) ? UP
-  : fs.existsSync(path.join(UP, 'dist', '10-Papers')) ? path.join(UP, 'dist')
-  : null;
+// 内容源（260923 事故加固：本地库根含 70-Ideas/80-Lessons/B报告等私有区，禁止直接作源——
+// 曾因"库根优先"探测把 1879 篇全库灌进 docs，若 build+push 即私有泄漏大事故）：
+//   CI（repo 根）＝白名单内容直接在根，无 dist/ 目录、无私有区标志；
+//   本地（vault 根）＝必须用 dist 白名单副本，dist 缺失则 fail-closed 报错（先跑 bash tools/publish.sh）。
+const isLocalVault = fs.existsSync(path.join(UP, '70-Ideas')) || fs.existsSync(path.join(UP, '00-Meta', 'daily'));
+const SRC = isLocalVault
+  ? (fs.existsSync(path.join(UP, 'dist', '10-Papers')) ? path.join(UP, 'dist') : null)
+  : (fs.existsSync(path.join(UP, '10-Papers')) ? UP : null);
 const DST = path.join(path.dirname(fileURLToPath(import.meta.url)), '..', 'src', 'content', 'docs');
 const IDX_OUT = path.join(path.dirname(fileURLToPath(import.meta.url)), '..', 'public', 'static', 'contentIndex.json');
 
-if (!SRC) { console.error('内容源不存在（本地先跑 bash tools/publish.sh；CI 检查 repo 结构）'); process.exit(1); }
+if (!SRC) { console.error(isLocalVault ? '本地模式：dist 白名单副本缺失——先跑 bash tools/publish.sh 再构建（禁止直接用库根，含私有区）' : 'CI 模式：repo 根缺 10-Papers，检查仓库结构'); process.exit(1); }
 console.log('内容源:', SRC);
 
 // 1. 收集
@@ -61,6 +66,9 @@ function titleOf(slug) {
 }
 
 // 2. 转换（按 ``` 分段，只处理非代码段）
+// BASE：必须与 astro.config.mjs 的 base 保持同步——260923 事故：正文链接漏 /ai-fa/ 前缀，
+// Astro base 只作用于框架自身生成的链接，md 手写链接原样输出 → 线上正文链接全 404
+const BASE = '/ai-fa/';
 const WIKI = /\[\[([^\]|#]+)(#[^\]|]*)?(?:\|([^\]]*))?\]\]/g;
 // 行内公式 → 块级（260916 用户令：公式单行显示——段落内 $$ 化；复杂度分流由 remark 插件做）
 const INLINE_MATH = /(^|[^$])\$(?!\$)((?:[^$\n]|\$\$)+?)\$(?!\$)/g;
@@ -78,7 +86,7 @@ function convert(text) {
       const slug = resolve(t);
       if (!slug) return '`' + (alias || t) + '`';
       const label = alias || titleOf(slug);
-      return `[${label}](/explore/${slug}${anchor || ''})`;
+      return `[${label}](${BASE}explore/${slug}${anchor || ''})`;
     });
     s = s.replace(INLINE_MATH, (m, pre, body) => pre + '$$' + body + '$$');
     return s;

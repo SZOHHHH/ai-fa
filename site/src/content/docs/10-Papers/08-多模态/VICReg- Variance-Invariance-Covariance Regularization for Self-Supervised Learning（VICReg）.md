@@ -33,7 +33,7 @@ $$
 $$
 
 
-**直觉**：≡ SimCLR（负样本路线）vs BYOL（非对称路线）vs VICReg（正则路线）——防坍缩三派；→ [Self-Supervised Learning from Images with a Joint-Embedding Predictive Architecture](/explore/10-Papers/09-世界模型与JEPA/Self-Supervised Learning from Images with a Joint-Embedding Predictive Architecture（I-JEPA）)（LeCun 系谱）
+**直觉**：≡ SimCLR（负样本路线）vs BYOL（非对称路线）vs VICReg（正则路线）——防坍缩三派；→ [Self-Supervised Learning from Images with a Joint-Embedding Predictive Architecture](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Self-Supervised Learning from Images with a Joint-Embedding Predictive Architecture（I-JEPA）)（LeCun 系谱）
 
 ## 5. 与前作/矩阵关系
 
@@ -47,6 +47,6 @@ $$
 
 undefined
 
-> 近邻同族：[Learning Transferable Visual Models From Natural Language Supervision](/explore/10-Papers/08-多模态/Learning Transferable Visual Models From Natural Language Supervision（CLIP）) · [LiT - Zero-Shot Transfer with Locked-image text Tuning](/explore/10-Papers/08-多模态/LiT- Zero-Shot Transfer with Locked-image text Tuning（LiT）)
+> 近邻同族：[Learning Transferable Visual Models From Natural Language Supervision](/ai-fa/explore/10-Papers/08-多模态/Learning Transferable Visual Models From Natural Language Supervision（CLIP）) · [LiT - Zero-Shot Transfer with Locked-image text Tuning](/ai-fa/explore/10-Papers/08-多模态/LiT- Zero-Shot Transfer with Locked-image text Tuning（LiT）)
 
-> 数学根基：[VICReg三正则](/explore/30-Formulas/VICReg三正则) · [KL散度](/explore/40-Concepts/KL散度)
+> 数学根基：[VICReg三正则](/ai-fa/explore/30-Formulas/VICReg三正则) · [KL散度](/ai-fa/explore/40-Concepts/KL散度)

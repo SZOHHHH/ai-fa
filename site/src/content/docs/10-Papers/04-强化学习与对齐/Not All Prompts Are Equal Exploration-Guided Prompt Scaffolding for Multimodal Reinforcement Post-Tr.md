@@ -30,9 +30,9 @@ layer: 占位
 （待精读）
 
 ## 5. 与前作/矩阵关系
-- 线锚：[GRPO与RLVR](/explore/20-Algorithms/GRPO与RLVR)
-- 数学根基：[KL散度](/explore/40-Concepts/KL散度)（EPS 由 KL 正则策略改进理论导出，on-policy rollout 统计零开销直算）
-- 近邻同族：[ThinkPrior: Zero-Rollout Difficulty Priors for Cold-Start Prompt Selection in RLVR](/explore/10-Papers/04-强化学习与对齐/ThinkPrior Zero-Rollout Difficulty Priors for Cold-Start Prompt Selection in RLVR)（同族互补：ThinkPrior 管训练前冷启动选 prompt（零 rollout 难度先验避零优势组），本文管训练全程动态改 prompt 分布——低效用 prompt 由教师模型脚手架改写而非丢弃，两卡互挂）· [DAPO- An Open-Source LLM Reinforcement Learning System at Scale](/explore/10-Papers/04-强化学习与对齐/DAPO- An Open-Source LLM Reinforcement Learning System at Scale（DAPO）)（动态采样同区：DAPO 丢无效组、本文改造无效 prompt）
+- 线锚：[GRPO与RLVR](/ai-fa/explore/20-Algorithms/GRPO与RLVR)
+- 数学根基：[KL散度](/ai-fa/explore/40-Concepts/KL散度)（EPS 由 KL 正则策略改进理论导出，on-policy rollout 统计零开销直算）
+- 近邻同族：[ThinkPrior: Zero-Rollout Difficulty Priors for Cold-Start Prompt Selection in RLVR](/ai-fa/explore/10-Papers/04-强化学习与对齐/ThinkPrior Zero-Rollout Difficulty Priors for Cold-Start Prompt Selection in RLVR)（同族互补：ThinkPrior 管训练前冷启动选 prompt（零 rollout 难度先验避零优势组），本文管训练全程动态改 prompt 分布——低效用 prompt 由教师模型脚手架改写而非丢弃，两卡互挂）· [DAPO- An Open-Source LLM Reinforcement Learning System at Scale](/ai-fa/explore/10-Papers/04-强化学习与对齐/DAPO- An Open-Source LLM Reinforcement Learning System at Scale（DAPO）)（动态采样同区：DAPO 丢无效组、本文改造无效 prompt）
 
 ## 6. 影响后续
 （待精读）

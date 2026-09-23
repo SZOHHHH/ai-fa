@@ -32,11 +32,11 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- [稀疏与线性注意力](/explore/40-Concepts/稀疏与线性注意力) 随机图家族行
+- [稀疏与线性注意力](/ai-fa/explore/40-Concepts/稀疏与线性注意力) 随机图家族行
 
 ## 5. 与前作的关系
 
-- 理论化了 [Longformer - The Long-Document Transformer](/explore/10-Papers/06-长上下文/Longformer- The Long-Document Transformer（Longformer）) 的工程直觉（给出表达力证明）
+- 理论化了 [Longformer - The Long-Document Transformer](/ai-fa/explore/10-Papers/06-长上下文/Longformer- The Long-Document Transformer（Longformer）) 的工程直觉（给出表达力证明）
 - 与 Sparse Transformer（Child 2019）的固定模式对比：随机性有统计保证
 
 ## 6. 影响与后续
@@ -46,4 +46,4 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[注意力核心公式](/explore/30-Formulas/注意力核心公式)、[注意力计算复杂度](/explore/30-Formulas/注意力计算复杂度)、[Longformer - The Long-Document Transformer](/explore/10-Papers/06-长上下文/Longformer- The Long-Document Transformer（Longformer）)
+[注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)、[注意力计算复杂度](/ai-fa/explore/30-Formulas/注意力计算复杂度)、[Longformer - The Long-Document Transformer](/ai-fa/explore/10-Papers/06-长上下文/Longformer- The Long-Document Transformer（Longformer）)

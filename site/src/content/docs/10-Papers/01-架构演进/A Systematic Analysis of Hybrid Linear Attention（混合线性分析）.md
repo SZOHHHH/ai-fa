@@ -47,20 +47,22 @@ $$
 
 ---
 
-> 谱系枢纽：[Attention Is All You Need](/explore/10-Papers/01-架构演进/Attention Is All You Need（Transformer）)（图谱连通入口）
-> 近邻同族：[Griffin- Mixing Gated Linear Recurrences with Local Attention for Efficient Language Models](/explore/10-Papers/01-架构演进/Griffin- Mixing Gated Linear Recurrences with Local Attention for Efficient Language Models（Griffin）) · [Jamba - A Hybrid Transformer-Mamba Language Model](/explore/10-Papers/01-架构演进/Jamba- A Hybrid Transformer-Mamba Language Model（Jamba）)
-> 相关：[FlashAttention - Fast and Memory-Efficient Exact Attention with IO-Awareness](/explore/10-Papers/01-架构演进/FlashAttention- Fast and Memory-Efficient Exact Attention with IO-Awareness（FlashAttention）)
-> 相关：[Gaussian Error Linear Units](/explore/10-Papers/01-架构演进/Gaussian Error Linear Units（GELU）)
-> 相关：[Graph Attention Networks](/explore/10-Papers/01-架构演进/Graph Attention Networks（GAT）)
-> 相关：[HybridFlow- A Flexible and Efficient RLHF Framework](/explore/10-Papers/01-架构演进/HybridFlow- A Flexible and Efficient RLHF Framework（verl）)
-> 相关：[Kimi Linear- An Expressive, Efficient Attention Architecture](/explore/10-Papers/01-架构演进/Kimi Linear- An Expressive, Efficient Attention Architecture（Kimi Linear）)
-> 相关：[Language Models are Unsupervised Multitask Learners](/explore/10-Papers/01-架构演进/Language Models are Unsupervised Multitask Learners（GPT-2）)
-> 相关：[Learning Transferable Architectures for Scalable Image Recognition](/explore/10-Papers/01-架构演进/Learning Transferable Architectures for Scalable Image Recognition（NASNet）)
-> 相关：[Measuring the Effects of Data Parallelism on Neural Network Training](/explore/10-Papers/01-架构演进/Measuring the Effects of Data Parallelism on Neural Network Training（数据并行效应）)
-> 相关：[NormFormer- Improved Transformer Pretraining with Extra Normalization](/explore/10-Papers/01-架构演进/NormFormer- Improved Transformer Pretraining with Extra Normalization（NormFormer）)
-> 相关：[Swin Transformer- Hierarchical Vision Transformer using Shifted Windows](/explore/10-Papers/01-架构演进/Swin Transformer- Hierarchical Vision Transformer using Shifted Windows（Swin）)
-> 数学根基（占位层）：[状态空间模型方程](/explore/30-Formulas/状态空间模型方程) · [选择机制](/explore/30-Formulas/选择机制) · [稀疏与线性注意力](/explore/40-Concepts/稀疏与线性注意力)
+> 谱系枢纽：[Attention Is All You Need](/ai-fa/explore/10-Papers/01-架构演进/Attention Is All You Need（Transformer）)（图谱连通入口）
+> 近邻同族：[Griffin- Mixing Gated Linear Recurrences with Local Attention for Efficient Language Models](/ai-fa/explore/10-Papers/01-架构演进/Griffin- Mixing Gated Linear Recurrences with Local Attention for Efficient Language Models（Griffin）) · [Jamba - A Hybrid Transformer-Mamba Language Model](/ai-fa/explore/10-Papers/01-架构演进/Jamba- A Hybrid Transformer-Mamba Language Model（Jamba）)
+> 相关：[FlashAttention - Fast and Memory-Efficient Exact Attention with IO-Awareness](/ai-fa/explore/10-Papers/01-架构演进/FlashAttention- Fast and Memory-Efficient Exact Attention with IO-Awareness（FlashAttention）)
+> 相关：[Gaussian Error Linear Units](/ai-fa/explore/10-Papers/01-架构演进/Gaussian Error Linear Units（GELU）)
+> 相关：[Graph Attention Networks](/ai-fa/explore/10-Papers/01-架构演进/Graph Attention Networks（GAT）)
+> 相关：[HybridFlow- A Flexible and Efficient RLHF Framework](/ai-fa/explore/10-Papers/01-架构演进/HybridFlow- A Flexible and Efficient RLHF Framework（verl）)
+> 相关：[Kimi Linear- An Expressive, Efficient Attention Architecture](/ai-fa/explore/10-Papers/01-架构演进/Kimi Linear- An Expressive, Efficient Attention Architecture（Kimi Linear）)
+> 相关：[Language Models are Unsupervised Multitask Learners](/ai-fa/explore/10-Papers/01-架构演进/Language Models are Unsupervised Multitask Learners（GPT-2）)
+> 相关：[Learning Transferable Architectures for Scalable Image Recognition](/ai-fa/explore/10-Papers/01-架构演进/Learning Transferable Architectures for Scalable Image Recognition（NASNet）)
+> 相关：[Measuring the Effects of Data Parallelism on Neural Network Training](/ai-fa/explore/10-Papers/01-架构演进/Measuring the Effects of Data Parallelism on Neural Network Training（数据并行效应）)
+> 相关：[NormFormer- Improved Transformer Pretraining with Extra Normalization](/ai-fa/explore/10-Papers/01-架构演进/NormFormer- Improved Transformer Pretraining with Extra Normalization（NormFormer）)
+> 相关：[Swin Transformer- Hierarchical Vision Transformer using Shifted Windows](/ai-fa/explore/10-Papers/01-架构演进/Swin Transformer- Hierarchical Vision Transformer using Shifted Windows（Swin）)
+> 数学根基（占位层）：[状态空间模型方程](/ai-fa/explore/30-Formulas/状态空间模型方程) · [选择机制](/ai-fa/explore/30-Formulas/选择机制) · [稀疏与线性注意力](/ai-fa/explore/40-Concepts/稀疏与线性注意力)
 
 ## 7. 读前须知
 
 需要：状态空间模型方程；delta 规则；chunk 并行扫描
+
+> 后继补记（260921）：[dQwen3.5](/ai-fa/explore/10-Papers/01-架构演进/dQwen3.5 Hybrid-Attention Diffusion Language Models)（混合注意力-RNN 骨干适配成扩散 LM：RNN 因果难双向化，但同等损失省一半 token）

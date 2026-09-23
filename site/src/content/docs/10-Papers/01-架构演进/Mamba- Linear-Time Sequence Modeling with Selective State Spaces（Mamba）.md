@@ -20,7 +20,7 @@ pdf: 已下载（PDF/）
 
 ## 2. 核心贡献
 
-- **选择性机制**：$$\Delta(x), B(x), C(x)$$ 依赖输入——内容寻址的记忆（[状态空间模型方程](/explore/30-Formulas/状态空间模型方程)）
+- **选择性机制**：$$\Delta(x), B(x), C(x)$$ 依赖输入——内容寻址的记忆（[状态空间模型方程](/ai-fa/explore/30-Formulas/状态空间模型方程)）
 - **硬件感知算法**：parallel scan + 核融合 + 重计算，选择性递归也能 GPU 并行
 - 简化 S4 结构（对角化 A）+ Mamba 块整合（SSM + 门控）
 
@@ -34,22 +34,22 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- [状态空间模型方程](/explore/30-Formulas/状态空间模型方程) —— 定义（选择性行）
-- [常微分方程（ODE）](/explore/40-Concepts/常微分方程（ODE）)：离散化来源
+- [状态空间模型方程](/ai-fa/explore/30-Formulas/状态空间模型方程) —— 定义（选择性行）
+- [常微分方程（ODE）](/ai-fa/explore/40-Concepts/常微分方程（ODE）)：离散化来源
 
 ## 5. 与前作的关系
 
 - 改进了 S4（LTI 固定参数）：打破时不变性换来选择性，代价是失去卷积形式（并行扫描补）
-- 挑战了 [注意力核心公式](/explore/30-Formulas/注意力核心公式) 的 $$O(n^2)$$ 定价（见 [注意力计算复杂度](/explore/30-Formulas/注意力计算复杂度) 对照表）
+- 挑战了 [注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式) 的 $$O(n^2)$$ 定价（见 [注意力计算复杂度](/ai-fa/explore/30-Formulas/注意力计算复杂度) 对照表）
 
 ## 6. 影响与后续
 
-- [Transformers are SSMs - Generalized Models and Efficient Algorithms Through Structured State Space Duality](/explore/10-Papers/01-架构演进/Transformers are SSMs- Generalized Models and Efficient Algorithms Through Structured St（Mamba-2）) 统一理论（SSD）
-- [Jamba](/explore/10-Papers/01-架构演进/Jamba- A Hybrid Transformer-Mamba Language Model（Jamba）)/Zamba 等混合架构实用化；Mamba-2/3 与线性注意力合流
+- [Transformers are SSMs - Generalized Models and Efficient Algorithms Through Structured State Space Duality](/ai-fa/explore/10-Papers/01-架构演进/Transformers are SSMs- Generalized Models and Efficient Algorithms Through Structured St（Mamba-2）) 统一理论（SSD）
+- [Jamba](/ai-fa/explore/10-Papers/01-架构演进/Jamba- A Hybrid Transformer-Mamba Language Model（Jamba）)/Zamba 等混合架构实用化；Mamba-2/3 与线性注意力合流
 - 视觉/基因组/音频等领域快速移植
 
 ## 7. 读前须知
 
-- [状态空间模型方程](/explore/30-Formulas/状态空间模型方程)、[常微分方程（ODE）](/explore/40-Concepts/常微分方程（ODE）)、[注意力计算复杂度](/explore/30-Formulas/注意力计算复杂度)（动机）
+- [状态空间模型方程](/ai-fa/explore/30-Formulas/状态空间模型方程)、[常微分方程（ODE）](/ai-fa/explore/40-Concepts/常微分方程（ODE）)、[注意力计算复杂度](/ai-fa/explore/30-Formulas/注意力计算复杂度)（动机）
 
-> 核心公式：[状态空间模型递归](/explore/30-Formulas/状态空间模型递归)
+> 核心公式：[状态空间模型递归](/ai-fa/explore/30-Formulas/状态空间模型递归)

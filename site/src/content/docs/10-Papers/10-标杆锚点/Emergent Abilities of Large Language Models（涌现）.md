@@ -20,7 +20,7 @@ pdf: 已下载（PDF/）
 ## 2. 核心贡献
 
 - **定义**：不存在于小模型、不可由小模型外推的能力
-- **实例编目**：few-shot [CoT](/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）)、指令跟随、多位数算术等（横跨基准）
+- **实例编目**：few-shot [CoT](/ai-fa/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）)、指令跟随、多位数算术等（横跨基准）
 - **两种讨论**：涌现于规模（跨模型）与涌现于训练过程（同模型训练中）
 
 ## 3. 方法概要
@@ -32,11 +32,11 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- 无新公式；**对照叙事**：连续缩放（[Training Compute-Optimal Large Language Models](/explore/10-Papers/10-标杆锚点/Training Compute-Optimal Large Language Models（Chinchilla）)）vs 非连续涌现——两种世界观
+- 无新公式；**对照叙事**：连续缩放（[Training Compute-Optimal Large Language Models](/ai-fa/explore/10-Papers/10-标杆锚点/Training Compute-Optimal Large Language Models（Chinchilla）)）vs 非连续涌现——两种世界观
 
 ## 5. 与前作的关系
 
-- 正式化了 [Language Models are Few-Shot Learners](/explore/10-Papers/01-架构演进/Language Models are Few-Shot Learners（GPT-3）) 报告中的"惊喜"与 [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）) 的规模阈值现象
+- 正式化了 [Language Models are Few-Shot Learners](/ai-fa/explore/10-Papers/01-架构演进/Language Models are Few-Shot Learners（GPT-3）) 报告中的"惊喜"与 [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](/ai-fa/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）) 的规模阈值现象
 
 ## 6. 影响与后续
 
@@ -45,8 +45,8 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[Scaling Laws for Neural Language Models](/explore/10-Papers/01-架构演进/Scaling Laws for Neural Language Models（Scaling Laws）)（平滑幂律对照）、[Language Models are Few-Shot Learners](/explore/10-Papers/01-架构演进/Language Models are Few-Shot Learners（GPT-3）)
+[Scaling Laws for Neural Language Models](/ai-fa/explore/10-Papers/01-架构演进/Scaling Laws for Neural Language Models（Scaling Laws）)（平滑幂律对照）、[Language Models are Few-Shot Learners](/ai-fa/explore/10-Papers/01-架构演进/Language Models are Few-Shot Learners（GPT-3）)
 
-> 数学根基：[注意力机制](/explore/40-Concepts/注意力机制)
+> 数学根基：[注意力机制](/ai-fa/explore/40-Concepts/注意力机制)
 
-> 数学根基：[注意力核心公式](/explore/30-Formulas/注意力核心公式) · [CLIP对比损失](/explore/30-Formulas/CLIP对比损失)
+> 数学根基：[注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式) · [CLIP对比损失](/ai-fa/explore/30-Formulas/CLIP对比损失)

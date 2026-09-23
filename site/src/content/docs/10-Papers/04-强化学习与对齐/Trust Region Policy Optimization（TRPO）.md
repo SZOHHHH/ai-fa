@@ -38,13 +38,13 @@ $$\max_\theta\;\mathbb{E}_t\Big[\tfrac{\pi_\theta(a_t\mid s_t)}{\pi_{old}(a_t\mi
 
 **直觉解释（为什么要管 KL）**：策略梯度定理只在当前策略**附近**成立——步子一大，"沿这个方向走会更好"的保证就失效（高方差 × 大步 = 灾难）。KL 约束=**给策略的行为上了位移上限**：不管参数怎么动，新旧策略在每个状态下的动作分布不能差太多。自然方向的几何意义：在"分布空间"（而非参数空间）里量距离——参数空间走一小步可能对应行为剧变（Fisher 度量把这种病态校正掉）。
 
-- 需要的前置：[策略梯度定理](/explore/40-Concepts/策略梯度定理)、[重要性采样](/explore/40-Concepts/重要性采样)（比率 $$\rho$$ 的来源）、[信赖域](/explore/40-Concepts/信赖域)、[KL散度](/explore/40-Concepts/KL散度)
+- 需要的前置：[策略梯度定理](/ai-fa/explore/40-Concepts/策略梯度定理)、[重要性采样](/ai-fa/explore/40-Concepts/重要性采样)（比率 $$\rho$$ 的来源）、[信赖域](/ai-fa/explore/40-Concepts/信赖域)、[KL散度](/ai-fa/explore/40-Concepts/KL散度)
 
 ## 5. 与前作/矩阵关系
 
 - ← Kakade & Langford 2002（策略改进理论，近似不可直接用）→ TRPO 做成可跑的算法；
 - ← 自然梯度（Amari 1998）→ 共轭梯度实现；
-- → [PPO](/explore/10-Papers/04-强化学习与对齐/Proximal Policy Optimization Algorithms（PPO）)（一阶化简化版，工业界倒戈）；RLHF 的 KL 惩罚（防奖励模型被 exploit）= 信赖域思想的软化身。
+- → [PPO](/ai-fa/explore/10-Papers/04-强化学习与对齐/Proximal Policy Optimization Algorithms（PPO）)（一阶化简化版，工业界倒戈）；RLHF 的 KL 惩罚（防奖励模型被 exploit）= 信赖域思想的软化身。
 
 ## 6. 影响与后续
 
@@ -54,8 +54,8 @@ $$\max_\theta\;\mathbb{E}_t\Big[\tfrac{\pi_\theta(a_t\mid s_t)}{\pi_{old}(a_t\mi
 
 ## 7. 读前须知
 
-- **必前置**：[策略梯度定理](/explore/40-Concepts/策略梯度定理)、[重要性采样](/explore/40-Concepts/重要性采样)、[KL散度](/explore/40-Concepts/KL散度)、[信赖域](/explore/40-Concepts/信赖域)；
+- **必前置**：[策略梯度定理](/ai-fa/explore/40-Concepts/策略梯度定理)、[重要性采样](/ai-fa/explore/40-Concepts/重要性采样)、[KL散度](/ai-fa/explore/40-Concepts/KL散度)、[信赖域](/ai-fa/explore/40-Concepts/信赖域)；
 - **易混点**：①KL 是对**每个状态的动作分布**算的（不是对轨迹）；②Fisher 矩阵≈KL 的二阶泰勒——两者在无穷小处等价、有限步是近似；③TRPO 无 KL 自适应机制（PPO 的 KL 版有）；
 - **读法建议**：§3（理论推导，下界定理）→ 图 1（信赖域直觉图）→ 算法 1；共轭梯度细节可黑盒。
 
-> 数学根基：[TRPO目标](/explore/30-Formulas/TRPO目标) · [策略梯度定理](/explore/40-Concepts/策略梯度定理) · [KL散度](/explore/40-Concepts/KL散度)
+> 数学根基：[TRPO目标](/ai-fa/explore/30-Formulas/TRPO目标) · [策略梯度定理](/ai-fa/explore/40-Concepts/策略梯度定理) · [KL散度](/ai-fa/explore/40-Concepts/KL散度)

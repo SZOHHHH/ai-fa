@@ -34,11 +34,12 @@ $$
 $$
 
 
-**直觉**：≡ [Let's Verify Step by Step](/explore/10-Papers/07-推理模型/Let's Verify Step by Step（PRM）)（人工标注路线）；→ [GRPO与RLVR](/explore/20-Algorithms/GRPO与RLVR)（B14：证明 GRPO 隐式 PRM——本卡是其显式版前身）
+**直觉**：≡ [Let's Verify Step by Step](/ai-fa/explore/10-Papers/07-推理模型/Let's Verify Step by Step（PRM）)（人工标注路线）；→ [GRPO与RLVR](/ai-fa/explore/20-Algorithms/GRPO与RLVR)（B14：证明 GRPO 隐式 PRM——本卡是其显式版前身）
 
 ## 5. 与前作/矩阵关系
 
 PRM 自动化标注的事实标准；RS 库已收
+- →后继：[OBC-Prune: Outcome-Based Calibration for Large Reasoning Model Pruning](/ai-fa/explore/10-Papers/07-推理模型/OBC-Prune Outcome-Based Calibration for Large Reasoning Model Pruning)（结果信号反哺步级的路线从训练奖励延伸到压缩校准——蒙特卡洛步分换成注意力抑制干预的因果分）
 
 ## 6. 影响后续
 
@@ -48,6 +49,6 @@ PRM 自动化标注的事实标准；RS 库已收
 
 undefined
 
-> 近邻同族：[CoT-Valve- Length-Compressible Chain-of-Thought Tuning](/explore/10-Papers/07-推理模型/CoT-Valve- Length-Compressible Chain-of-Thought Tuning（CoT-Valve）) · [Kimi k1.5- Scaling Reinforcement Learning with LLMs](/explore/10-Papers/07-推理模型/Kimi k1.5- Scaling Reinforcement Learning with LLMs（Kimi k1.5）)
+> 近邻同族：[CoT-Valve- Length-Compressible Chain-of-Thought Tuning](/ai-fa/explore/10-Papers/07-推理模型/CoT-Valve- Length-Compressible Chain-of-Thought Tuning（CoT-Valve）) · [Kimi k1.5- Scaling Reinforcement Learning with LLMs](/ai-fa/explore/10-Papers/07-推理模型/Kimi k1.5- Scaling Reinforcement Learning with LLMs（Kimi k1.5）)
 
-> 数学根基：[思维链（CoT）](/explore/40-Concepts/思维链（CoT）)
+> 数学根基：[思维链（CoT）](/ai-fa/explore/40-Concepts/思维链（CoT）)

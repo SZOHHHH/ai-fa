@@ -40,11 +40,11 @@ layer: 精读层（PDF 前 12 页全读，260915 ⑦推荐）
 - SAC 对照奖励（系统级基线）：$$r_t=\frac{V_t}{C}-0.08-0.15\cdot\mathbf{1}\{V_t<0.25\}+2\cdot\mathbf{1}\{\rho_{t+1}<0.10\}+0.10\frac{r_t^{\text{dyn}}}{C}$$——装量进度为主项+低产罚+终局奖+动力学保护项（滑移/能耗/颠簸）。
 
 ## 5. 与前作/矩阵关系
-- ↔ 同族（propose-then-rank 第二例）：[RodForesight](/explore/10-Papers/09-世界模型与JEPA/RodForesight - A World Model Enhanced Diffusion Policy for Slender and Material Agnostic Rod Insertion（杆件插装）)（9/10 杆件插装）——同构"扩散提案+WM 预演筛选"；本文实证更干净（matched-candidate 消融隔离选择规则贡献）且闭环规模更大（连续耗尽 vs 单次插装）+真机部署。
-- ↔ E1 动机线同盟：[Decision-Metric Alignment](/explore/10-Papers/09-世界模型与JEPA/Decision-Metric Alignment in Latent World Models Diagnostics and Action-Conditioned Objectives for MPC Planning)（latent 距离不保证任务排序）——同说"预测保真≠决策保真"，本文把它落成工程收益数字；E1 论文动机节的工程域外部证据（决策级指标当 WM 评估主口径）。
-- ↔ E2 对偶位：[逆动力学（IDM）](/explore/40-Concepts/逆动力学（IDM）)——E2 反推 $$p(a\mid x_t,\text{goal})$$ 是由果找因；本文**goal 条件提案+正演排序**是"先按目标撒候选、再用正演模型挑"——用 5 次正演+一次 argmax 近似一次反演；E2 related work 的"采样+排序 vs 显式反演"对照位（goal 以目标装满率 $$g^\star$$ 形式进提案条件，监督式分层学得而非反演）。
-- ↔ 想象谱系：[Dreamer](/explore/10-Papers/09-世界模型与JEPA/Dream to Control- Learning Behaviors by Latent Imagination（Dreamer）)（在想象中训练策略）——本文在想象中做**选择**（WM 冻结、不进训练回路），想象用途从训练期挪到执行期。
-- 谱系锚：[世界模型](/explore/20-Algorithms/世界模型)、[扩散模型](/explore/20-Algorithms/扩散模型)；公式链 [DDPM训练目标](/explore/30-Formulas/DDPM训练目标)（提案器即条件 DDPM）、[RSSM转移模型](/explore/30-Formulas/RSSM转移模型)（动作条件转移模型的一步确定性 CNN 特例）。
+- ↔ 同族（propose-then-rank 第二例）：[RodForesight](/ai-fa/explore/10-Papers/09-世界模型与JEPA/RodForesight - A World Model Enhanced Diffusion Policy for Slender and Material Agnostic Rod Insertion（杆件插装）)（9/10 杆件插装）——同构"扩散提案+WM 预演筛选"；本文实证更干净（matched-candidate 消融隔离选择规则贡献）且闭环规模更大（连续耗尽 vs 单次插装）+真机部署。
+- ↔ E1 动机线同盟：[Decision-Metric Alignment](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Decision-Metric Alignment in Latent World Models Diagnostics and Action-Conditioned Objectives for MPC Planning)（latent 距离不保证任务排序）——同说"预测保真≠决策保真"，本文把它落成工程收益数字；E1 论文动机节的工程域外部证据（决策级指标当 WM 评估主口径）。
+- ↔ E2 对偶位：[逆动力学（IDM）](/ai-fa/explore/40-Concepts/逆动力学（IDM）)——E2 反推 $$p(a\mid x_t,\text{goal})$$ 是由果找因；本文**goal 条件提案+正演排序**是"先按目标撒候选、再用正演模型挑"——用 5 次正演+一次 argmax 近似一次反演；E2 related work 的"采样+排序 vs 显式反演"对照位（goal 以目标装满率 $$g^\star$$ 形式进提案条件，监督式分层学得而非反演）。
+- ↔ 想象谱系：[Dreamer](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Dream to Control- Learning Behaviors by Latent Imagination（Dreamer）)（在想象中训练策略）——本文在想象中做**选择**（WM 冻结、不进训练回路），想象用途从训练期挪到执行期。
+- 谱系锚：[世界模型](/ai-fa/explore/20-Algorithms/世界模型)、[扩散模型](/ai-fa/explore/20-Algorithms/扩散模型)；公式链 [DDPM训练目标](/ai-fa/explore/30-Formulas/DDPM训练目标)（提案器即条件 DDPM）、[RSSM转移模型](/ai-fa/explore/30-Formulas/RSSM转移模型)（动作条件转移模型的一步确定性 CNN 特例）。
 
 ## 6. 影响后续
 - "propose-then-rank"模式两例成族（RodForesight→WAM）：机器人域正在形成的标准分工——**扩散管多样性、WM 管后果、几何管可行、决策管选择**。
@@ -52,5 +52,5 @@ layer: 精读层（PDF 前 12 页全读，260915 ⑦推荐）
 - 对库内：占"WM×决策级评估×挖掘（工程域）"格；E1 动机引用位+E2 对照位，不进主线实验。
 
 ## 7. 读前须知
-- 前置：条件 DDPM 去噪采样直觉（[DIAMOND](/explore/10-Papers/09-世界模型与JEPA/Diffusion for World Modeling- Visual Details Matter in Atari（DIAMOND）) 的扩散基础+[DDPM训练目标](/explore/30-Formulas/DDPM训练目标)）；动作条件转移模型概念（[RSSM转移模型](/explore/30-Formulas/RSSM转移模型) 的潜空间版对照）。
+- 前置：条件 DDPM 去噪采样直觉（[DIAMOND](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Diffusion for World Modeling- Visual Details Matter in Atari（DIAMOND）) 的扩散基础+[DDPM训练目标](/ai-fa/explore/30-Formulas/DDPM训练目标)）；动作条件转移模型概念（[RSSM转移模型](/ai-fa/explore/30-Formulas/RSSM转移模型) 的潜空间版对照）。
 - 工程术语字面理解即可：工作面=正对的料堆面；扫掠掩码=铲斗轨迹投影到地形网格的二值图；挖深图=轨迹中切削刃最低点相对初始地形的高差截零。挖掘物理被简化为高度场动力学——定量结论限于该简化（作者自承）。

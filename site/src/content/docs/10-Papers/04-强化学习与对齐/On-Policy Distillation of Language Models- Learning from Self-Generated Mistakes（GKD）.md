@@ -42,11 +42,11 @@ $$\mathcal{L}_{GKD} = \mathbb{E}_{y\sim[(1-\alpha)\pi_T + \alpha\pi_S]}\Big[(1-\
 
 - ≡ **DAGGER**（2010，imitation learning）：学生状态访问 + 教师修正——GKD 是其 LM 蒸馏版
 - ⊃ **SeqKD/SFT**：α=0 特例
-- #loss/distillation：与 [蒸馏损失](/explore/30-Formulas/蒸馏损失)（Hinton 前向 KL）同族，作用域从"教师 logits"扩到"学生轨迹上的散度选择"
+- #loss/distillation：与 [蒸馏损失](/ai-fa/explore/30-Formulas/蒸馏损失)（Hinton 前向 KL）同族，作用域从"教师 logits"扩到"学生轨迹上的散度选择"
 
 ## 6. 影响后续
 
-[MiniLLM](/explore/10-Papers/04-强化学习与对齐/MiniLLM- On-Policy Distillation of Large Language Models（MiniLLM）)（策略梯度化反向 KL）→ Qwen3-OPD（生产级验证）→ [On-Policy Distillation（Thinking Machines 博客）](/explore/10-Papers/04-强化学习与对齐/On-Policy Distillation（Thinking Machines 博客）)（RL 框架一句话实现）→ [Entropy-Aware On-Policy Distillation of Language Models](/explore/10-Papers/04-强化学习与对齐/Entropy-Aware On-Policy Distillation of Language Models（EOPD）)（ICML 2026，熵修复）。**OPD 家族的直接源头**。
+[MiniLLM](/ai-fa/explore/10-Papers/04-强化学习与对齐/MiniLLM- On-Policy Distillation of Large Language Models（MiniLLM）)（策略梯度化反向 KL）→ Qwen3-OPD（生产级验证）→ [On-Policy Distillation（Thinking Machines 博客）](/ai-fa/explore/10-Papers/04-强化学习与对齐/On-Policy Distillation（Thinking Machines 博客）)（RL 框架一句话实现）→ [Entropy-Aware On-Policy Distillation of Language Models](/ai-fa/explore/10-Papers/04-强化学习与对齐/Entropy-Aware On-Policy Distillation of Language Models（EOPD）)（ICML 2026，熵修复）。**OPD 家族的直接源头**。
 
 ## 7. 读前须知
 

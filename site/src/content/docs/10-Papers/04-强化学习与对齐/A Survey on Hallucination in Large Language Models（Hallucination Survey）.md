@@ -33,7 +33,7 @@ $$
 $$
 
 
-**直觉**：← [DPO](/explore/10-Papers/04-强化学习与对齐/Direct Preference Optimization- Your Language Model is Secretly a Reward Model（DPO）)/RAG 线的病症侧；→ 本库对齐矩阵的问题域参照
+**直觉**：← [DPO](/ai-fa/explore/10-Papers/04-强化学习与对齐/Direct Preference Optimization- Your Language Model is Secretly a Reward Model（DPO）)/RAG 线的病症侧；→ 本库对齐矩阵的问题域参照
 
 ## 5. 与前作/矩阵关系
 
@@ -47,6 +47,6 @@ $$
 
 undefined
 
-> 近邻同族：[Large Language Models as General Pattern Machines](/explore/10-Papers/04-强化学习与对齐/Large Language Models as General Pattern Machines（Pattern Machines）) · [PCSD- Persistent Consistency for Self-Distillation in Agentic Reinforcement Learning](/explore/10-Papers/04-强化学习与对齐/PCSD- Persistent Consistency for Self-Distillation in Agentic Reinforcement Learning（PCSD）)
+> 近邻同族：[Large Language Models as General Pattern Machines](/ai-fa/explore/10-Papers/04-强化学习与对齐/Large Language Models as General Pattern Machines（Pattern Machines）) · [PCSD- Persistent Consistency for Self-Distillation in Agentic Reinforcement Learning](/ai-fa/explore/10-Papers/04-强化学习与对齐/PCSD- Persistent Consistency for Self-Distillation in Agentic Reinforcement Learning（PCSD）)
 
-> 数学根基：[策略梯度定理](/explore/40-Concepts/策略梯度定理)
+> 数学根基：[策略梯度定理](/ai-fa/explore/40-Concepts/策略梯度定理)

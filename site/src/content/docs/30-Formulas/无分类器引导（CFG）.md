@@ -38,17 +38,17 @@ $$\hat\epsilon_\theta(x_t, t, c) = \epsilon_\theta(x_t, t, \varnothing) + w\,\Bi
 
 | 论文 | 贡献 |
 |---|---|
-| [Classifier-Free Diffusion Guidance](/explore/10-Papers/02-生成建模与扩散/Classifier-Free Diffusion Guidance（CFG）) | 提出 CFG |
-| [Diffusion Models Beat GANs](/explore/10-Papers/02-生成建模与扩散/Diffusion Models Beat GANs on Image Synthesis（ADM）) | 分类器引导前身 |
+| [Classifier-Free Diffusion Guidance](/ai-fa/explore/10-Papers/02-生成建模与扩散/Classifier-Free Diffusion Guidance（CFG）) | 提出 CFG |
+| [Diffusion Models Beat GANs](/ai-fa/explore/10-Papers/02-生成建模与扩散/Diffusion Models Beat GANs on Image Synthesis（ADM）) | 分类器引导前身 |
 
 ## 5. 数学概念分解
 
-- [期望](/explore/40-Concepts/期望)：条件期望 vs 无条件期望的操作
-- [梯度](/explore/40-Concepts/梯度)：引导本质是沿条件信息梯度外推
-- [概率分布](/explore/40-Concepts/概率分布)：引导扭曲采样分布（trade-off 的来源）
+- [期望](/ai-fa/explore/40-Concepts/期望)：条件期望 vs 无条件期望的操作
+- [梯度](/ai-fa/explore/40-Concepts/梯度)：引导本质是沿条件信息梯度外推
+- [概率分布](/ai-fa/explore/40-Concepts/概率分布)：引导扭曲采样分布（trade-off 的来源）
 
 ## 6. 与其他公式的关系
 
 - → **改进自** 分类器引导：去掉分类器依赖
-- 作用于采样阶段，与 [DDIM更新规则](/explore/30-Formulas/DDIM更新规则) / [DDPM训练目标](/explore/30-Formulas/DDPM训练目标) 正交组合
+- 作用于采样阶段，与 [DDIM更新规则](/ai-fa/explore/30-Formulas/DDIM更新规则) / [DDPM训练目标](/ai-fa/explore/30-Formulas/DDPM训练目标) 正交组合
 - → **被蒸馏**：DMD/SD3-Turbo 把 CFG 融入单次前向（线 3 蒸馏应用）

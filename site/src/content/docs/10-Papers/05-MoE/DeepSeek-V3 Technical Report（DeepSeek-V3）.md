@@ -35,15 +35,16 @@ $$
 
 ## 5. 与前作/矩阵关系
 
-← [Auxiliary-Loss-Free Load Balancing Strategy for Mixture-of-Experts](/explore/10-Papers/05-MoE/Auxiliary-Loss-Free Load Balancing Strategy for Mixture-of-Experts（无辅助损失MoE）)（均衡策略来源）/DeepSeekMoE（专家分割）/MLA（注意力）；线1+线5 的会师之作
+← [Auxiliary-Loss-Free Load Balancing Strategy for Mixture-of-Experts](/ai-fa/explore/10-Papers/05-MoE/Auxiliary-Loss-Free Load Balancing Strategy for Mixture-of-Experts（无辅助损失MoE）)（均衡策略来源）/DeepSeekMoE（专家分割）/MLA（注意力）；线1+线5 的会师之作
 
 ## 6. 影响与占位意义
 
 B18 奠基补齐：MoE 线的当代旗舰锚点。
+- → 后继补记（260918）：[DeepSeek-V4.1-Flash](/ai-fa/explore/10-Papers/05-MoE/DeepSeek-V4.1-Flash Pushing the Limits of KV Cache Compression)（552B 多模态 MoE 后继：把 MLA 以降的 KV 压缩推到极限，主打长 horizon agent 的重输入负载）
 
-> 近邻同族：[DeepSeekMoE - Towards Ultimate Expert Specialization in Mixture-of-Experts Language Models](/explore/10-Papers/05-MoE/DeepSeekMoE- Towards Ultimate Expert Specialization in Mixture-of-Experts Language Model（DeepSeekMoE）)
+> 近邻同族：[DeepSeekMoE - Towards Ultimate Expert Specialization in Mixture-of-Experts Language Models](/ai-fa/explore/10-Papers/05-MoE/DeepSeekMoE- Towards Ultimate Expert Specialization in Mixture-of-Experts Language Model（DeepSeekMoE）)
 
-> 数学根基：[softmax函数](/explore/40-Concepts/softmax函数)
+> 数学根基：[softmax函数](/ai-fa/explore/40-Concepts/softmax函数)
 
 
 ## 7. 读前须知

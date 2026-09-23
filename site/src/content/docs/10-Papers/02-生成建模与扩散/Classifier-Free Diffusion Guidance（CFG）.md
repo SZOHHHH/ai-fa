@@ -32,11 +32,11 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- [无分类器引导（CFG）](/explore/30-Formulas/无分类器引导（CFG）) —— 本文灵魂公式
+- [无分类器引导（CFG）](/ai-fa/explore/30-Formulas/无分类器引导（CFG）) —— 本文灵魂公式
 
 ## 5. 与前作的关系
 
-- 改进了 [Diffusion Models Beat GANs on Image Synthesis](/explore/10-Papers/02-生成建模与扩散/Diffusion Models Beat GANs on Image Synthesis（ADM）) 的分类器引导：免训分类器、免对抗攻击面
+- 改进了 [Diffusion Models Beat GANs on Image Synthesis](/ai-fa/explore/10-Papers/02-生成建模与扩散/Diffusion Models Beat GANs on Image Synthesis（ADM）) 的分类器引导：免训分类器、免对抗攻击面
 
 ## 6. 影响与后续
 
@@ -46,4 +46,4 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[期望](/explore/40-Concepts/期望)（条件期望外推直觉）、[DDPM训练目标](/explore/30-Formulas/DDPM训练目标)（ε 预测形式）
+[期望](/ai-fa/explore/40-Concepts/期望)（条件期望外推直觉）、[DDPM训练目标](/ai-fa/explore/30-Formulas/DDPM训练目标)（ε 预测形式）

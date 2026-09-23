@@ -37,21 +37,21 @@ $$\text{ELBO} = \underbrace{\mathbb{E}_{q(z\mid x)}\left[ \log p_\theta(x \mid z
 
 | 论文 | 贡献 |
 |---|---|
-| [Auto-Encoding Variational Bayes](/explore/10-Papers/02-生成建模与扩散/Auto-Encoding Variational Bayes（VAE）) | 引入可导 ELBO + 重参数化训练 |
-| [Denoising Diffusion Probabilistic Models](/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Probabilistic Models（DDPM）) | 马尔可夫链版 ELBO（变分界） |
-| [Building Normalizing Flows with Stochastic Interpolants](/explore/10-Papers/02-生成建模与扩散/Building Normalizing Flows with Stochastic Interpolants（随机插值）) | 连续时间 ELBO 统一 FM 与扩散 |
+| [Auto-Encoding Variational Bayes](/ai-fa/explore/10-Papers/02-生成建模与扩散/Auto-Encoding Variational Bayes（VAE）) | 引入可导 ELBO + 重参数化训练 |
+| [Denoising Diffusion Probabilistic Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Probabilistic Models（DDPM）) | 马尔可夫链版 ELBO（变分界） |
+| [Building Normalizing Flows with Stochastic Interpolants](/ai-fa/explore/10-Papers/02-生成建模与扩散/Building Normalizing Flows with Stochastic Interpolants（随机插值）) | 连续时间 ELBO 统一 FM 与扩散 |
 
 ## 5. 数学概念分解
 
-- [ELBO](/explore/40-Concepts/ELBO)：概念母页（推导、变体详述）
-- [Jensen不等式](/explore/40-Concepts/Jensen不等式)：下界成立的唯一魔法
-- [KL散度](/explore/40-Concepts/KL散度)：正则项与差距项
-- [期望](/explore/40-Concepts/期望)：整体是期望，蒙特卡洛估计
-- [重参数化](/explore/40-Concepts/重参数化)：让梯度穿过采样
+- [ELBO](/ai-fa/explore/40-Concepts/ELBO)：概念母页（推导、变体详述）
+- [Jensen不等式](/ai-fa/explore/40-Concepts/Jensen不等式)：下界成立的唯一魔法
+- [KL散度](/ai-fa/explore/40-Concepts/KL散度)：正则项与差距项
+- [期望](/ai-fa/explore/40-Concepts/期望)：整体是期望，蒙特卡洛估计
+- [重参数化](/ai-fa/explore/40-Concepts/重参数化)：让梯度穿过采样
 
 ## 6. 与其他公式的关系
 
-- ⊃ **泛化为** [DDPM训练目标](/explore/30-Formulas/DDPM训练目标)（把 $$z$$ 换成整条马尔可夫链再化简）
-- ⊃ **泛化为** [条件流匹配损失](/explore/30-Formulas/条件流匹配损失)（连续时间、速度场参数化下的 ELBO）
+- ⊃ **泛化为** [DDPM训练目标](/ai-fa/explore/30-Formulas/DDPM训练目标)（把 $$z$$ 换成整条马尔可夫链再化简）
+- ⊃ **泛化为** [条件流匹配损失](/ai-fa/explore/30-Formulas/条件流匹配损失)（连续时间、速度场参数化下的 ELBO）
 - ≡ **等价于** VAE 的完整损失（VAE 页直接使用本式）
-- 对比 [GAN目标](/explore/30-Formulas/GAN目标)：不走下界路线，直接对分布距离做对抗博弈——两条技术路线的分水岭
+- 对比 [GAN目标](/ai-fa/explore/30-Formulas/GAN目标)：不走下界路线，直接对分布距离做对抗博弈——两条技术路线的分水岭

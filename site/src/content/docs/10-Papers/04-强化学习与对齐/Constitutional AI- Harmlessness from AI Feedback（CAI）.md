@@ -33,20 +33,20 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- 复用 [RLHF目标](/explore/30-Formulas/RLHF目标)（数据来源替换）
-- [Bradley-Terry模型](/explore/40-Concepts/Bradley-Terry模型)（AI 评判仍产成对偏好）
+- 复用 [RLHF目标](/ai-fa/explore/30-Formulas/RLHF目标)（数据来源替换）
+- [Bradley-Terry模型](/ai-fa/explore/40-Concepts/Bradley-Terry模型)（AI 评判仍产成对偏好）
 
 ## 5. 与前作的关系
 
-- 扩展了 [Deep reinforcement learning from human preferences](/explore/10-Papers/04-强化学习与对齐/Deep reinforcement learning from human preferences（RLHF）)：人类标注 → 宪法 AI 标注
-- 对比 [InstructGPT](/explore/10-Papers/04-强化学习与对齐/Training language models to follow instructions with human feedback（InstructGPT）)：用更少人工换更强无害性
+- 扩展了 [Deep reinforcement learning from human preferences](/ai-fa/explore/10-Papers/04-强化学习与对齐/Deep reinforcement learning from human preferences（RLHF）)：人类标注 → 宪法 AI 标注
+- 对比 [InstructGPT](/ai-fa/explore/10-Papers/04-强化学习与对齐/Training language models to follow instructions with human feedback（InstructGPT）)：用更少人工换更强无害性
 
 ## 6. 影响与后续
 
 - Claude 系列的实际生产路线（宪法持续演进为 Model Spec 思想）
-- [Self-Rewarding Language Models](/explore/10-Papers/04-强化学习与对齐/Self-Rewarding Language Models) 等自评路线的先声
+- [Self-Rewarding Language Models](/ai-fa/explore/10-Papers/04-强化学习与对齐/Self-Rewarding Language Models) 等自评路线的先声
 - LLM-as-Judge 评估范式的近亲
 
 ## 7. 读前须知
 
-[RLAIF与ConstitutionalAI](/explore/20-Algorithms/RLAIF与ConstitutionalAI)、[RLHF目标](/explore/30-Formulas/RLHF目标)、[Bradley-Terry模型](/explore/40-Concepts/Bradley-Terry模型)
+[RLAIF与ConstitutionalAI](/ai-fa/explore/20-Algorithms/RLAIF与ConstitutionalAI)、[RLHF目标](/ai-fa/explore/30-Formulas/RLHF目标)、[Bradley-Terry模型](/ai-fa/explore/40-Concepts/Bradley-Terry模型)

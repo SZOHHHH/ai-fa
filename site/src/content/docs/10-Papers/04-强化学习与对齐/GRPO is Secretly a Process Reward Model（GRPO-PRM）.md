@@ -39,16 +39,16 @@ $$
 
 ## 5. 与前作/矩阵关系
 
-🚩🚩🚩 **占死 [RL 稳定化矩阵](/explore/60-Matrices/RL稳定化矩阵) 机会格"优势估计×过程信号（PRM×GRPO）"的理论侧**——B9 榜首格的釜底抽薪占位；≡ [Process Reinforcement through Implicit Rewards](/explore/10-Papers/04-强化学习与对齐/Process Reinforcement through Implicit Rewards（PRIME）)（隐式过程奖励的另一条推导路径）
+🚩🚩🚩 **占死 [RL 稳定化矩阵](/ai-fa/explore/60-Matrices/RL稳定化矩阵) 机会格"优势估计×过程信号（PRM×GRPO）"的理论侧**——B9 榜首格的釜底抽薪占位；≡ [Process Reinforcement through Implicit Rewards](/ai-fa/explore/10-Papers/04-强化学习与对齐/Process Reinforcement through Implicit Rewards（PRIME）)（隐式过程奖励的另一条推导路径）
 
 
 ## 6. 影响与占位意义
 
 **敌情结论**：PRM×GRPO 格的理论与机制双线已被占；残留仅在"频率偏置修复"等次生问题。
 
-> 近邻同族：[DAPO- An Open-Source LLM Reinforcement Learning System at Scale](/explore/10-Papers/04-强化学习与对齐/DAPO- An Open-Source LLM Reinforcement Learning System at Scale（DAPO）) · [DCPO- Dynamic Clipping Policy Optimization](/explore/10-Papers/04-强化学习与对齐/DCPO- Dynamic Clipping Policy Optimization（DCPO）)
-> 数学根基（占位层）：[策略梯度定理](/explore/40-Concepts/策略梯度定理)
-> 数学根基：[REINFORCE目标](/explore/30-Formulas/REINFORCE目标)
+> 近邻同族：[DAPO- An Open-Source LLM Reinforcement Learning System at Scale](/ai-fa/explore/10-Papers/04-强化学习与对齐/DAPO- An Open-Source LLM Reinforcement Learning System at Scale（DAPO）) · [DCPO- Dynamic Clipping Policy Optimization](/ai-fa/explore/10-Papers/04-强化学习与对齐/DCPO- Dynamic Clipping Policy Optimization（DCPO）)
+> 数学根基（占位层）：[策略梯度定理](/ai-fa/explore/40-Concepts/策略梯度定理)
+> 数学根基：[REINFORCE目标](/ai-fa/explore/30-Formulas/REINFORCE目标)
 
 ## 7. 读前须知
 

@@ -34,20 +34,20 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- [WGAN目标](/explore/30-Formulas/WGAN目标) —— 对偶目标
-- [Wasserstein距离](/explore/40-Concepts/Wasserstein距离)（Kantorovich–Rubinstein 对偶）、[Lipschitz连续](/explore/40-Concepts/Lipschitz连续)
+- [WGAN目标](/ai-fa/explore/30-Formulas/WGAN目标) —— 对偶目标
+- [Wasserstein距离](/ai-fa/explore/40-Concepts/Wasserstein距离)（Kantorovich–Rubinstein 对偶）、[Lipschitz连续](/ai-fa/explore/40-Concepts/Lipschitz连续)
 
 ## 5. 与前作的关系
 
-- 改进了 [Generative Adversarial Networks](/explore/10-Papers/02-生成建模与扩散/Generative Adversarial Networks（GAN）)：JS → W、判别器 → critic
-- 对比 [VAE](/explore/10-Papers/02-生成建模与扩散/Auto-Encoding Variational Bayes（VAE）)：同属"稳定性修复"叙事的另一极
+- 改进了 [Generative Adversarial Networks](/ai-fa/explore/10-Papers/02-生成建模与扩散/Generative Adversarial Networks（GAN）)：JS → W、判别器 → critic
+- 对比 [VAE](/ai-fa/explore/10-Papers/02-生成建模与扩散/Auto-Encoding Variational Bayes（VAE）)：同属"稳定性修复"叙事的另一极
 
 ## 6. 影响与后续
 
 - WGAN-GP（梯度惩罚）成为实际标准
 - IPM 视角统一了 MMD/GAN 家族
-- W 距离理论后来与 [Flow Matching for Generative Modeling](/explore/10-Papers/02-生成建模与扩散/Flow Matching for Generative Modeling（流匹配）) 的最优传输视角连通
+- W 距离理论后来与 [Flow Matching for Generative Modeling](/ai-fa/explore/10-Papers/02-生成建模与扩散/Flow Matching for Generative Modeling（流匹配）) 的最优传输视角连通
 
 ## 7. 读前须知
 
-[Wasserstein距离](/explore/40-Concepts/Wasserstein距离)、[Lipschitz连续](/explore/40-Concepts/Lipschitz连续)、[Jensen-Shannon散度](/explore/40-Concepts/Jensen-Shannon散度)（先懂它错在哪）、[期望](/explore/40-Concepts/期望)
+[Wasserstein距离](/ai-fa/explore/40-Concepts/Wasserstein距离)、[Lipschitz连续](/ai-fa/explore/40-Concepts/Lipschitz连续)、[Jensen-Shannon散度](/ai-fa/explore/40-Concepts/Jensen-Shannon散度)（先懂它错在哪）、[期望](/ai-fa/explore/40-Concepts/期望)

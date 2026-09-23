@@ -21,9 +21,9 @@ tags: [paper]
 
 ## 2. 核心贡献
 
-- **时空 patch 化**：视频统一切 3D patch token（任意分辨率/时长）——[ViT](/explore/10-Papers/01-架构演进/An Image is Worth 16x16 Words- Transformers for Image Recognition at Scale（ViT）) 的时空版
-- **DiT 骨干**：确认 [Scalable Diffusion Models with Transformers](/explore/10-Papers/02-生成建模与扩散/Scalable Diffusion Models with Transformers（DiT）) 路线在视频的扩展性
-- **Re-captioning**：用视频重标注模型（[BLIP-2 - Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models](/explore/10-Papers/08-多模态/BLIP-2- Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Lan（BLIP-2）) 式 VLM）生成高密度描述——数据质量路线
+- **时空 patch 化**：视频统一切 3D patch token（任意分辨率/时长）——[ViT](/ai-fa/explore/10-Papers/01-架构演进/An Image is Worth 16x16 Words- Transformers for Image Recognition at Scale（ViT）) 的时空版
+- **DiT 骨干**：确认 [Scalable Diffusion Models with Transformers](/ai-fa/explore/10-Papers/02-生成建模与扩散/Scalable Diffusion Models with Transformers（DiT）) 路线在视频的扩展性
+- **Re-captioning**：用视频重标注模型（[BLIP-2 - Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models](/ai-fa/explore/10-Papers/08-多模态/BLIP-2- Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Lan（BLIP-2）) 式 VLM）生成高密度描述——数据质量路线
 - **世界模拟器论断**：scale 视频生成 → 涌现物理规律理解（争议中）
 
 ## 3. 方法概要
@@ -35,14 +35,14 @@ tags: [paper]
 
 ## 4. 核心公式
 
-- 复用 [DDPM训练目标](/explore/30-Formulas/DDPM训练目标)（潜空间）+ DiT 架构（[Scalable Diffusion Models with Transformers](/explore/10-Papers/02-生成建模与扩散/Scalable Diffusion Models with Transformers（DiT）)）
+- 复用 [DDPM训练目标](/ai-fa/explore/30-Formulas/DDPM训练目标)（潜空间）+ DiT 架构（[Scalable Diffusion Models with Transformers](/ai-fa/explore/10-Papers/02-生成建模与扩散/Scalable Diffusion Models with Transformers（DiT）)）
 - 时空 patch 嵌入：视频 → $$N_t \times N_h \times N_w$$ token 网格
 
 ## 5. 与前作的关系
 
-- 组合了 [LDM](/explore/10-Papers/02-生成建模与扩散/High-Resolution Image Synthesis with Latent Diffusion Models（LDM）)（[High-Resolution Image Synthesis with Latent Diffusion Models](/explore/10-Papers/02-生成建模与扩散/High-Resolution Image Synthesis with Latent Diffusion Models（LDM）)）+ DiT + re-captioning 三件已有技术——"工程集大成"
-- 与 [VideoPoet - A Large Language Model for Zero-Shot Video Generation](/explore/10-Papers/08-多模态/VideoPoet- A Large Language Model for Zero-Shot Video Generation（VideoPoet）) 的自回归路线同年竞争（扩散胜出主流）
-- 与 [世界模型](/explore/20-Algorithms/世界模型)：LeCun 批评其"只是像素生成、非世界模型"——路线之争的焦点
+- 组合了 [LDM](/ai-fa/explore/10-Papers/02-生成建模与扩散/High-Resolution Image Synthesis with Latent Diffusion Models（LDM）)（[High-Resolution Image Synthesis with Latent Diffusion Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/High-Resolution Image Synthesis with Latent Diffusion Models（LDM）)）+ DiT + re-captioning 三件已有技术——"工程集大成"
+- 与 [VideoPoet - A Large Language Model for Zero-Shot Video Generation](/ai-fa/explore/10-Papers/08-多模态/VideoPoet- A Large Language Model for Zero-Shot Video Generation（VideoPoet）) 的自回归路线同年竞争（扩散胜出主流）
+- 与 [世界模型](/ai-fa/explore/20-Algorithms/世界模型)：LeCun 批评其"只是像素生成、非世界模型"——路线之争的焦点
 
 ## 6. 影响与后续
 
@@ -51,4 +51,4 @@ tags: [paper]
 
 ## 7. 读前须知
 
-[潜在扩散模型（LDM）](/explore/20-Algorithms/潜在扩散模型（LDM）)、[Scalable Diffusion Models with Transformers](/explore/10-Papers/02-生成建模与扩散/Scalable Diffusion Models with Transformers（DiT）)、[世界模型](/explore/20-Algorithms/世界模型)
+[潜在扩散模型（LDM）](/ai-fa/explore/20-Algorithms/潜在扩散模型（LDM）)、[Scalable Diffusion Models with Transformers](/ai-fa/explore/10-Papers/02-生成建模与扩散/Scalable Diffusion Models with Transformers（DiT）)、[世界模型](/ai-fa/explore/20-Algorithms/世界模型)

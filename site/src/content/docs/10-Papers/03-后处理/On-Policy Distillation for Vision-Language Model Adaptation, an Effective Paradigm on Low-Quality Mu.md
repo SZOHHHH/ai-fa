@@ -42,13 +42,13 @@ layer: 精读
 
 $$s_i=[c_T,m_T,h_T,c_S,m_S,h_S,d_{KL}^{TS},d_{\text{argmax}}^{TS},a_{TS},d_{\text{argmax}}^{TP},d_{KL}^{TP}]$$
 
-其中 $$c^M=\max_y p_i^M(y)$$（置信度）、$$m^M=p_i^M(y_1)-p_i^M(y_2)$$（top-2 裕度）、$$h^M=-\frac{1}{\log C}\sum_y p_i^M(y)\log p_i^M(y)$$（归一化熵，见 [KL散度](/explore/40-Concepts/KL散度) 与 [温度参数](/explore/40-Concepts/温度参数)）。**直觉**：先问"每个模型自己慌不慌"（不确定性三件套），再问"教师和学生/先验吵没吵架"（分歧对），最后看表征层的迁移质量（特征对齐 $$a_{TS}$$）。
+其中 $$c^M=\max_y p_i^M(y)$$（置信度）、$$m^M=p_i^M(y_1)-p_i^M(y_2)$$（top-2 裕度）、$$h^M=-\frac{1}{\log C}\sum_y p_i^M(y)\log p_i^M(y)$$（归一化熵，见 [KL散度](/ai-fa/explore/40-Concepts/KL散度) 与 [温度参数](/ai-fa/explore/40-Concepts/温度参数)）。**直觉**：先问"每个模型自己慌不慌"（不确定性三件套），再问"教师和学生/先验吵没吵架"（分歧对），最后看表征层的迁移质量（特征对齐 $$a_{TS}$$）。
 
 **自适应蒸馏目标**（式 11，本文核心）：
 
 $$q_i=\lambda_i^T\,\text{softmax}(z_i^T/\tau_i)+\lambda_i^P\,q_i^P+\lambda_i^H\,q_i^H$$
 
-**直觉**：蒸馏目标不再是"教师的分布"，而是**三路监督的逐样本加权凸组合**——教师靠谱时 $$\lambda^T$$ 大（继承适配知识），教师与先验打架且先验对时 $$\lambda^P$$ 升（保开放词汇泛化），两路软目标都不可靠时 $$\lambda^H$$ 升（硬标签锚定）。对比 [蒸馏损失](/explore/30-Formulas/蒸馏损失) 的总损失 $$\alpha L_{KD}+(1-\alpha)L_{CE}$$：那里的 $$\alpha$$ 是全局固定超参，这里被拆成逐样本、逐阶段、带上限的三个 $$\lambda_i$$。
+**直觉**：蒸馏目标不再是"教师的分布"，而是**三路监督的逐样本加权凸组合**——教师靠谱时 $$\lambda^T$$ 大（继承适配知识），教师与先验打架且先验对时 $$\lambda^P$$ 升（保开放词汇泛化），两路软目标都不可靠时 $$\lambda^H$$ 升（硬标签锚定）。对比 [蒸馏损失](/ai-fa/explore/30-Formulas/蒸馏损失) 的总损失 $$\alpha L_{KD}+(1-\alpha)L_{CE}$$：那里的 $$\alpha$$ 是全局固定超参，这里被拆成逐样本、逐阶段、带上限的三个 $$\lambda_i$$。
 
 **策略引导训练目标**（式 13）：
 
@@ -60,18 +60,18 @@ $$L_{\text{OnPoKD}}=\frac{1}{B}\sum_{i=1}^{B} w_i\,\tau_i^2\, KL(q_i\,\|\,\text{
 
 ## 5. 与前作/矩阵关系
 
-- ← 前身：[KD 奠基](/explore/10-Papers/03-后处理/Distilling the Knowledge in a Neural Network（KD）)（固定教师目标范式）· PromptKD（VLM 提示蒸馏最强基线，本文直接在其上 +0.89 HM）
+- ← 前身：[KD 奠基](/ai-fa/explore/10-Papers/03-后处理/Distilling the Knowledge in a Neural Network（KD）)（固定教师目标范式）· PromptKD（VLM 提示蒸馏最强基线，本文直接在其上 +0.89 HM）
 - → 后继方向：蒸馏目标动态化/元学习化一族的 VLM 首例
-- ≡ 谱系同门（on-policy 蒸馏，但都在 LM 域）：[GKD](/explore/10-Papers/04-强化学习与对齐/On-Policy Distillation of Language Models- Learning from Self-Generated Mistakes（GKD）)（学生自生成分布上蒸馏）· [MiniLLM](/explore/10-Papers/04-强化学习与对齐/MiniLLM- On-Policy Distillation of Large Language Models（MiniLLM）)（反向 KL 策略梯度）；OnPoKD 把"on-policy"从**数据分布侧**（在学生分布上采数据）挪到**目标构造侧**（目标随训练状态在线调整）
-- ↑ 思想源头：[DAGGER](/explore/10-Papers/03-后处理/A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning（DAGGER）)——"监督信号必须跟着学习器的当前状态走，否则分布漂移下误差复利"的在蒸馏目标上的重生（见 [on-policy与off-policy](/explore/40-Concepts/on-policy与off-policy) 第 4 节"蒸馏 on 化"化身）
-- 线锚：[知识蒸馏](/explore/40-Concepts/知识蒸馏) · [on-policy与off-policy](/explore/40-Concepts/on-policy与off-policy) · [视觉语言模型（VLM）](/explore/40-Concepts/视觉语言模型（VLM）)（教师/先验底座即 [CLIP](/explore/10-Papers/08-多模态/Learning Transferable Visual Models From Natural Language Supervision（CLIP）) ViT-B/16）
+- ≡ 谱系同门（on-policy 蒸馏，但都在 LM 域）：[GKD](/ai-fa/explore/10-Papers/04-强化学习与对齐/On-Policy Distillation of Language Models- Learning from Self-Generated Mistakes（GKD）)（学生自生成分布上蒸馏）· [MiniLLM](/ai-fa/explore/10-Papers/04-强化学习与对齐/MiniLLM- On-Policy Distillation of Large Language Models（MiniLLM）)（反向 KL 策略梯度）；OnPoKD 把"on-policy"从**数据分布侧**（在学生分布上采数据）挪到**目标构造侧**（目标随训练状态在线调整）
+- ↑ 思想源头：[DAGGER](/ai-fa/explore/10-Papers/03-后处理/A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning（DAGGER）)——"监督信号必须跟着学习器的当前状态走，否则分布漂移下误差复利"的在蒸馏目标上的重生（见 [on-policy与off-policy](/ai-fa/explore/40-Concepts/on-policy与off-policy) 第 4 节"蒸馏 on 化"化身）
+- 线锚：[知识蒸馏](/ai-fa/explore/40-Concepts/知识蒸馏) · [on-policy与off-policy](/ai-fa/explore/40-Concepts/on-policy与off-policy) · [视觉语言模型（VLM）](/ai-fa/explore/40-Concepts/视觉语言模型（VLM）)（教师/先验底座即 [CLIP](/ai-fa/explore/10-Papers/08-多模态/Learning Transferable Visual Models From Natural Language Supervision（CLIP）) ViT-B/16）
 
 ## 6. 影响后续
 
-蒸馏方法论线"目标构造"轴的 VLM 数据点：此前 on-policy 蒸馏的证据集中在 LM（GKD/MiniLLM/EOPD/Any-OPD 族），本文证明"目标不该固定"在视觉-语言适配同样成立且只需验证反馈即可学到。对更广的蒸馏社区：固定 $$\alpha$$ 混合软硬目标的标准做法（[蒸馏损失](/explore/30-Formulas/蒸馏损失) 实操标配）被指出是次优的——混合比应是样本级决策。消融的关键警示：去掉验证反馈后 FGVCAircraft HM 从 47.66 **塌到 22.74**——自适应目标若无外部可靠性信号校准，比固定目标更危险。
+蒸馏方法论线"目标构造"轴的 VLM 数据点：此前 on-policy 蒸馏的证据集中在 LM（GKD/MiniLLM/EOPD/Any-OPD 族），本文证明"目标不该固定"在视觉-语言适配同样成立且只需验证反馈即可学到。对更广的蒸馏社区：固定 $$\alpha$$ 混合软硬目标的标准做法（[蒸馏损失](/ai-fa/explore/30-Formulas/蒸馏损失) 实操标配）被指出是次优的——混合比应是样本级决策。消融的关键警示：去掉验证反馈后 FGVCAircraft HM 从 47.66 **塌到 22.74**——自适应目标若无外部可靠性信号校准，比固定目标更危险。
 
 ## 7. 读前须知
 
-- 前置：[知识蒸馏](/explore/40-Concepts/知识蒸馏)（软标签/温度机制）→ [蒸馏损失](/explore/30-Formulas/蒸馏损失)（总损失形态）→ [KL散度](/explore/40-Concepts/KL散度)（前向 KL 质量覆盖 vs 反向 KL 的区别，本文选前向但目标可换）
-- [on-policy与off-policy](/explore/40-Concepts/on-policy与off-policy) 第 4 节"蒸馏化身"行是理解本文标题的钥匙：本文的 on-policy 指**目标构造跟随训练进程在线更新**，不是 RL 的数据分布意义
+- 前置：[知识蒸馏](/ai-fa/explore/40-Concepts/知识蒸馏)（软标签/温度机制）→ [蒸馏损失](/ai-fa/explore/30-Formulas/蒸馏损失)（总损失形态）→ [KL散度](/ai-fa/explore/40-Concepts/KL散度)（前向 KL 质量覆盖 vs 反向 KL 的区别，本文选前向但目标可换）
+- [on-policy与off-policy](/ai-fa/explore/40-Concepts/on-policy与off-policy) 第 4 节"蒸馏化身"行是理解本文标题的钥匙：本文的 on-policy 指**目标构造跟随训练进程在线更新**，不是 RL 的数据分布意义
 - 术语：Base-to-Novel（基类上适配、新类上测泛化，HM=两者调和平均）；零样本先验 $$P$$=同一个 CLIP 冻结不动的 zero-shot 文本分类器（不是另一个模型）

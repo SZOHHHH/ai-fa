@@ -24,19 +24,19 @@ $$\log p_\theta(x) = \log \mathbb{E}_{q(z\mid x)}\!\left[ \frac{p_\theta(x,z)}{q
 
 | 出现场景 | 用法 |
 |---|---|
-| [ELBO](/explore/40-Concepts/ELBO) | 下界成立的唯一一步魔法 |
-| [Auto-Encoding Variational Bayes](/explore/10-Papers/02-生成建模与扩散/Auto-Encoding Variational Bayes（VAE）) | 训练目标的合法性来源 |
-| [DDPM训练目标](/explore/30-Formulas/DDPM训练目标) | DDPM 的 ELBO 是其多步版本 |
+| [ELBO](/ai-fa/explore/40-Concepts/ELBO) | 下界成立的唯一一步魔法 |
+| [Auto-Encoding Variational Bayes](/ai-fa/explore/10-Papers/02-生成建模与扩散/Auto-Encoding Variational Bayes（VAE）) | 训练目标的合法性来源 |
+| [DDPM训练目标](/ai-fa/explore/30-Formulas/DDPM训练目标) | DDPM 的 ELBO 是其多步版本 |
 | RL（PPO 下界） | $$\log \mathbb{E} \ge \mathbb{E}\log$$ 同样出现 |
 
 ## 4. 常见误区
 
 - **误区**：方向记反——口诀"**凹上凸下**"（凹函数：函数在期望之上；凸函数：函数在期望之下）
-- **误区**：Jensen 给的是下界不是等式；差距 = [KL散度](/explore/40-Concepts/KL散度)
+- **误区**：Jensen 给的是下界不是等式；差距 = [KL散度](/ai-fa/explore/40-Concepts/KL散度)
 - **误区**：只对"期望"成立，对"任意平均"也成立（加权平均同理）
 
 ## 5. 相关概念
 
-- [ELBO](/explore/40-Concepts/ELBO)：最重要的应用
-- [期望](/explore/40-Concepts/期望)：不等式的作用对象
-- [高斯分布](/explore/40-Concepts/高斯分布)：log-凹性使高斯相关推导顺畅
+- [ELBO](/ai-fa/explore/40-Concepts/ELBO)：最重要的应用
+- [期望](/ai-fa/explore/40-Concepts/期望)：不等式的作用对象
+- [高斯分布](/ai-fa/explore/40-Concepts/高斯分布)：log-凹性使高斯相关推导顺畅

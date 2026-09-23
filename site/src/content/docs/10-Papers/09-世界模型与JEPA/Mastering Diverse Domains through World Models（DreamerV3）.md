@@ -38,12 +38,12 @@ $$\mathrm{symlog}(x)=\mathrm{sign}(x)\cdot\log(1+\lvert x\rvert)\qquad\text{（�
 
 **直觉解释**：symlog 把"横跨四个数量级的回归目标"压成"有界但保序"——8000 与 8001 的差异在原域被 8000 与 80 的差异淹没，在对数域里各自可分辨；训练在压缩域算，推理再 symexp 还原。这套"幅度免疫"与分类隐状态、KL 平衡合起来，就是"为什么这套世界模型哪里都能跑"的工程答案。
 
-- 需要的前置：[RSSM转移模型](/explore/30-Formulas/RSSM转移模型)、[Dreamer](/explore/10-Papers/09-世界模型与JEPA/Dream to Control- Learning Behaviors by Latent Imagination（Dreamer）)、[重参数化](/explore/40-Concepts/重参数化)
+- 需要的前置：[RSSM转移模型](/ai-fa/explore/30-Formulas/RSSM转移模型)、[Dreamer](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Dream to Control- Learning Behaviors by Latent Imagination（Dreamer）)、[重参数化](/ai-fa/explore/40-Concepts/重参数化)
 
 ## 5. 与前作/矩阵关系
 
 - ← DreamerV1（想象训练）/V2（分类隐状态）——V3=稳定性收口；
-- ↔ 对照 [MuZero](/explore/10-Papers/09-世界模型与JEPA/Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model（MuZero）)（ Atari 100k 榜上的对手是 EfficientZero 系）；对照 [DIAMOND](/explore/10-Papers/09-世界模型与JEPA/Diffusion for World Modeling- Visual Details Matter in Atari（DIAMOND）)（latent 压缩 vs 像素保真的正面冲突——DIAMOND 正是拿"V3 系丢细节"当动机）；
+- ↔ 对照 [MuZero](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model（MuZero）)（ Atari 100k 榜上的对手是 EfficientZero 系）；对照 [DIAMOND](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Diffusion for World Modeling- Visual Details Matter in Atari（DIAMOND）)（latent 压缩 vs 像素保真的正面冲突——DIAMOND 正是拿"V3 系丢细节"当动机）；
 - → DayDreamer（真机器人四小时学会走路）等延伸。
 
 ## 6. 影响与后续
@@ -54,8 +54,8 @@ $$\mathrm{symlog}(x)=\mathrm{sign}(x)\cdot\log(1+\lvert x\rvert)\qquad\text{（�
 
 ## 7. 读前须知
 
-- **必前置**：[Dreamer](/explore/10-Papers/09-世界模型与JEPA/Dream to Control- Learning Behaviors by Latent Imagination（Dreamer）)（V3 全部继承其骨架）、[RSSM转移模型](/explore/30-Formulas/RSSM转移模型)、[世界模型](/explore/20-Algorithms/世界模型)；
+- **必前置**：[Dreamer](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Dream to Control- Learning Behaviors by Latent Imagination（Dreamer）)（V3 全部继承其骨架）、[RSSM转移模型](/ai-fa/explore/30-Formulas/RSSM转移模型)、[世界模型](/ai-fa/explore/20-Algorithms/世界模型)；
 - **易混点**：①symlog 是**输出域变换**不是归一化层；②free bits 是"KL 至少学这么多、少了不罚"的下限，防表示坍缩；③Minecraft 成就依赖好奇心奖励设计——不是纯通用性的证据，读结论时分清；
 - **读法建议**：图 1（一图流架构）→ 表 1（150 域汇总）→ 附录 C（稳定化技巧逐条）；正文 Minecraft 节可当故事读。
 
-> 数学根基：[RSSM转移模型](/explore/30-Formulas/RSSM转移模型) · [ELBO目标](/explore/30-Formulas/ELBO目标) · [KL散度](/explore/40-Concepts/KL散度)
+> 数学根基：[RSSM转移模型](/ai-fa/explore/30-Formulas/RSSM转移模型) · [ELBO目标](/ai-fa/explore/30-Formulas/ELBO目标) · [KL散度](/ai-fa/explore/40-Concepts/KL散度)

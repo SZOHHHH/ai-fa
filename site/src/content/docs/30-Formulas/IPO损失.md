@@ -34,16 +34,16 @@ $$\mathcal{L}_{\text{IPO}}(\theta) = \mathbb{E}_{(x, y^+, y^-)}\!\left[ \left( \
 
 | 论文 | 贡献 |
 |---|---|
-| [A General Theoretical Paradigm to Understand Learning from Human Preferences](/explore/10-Papers/04-强化学习与对齐/A General Theoretical Paradigm to Understand Learning from Human Preferences（IPO）) | 提出 Ψ-PO 框架与 IPO |
+| [A General Theoretical Paradigm to Understand Learning from Human Preferences](/ai-fa/explore/10-Papers/04-强化学习与对齐/A General Theoretical Paradigm to Understand Learning from Human Preferences（IPO）) | 提出 Ψ-PO 框架与 IPO |
 
 ## 5. 数学概念分解
 
-- [KL散度](/explore/40-Concepts/KL散度)：目标值的推导
-- [期望](/explore/40-Concepts/期望)：数据期望
-- [范数](/explore/40-Concepts/范数)：平方损失
+- [KL散度](/ai-fa/explore/40-Concepts/KL散度)：目标值的推导
+- [期望](/ai-fa/explore/40-Concepts/期望)：数据期望
+- [范数](/ai-fa/explore/40-Concepts/范数)：平方损失
 
 ## 6. 与其他公式的关系
 
-- → **修正** [DPO损失](/explore/30-Formulas/DPO损失) 的过优化病态
-- 同族：[SimPO损失](/explore/30-Formulas/SimPO损失)（另一方向的简化：去参考）、[KTO损失](/explore/30-Formulas/KTO损失)（换理论基础）
-- ⊂ **同属** RLHF 闭式解家族（[RLHF目标](/explore/30-Formulas/RLHF目标) §2 闭式解的三个后裔）
+- → **修正** [DPO损失](/ai-fa/explore/30-Formulas/DPO损失) 的过优化病态
+- 同族：[SimPO损失](/ai-fa/explore/30-Formulas/SimPO损失)（另一方向的简化：去参考）、[KTO损失](/ai-fa/explore/30-Formulas/KTO损失)（换理论基础）
+- ⊂ **同属** RLHF 闭式解家族（[RLHF目标](/ai-fa/explore/30-Formulas/RLHF目标) §2 闭式解的三个后裔）

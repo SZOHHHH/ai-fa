@@ -16,7 +16,7 @@ matrix_coords: [—, 理论, —]
 
 ## 1. 一句话贡献
 
-可辨识 [VAE](/explore/10-Papers/02-生成建模与扩散/Auto-Encoding Variational Bayes（VAE）) 的奠基：证明**条件先验**（潜变量依附辅助变量 u，如时间/类别）下潜变量可辨识到很弱的等价类——把 VAE 与非线性 ICA 统一。
+可辨识 [VAE](/ai-fa/explore/10-Papers/02-生成建模与扩散/Auto-Encoding Variational Bayes（VAE）) 的奠基：证明**条件先验**（潜变量依附辅助变量 u，如时间/类别）下潜变量可辨识到很弱的等价类——把 VAE 与非线性 ICA 统一。
 
 ## 2. 核心贡献
 
@@ -36,15 +36,15 @@ $$
 
 ## 5. 与前作/矩阵关系
 
-← [Auto-Encoding Variational Bayes](/explore/10-Papers/02-生成建模与扩散/Auto-Encoding Variational Bayes（VAE）)（不可辨识的原始版）；→ B10 孵化 #2（潜动作接口可辨识性的理论工具）；→ LAPA/3R2D 的码本可辨识性问题
+← [Auto-Encoding Variational Bayes](/ai-fa/explore/10-Papers/02-生成建模与扩散/Auto-Encoding Variational Bayes（VAE）)（不可辨识的原始版）；→ B10 孵化 #2（潜动作接口可辨识性的理论工具）；→ LAPA/3R2D 的码本可辨识性问题
 
 ## 6. 影响与占位意义
 
 B18 奠基补齐：潜变量可辨识性理论的标准引用，补齐知识库的 ICA 支线。
 
-> 近邻同族：[A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning](/explore/10-Papers/03-后处理/A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning（DAGGER）) · [A Simple and Effective Pruning Approach for Large Language Models](/explore/10-Papers/03-后处理/A Simple and Effective Pruning Approach for Large Language Models（SparseGPT）)
+> 近邻同族：[A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning](/ai-fa/explore/10-Papers/03-后处理/A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning（DAGGER）) · [A Simple and Effective Pruning Approach for Large Language Models](/ai-fa/explore/10-Papers/03-后处理/A Simple and Effective Pruning Approach for Large Language Models（SparseGPT）)
 
-> 数学根基：[潜变量变分下界](/explore/30-Formulas/潜变量变分下界) · [ELBO目标](/explore/30-Formulas/ELBO目标) · [KL散度](/explore/40-Concepts/KL散度)
+> 数学根基：[潜变量变分下界](/ai-fa/explore/30-Formulas/潜变量变分下界) · [ELBO目标](/ai-fa/explore/30-Formulas/ELBO目标) · [KL散度](/ai-fa/explore/40-Concepts/KL散度)
 
 
 ## 7. 读前须知

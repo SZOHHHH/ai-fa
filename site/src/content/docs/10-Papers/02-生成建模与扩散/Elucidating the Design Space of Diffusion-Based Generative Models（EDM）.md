@@ -35,15 +35,15 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- 前向重参数化（[Score-SDE前向过程](/explore/30-Formulas/Score-SDE前向过程) §2 的 EDM 行）
-- [DDPM训练目标](/explore/30-Formulas/DDPM训练目标) §2 的加权一般式（$$\lambda_t$$ 选择的理论化）
-- [采样器](/explore/40-Concepts/采样器)（Heun 二阶）
+- 前向重参数化（[Score-SDE前向过程](/ai-fa/explore/30-Formulas/Score-SDE前向过程) §2 的 EDM 行）
+- [DDPM训练目标](/ai-fa/explore/30-Formulas/DDPM训练目标) §2 的加权一般式（$$\lambda_t$$ 选择的理论化）
+- [采样器](/ai-fa/explore/40-Concepts/采样器)（Heun 二阶）
 
 ## 5. 与前作的关系
 
-- 改进了 [Score-Based Generative Modeling through Stochastic Differential Equations](/explore/10-Papers/02-生成建模与扩散/Score-Based Generative Modeling through Stochastic Differential Equations（Score-SDE）)：连续框架落地为可调工程系统
-- 统一并对比 [Denoising Diffusion Probabilistic Models](/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Probabilistic Models（DDPM）) 与 [Generative Modeling by Estimating Gradients of the Data Distribution](/explore/10-Papers/02-生成建模与扩散/Generative Modeling by Estimating Gradients of the Data Distribution（SMLD）) 的超参
-- 扩展了 [Improved Denoising Diffusion Probabilistic Models](/explore/10-Papers/02-生成建模与扩散/Improved Denoising Diffusion Probabilistic Models（iDDPM）) 的"调旋钮"路线到全空间
+- 改进了 [Score-Based Generative Modeling through Stochastic Differential Equations](/ai-fa/explore/10-Papers/02-生成建模与扩散/Score-Based Generative Modeling through Stochastic Differential Equations（Score-SDE）)：连续框架落地为可调工程系统
+- 统一并对比 [Denoising Diffusion Probabilistic Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Probabilistic Models（DDPM）) 与 [Generative Modeling by Estimating Gradients of the Data Distribution](/ai-fa/explore/10-Papers/02-生成建模与扩散/Generative Modeling by Estimating Gradients of the Data Distribution（SMLD）) 的超参
+- 扩展了 [Improved Denoising Diffusion Probabilistic Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Improved Denoising Diffusion Probabilistic Models（iDDPM）) 的"调旋钮"路线到全空间
 
 ## 6. 影响与后续
 
@@ -53,4 +53,4 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[Score-SDE前向过程](/explore/30-Formulas/Score-SDE前向过程)（先懂 VP/VE 为何分裂）、[采样器](/explore/40-Concepts/采样器)、[期望](/explore/40-Concepts/期望)、[高斯分布](/explore/40-Concepts/高斯分布)
+[Score-SDE前向过程](/ai-fa/explore/30-Formulas/Score-SDE前向过程)（先懂 VP/VE 为何分裂）、[采样器](/ai-fa/explore/40-Concepts/采样器)、[期望](/ai-fa/explore/40-Concepts/期望)、[高斯分布](/ai-fa/explore/40-Concepts/高斯分布)

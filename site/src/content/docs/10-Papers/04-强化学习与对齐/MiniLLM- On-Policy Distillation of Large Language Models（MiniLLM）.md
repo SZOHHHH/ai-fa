@@ -36,17 +36,17 @@ $$\mathcal{L} = -\frac{1}{|y|}\sum_{t}\Big[\log\frac{\pi_S(y_t|y_{<t})}{\pi_T(y_
 
 ## 5. 与前作关系
 
-- ← [GKD](/explore/10-Papers/04-强化学习与对齐/On-Policy Distillation of Language Models- Learning from Self-Generated Mistakes（GKD）)：同一动机（反向 KL + 学生分布），GKD 给框架，MiniLLM 给**可训的策略梯度实现**
+- ← [GKD](/ai-fa/explore/10-Papers/04-强化学习与对齐/On-Policy Distillation of Language Models- Learning from Self-Generated Mistakes（GKD）)：同一动机（反向 KL + 学生分布），GKD 给框架，MiniLLM 给**可训的策略梯度实现**
 - → Qwen3-OPD / Thinking Machines：把 MiniLLM 的"策略梯度解法"简化为"反向 KL 直接当 per-token reward"（省去梯度方差处理）
 - #loss/distillation
 
 ## 6. 影响后续
 
-verl/Tinker 的 OPD 实现皆承此脉；其"长度归一化"思想后来在 SimPO 长度偏置讨论中重现（[RL 稳定化矩阵](/explore/60-Matrices/RL稳定化矩阵) 洞察 3）。
+verl/Tinker 的 OPD 实现皆承此脉；其"长度归一化"思想后来在 SimPO 长度偏置讨论中重现（[RL 稳定化矩阵](/ai-fa/explore/60-Matrices/RL稳定化矩阵) 洞察 3）。
 
 ## 7. 读前须知
 
-- 需要：REINFORCE 基线思想（[REINFORCE目标](/explore/30-Formulas/REINFORCE目标)）、反向 KL 的模式搜索性质
+- 需要：REINFORCE 基线思想（[REINFORCE目标](/ai-fa/explore/30-Formulas/REINFORCE目标)）、反向 KL 的模式搜索性质
 - 易混点：MiniLLM 是**序列级反向 KL 的策略梯度展开**（采样梯度通过 student 分布），Thinking Machines OPD 是**逐 token 反向 KL 直接当奖励**（teacher 只算 logprob，无梯度穿过）——前者理论上更"在线"，后者实现上更简单，X 上有专文对比
 
-> 近邻同族：[Any-OPD- Heterogeneous On-Policy Distillation for Flow-Matching Models via Representation-Space Bridging](/explore/10-Papers/04-强化学习与对齐/Any-OPD- Heterogeneous On-Policy Distillation for Flow-Matching Models via Representation-Space Bridging（Any-OPD）) · [CausalOPD- First-Wrong-Step Supervision for Distilling Causal Chain Reasoning](/explore/10-Papers/04-强化学习与对齐/CausalOPD- First-Wrong-Step Supervision for Distilling Causal Chain Reasoning（CausalOPD）)
+> 近邻同族：[Any-OPD- Heterogeneous On-Policy Distillation for Flow-Matching Models via Representation-Space Bridging](/ai-fa/explore/10-Papers/04-强化学习与对齐/Any-OPD- Heterogeneous On-Policy Distillation for Flow-Matching Models via Representation-Space Bridging（Any-OPD）) · [CausalOPD- First-Wrong-Step Supervision for Distilling Causal Chain Reasoning](/ai-fa/explore/10-Papers/04-强化学习与对齐/CausalOPD- First-Wrong-Step Supervision for Distilling Causal Chain Reasoning（CausalOPD）)

@@ -17,29 +17,29 @@ tags: [algo]
 
 | 论文 | 挂载位置 | 引入/发展了什么 | 年份 |
 |---|---|---|---|
-| [Parameter-Efficient Transfer Learning for NLP](/explore/10-Papers/03-后处理/Parameter-Efficient Transfer Learning for NLP（Adapter）) | 串行瓶颈层 | Adapter 奠基 | 2019 |
-| [Prefix-Tuning - Optimizing Continuous Prompts for Generation](/explore/10-Papers/03-后处理/Prefix-Tuning- Optimizing Continuous Prompts for Generation（Prefix-Tuning）) | 注意力输入侧 KV 前缀 | 连续提示 | 2021 |
-| [LoRA - Low-Rank Adaptation of Large Language Models](/explore/10-Papers/03-后处理/LoRA- Low-Rank Adaptation of Large Language Models（LoRA）) | 权重旁路（低秩） | 推理零开销——事实标准 | 2021 |
-| [QLoRA - Efficient Finetuning of Quantized LLMs](/explore/10-Papers/03-后处理/QLoRA- Efficient Finetuning of Quantized LLMs（QLoRA）) | 量化基座+LoRA | 4bit 存 + 16bit 算 | 2023 |
-| [DoRA - Weight-Decomposed Low-Rank Adaptation](/explore/10-Papers/03-后处理/DoRA- Weight-Decomposed Low-Rank Adaptation（DoRA）) | 幅度/方向分解 | 逼近全参质量 | 2024 |
+| [Parameter-Efficient Transfer Learning for NLP](/ai-fa/explore/10-Papers/03-后处理/Parameter-Efficient Transfer Learning for NLP（Adapter）) | 串行瓶颈层 | Adapter 奠基 | 2019 |
+| [Prefix-Tuning - Optimizing Continuous Prompts for Generation](/ai-fa/explore/10-Papers/03-后处理/Prefix-Tuning- Optimizing Continuous Prompts for Generation（Prefix-Tuning）) | 注意力输入侧 KV 前缀 | 连续提示 | 2021 |
+| [LoRA - Low-Rank Adaptation of Large Language Models](/ai-fa/explore/10-Papers/03-后处理/LoRA- Low-Rank Adaptation of Large Language Models（LoRA）) | 权重旁路（低秩） | 推理零开销——事实标准 | 2021 |
+| [QLoRA - Efficient Finetuning of Quantized LLMs](/ai-fa/explore/10-Papers/03-后处理/QLoRA- Efficient Finetuning of Quantized LLMs（QLoRA）) | 量化基座+LoRA | 4bit 存 + 16bit 算 | 2023 |
+| [DoRA - Weight-Decomposed Low-Rank Adaptation](/ai-fa/explore/10-Papers/03-后处理/DoRA- Weight-Decomposed Low-Rank Adaptation（DoRA）) | 幅度/方向分解 | 逼近全参质量 | 2024 |
 
 **演进主轴**：挂载位置从"显眼"（串行 Adapter）到"隐蔽"（权重旁路）再到"极限"（量化基座）——**推理开销逐代归零、显存逐代压低**。
 
 ## 3. 核心公式
 
-- [LoRA分解](/explore/30-Formulas/LoRA分解) —— 家族灵魂 $$W' = W_0 + \frac{\alpha}{r}BA$$
-- [量化误差与异常值](/explore/30-Formulas/量化误差与异常值)（QLoRA 的 NF4 部分）
+- [LoRA分解](/ai-fa/explore/30-Formulas/LoRA分解) —— 家族灵魂 $$W' = W_0 + \frac{\alpha}{r}BA$$
+- [量化误差与异常值](/ai-fa/explore/30-Formulas/量化误差与异常值)（QLoRA 的 NF4 部分）
 
 ## 4. 数学概念分解
 
-[低秩分解](/explore/40-Concepts/低秩分解)（LoRA/DoRA）、[量化](/explore/40-Concepts/量化)（QLoRA）、[注意力机制](/explore/40-Concepts/注意力机制)（Prefix-Tuning 的作用处）、[重参数化](/explore/40-Concepts/重参数化)（离散选择的直通亲戚）
+[低秩分解](/ai-fa/explore/40-Concepts/低秩分解)（LoRA/DoRA）、[量化](/ai-fa/explore/40-Concepts/量化)（QLoRA）、[注意力机制](/ai-fa/explore/40-Concepts/注意力机制)（Prefix-Tuning 的作用处）、[重参数化](/ai-fa/explore/40-Concepts/重参数化)（离散选择的直通亲戚）
 
 ## 5. 变体与演进
 
 | 变体 | 相比 LoRA 改了什么 | 代表 |
 |---|---|---|
 | AdaLoRA | 秩 r 按层动态分配 | 2023 |
-| DoRA | 权重分解幅度+方向 | [DoRA - Weight-Decomposed Low-Rank Adaptation](/explore/10-Papers/03-后处理/DoRA- Weight-Decomposed Low-Rank Adaptation（DoRA）) |
+| DoRA | 权重分解幅度+方向 | [DoRA - Weight-Decomposed Low-Rank Adaptation](/ai-fa/explore/10-Papers/03-后处理/DoRA- Weight-Decomposed Low-Rank Adaptation（DoRA）) |
 | LoRA+ | A/B 学习率解耦 | 2024 |
 | rsLoRA | α/r 改 α/√r | 2024 |
 | MoE-LoRA | 多 LoRA 专家混合 | 2024–25 |

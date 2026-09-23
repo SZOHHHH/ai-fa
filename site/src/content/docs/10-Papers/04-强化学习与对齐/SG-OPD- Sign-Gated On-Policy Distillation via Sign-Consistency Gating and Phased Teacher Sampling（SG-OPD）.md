@@ -37,15 +37,15 @@ $$
 
 ## 5. 与前作/矩阵关系
 
-🚩 占蒸馏域矩阵组合奖励格（双粒度门控）；≡ [When Teachers Mislead- Spurious-Signal-Aware On-Policy Distillation](/explore/10-Papers/04-强化学习与对齐/When Teachers Mislead- Spurious-Signal-Aware On-Policy Distillation（SA-OPD）)（都处理"teacher 会错"）
+🚩 占蒸馏域矩阵组合奖励格（双粒度门控）；≡ [When Teachers Mislead- Spurious-Signal-Aware On-Policy Distillation](/ai-fa/explore/10-Papers/04-强化学习与对齐/When Teachers Mislead- Spurious-Signal-Aware On-Policy Distillation（SA-OPD）)（都处理"teacher 会错"）
 
 
 ## 6. 影响与占位意义
 
 证明"verifier×teacher"组合方向已有系统性占位。
 
-> 近邻同族：[Hybrid Reinforcement- When Reward Is Sparse, It is Better to Be Dense](/explore/10-Papers/04-强化学习与对齐/Hybrid Reinforcement- When Reward Is Sparse, It is Better to Be Dense（HERO）) · [Learning beyond Teacher- Generalized On-Policy Distillation with Reward Extrapolation](/explore/10-Papers/04-强化学习与对齐/Learning beyond Teacher- Generalized On-Policy Distillation with Reward Extrapolation（G-OPD）)
-> 数学根基（占位层）：[条件流匹配损失](/explore/30-Formulas/条件流匹配损失) · [注意力核心公式](/explore/30-Formulas/注意力核心公式)
+> 近邻同族：[Hybrid Reinforcement- When Reward Is Sparse, It is Better to Be Dense](/ai-fa/explore/10-Papers/04-强化学习与对齐/Hybrid Reinforcement- When Reward Is Sparse, It is Better to Be Dense（HERO）) · [Learning beyond Teacher- Generalized On-Policy Distillation with Reward Extrapolation](/ai-fa/explore/10-Papers/04-强化学习与对齐/Learning beyond Teacher- Generalized On-Policy Distillation with Reward Extrapolation（G-OPD）)
+> 数学根基（占位层）：[条件流匹配损失](/ai-fa/explore/30-Formulas/条件流匹配损失) · [注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)
 
 ## 7. 读前须知
 

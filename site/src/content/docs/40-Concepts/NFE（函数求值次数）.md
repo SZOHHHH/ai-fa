@@ -13,7 +13,7 @@ tags: [concept]
 
 **形式**：Number of Function Evaluations——数值积分一个微分方程时，右端函数被求值的总次数（每步 Euler 计 1 次、每步 Heun 计 2 次）。
 
-**扩散生成里的用法（本库主战场）**：采样 = 数值积分 [概率流 ODE](/explore/30-Formulas/概率流ODE)，右端 = 去噪网络 $$D(x,\sigma)$$，所以：
+**扩散生成里的用法（本库主战场）**：采样 = 数值积分 [概率流 ODE](/ai-fa/explore/30-Formulas/概率流ODE)，右端 = 去噪网络 $$D(x,\sigma)$$，所以：
 
 $$\text{NFE} = \text{去噪步数} = \text{每生成一张图/一帧，调用了几次去噪网络}$$
 
@@ -36,9 +36,11 @@ $$\text{NFE} = \text{去噪步数} = \text{每生成一张图/一帧，调用了
 
 ## 4. 与库内实体的关系
 
-- ← 概念源头：[常微分方程（ODE）](/explore/40-Concepts/常微分方程（ODE）)（数值积分的计数单位）、[采样器](/explore/40-Concepts/采样器)
-- ← 采样语境：[概率流ODE](/explore/30-Formulas/概率流ODE)（扩散采样=积分它，步数即 NFE）
-- ← 每次求值在问什么：[Score函数](/explore/40-Concepts/Score函数)（调一次去噪网络 ≈ 问一次 score 场）
-- 应用侧：[DIAMOND](/explore/10-Papers/09-世界模型与JEPA/Diffusion for World Modeling- Visual Details Matter in Atari（DIAMOND）)（每帧 3 NFE = 想象训练主成本）、[DMD](/explore/10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）)（蒸馏到 1 NFE 的代表）、[PlaidQ](/explore/10-Papers/02-生成建模与扩散/Distilled Continuous Diffusion Language Models Can Write Code in Few Steps---or One)（语言域少步蒸馏：K+1 NFE 计数、K=1 处 DMD 失效需配对监督）
+- ← 概念源头：[常微分方程（ODE）](/ai-fa/explore/40-Concepts/常微分方程（ODE）)（数值积分的计数单位）、[采样器](/ai-fa/explore/40-Concepts/采样器)
+- ← 采样语境：[概率流ODE](/ai-fa/explore/30-Formulas/概率流ODE)（扩散采样=积分它，步数即 NFE）
+- ← 每次求值在问什么：[Score函数](/ai-fa/explore/40-Concepts/Score函数)（调一次去噪网络 ≈ 问一次 score 场）
+- 应用侧：[DIAMOND](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Diffusion for World Modeling- Visual Details Matter in Atari（DIAMOND）)（每帧 3 NFE = 想象训练主成本）、[DMD](/ai-fa/explore/10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）)（蒸馏到 1 NFE 的代表）、[PlaidQ](/ai-fa/explore/10-Papers/02-生成建模与扩散/Distilled Continuous Diffusion Language Models Can Write Code in Few Steps---or One)（语言域少步蒸馏：K+1 NFE 计数、K=1 处 DMD 失效需配对监督）
 
-- → 后继补记（260916）：[LookThere!](/explore/10-Papers/01-架构演进/LookThere! Sparse Vision by Reinforced Selection)（视觉输入端的 NFE 削减：强化学习选关键像素）
+- → 后继补记（260916）：[LookThere!](/ai-fa/explore/10-Papers/01-架构演进/LookThere! Sparse Vision by Reinforced Selection)（视觉输入端的 NFE 削减：强化学习选关键像素）
+- → 后继补记（260917）：[StrucPhysVideo](/ai-fa/explore/10-Papers/02-生成建模与扩散/StrucPhysVideo Learning Physical Dynamics from Structured Captions and Robot Actions)（少步蒸馏落交互 WM：IA2V 动作条件自回归 rollout 压到 4 步去噪/帧——蒸馏动机=rollout 效率、评估=Physics-IQ 生成指标，无决策维度；与 E1"少步×决策保真"格的差异实证）
+- → 后继补记（260919）：[AlayaVista](/ai-fa/explore/10-Papers/02-生成建模与扩散/AlayaVista Streaming World Modeling from Panoramic States to Perspective Video)（双分支 4 步蒸馏落流式全景 WM：一致性蒸馏初始化→Self-Forcing+++分布匹配；动机=流式效率、评估=视觉质量/相机可控——无决策维度，E1 对照组再+1）

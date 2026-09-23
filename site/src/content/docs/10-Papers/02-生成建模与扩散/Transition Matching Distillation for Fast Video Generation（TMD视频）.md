@@ -38,16 +38,16 @@ $$
 
 ## 5. 与前作/矩阵关系
 
-🚩 占视频×蒸馏格（CVPR 级占位）；≡ [Align Your Flow - Scaling Continuous-Time Flow Map Distillation](/explore/10-Papers/02-生成建模与扩散/Align Your Flow- Scaling Continuous-Time Flow Map Distillation（AYF）)
+🚩 占视频×蒸馏格（CVPR 级占位）；≡ [Align Your Flow - Scaling Continuous-Time Flow Map Distillation](/ai-fa/explore/10-Papers/02-生成建模与扩散/Align Your Flow- Scaling Continuous-Time Flow Map Distillation（AYF）)
 
 
 ## 6. 影响与占位意义
 
 视频加速战场的 2026 年初占位。
 
-> 近邻同族：[Analyzing and Improving the Image Quality of StyleGAN](/explore/10-Papers/02-生成建模与扩散/Analyzing and Improving the Image Quality of StyleGAN（StyleGAN2）)
-> 数学根基（占位层）：[概率分布](/explore/40-Concepts/概率分布)
-> 数学根基：[蒸馏损失](/explore/30-Formulas/蒸馏损失) · [DSM目标](/explore/30-Formulas/DSM目标)
+> 近邻同族：[Analyzing and Improving the Image Quality of StyleGAN](/ai-fa/explore/10-Papers/02-生成建模与扩散/Analyzing and Improving the Image Quality of StyleGAN（StyleGAN2）)
+> 数学根基（占位层）：[概率分布](/ai-fa/explore/40-Concepts/概率分布)
+> 数学根基：[蒸馏损失](/ai-fa/explore/30-Formulas/蒸馏损失) · [DSM目标](/ai-fa/explore/30-Formulas/DSM目标)
 
 ## 7. 读前须知
 

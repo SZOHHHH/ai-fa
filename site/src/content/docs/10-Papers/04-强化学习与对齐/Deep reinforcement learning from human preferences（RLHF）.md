@@ -28,14 +28,14 @@ pdf: 已下载（PDF/）
 
 1. 策略与环境交互，定期产出两段行为片段
 2. 人类标注哪段更好
-3. $$r_\phi$$ 拟合偏好（[Bradley-Terry模型](/explore/40-Concepts/Bradley-Terry模型) 损失）
+3. $$r_\phi$$ 拟合偏好（[Bradley-Terry模型](/ai-fa/explore/40-Concepts/Bradley-Terry模型) 损失）
 4. 策略用 RL（TRPO）最大化 $$r_\phi$$
 5. 循环：新片段→新标注→更新 RM→更新策略
 
 ## 4. 核心公式
 
-- [RLHF目标](/explore/30-Formulas/RLHF目标) —— 范式定义
-- [Bradley-Terry模型](/explore/40-Concepts/Bradley-Terry模型) —— RM 训练损失
+- [RLHF目标](/ai-fa/explore/30-Formulas/RLHF目标) —— 范式定义
+- [Bradley-Terry模型](/ai-fa/explore/40-Concepts/Bradley-Terry模型) —— RM 训练损失
 
 ## 5. 与前作的关系
 
@@ -44,11 +44,11 @@ pdf: 已下载（PDF/）
 
 ## 6. 影响与后续
 
-- 被 [InstructGPT](/explore/10-Papers/04-强化学习与对齐/Training language models to follow instructions with human feedback（InstructGPT）) 搬进 LLM——ChatGPT 的直系技术源头
+- 被 [InstructGPT](/ai-fa/explore/10-Papers/04-强化学习与对齐/Training language models to follow instructions with human feedback（InstructGPT）) 搬进 LLM——ChatGPT 的直系技术源头
 - 作者群（Christiano/Leike/Brown/Amodei）后来构成 OpenAI 与 Anthropic 的核心——论文即"对齐"事业起点
 - "reward hacking / scalable oversight" 研究议程由此展开
-- → 后继补记（260916）：[Concept-Level Risk](/explore/10-Papers/04-强化学习与对齐/Concept-Level Risk and Calibration for Governance in Diffusion Foundation Models)（治理视角延伸到扩散基础模型——风险与校准的概念级度量）
+- → 后继补记（260916）：[Concept-Level Risk](/ai-fa/explore/10-Papers/04-强化学习与对齐/Concept-Level Risk and Calibration for Governance in Diffusion Foundation Models)（治理视角延伸到扩散基础模型——风险与校准的概念级度量）
 
 ## 7. 读前须知
 
-[Bradley-Terry模型](/explore/40-Concepts/Bradley-Terry模型)、[策略梯度定理](/explore/40-Concepts/策略梯度定理)、[KL散度](/explore/40-Concepts/KL散度)
+[Bradley-Terry模型](/ai-fa/explore/40-Concepts/Bradley-Terry模型)、[策略梯度定理](/ai-fa/explore/40-Concepts/策略梯度定理)、[KL散度](/ai-fa/explore/40-Concepts/KL散度)

@@ -38,7 +38,7 @@ $$
 
 ## 5. 与前作/矩阵关系
 
-🚩🚩 **占 [世界模型矩阵](/explore/60-Matrices/世界模型矩阵) "潜动作接口"格的联合训练侧**（B10 新机会格"接口可辨识性"的邻格，端到端路线已被占）
+🚩🚩 **占 [世界模型矩阵](/ai-fa/explore/60-Matrices/世界模型矩阵) "潜动作接口"格的联合训练侧**（B10 新机会格"接口可辨识性"的邻格，端到端路线已被占）
 
 
 ## 6. 影响与占位意义
@@ -47,9 +47,9 @@ $$
 
 ---
 
-> 谱系枢纽：[Dream to Control - Learning Behaviors by Latent Imagination](/explore/10-Papers/09-世界模型与JEPA/Dream to Control- Learning Behaviors by Latent Imagination（Dreamer）)（图谱连通入口）
-> 近邻同族：[Factored Latent Action World Models](/explore/10-Papers/09-世界模型与JEPA/Factored Latent Action World Models（FLAM）) · [Hierarchical Planning with Latent World Models](/explore/10-Papers/09-世界模型与JEPA/Hierarchical Planning with Latent World Models（HPLWM）)
-> 数学根基（占位层）：[扩散条件去噪](/explore/30-Formulas/扩散条件去噪) · [贝尔曼方程](/explore/40-Concepts/贝尔曼方程)
+> 谱系枢纽：[Dream to Control - Learning Behaviors by Latent Imagination](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Dream to Control- Learning Behaviors by Latent Imagination（Dreamer）)（图谱连通入口）
+> 近邻同族：[Factored Latent Action World Models](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Factored Latent Action World Models（FLAM）) · [Hierarchical Planning with Latent World Models](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Hierarchical Planning with Latent World Models（HPLWM）)
+> 数学根基（占位层）：[扩散条件去噪](/ai-fa/explore/30-Formulas/扩散条件去噪) · [贝尔曼方程](/ai-fa/explore/40-Concepts/贝尔曼方程)
 
 ## 7. 读前须知
 

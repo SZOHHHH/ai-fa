@@ -22,7 +22,7 @@ pdf: 已下载（PDF/）
 
 - **两阶段提示**：分解（列出子问题）→ 顺序求解（每个子问题带前问答案）
 - **组合泛化**：SCAN 等任务上超过专门训练模型——非平凡泛化证据
-- 与 [CoT](/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）) 的差异：CoT 学"这道题的步骤"，L2M 学"怎么拆任何题"
+- 与 [CoT](/ai-fa/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）) 的差异：CoT 学"这道题的步骤"，L2M 学"怎么拆任何题"
 
 ## 3. 方法概要
 
@@ -36,8 +36,8 @@ pdf: 已下载（PDF/）
 
 ## 5. 与前作的关系
 
-- 深化了 [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）)：从"展开步骤"到"结构化分解"
-- 与 [Tree of Thoughts - Deliberate Problem Solving with Large Language Models](/explore/10-Papers/07-推理模型/Tree of Thoughts- Deliberate Problem Solving with Large Language Models（ToT）) 同属"推理结构化"路线（线性分解 vs 树搜索）
+- 深化了 [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](/ai-fa/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）)：从"展开步骤"到"结构化分解"
+- 与 [Tree of Thoughts - Deliberate Problem Solving with Large Language Models](/ai-fa/explore/10-Papers/07-推理模型/Tree of Thoughts- Deliberate Problem Solving with Large Language Models（ToT）) 同属"推理结构化"路线（线性分解 vs 树搜索）
 
 ## 6. 影响与后续
 
@@ -46,6 +46,6 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[思维链（CoT）](/explore/40-Concepts/思维链（CoT）)、[Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）)
+[思维链（CoT）](/ai-fa/explore/40-Concepts/思维链（CoT）)、[Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](/ai-fa/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）)
 
-> 近邻同族：[A Survey on In-context Learning](/explore/10-Papers/07-推理模型/A Survey on In-context Learning（ICL Survey）) · [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）)
+> 近邻同族：[A Survey on In-context Learning](/ai-fa/explore/10-Papers/07-推理模型/A Survey on In-context Learning（ICL Survey）) · [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](/ai-fa/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）)

@@ -32,9 +32,9 @@ layer: 占位
 （待精读）
 
 ## 5. 与前作/矩阵关系
-- 线锚：[世界模型](/explore/20-Algorithms/世界模型) · [扩散模型](/explore/20-Algorithms/扩散模型)（占位挂链，Tier B 精化）
-- 同族：[World Models](/explore/10-Papers/09-世界模型与JEPA/World Models（世界模型）)（V-M-C 三件套）·[扩散模型](/explore/20-Algorithms/扩散模型)（几何潜变量扩散）；表征近邻：[Genie](/explore/10-Papers/09-世界模型与JEPA/Genie- Generative Interactive Environments（Genie）)
-- 近邻：[GIFT](/explore/10-Papers/09-世界模型与JEPA/GIFT Guided Intermediate Feature Training via Action-Oriented Structural Supervision for Robotic Man)——同"给 WAM 加 3D"但进法相反：本文 3D 为**输入/预测模态**，GIFT 3D 为**训练期监督**（推理期丢弃）
+- 线锚：[世界模型](/ai-fa/explore/20-Algorithms/世界模型) · [扩散模型](/ai-fa/explore/20-Algorithms/扩散模型)（占位挂链，Tier B 精化）
+- 同族：[World Models](/ai-fa/explore/10-Papers/09-世界模型与JEPA/World Models（世界模型）)（V-M-C 三件套）·[扩散模型](/ai-fa/explore/20-Algorithms/扩散模型)（几何潜变量扩散）；表征近邻：[Genie](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Genie- Generative Interactive Environments（Genie）)
+- 近邻：[GIFT](/ai-fa/explore/10-Papers/09-世界模型与JEPA/GIFT Guided Intermediate Feature Training via Action-Oriented Structural Supervision for Robotic Man)——同"给 WAM 加 3D"但进法相反：本文 3D 为**输入/预测模态**，GIFT 3D 为**训练期监督**（推理期丢弃）
 
 ## 6. 影响后续
 （待精读）

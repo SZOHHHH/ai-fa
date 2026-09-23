@@ -33,20 +33,20 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- v-预测形式见 [DDPM训练目标](/explore/30-Formulas/DDPM训练目标) §2 对照表
-- 轨迹拟合目标（教师-学生 MSE）+ [采样器](/explore/40-Concepts/采样器)（DDIM 轨迹）
+- v-预测形式见 [DDPM训练目标](/ai-fa/explore/30-Formulas/DDPM训练目标) §2 对照表
+- 轨迹拟合目标（教师-学生 MSE）+ [采样器](/ai-fa/explore/40-Concepts/采样器)（DDIM 轨迹）
 
 ## 5. 与前作的关系
 
-- 组合了 [知识蒸馏（Hinton KD，线 3 祖先）] 与 [Denoising Diffusion Implicit Models](/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Implicit Models（DDIM）) 的确定性轨迹
-- 奠基了 [Consistency Models](/explore/10-Papers/02-生成建模与扩散/Consistency Models（一致性模型）)（同为加速线）
+- 组合了 [知识蒸馏（Hinton KD，线 3 祖先）] 与 [Denoising Diffusion Implicit Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Implicit Models（DDIM）) 的确定性轨迹
+- 奠基了 [Consistency Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Consistency Models（一致性模型）)（同为加速线）
 
 ## 6. 影响与后续
 
 - v-预测因此扩散开（视频扩散/Sora 主用）
-- 蒸馏加速范式：CM → [Latent Consistency Models - Synthesizing High-Resolution Images with Few-Step Inference](/explore/10-Papers/02-生成建模与扩散/Latent Consistency Models- Synthesizing High-Resolution Images with Few-Step Inference（LCM）)
+- 蒸馏加速范式：CM → [Latent Consistency Models - Synthesizing High-Resolution Images with Few-Step Inference](/ai-fa/explore/10-Papers/02-生成建模与扩散/Latent Consistency Models- Synthesizing High-Resolution Images with Few-Step Inference（LCM）)
 - 少步生成的商业价值（实时生成）自此路线展开
 
 ## 7. 读前须知
 
-[DDIM更新规则](/explore/30-Formulas/DDIM更新规则)、[DDPM训练目标](/explore/30-Formulas/DDPM训练目标)（v-预测行）、[采样器](/explore/40-Concepts/采样器)
+[DDIM更新规则](/ai-fa/explore/30-Formulas/DDIM更新规则)、[DDPM训练目标](/ai-fa/explore/30-Formulas/DDPM训练目标)（v-预测行）、[采样器](/ai-fa/explore/40-Concepts/采样器)

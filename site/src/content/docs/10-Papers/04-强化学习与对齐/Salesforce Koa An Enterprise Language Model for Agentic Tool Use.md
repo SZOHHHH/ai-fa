@@ -30,8 +30,8 @@ layer: 占位
 （待精读）
 
 ## 5. 与前作/矩阵关系
-- 线锚：[GRPO与RLVR](/explore/20-Algorithms/GRPO与RLVR)（GRPO 后训练 Nemotron-3-Super-120B 开源底座）
-- 近邻同族：[DeepSeekMath - Pushing the Limits of Mathematical Reasoning in Open Language Models](/explore/10-Papers/04-强化学习与对齐/DeepSeekMath- Pushing the Limits of Mathematical Reasoning in Open Language Models（DeepSeekMath）)（GRPO 本源）· [Tandem Reinforcement Learning with Verifiable Rewards](/explore/10-Papers/04-强化学习与对齐/Tandem Reinforcement Learning with Verifiable Rewards（TRL）)（可验证奖励后训练同族：Koa 的 task-resolution 奖励=Agent Script 规格展开的仿真任务接地 verifiable reward）
+- 线锚：[GRPO与RLVR](/ai-fa/explore/20-Algorithms/GRPO与RLVR)（GRPO 后训练 Nemotron-3-Super-120B 开源底座）
+- 近邻同族：[DeepSeekMath - Pushing the Limits of Mathematical Reasoning in Open Language Models](/ai-fa/explore/10-Papers/04-强化学习与对齐/DeepSeekMath- Pushing the Limits of Mathematical Reasoning in Open Language Models（DeepSeekMath）)（GRPO 本源）· [Tandem Reinforcement Learning with Verifiable Rewards](/ai-fa/explore/10-Papers/04-强化学习与对齐/Tandem Reinforcement Learning with Verifiable Rewards（TRL）)（可验证奖励后训练同族：Koa 的 task-resolution 奖励=Agent Script 规格展开的仿真任务接地 verifiable reward）
 
 ## 6. 影响后续
 （待精读）

@@ -38,13 +38,13 @@ $$\hat A^{GAE}_t\;=\;\sum_{l=0}^{\infty}(\gamma\lambda)^l\,\delta_{t+l}\;=\;\big
 
 **直觉解释**：n 步优势 $$\hat A^{(n)}$$（看 n 步真实奖励再自举）构成一个"看得越远越准但越吵"的谱；GAE=给这个谱做**指数平滑**（权重 $$(1-\lambda)\lambda^{n-1}$$，总 和=1）。记忆口诀：**λ=往后看多远打折多少**——折扣率 γλ 越大，远处的 TD 误差越能影响当前估计。为什么用 TD 误差当原料：每个 $$\delta_t$$ 天然是"新信息"（这一步的惊讶），把未来的惊讶按折扣记账到现在的动作头上——**功劳簿记法**。
 
-- 需要的前置：[广义优势估计GAE](/explore/40-Concepts/广义优势估计GAE)（概念卡完整推导）、[TD误差与自举](/explore/40-Concepts/TD误差与自举)、[贝尔曼方程](/explore/40-Concepts/贝尔曼方程)
+- 需要的前置：[广义优势估计GAE](/ai-fa/explore/40-Concepts/广义优势估计GAE)（概念卡完整推导）、[TD误差与自举](/ai-fa/explore/40-Concepts/TD误差与自举)、[贝尔曼方程](/ai-fa/explore/40-Concepts/贝尔曼方程)
 
 ## 5. 与前作/矩阵关系
 
 - ← 统一了 Sutton 1988 的 TD(λ)（值估计侧的 λ 混合）与策略梯度——把"值函数的老工具"搬到"优势估计"上；
-- 与 [TRPO](/explore/10-Papers/04-强化学习与对齐/Trust Region Policy Optimization（TRPO）) 同作者配套（TRPO 的优势就是 GAE 供的）；
-- → [PPO](/explore/10-Papers/04-强化学习与对齐/Proximal Policy Optimization Algorithms（PPO）) 标配；→ 世界模型想象训练（Dreamer/DIAMOND 的 λ-return+V 收尾=同一谱系的 H 步截断版：梦里只演 H 步，尾部用 $$V(s_H)$$ 打包——**GAE 的"自举收尾"在梦里的化身**）。
+- 与 [TRPO](/ai-fa/explore/10-Papers/04-强化学习与对齐/Trust Region Policy Optimization（TRPO）) 同作者配套（TRPO 的优势就是 GAE 供的）；
+- → [PPO](/ai-fa/explore/10-Papers/04-强化学习与对齐/Proximal Policy Optimization Algorithms（PPO）) 标配；→ 世界模型想象训练（Dreamer/DIAMOND 的 λ-return+V 收尾=同一谱系的 H 步截断版：梦里只演 H 步，尾部用 $$V(s_H)$$ 打包——**GAE 的"自举收尾"在梦里的化身**）。
 
 ## 6. 影响与后续
 
@@ -54,8 +54,8 @@ $$\hat A^{GAE}_t\;=\;\sum_{l=0}^{\infty}(\gamma\lambda)^l\,\delta_{t+l}\;=\;\big
 
 ## 7. 读前须知
 
-- **必前置**：[贝尔曼方程](/explore/40-Concepts/贝尔曼方程)、[TD误差与自举](/explore/40-Concepts/TD误差与自举)、[策略梯度定理](/explore/40-Concepts/策略梯度定理)、[期望](/explore/40-Concepts/期望)；
+- **必前置**：[贝尔曼方程](/ai-fa/explore/40-Concepts/贝尔曼方程)、[TD误差与自举](/ai-fa/explore/40-Concepts/TD误差与自举)、[策略梯度定理](/ai-fa/explore/40-Concepts/策略梯度定理)、[期望](/ai-fa/explore/40-Concepts/期望)；
 - **易混点**：①γ 与 λ 是两个旋钮（折扣 vs 平滑），别混；②GAE 估的是**优势**不是价值（价值= $$\hat A+V$$ 顺手得到）；③TD(λ) 是 GAE 的值函数侧亲戚，别当成同一物；
 - **读法建议**：正文短；§2-§3 的两个恒等式推导务必亲手推一遍；表 1（λ 扫描）看一眼感受谱系两端。
 
-> 数学根基：[广义优势估计GAE](/explore/40-Concepts/广义优势估计GAE) · [TD误差与自举](/explore/40-Concepts/TD误差与自举) · [贝尔曼最优方程](/explore/30-Formulas/贝尔曼最优方程)
+> 数学根基：[广义优势估计GAE](/ai-fa/explore/40-Concepts/广义优势估计GAE) · [TD误差与自举](/ai-fa/explore/40-Concepts/TD误差与自举) · [贝尔曼最优方程](/ai-fa/explore/30-Formulas/贝尔曼最优方程)

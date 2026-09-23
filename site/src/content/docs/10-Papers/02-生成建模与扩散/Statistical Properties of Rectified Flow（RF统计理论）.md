@@ -37,16 +37,16 @@ $$
 
 ## 5. 与前作/矩阵关系
 
-🚩 占 FM×统计理论格；← [矩形流](/explore/20-Algorithms/矩形流)（库内）；→ c-RF 理论（本批）
+🚩 占 FM×统计理论格；← [矩形流](/ai-fa/explore/20-Algorithms/矩形流)（库内）；→ c-RF 理论（本批）
 
 
 ## 6. 影响与占位意义
 
 RS 库 11-05 已有；理论奠基层。
 
-> 近邻同族：[Align Your Flow - Scaling Continuous-Time Flow Map Distillation](/explore/10-Papers/02-生成建模与扩散/Align Your Flow- Scaling Continuous-Time Flow Map Distillation（AYF）) · [Computational and Statistical Guarantees of the c-Rectified flow](/explore/10-Papers/02-生成建模与扩散/Computational and Statistical Guarantees of the c-Rectified flow（c-RF理论）)
-> 矩形流谱系环：[Variational Rectified Flow Matching](/explore/10-Papers/02-生成建模与扩散/Variational Rectified Flow Matching（VRFM）) ← 本卡 → [Text-to-Image Rectified Flow as Plug-and-Play Priors](/explore/10-Papers/02-生成建模与扩散/Text-to-Image Rectified Flow as Plug-and-Play Priors（RF先验）)
-> 数学根基（占位层）：[RoPE旋转位置编码](/explore/30-Formulas/RoPE旋转位置编码) · [位置编码](/explore/40-Concepts/位置编码)
+> 近邻同族：[Align Your Flow - Scaling Continuous-Time Flow Map Distillation](/ai-fa/explore/10-Papers/02-生成建模与扩散/Align Your Flow- Scaling Continuous-Time Flow Map Distillation（AYF）) · [Computational and Statistical Guarantees of the c-Rectified flow](/ai-fa/explore/10-Papers/02-生成建模与扩散/Computational and Statistical Guarantees of the c-Rectified flow（c-RF理论）)
+> 矩形流谱系环：[Variational Rectified Flow Matching](/ai-fa/explore/10-Papers/02-生成建模与扩散/Variational Rectified Flow Matching（VRFM）) ← 本卡 → [Text-to-Image Rectified Flow as Plug-and-Play Priors](/ai-fa/explore/10-Papers/02-生成建模与扩散/Text-to-Image Rectified Flow as Plug-and-Play Priors（RF先验）)
+> 数学根基（占位层）：[RoPE旋转位置编码](/ai-fa/explore/30-Formulas/RoPE旋转位置编码) · [位置编码](/ai-fa/explore/40-Concepts/位置编码)
 
 ## 7. 读前须知
 

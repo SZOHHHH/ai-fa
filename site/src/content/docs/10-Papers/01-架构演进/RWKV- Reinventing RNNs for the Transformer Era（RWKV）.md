@@ -34,12 +34,12 @@ pdf: 未下载
 ## 4. 核心公式
 
 - WKV 递归：$$wkv_t = \frac{\sum_i e^{-(t-1-i)w + k_i} v_i + e^{u+k_t}v_t}{\sum_i e^{-(t-1-i)w + k_i} + e^{u+k_t}}$$——指数加权移动平均的向量化
-- 与 [状态空间模型方程](/explore/30-Formulas/状态空间模型方程) 同属"线性时间序列算子"家族（形式不同）
+- 与 [状态空间模型方程](/ai-fa/explore/30-Formulas/状态空间模型方程) 同属"线性时间序列算子"家族（形式不同）
 
 ## 5. 与前作的关系
 
-- 与 [Mamba - Linear-Time Sequence Modeling with Selective State Spaces](/explore/10-Papers/01-架构演进/Mamba- Linear-Time Sequence Modeling with Selective State Spaces（Mamba）) 同期平行：SSM 视角 vs 注意力改写视角
-- 两者都被 [Transformers are SSMs - Generalized Models and Efficient Algorithms Through Structured State Space Duality](/explore/10-Papers/01-架构演进/Transformers are SSMs- Generalized Models and Efficient Algorithms Through Structured St（Mamba-2）) 的对偶理论收编进统一家族
+- 与 [Mamba - Linear-Time Sequence Modeling with Selective State Spaces](/ai-fa/explore/10-Papers/01-架构演进/Mamba- Linear-Time Sequence Modeling with Selective State Spaces（Mamba）) 同期平行：SSM 视角 vs 注意力改写视角
+- 两者都被 [Transformers are SSMs - Generalized Models and Efficient Algorithms Through Structured State Space Duality](/ai-fa/explore/10-Papers/01-架构演进/Transformers are SSMs- Generalized Models and Efficient Algorithms Through Structured St（Mamba-2）) 的对偶理论收编进统一家族
 
 ## 6. 影响与后续
 
@@ -48,4 +48,4 @@ pdf: 未下载
 
 ## 7. 读前须知
 
-[注意力机制](/explore/40-Concepts/注意力机制)、[状态空间模型方程](/explore/30-Formulas/状态空间模型方程)、[Mamba - Linear-Time Sequence Modeling with Selective State Spaces](/explore/10-Papers/01-架构演进/Mamba- Linear-Time Sequence Modeling with Selective State Spaces（Mamba）)
+[注意力机制](/ai-fa/explore/40-Concepts/注意力机制)、[状态空间模型方程](/ai-fa/explore/30-Formulas/状态空间模型方程)、[Mamba - Linear-Time Sequence Modeling with Selective State Spaces](/ai-fa/explore/10-Papers/01-架构演进/Mamba- Linear-Time Sequence Modeling with Selective State Spaces（Mamba）)

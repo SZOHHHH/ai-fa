@@ -36,15 +36,16 @@ layer: 精化层（摘要级+摘要核实，PDF 待深读）
 （待 PDF 精读补全——摘要级暂记直觉）Chinchilla 式缩放律 $$L(C) = a \cdot C^{-\alpha} + b$$，对每种架构各拟一组 $$(a, \alpha, b)$$：**同一横轴（计算量）下谁的曲线低谁赢——SMELT 曲线整体下移 6.8-18%，意味着同样损失少花一到两成算力**。循环本身 $$h \leftarrow \text{Block}(h)$$ 重复执行——深度不是参数堆出来的，是"算出来的"。
 
 ## 5. 与前作/矩阵关系
-- ← MoE 谱系：[DeepSeekMoE](/explore/10-Papers/05-MoE/DeepSeekMoE- Towards Ultimate Expert Specialization in Mixture-of-Experts Language Model（DeepSeekMoE）)（细粒度专家专业化）、[Mixtral](/explore/10-Papers/05-MoE/Mixtral of Experts（Mixtral）)（稀疏 MoE 标杆）——SMELT 在 MoE 骨干上叠循环深度复用。
-- 数学本体：[MoE门控公式](/explore/30-Formulas/MoE门控公式)（被循环复用的 Block 正是稀疏门控 MoE 层——路由与负载均衡公式是配方根基）。
-- ↔ attention sink 机制联动：[StreamingLLM](/explore/10-Papers/06-长上下文/Efficient Streaming Language Models with Attention Sinks（StreamingLLM）)（sink 命名者）与 SinkProbe 卡（[百万 token sink 诊断](/explore/10-Papers/06-长上下文/Do New Attention Mechanisms Actually Fix Attention Sinks at Million-Token Context)）——SMELT 的"第二次循环削 sink"为"sink 是优化/训练动态产物而非架构宿命"添了跨设定证据（改变计算路径不改架构即可削 sink）。
+- ← MoE 谱系：[DeepSeekMoE](/ai-fa/explore/10-Papers/05-MoE/DeepSeekMoE- Towards Ultimate Expert Specialization in Mixture-of-Experts Language Model（DeepSeekMoE）)（细粒度专家专业化）、[Mixtral](/ai-fa/explore/10-Papers/05-MoE/Mixtral of Experts（Mixtral）)（稀疏 MoE 标杆）——SMELT 在 MoE 骨干上叠循环深度复用。
+- 数学本体：[MoE门控公式](/ai-fa/explore/30-Formulas/MoE门控公式)（被循环复用的 Block 正是稀疏门控 MoE 层——路由与负载均衡公式是配方根基）。
+- ↔ attention sink 机制联动：[StreamingLLM](/ai-fa/explore/10-Papers/06-长上下文/Efficient Streaming Language Models with Attention Sinks（StreamingLLM）)（sink 命名者）与 SinkProbe 卡（[百万 token sink 诊断](/ai-fa/explore/10-Papers/06-长上下文/Do New Attention Mechanisms Actually Fix Attention Sinks at Million-Token Context)）——SMELT 的"第二次循环削 sink"为"sink 是优化/训练动态产物而非架构宿命"添了跨设定证据（改变计算路径不改架构即可削 sink）。
 - 方法论：计算匹配对照=单变量归因范式（与 E1 六线"固定环境只改蒸馏目标"同族的实验设计伦理）。
 
 ## 6. 影响后续
 - "深度复用"从固定尺寸 trick 升级为有 scaling law 背书的规模选项；后续工作会在更大规模验证循环增益边界。
 - 与 E1/E2 无域重叠；arch/MoE 线教学参考（干净对照+机制验证双重示范）。
+- → 后继补记（260918）：[MoRE](/ai-fa/explore/10-Papers/05-MoE/MoRE Mixture of Reused Experts)（层复用省参数家族新支：SMELT 复用整层、MoRE 让相邻层组共享专家池——路由组合多样性换零参数增量）
 
 ## 7. 读前须知
-- 前置：MoE 路由直觉（[DeepSeekMoE](/explore/10-Papers/05-MoE/DeepSeekMoE- Towards Ultimate Expert Specialization in Mixture-of-Experts Language Model（DeepSeekMoE）) 先看）、Chinchilla 缩放律形态、attention sink 概念（[StreamingLLM](/explore/10-Papers/06-长上下文/Efficient Streaming Language Models with Attention Sinks（StreamingLLM）)）。
+- 前置：MoE 路由直觉（[DeepSeekMoE](/ai-fa/explore/10-Papers/05-MoE/DeepSeekMoE- Towards Ultimate Expert Specialization in Mixture-of-Experts Language Model（DeepSeekMoE）) 先看）、Chinchilla 缩放律形态、attention sink 概念（[StreamingLLM](/ai-fa/explore/10-Papers/06-长上下文/Efficient Streaming Language Models with Attention Sinks（StreamingLLM）)）。
 - 公式细节（缩放律拟合/机制统计量）待 PDF 深读补第 4 节。

@@ -38,16 +38,16 @@ $$
 
 ## 5. 与前作/矩阵关系
 
-🚩 占 GRPO×偏置修正格；≡ [DAPO- An Open-Source LLM Reinforcement Learning System at Scale](/explore/10-Papers/04-强化学习与对齐/DAPO- An Open-Source LLM Reinforcement Learning System at Scale（DAPO）)（同款偏置两条修法）；B8 遗留补卡
+🚩 占 GRPO×偏置修正格；≡ [DAPO- An Open-Source LLM Reinforcement Learning System at Scale](/ai-fa/explore/10-Papers/04-强化学习与对齐/DAPO- An Open-Source LLM Reinforcement Learning System at Scale（DAPO）)（同款偏置两条修法）；B8 遗留补卡
 
 
 ## 6. 影响与占位意义
 
 "聚合替代锚定"共振的对偶面：识别并删除有害的归一化聚合。
 
-> 近邻同族：[DCPO- Dynamic Clipping Policy Optimization](/explore/10-Papers/04-强化学习与对齐/DCPO- Dynamic Clipping Policy Optimization（DCPO）)
-> 数学根基（占位层）：[策略梯度定理](/explore/40-Concepts/策略梯度定理)
-> 数学根基：[REINFORCE目标](/explore/30-Formulas/REINFORCE目标)
+> 近邻同族：[DCPO- Dynamic Clipping Policy Optimization](/ai-fa/explore/10-Papers/04-强化学习与对齐/DCPO- Dynamic Clipping Policy Optimization（DCPO）)
+> 数学根基（占位层）：[策略梯度定理](/ai-fa/explore/40-Concepts/策略梯度定理)
+> 数学根基：[REINFORCE目标](/ai-fa/explore/30-Formulas/REINFORCE目标)
 
 ## 7. 读前须知
 

@@ -33,20 +33,20 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- [蒸馏损失](/explore/30-Formulas/蒸馏损失)（+ MLM + cos 三合一）
+- [蒸馏损失](/ai-fa/explore/30-Formulas/蒸馏损失)（+ MLM + cos 三合一）
 
 ## 5. 与前作的关系
 
-- 应用了 [Distilling the Knowledge in a Neural Network](/explore/10-Papers/03-后处理/Distilling the Knowledge in a Neural Network（KD）) 到 BERT
+- 应用了 [Distilling the Knowledge in a Neural Network](/ai-fa/explore/10-Papers/03-后处理/Distilling the Knowledge in a Neural Network（KD）) 到 BERT
 - 对比直接训 6 层：蒸馏版显著更好——教师信号的实证价值
 
 ## 6. 影响与后续
 
 - Hugging Face 生态默认小模型；端侧部署标配
-- TinyBERT（[TinyBERT - Distilling BERT for Natural Language Understanding](/explore/10-Papers/03-后处理/TinyBERT- Distilling BERT for Natural Language Understanding（TinyBERT）)）两层蒸馏进一步逼近
+- TinyBERT（[TinyBERT - Distilling BERT for Natural Language Understanding](/ai-fa/explore/10-Papers/03-后处理/TinyBERT- Distilling BERT for Natural Language Understanding（TinyBERT）)）两层蒸馏进一步逼近
 
-- → 后继补记（260914）：[Token Ceiling（字节蒸馏scaling）](/explore/10-Papers/03-后处理/Breaking the Token Ceiling - Distilling Smaller Stronger Byte Models（字节蒸馏scaling）)（固定 tokenization 蒸馏（本卡路线） vs 学生表征可选择的蒸馏 scaling）
+- → 后继补记（260914）：[Token Ceiling（字节蒸馏scaling）](/ai-fa/explore/10-Papers/03-后处理/Breaking the Token Ceiling - Distilling Smaller Stronger Byte Models（字节蒸馏scaling）)（固定 tokenization 蒸馏（本卡路线） vs 学生表征可选择的蒸馏 scaling）
 
 ## 7. 读前须知
 
-[蒸馏损失](/explore/30-Formulas/蒸馏损失)、[BERT - Pre-training of Deep Bidirectional Transformers for Language Understanding](/explore/10-Papers/01-架构演进/BERT- Pre-training of Deep Bidirectional Transformers for Language Understanding（BERT）)
+[蒸馏损失](/ai-fa/explore/30-Formulas/蒸馏损失)、[BERT - Pre-training of Deep Bidirectional Transformers for Language Understanding](/ai-fa/explore/10-Papers/01-架构演进/BERT- Pre-training of Deep Bidirectional Transformers for Language Understanding（BERT）)

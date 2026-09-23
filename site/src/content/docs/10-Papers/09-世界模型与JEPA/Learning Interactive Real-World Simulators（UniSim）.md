@@ -33,7 +33,7 @@ x_{t+1} \sim p_\theta(\cdot\ \vert\ x_{\le t},\ a_t,\ \text{text})
 $$
 
 
-**直觉**：→ [Genie - Generative Interactive Environments](/explore/10-Papers/09-世界模型与JEPA/Genie- Generative Interactive Environments（Genie）)（库内，自发潜动作）/Genie 2；世界模型矩阵交互模拟列的补位
+**直觉**：→ [Genie - Generative Interactive Environments](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Genie- Generative Interactive Environments（Genie）)（库内，自发潜动作）/Genie 2；世界模型矩阵交互模拟列的补位
 
 ## 5. 与前作/矩阵关系
 
@@ -47,8 +47,8 @@ $$
 
 undefined
 
-> 近邻同族：[Co-Evolving Latent Action World Models](/explore/10-Papers/09-世界模型与JEPA/Co-Evolving Latent Action World Models（CoLA）) · [Factored Latent Action World Models](/explore/10-Papers/09-世界模型与JEPA/Factored Latent Action World Models（FLAM）)
+> 近邻同族：[Co-Evolving Latent Action World Models](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Co-Evolving Latent Action World Models（CoLA）) · [Factored Latent Action World Models](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Factored Latent Action World Models（FLAM）)
 
-> 数学根基：[JEPA联合嵌入预测架构](/explore/40-Concepts/JEPA联合嵌入预测架构)
+> 数学根基：[JEPA联合嵌入预测架构](/ai-fa/explore/40-Concepts/JEPA联合嵌入预测架构)
 
-> 数学根基：[REINFORCE目标](/explore/30-Formulas/REINFORCE目标)
+> 数学根基：[REINFORCE目标](/ai-fa/explore/30-Formulas/REINFORCE目标)

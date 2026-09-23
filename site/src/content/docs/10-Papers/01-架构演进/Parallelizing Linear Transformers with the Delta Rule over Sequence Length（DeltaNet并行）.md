@@ -38,7 +38,7 @@ $$
 
 ## 5. 与前作/矩阵关系
 
-🚩 占 [序列架构演进矩阵](/explore/60-Matrices/序列架构演进矩阵) "线性注意力×IO感知"格——**B9 机会格"线性注意力×缩放律"的邻格**
+🚩 占 [序列架构演进矩阵](/ai-fa/explore/60-Matrices/序列架构演进矩阵) "线性注意力×IO感知"格——**B9 机会格"线性注意力×缩放律"的邻格**
 
 
 ## 6. 影响与占位意义
@@ -47,9 +47,9 @@ Gated DeltaNet 生产化（Qwen3-Next/Kimi Linear）的技术底座。
 
 ---
 
-> 谱系枢纽：[Attention Is All You Need](/explore/10-Papers/01-架构演进/Attention Is All You Need（Transformer）)（图谱连通入口）
-> 近邻同族：[Gated DeltaNet-2- Decoupling Erase and Write in Linear Attention](/explore/10-Papers/01-架构演进/Gated DeltaNet-2- Decoupling Erase and Write in Linear Attention（GDN2）) · [Retentive Network - A Successor to Transformer for Large Language Models](/explore/10-Papers/01-架构演进/Retentive Network- A Successor to Transformer for Large Language Models（RetNet）)
-> 数学根基（占位层）：[状态空间模型方程](/explore/30-Formulas/状态空间模型方程) · [选择机制](/explore/30-Formulas/选择机制) · [稀疏与线性注意力](/explore/40-Concepts/稀疏与线性注意力)
+> 谱系枢纽：[Attention Is All You Need](/ai-fa/explore/10-Papers/01-架构演进/Attention Is All You Need（Transformer）)（图谱连通入口）
+> 近邻同族：[Gated DeltaNet-2- Decoupling Erase and Write in Linear Attention](/ai-fa/explore/10-Papers/01-架构演进/Gated DeltaNet-2- Decoupling Erase and Write in Linear Attention（GDN2）) · [Retentive Network - A Successor to Transformer for Large Language Models](/ai-fa/explore/10-Papers/01-架构演进/Retentive Network- A Successor to Transformer for Large Language Models（RetNet）)
+> 数学根基（占位层）：[状态空间模型方程](/ai-fa/explore/30-Formulas/状态空间模型方程) · [选择机制](/ai-fa/explore/30-Formulas/选择机制) · [稀疏与线性注意力](/ai-fa/explore/40-Concepts/稀疏与线性注意力)
 
 ## 7. 读前须知
 

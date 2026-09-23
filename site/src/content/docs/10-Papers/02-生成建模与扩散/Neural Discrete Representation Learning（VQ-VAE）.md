@@ -34,20 +34,20 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- [VQ-VAE目标](/explore/30-Formulas/VQ-VAE目标) —— 三项式与直通估计
+- [VQ-VAE目标](/ai-fa/explore/30-Formulas/VQ-VAE目标) —— 三项式与直通估计
 
 ## 5. 与前作的关系
 
-- 改进了 [Auto-Encoding Variational Bayes](/explore/10-Papers/02-生成建模与扩散/Auto-Encoding Variational Bayes（VAE）)：连续 → 离散，后验坍缩问题随之缓解
+- 改进了 [Auto-Encoding Variational Bayes](/ai-fa/explore/10-Papers/02-生成建模与扩散/Auto-Encoding Variational Bayes（VAE）)：连续 → 离散，后验坍缩问题随之缓解
 - 组合了 [自回归语言模型思想] 与 [向量量化（信号处理旧技术）]
 
 ## 6. 影响与后续
 
-- 被 [Taming Transformers for High-Resolution Image Synthesis](/explore/10-Papers/02-生成建模与扩散/Taming Transformers for High-Resolution Image Synthesis（VQGAN）) 发展为 VQGAN（+感知损失+Transformer 先验）
+- 被 [Taming Transformers for High-Resolution Image Synthesis](/ai-fa/explore/10-Papers/02-生成建模与扩散/Taming Transformers for High-Resolution Image Synthesis（VQGAN）) 发展为 VQGAN（+感知损失+Transformer 先验）
 - 奠基了 DALL·E 系与视频 tokenizer（Sora 报告中的时空 patch 压缩一脉）
-- 与 [LDM](/explore/10-Papers/02-生成建模与扩散/High-Resolution Image Synthesis with Latent Diffusion Models（LDM）) 的连续 AE 形成压缩器两大流派
-- 生成式检索分支（260916）：RQ-VAE 语义前缀成为 [VARG](/explore/10-Papers/04-强化学习与对齐/VARG Value-Aware and Ranking-Aligned Generative Retrieval for Dynamic E-commerce Search)（天猫搜索）的"物品地址"——离散码本从重建工具变检索接口
+- 与 [LDM](/ai-fa/explore/10-Papers/02-生成建模与扩散/High-Resolution Image Synthesis with Latent Diffusion Models（LDM）) 的连续 AE 形成压缩器两大流派
+- 生成式检索分支（260916）：RQ-VAE 语义前缀成为 [VARG](/ai-fa/explore/10-Papers/04-强化学习与对齐/VARG Value-Aware and Ranking-Aligned Generative Retrieval for Dynamic E-commerce Search)（天猫搜索）的"物品地址"——离散码本从重建工具变检索接口
 
 ## 7. 读前须知
 
-[重参数化](/explore/40-Concepts/重参数化)（直通是其离散孪生）、[期望](/explore/40-Concepts/期望)、[范数](/explore/40-Concepts/范数)、[ELBO目标](/explore/30-Formulas/ELBO目标)（理论位置）
+[重参数化](/ai-fa/explore/40-Concepts/重参数化)（直通是其离散孪生）、[期望](/ai-fa/explore/40-Concepts/期望)、[范数](/ai-fa/explore/40-Concepts/范数)、[ELBO目标](/ai-fa/explore/30-Formulas/ELBO目标)（理论位置）

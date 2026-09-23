@@ -38,20 +38,20 @@ $$\hat{s}_{t+1} = f_\theta\big(s_t,\, z_t\big),\quad z_t \sim q_\phi(\cdot \mid 
 
 ## 5. 与前作关系
 
-- ← LAPA（[Latent Action Pretraining from Videos](/explore/10-Papers/09-世界模型与JEPA/Latent Action Pretraining from Videos（LAPA）)）：潜动作 VQ 化 → 这里改为连续潜空间 + 接口学习
-- ← [V-JEPA 2 - Self-Supervised Video Models Enable Understanding, Prediction and Planning](/explore/10-Papers/09-世界模型与JEPA/V-JEPA 2- Self-Supervised Video Models Enable Understanding, Prediction and Planning（V-JEPA 2）)：JEPA 表示骨干
+- ← LAPA（[Latent Action Pretraining from Videos](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Latent Action Pretraining from Videos（LAPA）)）：潜动作 VQ 化 → 这里改为连续潜空间 + 接口学习
+- ← [V-JEPA 2 - Self-Supervised Video Models Enable Understanding, Prediction and Planning](/ai-fa/explore/10-Papers/09-世界模型与JEPA/V-JEPA 2- Self-Supervised Video Models Enable Understanding, Prediction and Planning（V-JEPA 2）)：JEPA 表示骨干
 - ⊃ Garrido et al. 3R2D 原始工作（潜动作世界模型雏形）：扩展到野外数据 + 接口
-- → [世界模型矩阵](/explore/60-Matrices/世界模型矩阵) 的"潜动作"列正式入轴（本次升级）
+- → [世界模型矩阵](/ai-fa/explore/60-Matrices/世界模型矩阵) 的"潜动作"列正式入轴（本次升级）
 
 ## 6. 影响后续
 
-潜动作接口成为世界模型×机器人学的活跃方向（Hierarchical Planning with Latent World Models 等续作）；与 [世界模型矩阵](/explore/60-Matrices/世界模型矩阵) §3 的"JEPA×生成头"机会格互补（一个保理解、一个保可玩）。
+潜动作接口成为世界模型×机器人学的活跃方向（Hierarchical Planning with Latent World Models 等续作）；与 [世界模型矩阵](/ai-fa/explore/60-Matrices/世界模型矩阵) §3 的"JEPA×生成头"机会格互补（一个保理解、一个保可玩）。
 
 ## 7. 读前须知
 
 - 需要：JEPA 的潜空间预测思想（为什么不在像素域预测——容量不被浪费在无关细节上）
-- 开放痛点（文献共识）：**真动作↔潜动作映射的稳定性**（不同机器人域之间接口是否通用）、**长时程潜动态漂移**——这两个都是 [世界模型矩阵](/explore/60-Matrices/世界模型矩阵) 新机会格的候选切入点
+- 开放痛点（文献共识）：**真动作↔潜动作映射的稳定性**（不同机器人域之间接口是否通用）、**长时程潜动态漂移**——这两个都是 [世界模型矩阵](/ai-fa/explore/60-Matrices/世界模型矩阵) 新机会格的候选切入点
 
-> 近邻同族：[Co-Evolving Latent Action World Models](/explore/10-Papers/09-世界模型与JEPA/Co-Evolving Latent Action World Models（CoLA）) · [Factored Latent Action World Models](/explore/10-Papers/09-世界模型与JEPA/Factored Latent Action World Models（FLAM）)
+> 近邻同族：[Co-Evolving Latent Action World Models](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Co-Evolving Latent Action World Models（CoLA）) · [Factored Latent Action World Models](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Factored Latent Action World Models（FLAM）)
 
-> 数学根基：[扩散条件去噪](/explore/30-Formulas/扩散条件去噪) · [贝尔曼方程](/explore/40-Concepts/贝尔曼方程)
+> 数学根基：[扩散条件去噪](/ai-fa/explore/30-Formulas/扩散条件去噪) · [贝尔曼方程](/ai-fa/explore/40-Concepts/贝尔曼方程)

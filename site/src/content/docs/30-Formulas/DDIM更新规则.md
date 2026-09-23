@@ -38,18 +38,18 @@ $$x_{t-1} = \sqrt{\bar\alpha_{t-1}}\, \underbrace{\hat{x}_0(x_t, t)}_{\text{预�
 
 | 论文 | 贡献 |
 |---|---|
-| [Denoising Diffusion Implicit Models](/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Implicit Models（DDIM）) | 提出非马尔可夫族与确定性采样 |
+| [Denoising Diffusion Implicit Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Implicit Models（DDIM）) | 提出非马尔可夫族与确定性采样 |
 
 ## 5. 数学概念分解
 
-- [高斯分布](/explore/40-Concepts/高斯分布)：随机项来源
-- [采样器](/explore/40-Concepts/采样器)：确定性 vs 随机采样的权衡
-- [常微分方程](/explore/40-Concepts/常微分方程（ODE）)：η=0 时即 ODE 欧拉步
-- [马尔可夫链](/explore/40-Concepts/马尔可夫链)：打破的假设（非马尔可夫前向）
+- [高斯分布](/ai-fa/explore/40-Concepts/高斯分布)：随机项来源
+- [采样器](/ai-fa/explore/40-Concepts/采样器)：确定性 vs 随机采样的权衡
+- [常微分方程](/ai-fa/explore/40-Concepts/常微分方程（ODE）)：η=0 时即 ODE 欧拉步
+- [马尔可夫链](/ai-fa/explore/40-Concepts/马尔可夫链)：打破的假设（非马尔可夫前向）
 
 ## 6. 与其他公式的关系
 
-- ≡ **等价变形**：[概率流ODE](/explore/30-Formulas/概率流ODE) 的一阶离散（η=0）
-- ⊂ **特化自** DDPM 采样族（η=1 时回到 [DDPM后验分布](/explore/30-Formulas/DDPM后验分布) 采样）
-- 训练与 [DDPM训练目标](/explore/30-Formulas/DDPM训练目标) 完全共用——同一网络、两种玩法
+- ≡ **等价变形**：[概率流ODE](/ai-fa/explore/30-Formulas/概率流ODE) 的一阶离散（η=0）
+- ⊂ **特化自** DDPM 采样族（η=1 时回到 [DDPM后验分布](/ai-fa/explore/30-Formulas/DDPM后验分布) 采样）
+- 训练与 [DDPM训练目标](/ai-fa/explore/30-Formulas/DDPM训练目标) 完全共用——同一网络、两种玩法
 - → **被加速**：蒸馏线（Progressive Distillation / Consistency Models / DMD）都以少步 ODE 轨迹为教师

@@ -33,11 +33,11 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- 视频自回归：$$p(v) = \prod_i p(v_i \mid \text{context})$$——[VQ-VAE目标](/explore/30-Formulas/VQ-VAE目标)（tokenizer）+ [注意力核心公式](/explore/30-Formulas/注意力核心公式)（LLM 骨干）的组合
+- 视频自回归：$$p(v) = \prod_i p(v_i \mid \text{context})$$——[VQ-VAE目标](/ai-fa/explore/30-Formulas/VQ-VAE目标)（tokenizer）+ [注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)（LLM 骨干）的组合
 
 ## 5. 与前作的关系
 
-- tokenizer 血统：[Neural Discrete Representation Learning](/explore/10-Papers/02-生成建模与扩散/Neural Discrete Representation Learning（VQ-VAE）)→[Taming Transformers for High-Resolution Image Synthesis](/explore/10-Papers/02-生成建模与扩散/Taming Transformers for High-Resolution Image Synthesis（VQGAN）)→MAGVIT-v2→本文
+- tokenizer 血统：[Neural Discrete Representation Learning](/ai-fa/explore/10-Papers/02-生成建模与扩散/Neural Discrete Representation Learning（VQ-VAE）)→[Taming Transformers for High-Resolution Image Synthesis](/ai-fa/explore/10-Papers/02-生成建模与扩散/Taming Transformers for High-Resolution Image Synthesis（VQGAN）)→MAGVIT-v2→本文
 - 对照扩散视频路线（Sora 系）："离散自回归 vs 连续扩散"的生成世界观之争
 
 ## 6. 影响与后续
@@ -47,4 +47,4 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[VQ-VAE目标](/explore/30-Formulas/VQ-VAE目标)、[Taming Transformers for High-Resolution Image Synthesis](/explore/10-Papers/02-生成建模与扩散/Taming Transformers for High-Resolution Image Synthesis（VQGAN）)、[Language Models are Few-Shot Learners](/explore/10-Papers/01-架构演进/Language Models are Few-Shot Learners（GPT-3）)
+[VQ-VAE目标](/ai-fa/explore/30-Formulas/VQ-VAE目标)、[Taming Transformers for High-Resolution Image Synthesis](/ai-fa/explore/10-Papers/02-生成建模与扩散/Taming Transformers for High-Resolution Image Synthesis（VQGAN）)、[Language Models are Few-Shot Learners](/ai-fa/explore/10-Papers/01-架构演进/Language Models are Few-Shot Learners（GPT-3）)

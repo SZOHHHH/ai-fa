@@ -21,7 +21,7 @@ pdf: 已下载（PDF/）
 ## 2. 核心贡献
 
 - **IO 感知算法设计**：首次把"GPU 存储层级"当作一等公民优化目标
-- **在线 softmax + tiling**：数学严格等价的分块计算（[FlashAttention分块计算](/explore/30-Formulas/FlashAttention分块计算)）
+- **在线 softmax + tiling**：数学严格等价的分块计算（[FlashAttention分块计算](/ai-fa/explore/30-Formulas/FlashAttention分块计算)）
 - 反向传播重算代替存储——显存 $$O(n)$$、速度数倍
 
 ## 3. 方法概要
@@ -33,7 +33,7 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- [FlashAttention分块计算](/explore/30-Formulas/FlashAttention分块计算) —— 灵魂（在线 softmax 更新式）
+- [FlashAttention分块计算](/ai-fa/explore/30-Formulas/FlashAttention分块计算) —— 灵魂（在线 softmax 更新式）
 
 ## 5. 与前作的关系
 
@@ -48,6 +48,8 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[注意力核心公式](/explore/30-Formulas/注意力核心公式)、[注意力计算复杂度](/explore/30-Formulas/注意力计算复杂度)、[softmax函数](/explore/40-Concepts/softmax函数)（在线化的对象）
+[注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)、[注意力计算复杂度](/ai-fa/explore/30-Formulas/注意力计算复杂度)、[softmax函数](/ai-fa/explore/40-Concepts/softmax函数)（在线化的对象）
 
-> 近邻同族：[An Image is Worth 16x16 Words - Transformers for Image Recognition at Scale](/explore/10-Papers/01-架构演进/An Image is Worth 16x16 Words- Transformers for Image Recognition at Scale（ViT）) · [Attention Is All You Need](/explore/10-Papers/01-架构演进/Attention Is All You Need（Transformer）)
+> 近邻同族：[An Image is Worth 16x16 Words - Transformers for Image Recognition at Scale](/ai-fa/explore/10-Papers/01-架构演进/An Image is Worth 16x16 Words- Transformers for Image Recognition at Scale（ViT）) · [Attention Is All You Need](/ai-fa/explore/10-Papers/01-架构演进/Attention Is All You Need（Transformer）)
+
+> 近邻同族补记（260921）：[Diagonal Attention Sparsity](/ai-fa/explore/10-Papers/01-架构演进/Understanding and Exploiting Diagonal Attention Sparsity in Autoregressive Image Generation)（AR 图像生成的对角稀疏注意力：在其核上叠块稀疏，3.1× 吞吐、<2% 质量损失）

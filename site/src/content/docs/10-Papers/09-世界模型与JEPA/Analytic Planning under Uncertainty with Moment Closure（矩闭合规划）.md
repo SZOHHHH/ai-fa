@@ -43,15 +43,15 @@ $$
 
 ## 6. 影响与占位意义
 
-RS 库 08-03 情报；**矩思想第三次跨线**（生成 IMM/RL [PRIME](/explore/10-Papers/04-强化学习与对齐/Process Reinforcement through Implicit Rewards（PRIME）)-统计/规划矩闭合）。
+RS 库 08-03 情报；**矩思想第三次跨线**（生成 IMM/RL [PRIME](/ai-fa/explore/10-Papers/04-强化学习与对齐/Process Reinforcement through Implicit Rewards（PRIME）)-统计/规划矩闭合）。
 
-> 近邻同族：[Dream to Control - Learning Behaviors by Latent Imagination](/explore/10-Papers/09-世界模型与JEPA/Dream to Control- Learning Behaviors by Latent Imagination（Dreamer）) · [Learning Latent Dynamics for Planning from Pixels](/explore/10-Papers/09-世界模型与JEPA/Learning Latent Dynamics for Planning from Pixels（PlaNet）)
-> 相关：[Learning Interactive Real-World Simulators](/explore/10-Papers/09-世界模型与JEPA/Learning Interactive Real-World Simulators（UniSim）)
-> 相关：[Self-Improving World Modelling with Latent Actions](/explore/10-Papers/09-世界模型与JEPA/Self-Improving World Modelling with Latent Actions（SWIRL）)
-> 相关：[TD-MPC2- Scalable, Robust World Models for Continuous Control](/explore/10-Papers/09-世界模型与JEPA/TD-MPC2- Scalable, Robust World Models for Continuous Control（TD-MPC2）)
-> 相关：[WorldDynCache- Risk-Controlled Latent Dynamics Approximation for Diffusion World Models](/explore/10-Papers/09-世界模型与JEPA/WorldDynCache- Risk-Controlled Latent Dynamics Approximation for Diffusion World Models（WorldDynCache）)
-> 数学根基（占位层）：[JEPA联合嵌入预测架构](/explore/40-Concepts/JEPA联合嵌入预测架构)
-> 数学根基：[蒸馏损失](/explore/30-Formulas/蒸馏损失) · [DSM目标](/explore/30-Formulas/DSM目标)
+> 近邻同族：[Dream to Control - Learning Behaviors by Latent Imagination](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Dream to Control- Learning Behaviors by Latent Imagination（Dreamer）) · [Learning Latent Dynamics for Planning from Pixels](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Learning Latent Dynamics for Planning from Pixels（PlaNet）)
+> 相关：[Learning Interactive Real-World Simulators](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Learning Interactive Real-World Simulators（UniSim）)
+> 相关：[Self-Improving World Modelling with Latent Actions](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Self-Improving World Modelling with Latent Actions（SWIRL）)
+> 相关：[TD-MPC2- Scalable, Robust World Models for Continuous Control](/ai-fa/explore/10-Papers/09-世界模型与JEPA/TD-MPC2- Scalable, Robust World Models for Continuous Control（TD-MPC2）)
+> 相关：[WorldDynCache- Risk-Controlled Latent Dynamics Approximation for Diffusion World Models](/ai-fa/explore/10-Papers/09-世界模型与JEPA/WorldDynCache- Risk-Controlled Latent Dynamics Approximation for Diffusion World Models（WorldDynCache）)
+> 数学根基（占位层）：[JEPA联合嵌入预测架构](/ai-fa/explore/40-Concepts/JEPA联合嵌入预测架构)
+> 数学根基：[蒸馏损失](/ai-fa/explore/30-Formulas/蒸馏损失) · [DSM目标](/ai-fa/explore/30-Formulas/DSM目标)
 
 ## 7. 读前须知
 

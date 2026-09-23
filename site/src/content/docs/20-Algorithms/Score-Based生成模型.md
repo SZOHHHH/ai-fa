@@ -11,33 +11,33 @@ tags: [algo]
 
 **非数学语言**：不去学"图的分布"，学"在任意一点上，往数据密集区走的方向"（score 场）。生成时像下山：从随机点出发，每步沿 score 方向走 + 一点抖动，最终落到数据流形上。
 
-**数学语言**：多尺度加噪 $$\{\sigma_i\}$$，每个噪声级学 $$s_\theta(x, \sigma_i) \approx \nabla_x \log p_{\sigma_i}(x)$$（[DSM目标](/explore/30-Formulas/DSM目标)），采样用退火朗之万动力学；连续极限即 VE-SDE。
+**数学语言**：多尺度加噪 $$\{\sigma_i\}$$，每个噪声级学 $$s_\theta(x, \sigma_i) \approx \nabla_x \log p_{\sigma_i}(x)$$（[DSM目标](/ai-fa/explore/30-Formulas/DSM目标)），采样用退火朗之万动力学；连续极限即 VE-SDE。
 
 ## 2. 本命论文群
 
 | 论文 | 引入/发展了什么 | 年份 |
 |---|---|---|
-| [Generative Modeling by Estimating Gradients of the Data Distribution](/explore/10-Papers/02-生成建模与扩散/Generative Modeling by Estimating Gradients of the Data Distribution（SMLD）) | 噪声条件 score 网络 + 退火朗之万 | 2019 |
-| [Score-Based Generative Modeling through Stochastic Differential Equations](/explore/10-Papers/02-生成建模与扩散/Score-Based Generative Modeling through Stochastic Differential Equations（Score-SDE）) | 连续化统一（VE-SDE） | 2021 |
+| [Generative Modeling by Estimating Gradients of the Data Distribution](/ai-fa/explore/10-Papers/02-生成建模与扩散/Generative Modeling by Estimating Gradients of the Data Distribution（SMLD）) | 噪声条件 score 网络 + 退火朗之万 | 2019 |
+| [Score-Based Generative Modeling through Stochastic Differential Equations](/ai-fa/explore/10-Papers/02-生成建模与扩散/Score-Based Generative Modeling through Stochastic Differential Equations（Score-SDE）) | 连续化统一（VE-SDE） | 2021 |
 | Vincent 2011 | DSM 等价定理（前史） | 2011 |
 
 ## 3. 核心公式
 
-- [DSM目标](/explore/30-Formulas/DSM目标) —— 训练目标
-- [Score-SDE前向过程](/explore/30-Formulas/Score-SDE前向过程) —— 连续极限与 VE 框架
-- [反向SDE](/explore/30-Formulas/反向SDE) —— 采样方程
+- [DSM目标](/ai-fa/explore/30-Formulas/DSM目标) —— 训练目标
+- [Score-SDE前向过程](/ai-fa/explore/30-Formulas/Score-SDE前向过程) —— 连续极限与 VE 框架
+- [反向SDE](/ai-fa/explore/30-Formulas/反向SDE) —— 采样方程
 
 ## 4. 数学概念分解
 
-[Score函数](/explore/40-Concepts/Score函数)、[能量模型](/explore/40-Concepts/能量模型)（score = 负能量梯度）、[朗之万动力学](/explore/40-Concepts/朗之万动力学)、[随机微分方程](/explore/40-Concepts/随机微分方程（SDE）)、[采样器](/explore/40-Concepts/采样器)
+[Score函数](/ai-fa/explore/40-Concepts/Score函数)、[能量模型](/ai-fa/explore/40-Concepts/能量模型)（score = 负能量梯度）、[朗之万动力学](/ai-fa/explore/40-Concepts/朗之万动力学)、[随机微分方程](/ai-fa/explore/40-Concepts/随机微分方程（SDE）)、[采样器](/ai-fa/explore/40-Concepts/采样器)
 
 ## 5. 变体与演进
 
 | 变体 | 相比本概念改了什么 | 代表论文 |
 |---|---|---|
 | Score-SDE | 多尺度 → 连续时间 | 2021 |
-| EDM | σ-空间再参数化、统一 VP/VE 设计空间 | [Elucidating the Design Space of Diffusion-Based Generative Models](/explore/10-Papers/02-生成建模与扩散/Elucidating the Design Space of Diffusion-Based Generative Models（EDM）) |
-| 与 DDPM 合流 | ε-预测 ↔ score 线性换算 | [DSM目标](/explore/30-Formulas/DSM目标) §2 |
+| EDM | σ-空间再参数化、统一 VP/VE 设计空间 | [Elucidating the Design Space of Diffusion-Based Generative Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Elucidating the Design Space of Diffusion-Based Generative Models（EDM）) |
+| 与 DDPM 合流 | ε-预测 ↔ score 线性换算 | [DSM目标](/ai-fa/explore/30-Formulas/DSM目标) §2 |
 
 ## 6. 对比表
 

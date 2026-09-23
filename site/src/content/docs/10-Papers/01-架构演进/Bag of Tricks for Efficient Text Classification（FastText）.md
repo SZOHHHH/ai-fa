@@ -50,8 +50,8 @@ undefined
 
 ---
 
-> 谱系枢纽：[Attention Is All You Need](/explore/10-Papers/01-架构演进/Attention Is All You Need（Transformer）)（图谱连通入口）
+> 谱系枢纽：[Attention Is All You Need](/ai-fa/explore/10-Papers/01-架构演进/Attention Is All You Need（Transformer）)（图谱连通入口）
 
-> 近邻同族：[Adam- A Method for Stochastic Optimization](/explore/10-Papers/01-架构演进/Adam- A Method for Stochastic Optimization（Adam）) · [Batch Normalization- Accelerating Deep Network Training by Reducing Internal Covariate Shift](/explore/10-Papers/01-架构演进/Batch Normalization- Accelerating Deep Network Training by Reducing Internal Covariate Shift（BN）)
+> 近邻同族：[Adam- A Method for Stochastic Optimization](/ai-fa/explore/10-Papers/01-架构演进/Adam- A Method for Stochastic Optimization（Adam）) · [Batch Normalization- Accelerating Deep Network Training by Reducing Internal Covariate Shift](/ai-fa/explore/10-Papers/01-架构演进/Batch Normalization- Accelerating Deep Network Training by Reducing Internal Covariate Shift（BN）)
 
-> 数学根基：[注意力核心公式](/explore/30-Formulas/注意力核心公式) · [残差连接](/explore/30-Formulas/残差连接) · [梯度](/explore/40-Concepts/梯度)
+> 数学根基：[注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式) · [残差连接](/ai-fa/explore/30-Formulas/残差连接) · [梯度](/ai-fa/explore/40-Concepts/梯度)

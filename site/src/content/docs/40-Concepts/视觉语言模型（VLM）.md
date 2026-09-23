@@ -23,16 +23,16 @@ tags: [concept]
 | 查询塔 | 可学查询向量抽取视觉特征 | BLIP-2 (Q-Former) | 视觉压缩到固定长度 |
 | 线性投影（主流） | MLP 把 ViT patch 投到 LLM 词嵌入空间 | LLaVA | 极简、端到端微调 |
 
-- **视觉 token 化**是所有范式的公共底层：图像 → 序列（与 [An Image is Worth 16x16 Words - Transformers for Image Recognition at Scale](/explore/10-Papers/01-架构演进/An Image is Worth 16x16 Words- Transformers for Image Recognition at Scale（ViT）) 的 patch 化同构）
+- **视觉 token 化**是所有范式的公共底层：图像 → 序列（与 [An Image is Worth 16x16 Words - Transformers for Image Recognition at Scale](/ai-fa/explore/10-Papers/01-架构演进/An Image is Worth 16x16 Words- Transformers for Image Recognition at Scale（ViT）) 的 patch 化同构）
 - **指令微调迁移**：文本指令数据格式直接用于图文对（LLaVA 的 GPT-4 生成指令数据）
 
 ## 3. 为什么 AI 需要它
 
 | 出现场景 | 用法 |
 |---|---|
-| [Flamingo - a Visual Language Model for Few-Shot Learning](/explore/10-Papers/08-多模态/Flamingo- a Visual Language Model for Few-Shot Learning（Flamingo）) | 交叉注意力范式开山 |
-| [BLIP-2 - Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models](/explore/10-Papers/08-多模态/BLIP-2- Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Lan（BLIP-2）) | Q-Former |
-| [Visual Instruction Tuning](/explore/10-Papers/08-多模态/Visual Instruction Tuning（LLaVA）) | 线性投影+指令微调（开源主流） |
+| [Flamingo - a Visual Language Model for Few-Shot Learning](/ai-fa/explore/10-Papers/08-多模态/Flamingo- a Visual Language Model for Few-Shot Learning（Flamingo）) | 交叉注意力范式开山 |
+| [BLIP-2 - Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models](/ai-fa/explore/10-Papers/08-多模态/BLIP-2- Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Lan（BLIP-2）) | Q-Former |
+| [Visual Instruction Tuning](/ai-fa/explore/10-Papers/08-多模态/Visual Instruction Tuning（LLaVA）) | 线性投影+指令微调（开源主流） |
 | GPT-4V/ Claude / Gemini | 生产级多模态 |
 
 ## 4. 常见误区
@@ -43,8 +43,8 @@ tags: [concept]
 
 ## 5. 相关概念
 
-- [CLIP对比损失](/explore/30-Formulas/CLIP对比损失)：对齐预训练
-- [注意力机制](/explore/40-Concepts/注意力机制)：连接层的载体
-- [世界模型](/explore/20-Algorithms/世界模型)：视频理解的世界模型视角
+- [CLIP对比损失](/ai-fa/explore/30-Formulas/CLIP对比损失)：对齐预训练
+- [注意力机制](/ai-fa/explore/40-Concepts/注意力机制)：连接层的载体
+- [世界模型](/ai-fa/explore/20-Algorithms/世界模型)：视频理解的世界模型视角
 
-- → 后继补记（260916）：[CORE](/explore/10-Papers/07-推理模型/CORE Improving Compositional Reasoning in MLLM Embedding via Reranker Distillation)（MLLM 嵌入的组合推理：重排器蒸馏）
+- → 后继补记（260916）：[CORE](/ai-fa/explore/10-Papers/07-推理模型/CORE Improving Compositional Reasoning in MLLM Embedding via Reranker Distillation)（MLLM 嵌入的组合推理：重排器蒸馏）

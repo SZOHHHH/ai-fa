@@ -30,7 +30,7 @@ layer: 占位
 （待精读）
 
 ## 5. 与前作/矩阵关系
-- 线锚：[思维链（CoT）](/explore/40-Concepts/思维链（CoT）) · [视觉语言模型（VLM）](/explore/40-Concepts/视觉语言模型（VLM）)（占位挂链，Tier B 精化）
+- 线锚：[思维链（CoT）](/ai-fa/explore/40-Concepts/思维链（CoT）) · [视觉语言模型（VLM）](/ai-fa/explore/40-Concepts/视觉语言模型（VLM）)（占位挂链，Tier B 精化）
 
 ## 6. 影响后续
 （待精读）

@@ -33,13 +33,13 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- 缩放等效式同 [量化误差与异常值](/explore/30-Formulas/量化误差与异常值) §1 SmoothQuant——**同数学、异方向**：Smooth 搬激活难度到权重（W8A8），AWQ 只保护权重（W4A16）
+- 缩放等效式同 [量化误差与异常值](/ai-fa/explore/30-Formulas/量化误差与异常值) §1 SmoothQuant——**同数学、异方向**：Smooth 搬激活难度到权重（W8A8），AWQ 只保护权重（W4A16）
 - 误差分析：$$\mathrm{Err}(s) = \|Q(W\cdot s)\cdot s^{-1} - W\|$$ 的 s 搜索
 
 ## 5. 与前作的关系
 
-- 建立在 [LLM.int8() - 8-bit Matrix Multiplication for Transformers at Scale](/explore/10-Papers/03-后处理/LLM.int8()- 8-bit Matrix Multiplication for Transformers at Scale（LLM.int8）) 异常值理论上（换保护策略）
-- 与 [GPTQ - Accurate Post-Training Quantization for Generative Pre-trained Transformers](/explore/10-Papers/03-后处理/GPTQ- Accurate Post-Training Quantization for Generative Pre-trained Transformers（GPTQ）) 并列 PTQ 双雄（GPTQ 重补偿、AWQ 轻等效）
+- 建立在 [LLM.int8() - 8-bit Matrix Multiplication for Transformers at Scale](/ai-fa/explore/10-Papers/03-后处理/LLM.int8()- 8-bit Matrix Multiplication for Transformers at Scale（LLM.int8）) 异常值理论上（换保护策略）
+- 与 [GPTQ - Accurate Post-Training Quantization for Generative Pre-trained Transformers](/ai-fa/explore/10-Papers/03-后处理/GPTQ- Accurate Post-Training Quantization for Generative Pre-trained Transformers（GPTQ）) 并列 PTQ 双雄（GPTQ 重补偿、AWQ 轻等效）
 
 ## 6. 影响与后续
 
@@ -48,6 +48,6 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[量化](/explore/40-Concepts/量化)、[量化误差与异常值](/explore/30-Formulas/量化误差与异常值)、[GPTQ - Accurate Post-Training Quantization for Generative Pre-trained Transformers](/explore/10-Papers/03-后处理/GPTQ- Accurate Post-Training Quantization for Generative Pre-trained Transformers（GPTQ）)
+[量化](/ai-fa/explore/40-Concepts/量化)、[量化误差与异常值](/ai-fa/explore/30-Formulas/量化误差与异常值)、[GPTQ - Accurate Post-Training Quantization for Generative Pre-trained Transformers](/ai-fa/explore/10-Papers/03-后处理/GPTQ- Accurate Post-Training Quantization for Generative Pre-trained Transformers（GPTQ）)
 
-> 近邻同族：[A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning](/explore/10-Papers/03-后处理/A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning（DAGGER）) · [A Simple and Effective Pruning Approach for Large Language Models](/explore/10-Papers/03-后处理/A Simple and Effective Pruning Approach for Large Language Models（SparseGPT）)
+> 近邻同族：[A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning](/ai-fa/explore/10-Papers/03-后处理/A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning（DAGGER）) · [A Simple and Effective Pruning Approach for Large Language Models](/ai-fa/explore/10-Papers/03-后处理/A Simple and Effective Pruning Approach for Large Language Models（SparseGPT）)

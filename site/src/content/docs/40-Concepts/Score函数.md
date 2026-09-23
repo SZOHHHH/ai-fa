@@ -27,20 +27,20 @@ $$s(x) = \nabla_x \log p(x)$$
 
 | 出现场景 | 用法 |
 |---|---|
-| [Score-Based生成模型](/explore/20-Algorithms/Score-Based生成模型)（SMLD） | 多尺度加噪 + 每尺度学 score + 退火朗之万采样 |
-| [Score-SDE前向过程](/explore/30-Formulas/Score-SDE前向过程) | 反向 SDE 漂移项需要 $$\nabla_x \log p_t$$ |
-| [DDPM训练目标](/explore/30-Formulas/DDPM训练目标) | 训练目标本质是 score matching 的特例 |
-| [能量模型](/explore/40-Concepts/能量模型) | score = 能量的负梯度，绕开配分函数 |
+| [Score-Based生成模型](/ai-fa/explore/20-Algorithms/Score-Based生成模型)（SMLD） | 多尺度加噪 + 每尺度学 score + 退火朗之万采样 |
+| [Score-SDE前向过程](/ai-fa/explore/30-Formulas/Score-SDE前向过程) | 反向 SDE 漂移项需要 $$\nabla_x \log p_t$$ |
+| [DDPM训练目标](/ai-fa/explore/30-Formulas/DDPM训练目标) | 训练目标本质是 score matching 的特例 |
+| [能量模型](/ai-fa/explore/40-Concepts/能量模型) | score = 能量的负梯度，绕开配分函数 |
 
 ## 4. 常见误区
 
-- **误区**：score 与 [RL中的log导数技巧](/explore/40-Concepts/RL中的log导数技巧) 里的 "score"（对数似然梯度 ∇log π）混淆——两者都是 ∇log，前者对**变量**求导，后者对**参数**求导，文献都叫 score，靠上下文区分。**完整对照（逐元素解剖 + 双数值例子 + Fisher 词源 + 两 score 在蒸馏里的串联）见 RL02 §1.5 专节**。
+- **误区**：score 与 [RL中的log导数技巧](/ai-fa/explore/40-Concepts/RL中的log导数技巧) 里的 "score"（对数似然梯度 ∇log π）混淆——两者都是 ∇log，前者对**变量**求导，后者对**参数**求导，文献都叫 score，靠上下文区分。**完整对照（逐元素解剖 + 双数值例子 + Fisher 词源 + 两 score 在蒸馏里的串联）见 RL02 §1.5 专节**。
 - **误区**：$$p$$ 未知时"∇log p 未知所以学不了"——denoising score matching 恰好绕开
 - **误区**：score 学得准 ≠ 密度能算出来，只保证采样方向正确
 
 ## 5. 相关概念
 
-- [概率分布](/explore/40-Concepts/概率分布)：score 是分布的属性
-- [梯度](/explore/40-Concepts/梯度)：score 是梯度的特例用法
-- [随机微分方程](/explore/40-Concepts/随机微分方程（SDE）)：反向 SDE 用 score 修正漂移
-- [能量模型](/explore/40-Concepts/能量模型)：能量梯度视角
+- [概率分布](/ai-fa/explore/40-Concepts/概率分布)：score 是分布的属性
+- [梯度](/ai-fa/explore/40-Concepts/梯度)：score 是梯度的特例用法
+- [随机微分方程](/ai-fa/explore/40-Concepts/随机微分方程（SDE）)：反向 SDE 用 score 修正漂移
+- [能量模型](/ai-fa/explore/40-Concepts/能量模型)：能量梯度视角

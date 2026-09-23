@@ -38,7 +38,7 @@ $$
 
 ## 5. 与前作/矩阵关系
 
-🚩🚩 占 [生成模型加速矩阵](/explore/60-Matrices/生成模型加速矩阵)"视频×FM×flow map"格——**全景图机会格④"视频×FM加速"已被部分占**（任何后续该格 idea 必须引用本占位）
+🚩🚩 占 [生成模型加速矩阵](/ai-fa/explore/60-Matrices/生成模型加速矩阵)"视频×FM×flow map"格——**全景图机会格④"视频×FM加速"已被部分占**（任何后续该格 idea 必须引用本占位）
 
 
 ## 6. 影响与占位意义
@@ -47,9 +47,9 @@ any-step 三连（DFM/AYF/AnyFlow）把 flexible-NFE 战场封顶的关键一篇
 
 ---
 
-> 谱系枢纽：[Denoising Diffusion Probabilistic Models](/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Probabilistic Models（DDPM）)（图谱连通入口）
-> 近邻同族：[DUO-VSR- Dual-Stream Distillation for One-Step Video Super-Resolution](/explore/10-Papers/02-生成建模与扩散/DUO-VSR- Dual-Stream Distillation for One-Step Video Super-Resolution（DUO-VSR）) · [Align Your Flow - Scaling Continuous-Time Flow Map Distillation](/explore/10-Papers/02-生成建模与扩散/Align Your Flow- Scaling Continuous-Time Flow Map Distillation（AYF）)
-> 数学根基（占位层）：[条件流匹配损失](/explore/30-Formulas/条件流匹配损失) · [注意力核心公式](/explore/30-Formulas/注意力核心公式)
+> 谱系枢纽：[Denoising Diffusion Probabilistic Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Probabilistic Models（DDPM）)（图谱连通入口）
+> 近邻同族：[DUO-VSR- Dual-Stream Distillation for One-Step Video Super-Resolution](/ai-fa/explore/10-Papers/02-生成建模与扩散/DUO-VSR- Dual-Stream Distillation for One-Step Video Super-Resolution（DUO-VSR）) · [Align Your Flow - Scaling Continuous-Time Flow Map Distillation](/ai-fa/explore/10-Papers/02-生成建模与扩散/Align Your Flow- Scaling Continuous-Time Flow Map Distillation（AYF）)
+> 数学根基（占位层）：[条件流匹配损失](/ai-fa/explore/30-Formulas/条件流匹配损失) · [注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)
 
 ## 7. 读前须知
 

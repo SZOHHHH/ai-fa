@@ -32,13 +32,13 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- $$L(N,D) = E + A N^{-0.34} + B D^{-0.28}$$（修正 [Scaling Laws for Neural Language Models](/explore/10-Papers/01-架构演进/Scaling Laws for Neural Language Models（Scaling Laws）) 的 0.76/0.09）
+- $$L(N,D) = E + A N^{-0.34} + B D^{-0.28}$$（修正 [Scaling Laws for Neural Language Models](/ai-fa/explore/10-Papers/01-架构演进/Scaling Laws for Neural Language Models（Scaling Laws）) 的 0.76/0.09）
 - 对比表：Kaplan $$\alpha_N=0.76, \alpha_D=0.09$$ → Chinchilla $$\alpha_N=0.34, \alpha_D=0.28$$——**数据项权重翻三倍**
 
 ## 5. 与前作的关系
 
-- 修正了 [Scaling Laws for Neural Language Models](/explore/10-Papers/01-架构演进/Scaling Laws for Neural Language Models（Scaling Laws）)（Kaplan）的拟合偏置（学习率调度与参数耦合）
-- 直接指导 [LLaMA - Open and Efficient Foundation Language Models](/explore/10-Papers/01-架构演进/LLaMA- Open and Efficient Foundation Language Models（LLaMA）) 的"小模型喂饱数据"路线
+- 修正了 [Scaling Laws for Neural Language Models](/ai-fa/explore/10-Papers/01-架构演进/Scaling Laws for Neural Language Models（Scaling Laws）)（Kaplan）的拟合偏置（学习率调度与参数耦合）
+- 直接指导 [LLaMA - Open and Efficient Foundation Language Models](/ai-fa/explore/10-Papers/01-架构演进/LLaMA- Open and Efficient Foundation Language Models（LLaMA）) 的"小模型喂饱数据"路线
 
 ## 6. 影响与后续
 
@@ -47,6 +47,6 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[Scaling Laws for Neural Language Models](/explore/10-Papers/01-架构演进/Scaling Laws for Neural Language Models（Scaling Laws）)（对照必读）
+[Scaling Laws for Neural Language Models](/ai-fa/explore/10-Papers/01-架构演进/Scaling Laws for Neural Language Models（Scaling Laws）)（对照必读）
 
-> 数学根基：[注意力核心公式](/explore/30-Formulas/注意力核心公式)
+> 数学根基：[注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)

@@ -38,15 +38,15 @@ $$
 
 ## 5. 与前作/矩阵关系
 
-← [ProlificDreamer- High-Fidelity and Diverse Text-to-3D Generation with Variational Score Distillation](/explore/10-Papers/02-生成建模与扩散/ProlificDreamer- High-Fidelity and Diverse Text-to-3D Generation with Variational Score Distillation（VSD）)（本批）；🚩 3D 蒸馏规模化格
+← [ProlificDreamer- High-Fidelity and Diverse Text-to-3D Generation with Variational Score Distillation](/ai-fa/explore/10-Papers/02-生成建模与扩散/ProlificDreamer- High-Fidelity and Diverse Text-to-3D Generation with Variational Score Distillation（VSD）)（本批）；🚩 3D 蒸馏规模化格
 
 
 ## 6. 影响与占位意义
 
 RS 库 07-02 情报。
 
-> 近邻同族：[Diff-Instruct++- Training One-step Text-to-image Generator Model to Align with Human Preferences](/explore/10-Papers/02-生成建模与扩散/Diff-Instruct++- Training One-step Text-to-image Generator Model to Align with Human Preferences（Diff-Instruct++）) · [Diff-Instruct- A Universal Approach for Transferring Knowledge From Pre-trained Diffusion Models](/explore/10-Papers/02-生成建模与扩散/Diff-Instruct- A Universal Approach for Transferring Knowledge From Pre-trained Diffusion Models（Diff-Instruct）)
-> 数学根基（占位层）：[RSSM转移模型](/explore/30-Formulas/RSSM转移模型) · [贝尔曼方程](/explore/40-Concepts/贝尔曼方程) · [ELBO](/explore/40-Concepts/ELBO)
+> 近邻同族：[Diff-Instruct++- Training One-step Text-to-image Generator Model to Align with Human Preferences](/ai-fa/explore/10-Papers/02-生成建模与扩散/Diff-Instruct++- Training One-step Text-to-image Generator Model to Align with Human Preferences（Diff-Instruct++）) · [Diff-Instruct- A Universal Approach for Transferring Knowledge From Pre-trained Diffusion Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Diff-Instruct- A Universal Approach for Transferring Knowledge From Pre-trained Diffusion Models（Diff-Instruct）)
+> 数学根基（占位层）：[RSSM转移模型](/ai-fa/explore/30-Formulas/RSSM转移模型) · [贝尔曼方程](/ai-fa/explore/40-Concepts/贝尔曼方程) · [ELBO](/ai-fa/explore/40-Concepts/ELBO)
 
 ## 7. 读前须知
 

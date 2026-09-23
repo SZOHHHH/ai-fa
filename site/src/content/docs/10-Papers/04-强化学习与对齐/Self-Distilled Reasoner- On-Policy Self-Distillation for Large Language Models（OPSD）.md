@@ -37,16 +37,16 @@ $$
 
 ## 5. 与前作/矩阵关系
 
-🚩 占蒸馏域矩阵"学生×反向KL×token级"的 ICML 2026 学术占位（与 [EOPD](/explore/10-Papers/04-强化学习与对齐/Entropy-Aware On-Policy Distillation of Language Models（EOPD）) 同期双占）
+🚩 占蒸馏域矩阵"学生×反向KL×token级"的 ICML 2026 学术占位（与 [EOPD](/ai-fa/explore/10-Papers/04-强化学习与对齐/Entropy-Aware On-Policy Distillation of Language Models（EOPD）) 同期双占）
 
 
 ## 6. 影响与占位意义
 
 OPD 方向 2026 上半年已被顶会批量占位的证据。
 
-> 近邻同族：[A General Language Assistant as a Laboratory for Alignment](/explore/10-Papers/04-强化学习与对齐/A General Language Assistant as a Laboratory for Alignment（Assistant Lab）) · [A General Theoretical Paradigm to Understand Learning from Human Preferences](/explore/10-Papers/04-强化学习与对齐/A General Theoretical Paradigm to Understand Learning from Human Preferences（IPO）)
-> 数学根基（占位层）：[策略梯度定理](/explore/40-Concepts/策略梯度定理)
-> 数学根基：[蒸馏损失](/explore/30-Formulas/蒸馏损失) · [DSM目标](/explore/30-Formulas/DSM目标)
+> 近邻同族：[A General Language Assistant as a Laboratory for Alignment](/ai-fa/explore/10-Papers/04-强化学习与对齐/A General Language Assistant as a Laboratory for Alignment（Assistant Lab）) · [A General Theoretical Paradigm to Understand Learning from Human Preferences](/ai-fa/explore/10-Papers/04-强化学习与对齐/A General Theoretical Paradigm to Understand Learning from Human Preferences（IPO）)
+> 数学根基（占位层）：[策略梯度定理](/ai-fa/explore/40-Concepts/策略梯度定理)
+> 数学根基：[蒸馏损失](/ai-fa/explore/30-Formulas/蒸馏损失) · [DSM目标](/ai-fa/explore/30-Formulas/DSM目标)
 
 ## 7. 读前须知
 

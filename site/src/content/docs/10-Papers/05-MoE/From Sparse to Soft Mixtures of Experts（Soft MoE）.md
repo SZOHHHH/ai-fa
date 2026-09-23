@@ -33,12 +33,12 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- [MoE门控公式](/explore/30-Formulas/MoE门控公式) §2 Soft MoE 行（含 slot 式）
+- [MoE门控公式](/ai-fa/explore/30-Formulas/MoE门控公式) §2 Soft MoE 行（含 slot 式）
 
 ## 5. 与前作的关系
 
-- 消除了 [Switch Transformers - Scaling to Trillion Parameter Models with Simple and Efficient Sparsity](/explore/10-Papers/05-MoE/Switch Transformers- Scaling to Trillion Parameter Models with Simple and Efficient Spars（Switch）) 系的离散路由痛点（不可导、丢弃、抖动）
-- 形式上与 [注意力机制](/explore/40-Concepts/注意力机制) 更近（软加权），离"专家分工"更远
+- 消除了 [Switch Transformers - Scaling to Trillion Parameter Models with Simple and Efficient Sparsity](/ai-fa/explore/10-Papers/05-MoE/Switch Transformers- Scaling to Trillion Parameter Models with Simple and Efficient Spars（Switch）) 系的离散路由痛点（不可导、丢弃、抖动）
+- 形式上与 [注意力机制](/ai-fa/explore/40-Concepts/注意力机制) 更近（软加权），离"专家分工"更远
 
 ## 6. 影响与后续
 
@@ -47,6 +47,6 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[MoE门控公式](/explore/30-Formulas/MoE门控公式)、[注意力机制](/explore/40-Concepts/注意力机制)（slot 混合与注意力的亲缘）
+[MoE门控公式](/ai-fa/explore/30-Formulas/MoE门控公式)、[注意力机制](/ai-fa/explore/40-Concepts/注意力机制)（slot 混合与注意力的亲缘）
 
-> 近邻同族：[Auxiliary-Loss-Free Load Balancing Strategy for Mixture-of-Experts](/explore/10-Papers/05-MoE/Auxiliary-Loss-Free Load Balancing Strategy for Mixture-of-Experts（无辅助损失MoE）) · [DeepSeek-V3 Technical Report](/explore/10-Papers/05-MoE/DeepSeek-V3 Technical Report（DeepSeek-V3）)
+> 近邻同族：[Auxiliary-Loss-Free Load Balancing Strategy for Mixture-of-Experts](/ai-fa/explore/10-Papers/05-MoE/Auxiliary-Loss-Free Load Balancing Strategy for Mixture-of-Experts（无辅助损失MoE）) · [DeepSeek-V3 Technical Report](/ai-fa/explore/10-Papers/05-MoE/DeepSeek-V3 Technical Report（DeepSeek-V3）)

@@ -37,7 +37,7 @@ $$
 
 ## 5. 与前作/矩阵关系
 
-← SGD-Momentum/RMSProp；→ [Decoupled Weight Decay Regularization](/explore/10-Papers/01-架构演进/Decoupled Weight Decay Regularization（AdamW）)（解耦权重衰减）；与 iVAE 同一作者（Kingma）
+← SGD-Momentum/RMSProp；→ [Decoupled Weight Decay Regularization](/ai-fa/explore/10-Papers/01-架构演进/Decoupled Weight Decay Regularization（AdamW）)（解耦权重衰减）；与 iVAE 同一作者（Kingma）
 
 ## 6. 影响后续
 
@@ -47,6 +47,6 @@ $$
 
 需要：EMA；为何要偏差修正（初始零偏差）
 
-> 近邻同族：[Bag of Tricks for Efficient Text Classification](/explore/10-Papers/01-架构演进/Bag of Tricks for Efficient Text Classification（FastText）) · [Batch Normalization- Accelerating Deep Network Training by Reducing Internal Covariate Shift](/explore/10-Papers/01-架构演进/Batch Normalization- Accelerating Deep Network Training by Reducing Internal Covariate Shift（BN）)
+> 近邻同族：[Bag of Tricks for Efficient Text Classification](/ai-fa/explore/10-Papers/01-架构演进/Bag of Tricks for Efficient Text Classification（FastText）) · [Batch Normalization- Accelerating Deep Network Training by Reducing Internal Covariate Shift](/ai-fa/explore/10-Papers/01-架构演进/Batch Normalization- Accelerating Deep Network Training by Reducing Internal Covariate Shift（BN）)
 
-> 数学根基：[Adam更新规则](/explore/30-Formulas/Adam更新规则) · [梯度](/explore/40-Concepts/梯度)
+> 数学根基：[Adam更新规则](/ai-fa/explore/30-Formulas/Adam更新规则) · [梯度](/ai-fa/explore/40-Concepts/梯度)

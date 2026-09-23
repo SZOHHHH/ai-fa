@@ -33,7 +33,7 @@ h_t = \mathrm{gate}(x_t)\odot h_{t-1} + (1-\mathrm{gate})\,\phi(x_t)\ \text{+局
 $$
 
 
-**直觉**：≡ [Jamba](/explore/10-Papers/01-架构演进/Jamba- A Hybrid Transformer-Mamba Language Model（Jamba）)/Qwen3-Next（同代混合但线性层不同）——架构矩阵混合行的第三个证据；混合配方"什么线性层都行，关键是局部精确性"的结论
+**直觉**：≡ [Jamba](/ai-fa/explore/10-Papers/01-架构演进/Jamba- A Hybrid Transformer-Mamba Language Model（Jamba）)/Qwen3-Next（同代混合但线性层不同）——架构矩阵混合行的第三个证据；混合配方"什么线性层都行，关键是局部精确性"的结论
 
 ## 5. 与前作/矩阵关系
 
@@ -47,6 +47,6 @@ $$
 
 undefined
 
-> 近邻同族：[A Systematic Analysis of Hybrid Linear Attention](/explore/10-Papers/01-架构演进/A Systematic Analysis of Hybrid Linear Attention（混合线性分析）) · [Jamba - A Hybrid Transformer-Mamba Language Model](/explore/10-Papers/01-架构演进/Jamba- A Hybrid Transformer-Mamba Language Model（Jamba）)
+> 近邻同族：[A Systematic Analysis of Hybrid Linear Attention](/ai-fa/explore/10-Papers/01-架构演进/A Systematic Analysis of Hybrid Linear Attention（混合线性分析）) · [Jamba - A Hybrid Transformer-Mamba Language Model](/ai-fa/explore/10-Papers/01-架构演进/Jamba- A Hybrid Transformer-Mamba Language Model（Jamba）)
 
-> 数学根基：[状态空间模型方程](/explore/30-Formulas/状态空间模型方程) · [选择机制](/explore/30-Formulas/选择机制) · [稀疏与线性注意力](/explore/40-Concepts/稀疏与线性注意力)
+> 数学根基：[状态空间模型方程](/ai-fa/explore/30-Formulas/状态空间模型方程) · [选择机制](/ai-fa/explore/30-Formulas/选择机制) · [稀疏与线性注意力](/ai-fa/explore/40-Concepts/稀疏与线性注意力)

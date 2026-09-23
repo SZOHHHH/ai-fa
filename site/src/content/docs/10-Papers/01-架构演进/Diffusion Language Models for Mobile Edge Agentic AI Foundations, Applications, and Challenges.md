@@ -31,8 +31,8 @@ layer: 占位
 （待精读）
 
 ## 5. 与前作/矩阵关系
-- 线锚：[Transformer](/explore/20-Algorithms/Transformer) · [注意力核心公式](/explore/30-Formulas/注意力核心公式)（占位挂链，Tier B 精化）
-- 总览位：[扩散模型](/explore/20-Algorithms/扩散模型)·[Transformer](/explore/20-Algorithms/Transformer)（与自回归路线对照）；家族：[Diffusion Forcing](/explore/10-Papers/09-世界模型与JEPA/Diffusion Forcing- Next-token Prediction Meets Full-Sequence Diffusion（Diffusion Forcing）)
+- 线锚：[Transformer](/ai-fa/explore/20-Algorithms/Transformer) · [注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)（占位挂链，Tier B 精化）
+- 总览位：[扩散模型](/ai-fa/explore/20-Algorithms/扩散模型)·[Transformer](/ai-fa/explore/20-Algorithms/Transformer)（与自回归路线对照）；家族：[Diffusion Forcing](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Diffusion Forcing- Next-token Prediction Meets Full-Sequence Diffusion（Diffusion Forcing）)
 
 ## 6. 影响后续
 （待精读）

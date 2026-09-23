@@ -33,13 +33,13 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- $$x_t = e^{\int \bar a} x_s + \int e^{\ldots}\, g\, ds$$（线性解析 + 非线性数值）——[概率流ODE](/explore/30-Formulas/概率流ODE) 的高阶离散化
-- 对照 [DDIM更新规则](/explore/30-Formulas/DDIM更新规则)（一阶特例）
+- $$x_t = e^{\int \bar a} x_s + \int e^{\ldots}\, g\, ds$$（线性解析 + 非线性数值）——[概率流ODE](/ai-fa/explore/30-Formulas/概率流ODE) 的高阶离散化
+- 对照 [DDIM更新规则](/ai-fa/explore/30-Formulas/DDIM更新规则)（一阶特例）
 
 ## 5. 与前作的关系
 
-- 精确化了 [Denoising Diffusion Implicit Models](/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Implicit Models（DDIM）)（DDIM = 一阶 DEIS）
-- 与蒸馏系（[DMD](/explore/10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）)/CM）正交——**加速矩阵的"积分器"机制列占位**
+- 精确化了 [Denoising Diffusion Implicit Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Implicit Models（DDIM）)（DDIM = 一阶 DEIS）
+- 与蒸馏系（[DMD](/ai-fa/explore/10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）)/CM）正交——**加速矩阵的"积分器"机制列占位**
 
 ## 6. 影响与后续
 
@@ -48,6 +48,6 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[概率流ODE](/explore/30-Formulas/概率流ODE)、[Denoising Diffusion Implicit Models](/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Implicit Models（DDIM）)、[采样器](/explore/40-Concepts/采样器)
+[概率流ODE](/ai-fa/explore/30-Formulas/概率流ODE)、[Denoising Diffusion Implicit Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Implicit Models（DDIM）)、[采样器](/ai-fa/explore/40-Concepts/采样器)
 
-> 近邻同族：[Diff-Instruct++- Training One-step Text-to-image Generator Model to Align with Human Preferences](/explore/10-Papers/02-生成建模与扩散/Diff-Instruct++- Training One-step Text-to-image Generator Model to Align with Human Preferences（Diff-Instruct++）) · [Diff-Instruct- A Universal Approach for Transferring Knowledge From Pre-trained Diffusion Models](/explore/10-Papers/02-生成建模与扩散/Diff-Instruct- A Universal Approach for Transferring Knowledge From Pre-trained Diffusion Models（Diff-Instruct）)
+> 近邻同族：[Diff-Instruct++- Training One-step Text-to-image Generator Model to Align with Human Preferences](/ai-fa/explore/10-Papers/02-生成建模与扩散/Diff-Instruct++- Training One-step Text-to-image Generator Model to Align with Human Preferences（Diff-Instruct++）) · [Diff-Instruct- A Universal Approach for Transferring Knowledge From Pre-trained Diffusion Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Diff-Instruct- A Universal Approach for Transferring Knowledge From Pre-trained Diffusion Models（Diff-Instruct）)

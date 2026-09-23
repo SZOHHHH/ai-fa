@@ -17,11 +17,11 @@ tags: [paper, 占位层]
 
 ## 1. 一句话贡献
 
-矩形流做生成目标（多分辨率噪声调度），MM-[DiT](/explore/10-Papers/02-生成建模与扩散/Scalable Diffusion Models with Transformers（DiT）) 双流架构处理文本-图像联合去噪。
+矩形流做生成目标（多分辨率噪声调度），MM-[DiT](/ai-fa/explore/10-Papers/02-生成建模与扩散/Scalable Diffusion Models with Transformers（DiT）) 双流架构处理文本-图像联合去噪。
 
 ## 2. 核心贡献
 
-1. 矩形流做生成目标（多分辨率噪声调度），MM-[DiT](/explore/10-Papers/02-生成建模与扩散/Scalable Diffusion Models with Transformers（DiT）) 双流架构处理文本-图像联合去噪。
+1. 矩形流做生成目标（多分辨率噪声调度），MM-[DiT](/ai-fa/explore/10-Papers/02-生成建模与扩散/Scalable Diffusion Models with Transformers（DiT）) 双流架构处理文本-图像联合去噪。
 
 ## 3. 方法概要
 
@@ -33,7 +33,7 @@ $$
 
 ## 4. 核心公式
 
-← 矩形流/流匹配；→ [Mean Flow Distillation - Robust and Stable Distillation for Flow Matching Models](/explore/10-Papers/02-生成建模与扩散/Mean Flow Distillation - Robust and Stable Distillation for Flow Matching Models（MFD）)（潜 FM 文生图的当代基准骨干）；加速矩阵潜 FM 行补齐
+← 矩形流/流匹配；→ [Mean Flow Distillation - Robust and Stable Distillation for Flow Matching Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Mean Flow Distillation - Robust and Stable Distillation for Flow Matching Models（MFD）)（潜 FM 文生图的当代基准骨干）；加速矩阵潜 FM 行补齐
 
 **直觉**：占位层公式为结构示意，精读原文后应校正为论文最终形式并补逐项解释。
 
@@ -46,8 +46,8 @@ B18 奠基补齐：潜 FM 骨干（知识库生成线缺的当代锚点）。
 
 undefined
 
-> 近邻同族：[Align Your Flow - Scaling Continuous-Time Flow Map Distillation](/explore/10-Papers/02-生成建模与扩散/Align Your Flow- Scaling Continuous-Time Flow Map Distillation（AYF）) · [Computational and Statistical Guarantees of the c-Rectified flow](/explore/10-Papers/02-生成建模与扩散/Computational and Statistical Guarantees of the c-Rectified flow（c-RF理论）)
-> 数学根基（占位层）：[条件流匹配损失](/explore/30-Formulas/条件流匹配损失) · [概率流ODE](/explore/30-Formulas/概率流ODE) · [常微分方程（ODE）](/explore/40-Concepts/常微分方程（ODE）)
+> 近邻同族：[Align Your Flow - Scaling Continuous-Time Flow Map Distillation](/ai-fa/explore/10-Papers/02-生成建模与扩散/Align Your Flow- Scaling Continuous-Time Flow Map Distillation（AYF）) · [Computational and Statistical Guarantees of the c-Rectified flow](/ai-fa/explore/10-Papers/02-生成建模与扩散/Computational and Statistical Guarantees of the c-Rectified flow（c-RF理论）)
+> 数学根基（占位层）：[条件流匹配损失](/ai-fa/explore/30-Formulas/条件流匹配损失) · [概率流ODE](/ai-fa/explore/30-Formulas/概率流ODE) · [常微分方程（ODE）](/ai-fa/explore/40-Concepts/常微分方程（ODE）)
 
 ## 7. 读前须知
 

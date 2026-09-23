@@ -20,8 +20,8 @@ pdf: 已下载（PDF/）
 
 ## 2. 核心贡献
 
-- **ELBO 可训练化**：$$\log p_\theta(x)$$ 不可直接优化 → 最大化 [ELBO](/explore/40-Concepts/ELBO)
-- **重参数化技巧**：$$z = \mu_\phi + \sigma_\phi \odot \epsilon$$ 让梯度穿过采样操作（[重参数化](/explore/40-Concepts/重参数化)）
+- **ELBO 可训练化**：$$\log p_\theta(x)$$ 不可直接优化 → 最大化 [ELBO](/ai-fa/explore/40-Concepts/ELBO)
+- **重参数化技巧**：$$z = \mu_\phi + \sigma_\phi \odot \epsilon$$ 让梯度穿过采样操作（[重参数化](/ai-fa/explore/40-Concepts/重参数化)）
 - **自编码视角**：编码器=近似后验 $$q_\phi(z\mid x)$$，解码器=似然 $$p_\theta(x\mid z)$$——概率模型的工程化
 
 ## 3. 方法概要（Method）
@@ -34,21 +34,21 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- [ELBO目标](/explore/30-Formulas/ELBO目标) —— 本文的全部理论
-- 重建 + KL 分解、[Jensen不等式](/explore/40-Concepts/Jensen不等式) 推导链
+- [ELBO目标](/ai-fa/explore/30-Formulas/ELBO目标) —— 本文的全部理论
+- 重建 + KL 分解、[Jensen不等式](/ai-fa/explore/40-Concepts/Jensen不等式) 推导链
 
 ## 5. 与前作的关系
 
 - 改进了 [变分推断]：蒙特卡洛 EM / Wake-Sleep 等旧法难扩展到大网络 → 本文让下界可微、可大规模 SGD
-- 奠基了 [Denoising Diffusion Probabilistic Models](/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Probabilistic Models（DDPM）)：扩散 = 把单步隐变量 $$z$$ 换成整条链 $$x_{1:T}$$ 的"多步 VAE"
-- 奠基了 [LDM](/explore/10-Papers/02-生成建模与扩散/High-Resolution Image Synthesis with Latent Diffusion Models（LDM）)：其自编码器即 LDM 的压缩器
+- 奠基了 [Denoising Diffusion Probabilistic Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Probabilistic Models（DDPM）)：扩散 = 把单步隐变量 $$z$$ 换成整条链 $$x_{1:T}$$ 的"多步 VAE"
+- 奠基了 [LDM](/ai-fa/explore/10-Papers/02-生成建模与扩散/High-Resolution Image Synthesis with Latent Diffusion Models（LDM）)：其自编码器即 LDM 的压缩器
 
 ## 6. 影响与后续
 
-- 被 [Neural Discrete Representation Learning](/explore/10-Papers/02-生成建模与扩散/Neural Discrete Representation Learning（VQ-VAE）) 发展为离散版
-- 被 [Taming Transformers for High-Resolution Image Synthesis](/explore/10-Papers/02-生成建模与扩散/Taming Transformers for High-Resolution Image Synthesis（VQGAN）) 组合为 VQGAN
-- "模糊"缺陷（重建-KL 拉扯）成为 [GAN](/explore/10-Papers/02-生成建模与扩散/Generative Adversarial Networks（GAN）) 兴起的说辞；ELBO 数学则统治了整条扩散线
+- 被 [Neural Discrete Representation Learning](/ai-fa/explore/10-Papers/02-生成建模与扩散/Neural Discrete Representation Learning（VQ-VAE）) 发展为离散版
+- 被 [Taming Transformers for High-Resolution Image Synthesis](/ai-fa/explore/10-Papers/02-生成建模与扩散/Taming Transformers for High-Resolution Image Synthesis（VQGAN）) 组合为 VQGAN
+- "模糊"缺陷（重建-KL 拉扯）成为 [GAN](/ai-fa/explore/10-Papers/02-生成建模与扩散/Generative Adversarial Networks（GAN）) 兴起的说辞；ELBO 数学则统治了整条扩散线
 
 ## 7. 读前须知
 
-[ELBO](/explore/40-Concepts/ELBO)、[重参数化](/explore/40-Concepts/重参数化)、[KL散度](/explore/40-Concepts/KL散度)、[高斯分布](/explore/40-Concepts/高斯分布)、[Jensen不等式](/explore/40-Concepts/Jensen不等式)
+[ELBO](/ai-fa/explore/40-Concepts/ELBO)、[重参数化](/ai-fa/explore/40-Concepts/重参数化)、[KL散度](/ai-fa/explore/40-Concepts/KL散度)、[高斯分布](/ai-fa/explore/40-Concepts/高斯分布)、[Jensen不等式](/ai-fa/explore/40-Concepts/Jensen不等式)

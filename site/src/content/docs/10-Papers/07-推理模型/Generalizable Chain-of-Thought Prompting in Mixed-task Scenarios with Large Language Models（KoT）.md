@@ -17,11 +17,11 @@ tags: [paper, 占位层]
 
 ## 1. 一句话贡献
 
-混合任务场景的通用 [CoT](/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）) 提示（KoT）：跨任务的思维链泛化——提示工程的任务混合化。
+混合任务场景的通用 [CoT](/ai-fa/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）) 提示（KoT）：跨任务的思维链泛化——提示工程的任务混合化。
 
 ## 2. 核心贡献
 
-1. 混合任务场景的通用 [CoT](/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）) 提示（KoT）：跨任务的思维链泛化
+1. 混合任务场景的通用 [CoT](/ai-fa/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）) 提示（KoT）：跨任务的思维链泛化
 2. 提示工程的任务混合化。
 
 ## 3. 方法概要
@@ -45,8 +45,8 @@ $$
 
 RS 库已收；提示工程的收束态之一。
 
-> 近邻同族：[A Survey on In-context Learning](/explore/10-Papers/07-推理模型/A Survey on In-context Learning（ICL Survey）) · [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）)
-> 数学根基（占位层）：[思维链（CoT）](/explore/40-Concepts/思维链（CoT）)
+> 近邻同族：[A Survey on In-context Learning](/ai-fa/explore/10-Papers/07-推理模型/A Survey on In-context Learning（ICL Survey）) · [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](/ai-fa/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）)
+> 数学根基（占位层）：[思维链（CoT）](/ai-fa/explore/40-Concepts/思维链（CoT）)
 
 ## 7. 读前须知
 

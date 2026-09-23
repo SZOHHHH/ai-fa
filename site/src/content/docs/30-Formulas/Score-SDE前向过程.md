@@ -22,7 +22,7 @@ $$dx = f(x, t)\, dt + g(t)\, dw$$
 
 **反向 SDE**（生成的数学根据，本库标准记号）：
 $$dx = \left[ f(x, t) - g^2(t)\, \nabla_x \log p_t(x) \right] dt + g(t)\, d\bar w$$
-只需学 [Score函数](/explore/40-Concepts/Score函数) $$\nabla_x \log p_t$$ 即可反向采样。
+只需学 [Score函数](/ai-fa/explore/40-Concepts/Score函数) $$\nabla_x \log p_t$$ 即可反向采样。
 
 **概率流 ODE**（确定性伴生）：
 $$dx = \left[ f(x,t) - \frac{1}{2} g^2(t)\, \nabla_x \log p_t(x) \right] dt$$
@@ -41,28 +41,28 @@ $$dx = \left[ f(x,t) - \frac{1}{2} g^2(t)\, \nabla_x \log p_t(x) \right] dt$$
 
 - **统一价值**：DDPM（VP）与 SMLD（VE）此前是两套记号，Score-SDE 证明它们是同一 SDE 的两个系数选择——**记号混乱的终结者**
 - 反向 SDE 的漂移项 = 正向漂移 − score 修正：score 是"往数据密集处走"的方向盘
-- 概率流 ODE：把随机过程换成确定性轨迹，得到：精确似然可算、可逆、可插值（[DDIM更新规则](/explore/30-Formulas/DDIM更新规则) 是其离散特例）
+- 概率流 ODE：把随机过程换成确定性轨迹，得到：精确似然可算、可逆、可插值（[DDIM更新规则](/ai-fa/explore/30-Formulas/DDIM更新规则) 是其离散特例）
 - $$g(t)$$ 决定"噪声怎么长"：VP 把数据往原点缩、VE 往外炸——**方向不同但都是加噪**
 
 ## 4. 出处
 
 | 论文 | 贡献 |
 |---|---|
-| [Score-Based Generative Modeling through Stochastic Differential Equations](/explore/10-Papers/02-生成建模与扩散/Score-Based Generative Modeling through Stochastic Differential Equations（Score-SDE）) | 统一框架、反向 SDE、概率流 ODE |
-| [Generative Modeling by Estimating Gradients of the Data Distribution](/explore/10-Papers/02-生成建模与扩散/Generative Modeling by Estimating Gradients of the Data Distribution（SMLD）) | VE 脉源头（被统一） |
-| [Elucidating the Design Space of Diffusion-Based Generative Models](/explore/10-Papers/02-生成建模与扩散/Elucidating the Design Space of Diffusion-Based Generative Models（EDM）) | 跨 VP/VE 的统一消融与再参数化 |
+| [Score-Based Generative Modeling through Stochastic Differential Equations](/ai-fa/explore/10-Papers/02-生成建模与扩散/Score-Based Generative Modeling through Stochastic Differential Equations（Score-SDE）) | 统一框架、反向 SDE、概率流 ODE |
+| [Generative Modeling by Estimating Gradients of the Data Distribution](/ai-fa/explore/10-Papers/02-生成建模与扩散/Generative Modeling by Estimating Gradients of the Data Distribution（SMLD）) | VE 脉源头（被统一） |
+| [Elucidating the Design Space of Diffusion-Based Generative Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Elucidating the Design Space of Diffusion-Based Generative Models（EDM）) | 跨 VP/VE 的统一消融与再参数化 |
 
 ## 5. 数学概念分解
 
-- [随机微分方程](/explore/40-Concepts/随机微分方程（SDE）)：骨架
-- [维纳过程](/explore/40-Concepts/维纳过程)：噪声源
-- [Score函数](/explore/40-Concepts/Score函数)：反向与 ODE 的核心量
-- [常微分方程](/explore/40-Concepts/常微分方程（ODE）)：概率流 ODE
-- [马尔可夫链](/explore/40-Concepts/马尔可夫链)：离散极限与连续版本的桥
+- [随机微分方程](/ai-fa/explore/40-Concepts/随机微分方程（SDE）)：骨架
+- [维纳过程](/ai-fa/explore/40-Concepts/维纳过程)：噪声源
+- [Score函数](/ai-fa/explore/40-Concepts/Score函数)：反向与 ODE 的核心量
+- [常微分方程](/ai-fa/explore/40-Concepts/常微分方程（ODE）)：概率流 ODE
+- [马尔可夫链](/ai-fa/explore/40-Concepts/马尔可夫链)：离散极限与连续版本的桥
 
 ## 6. 与其他公式的关系
 
-- ⊃ **泛化于** [DDPM前向过程](/explore/30-Formulas/DDPM前向过程)（VP 极限）与 SMLD 噪声链（VE 极限）
-- → **推导出** [反向SDE](/explore/30-Formulas/反向SDE)、[概率流ODE](/explore/30-Formulas/概率流ODE)
-- ≡ **等价于** [DDIM更新规则](/explore/30-Formulas/DDIM更新规则) 的连续时间母体
-- → **连接** [条件流匹配损失](/explore/30-Formulas/条件流匹配损失)：FM 的速度场 = 概率流 ODE 右端（预测量换算表见 FM 页 §2）
+- ⊃ **泛化于** [DDPM前向过程](/ai-fa/explore/30-Formulas/DDPM前向过程)（VP 极限）与 SMLD 噪声链（VE 极限）
+- → **推导出** [反向SDE](/ai-fa/explore/30-Formulas/反向SDE)、[概率流ODE](/ai-fa/explore/30-Formulas/概率流ODE)
+- ≡ **等价于** [DDIM更新规则](/ai-fa/explore/30-Formulas/DDIM更新规则) 的连续时间母体
+- → **连接** [条件流匹配损失](/ai-fa/explore/30-Formulas/条件流匹配损失)：FM 的速度场 = 概率流 ODE 右端（预测量换算表见 FM 页 §2）

@@ -42,19 +42,19 @@ $$x_{k+1} = x_k + \frac{\eta_k}{2} s_\theta(x_k, \sigma_i) + \sqrt{\eta_k}\, \ep
 | 论文 | 贡献 |
 |---|---|
 | Vincent 2011（Stacked Denoising Autoencoders 时期） | 等价性定理 |
-| [Generative Modeling by Estimating Gradients of the Data Distribution](/explore/10-Papers/02-生成建模与扩散/Generative Modeling by Estimating Gradients of the Data Distribution（SMLD）) | 首次大规模实用化 |
-| [Score-Based Generative Modeling through Stochastic Differential Equations](/explore/10-Papers/02-生成建模与扩散/Score-Based Generative Modeling through Stochastic Differential Equations（Score-SDE）) | 连续化统一 |
+| [Generative Modeling by Estimating Gradients of the Data Distribution](/ai-fa/explore/10-Papers/02-生成建模与扩散/Generative Modeling by Estimating Gradients of the Data Distribution（SMLD）) | 首次大规模实用化 |
+| [Score-Based Generative Modeling through Stochastic Differential Equations](/ai-fa/explore/10-Papers/02-生成建模与扩散/Score-Based Generative Modeling through Stochastic Differential Equations（Score-SDE）) | 连续化统一 |
 
 ## 5. 数学概念分解
 
-- [Score函数](/explore/40-Concepts/Score函数)：预测对象
-- [期望](/explore/40-Concepts/期望)：联合期望
-- [高斯分布](/explore/40-Concepts/高斯分布)：加噪分布 score 闭式可算
-- [范数](/explore/40-Concepts/范数)：平方 L2
+- [Score函数](/ai-fa/explore/40-Concepts/Score函数)：预测对象
+- [期望](/ai-fa/explore/40-Concepts/期望)：联合期望
+- [高斯分布](/ai-fa/explore/40-Concepts/高斯分布)：加噪分布 score 闭式可算
+- [范数](/ai-fa/explore/40-Concepts/范数)：平方 L2
 
 ## 6. 与其他公式的关系
 
-- ≡ **等价于** [DDPM训练目标](/explore/30-Formulas/DDPM训练目标)（线性换算 $$s_\theta \leftrightarrow \epsilon_\theta$$）——"score 派"与"扩散派"合流点
-- ⊂ **特化于** [Score-SDE前向过程](/explore/30-Formulas/Score-SDE前向过程)：VE-SDE 的离散多尺度版本
+- ≡ **等价于** [DDPM训练目标](/ai-fa/explore/30-Formulas/DDPM训练目标)（线性换算 $$s_\theta \leftrightarrow \epsilon_\theta$$）——"score 派"与"扩散派"合流点
+- ⊂ **特化于** [Score-SDE前向过程](/ai-fa/explore/30-Formulas/Score-SDE前向过程)：VE-SDE 的离散多尺度版本
 - → **被泛化**：由 Score-SDE 统一进 SDE 框架
-- 同族：[条件流匹配损失](/explore/30-Formulas/条件流匹配损失) 也是回归型（预测速度场）
+- 同族：[条件流匹配损失](/ai-fa/explore/30-Formulas/条件流匹配损失) 也是回归型（预测速度场）

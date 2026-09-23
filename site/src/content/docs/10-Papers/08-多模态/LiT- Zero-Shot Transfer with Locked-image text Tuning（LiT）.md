@@ -16,11 +16,11 @@ pdf: 已下载（PDF/）
 
 ## 1. 一句话贡献
 
-"锁定预训练视觉塔、只训文本塔"——证明对齐的关键在**文本侧适配**，图像侧无需微调，[CLIP](/explore/10-Papers/08-多模态/Learning Transferable Visual Models From Natural Language Supervision（CLIP）) 训练范式的消融式简化。
+"锁定预训练视觉塔、只训文本塔"——证明对齐的关键在**文本侧适配**，图像侧无需微调，[CLIP](/ai-fa/explore/10-Papers/08-多模态/Learning Transferable Visual Models From Natural Language Supervision（CLIP）) 训练范式的消融式简化。
 
 ## 2. 核心贡献
 
-- **锁定-调优范式**：冻结强视觉模型（如 [ViT](/explore/10-Papers/01-架构演进/An Image is Worth 16x16 Words- Transformers for Image Recognition at Scale（ViT）)/CLIP 编码器），文本塔从零学对齐
+- **锁定-调优范式**：冻结强视觉模型（如 [ViT](/ai-fa/explore/10-Papers/01-架构演进/An Image is Worth 16x16 Words- Transformers for Image Recognition at Scale（ViT）)/CLIP 编码器），文本塔从零学对齐
 - 发现：视觉塔的预训练质量决定上限；文本塔轻量即可对齐
 - 零样本分类与检索的系统性对照
 
@@ -32,12 +32,12 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- 复用 [CLIP对比损失](/explore/30-Formulas/CLIP对比损失)（单向可训的双塔）
+- 复用 [CLIP对比损失](/ai-fa/explore/30-Formulas/CLIP对比损失)（单向可训的双塔）
 
 ## 5. 与前作的关系
 
-- 消融式改进 [Learning Transferable Visual Models From Natural Language Supervision](/explore/10-Papers/08-多模态/Learning Transferable Visual Models From Natural Language Supervision（CLIP）)：两塔同训 → 一锁一训
-- 与 [BLIP-2 - Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models](/explore/10-Papers/08-多模态/BLIP-2- Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Lan（BLIP-2）)/[LLaVA](/explore/10-Papers/08-多模态/Visual Instruction Tuning（LLaVA）) 的"冻结复用"精神一脉
+- 消融式改进 [Learning Transferable Visual Models From Natural Language Supervision](/ai-fa/explore/10-Papers/08-多模态/Learning Transferable Visual Models From Natural Language Supervision（CLIP）)：两塔同训 → 一锁一训
+- 与 [BLIP-2 - Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models](/ai-fa/explore/10-Papers/08-多模态/BLIP-2- Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Lan（BLIP-2）)/[LLaVA](/ai-fa/explore/10-Papers/08-多模态/Visual Instruction Tuning（LLaVA）) 的"冻结复用"精神一脉
 
 ## 6. 影响与后续
 
@@ -46,6 +46,6 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[CLIP对比损失](/explore/30-Formulas/CLIP对比损失)、[Learning Transferable Visual Models From Natural Language Supervision](/explore/10-Papers/08-多模态/Learning Transferable Visual Models From Natural Language Supervision（CLIP）)
+[CLIP对比损失](/ai-fa/explore/30-Formulas/CLIP对比损失)、[Learning Transferable Visual Models From Natural Language Supervision](/ai-fa/explore/10-Papers/08-多模态/Learning Transferable Visual Models From Natural Language Supervision（CLIP）)
 
-> 近邻同族：[Learning Transferable Visual Models From Natural Language Supervision](/explore/10-Papers/08-多模态/Learning Transferable Visual Models From Natural Language Supervision（CLIP）) · [Scaling Up Visual and Vision-Language Representation Learning With Noisy Text Supervision](/explore/10-Papers/08-多模态/Scaling Up Visual and Vision-Language Representation Learning With Noisy Text Supervision（ALIGN）)
+> 近邻同族：[Learning Transferable Visual Models From Natural Language Supervision](/ai-fa/explore/10-Papers/08-多模态/Learning Transferable Visual Models From Natural Language Supervision（CLIP）) · [Scaling Up Visual and Vision-Language Representation Learning With Noisy Text Supervision](/ai-fa/explore/10-Papers/08-多模态/Scaling Up Visual and Vision-Language Representation Learning With Noisy Text Supervision（ALIGN）)

@@ -27,7 +27,7 @@ tags: [paper]
 
 ## 3. 方法概要
 
-RLHF/RLVR 框架不动：采样（student）→ 算奖励（换成 teacher logprob 差）→ [重要性采样](/explore/40-Concepts/重要性采样)。KL(π_S∥π_T) 逐 token 无偏单样本估计。折扣因子取 0（每步只看下一个 token）。
+RLHF/RLVR 框架不动：采样（student）→ 算奖励（换成 teacher logprob 差）→ [重要性采样](/ai-fa/explore/40-Concepts/重要性采样)。KL(π_S∥π_T) 逐 token 无偏单样本估计。折扣因子取 0（每步只看下一个 token）。
 
 ## 4. 核心公式
 
@@ -39,13 +39,13 @@ $$r_t = \log\pi_{\text{teacher}}(y_t\mid y_{<t}) - \log\pi_\theta(y_t\mid y_{<t}
 
 ## 5. 与前作关系
 
-- ← DAGGER(2010)（学生状态+教师修正思想源头）→ [GKD](/explore/10-Papers/04-强化学习与对齐/On-Policy Distillation of Language Models- Learning from Self-Generated Mistakes（GKD）)/[MiniLLM - Knowledge Distillation of Large Language Models](/explore/10-Papers/04-强化学习与对齐/MiniLLM- On-Policy Distillation of Large Language Models（MiniLLM）)（2023 学术版）→ Qwen3 技术报告（生产版）→ 本博客（**工程化定型 + 传播引爆**）
-- ≡ [PRM](/explore/10-Papers/07-推理模型/Let's Verify Step by Step（PRM）)（[Let's Verify Step by Step](/explore/10-Papers/07-推理模型/Let's Verify Step by Step（PRM）)）：博客自认"类似过程奖励建模"——token 级信号，但奖励源是 teacher 分布而非标注的步级评分器
+- ← DAGGER(2010)（学生状态+教师修正思想源头）→ [GKD](/ai-fa/explore/10-Papers/04-强化学习与对齐/On-Policy Distillation of Language Models- Learning from Self-Generated Mistakes（GKD）)/[MiniLLM - Knowledge Distillation of Large Language Models](/ai-fa/explore/10-Papers/04-强化学习与对齐/MiniLLM- On-Policy Distillation of Large Language Models（MiniLLM）)（2023 学术版）→ Qwen3 技术报告（生产版）→ 本博客（**工程化定型 + 传播引爆**）
+- ≡ [PRM](/ai-fa/explore/10-Papers/07-推理模型/Let's Verify Step by Step（PRM）)（[Let's Verify Step by Step](/ai-fa/explore/10-Papers/07-推理模型/Let's Verify Step by Step（PRM）)）：博客自认"类似过程奖励建模"——token 级信号，但奖励源是 teacher 分布而非标注的步级评分器
 - #loss/distillation + #loss/expectation-of-ratio（IS 损失借 RL 基建）
 
 ## 6. 影响后续
 
-引爆 2025-26 OPD 浪潮：survey（2604.00626）、[EOPD](/explore/10-Papers/04-强化学习与对齐/Entropy-Aware On-Policy Distillation of Language Models（EOPD）)（ICML 2026）、verl/Tinker cookbook 落地。**开放问题（原文点名）：per-token 蒸馏奖励与序列级环境奖励的组合——[蒸馏域矩阵](/explore/60-Matrices/蒸馏域矩阵) §3 的核心机会格即由此来**。
+引爆 2025-26 OPD 浪潮：survey（2604.00626）、[EOPD](/ai-fa/explore/10-Papers/04-强化学习与对齐/Entropy-Aware On-Policy Distillation of Language Models（EOPD）)（ICML 2026）、verl/Tinker cookbook 落地。**开放问题（原文点名）：per-token 蒸馏奖励与序列级环境奖励的组合——[蒸馏域矩阵](/ai-fa/explore/60-Matrices/蒸馏域矩阵) §3 的核心机会格即由此来**。
 
 ## 7. 读前须知
 
@@ -53,6 +53,6 @@ $$r_t = \log\pi_{\text{teacher}}(y_t\mid y_{<t}) - \log\pi_\theta(y_t\mid y_{<t}
 - 关键差异：logprob 差当 reward 时**不需要反向传播穿过 teacher**（一次前向），这是便宜的本质
 - 免责：博客数字基于 Tinker 平台，复现需注意其 FLOPs 折算口径（博客自己给了三种口径 9×/18×/30×）
 
-> 数学根基：[策略梯度定理](/explore/40-Concepts/策略梯度定理)
+> 数学根基：[策略梯度定理](/ai-fa/explore/40-Concepts/策略梯度定理)
 
-> 数学根基：[蒸馏损失](/explore/30-Formulas/蒸馏损失) · [DSM目标](/explore/30-Formulas/DSM目标)
+> 数学根基：[蒸馏损失](/ai-fa/explore/30-Formulas/蒸馏损失) · [DSM目标](/ai-fa/explore/30-Formulas/DSM目标)

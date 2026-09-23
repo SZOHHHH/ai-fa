@@ -45,11 +45,13 @@ $$
 
 动作表征细分占位（B10 孵化 #2 的邻格活动证据）。
 
+> → 后继补记（260922）：[MotionJEPA: Preventing Temporal Feature Collapse by Capturing Visual Changes in Latent Space](/ai-fa/explore/10-Papers/09-世界模型与JEPA/MotionJEPA Preventing Temporal Feature Collapse by Capturing Visual Changes in Latent Space)——差分对偶：本文预测**潜差分**（动作效应显式化，需动作标签），MotionJEPA 预测**差分图像的嵌入**（视觉变化显式化，零动作标签防坍缩）；两者共答"潜空间里变化信息放哪"。
+
 ---
 
-> 谱系枢纽：[Dream to Control - Learning Behaviors by Latent Imagination](/explore/10-Papers/09-世界模型与JEPA/Dream to Control- Learning Behaviors by Latent Imagination（Dreamer）)（图谱连通入口）
-> 近邻同族：[DF3- World Modeling via Decoder-Free Feature Forecasting in Autonomous Navigation](/explore/10-Papers/09-世界模型与JEPA/DF3- World Modeling via Decoder-Free Feature Forecasting in Autonomous Navigation（DF3）) · [Revisiting Feature Prediction for Learning Visual Representations from Video](/explore/10-Papers/09-世界模型与JEPA/Revisiting Feature Prediction for Learning Visual Representations from Video（V-JEPA）)
-> 数学根基（占位层）：[扩散条件去噪](/explore/30-Formulas/扩散条件去噪) · [贝尔曼方程](/explore/40-Concepts/贝尔曼方程)
+> 谱系枢纽：[Dream to Control - Learning Behaviors by Latent Imagination](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Dream to Control- Learning Behaviors by Latent Imagination（Dreamer）)（图谱连通入口）
+> 近邻同族：[DF3- World Modeling via Decoder-Free Feature Forecasting in Autonomous Navigation](/ai-fa/explore/10-Papers/09-世界模型与JEPA/DF3- World Modeling via Decoder-Free Feature Forecasting in Autonomous Navigation（DF3）) · [Revisiting Feature Prediction for Learning Visual Representations from Video](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Revisiting Feature Prediction for Learning Visual Representations from Video（V-JEPA）)
+> 数学根基（占位层）：[扩散条件去噪](/ai-fa/explore/30-Formulas/扩散条件去噪) · [贝尔曼方程](/ai-fa/explore/40-Concepts/贝尔曼方程)
 
 ## 7. 读前须知
 

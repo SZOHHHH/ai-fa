@@ -36,13 +36,14 @@ tags: [paper]
 **直觉**：$$R_{direct}$$ 低=概率质量反复搬家=绕路/回头路多——把"犹豫"变成可计算的几何量。
 
 ## 5. 与前作/矩阵关系
-- 线锚：[思维链（CoT）](/explore/40-Concepts/思维链（CoT）) · [马尔可夫链](/explore/40-Concepts/马尔可夫链)（随机动力学视角）· [KL散度](/explore/40-Concepts/KL散度)（分布演化度量的近亲 TV）
+- 线锚：[思维链（CoT）](/ai-fa/explore/40-Concepts/思维链（CoT）) · [马尔可夫链](/ai-fa/explore/40-Concepts/马尔可夫链)（随机动力学视角）· [KL散度](/ai-fa/explore/40-Concepts/KL散度)（分布演化度量的近亲 TV）
 - ← 前作：熵曲线线（熵只告诉你"多不确定"，不告诉你"谁在和谁竞争"）——本文是它的严格细化
 - 对话位（E2 形式同构）：$$p(\text{答案}|\text{前缀})$$ 的前向轨迹 vs 我们 E2 的 $$p(a\mid x_t, \text{goal})$$ 后验反推——一个顺着推理看信念演化，一个拿着果反推因；"分布轨迹"工具可借给闭环 goal-hit 的诊断
-- 同日同族：[Astar-Thought-V2: Efficient Latent Reasoning via Geometric Dynamics of LLM](/explore/10-Papers/07-推理模型/Astar-Thought-V2 - Efficient Latent Reasoning via Geometric Dynamics of LLM（Astar-Thought-V2）)（同把推理当动力学系统读：一个读几何、一个读分布）
+- 同日同族：[Astar-Thought-V2: Efficient Latent Reasoning via Geometric Dynamics of LLM](/ai-fa/explore/10-Papers/07-推理模型/Astar-Thought-V2 - Efficient Latent Reasoning via Geometric Dynamics of LLM（Astar-Thought-V2）)（同把推理当动力学系统读：一个读几何、一个读分布）
+- 后续同族：[Chain-of-Thought Entropy as a Reliability Signal: A Preregistered Reproduction](/ai-fa/explore/10-Papers/07-推理模型/Chain-of-Thought Entropy as a Reliability Signal A Preregistered Reproduction)（轨迹统计量作可靠性信号一族成型：本文读答案分布轨迹并分机制桶，它读熵轨迹并预注册复现"形状预测对错、幅度不预测"）
 
 ## 6. 影响后续
 给"推理过程评估"提供超越终点/熵的通用语言；overthinking、early-stop、过程奖励设计都可直接取用其机制分类。
 
 ## 7. 读前须知
-只需要条件概率与 TV 距离（[条件概率](/explore/40-Concepts/条件概率)）；命题 1/2 的证明是标准的"构造两条同像轨迹"反例，可读附录 C。
+只需要条件概率与 TV 距离（[条件概率](/ai-fa/explore/40-Concepts/条件概率)）；命题 1/2 的证明是标准的"构造两条同像轨迹"反例，可读附录 C。

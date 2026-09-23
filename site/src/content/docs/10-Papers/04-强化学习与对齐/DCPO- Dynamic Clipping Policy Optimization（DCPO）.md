@@ -37,16 +37,16 @@ $$
 
 ## 5. 与前作/矩阵关系
 
-🚩 占动态裁剪格；≡ [Soft Adaptive Policy Optimization](/explore/10-Papers/04-强化学习与对齐/Soft Adaptive Policy Optimization（SAPO）)（"聚合替代锚定"：裁剪半径也改为统计量函数）
+🚩 占动态裁剪格；≡ [Soft Adaptive Policy Optimization](/ai-fa/explore/10-Papers/04-强化学习与对齐/Soft Adaptive Policy Optimization（SAPO）)（"聚合替代锚定"：裁剪半径也改为统计量函数）
 
 
 ## 6. 影响与占位意义
 
 裁剪半径自适应化的 2025 占位。
 
-> 近邻同族：[DAPO- An Open-Source LLM Reinforcement Learning System at Scale](/explore/10-Papers/04-强化学习与对齐/DAPO- An Open-Source LLM Reinforcement Learning System at Scale（DAPO）) · [GRPO is Secretly a Process Reward Model](/explore/10-Papers/04-强化学习与对齐/GRPO is Secretly a Process Reward Model（GRPO-PRM）)
-> 数学根基（占位层）：[策略梯度定理](/explore/40-Concepts/策略梯度定理)
-> 数学根基：[REINFORCE目标](/explore/30-Formulas/REINFORCE目标)
+> 近邻同族：[DAPO- An Open-Source LLM Reinforcement Learning System at Scale](/ai-fa/explore/10-Papers/04-强化学习与对齐/DAPO- An Open-Source LLM Reinforcement Learning System at Scale（DAPO）) · [GRPO is Secretly a Process Reward Model](/ai-fa/explore/10-Papers/04-强化学习与对齐/GRPO is Secretly a Process Reward Model（GRPO-PRM）)
+> 数学根基（占位层）：[策略梯度定理](/ai-fa/explore/40-Concepts/策略梯度定理)
+> 数学根基：[REINFORCE目标](/ai-fa/explore/30-Formulas/REINFORCE目标)
 
 ## 7. 读前须知
 

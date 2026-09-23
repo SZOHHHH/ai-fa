@@ -33,11 +33,11 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- [LoRA分解](/explore/30-Formulas/LoRA分解) 的发展版（家族表 DoRA 行）
+- [LoRA分解](/ai-fa/explore/30-Formulas/LoRA分解) 的发展版（家族表 DoRA 行）
 
 ## 5. 与前作的关系
 
-- 改进了 [LoRA - Low-Rank Adaptation of Large Language Models](/explore/10-Papers/03-后处理/LoRA- Low-Rank Adaptation of Large Language Models（LoRA）)：分解假设更贴全参动态
+- 改进了 [LoRA - Low-Rank Adaptation of Large Language Models](/ai-fa/explore/10-Papers/03-后处理/LoRA- Low-Rank Adaptation of Large Language Models（LoRA）)：分解假设更贴全参动态
 - 谱系：LoRA → {LoRA+, rsLoRA, DoRA} 的质量修复线
 
 ## 6. 影响与后续
@@ -47,6 +47,6 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[LoRA分解](/explore/30-Formulas/LoRA分解)、[低秩分解](/explore/40-Concepts/低秩分解)、[范数](/explore/40-Concepts/范数)
+[LoRA分解](/ai-fa/explore/30-Formulas/LoRA分解)、[低秩分解](/ai-fa/explore/40-Concepts/低秩分解)、[范数](/ai-fa/explore/40-Concepts/范数)
 
-> 近邻同族：[A Simple and Effective Pruning Approach for Large Language Models](/explore/10-Papers/03-后处理/A Simple and Effective Pruning Approach for Large Language Models（SparseGPT）) · [GPTQ - Accurate Post-Training Quantization for Generative Pre-trained Transformers](/explore/10-Papers/03-后处理/GPTQ- Accurate Post-Training Quantization for Generative Pre-trained Transformers（GPTQ）)
+> 近邻同族：[A Simple and Effective Pruning Approach for Large Language Models](/ai-fa/explore/10-Papers/03-后处理/A Simple and Effective Pruning Approach for Large Language Models（SparseGPT）) · [GPTQ - Accurate Post-Training Quantization for Generative Pre-trained Transformers](/ai-fa/explore/10-Papers/03-后处理/GPTQ- Accurate Post-Training Quantization for Generative Pre-trained Transformers（GPTQ）)

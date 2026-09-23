@@ -35,12 +35,12 @@ tags: [paper]
 **直觉**：像给长跑选手定期补水——原指令的表征每隔一段被重新注入，防止注意力"跑远了忘了出发地"。
 
 ## 5. 与前作/矩阵关系
-- 线锚：[注意力机制](/explore/40-Concepts/注意力机制)（根因在注意力竞争）· [残差连接](/explore/30-Formulas/残差连接)（RRA 的武器就是残差）· [思维链（CoT）](/explore/40-Concepts/思维链（CoT）)
-- 相对同族：[CoT-Valve- Length-Compressible Chain-of-Thought Tuning](/explore/10-Papers/07-推理模型/CoT-Valve- Length-Compressible Chain-of-Thought Tuning（CoT-Valve）) 压长度省算力，本文揭示长度的隐藏代价在安全面——一币两面
-- 与 [Think Wider: Mitigating Latent Rank Collapse in Implicit Chain-of-Thought Reasoning](/explore/10-Papers/07-推理模型/Think Wider - Mitigating Latent Rank Collapse in Implicit Chain-of-Thought Reasoning（WIDER）) 共用"坍缩"病理学语言：一个坍缩在表征秩，一个坍缩在对齐鲁棒性
+- 线锚：[注意力机制](/ai-fa/explore/40-Concepts/注意力机制)（根因在注意力竞争）· [残差连接](/ai-fa/explore/30-Formulas/残差连接)（RRA 的武器就是残差）· [思维链（CoT）](/ai-fa/explore/40-Concepts/思维链（CoT）)
+- 相对同族：[CoT-Valve- Length-Compressible Chain-of-Thought Tuning](/ai-fa/explore/10-Papers/07-推理模型/CoT-Valve- Length-Compressible Chain-of-Thought Tuning（CoT-Valve）) 压长度省算力，本文揭示长度的隐藏代价在安全面——一币两面
+- 与 [Think Wider: Mitigating Latent Rank Collapse in Implicit Chain-of-Thought Reasoning](/ai-fa/explore/10-Papers/07-推理模型/Think Wider - Mitigating Latent Rank Collapse in Implicit Chain-of-Thought Reasoning（WIDER）) 共用"坍缩"病理学语言：一个坍缩在表征秩，一个坍缩在对齐鲁棒性
 
 ## 6. 影响后续
 长 CoT 的安全审计多了"深度-鲁棒性"这条轴；RT 攻击给红队提供了"先诱深再打"的两段式范式；RRA 证明免训练注意力纠偏可行。
 
 ## 7. 读前须知
-需要 [注意力机制](/explore/40-Concepts/注意力机制)（softmax 注意力权重分配的零和性）与 [残差连接](/explore/30-Formulas/残差连接)；越狱攻击背景（GCG/PAIR）只需概念级了解。
+需要 [注意力机制](/ai-fa/explore/40-Concepts/注意力机制)（softmax 注意力权重分配的零和性）与 [残差连接](/ai-fa/explore/30-Formulas/残差连接)；越狱攻击背景（GCG/PAIR）只需概念级了解。

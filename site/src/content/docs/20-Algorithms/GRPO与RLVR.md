@@ -11,28 +11,28 @@ tags: [algo]
 
 **非数学语言**：PPO 要多养一个"打分预言家"（critic 网络）才敢判断动作好坏，又贵又难训。GRPO 的替代方案很朴素：**同一道题让模型做 G 遍，比组内平均好就是好、差就是差**——用同伴当基线，critic 直接退休。RLVR 再进一步：奖励不用学，规则直接判（数学答案对错、代码跑没跑通）。
 
-**数学语言**：[GRPO目标](/explore/30-Formulas/GRPO目标) = PPO 裁剪目标 + KL 锚 + 组内标准化优势 $$\hat A_i = (r_i - \text{mean})/\text{std}$$。RLVR = GRPO 框架下 $$r$$ 换成可验证规则奖励。
+**数学语言**：[GRPO目标](/ai-fa/explore/30-Formulas/GRPO目标) = PPO 裁剪目标 + KL 锚 + 组内标准化优势 $$\hat A_i = (r_i - \text{mean})/\text{std}$$。RLVR = GRPO 框架下 $$r$$ 换成可验证规则奖励。
 
 ## 2. 本命论文群
 
 | 论文 | 引入/发展了什么 | 年份 |
 |---|---|---|
-| [DeepSeekMath - Pushing the Limits of Mathematical Reasoning in Open Language Models](/explore/10-Papers/04-强化学习与对齐/DeepSeekMath- Pushing the Limits of Mathematical Reasoning in Open Language Models（DeepSeekMath）) | 提出 GRPO（数学推理场景验证） | 2024 |
-| [DeepSeek-R1 - Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](/explore/10-Papers/04-强化学习与对齐/DeepSeek-R1- Incentivizing Reasoning Capability in LLMs via Reinforcement Learning（R1）) | 纯 RL 训出推理能力（RLVR 范式宣言） | 2025 |
+| [DeepSeekMath - Pushing the Limits of Mathematical Reasoning in Open Language Models](/ai-fa/explore/10-Papers/04-强化学习与对齐/DeepSeekMath- Pushing the Limits of Mathematical Reasoning in Open Language Models（DeepSeekMath）) | 提出 GRPO（数学推理场景验证） | 2024 |
+| [DeepSeek-R1 - Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](/ai-fa/explore/10-Papers/04-强化学习与对齐/DeepSeek-R1- Incentivizing Reasoning Capability in LLMs via Reinforcement Learning（R1）) | 纯 RL 训出推理能力（RLVR 范式宣言） | 2025 |
 | Dr. GRPO（2025） | 修长度/难度偏置（去 std 归一化） | 2025 |
-| [ThinkPrior: Zero-Rollout Difficulty Priors for Cold-Start Prompt Selection in RLVR](/explore/10-Papers/04-强化学习与对齐/ThinkPrior Zero-Rollout Difficulty Priors for Cold-Start Prompt Selection in RLVR) | 零 rollout 难度先验：冷启动挑 prompt，避开零优势静默组（省 39% rollout 浪费） | 2026 |
-| [Eliciting Self-Verification in Multimodal Reasoning Agents with Reinforcement Learning](/explore/10-Papers/04-强化学习与对齐/Eliciting Self-Verification in Multimodal Reasoning Agents with Reinforcement Learning) | GRPO 训多模态智能体自发自我验证（SVRL） | 2026 |
-| [Salesforce Koa: An Enterprise Language Model for Agentic Tool Use](/explore/10-Papers/04-强化学习与对齐/Salesforce Koa An Enterprise Language Model for Agentic Tool Use) | GRPO 工业化：Agent Script 规格展开成仿真任务+接地任务解决奖励（企业智能体工具使用） | 2026 |
+| [ThinkPrior: Zero-Rollout Difficulty Priors for Cold-Start Prompt Selection in RLVR](/ai-fa/explore/10-Papers/04-强化学习与对齐/ThinkPrior Zero-Rollout Difficulty Priors for Cold-Start Prompt Selection in RLVR) | 零 rollout 难度先验：冷启动挑 prompt，避开零优势静默组（省 39% rollout 浪费） | 2026 |
+| [Eliciting Self-Verification in Multimodal Reasoning Agents with Reinforcement Learning](/ai-fa/explore/10-Papers/04-强化学习与对齐/Eliciting Self-Verification in Multimodal Reasoning Agents with Reinforcement Learning) | GRPO 训多模态智能体自发自我验证（SVRL） | 2026 |
+| [Salesforce Koa: An Enterprise Language Model for Agentic Tool Use](/ai-fa/explore/10-Papers/04-强化学习与对齐/Salesforce Koa An Enterprise Language Model for Agentic Tool Use) | GRPO 工业化：Agent Script 规格展开成仿真任务+接地任务解决奖励（企业智能体工具使用） | 2026 |
 | （概念源）Karpathy 2025 趋势论：RLVR = LLM 训练新阶段 | — |
 
 ## 3. 核心公式
 
-- [GRPO目标](/explore/30-Formulas/GRPO目标) —— 定义性公式
-- 继承：[PPO裁剪目标](/explore/30-Formulas/PPO裁剪目标)（裁剪）、[RLHF目标](/explore/30-Formulas/RLHF目标)（KL 锚）
+- [GRPO目标](/ai-fa/explore/30-Formulas/GRPO目标) —— 定义性公式
+- 继承：[PPO裁剪目标](/ai-fa/explore/30-Formulas/PPO裁剪目标)（裁剪）、[RLHF目标](/ai-fa/explore/30-Formulas/RLHF目标)（KL 锚）
 
 ## 4. 数学概念分解
 
-[重要性采样](/explore/40-Concepts/重要性采样)（比率）、[贝尔曼方程](/explore/40-Concepts/贝尔曼方程)（优势=组均值的替身）、[期望](/explore/40-Concepts/期望)、[KL散度](/explore/40-Concepts/KL散度)
+[重要性采样](/ai-fa/explore/40-Concepts/重要性采样)（比率）、[贝尔曼方程](/ai-fa/explore/40-Concepts/贝尔曼方程)（优势=组均值的替身）、[期望](/ai-fa/explore/40-Concepts/期望)、[KL散度](/ai-fa/explore/40-Concepts/KL散度)
 
 ## 5. 变体与演进
 
@@ -56,6 +56,10 @@ tags: [algo]
 
 **RLVR 的一句话定位**：把"对齐"从"听人类的"扩展到"听事实的"——奖励来自可验证世界（编译器、单元测试、答案核对），这是 2025 后推理模型训练的主干。
 
-- → 后继补记（260916）：[Sequential Beats Joint](/explore/10-Papers/07-推理模型/Sequential Beats Joint On the Interplay between On-Policy Distillation and RLVR)（OPD-then-RLVR 串行胜过加权联合（0911 ⑦推荐））
+- → 后继补记（260916）：[Sequential Beats Joint](/ai-fa/explore/10-Papers/07-推理模型/Sequential Beats Joint On the Interplay between On-Policy Distillation and RLVR)（OPD-then-RLVR 串行胜过加权联合（0911 ⑦推荐））
 
-- → 后继补记（260916）：[Spurious Advantage](/explore/10-Papers/07-推理模型/Spurious Advantage Hidden in GRPO)（GRPO 的隐性优势缺陷诊断）
+- → 后继补记（260916）：[Spurious Advantage](/ai-fa/explore/10-Papers/07-推理模型/Spurious Advantage Hidden in GRPO)（GRPO 的隐性优势缺陷诊断）
+
+- → 后继补记（260923）：[Run-then-Walk](/ai-fa/explore/10-Papers/04-强化学习与对齐/Sometimes You Gotta Run Before You Can Walk Run-then-Walk Scheduling Strategy for VLM Autonomous Dri)（GRPO 的**目标函数课程**：同数据同算法只按阶段切换奖励——Run 进度探索→Walk 安全修复，VLM 驾驶 RL epoch 省 40-50%）
+
+- → 后继补记（260923）：[Video-HopChain](/ai-fa/explore/10-Papers/04-强化学习与对齐/Video-HopChain Multi-Hop Questions and Confidence-Gated Exploration for Video Reasoning Models)（RLVR 数据合成+零方差组第三条修法：CGE 屏蔽最自信 token 重采制造组内对照，与 ThinkPrior 的冷启动挑题互补）

@@ -16,7 +16,7 @@ pdf: 已下载（PDF/）
 
 ## 1. 一句话贡献
 
-不看单点、看整体分布：一步生成器 + 两个扩散（真分布估计器 + 假分布评分器）+ [GAN](/explore/10-Papers/02-生成建模与扩散/Generative Adversarial Networks（GAN）) 判别器三件套，把教师分布整条搬进一步模型。
+不看单点、看整体分布：一步生成器 + 两个扩散（真分布估计器 + 假分布评分器）+ [GAN](/ai-fa/explore/10-Papers/02-生成建模与扩散/Generative Adversarial Networks（GAN）) 判别器三件套，把教师分布整条搬进一步模型。
 
 ## 2. 核心贡献
 
@@ -35,24 +35,25 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- KL 梯度 = score 差（[KL散度](/explore/40-Concepts/KL散度) + [Score函数](/explore/40-Concepts/Score函数) 组合）
-- [GAN目标](/explore/30-Formulas/GAN目标)（辅助项）
-- [DDPM训练目标](/explore/30-Formulas/DDPM训练目标)（score 头的训练）
+- KL 梯度 = score 差（[KL散度](/ai-fa/explore/40-Concepts/KL散度) + [Score函数](/ai-fa/explore/40-Concepts/Score函数) 组合）
+- [GAN目标](/ai-fa/explore/30-Formulas/GAN目标)（辅助项）
+- [DDPM训练目标](/ai-fa/explore/30-Formulas/DDPM训练目标)（score 头的训练）
 
 ## 5. 与前作的关系
 
-- 改进了 [Progressive Distillation for Fast Sampling of Diffusion Models](/explore/10-Papers/02-生成建模与扩散/Progressive Distillation for Fast Sampling of Diffusion Models（渐进蒸馏）) 的点对点蒸馏：分布级匹配
-- 对比 [Consistency Models](/explore/10-Papers/02-生成建模与扩散/Consistency Models（一致性模型）)：不依赖轨迹自洽，理论依据是分布距离
-- 复活了 [Generative Adversarial Networks](/explore/10-Papers/02-生成建模与扩散/Generative Adversarial Networks（GAN）) 的对抗项作细节增强
+- 改进了 [Progressive Distillation for Fast Sampling of Diffusion Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Progressive Distillation for Fast Sampling of Diffusion Models（渐进蒸馏）) 的点对点蒸馏：分布级匹配
+- 对比 [Consistency Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Consistency Models（一致性模型）)：不依赖轨迹自洽，理论依据是分布距离
+- 复活了 [Generative Adversarial Networks](/ai-fa/explore/10-Papers/02-生成建模与扩散/Generative Adversarial Networks（GAN）) 的对抗项作细节增强
 
 ## 6. 影响与后续
 
-- [DMD2](/explore/10-Papers/02-生成建模与扩散/Improved Distribution Matching Distillation for Fast Image Synthesis（DMD2）)（2024）：加教师CFG、少步扩展，效果再上台阶
-- 语言域移植：[PlaidQ](/explore/10-Papers/02-生成建模与扩散/Distilled Continuous Diffusion Language Models Can Write Code in Few Steps---or One)（2026）把 DMD+DMD2 配方搬进连续扩散 LM 的 4/8/16 步蒸馏，并发现 K=1 时 DMD 失效需换配对轨迹监督
+- [DMD2](/ai-fa/explore/10-Papers/02-生成建模与扩散/Improved Distribution Matching Distillation for Fast Image Synthesis（DMD2）)（2024）：加教师CFG、少步扩展，效果再上台阶
+- 语言域移植：[PlaidQ](/ai-fa/explore/10-Papers/02-生成建模与扩散/Distilled Continuous Diffusion Language Models Can Write Code in Few Steps---or One)（2026）把 DMD+DMD2 配方搬进连续扩散 LM 的 4/8/16 步蒸馏，并发现 K=1 时 DMD 失效需换配对轨迹监督
 - SDXL-Turbo / SD-Turbo 商用一步生成的主要技术来源
-- 噪声段调度（260916）：[CrossDistill](/explore/10-Papers/02-生成建模与扩散/CrossDistill Balancing Quality and Diversity via Trajectory-Level Hybrid Few-Step Distillation)（2026）把 DMD 装进低噪段 $$[0,\tau^\star]$$、高噪段留给轨迹保持目标——"DM 只管细节锐化、不管全局模式"的区间化用法（其反向调度对照证明 DM 放高噪段会压掉种子级分支）
+- 噪声段调度（260916）：[CrossDistill](/ai-fa/explore/10-Papers/02-生成建模与扩散/CrossDistill Balancing Quality and Diversity via Trajectory-Level Hybrid Few-Step Distillation)（2026）把 DMD 装进低噪段 $$[0,\tau^\star]$$、高噪段留给轨迹保持目标——"DM 只管细节锐化、不管全局模式"的区间化用法（其反向调度对照证明 DM 放高噪段会压掉种子级分支）
+- 蒸馏边界最小化（260922）：[GestureFAR: Streaming Co-Speech Gesture Generation with Flow Autoregression](/ai-fa/explore/10-Papers/02-生成建模与扩散/GestureFAR Streaming Co-Speech Gesture Generation with Flow Autoregression)（2026）把 DMD 系分布匹配+一致性用于"仅流头"单步蒸馏——冻结 AR 骨干与分词器、只蒸逐 token 流匹配头，流式手势实时生成；蒸馏粒度从整网缩到一个头
 - "分布级蒸馏 + 对抗补细节"配方被广泛复制
 
 ## 7. 读前须知
 
-[KL散度](/explore/40-Concepts/KL散度)、[Score函数](/explore/40-Concepts/Score函数)、[GAN目标](/explore/30-Formulas/GAN目标)、[一致性模型](/explore/20-Algorithms/一致性模型)（对比路线）
+[KL散度](/ai-fa/explore/40-Concepts/KL散度)、[Score函数](/ai-fa/explore/40-Concepts/Score函数)、[GAN目标](/ai-fa/explore/30-Formulas/GAN目标)、[一致性模型](/ai-fa/explore/20-Algorithms/一致性模型)（对比路线）

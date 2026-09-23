@@ -20,7 +20,7 @@ pdf: 已下载（PDF/）
 
 ## 2. 核心贡献
 
-- **三件套架构**：V=[VAE](/explore/10-Papers/02-生成建模与扩散/Auto-Encoding Variational Bayes（VAE）) 把 64×64 像素压成 32 维隐向量；M=MDN-RNN 预测下一隐状态（**混合密度输出——天然表达多模态未来**）；C=线性策略（只有几千参数）；
+- **三件套架构**：V=[VAE](/ai-fa/explore/10-Papers/02-生成建模与扩散/Auto-Encoding Variational Bayes（VAE）) 把 64×64 像素压成 32 维隐向量；M=MDN-RNN 预测下一隐状态（**混合密度输出——天然表达多模态未来**）；C=线性策略（只有几千参数）；
 - **梦中训练**：策略完全在模型 rollout 里用进化算法优化，**真实环境零交互**（VizDoom 实验）；
 - **分阶段冻结训练法**：先随机游走采数据训 V→冻结 V 训 M→冻结 V+M 在梦里进化 C——三件各司其职的流水线成为后续世界模型工作的默认骨架；
 - 训练开销极小（家用 GPU/几十万参数级）——"小而完整的范式演示"，胜在思想不在规模。
@@ -39,12 +39,12 @@ $$z_t\;\sim\;\mathrm{MDN}\big(h_{t-1},z_{t-1},a_{t-1}\big)\;=\;\sum_{k=1}^{K}\pi
 
 **直觉解释**：MDN（混合密度网络）的输出不是"下一帧长什么样"的**一个答案**，而是**若干种可能的加权混合**——这是"世界有多条未来"最早的网络级表达。对照表：MDN 的混合高斯（2018）→ RSSM 的分类潜变量（2019）→ 像素扩散（2024 直接画帧、天然多模态）——**多模态处理的三代演进**都从这篇的"混合密度"思想出发。
 
-- 需要的前置：[变分自编码器](/explore/20-Algorithms/变分自编码器)（V 件）、[ELBO目标](/explore/30-Formulas/ELBO目标)、[马尔可夫决策过程](/explore/40-Concepts/马尔可夫决策过程)（C 件所处的决策框架）
+- 需要的前置：[变分自编码器](/ai-fa/explore/20-Algorithms/变分自编码器)（V 件）、[ELBO目标](/ai-fa/explore/30-Formulas/ELBO目标)、[马尔可夫决策过程](/ai-fa/explore/40-Concepts/马尔可夫决策过程)（C 件所处的决策框架）
 
 ## 5. 与前作/矩阵关系
 
 - ← 旧思想："Daydreaming"幻想学习（2015 前后，Schmidhuber 系）+ 控制论的内部模型原理（ Internal Model Principle）；本文=给老思想配上现代深度生成模型；
-- → 直系：[PlaNet](/explore/10-Papers/09-世界模型与JEPA/Learning Latent Dynamics for Planning from Pixels（PlaNet）)（三件套→RSSM+规划器）、[Dreamer](/explore/10-Papers/09-世界模型与JEPA/Dream to Control- Learning Behaviors by Latent Imagination（Dreamer）)（进化→梯度、线性→深度策略）、直到像素路线 [DIAMOND](/explore/10-Papers/09-世界模型与JEPA/Diffusion for World Modeling- Visual Details Matter in Atari（DIAMOND）)——**"梦"的叙事与流水线骨架贯穿全谱系**；
+- → 直系：[PlaNet](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Learning Latent Dynamics for Planning from Pixels（PlaNet）)（三件套→RSSM+规划器）、[Dreamer](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Dream to Control- Learning Behaviors by Latent Imagination（Dreamer）)（进化→梯度、线性→深度策略）、直到像素路线 [DIAMOND](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Diffusion for World Modeling- Visual Details Matter in Atari（DIAMOND）)——**"梦"的叙事与流水线骨架贯穿全谱系**；
 - 矩阵坐标：像素生成 × 显式（VAE 重建）× 游戏——占"范式奠基"位。
 
 ## 6. 影响与后续
@@ -55,8 +55,8 @@ $$z_t\;\sim\;\mathrm{MDN}\big(h_{t-1},z_{t-1},a_{t-1}\big)\;=\;\sum_{k=1}^{K}\pi
 
 ## 7. 读前须知
 
-- **必前置**：[变分自编码器](/explore/20-Algorithms/变分自编码器)（V 件全部机制）、[世界模型](/explore/20-Algorithms/世界模型)（总览卡）、[马尔可夫决策过程](/explore/40-Concepts/马尔可夫决策过程)；
+- **必前置**：[变分自编码器](/ai-fa/explore/20-Algorithms/变分自编码器)（V 件全部机制）、[世界模型](/ai-fa/explore/20-Algorithms/世界模型)（总览卡）、[马尔可夫决策过程](/ai-fa/explore/40-Concepts/马尔可夫决策过程)；
 - **易混点**：①本文的"想象训练"=进化算法黑盒搜索，与 Dreamer 的"梯度穿梦"是两回事；②MDN-RNN 预测的是 **VAE 隐空间**不是像素——梦里没有画面，只有 $$z$$；③三件套是**分开训**的（当时端到端训不稳）——对照今天端到端联合训练的演化；
 - **读法建议**：正文极短（9 页）；重点看图 2（架构总览）与图 5（VizDoom 梦中训练对比）；MDN 细节可跳过概念即可。
 
-> 数学根基：[ELBO目标](/explore/30-Formulas/ELBO目标) · [贝尔曼方程](/explore/40-Concepts/贝尔曼方程) · [概率分布](/explore/40-Concepts/概率分布)
+> 数学根基：[ELBO目标](/ai-fa/explore/30-Formulas/ELBO目标) · [贝尔曼方程](/ai-fa/explore/40-Concepts/贝尔曼方程) · [概率分布](/ai-fa/explore/40-Concepts/概率分布)

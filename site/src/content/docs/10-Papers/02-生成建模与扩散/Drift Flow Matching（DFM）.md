@@ -38,16 +38,16 @@ $$
 
 ## 5. 与前作/矩阵关系
 
-🚩🚩 占 [生成模型加速矩阵](/explore/60-Matrices/生成模型加速矩阵) FM×平均速度×any-step 格；与 [MeanFlow](/explore/10-Papers/02-生成建模与扩散/Mean Flows for One-step Generative Modeling（MeanFlow）)/[MFD](/explore/10-Papers/02-生成建模与扩散/Mean Flow Distillation - Robust and Stable Distillation for Flow Matching Models（MFD）) 同格竞争者（其"不稳"自承恰是 RS 主线切入点）
+🚩🚩 占 [生成模型加速矩阵](/ai-fa/explore/60-Matrices/生成模型加速矩阵) FM×平均速度×any-step 格；与 [MeanFlow](/ai-fa/explore/10-Papers/02-生成建模与扩散/Mean Flows for One-step Generative Modeling（MeanFlow）)/[MFD](/ai-fa/explore/10-Papers/02-生成建模与扩散/Mean Flow Distillation - Robust and Stable Distillation for Flow Matching Models（MFD）) 同格竞争者（其"不稳"自承恰是 RS 主线切入点）
 
 
 ## 6. 影响与占位意义
 
 any-step 战场的决定性占位者（NVIDIA 三连之一）。
 
-> 近邻同族：[Align Your Flow - Scaling Continuous-Time Flow Map Distillation](/explore/10-Papers/02-生成建模与扩散/Align Your Flow- Scaling Continuous-Time Flow Map Distillation（AYF）) · [Computational and Statistical Guarantees of the c-Rectified flow](/explore/10-Papers/02-生成建模与扩散/Computational and Statistical Guarantees of the c-Rectified flow（c-RF理论）)
-> 数学根基（占位层）：[概率分布](/explore/40-Concepts/概率分布)
-> 数学根基：[条件流匹配损失](/explore/30-Formulas/条件流匹配损失) · [概率流ODE](/explore/30-Formulas/概率流ODE)
+> 近邻同族：[Align Your Flow - Scaling Continuous-Time Flow Map Distillation](/ai-fa/explore/10-Papers/02-生成建模与扩散/Align Your Flow- Scaling Continuous-Time Flow Map Distillation（AYF）) · [Computational and Statistical Guarantees of the c-Rectified flow](/ai-fa/explore/10-Papers/02-生成建模与扩散/Computational and Statistical Guarantees of the c-Rectified flow（c-RF理论）)
+> 数学根基（占位层）：[概率分布](/ai-fa/explore/40-Concepts/概率分布)
+> 数学根基：[条件流匹配损失](/ai-fa/explore/30-Formulas/条件流匹配损失) · [概率流ODE](/ai-fa/explore/30-Formulas/概率流ODE)
 
 ## 7. 读前须知
 

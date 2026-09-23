@@ -16,7 +16,7 @@ pdf: 已下载（PDF/）
 
 ## 1. 一句话贡献
 
-建立 Ψ-PO 统一理论框架重审偏好优化，诊断 [DPO](/explore/10-Papers/04-强化学习与对齐/Direct Preference Optimization- Your Language Model is Secretly a Reward Model（DPO）) 的过优化病态，提出有界损失的 IPO——DPO 系的"理论质检员"。
+建立 Ψ-PO 统一理论框架重审偏好优化，诊断 [DPO](/ai-fa/explore/10-Papers/04-强化学习与对齐/Direct Preference Optimization- Your Language Model is Secretly a Reward Model（DPO）) 的过优化病态，提出有界损失的 IPO——DPO 系的"理论质检员"。
 
 ## 2. 核心贡献
 
@@ -33,19 +33,19 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- [IPO损失](/explore/30-Formulas/IPO损失) —— 本文产物
+- [IPO损失](/ai-fa/explore/30-Formulas/IPO损失) —— 本文产物
 
 ## 5. 与前作的关系
 
-- 修正了 [Direct Preference Optimization - Your Language Model is Secretly a Reward Model](/explore/10-Papers/04-强化学习与对齐/Direct Preference Optimization- Your Language Model is Secretly a Reward Model（DPO）) 的理论缺陷
-- 泛化了 [Bradley-Terry模型](/explore/40-Concepts/Bradley-Terry模型) 假设（一般效用下偏好建模）
+- 修正了 [Direct Preference Optimization - Your Language Model is Secretly a Reward Model](/ai-fa/explore/10-Papers/04-强化学习与对齐/Direct Preference Optimization- Your Language Model is Secretly a Reward Model（DPO）) 的理论缺陷
+- 泛化了 [Bradley-Terry模型](/ai-fa/explore/40-Concepts/Bradley-Terry模型) 假设（一般效用下偏好建模）
 
 ## 6. 影响与后续
 
 - DPO 系论文的标配引用（"过优化"讨论源头）
 - 影响后续损失设计的理论检查习惯
-- 2026 延续：[A Better Spur Should Start From Each Objective](/explore/10-Papers/04-强化学习与对齐/A Better Spur Should Start From Each Objective)（MMPO——多目标 RL 场景的多边际偏好优化，数据/梯度/约束三层干预）
+- 2026 延续：[A Better Spur Should Start From Each Objective](/ai-fa/explore/10-Papers/04-强化学习与对齐/A Better Spur Should Start From Each Objective)（MMPO——多目标 RL 场景的多边际偏好优化，数据/梯度/约束三层干预）
 
 ## 7. 读前须知
 
-[DPO损失](/explore/30-Formulas/DPO损失)、[RLHF目标](/explore/30-Formulas/RLHF目标)（闭式解）、[KL散度](/explore/40-Concepts/KL散度)
+[DPO损失](/ai-fa/explore/30-Formulas/DPO损失)、[RLHF目标](/ai-fa/explore/30-Formulas/RLHF目标)（闭式解）、[KL散度](/ai-fa/explore/40-Concepts/KL散度)

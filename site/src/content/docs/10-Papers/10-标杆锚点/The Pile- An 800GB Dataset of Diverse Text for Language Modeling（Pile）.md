@@ -46,9 +46,9 @@ $$
 
 ---
 
-> 谱系枢纽：[GPT-4 Technical Report](/explore/10-Papers/10-标杆锚点/GPT-4 Technical Report（GPT-4）)（图谱连通入口）
-> 近邻同族：[Gemini 1.5- Unlocking Multimodal Understanding Across Millions of Tokens of Context](/explore/10-Papers/10-标杆锚点/Gemini 1.5- Unlocking Multimodal Understanding Across Millions of Tokens of Context（Gemini 1.5）) · [Large Language Models- A Survey](/explore/10-Papers/10-标杆锚点/Large Language Models- A Survey（LLM Survey 2024）)
-> 数学根基（占位层）：[注意力核心公式](/explore/30-Formulas/注意力核心公式)
+> 谱系枢纽：[GPT-4 Technical Report](/ai-fa/explore/10-Papers/10-标杆锚点/GPT-4 Technical Report（GPT-4）)（图谱连通入口）
+> 近邻同族：[Gemini 1.5- Unlocking Multimodal Understanding Across Millions of Tokens of Context](/ai-fa/explore/10-Papers/10-标杆锚点/Gemini 1.5- Unlocking Multimodal Understanding Across Millions of Tokens of Context（Gemini 1.5）) · [Large Language Models- A Survey](/ai-fa/explore/10-Papers/10-标杆锚点/Large Language Models- A Survey（LLM Survey 2024）)
+> 数学根基（占位层）：[注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)
 
 ## 7. 读前须知
 

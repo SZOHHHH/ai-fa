@@ -33,13 +33,13 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- $$\mathcal{L}_{\text{IMM}} = \| \mu_s - \mu_t \|^2 + \| \Sigma_s - \Sigma_t \|_F^2$$——矩空间回归（[范数](/explore/40-Concepts/范数) 家族）
-- 与 [MFD](/explore/10-Papers/02-生成建模与扩散/Mean Flow Distillation - Robust and Stable Distillation for Flow Matching Models（MFD）) 的 [MeanFlow](/explore/10-Papers/02-生成建模与扩散/Mean Flows for One-step Generative Modeling（MeanFlow）) 定理呼应：MFD 证"平均速度充分"，IMM 证"前二阶矩充分"——**两种"充分性定理"打不同变量**
+- $$\mathcal{L}_{\text{IMM}} = \| \mu_s - \mu_t \|^2 + \| \Sigma_s - \Sigma_t \|_F^2$$——矩空间回归（[范数](/ai-fa/explore/40-Concepts/范数) 家族）
+- 与 [MFD](/ai-fa/explore/10-Papers/02-生成建模与扩散/Mean Flow Distillation - Robust and Stable Distillation for Flow Matching Models（MFD）) 的 [MeanFlow](/ai-fa/explore/10-Papers/02-生成建模与扩散/Mean Flows for One-step Generative Modeling（MeanFlow）) 定理呼应：MFD 证"平均速度充分"，IMM 证"前二阶矩充分"——**两种"充分性定理"打不同变量**
 
 ## 5. 与前作的关系
 
-- 对照 [Consistency Models](/explore/10-Papers/02-生成建模与扩散/Consistency Models（一致性模型）)（轨迹自洽需锚点）与蒸馏系（需教师轨迹）
-- 同作者 [Mean Flows for One-step Generative Modeling](/explore/10-Papers/02-生成建模与扩散/Mean Flows for One-step Generative Modeling（MeanFlow）) 的姊妹篇（Geng 系）——同格竞争/互补
+- 对照 [Consistency Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Consistency Models（一致性模型）)（轨迹自洽需锚点）与蒸馏系（需教师轨迹）
+- 同作者 [Mean Flows for One-step Generative Modeling](/ai-fa/explore/10-Papers/02-生成建模与扩散/Mean Flows for One-step Generative Modeling（MeanFlow）) 的姊妹篇（Geng 系）——同格竞争/互补
 
 ## 6. 影响与后续
 
@@ -48,4 +48,4 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[条件流匹配损失](/explore/30-Formulas/条件流匹配损失)、[Mean Flows for One-step Generative Modeling](/explore/10-Papers/02-生成建模与扩散/Mean Flows for One-step Generative Modeling（MeanFlow）)、[Consistency Models](/explore/10-Papers/02-生成建模与扩散/Consistency Models（一致性模型）)
+[条件流匹配损失](/ai-fa/explore/30-Formulas/条件流匹配损失)、[Mean Flows for One-step Generative Modeling](/ai-fa/explore/10-Papers/02-生成建模与扩散/Mean Flows for One-step Generative Modeling（MeanFlow）)、[Consistency Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Consistency Models（一致性模型）)

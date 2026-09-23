@@ -17,7 +17,7 @@ tags: [concept]
 
 $$\text{on：}\;J(\pi_\theta)=\mathbb{E}_{s,a\sim\pi_\theta}\big[\cdot\big]\qquad\text{off：}\;J=\mathbb{E}_{s,a\sim\mu\,\text{（行为策略/回放池}）}\big[\cdot\big]\;\text{+ 重要性修正}$$
 
-分布不一致时需要**重要性采样**修正：$$\mathbb{E}_\mu\big[\tfrac{\pi(a\mid s)}{\mu(a\mid s)}f\big]=\mathbb{E}_\pi[f]$$（见 [重要性采样](/explore/40-Concepts/重要性采样)）。
+分布不一致时需要**重要性采样**修正：$$\mathbb{E}_\mu\big[\tfrac{\pi(a\mid s)}{\mu(a\mid s)}f\big]=\mathbb{E}_\pi[f]$$（见 [重要性采样](/ai-fa/explore/40-Concepts/重要性采样)）。
 
 ## 2. 两族对比
 
@@ -58,5 +58,5 @@ $$\text{on：}\;J(\pi_\theta)=\mathbb{E}_{s,a\sim\pi_\theta}\big[\cdot\big]\qqua
 
 ## 6. 与库内实体的关系
 
-- ← 地基：[重要性采样](/explore/40-Concepts/重要性采样)（分布修正的数学）、[TD误差与自举](/explore/40-Concepts/TD误差与自举)（off 系的学习信号）
-- → 用户：[DQN](/explore/10-Papers/04-强化学习与对齐/Playing Atari with Deep Reinforcement Learning（DQN）)（replay+目标网络开山）、[A3C](/explore/10-Papers/04-强化学习与对齐/Asynchronous Methods for Deep Reinforcement Learning（A3C）)（用并行去相关替代 replay 的 on 路线）、[SAC](/explore/10-Papers/04-强化学习与对齐/Soft Actor-Critic- Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor（SAC）)（off 家族集大成）、[PPO](/explore/10-Papers/04-强化学习与对齐/Proximal Policy Optimization Algorithms（PPO）)（近 on 的裁剪路线）、[OnPoKD](/explore/10-Papers/03-后处理/On-Policy Distillation for Vision-Language Model Adaptation, an Effective Paradigm on Low-Quality Mu)（"on 化"推到目标构造侧：蒸馏目标随训练状态在线更新）
+- ← 地基：[重要性采样](/ai-fa/explore/40-Concepts/重要性采样)（分布修正的数学）、[TD误差与自举](/ai-fa/explore/40-Concepts/TD误差与自举)（off 系的学习信号）
+- → 用户：[DQN](/ai-fa/explore/10-Papers/04-强化学习与对齐/Playing Atari with Deep Reinforcement Learning（DQN）)（replay+目标网络开山）、[A3C](/ai-fa/explore/10-Papers/04-强化学习与对齐/Asynchronous Methods for Deep Reinforcement Learning（A3C）)（用并行去相关替代 replay 的 on 路线）、[SAC](/ai-fa/explore/10-Papers/04-强化学习与对齐/Soft Actor-Critic- Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor（SAC）)（off 家族集大成）、[PPO](/ai-fa/explore/10-Papers/04-强化学习与对齐/Proximal Policy Optimization Algorithms（PPO）)（近 on 的裁剪路线）、[OnPoKD](/ai-fa/explore/10-Papers/03-后处理/On-Policy Distillation for Vision-Language Model Adaptation, an Effective Paradigm on Low-Quality Mu)（"on 化"推到目标构造侧：蒸馏目标随训练状态在线更新）

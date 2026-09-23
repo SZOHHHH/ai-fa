@@ -32,12 +32,12 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- 特征蒸馏项见 [蒸馏损失](/explore/30-Formulas/蒸馏损失) §2 特征蒸馏行
+- 特征蒸馏项见 [蒸馏损失](/ai-fa/explore/30-Formulas/蒸馏损失) §2 特征蒸馏行
 
 ## 5. 与前作的关系
 
-- 扩展了 [DistilBERT, a distilled version of BERT - smaller, faster, cheaper and lighter](/explore/10-Papers/03-后处理/DistilBERT, a distilled version of BERT- smaller, faster, cheaper and lighter（DistilBERT）)：输出对齐 → 全栈对齐
-- 理论根 [Distilling the Knowledge in a Neural Network](/explore/10-Papers/03-后处理/Distilling the Knowledge in a Neural Network（KD）)
+- 扩展了 [DistilBERT, a distilled version of BERT - smaller, faster, cheaper and lighter](/ai-fa/explore/10-Papers/03-后处理/DistilBERT, a distilled version of BERT- smaller, faster, cheaper and lighter（DistilBERT）)：输出对齐 → 全栈对齐
+- 理论根 [Distilling the Knowledge in a Neural Network](/ai-fa/explore/10-Papers/03-后处理/Distilling the Knowledge in a Neural Network（KD）)
 
 ## 6. 影响与后续
 
@@ -46,4 +46,4 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[蒸馏损失](/explore/30-Formulas/蒸馏损失)、[DistilBERT, a distilled version of BERT - smaller, faster, cheaper and lighter](/explore/10-Papers/03-后处理/DistilBERT, a distilled version of BERT- smaller, faster, cheaper and lighter（DistilBERT）)
+[蒸馏损失](/ai-fa/explore/30-Formulas/蒸馏损失)、[DistilBERT, a distilled version of BERT - smaller, faster, cheaper and lighter](/ai-fa/explore/10-Papers/03-后处理/DistilBERT, a distilled version of BERT- smaller, faster, cheaper and lighter（DistilBERT）)

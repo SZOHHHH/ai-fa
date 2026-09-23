@@ -26,7 +26,7 @@ $$x_t = \sqrt{\bar\alpha_t}\, x_0 + \sqrt{1-\bar\alpha_t}\, \epsilon, \quad \eps
 | β-参数化（逐步） | $$x_t = \sqrt{1-\beta_t}\,x_{t-1} + \sqrt{\beta_t}\epsilon$$ | DDPM 原文 Ho et al. 2020 | 逐步马尔可夫形式 |
 | ᾱ-闭式（本库标准） | $$x_t = \sqrt{\bar\alpha_t}\,x_0 + \sqrt{1-\bar\alpha_t}\,\epsilon$$ | 同上 Eq.(4)，训练通用 | 一步采样 $$x_t$$，不必迭代 |
 | 信噪比形式 | $$x_t = w_t x_0 + \sigma_t \epsilon$$，$$\mathrm{SNR}_t = w_t^2/\sigma_t^2$$ | iDDPM、EDM | 调度统一视角 |
-| VP-SDE 连续极限 | $$dx = -\frac{1}{2}\beta(t) x\, dt + \sqrt{\beta(t)}\, dw$$ | Score-SDE 2021 | $$T\to\infty$$ 极限，见 [Score-SDE前向过程](/explore/30-Formulas/Score-SDE前向过程) |
+| VP-SDE 连续极限 | $$dx = -\frac{1}{2}\beta(t) x\, dt + \sqrt{\beta(t)}\, dw$$ | Score-SDE 2021 | $$T\to\infty$$ 极限，见 [Score-SDE前向过程](/ai-fa/explore/30-Formulas/Score-SDE前向过程) |
 
 ## 3. 直觉解释
 
@@ -39,20 +39,20 @@ $$x_t = \sqrt{\bar\alpha_t}\, x_0 + \sqrt{1-\bar\alpha_t}\, \epsilon, \quad \eps
 
 | 论文 | 贡献 |
 |---|---|
-| [Denoising Diffusion Probabilistic Models](/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Probabilistic Models（DDPM）) | 定义并首次大规模成功 |
-| [Improved Denoising Diffusion Probabilistic Models](/explore/10-Papers/02-生成建模与扩散/Improved Denoising Diffusion Probabilistic Models（iDDPM）) | 余弦调度、L_simple 加权 |
-| [Score-Based Generative Modeling through Stochastic Differential Equations](/explore/10-Papers/02-生成建模与扩散/Score-Based Generative Modeling through Stochastic Differential Equations（Score-SDE）) | 连续时间统一 |
+| [Denoising Diffusion Probabilistic Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Probabilistic Models（DDPM）) | 定义并首次大规模成功 |
+| [Improved Denoising Diffusion Probabilistic Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Improved Denoising Diffusion Probabilistic Models（iDDPM）) | 余弦调度、L_simple 加权 |
+| [Score-Based Generative Modeling through Stochastic Differential Equations](/ai-fa/explore/10-Papers/02-生成建模与扩散/Score-Based Generative Modeling through Stochastic Differential Equations（Score-SDE）) | 连续时间统一 |
 
 ## 5. 数学概念分解
 
-- [马尔可夫链](/explore/40-Concepts/马尔可夫链)：前向过程是马尔可夫链（只依赖 $$x_{t-1}$$）
-- [高斯分布](/explore/40-Concepts/高斯分布)：每步转移是高斯；闭式来自"高斯线性组合仍高斯"
-- [重参数化](/explore/40-Concepts/重参数化)：闭式 = 一步采样技巧
-- [概率分布](/explore/40-Concepts/概率分布)：前向 = 数据分布 → 噪声分布的分布变换
+- [马尔可夫链](/ai-fa/explore/40-Concepts/马尔可夫链)：前向过程是马尔可夫链（只依赖 $$x_{t-1}$$）
+- [高斯分布](/ai-fa/explore/40-Concepts/高斯分布)：每步转移是高斯；闭式来自"高斯线性组合仍高斯"
+- [重参数化](/ai-fa/explore/40-Concepts/重参数化)：闭式 = 一步采样技巧
+- [概率分布](/ai-fa/explore/40-Concepts/概率分布)：前向 = 数据分布 → 噪声分布的分布变换
 
 ## 6. 与其他公式的关系
 
-- ⊃ **泛化于** [Score-SDE前向过程](/explore/30-Formulas/Score-SDE前向过程)：VP-SDE 是本公式的连续时间极限
-- ≡ **等价于** [条件流匹配损失](/explore/30-Formulas/条件流匹配损失) 中的插值 $$x_t = \alpha_t x_0 + \sigma_t z$$（当 $$\alpha_t = \sqrt{\bar\alpha_t}$$、$$\sigma_t = \sqrt{1-\bar\alpha_t}$$ 时逐点相同）——扩散与流是同族
-- → **被推导出** [DDPM后验分布](/explore/30-Formulas/DDPM后验分布)：$$q(x_{t-1} \mid x_t, x_0)$$（贝叶斯 + 高斯条件分布）
-- → **服务于** [DDPM训练目标](/explore/30-Formulas/DDPM训练目标)：闭式让训练能一步抽任意 $$t$$
+- ⊃ **泛化于** [Score-SDE前向过程](/ai-fa/explore/30-Formulas/Score-SDE前向过程)：VP-SDE 是本公式的连续时间极限
+- ≡ **等价于** [条件流匹配损失](/ai-fa/explore/30-Formulas/条件流匹配损失) 中的插值 $$x_t = \alpha_t x_0 + \sigma_t z$$（当 $$\alpha_t = \sqrt{\bar\alpha_t}$$、$$\sigma_t = \sqrt{1-\bar\alpha_t}$$ 时逐点相同）——扩散与流是同族
+- → **被推导出** [DDPM后验分布](/ai-fa/explore/30-Formulas/DDPM后验分布)：$$q(x_{t-1} \mid x_t, x_0)$$（贝叶斯 + 高斯条件分布）
+- → **服务于** [DDPM训练目标](/ai-fa/explore/30-Formulas/DDPM训练目标)：闭式让训练能一步抽任意 $$t$$

@@ -46,10 +46,10 @@ $$
 
 ---
 
-> 谱系枢纽：[Direct Preference Optimization - Your Language Model is Secretly a Reward Model](/explore/10-Papers/04-强化学习与对齐/Direct Preference Optimization- Your Language Model is Secretly a Reward Model（DPO）)（图谱连通入口）
-> 近邻同族：[Learning beyond Teacher- Generalized On-Policy Distillation with Reward Extrapolation](/explore/10-Papers/04-强化学习与对齐/Learning beyond Teacher- Generalized On-Policy Distillation with Reward Extrapolation（G-OPD）) · [Process Reinforcement through Implicit Rewards](/explore/10-Papers/04-强化学习与对齐/Process Reinforcement through Implicit Rewards（PRIME）) · [Environments as Scaffold: Enriching Feedback to Bootstrap Self-Evolving Agents in Long-Horizon Tasks](/explore/10-Papers/04-强化学习与对齐/Environments as Scaffold Enriching Feedback to Bootstrap Self-Evolving Agents in Long-Horizon Tasks)（环境侧富反馈路线，LLM 智能体域）
-> 数学根基（占位层）：[策略梯度定理](/explore/40-Concepts/策略梯度定理)
-> 数学根基：[REINFORCE目标](/explore/30-Formulas/REINFORCE目标)
+> 谱系枢纽：[Direct Preference Optimization - Your Language Model is Secretly a Reward Model](/ai-fa/explore/10-Papers/04-强化学习与对齐/Direct Preference Optimization- Your Language Model is Secretly a Reward Model（DPO）)（图谱连通入口）
+> 近邻同族：[Learning beyond Teacher- Generalized On-Policy Distillation with Reward Extrapolation](/ai-fa/explore/10-Papers/04-强化学习与对齐/Learning beyond Teacher- Generalized On-Policy Distillation with Reward Extrapolation（G-OPD）) · [Process Reinforcement through Implicit Rewards](/ai-fa/explore/10-Papers/04-强化学习与对齐/Process Reinforcement through Implicit Rewards（PRIME）) · [Environments as Scaffold: Enriching Feedback to Bootstrap Self-Evolving Agents in Long-Horizon Tasks](/ai-fa/explore/10-Papers/04-强化学习与对齐/Environments as Scaffold Enriching Feedback to Bootstrap Self-Evolving Agents in Long-Horizon Tasks)（环境侧富反馈路线，LLM 智能体域）
+> 数学根基（占位层）：[策略梯度定理](/ai-fa/explore/40-Concepts/策略梯度定理)
+> 数学根基：[REINFORCE目标](/ai-fa/explore/30-Formulas/REINFORCE目标)
 
 ## 7. 读前须知
 

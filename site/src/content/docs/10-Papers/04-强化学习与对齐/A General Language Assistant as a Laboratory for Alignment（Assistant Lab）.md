@@ -32,12 +32,12 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- 实验对象即 [RLHF目标](/explore/30-Formulas/RLHF目标)（β 扫描 = KL-奖励权衡曲线）
+- 实验对象即 [RLHF目标](/ai-fa/explore/30-Formulas/RLHF目标)（β 扫描 = KL-奖励权衡曲线）
 
 ## 5. 与前作的关系
 
-- 扩展了 [Deep reinforcement learning from human preferences](/explore/10-Papers/04-强化学习与对齐/Deep reinforcement learning from human preferences（RLHF）) 到通用助手域
-- 为 [Constitutional AI - Harmlessness from AI Feedback](/explore/10-Papers/04-强化学习与对齐/Constitutional AI- Harmlessness from AI Feedback（CAI）) 铺垫（同团队前身）
+- 扩展了 [Deep reinforcement learning from human preferences](/ai-fa/explore/10-Papers/04-强化学习与对齐/Deep reinforcement learning from human preferences（RLHF）) 到通用助手域
+- 为 [Constitutional AI - Harmlessness from AI Feedback](/ai-fa/explore/10-Papers/04-强化学习与对齐/Constitutional AI- Harmlessness from AI Feedback（CAI）) 铺垫（同团队前身）
 
 ## 6. 影响与后续
 
@@ -46,26 +46,26 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[RLHF目标](/explore/30-Formulas/RLHF目标)、[KL散度](/explore/40-Concepts/KL散度)（β 的作用）
+[RLHF目标](/ai-fa/explore/30-Formulas/RLHF目标)、[KL散度](/ai-fa/explore/40-Concepts/KL散度)（β 的作用）
 
-> 近邻同族：[A General Theoretical Paradigm to Understand Learning from Human Preferences](/explore/10-Papers/04-强化学习与对齐/A General Theoretical Paradigm to Understand Learning from Human Preferences（IPO）) · [Deep reinforcement learning from human preferences](/explore/10-Papers/04-强化学习与对齐/Deep reinforcement learning from human preferences（RLHF）)
+> 近邻同族：[A General Theoretical Paradigm to Understand Learning from Human Preferences](/ai-fa/explore/10-Papers/04-强化学习与对齐/A General Theoretical Paradigm to Understand Learning from Human Preferences（IPO）) · [Deep reinforcement learning from human preferences](/ai-fa/explore/10-Papers/04-强化学习与对齐/Deep reinforcement learning from human preferences（RLHF）)
 
-> 相关：[OPTD- On-Policy Transition Distillation with Consistency-Guided Adaptive Compression for Few-Step Diffusion Language Models](/explore/10-Papers/04-强化学习与对齐/OPTD- On-Policy Transition Distillation with Consistency-Guided Adaptive Compression for Few-Step Diffusion Language Models（OPTD）)
+> 相关：[OPTD- On-Policy Transition Distillation with Consistency-Guided Adaptive Compression for Few-Step Diffusion Language Models](/ai-fa/explore/10-Papers/04-强化学习与对齐/OPTD- On-Policy Transition Distillation with Consistency-Guided Adaptive Compression for Few-Step Diffusion Language Models（OPTD）)
 
-> 相关：[ORPO - Monolithic Preference Optimization without Reference Model](/explore/10-Papers/04-强化学习与对齐/ORPO- Monolithic Preference Optimization without Reference Model（ORPO）)
+> 相关：[ORPO - Monolithic Preference Optimization without Reference Model](/ai-fa/explore/10-Papers/04-强化学习与对齐/ORPO- Monolithic Preference Optimization without Reference Model（ORPO）)
 
-> 相关：[Process-based Self-Rewarding Language Models](/explore/10-Papers/04-强化学习与对齐/Process-based Self-Rewarding Language Models（PSR）)
+> 相关：[Process-based Self-Rewarding Language Models](/ai-fa/explore/10-Papers/04-强化学习与对齐/Process-based Self-Rewarding Language Models（PSR）)
 
-> 相关：[PRPO- Aligning Process Reward with Outcome Reward in Policy Optimization](/explore/10-Papers/04-强化学习与对齐/PRPO- Aligning Process Reward with Outcome Reward in Policy Optimization（PRPO）)
+> 相关：[PRPO- Aligning Process Reward with Outcome Reward in Policy Optimization](/ai-fa/explore/10-Papers/04-强化学习与对齐/PRPO- Aligning Process Reward with Outcome Reward in Policy Optimization（PRPO）)
 
-> 相关：[Reward-Gated On-Policy Distillation](/explore/10-Papers/04-强化学习与对齐/Reward-Gated On-Policy Distillation（RG-OPD）)
+> 相关：[Reward-Gated On-Policy Distillation](/ai-fa/explore/10-Papers/04-强化学习与对齐/Reward-Gated On-Policy Distillation（RG-OPD）)
 
-> 相关：[Self-Distilled Reasoner- On-Policy Self-Distillation for Large Language Models](/explore/10-Papers/04-强化学习与对齐/Self-Distilled Reasoner- On-Policy Self-Distillation for Large Language Models（OPSD）)
+> 相关：[Self-Distilled Reasoner- On-Policy Self-Distillation for Large Language Models](/ai-fa/explore/10-Papers/04-强化学习与对齐/Self-Distilled Reasoner- On-Policy Self-Distillation for Large Language Models（OPSD）)
 
-> 相关：[Self-Guided Process Reward Optimization with Redefined Step-wise Advantage for Process Reinforcement Learning](/explore/10-Papers/04-强化学习与对齐/Self-Guided Process Reward Optimization with Redefined Step-wise Advantage for Process Reinforcement Learning（SPRO）)
+> 相关：[Self-Guided Process Reward Optimization with Redefined Step-wise Advantage for Process Reinforcement Learning](/ai-fa/explore/10-Papers/04-强化学习与对齐/Self-Guided Process Reward Optimization with Redefined Step-wise Advantage for Process Reinforcement Learning（SPRO）)
 
-> 相关：[SG-OPD- Sign-Gated On-Policy Distillation via Sign-Consistency Gating and Phased Teacher Sampling](/explore/10-Papers/04-强化学习与对齐/SG-OPD- Sign-Gated On-Policy Distillation via Sign-Consistency Gating and Phased Teacher Sampling（SG-OPD）)
+> 相关：[SG-OPD- Sign-Gated On-Policy Distillation via Sign-Consistency Gating and Phased Teacher Sampling](/ai-fa/explore/10-Papers/04-强化学习与对齐/SG-OPD- Sign-Gated On-Policy Distillation via Sign-Consistency Gating and Phased Teacher Sampling（SG-OPD）)
 
-> 相关：[Tandem Reinforcement Learning with Verifiable Rewards](/explore/10-Papers/04-强化学习与对齐/Tandem Reinforcement Learning with Verifiable Rewards（TRL）)
+> 相关：[Tandem Reinforcement Learning with Verifiable Rewards](/ai-fa/explore/10-Papers/04-强化学习与对齐/Tandem Reinforcement Learning with Verifiable Rewards（TRL）)
 
-> 相关：[UltraFeedback- Boosting Language Models with Scaled AI Feedback](/explore/10-Papers/04-强化学习与对齐/UltraFeedback- Boosting Language Models with Scaled AI Feedback（UltraFeedback）)
+> 相关：[UltraFeedback- Boosting Language Models with Scaled AI Feedback](/ai-fa/explore/10-Papers/04-强化学习与对齐/UltraFeedback- Boosting Language Models with Scaled AI Feedback（UltraFeedback）)

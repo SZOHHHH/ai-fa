@@ -30,7 +30,7 @@ layer: 精化占位
 （待精读）
 
 ## 5. 与前作/矩阵关系
-- 线锚：[世界模型](/explore/20-Algorithms/世界模型) · [策略梯度定理](/explore/40-Concepts/策略梯度定理)（占位挂链，处理段精化）
+- 线锚：[世界模型](/ai-fa/explore/20-Algorithms/世界模型) · [策略梯度定理](/ai-fa/explore/40-Concepts/策略梯度定理)（占位挂链，处理段精化）
 - 研判：⚪ 词族假阳性（decision-aware 哨兵撞 risk/calibration 词；同 TreeFI 入台账）
 - 治理轴参考
 

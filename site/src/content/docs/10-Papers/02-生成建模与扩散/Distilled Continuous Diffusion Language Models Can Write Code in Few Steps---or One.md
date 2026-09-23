@@ -23,7 +23,7 @@ tags: [paper]
 ## 2. 核心贡献
 
 - **AR→连续扩散改造**：复用 Qwen3-0.6B 的主干+词表投影，因果注意力换双向、加噪声条件 AdaLN、输出头移位对齐——AR 初始化把验证 NLL 从 3.65 压到 3.59（从头训 3.65 / AR init 3.62 / +对齐 3.59）
-- **两级蒸馏策略**：少步（K=4/8/16）用 [DMD](/explore/10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）)（推理对齐训练+on-policy critic）；**单步 DMD 失效**→换配对轨迹蒸馏（teacher/student 共享初始噪声，teacher 16 步 rollout 解码成 token 序列做逐位 CE 监督）
+- **两级蒸馏策略**：少步（K=4/8/16）用 [DMD](/ai-fa/explore/10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）)（推理对齐训练+on-policy critic）；**单步 DMD 失效**→换配对轨迹蒸馏（teacher/student 共享初始噪声，teacher 16 步 rollout 解码成 token 序列做逐位 CE 监督）
 - **蒸馏改变 scaling 曲线**：PlaidQ-D16 达 31.78/40.49 pass@10（HumanEval/MBPP+），超过教师 128-512 步最好成绩（28.57/35.21）；1 步 D1 达 7.07 pass@1（HumanEval，5 样本）——单步可生成功能正确的程序
 - **工程三件套**：SWVR 流式词表核（152k 词表×2048 序列的 $$B{\times}L{\times}V$$ 概率张量不落地，激活内存 −29.6% 且数值精确等价）+ 混合 Muon-AdamW 优化器 + 零样本 CFG（弱化前缀当负分支，logit 空间引导）
 
@@ -41,16 +41,16 @@ tags: [paper]
   **直觉**：三项=「起点贴高斯先验+终点能解码回 token+中途能去噪」，权重 $$w(t)$$ 是 VDM 的噪声水平加权——语言似然被连续扩散化。
 - 类别重参数化：$$\hat{x}_0=\mathrm{softmax}(hW)E$$——**直觉**：不回归任意向量，而是"按词表概率给码本行加权平均"，每个干净预测天然可解码；E 行单位范数⇒$$\lVert\hat{x}_0\rVert\le 1$$。
 - DMD 方向（式 3）：$$s=\lvert G-\mathrm{sg}(T)\rVert_{\bar{M}},\; G_{target}=\mathrm{sg}(G)+\bar{M}\,s\cdot \mathrm{sg}(T-F),\; \mathcal{L}_{DMD}=\lVert G-G_{target}\rVert_2^2$$
-  **直觉**：student 向 teacher、离 critic 的方向走一步，步长按自身误差归一——与 [DMD](/explore/10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）) 原式同构（分数差∝去噪差），只是搬进嵌入空间；对照本库 RL05.5 v3 线的 $$\mathcal{L}_{DMD}$$ 同款。
+  **直觉**：student 向 teacher、离 critic 的方向走一步，步长按自身误差归一——与 [DMD](/ai-fa/explore/10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）) 原式同构（分数差∝去噪差），只是搬进嵌入空间；对照本库 RL05.5 v3 线的 $$\mathcal{L}_{DMD}$$ 同款。
 - 配对轨迹损失（式 4）：$$\mathcal{L}_{pair}=\mathbb{E}_z[\mathrm{CE}_M(p(\cdot\mid z,c),\,x(z))]$$——**直觉**：同一噪声 $$z$$ 下 teacher 的多步答案就是标准答案，student 一步直答对答案——分布匹配只知道"像"，配对知道"哪个对哪个"。
 - 反向映射增益（式 5）：$$g^{(K)}(\tau)=\sigma^{(K)}\tau K,\; \sigma^{(K)}=\sqrt{1-\exp(-\tfrac{1-\sigma_0^2}{2K})}$$，稳定条件 $$g<1$$——**直觉**：步数少时每步跨距大，温度 $$\tau$$ 放大去噪预测会让反向映射发散，所以步数越少温度越低。
 
 ## 5. 与前作/矩阵关系
 
-- ← 前身：[Plaid 一脉](/explore/10-Papers/02-生成建模与扩散/Building Normalizing Flows with Stochastic Interpolants（随机插值）)（Gulrajani & Hashimoto 2023 的连续扩散 LM 形制）；AR 初始化对齐=Peng et al. 2026b 的表示对齐技术
-- ← 蒸馏骨架：[DMD](/explore/10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）) + [DMD2](/explore/10-Papers/02-生成建模与扩散/Improved Distribution Matching Distillation for Fast Image Synthesis（DMD2）)（on-policy critic+推理对齐训练）——图像域 DMD 的语言域移植
+- ← 前身：[Plaid 一脉](/ai-fa/explore/10-Papers/02-生成建模与扩散/Building Normalizing Flows with Stochastic Interpolants（随机插值）)（Gulrajani & Hashimoto 2023 的连续扩散 LM 形制）；AR 初始化对齐=Peng et al. 2026b 的表示对齐技术
+- ← 蒸馏骨架：[DMD](/ai-fa/explore/10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）) + [DMD2](/ai-fa/explore/10-Papers/02-生成建模与扩散/Improved Distribution Matching Distillation for Fast Image Synthesis（DMD2）)（on-policy critic+推理对齐训练）——图像域 DMD 的语言域移植
 - → 后继方向：作者展望把更多连续蒸馏工具（consistency、flow map）搬进语言
-- ≡ 谱系对照：与 [一致性模型](/explore/10-Papers/02-生成建模与扩散/Consistency Models（一致性模型）)/[MeanFlow](/explore/10-Papers/02-生成建模与扩散/Mean Flows for One-step Generative Modeling（MeanFlow）) 同属"学短轨迹"家族但走分布匹配+配对路线；与 [FS-DFM](/explore/10-Papers/02-生成建模与扩散/Trajectory as the Teacher- Few-Step Discrete Flow Matching via Energy-Navigated Distillation（FS-DFM）)（离散侧轨迹蒸馏）构成"轨迹当教师"的连续/离散双版本
+- ≡ 谱系对照：与 [一致性模型](/ai-fa/explore/10-Papers/02-生成建模与扩散/Consistency Models（一致性模型）)/[MeanFlow](/ai-fa/explore/10-Papers/02-生成建模与扩散/Mean Flows for One-step Generative Modeling（MeanFlow）) 同属"学短轨迹"家族但走分布匹配+配对路线；与 [FS-DFM](/ai-fa/explore/10-Papers/02-生成建模与扩散/Trajectory as the Teacher- Few-Step Discrete Flow Matching via Energy-Navigated Distillation（FS-DFM）)（离散侧轨迹蒸馏）构成"轨迹当教师"的连续/离散双版本
 - ↔ 与 E1 对话：同轴不同域——他们蒸馏目标=生成质量（pass@k，执行正确性），我们 E1 蒸馏目标=决策保真（价值/奖励头读出匹配）；见⑦解读与 RL05.5
 
 ## 6. 影响后续
@@ -61,10 +61,10 @@ tags: [paper]
 
 ## 7. 读前须知
 
-- **必前置**：[知识蒸馏](/explore/40-Concepts/知识蒸馏)（教师-学生母框架）、[NFE](/explore/40-Concepts/NFE（函数求值次数）)（少步化的度量衡）、[KL散度](/explore/40-Concepts/KL散度)（DMD 的反向 KL 动机）
-- **数学**：[Score函数](/explore/40-Concepts/Score函数)（分数差=去噪差的换算）、[DDIM 更新规则](/explore/30-Formulas/DDIM更新规则)（确定性反向映射与增益分析）、[重参数化](/explore/40-Concepts/重参数化)（类别重参数化是其离散变体）
-- **谱系**：[扩散模型](/explore/20-Algorithms/扩散模型)（Plaid 形制=VP-SDE 嵌入空间版）、[一致性模型](/explore/20-Algorithms/一致性模型)（另一条少步路线）
+- **必前置**：[知识蒸馏](/ai-fa/explore/40-Concepts/知识蒸馏)（教师-学生母框架）、[NFE](/ai-fa/explore/40-Concepts/NFE（函数求值次数）)（少步化的度量衡）、[KL散度](/ai-fa/explore/40-Concepts/KL散度)（DMD 的反向 KL 动机）
+- **数学**：[Score函数](/ai-fa/explore/40-Concepts/Score函数)（分数差=去噪差的换算）、[DDIM 更新规则](/ai-fa/explore/30-Formulas/DDIM更新规则)（确定性反向映射与增益分析）、[重参数化](/ai-fa/explore/40-Concepts/重参数化)（类别重参数化是其离散变体）
+- **谱系**：[扩散模型](/ai-fa/explore/20-Algorithms/扩散模型)（Plaid 形制=VP-SDE 嵌入空间版）、[一致性模型](/ai-fa/explore/20-Algorithms/一致性模型)（另一条少步路线）
 
-> 谱系枢纽：[DMD](/explore/10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）)（蒸馏骨架入口）
-> 近邻同族：[DMD2](/explore/10-Papers/02-生成建模与扩散/Improved Distribution Matching Distillation for Fast Image Synthesis（DMD2）) · [FS-DFM](/explore/10-Papers/02-生成建模与扩散/Trajectory as the Teacher- Few-Step Discrete Flow Matching via Energy-Navigated Distillation（FS-DFM）) · [连续/离散扩散 LM 邻居](/explore/10-Papers/02-生成建模与扩散/From Truncation to Commitment Persistent Context in Uniform Discrete Diffusion)
-> 数学根基：[知识蒸馏](/explore/40-Concepts/知识蒸馏) · [NFE](/explore/40-Concepts/NFE（函数求值次数）) · [Score函数](/explore/40-Concepts/Score函数) · [重参数化](/explore/40-Concepts/重参数化)
+> 谱系枢纽：[DMD](/ai-fa/explore/10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）)（蒸馏骨架入口）
+> 近邻同族：[DMD2](/ai-fa/explore/10-Papers/02-生成建模与扩散/Improved Distribution Matching Distillation for Fast Image Synthesis（DMD2）) · [FS-DFM](/ai-fa/explore/10-Papers/02-生成建模与扩散/Trajectory as the Teacher- Few-Step Discrete Flow Matching via Energy-Navigated Distillation（FS-DFM）) · [连续/离散扩散 LM 邻居](/ai-fa/explore/10-Papers/02-生成建模与扩散/From Truncation to Commitment Persistent Context in Uniform Discrete Diffusion)
+> 数学根基：[知识蒸馏](/ai-fa/explore/40-Concepts/知识蒸馏) · [NFE](/ai-fa/explore/40-Concepts/NFE（函数求值次数）) · [Score函数](/ai-fa/explore/40-Concepts/Score函数) · [重参数化](/ai-fa/explore/40-Concepts/重参数化)

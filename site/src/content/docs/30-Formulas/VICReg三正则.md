@@ -23,6 +23,6 @@ $$
 
 ## 本命论文
 
-[VICReg- Variance-Invariance-Covariance Regularization for Self-Supervised Learning](/explore/10-Papers/08-多模态/VICReg- Variance-Invariance-Covariance Regularization for Self-Supervised Learning（VICReg）)
+[VICReg- Variance-Invariance-Covariance Regularization for Self-Supervised Learning](/ai-fa/explore/10-Papers/08-多模态/VICReg- Variance-Invariance-Covariance Regularization for Self-Supervised Learning（VICReg）)
 
 > 待办：精读时补"表示对照表"（不同论文的符号差异换算）

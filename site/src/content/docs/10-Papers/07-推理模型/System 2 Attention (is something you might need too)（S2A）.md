@@ -33,7 +33,7 @@ y = p_\theta\big(\cdot\ \vert\ \mathrm{rewrite}_\theta(x)\big)
 $$
 
 
-**直觉**：← [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）)（重写也是一种思考）；→ 上下文工程线的起点
+**直觉**：← [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](/ai-fa/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）)（重写也是一种思考）；→ 上下文工程线的起点
 
 ## 5. 与前作/矩阵关系
 
@@ -47,6 +47,6 @@ $$
 
 undefined
 
-> 近邻同族：[A Survey on In-context Learning](/explore/10-Papers/07-推理模型/A Survey on In-context Learning（ICL Survey）)
+> 近邻同族：[A Survey on In-context Learning](/ai-fa/explore/10-Papers/07-推理模型/A Survey on In-context Learning（ICL Survey）)
 
-> 数学根基：[思维链（CoT）](/explore/40-Concepts/思维链（CoT）)
+> 数学根基：[思维链（CoT）](/ai-fa/explore/40-Concepts/思维链（CoT）)

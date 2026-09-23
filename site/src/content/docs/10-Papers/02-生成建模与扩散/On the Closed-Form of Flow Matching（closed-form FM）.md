@@ -38,15 +38,15 @@ $$
 
 ## 5. 与前作/矩阵关系
 
-← 流匹配/矩形流的理论后继；支撑 [MeanFlow](/explore/10-Papers/02-生成建模与扩散/Mean Flows for One-step Generative Modeling（MeanFlow）) 系的"平均量"合法性
+← 流匹配/矩形流的理论后继；支撑 [MeanFlow](/ai-fa/explore/10-Papers/02-生成建模与扩散/Mean Flows for One-step Generative Modeling（MeanFlow）) 系的"平均量"合法性
 
 
 ## 6. 影响与占位意义
 
 理论奠基层（RS 库 06-04 已有情报卡）。
 
-> 近邻同族：[Align Your Flow - Scaling Continuous-Time Flow Map Distillation](/explore/10-Papers/02-生成建模与扩散/Align Your Flow- Scaling Continuous-Time Flow Map Distillation（AYF）) · [Computational and Statistical Guarantees of the c-Rectified flow](/explore/10-Papers/02-生成建模与扩散/Computational and Statistical Guarantees of the c-Rectified flow（c-RF理论）)
-> 数学根基（占位层）：[条件流匹配损失](/explore/30-Formulas/条件流匹配损失) · [概率流ODE](/explore/30-Formulas/概率流ODE) · [常微分方程（ODE）](/explore/40-Concepts/常微分方程（ODE）)
+> 近邻同族：[Align Your Flow - Scaling Continuous-Time Flow Map Distillation](/ai-fa/explore/10-Papers/02-生成建模与扩散/Align Your Flow- Scaling Continuous-Time Flow Map Distillation（AYF）) · [Computational and Statistical Guarantees of the c-Rectified flow](/ai-fa/explore/10-Papers/02-生成建模与扩散/Computational and Statistical Guarantees of the c-Rectified flow（c-RF理论）)
+> 数学根基（占位层）：[条件流匹配损失](/ai-fa/explore/30-Formulas/条件流匹配损失) · [概率流ODE](/ai-fa/explore/30-Formulas/概率流ODE) · [常微分方程（ODE）](/ai-fa/explore/40-Concepts/常微分方程（ODE）)
 
 ## 7. 读前须知
 

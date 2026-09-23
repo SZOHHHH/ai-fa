@@ -16,7 +16,7 @@ pdf: 已下载（PDF/）
 
 ## 1. 一句话贡献
 
-18 亿"噪声"图文对（未清洗 alt 文本）+ 双塔对比——证明**规模胜过精洗**，与 [CLIP](/explore/10-Papers/08-多模态/Learning Transferable Visual Models From Natural Language Supervision（CLIP）) 同期互证的姊妹篇。
+18 亿"噪声"图文对（未清洗 alt 文本）+ 双塔对比——证明**规模胜过精洗**，与 [CLIP](/ai-fa/explore/10-Papers/08-多模态/Learning Transferable Visual Models From Natural Language Supervision（CLIP）) 同期互证的姊妹篇。
 
 ## 2. 核心贡献
 
@@ -33,12 +33,12 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- [CLIP对比损失](/explore/30-Formulas/CLIP对比损失)（ALIGN 行）
+- [CLIP对比损失](/ai-fa/explore/30-Formulas/CLIP对比损失)（ALIGN 行）
 
 ## 5. 与前作的关系
 
-- 与 [Learning Transferable Visual Models From Natural Language Supervision](/explore/10-Papers/08-多模态/Learning Transferable Visual Models From Natural Language Supervision（CLIP）) 平行独立，共同确立对比对齐范式
-- 数据哲学呼应 [Language Models are Few-Shot Learners](/explore/10-Papers/01-架构演进/Language Models are Few-Shot Learners（GPT-3）)：规模>清洗
+- 与 [Learning Transferable Visual Models From Natural Language Supervision](/ai-fa/explore/10-Papers/08-多模态/Learning Transferable Visual Models From Natural Language Supervision（CLIP）) 平行独立，共同确立对比对齐范式
+- 数据哲学呼应 [Language Models are Few-Shot Learners](/ai-fa/explore/10-Papers/01-架构演进/Language Models are Few-Shot Learners（GPT-3）)：规模>清洗
 
 ## 6. 影响与后续
 
@@ -47,4 +47,4 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[CLIP对比损失](/explore/30-Formulas/CLIP对比损失)、[Learning Transferable Visual Models From Natural Language Supervision](/explore/10-Papers/08-多模态/Learning Transferable Visual Models From Natural Language Supervision（CLIP）)
+[CLIP对比损失](/ai-fa/explore/30-Formulas/CLIP对比损失)、[Learning Transferable Visual Models From Natural Language Supervision](/ai-fa/explore/10-Papers/08-多模态/Learning Transferable Visual Models From Natural Language Supervision（CLIP）)

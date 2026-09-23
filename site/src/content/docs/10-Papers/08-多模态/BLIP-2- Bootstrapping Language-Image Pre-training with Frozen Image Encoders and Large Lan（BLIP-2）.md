@@ -20,13 +20,13 @@ Q-Former 桥接器：32 个可学查询向量从冻结视觉编码器"抽取"特
 
 ## 2. 核心贡献
 
-- **Q-Former**：查询塔（[注意力机制](/explore/40-Concepts/注意力机制) 的 cross-attn）压缩任意视觉特征到固定 32 token
+- **Q-Former**：查询塔（[注意力机制](/ai-fa/explore/40-Concepts/注意力机制) 的 cross-attn）压缩任意视觉特征到固定 32 token
 - **两阶段训练**：表征学习（对比+匹配+生成三目标）→ 生成学习（对齐 LLM）
 - **冻结双塔**：视觉与语言模型都不动——只训桥
 
 ## 3. 方法概要
 
-1. 32 个查询向量 cross-attend 到 [ViT](/explore/10-Papers/01-架构演进/An Image is Worth 16x16 Words- Transformers for Image Recognition at Scale（ViT）) 特征
+1. 32 个查询向量 cross-attend 到 [ViT](/ai-fa/explore/10-Papers/01-架构演进/An Image is Worth 16x16 Words- Transformers for Image Recognition at Scale（ViT）) 特征
 2. 阶段一：图文对比/匹配/文本生成三任务联合
 3. 阶段二：Q-Former 输出接 LLM（生成式对齐）
 4. VQA/caption 零样本优异
@@ -37,8 +37,8 @@ Q-Former 桥接器：32 个可学查询向量从冻结视觉编码器"抽取"特
 
 ## 5. 与前作的关系
 
-- 改进了 BLIP-1（自身前作）与 [Flamingo - a Visual Language Model for Few-Shot Learning](/explore/10-Papers/08-多模态/Flamingo- a Visual Language Model for Few-Shot Learning（Flamingo）)（Flamingo 插层多、BLIP-2 抽取少）
-- 对比 [LLaVA](/explore/10-Papers/08-多模态/Visual Instruction Tuning（LLaVA）)：复杂桥 vs 简单投影——后来简洁胜出
+- 改进了 BLIP-1（自身前作）与 [Flamingo - a Visual Language Model for Few-Shot Learning](/ai-fa/explore/10-Papers/08-多模态/Flamingo- a Visual Language Model for Few-Shot Learning（Flamingo）)（Flamingo 插层多、BLIP-2 抽取少）
+- 对比 [LLaVA](/ai-fa/explore/10-Papers/08-多模态/Visual Instruction Tuning（LLaVA）)：复杂桥 vs 简单投影——后来简洁胜出
 
 ## 6. 影响与后续
 
@@ -47,16 +47,16 @@ Q-Former 桥接器：32 个可学查询向量从冻结视觉编码器"抽取"特
 
 ## 7. 读前须知
 
-[视觉语言模型（VLM）](/explore/40-Concepts/视觉语言模型（VLM）)、[注意力机制](/explore/40-Concepts/注意力机制)
+[视觉语言模型（VLM）](/ai-fa/explore/40-Concepts/视觉语言模型（VLM）)、[注意力机制](/ai-fa/explore/40-Concepts/注意力机制)
 
-> 相关：[Toolformer- Language Models Can Teach Themselves to Use Tools](/explore/10-Papers/08-多模态/Toolformer- Language Models Can Teach Themselves to Use Tools（Toolformer）)
+> 相关：[Toolformer- Language Models Can Teach Themselves to Use Tools](/ai-fa/explore/10-Papers/08-多模态/Toolformer- Language Models Can Teach Themselves to Use Tools（Toolformer）)
 
-> 相关：[VICReg- Variance-Invariance-Covariance Regularization for Self-Supervised Learning](/explore/10-Papers/08-多模态/VICReg- Variance-Invariance-Covariance Regularization for Self-Supervised Learning（VICReg）)
+> 相关：[VICReg- Variance-Invariance-Covariance Regularization for Self-Supervised Learning](/ai-fa/explore/10-Papers/08-多模态/VICReg- Variance-Invariance-Covariance Regularization for Self-Supervised Learning（VICReg）)
 
-> 相关：[Video Language Planning](/explore/10-Papers/08-多模态/Video Language Planning（VLP）)
+> 相关：[Video Language Planning](/ai-fa/explore/10-Papers/08-多模态/Video Language Planning（VLP）)
 
-> 相关：[VL-JEPA- Joint Embedding Predictive Architecture for Vision-language](/explore/10-Papers/08-多模态/VL-JEPA- Joint Embedding Predictive Architecture for Vision-language（VL-JEPA）)
+> 相关：[VL-JEPA- Joint Embedding Predictive Architecture for Vision-language](/ai-fa/explore/10-Papers/08-多模态/VL-JEPA- Joint Embedding Predictive Architecture for Vision-language（VL-JEPA）)
 
-> 相关：[WaveNet- A Generative Model for Raw Audio](/explore/10-Papers/08-多模态/WaveNet- A Generative Model for Raw Audio（WaveNet）)
+> 相关：[WaveNet- A Generative Model for Raw Audio](/ai-fa/explore/10-Papers/08-多模态/WaveNet- A Generative Model for Raw Audio（WaveNet）)
 
-> 数学根基：[三层感知机投影](/explore/30-Formulas/三层感知机投影) · [CLIP对比损失](/explore/30-Formulas/CLIP对比损失) · [注意力核心公式](/explore/30-Formulas/注意力核心公式)
+> 数学根基：[三层感知机投影](/ai-fa/explore/30-Formulas/三层感知机投影) · [CLIP对比损失](/ai-fa/explore/30-Formulas/CLIP对比损失) · [注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)

@@ -34,7 +34,7 @@ p_\theta(y\ \vert\ \text{demos}, x)\ \text{的形式化}
 $$
 
 
-**直觉**：← [Language Models are Few-Shot Learners](/explore/10-Papers/01-架构演进/Language Models are Few-Shot Learners（GPT-3）)（ICL 能力来源）；→ [CoT](/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）)/自举（ICL 的推理特化）
+**直觉**：← [Language Models are Few-Shot Learners](/ai-fa/explore/10-Papers/01-架构演进/Language Models are Few-Shot Learners（GPT-3）)（ICL 能力来源）；→ [CoT](/ai-fa/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）)/自举（ICL 的推理特化）
 
 ## 5. 与前作/矩阵关系
 
@@ -48,22 +48,22 @@ ICL 研究的入口文献
 
 undefined
 
-> 近邻同族：[Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）) · [Generalizable Chain-of-Thought Prompting in Mixed-task Scenarios with Large Language Models](/explore/10-Papers/07-推理模型/Generalizable Chain-of-Thought Prompting in Mixed-task Scenarios with Large Language Models（KoT）)
+> 近邻同族：[Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](/ai-fa/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）) · [Generalizable Chain-of-Thought Prompting in Mixed-task Scenarios with Large Language Models](/ai-fa/explore/10-Papers/07-推理模型/Generalizable Chain-of-Thought Prompting in Mixed-task Scenarios with Large Language Models（KoT）)
 
-> 相关：[Make Your LLM Fully Utilize the Context](/explore/10-Papers/07-推理模型/Make Your LLM Fully Utilize the Context（FILU）)
+> 相关：[Make Your LLM Fully Utilize the Context](/ai-fa/explore/10-Papers/07-推理模型/Make Your LLM Fully Utilize the Context（FILU）)
 
-> 相关：[Math-Shepherd- Verify and Reinforce LLMs Step-by-step without Human Annotations](/explore/10-Papers/07-推理模型/Math-Shepherd- Verify and Reinforce LLMs Step-by-step without Human Annotations（Math-Shepherd）)
+> 相关：[Math-Shepherd- Verify and Reinforce LLMs Step-by-step without Human Annotations](/ai-fa/explore/10-Papers/07-推理模型/Math-Shepherd- Verify and Reinforce LLMs Step-by-step without Human Annotations（Math-Shepherd）)
 
-> 相关：[Scaling Instruction-Finetuned Language Models](/explore/10-Papers/07-推理模型/Scaling Instruction-Finetuned Language Models（Flan-T5）)
+> 相关：[Scaling Instruction-Finetuned Language Models](/ai-fa/explore/10-Papers/07-推理模型/Scaling Instruction-Finetuned Language Models（Flan-T5）)
 
-> 相关：[Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters](/explore/10-Papers/07-推理模型/Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Param（Test-Time Compute）)
+> 相关：[Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters](/ai-fa/explore/10-Papers/07-推理模型/Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Param（Test-Time Compute）)
 
-> 相关：[STaR - Bootstrapping Reasoning With Reasoning](/explore/10-Papers/07-推理模型/STaR- Bootstrapping Reasoning With Reasoning（STaR）)
+> 相关：[STaR - Bootstrapping Reasoning With Reasoning](/ai-fa/explore/10-Papers/07-推理模型/STaR- Bootstrapping Reasoning With Reasoning（STaR）)
 
-> 相关：[System 2 Attention (is something you might need too)](/explore/10-Papers/07-推理模型/System 2 Attention (is something you might need too)（S2A）)
+> 相关：[System 2 Attention (is something you might need too)](/ai-fa/explore/10-Papers/07-推理模型/System 2 Attention (is something you might need too)（S2A）)
 
-> 相关：[Test-Time Scaling Makes Overtraining Compute-Optimal](/explore/10-Papers/07-推理模型/Test-Time Scaling Makes Overtraining Compute-Optimal（T2T标度律）)
+> 相关：[Test-Time Scaling Makes Overtraining Compute-Optimal](/ai-fa/explore/10-Papers/07-推理模型/Test-Time Scaling Makes Overtraining Compute-Optimal（T2T标度律）)
 
-> 相关：[The AI Scientist- Towards Fully Automated Open-Ended Scientific Discovery](/explore/10-Papers/07-推理模型/The AI Scientist- Towards Fully Automated Open-Ended Scientific Discovery（AI Scientist）)
+> 相关：[The AI Scientist- Towards Fully Automated Open-Ended Scientific Discovery](/ai-fa/explore/10-Papers/07-推理模型/The AI Scientist- Towards Fully Automated Open-Ended Scientific Discovery（AI Scientist）)
 
-> 数学根基：[思维链（CoT）](/explore/40-Concepts/思维链（CoT）)
+> 数学根基：[思维链（CoT）](/ai-fa/explore/40-Concepts/思维链（CoT）)

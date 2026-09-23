@@ -33,12 +33,12 @@ MoE 装进 Transformer（每两层替换 FFN 为 MoE）+ 自动分片编译器�
 
 ## 4. 核心公式
 
-- [MoE门控公式](/explore/30-Formulas/MoE门控公式) §2 GShard 行
+- [MoE门控公式](/ai-fa/explore/30-Formulas/MoE门控公式) §2 GShard 行
 
 ## 5. 与前作的关系
 
-- 扩展了 [Outrageously Large Neural Networks - The Sparsely-Gated Mixture-of-Experts Layer](/explore/10-Papers/03-后处理/Outrageously Large Neural Networks- The Sparsely-Gated Mixture-of-Experts Layer（稀疏MoE）) 到 Transformer 与机器翻译
-- 前置于 [Switch Transformers - Scaling to Trillion Parameter Models with Simple and Efficient Sparsity](/explore/10-Papers/05-MoE/Switch Transformers- Scaling to Trillion Parameter Models with Simple and Efficient Spars（Switch）)（简化其启发式）
+- 扩展了 [Outrageously Large Neural Networks - The Sparsely-Gated Mixture-of-Experts Layer](/ai-fa/explore/10-Papers/03-后处理/Outrageously Large Neural Networks- The Sparsely-Gated Mixture-of-Experts Layer（稀疏MoE）) 到 Transformer 与机器翻译
+- 前置于 [Switch Transformers - Scaling to Trillion Parameter Models with Simple and Efficient Sparsity](/ai-fa/explore/10-Papers/05-MoE/Switch Transformers- Scaling to Trillion Parameter Models with Simple and Efficient Spars（Switch）)（简化其启发式）
 
 ## 6. 影响与后续
 
@@ -47,4 +47,4 @@ MoE 装进 Transformer（每两层替换 FFN 为 MoE）+ 自动分片编译器�
 
 ## 7. 读前须知
 
-[混合专家（MoE）](/explore/20-Algorithms/混合专家（MoE）)、[MoE门控公式](/explore/30-Formulas/MoE门控公式)、[Outrageously Large Neural Networks - The Sparsely-Gated Mixture-of-Experts Layer](/explore/10-Papers/03-后处理/Outrageously Large Neural Networks- The Sparsely-Gated Mixture-of-Experts Layer（稀疏MoE）)
+[混合专家（MoE）](/ai-fa/explore/20-Algorithms/混合专家（MoE）)、[MoE门控公式](/ai-fa/explore/30-Formulas/MoE门控公式)、[Outrageously Large Neural Networks - The Sparsely-Gated Mixture-of-Experts Layer](/ai-fa/explore/10-Papers/03-后处理/Outrageously Large Neural Networks- The Sparsely-Gated Mixture-of-Experts Layer（稀疏MoE）)

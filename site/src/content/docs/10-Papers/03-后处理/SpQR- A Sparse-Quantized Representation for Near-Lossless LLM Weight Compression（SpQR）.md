@@ -35,12 +35,12 @@ tags: [paper, 后处理, 量化]
 - 稀疏分解：$$W \approx Q_{3\text{-}4\mathrm{bit}}(W \setminus \mathcal{O}) + \mathcal{O}_{16\mathrm{bit}}$$——直觉：99% 的权重安分守己住 3-4 bit 集体宿舍，<1% 的"刺头"（对舍入误差极敏感）单独住 16 bit 单间；总预算仍接近全低比特。
 - 异常值判据（迭代式）：$$e(W) - e(W \setminus \{w_i\}) > \tau$$ 则 $$w_i \in \mathcal{O}$$——直觉：**拿走它误差就明显降=它是误差主凶**，逐个揪出。
 - 双重量化：$$c_1 = Q_{8\mathrm{bit}}(c_1)$$（分组常数本身量化）——直觉：宿舍管理费本身也要省着花；平均每权重省 ~0.5 bit。
-- 误差链视角：总误差 $$=$$ 稠密项舍入误差 $$+$$ 异常项（≈0，16bit 视为无损）$$+$$ 补偿残差——与 [量化误差与异常值](/explore/30-Formulas/量化误差与异常值) 的"误差被异常值主导"命题同源。
+- 误差链视角：总误差 $$=$$ 稠密项舍入误差 $$+$$ 异常项（≈0，16bit 视为无损）$$+$$ 补偿残差——与 [量化误差与异常值](/ai-fa/explore/30-Formulas/量化误差与异常值) 的"误差被异常值主导"命题同源。
 
 ## 5. 与前作/矩阵关系
-- ← 异常值发现者：[LLM.int8](/explore/10-Papers/03-后处理/LLM.int8()- 8-bit Matrix Multiplication for Transformers at Scale（LLM.int8）)（Dettmers 同作者——先证明"异常值是量化拦路虎"（8bit 行级隔离），SpQR 把同一思想推到 3-4 bit（列级稀疏隔离）；矩阵上=int8 近无损→3-4bit 近无损的比特下探）。
-- ↔ 同族对照：[GPTQ](/explore/10-Papers/03-后处理/GPTQ- Accurate Post-Training Quantization for Generative Pre-trained Transformers（GPTQ）)（Hessian 逐列量化+误差传播补偿——正交技术，可组合）、[AWQ](/explore/10-Papers/03-后处理/AWQ- Activation-aware Weight Quantization for LLM Compression and Acceleration（AWQ）)（激活感知缩放——从"保护哪些权重"换成"缩放哪个通道"）；三分支构成 2023 量化轴的三种异常值哲学：**隔离（SpQR）/补偿（GPTQ）/缩放（AWQ）**。
-- 数学根基：[量化](/explore/40-Concepts/量化)（均匀量化骨架）、[量化误差与异常值](/explore/30-Formulas/量化误差与异常值)（误差-异常值依赖定律）。
+- ← 异常值发现者：[LLM.int8](/ai-fa/explore/10-Papers/03-后处理/LLM.int8()- 8-bit Matrix Multiplication for Transformers at Scale（LLM.int8）)（Dettmers 同作者——先证明"异常值是量化拦路虎"（8bit 行级隔离），SpQR 把同一思想推到 3-4 bit（列级稀疏隔离）；矩阵上=int8 近无损→3-4bit 近无损的比特下探）。
+- ↔ 同族对照：[GPTQ](/ai-fa/explore/10-Papers/03-后处理/GPTQ- Accurate Post-Training Quantization for Generative Pre-trained Transformers（GPTQ）)（Hessian 逐列量化+误差传播补偿——正交技术，可组合）、[AWQ](/ai-fa/explore/10-Papers/03-后处理/AWQ- Activation-aware Weight Quantization for LLM Compression and Acceleration（AWQ）)（激活感知缩放——从"保护哪些权重"换成"缩放哪个通道"）；三分支构成 2023 量化轴的三种异常值哲学：**隔离（SpQR）/补偿（GPTQ）/缩放（AWQ）**。
+- 数学根基：[量化](/ai-fa/explore/40-Concepts/量化)（均匀量化骨架）、[量化误差与异常值](/ai-fa/explore/30-Formulas/量化误差与异常值)（误差-异常值依赖定律）。
 
 ## 6. 影响后续
 - 边缘部署叙事成型："笔记本/手机跑 65B"从口号变系统方案；后续 llama.cpp/GGUF 系量化格式（Q4_K 族的分组+重要层加精度）承其衣钵。
@@ -48,4 +48,4 @@ tags: [paper, 后处理, 量化]
 - 局限：稀疏异常值的索引结构使加载/解码路径复杂；训练时补偿需要校准数据与少量训练算力。
 
 ## 7. 读前须知
-[量化](/explore/40-Concepts/量化)（均匀量化/分组量化骨架）→ [量化误差与异常值](/explore/30-Formulas/量化误差与异常值)（为什么 <1% 权重主导量化误差——本卡的全部动机）；对照读 LLM.int8（异常值现象发现）效果最佳。
+[量化](/ai-fa/explore/40-Concepts/量化)（均匀量化/分组量化骨架）→ [量化误差与异常值](/ai-fa/explore/30-Formulas/量化误差与异常值)（为什么 <1% 权重主导量化误差——本卡的全部动机）；对照读 LLM.int8（异常值现象发现）效果最佳。

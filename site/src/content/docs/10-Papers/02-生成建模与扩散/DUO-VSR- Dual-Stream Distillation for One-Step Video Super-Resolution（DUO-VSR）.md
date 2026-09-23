@@ -47,10 +47,10 @@ RS 库 03-23 已有；视频少步应用扩张。
 
 ---
 
-> 谱系枢纽：[Denoising Diffusion Probabilistic Models](/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Probabilistic Models（DDPM）)（图谱连通入口）
-> 近邻同族：[AnyFlow- Any-Step Video Diffusion Model with On-Policy Flow Map Distillation](/explore/10-Papers/02-生成建模与扩散/AnyFlow- Any-Step Video Diffusion Model with On-Policy Flow Map Distillation（AnyFlow）) · [Align Your Flow - Scaling Continuous-Time Flow Map Distillation](/explore/10-Papers/02-生成建模与扩散/Align Your Flow- Scaling Continuous-Time Flow Map Distillation（AYF）)
-> 数学根基（占位层）：[概率分布](/explore/40-Concepts/概率分布)
-> 数学根基：[蒸馏损失](/explore/30-Formulas/蒸馏损失) · [DSM目标](/explore/30-Formulas/DSM目标)
+> 谱系枢纽：[Denoising Diffusion Probabilistic Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Probabilistic Models（DDPM）)（图谱连通入口）
+> 近邻同族：[AnyFlow- Any-Step Video Diffusion Model with On-Policy Flow Map Distillation](/ai-fa/explore/10-Papers/02-生成建模与扩散/AnyFlow- Any-Step Video Diffusion Model with On-Policy Flow Map Distillation（AnyFlow）) · [Align Your Flow - Scaling Continuous-Time Flow Map Distillation](/ai-fa/explore/10-Papers/02-生成建模与扩散/Align Your Flow- Scaling Continuous-Time Flow Map Distillation（AYF）)
+> 数学根基（占位层）：[概率分布](/ai-fa/explore/40-Concepts/概率分布)
+> 数学根基：[蒸馏损失](/ai-fa/explore/30-Formulas/蒸馏损失) · [DSM目标](/ai-fa/explore/30-Formulas/DSM目标)
 
 ## 7. 读前须知
 

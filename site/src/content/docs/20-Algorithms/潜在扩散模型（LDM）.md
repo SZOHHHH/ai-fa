@@ -17,25 +17,25 @@ tags: [algo]
 
 | 论文 | 引入/发展了什么 | 年份 |
 |---|---|---|
-| [High-Resolution Image Synthesis with Latent Diffusion Models](/explore/10-Papers/02-生成建模与扩散/High-Resolution Image Synthesis with Latent Diffusion Models（LDM）) | 两阶段范式、cross-attn 条件注入 | 2022 |
+| [High-Resolution Image Synthesis with Latent Diffusion Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/High-Resolution Image Synthesis with Latent Diffusion Models（LDM）) | 两阶段范式、cross-attn 条件注入 | 2022 |
 | Stable Diffusion（工业产品） | LDM + 大规模文图对训练 | 2022+ |
 | SDXL / SD3 / Flux | 尺度化 + FM 化 | 2023–24 |
 
 ## 3. 核心公式
 
-- 复用 [DDPM训练目标](/explore/30-Formulas/DDPM训练目标)（在 $$z$$ 空间）
-- [无分类器引导（CFG）](/explore/30-Formulas/无分类器引导（CFG）) —— 文生图标配
-- [VQ-VAE目标](/explore/30-Formulas/VQ-VAE目标) / [ELBO目标](/explore/30-Formulas/ELBO目标) —— 压缩器的理论根基
+- 复用 [DDPM训练目标](/ai-fa/explore/30-Formulas/DDPM训练目标)（在 $$z$$ 空间）
+- [无分类器引导（CFG）](/ai-fa/explore/30-Formulas/无分类器引导（CFG）) —— 文生图标配
+- [VQ-VAE目标](/ai-fa/explore/30-Formulas/VQ-VAE目标) / [ELBO目标](/ai-fa/explore/30-Formulas/ELBO目标) —— 压缩器的理论根基
 
 ## 4. 数学概念分解
 
-同 [扩散模型](/explore/20-Algorithms/扩散模型)，外加：自编码、信息瓶颈直觉（8× 下采样是"丢弃高频细节换算力"的甜点）
+同 [扩散模型](/ai-fa/explore/20-Algorithms/扩散模型)，外加：自编码、信息瓶颈直觉（8× 下采样是"丢弃高频细节换算力"的甜点）
 
 ## 5. 变体与演进
 
 | 变体 | 相比本概念改了什么 | 代表论文 |
 |---|---|---|
-| DiT 潜扩散 | 骨干 U-Net → Transformer | [Scalable Diffusion Models with Transformers](/explore/10-Papers/02-生成建模与扩散/Scalable Diffusion Models with Transformers（DiT）) |
+| DiT 潜扩散 | 骨干 U-Net → Transformer | [Scalable Diffusion Models with Transformers](/ai-fa/explore/10-Papers/02-生成建模与扩散/Scalable Diffusion Models with Transformers（DiT）) |
 | 视频潜扩散 | 潜空间加时间轴（Sora 系） | Sora 报告（多模态线交叉） |
 | FM 潜扩散 | 扩散 → 流匹配骨干 | SD3/Flux |
 

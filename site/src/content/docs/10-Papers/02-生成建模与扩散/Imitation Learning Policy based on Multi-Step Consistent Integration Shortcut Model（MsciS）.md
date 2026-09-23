@@ -47,9 +47,9 @@ RS 库 10-22 情报；shortcut 家族任务面扩张。
 
 ---
 
-> 谱系枢纽：[Denoising Diffusion Probabilistic Models](/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Probabilistic Models（DDPM）)（图谱连通入口）
-> 近邻同族：[Align Your Flow - Scaling Continuous-Time Flow Map Distillation](/explore/10-Papers/02-生成建模与扩散/Align Your Flow- Scaling Continuous-Time Flow Map Distillation（AYF）) · [Computational and Statistical Guarantees of the c-Rectified flow](/explore/10-Papers/02-生成建模与扩散/Computational and Statistical Guarantees of the c-Rectified flow（c-RF理论）)
-> 数学根基（占位层）：[条件流匹配损失](/explore/30-Formulas/条件流匹配损失) · [注意力核心公式](/explore/30-Formulas/注意力核心公式)
+> 谱系枢纽：[Denoising Diffusion Probabilistic Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Probabilistic Models（DDPM）)（图谱连通入口）
+> 近邻同族：[Align Your Flow - Scaling Continuous-Time Flow Map Distillation](/ai-fa/explore/10-Papers/02-生成建模与扩散/Align Your Flow- Scaling Continuous-Time Flow Map Distillation（AYF）) · [Computational and Statistical Guarantees of the c-Rectified flow](/ai-fa/explore/10-Papers/02-生成建模与扩散/Computational and Statistical Guarantees of the c-Rectified flow（c-RF理论）)
+> 数学根基（占位层）：[条件流匹配损失](/ai-fa/explore/30-Formulas/条件流匹配损失) · [注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)
 
 ## 7. 读前须知
 

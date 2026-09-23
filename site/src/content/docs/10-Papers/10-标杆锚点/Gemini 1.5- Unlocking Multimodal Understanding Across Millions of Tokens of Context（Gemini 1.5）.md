@@ -50,10 +50,10 @@ undefined
 
 ---
 
-> 谱系枢纽：[GPT-4 Technical Report](/explore/10-Papers/10-标杆锚点/GPT-4 Technical Report（GPT-4）)（图谱连通入口）
+> 谱系枢纽：[GPT-4 Technical Report](/ai-fa/explore/10-Papers/10-标杆锚点/GPT-4 Technical Report（GPT-4）)（图谱连通入口）
 
-> 近邻同族：[Large Language Models- A Survey](/explore/10-Papers/10-标杆锚点/Large Language Models- A Survey（LLM Survey 2024）) · [MixEval- Deriving Wisdom of the Crowd from LLM Benchmark Mixtures](/explore/10-Papers/10-标杆锚点/MixEval- Deriving Wisdom of the Crowd from LLM Benchmark Mixtures（MixEval）)
+> 近邻同族：[Large Language Models- A Survey](/ai-fa/explore/10-Papers/10-标杆锚点/Large Language Models- A Survey（LLM Survey 2024）) · [MixEval- Deriving Wisdom of the Crowd from LLM Benchmark Mixtures](/ai-fa/explore/10-Papers/10-标杆锚点/MixEval- Deriving Wisdom of the Crowd from LLM Benchmark Mixtures（MixEval）)
 
-> 数学根基：[注意力机制](/explore/40-Concepts/注意力机制)
+> 数学根基：[注意力机制](/ai-fa/explore/40-Concepts/注意力机制)
 
-> 数学根基：[注意力计算复杂度](/explore/30-Formulas/注意力计算复杂度)
+> 数学根基：[注意力计算复杂度](/ai-fa/explore/30-Formulas/注意力计算复杂度)

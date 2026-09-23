@@ -23,7 +23,7 @@ pdf: 已下载（PDF/）
 - **一致性性质**：$$f_\theta(x_t, t) = f_\theta(x_{t'}, t')$$（同轨道）+ 边界条件 $$f_\theta(x_0,0)=x_0$$
 - **两种训练法**：一致性蒸馏（有教师）/ 一致性训练（无教师，自举）
 - **一步生成 + 多步精化**：一步可出图，多步迭代可提质量
-- **免对抗**：纯回归家族（对比 [GAN](/explore/10-Papers/02-生成建模与扩散/Generative Adversarial Networks（GAN）) 蒸馏路线）
+- **免对抗**：纯回归家族（对比 [GAN](/ai-fa/explore/10-Papers/02-生成建模与扩散/Generative Adversarial Networks（GAN）) 蒸馏路线）
 
 ## 3. 方法概要
 
@@ -34,13 +34,13 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- 一致性约束与损失（本文核心）；轨道定义见 [概率流ODE](/explore/30-Formulas/概率流ODE)
-- 教师轨迹来自 [DDIM更新规则](/explore/30-Formulas/DDIM更新规则)
+- 一致性约束与损失（本文核心）；轨道定义见 [概率流ODE](/ai-fa/explore/30-Formulas/概率流ODE)
+- 教师轨迹来自 [DDIM更新规则](/ai-fa/explore/30-Formulas/DDIM更新规则)
 
 ## 5. 与前作的关系
 
-- 改进了 [Progressive Distillation for Fast Sampling of Diffusion Models](/explore/10-Papers/02-生成建模与扩散/Progressive Distillation for Fast Sampling of Diffusion Models（渐进蒸馏）)：从"步数减半"到"一步"，且提供无教师路线
-- 对比 [DMD](/explore/10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）)：点对点自洽 vs 分布层面匹配
+- 改进了 [Progressive Distillation for Fast Sampling of Diffusion Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Progressive Distillation for Fast Sampling of Diffusion Models（渐进蒸馏）)：从"步数减半"到"一步"，且提供无教师路线
+- 对比 [DMD](/ai-fa/explore/10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）)：点对点自洽 vs 分布层面匹配
 
 ## 6. 影响与后续
 
@@ -50,4 +50,4 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[概率流ODE](/explore/30-Formulas/概率流ODE)、[DDIM更新规则](/explore/30-Formulas/DDIM更新规则)、[常微分方程](/explore/40-Concepts/常微分方程（ODE）)、[一致性模型](/explore/20-Algorithms/一致性模型)
+[概率流ODE](/ai-fa/explore/30-Formulas/概率流ODE)、[DDIM更新规则](/ai-fa/explore/30-Formulas/DDIM更新规则)、[常微分方程](/ai-fa/explore/40-Concepts/常微分方程（ODE）)、[一致性模型](/ai-fa/explore/20-Algorithms/一致性模型)

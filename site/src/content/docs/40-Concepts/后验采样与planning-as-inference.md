@@ -31,9 +31,9 @@ $$p(a\mid s,\,x_{goal})\;=\;\frac{p(x_{goal}\mid s,\,a)\,p(a\mid s)}{p(x_{goal}\
 
 ## 3. 扩散时代的后验采样（工具箱）
 
-- **Inpainting 式**（[Diffuser](/explore/10-Papers/04-强化学习与对齐/Planning with Diffusion for Flexible Behavior Synthesis（Diffuser）)）：把已知量（当前态+目标态）当"已涂死"的像素，去噪生成其余（含动作序列）——硬条件版。
-- **引导式**（[DPS](/explore/10-Papers/02-生成建模与扩散/Diffusion Posterior Sampling for General Noisy Inverse Problems（DPS）)）：每步去噪时叠加 $$\nabla_x\log p(y\mid x)$$（似然的分数），近似的后验采样——软条件版，无需重训。
-- **与 [CFG](/explore/30-Formulas/无分类器引导（CFG）) 的分工**：CFG 是"标签条件"（训练时见过类条件）；引导式后验是"任意似然"（测试时才给定，如"未来帧长这样"）——后者才是反推场景要的。
+- **Inpainting 式**（[Diffuser](/ai-fa/explore/10-Papers/04-强化学习与对齐/Planning with Diffusion for Flexible Behavior Synthesis（Diffuser）)）：把已知量（当前态+目标态）当"已涂死"的像素，去噪生成其余（含动作序列）——硬条件版。
+- **引导式**（[DPS](/ai-fa/explore/10-Papers/02-生成建模与扩散/Diffusion Posterior Sampling for General Noisy Inverse Problems（DPS）)）：每步去噪时叠加 $$\nabla_x\log p(y\mid x)$$（似然的分数），近似的后验采样——软条件版，无需重训。
+- **与 [CFG](/ai-fa/explore/30-Formulas/无分类器引导（CFG）) 的分工**：CFG 是"标签条件"（训练时见过类条件）；引导式后验是"任意似然"（测试时才给定，如"未来帧长这样"）——后者才是反推场景要的。
 
 ## 4. 为什么"后验"比"最优解"好用
 
@@ -49,6 +49,6 @@ $$p(a\mid s,\,x_{goal})\;=\;\frac{p(x_{goal}\mid s,\,a)\,p(a\mid s)}{p(x_{goal}\
 
 ## 6. 与库内实体的关系
 
-- ← 地基：[贝叶斯公式](/explore/40-Concepts/贝叶斯公式)、[条件概率](/explore/40-Concepts/条件概率)、[期望](/explore/40-Concepts/期望)
-- → 工具：[DPS](/explore/10-Papers/02-生成建模与扩散/Diffusion Posterior Sampling for General Noisy Inverse Problems（DPS）)、[Diffuser](/explore/10-Papers/04-强化学习与对齐/Planning with Diffusion for Flexible Behavior Synthesis（Diffuser）)、[无分类器引导（CFG）](/explore/30-Formulas/无分类器引导（CFG）)
-- → 镜像：正向=世界模型 [马尔可夫决策过程](/explore/40-Concepts/马尔可夫决策过程)（$$p(s'\mid s,a)$$）；动作后验的求解器之一=[逆动力学（IDM）](/explore/40-Concepts/逆动力学（IDM）)（参数化直接学后验，对比引导采样=无参数构造）
+- ← 地基：[贝叶斯公式](/ai-fa/explore/40-Concepts/贝叶斯公式)、[条件概率](/ai-fa/explore/40-Concepts/条件概率)、[期望](/ai-fa/explore/40-Concepts/期望)
+- → 工具：[DPS](/ai-fa/explore/10-Papers/02-生成建模与扩散/Diffusion Posterior Sampling for General Noisy Inverse Problems（DPS）)、[Diffuser](/ai-fa/explore/10-Papers/04-强化学习与对齐/Planning with Diffusion for Flexible Behavior Synthesis（Diffuser）)、[无分类器引导（CFG）](/ai-fa/explore/30-Formulas/无分类器引导（CFG）)
+- → 镜像：正向=世界模型 [马尔可夫决策过程](/ai-fa/explore/40-Concepts/马尔可夫决策过程)（$$p(s'\mid s,a)$$）；动作后验的求解器之一=[逆动力学（IDM）](/ai-fa/explore/40-Concepts/逆动力学（IDM）)（参数化直接学后验，对比引导采样=无参数构造）

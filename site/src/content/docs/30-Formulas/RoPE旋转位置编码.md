@@ -41,17 +41,17 @@ $$\langle \tilde q_m, \tilde k_n \rangle = q^\top R_m^\top R_n\, k = q^\top R_{n
 
 | 论文 | 贡献 |
 |---|---|
-| [RoFormer - Enhanced Transformer with Rotary Position Embedding](/explore/10-Papers/01-架构演进/RoFormer- Enhanced Transformer with Rotary Position Embedding（RoPE）) | 提出 |
+| [RoFormer - Enhanced Transformer with Rotary Position Embedding](/ai-fa/explore/10-Papers/01-架构演进/RoFormer- Enhanced Transformer with Rotary Position Embedding（RoPE）) | 提出 |
 
 ## 5. 数学概念分解
 
-- [位置编码](/explore/40-Concepts/位置编码)：母概念
-- [内积](/explore/40-Concepts/内积)：旋转不变性 $$\langle Ra, Rb\rangle = \langle a,b\rangle$$
-- [注意力机制](/explore/40-Concepts/注意力机制)：作用位置（每层 Q/K）
+- [位置编码](/ai-fa/explore/40-Concepts/位置编码)：母概念
+- [内积](/ai-fa/explore/40-Concepts/内积)：旋转不变性 $$\langle Ra, Rb\rangle = \langle a,b\rangle$$
+- [注意力机制](/ai-fa/explore/40-Concepts/注意力机制)：作用位置（每层 Q/K）
 
 ## 6. 与其他公式的关系
 
-- → **作用于** [注意力核心公式](/explore/30-Formulas/注意力核心公式) 的打分项
+- → **作用于** [注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式) 的打分项
 - ≡ **改进自** 正弦绝对编码（Transformer 原文）——绝对旋转实现相对语义
 - → **被改造**：PI（线性插值）、NTK-aware、YaRN（线 6 批次建链）——长上下文的"手术对象"
 - 现代 LLM（LLaMA/Qwen/DeepSeek/Flux）默认位置方案

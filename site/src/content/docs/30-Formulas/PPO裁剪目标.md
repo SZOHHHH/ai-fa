@@ -45,21 +45,21 @@ $$\rho_t(\theta) = \frac{\pi_\theta(a_t \mid s_t)}{\pi_{\text{old}}(a_t \mid s_t
 
 | 论文 | 贡献 |
 |---|---|
-| [Proximal Policy Optimization Algorithms](/explore/10-Papers/04-强化学习与对齐/Proximal Policy Optimization Algorithms（PPO）) | 提出 |
-| [Training language models to follow instructions with human feedback](/explore/10-Papers/04-强化学习与对齐/Training language models to follow instructions with human feedback（InstructGPT）) | LLM 对齐标准配置（PPO+GAE+KL to ref） |
-| [Deep reinforcement learning from human preferences](/explore/10-Papers/04-强化学习与对齐/Deep reinforcement learning from human preferences（RLHF）) | PPO 服务的上层目标 |
+| [Proximal Policy Optimization Algorithms](/ai-fa/explore/10-Papers/04-强化学习与对齐/Proximal Policy Optimization Algorithms（PPO）) | 提出 |
+| [Training language models to follow instructions with human feedback](/ai-fa/explore/10-Papers/04-强化学习与对齐/Training language models to follow instructions with human feedback（InstructGPT）) | LLM 对齐标准配置（PPO+GAE+KL to ref） |
+| [Deep reinforcement learning from human preferences](/ai-fa/explore/10-Papers/04-强化学习与对齐/Deep reinforcement learning from human preferences（RLHF）) | PPO 服务的上层目标 |
 
 ## 5. 数学概念分解
 
-- [重要性采样](/explore/40-Concepts/重要性采样)：比率定义
-- [信赖域](/explore/40-Concepts/信赖域)：裁剪的思想源头
-- [广义优势估计GAE](/explore/40-Concepts/广义优势估计GAE)：$$\hat A_t$$ 的估计器
-- [期望](/explore/40-Concepts/期望)：batch 经验期望 $$\hat{\mathbb{E}}$$
-- [KL散度](/explore/40-Concepts/KL散度)：对齐场景追加的参考锚
+- [重要性采样](/ai-fa/explore/40-Concepts/重要性采样)：比率定义
+- [信赖域](/ai-fa/explore/40-Concepts/信赖域)：裁剪的思想源头
+- [广义优势估计GAE](/ai-fa/explore/40-Concepts/广义优势估计GAE)：$$\hat A_t$$ 的估计器
+- [期望](/ai-fa/explore/40-Concepts/期望)：batch 经验期望 $$\hat{\mathbb{E}}$$
+- [KL散度](/ai-fa/explore/40-Concepts/KL散度)：对齐场景追加的参考锚
 
 ## 6. 与其他公式的关系
 
-- → **简化自** [TRPO目标](/explore/30-Formulas/TRPO目标)：二阶约束 → 一阶裁剪
-- → **服务于** [RLHF目标](/explore/30-Formulas/RLHF目标)：LLM 对齐的优化引擎
-- → **被简化为** [GRPO目标](/explore/30-Formulas/GRPO目标)：去 critic + 组内基线（LLM 时代重构）
-- 对比 [DPO损失](/explore/30-Formulas/DPO损失)：PPO 路线"显式奖励+在线采样" vs DPO 路线"闭式离线"——对齐两大范式
+- → **简化自** [TRPO目标](/ai-fa/explore/30-Formulas/TRPO目标)：二阶约束 → 一阶裁剪
+- → **服务于** [RLHF目标](/ai-fa/explore/30-Formulas/RLHF目标)：LLM 对齐的优化引擎
+- → **被简化为** [GRPO目标](/ai-fa/explore/30-Formulas/GRPO目标)：去 critic + 组内基线（LLM 时代重构）
+- 对比 [DPO损失](/ai-fa/explore/30-Formulas/DPO损失)：PPO 路线"显式奖励+在线采样" vs DPO 路线"闭式离线"——对齐两大范式

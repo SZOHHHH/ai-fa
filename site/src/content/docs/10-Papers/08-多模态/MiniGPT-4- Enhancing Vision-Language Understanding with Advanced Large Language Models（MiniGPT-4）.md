@@ -16,7 +16,7 @@ pdf: 已下载（PDF/）
 
 ## 1. 一句话贡献
 
-与 [LLaVA](/explore/10-Papers/08-多模态/Visual Instruction Tuning（LLaVA）) 同思路（线性投影接 LLM），亮点在"少量高质量图文对齐数据即可唤醒"——与 LLaVA 并列的早期开源 VLM 双子星。
+与 [LLaVA](/ai-fa/explore/10-Papers/08-多模态/Visual Instruction Tuning（LLaVA）) 同思路（线性投影接 LLM），亮点在"少量高质量图文对齐数据即可唤醒"——与 LLaVA 并列的早期开源 VLM 双子星。
 
 ## 2. 核心贡献
 
@@ -26,7 +26,7 @@ pdf: 已下载（PDF/）
 
 ## 3. 方法概要
 
-1. 冻结 [ViT](/explore/10-Papers/01-架构演进/An Image is Worth 16x16 Words- Transformers for Image Recognition at Scale（ViT）)+Q-Former（BLIP-2 权重）
+1. 冻结 [ViT](/ai-fa/explore/10-Papers/01-架构演进/An Image is Worth 16x16 Words- Transformers for Image Recognition at Scale（ViT）)+Q-Former（BLIP-2 权重）
 2. 线性层投影到 Vicuna
 3. 第一阶段 5M 图文对粗对齐
 4. 第二阶段 3.5k 精选指令数据微调
@@ -37,8 +37,8 @@ pdf: 已下载（PDF/）
 
 ## 5. 与前作的关系
 
-- 复用了 [BLIP-2 - Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models](/explore/10-Papers/08-多模态/BLIP-2- Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Lan（BLIP-2）) 的视觉塔
-- 与 [Visual Instruction Tuning](/explore/10-Papers/08-多模态/Visual Instruction Tuning（LLaVA）) 同期平行——共同验证"投影+指令微调"路线
+- 复用了 [BLIP-2 - Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models](/ai-fa/explore/10-Papers/08-多模态/BLIP-2- Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Lan（BLIP-2）) 的视觉塔
+- 与 [Visual Instruction Tuning](/ai-fa/explore/10-Papers/08-多模态/Visual Instruction Tuning（LLaVA）) 同期平行——共同验证"投影+指令微调"路线
 
 ## 6. 影响与后续
 
@@ -47,8 +47,8 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[视觉语言模型（VLM）](/explore/40-Concepts/视觉语言模型（VLM）)、[BLIP-2 - Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models](/explore/10-Papers/08-多模态/BLIP-2- Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Lan（BLIP-2）)
+[视觉语言模型（VLM）](/ai-fa/explore/40-Concepts/视觉语言模型（VLM）)、[BLIP-2 - Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models](/ai-fa/explore/10-Papers/08-多模态/BLIP-2- Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Lan（BLIP-2）)
 
-> 近邻同族：[BLIP-2 - Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models](/explore/10-Papers/08-多模态/BLIP-2- Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Lan（BLIP-2）) · [Flamingo - a Visual Language Model for Few-Shot Learning](/explore/10-Papers/08-多模态/Flamingo- a Visual Language Model for Few-Shot Learning（Flamingo）)
+> 近邻同族：[BLIP-2 - Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models](/ai-fa/explore/10-Papers/08-多模态/BLIP-2- Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Lan（BLIP-2）) · [Flamingo - a Visual Language Model for Few-Shot Learning](/ai-fa/explore/10-Papers/08-多模态/Flamingo- a Visual Language Model for Few-Shot Learning（Flamingo）)
 
-> 数学根基：[三层感知机投影](/explore/30-Formulas/三层感知机投影) · [CLIP对比损失](/explore/30-Formulas/CLIP对比损失) · [注意力核心公式](/explore/30-Formulas/注意力核心公式)
+> 数学根基：[三层感知机投影](/ai-fa/explore/30-Formulas/三层感知机投影) · [CLIP对比损失](/ai-fa/explore/30-Formulas/CLIP对比损失) · [注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)

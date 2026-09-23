@@ -34,7 +34,7 @@ W \in \{-1, +1\},\ \text{matmul} \to \text{符号加减}
 $$
 
 
-**直觉**：→ [The Era of 1-bit LLMs- All Large Language Models are in 1.58 Bits](/explore/10-Papers/01-架构演进/The Era of 1-bit LLMs- All Large Language Models are in 1.58 Bits（BitNet）)（B19 入库）——压缩矩阵量化列的训练期路线完整链
+**直觉**：→ [The Era of 1-bit LLMs- All Large Language Models are in 1.58 Bits](/ai-fa/explore/10-Papers/01-架构演进/The Era of 1-bit LLMs- All Large Language Models are in 1.58 Bits（BitNet）)（B19 入库）——压缩矩阵量化列的训练期路线完整链
 
 ## 5. 与前作/矩阵关系
 
@@ -48,6 +48,6 @@ $$
 
 undefined
 
-> 近邻同族：[An Image is Worth 16x16 Words - Transformers for Image Recognition at Scale](/explore/10-Papers/01-架构演进/An Image is Worth 16x16 Words- Transformers for Image Recognition at Scale（ViT）) · [Attention Is All You Need](/explore/10-Papers/01-架构演进/Attention Is All You Need（Transformer）)
+> 近邻同族：[An Image is Worth 16x16 Words - Transformers for Image Recognition at Scale](/ai-fa/explore/10-Papers/01-架构演进/An Image is Worth 16x16 Words- Transformers for Image Recognition at Scale（ViT）) · [Attention Is All You Need](/ai-fa/explore/10-Papers/01-架构演进/Attention Is All You Need（Transformer）)
 
-> 数学根基：[量化](/explore/40-Concepts/量化) · [注意力核心公式](/explore/30-Formulas/注意力核心公式)
+> 数学根基：[量化](/ai-fa/explore/40-Concepts/量化) · [注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)

@@ -16,7 +16,7 @@ pdf: 已下载（PDF/）
 
 ## 1. 一句话贡献
 
-证明不依赖监督推理数据，纯 RL（[GRPO](/explore/20-Algorithms/GRPO与RLVR) + 规则奖励）就能激励出长链推理能力——RLVR 范式的宣言论文（o1 路线的开源对应）。
+证明不依赖监督推理数据，纯 RL（[GRPO](/ai-fa/explore/20-Algorithms/GRPO与RLVR) + 规则奖励）就能激励出长链推理能力——RLVR 范式的宣言论文（o1 路线的开源对应）。
 
 ## 2. 核心贡献
 
@@ -34,21 +34,21 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- [GRPO目标](/explore/30-Formulas/GRPO目标)（RL 阶段引擎）
-- 蒸馏部分对应 [DDPM训练目标](/explore/30-Formulas/DDPM训练目标) 家族外的标准 KD 损失（线 3 交叉）
+- [GRPO目标](/ai-fa/explore/30-Formulas/GRPO目标)（RL 阶段引擎）
+- 蒸馏部分对应 [DDPM训练目标](/ai-fa/explore/30-Formulas/DDPM训练目标) 家族外的标准 KD 损失（线 3 交叉）
 
 ## 5. 与前作的关系
 
-- 扩展了 [DeepSeekMath - Pushing the Limits of Mathematical Reasoning in Open Language Models](/explore/10-Papers/04-强化学习与对齐/DeepSeekMath- Pushing the Limits of Mathematical Reasoning in Open Language Models（DeepSeekMath）)（GRPO 场景从数学到通用推理）
+- 扩展了 [DeepSeekMath - Pushing the Limits of Mathematical Reasoning in Open Language Models](/ai-fa/explore/10-Papers/04-强化学习与对齐/DeepSeekMath- Pushing the Limits of Mathematical Reasoning in Open Language Models（DeepSeekMath）)（GRPO 场景从数学到通用推理）
 - 对比 o1（2024，闭源报告）：开放了完整配方
-- 组合了 [Proximal Policy Optimization Algorithms](/explore/10-Papers/04-强化学习与对齐/Proximal Policy Optimization Algorithms（PPO）) 谱系思想与规则奖励
+- 组合了 [Proximal Policy Optimization Algorithms](/ai-fa/explore/10-Papers/04-强化学习与对齐/Proximal Policy Optimization Algorithms（PPO）) 谱系思想与规则奖励
 
 ## 6. 影响与后续
 
 - 2025 年推理模型井喷的引爆点（Qwen-QwQ、Open-R1 复现社区、无数 distill 模型）
 - RLVR 成为主流训练阶段（与 SFT/对齐并列）
-- 与线 7（推理模型）交叉标注：[CoT](/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）)/[PRM](/explore/10-Papers/07-推理模型/Let's Verify Step by Step（PRM）) 的 RL 路线终点
+- 与线 7（推理模型）交叉标注：[CoT](/ai-fa/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）)/[PRM](/ai-fa/explore/10-Papers/07-推理模型/Let's Verify Step by Step（PRM）) 的 RL 路线终点
 
 ## 7. 读前须知
 
-[GRPO目标](/explore/30-Formulas/GRPO目标)、[GRPO与RLVR](/explore/20-Algorithms/GRPO与RLVR)、[期望](/explore/40-Concepts/期望)
+[GRPO目标](/ai-fa/explore/30-Formulas/GRPO目标)、[GRPO与RLVR](/ai-fa/explore/20-Algorithms/GRPO与RLVR)、[期望](/ai-fa/explore/40-Concepts/期望)

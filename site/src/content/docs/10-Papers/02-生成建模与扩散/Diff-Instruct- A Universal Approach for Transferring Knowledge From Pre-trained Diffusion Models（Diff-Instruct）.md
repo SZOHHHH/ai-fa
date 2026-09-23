@@ -33,7 +33,7 @@ $$
 
 ## 4. 核心公式
 
-→ [DMD](/explore/10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）)/Diff-Instruct++/SiD/f-distill → Uni-Instruct（统一）；🚩 扩散×蒸馏格的 KL 支线主占位
+→ [DMD](/ai-fa/explore/10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）)/Diff-Instruct++/SiD/f-distill → Uni-Instruct（统一）；🚩 扩散×蒸馏格的 KL 支线主占位
 
 **直觉**：占位层公式为结构示意，精读原文后应校正为论文最终形式并补逐项解释。
 
@@ -46,9 +46,9 @@ B18 奠基补齐：一步蒸馏 KL 路线的源头（多张库内卡引用它）
 
 undefined
 
-> 近邻同族：[Diff-Instruct++- Training One-step Text-to-image Generator Model to Align with Human Preferences](/explore/10-Papers/02-生成建模与扩散/Diff-Instruct++- Training One-step Text-to-image Generator Model to Align with Human Preferences（Diff-Instruct++）) · [Diffusion Fine-tuning with Rewarded Moment Matching Distillation](/explore/10-Papers/02-生成建模与扩散/Diffusion Fine-tuning with Rewarded Moment Matching Distillation（RMMD）)
-> 数学根基（占位层）：[概率分布](/explore/40-Concepts/概率分布)
-> 数学根基：[蒸馏损失](/explore/30-Formulas/蒸馏损失) · [DSM目标](/explore/30-Formulas/DSM目标)
+> 近邻同族：[Diff-Instruct++- Training One-step Text-to-image Generator Model to Align with Human Preferences](/ai-fa/explore/10-Papers/02-生成建模与扩散/Diff-Instruct++- Training One-step Text-to-image Generator Model to Align with Human Preferences（Diff-Instruct++）) · [Diffusion Fine-tuning with Rewarded Moment Matching Distillation](/ai-fa/explore/10-Papers/02-生成建模与扩散/Diffusion Fine-tuning with Rewarded Moment Matching Distillation（RMMD）)
+> 数学根基（占位层）：[概率分布](/ai-fa/explore/40-Concepts/概率分布)
+> 数学根基：[蒸馏损失](/ai-fa/explore/30-Formulas/蒸馏损失) · [DSM目标](/ai-fa/explore/30-Formulas/DSM目标)
 
 ## 7. 读前须知
 

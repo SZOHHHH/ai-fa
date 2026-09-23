@@ -30,9 +30,9 @@ RAG 长上下文 KV 复用方案："按无交叉注意力假设微调模型"与"
 （待精读）
 
 ## 5. 与前作/矩阵关系
-- 概念/公式锚：[KV缓存](/explore/40-Concepts/KV缓存)（复用/重算的客体）· [RoPE旋转位置编码](/explore/30-Formulas/RoPE旋转位置编码)（位置对齐是必要非充分——调好位置仍缺交叉注意力）· [注意力核心公式](/explore/30-Formulas/注意力核心公式)（偏差来源=拼接 cache 缺前文 key 的交叉项）
-- 同族：[Information-Aware KV Cache Compression for Long Reasoning](/explore/10-Papers/06-长上下文/Information-Aware KV Cache Compression for Long Reasoning（InfoKV）)（KV 管理家族另一轴：推理期压缩 vs 预计算复用）
-- 现象锚：[Efficient Streaming Language Models with Attention Sinks](/explore/10-Papers/06-长上下文/Efficient Streaming Language Models with Attention Sinks（StreamingLLM）)——EPIC 等重算锚恰取块内 sink 位置，sink 现象的工程利用面；诊断面见 [Do New Attention Mechanisms Actually Fix Attention Sinks at Million-Token Context?](/explore/10-Papers/06-长上下文/Do New Attention Mechanisms Actually Fix Attention Sinks at Million-Token Context)
+- 概念/公式锚：[KV缓存](/ai-fa/explore/40-Concepts/KV缓存)（复用/重算的客体）· [RoPE旋转位置编码](/ai-fa/explore/30-Formulas/RoPE旋转位置编码)（位置对齐是必要非充分——调好位置仍缺交叉注意力）· [注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)（偏差来源=拼接 cache 缺前文 key 的交叉项）
+- 同族：[Information-Aware KV Cache Compression for Long Reasoning](/ai-fa/explore/10-Papers/06-长上下文/Information-Aware KV Cache Compression for Long Reasoning（InfoKV）)（KV 管理家族另一轴：推理期压缩 vs 预计算复用）
+- 现象锚：[Efficient Streaming Language Models with Attention Sinks](/ai-fa/explore/10-Papers/06-长上下文/Efficient Streaming Language Models with Attention Sinks（StreamingLLM）)——EPIC 等重算锚恰取块内 sink 位置，sink 现象的工程利用面；诊断面见 [Do New Attention Mechanisms Actually Fix Attention Sinks at Million-Token Context?](/ai-fa/explore/10-Papers/06-长上下文/Do New Attention Mechanisms Actually Fix Attention Sinks at Million-Token Context)
 
 ## 6. 影响后续
 （待精读）

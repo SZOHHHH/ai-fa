@@ -33,20 +33,20 @@ NTK-aware 插值 + 注意力温度修正 + 渐进外推——RoPE 扩展方法�
 
 ## 4. 核心公式
 
-- [RoPE上下文扩展（PI-NTK-YaRN）](/explore/30-Formulas/RoPE上下文扩展（PI-NTK-YaRN）) —— YaRN 行（温度与调度）
+- [RoPE上下文扩展（PI-NTK-YaRN）](/ai-fa/explore/30-Formulas/RoPE上下文扩展（PI-NTK-YaRN）) —— YaRN 行（温度与调度）
 
 ## 5. 与前作的关系
 
-- 统一并改进了 [Extending Context Window of Large Language Models via Positional Interpolation](/explore/10-Papers/06-长上下文/Extending Context Window of Large Language Models via Positional Interpolation（PI）)（均匀压缩伤高频）与社区 NTK-RoPE（无温度）
-- 温度修正呼应 [温度参数](/explore/40-Concepts/温度参数) 三用途辨析
+- 统一并改进了 [Extending Context Window of Large Language Models via Positional Interpolation](/ai-fa/explore/10-Papers/06-长上下文/Extending Context Window of Large Language Models via Positional Interpolation（PI）)（均匀压缩伤高频）与社区 NTK-RoPE（无温度）
+- 温度修正呼应 [温度参数](/ai-fa/explore/40-Concepts/温度参数) 三用途辨析
 
 ## 6. 影响与后续
 
 - 事实标准之一（vLLM 等推理框架内置）；Qwen/DeepSeek 长上下文引用
 - "频率谱手术"成为 RoPE 扩展的通用语言
 
-- → 后继补记（260914）：[AdaRoPE](/explore/10-Papers/06-长上下文/AdaRoPE - Not All Attention Heads Should Rotate and Scale Equally（自适应RoPE）)（实证本卡式"统一缩放"外推次优：逐头缩放更保短上下文性能）
+- → 后继补记（260914）：[AdaRoPE](/ai-fa/explore/10-Papers/06-长上下文/AdaRoPE - Not All Attention Heads Should Rotate and Scale Equally（自适应RoPE）)（实证本卡式"统一缩放"外推次优：逐头缩放更保短上下文性能）
 
 ## 7. 读前须知
 
-[RoPE旋转位置编码](/explore/30-Formulas/RoPE旋转位置编码)、[RoPE上下文扩展（PI-NTK-YaRN）](/explore/30-Formulas/RoPE上下文扩展（PI-NTK-YaRN）)、[Extending Context Window of Large Language Models via Positional Interpolation](/explore/10-Papers/06-长上下文/Extending Context Window of Large Language Models via Positional Interpolation（PI）)
+[RoPE旋转位置编码](/ai-fa/explore/30-Formulas/RoPE旋转位置编码)、[RoPE上下文扩展（PI-NTK-YaRN）](/ai-fa/explore/30-Formulas/RoPE上下文扩展（PI-NTK-YaRN）)、[Extending Context Window of Large Language Models via Positional Interpolation](/ai-fa/explore/10-Papers/06-长上下文/Extending Context Window of Large Language Models via Positional Interpolation（PI）)

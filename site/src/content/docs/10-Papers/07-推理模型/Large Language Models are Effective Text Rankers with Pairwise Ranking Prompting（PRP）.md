@@ -38,15 +38,15 @@ $$
 
 ## 5. 与前作/矩阵关系
 
-→ [Self-Consistency Improves Chain of Thought Reasoning in Language Models](/explore/10-Papers/07-推理模型/Self-Consistency Improves Chain of Thought Reasoning in Language Models（Self-Consistency）)（聚合思想在排序域）；推理矩阵提示触发×聚合交叉
+→ [Self-Consistency Improves Chain of Thought Reasoning in Language Models](/ai-fa/explore/10-Papers/07-推理模型/Self-Consistency Improves Chain of Thought Reasoning in Language Models（Self-Consistency）)（聚合思想在排序域）；推理矩阵提示触发×聚合交叉
 
 
 ## 6. 影响与占位意义
 
 LLM-as-ranker 路线起点。
 
-> 近邻同族：[A Survey on In-context Learning](/explore/10-Papers/07-推理模型/A Survey on In-context Learning（ICL Survey）) · [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）)
-> 数学根基（占位层）：[思维链（CoT）](/explore/40-Concepts/思维链（CoT）)
+> 近邻同族：[A Survey on In-context Learning](/ai-fa/explore/10-Papers/07-推理模型/A Survey on In-context Learning（ICL Survey）) · [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](/ai-fa/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）)
+> 数学根基（占位层）：[思维链（CoT）](/ai-fa/explore/40-Concepts/思维链（CoT）)
 
 ## 7. 读前须知
 

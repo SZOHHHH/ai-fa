@@ -33,11 +33,11 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- [MoE门控公式](/explore/30-Formulas/MoE门控公式) §2 Expert Choice 行
+- [MoE门控公式](/ai-fa/explore/30-Formulas/MoE门控公式) §2 Expert Choice 行
 
 ## 5. 与前作的关系
 
-- 颠覆了 [Switch Transformers - Scaling to Trillion Parameter Models with Simple and Efficient Sparsity](/explore/10-Papers/05-MoE/Switch Transformers- Scaling to Trillion Parameter Models with Simple and Efficient Spars（Switch）) 系"token 选专家"的默认方向
+- 颠覆了 [Switch Transformers - Scaling to Trillion Parameter Models with Simple and Efficient Sparsity](/ai-fa/explore/10-Papers/05-MoE/Switch Transformers- Scaling to Trillion Parameter Models with Simple and Efficient Spars（Switch）) 系"token 选专家"的默认方向
 - 均衡难题从损失设计（$$f_iP_i$$）转为结构保证
 
 ## 6. 影响与后续
@@ -47,6 +47,6 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[MoE门控公式](/explore/30-Formulas/MoE门控公式)、[混合专家（MoE）](/explore/20-Algorithms/混合专家（MoE）)
+[MoE门控公式](/ai-fa/explore/30-Formulas/MoE门控公式)、[混合专家（MoE）](/ai-fa/explore/20-Algorithms/混合专家（MoE）)
 
-> 近邻同族：[Auxiliary-Loss-Free Load Balancing Strategy for Mixture-of-Experts](/explore/10-Papers/05-MoE/Auxiliary-Loss-Free Load Balancing Strategy for Mixture-of-Experts（无辅助损失MoE）) · [DeepSeek-V3 Technical Report](/explore/10-Papers/05-MoE/DeepSeek-V3 Technical Report（DeepSeek-V3）)
+> 近邻同族：[Auxiliary-Loss-Free Load Balancing Strategy for Mixture-of-Experts](/ai-fa/explore/10-Papers/05-MoE/Auxiliary-Loss-Free Load Balancing Strategy for Mixture-of-Experts（无辅助损失MoE）) · [DeepSeek-V3 Technical Report](/ai-fa/explore/10-Papers/05-MoE/DeepSeek-V3 Technical Report（DeepSeek-V3）)

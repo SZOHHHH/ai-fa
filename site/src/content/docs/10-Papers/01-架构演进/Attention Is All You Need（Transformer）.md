@@ -20,9 +20,9 @@ pdf: 已下载（PDF/）
 
 ## 2. 核心贡献
 
-- **缩放点积注意力 + 多头**：可微寻址机制（[注意力核心公式](/explore/30-Formulas/注意力核心公式)）
+- **缩放点积注意力 + 多头**：可微寻址机制（[注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)）
 - **编码器-解码器全注意力化**：训练并行度碾压 RNN（GPU 时代宠儿）
-- **正弦位置编码**：注意力失忆问题的第一个解（[位置编码](/explore/40-Concepts/位置编码)）
+- **正弦位置编码**：注意力失忆问题的第一个解（[位置编码](/ai-fa/explore/40-Concepts/位置编码)）
 
 ## 3. 方法概要
 
@@ -34,8 +34,8 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- [注意力核心公式](/explore/30-Formulas/注意力核心公式) —— 本文灵魂
-- [残差连接](/explore/30-Formulas/残差连接)、[位置编码](/explore/40-Concepts/位置编码)（正弦版）
+- [注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式) —— 本文灵魂
+- [残差连接](/ai-fa/explore/30-Formulas/残差连接)、[位置编码](/ai-fa/explore/40-Concepts/位置编码)（正弦版）
 
 ## 5. 与前作的关系
 
@@ -45,11 +45,11 @@ pdf: 已下载（PDF/）
 ## 6. 影响与后续
 
 - 奠基了 BERT/GPT 两大预训练流派（本线下游全部论文）
-- [ViT](/explore/10-Papers/01-架构演进/An Image is Worth 16x16 Words- Transformers for Image Recognition at Scale（ViT）) 把它带进视觉
-- [FlashAttention分块计算](/explore/30-Formulas/FlashAttention分块计算) 只优化不改其数学；Mamba 系则挑战其平方复杂度
+- [ViT](/ai-fa/explore/10-Papers/01-架构演进/An Image is Worth 16x16 Words- Transformers for Image Recognition at Scale（ViT）) 把它带进视觉
+- [FlashAttention分块计算](/ai-fa/explore/30-Formulas/FlashAttention分块计算) 只优化不改其数学；Mamba 系则挑战其平方复杂度
 
 ## 7. 读前须知
 
-[注意力机制](/explore/40-Concepts/注意力机制)、[softmax函数](/explore/40-Concepts/softmax函数)、[内积](/explore/40-Concepts/内积)、[位置编码](/explore/40-Concepts/位置编码)
+[注意力机制](/ai-fa/explore/40-Concepts/注意力机制)、[softmax函数](/ai-fa/explore/40-Concepts/softmax函数)、[内积](/ai-fa/explore/40-Concepts/内积)、[位置编码](/ai-fa/explore/40-Concepts/位置编码)
 
-> 谱系成员（44）：[A Systematic Analysis of Hybrid Linear Attention](/explore/10-Papers/01-架构演进/A Systematic Analysis of Hybrid Linear Attention（混合线性分析）) · [Adam- A Method for Stochastic Optimization](/explore/10-Papers/01-架构演进/Adam- A Method for Stochastic Optimization（Adam）) · [An Image is Worth 16x16 Words - Transformers for Image Recognition at Scale](/explore/10-Papers/01-架构演进/An Image is Worth 16x16 Words- Transformers for Image Recognition at Scale（ViT）) · [Bag of Tricks for Efficient Text Classification](/explore/10-Papers/01-架构演进/Bag of Tricks for Efficient Text Classification（FastText）) · [Batch Normalization- Accelerating Deep Network Training by Reducing Internal Covariate Shift](/explore/10-Papers/01-架构演进/Batch Normalization- Accelerating Deep Network Training by Reducing Internal Covariate Shift（BN）) · [BERT - Pre-training of Deep Bidirectional Transformers for Language Understanding](/explore/10-Papers/01-架构演进/BERT- Pre-training of Deep Bidirectional Transformers for Language Understanding（BERT）) · [BitNet- Scaling 1-bit Transformers for Large Language Models](/explore/10-Papers/01-架构演进/BitNet- Scaling 1-bit Transformers for Large Language Models（BitNet 1.0）) · [Decoupled Weight Decay Regularization](/explore/10-Papers/01-架构演进/Decoupled Weight Decay Regularization（AdamW）) · [Deep Residual Learning for Image Recognition](/explore/10-Papers/01-架构演进/Deep Residual Learning for Image Recognition（ResNet）) · [DeepSeek-V2 - A Strong, Economical, and Efficient Mixture-of-Experts Language Model](/explore/10-Papers/01-架构演进/DeepSeek-V2- A Strong, Economical, and Efficient Mixture-of-Experts Language Model（MLA）) · [Dynamic Routing Between Capsules](/explore/10-Papers/01-架构演进/Dynamic Routing Between Capsules（Capsule）) · [Efficient Estimation of Word Representations in Vector Space](/explore/10-Papers/01-架构演进/Efficient Estimation of Word Representations in Vector Space（word2vec）) · …等 44 篇
+> 谱系成员（44）：[A Systematic Analysis of Hybrid Linear Attention](/ai-fa/explore/10-Papers/01-架构演进/A Systematic Analysis of Hybrid Linear Attention（混合线性分析）) · [Adam- A Method for Stochastic Optimization](/ai-fa/explore/10-Papers/01-架构演进/Adam- A Method for Stochastic Optimization（Adam）) · [An Image is Worth 16x16 Words - Transformers for Image Recognition at Scale](/ai-fa/explore/10-Papers/01-架构演进/An Image is Worth 16x16 Words- Transformers for Image Recognition at Scale（ViT）) · [Bag of Tricks for Efficient Text Classification](/ai-fa/explore/10-Papers/01-架构演进/Bag of Tricks for Efficient Text Classification（FastText）) · [Batch Normalization- Accelerating Deep Network Training by Reducing Internal Covariate Shift](/ai-fa/explore/10-Papers/01-架构演进/Batch Normalization- Accelerating Deep Network Training by Reducing Internal Covariate Shift（BN）) · [BERT - Pre-training of Deep Bidirectional Transformers for Language Understanding](/ai-fa/explore/10-Papers/01-架构演进/BERT- Pre-training of Deep Bidirectional Transformers for Language Understanding（BERT）) · [BitNet- Scaling 1-bit Transformers for Large Language Models](/ai-fa/explore/10-Papers/01-架构演进/BitNet- Scaling 1-bit Transformers for Large Language Models（BitNet 1.0）) · [Decoupled Weight Decay Regularization](/ai-fa/explore/10-Papers/01-架构演进/Decoupled Weight Decay Regularization（AdamW）) · [Deep Residual Learning for Image Recognition](/ai-fa/explore/10-Papers/01-架构演进/Deep Residual Learning for Image Recognition（ResNet）) · [DeepSeek-V2 - A Strong, Economical, and Efficient Mixture-of-Experts Language Model](/ai-fa/explore/10-Papers/01-架构演进/DeepSeek-V2- A Strong, Economical, and Efficient Mixture-of-Experts Language Model（MLA）) · [Dynamic Routing Between Capsules](/ai-fa/explore/10-Papers/01-架构演进/Dynamic Routing Between Capsules（Capsule）) · [Efficient Estimation of Word Representations in Vector Space](/ai-fa/explore/10-Papers/01-架构演进/Efficient Estimation of Word Representations in Vector Space（word2vec）) · …等 44 篇

@@ -38,16 +38,16 @@ $$
 
 ## 5. 与前作/矩阵关系
 
-≡ [Score-Based Generative Modeling through Stochastic Differential Equations](/explore/10-Papers/02-生成建模与扩散/Score-Based Generative Modeling through Stochastic Differential Equations（Score-SDE）)（统一 VE/VP）/随机插值（统一扩散/流）——统一者母题第三例；**RS 库 C3 候选的"被点名 open"出处**
+≡ [Score-Based Generative Modeling through Stochastic Differential Equations](/ai-fa/explore/10-Papers/02-生成建模与扩散/Score-Based Generative Modeling through Stochastic Differential Equations（Score-SDE）)（统一 VE/VP）/随机插值（统一扩散/流）——统一者母题第三例；**RS 库 C3 候选的"被点名 open"出处**
 
 
 ## 6. 影响与占位意义
 
 RS 库 06-20 已有；RS C3 候选（混合确定-随机蒸馏）的直接理论地基。
 
-> 近邻同族：[Align Your Flow - Scaling Continuous-Time Flow Map Distillation](/explore/10-Papers/02-生成建模与扩散/Align Your Flow- Scaling Continuous-Time Flow Map Distillation（AYF）) · [Computational and Statistical Guarantees of the c-Rectified flow](/explore/10-Papers/02-生成建模与扩散/Computational and Statistical Guarantees of the c-Rectified flow（c-RF理论）)
-> 数学根基（占位层）：[概率分布](/explore/40-Concepts/概率分布)
-> 数学根基：[条件流匹配损失](/explore/30-Formulas/条件流匹配损失) · [概率流ODE](/explore/30-Formulas/概率流ODE)
+> 近邻同族：[Align Your Flow - Scaling Continuous-Time Flow Map Distillation](/ai-fa/explore/10-Papers/02-生成建模与扩散/Align Your Flow- Scaling Continuous-Time Flow Map Distillation（AYF）) · [Computational and Statistical Guarantees of the c-Rectified flow](/ai-fa/explore/10-Papers/02-生成建模与扩散/Computational and Statistical Guarantees of the c-Rectified flow（c-RF理论）)
+> 数学根基（占位层）：[概率分布](/ai-fa/explore/40-Concepts/概率分布)
+> 数学根基：[条件流匹配损失](/ai-fa/explore/30-Formulas/条件流匹配损失) · [概率流ODE](/ai-fa/explore/30-Formulas/概率流ODE)
 
 ## 7. 读前须知
 

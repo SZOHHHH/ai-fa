@@ -50,8 +50,8 @@ undefined
 
 ---
 
-> 谱系枢纽：[Learning Transferable Visual Models From Natural Language Supervision](/explore/10-Papers/08-多模态/Learning Transferable Visual Models From Natural Language Supervision（CLIP）)（图谱连通入口）
+> 谱系枢纽：[Learning Transferable Visual Models From Natural Language Supervision](/ai-fa/explore/10-Papers/08-多模态/Learning Transferable Visual Models From Natural Language Supervision（CLIP）)（图谱连通入口）
 
-> 近邻同族：[Chameleon - Mixed-Modal Early-Fusion Foundation Models](/explore/10-Papers/08-多模态/Chameleon- Mixed-Modal Early-Fusion Foundation Models（Chameleon）) · [Emu3- Next-Token Prediction is All You Need](/explore/10-Papers/08-多模态/Emu3- Next-Token Prediction is All You Need（Emu3）)
+> 近邻同族：[Chameleon - Mixed-Modal Early-Fusion Foundation Models](/ai-fa/explore/10-Papers/08-多模态/Chameleon- Mixed-Modal Early-Fusion Foundation Models（Chameleon）) · [Emu3- Next-Token Prediction is All You Need](/ai-fa/explore/10-Papers/08-多模态/Emu3- Next-Token Prediction is All You Need（Emu3）)
 
-> 数学根基：[μ-law量化音频](/explore/30-Formulas/μ-law量化音频) · [注意力核心公式](/explore/30-Formulas/注意力核心公式)
+> 数学根基：[μ-law量化音频](/ai-fa/explore/30-Formulas/μ-law量化音频) · [注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)

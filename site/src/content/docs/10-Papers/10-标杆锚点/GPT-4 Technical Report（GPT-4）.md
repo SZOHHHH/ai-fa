@@ -19,7 +19,7 @@ pdf: 已下载（PDF/）
 
 ## 2. 核心贡献
 
-- **可预测扩展**：小模型损失拟合幂律 → 预测大模型最终损失（实际 GPT-4 预测误差 <1%）——[Scaling Laws for Neural Language Models](/explore/10-Papers/01-架构演进/Scaling Laws for Neural Language Models（Scaling Laws）) 的工程化升级
+- **可预测扩展**：小模型损失拟合幂律 → 预测大模型最终损失（实际 GPT-4 预测误差 <1%）——[Scaling Laws for Neural Language Models](/ai-fa/explore/10-Papers/01-架构演进/Scaling Laws for Neural Language Models（Scaling Laws）) 的工程化升级
 - **基础设施奇迹**：数千 GPU 上稳定训练数月（故障预测、自动恢复）
 - **RLHF 规模化**：基于规则的 RM + PPO 的实战细节
 - **多模态输入**：图文混合输入（视觉 tokenizer 化）
@@ -33,12 +33,12 @@ pdf: 已下载（PDF/）
 ## 4. 核心公式
 
 - 损失预测：$$L(N) = A N^{-\alpha} + E$$ 外推（Kaplan 式幂律在内部数据重拟合）
-- RLHF 部分即 [RLHF目标](/explore/30-Formulas/RLHF目标) + [PPO裁剪目标](/explore/30-Formulas/PPO裁剪目标)
+- RLHF 部分即 [RLHF目标](/ai-fa/explore/30-Formulas/RLHF目标) + [PPO裁剪目标](/ai-fa/explore/30-Formulas/PPO裁剪目标)
 
 ## 5. 与前作的关系
 
-- 扩展了 [Language Models are Few-Shot Learners](/explore/10-Papers/01-架构演进/Language Models are Few-Shot Learners（GPT-3）) 与 [Training Compute-Optimal Large Language Models](/explore/10-Papers/10-标杆锚点/Training Compute-Optimal Large Language Models（Chinchilla）) 的规模科学
-- 对齐栈沿用 [InstructGPT](/explore/10-Papers/04-强化学习与对齐/Training language models to follow instructions with human feedback（InstructGPT）)
+- 扩展了 [Language Models are Few-Shot Learners](/ai-fa/explore/10-Papers/01-架构演进/Language Models are Few-Shot Learners（GPT-3）) 与 [Training Compute-Optimal Large Language Models](/ai-fa/explore/10-Papers/10-标杆锚点/Training Compute-Optimal Large Language Models（Chinchilla）) 的规模科学
+- 对齐栈沿用 [InstructGPT](/ai-fa/explore/10-Papers/04-强化学习与对齐/Training language models to follow instructions with human feedback（InstructGPT）)
 
 ## 6. 影响与后续
 
@@ -48,6 +48,6 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[Scaling Laws for Neural Language Models](/explore/10-Papers/01-架构演进/Scaling Laws for Neural Language Models（Scaling Laws）)、[RLHF目标](/explore/30-Formulas/RLHF目标)（无重数学门槛）
+[Scaling Laws for Neural Language Models](/ai-fa/explore/10-Papers/01-架构演进/Scaling Laws for Neural Language Models（Scaling Laws）)、[RLHF目标](/ai-fa/explore/30-Formulas/RLHF目标)（无重数学门槛）
 
-> 谱系成员（10）：[Emergent Abilities of Large Language Models](/explore/10-Papers/10-标杆锚点/Emergent Abilities of Large Language Models（涌现）) · [Gemini 1.5- Unlocking Multimodal Understanding Across Millions of Tokens of Context](/explore/10-Papers/10-标杆锚点/Gemini 1.5- Unlocking Multimodal Understanding Across Millions of Tokens of Context（Gemini 1.5）) · [Large Language Models- A Survey](/explore/10-Papers/10-标杆锚点/Large Language Models- A Survey（LLM Survey 2024）) · [Length-Controlled AlpacaEval- A Simple Way to Debias Automatic Evaluators](/explore/10-Papers/10-标杆锚点/Length-Controlled AlpacaEval- A Simple Way to Debias Automatic Evaluators（AlpacaEval2）) · [MixEval- Deriving Wisdom of the Crowd from LLM Benchmark Mixtures](/explore/10-Papers/10-标杆锚点/MixEval- Deriving Wisdom of the Crowd from LLM Benchmark Mixtures（MixEval）) · [PaLM - Scaling Language Modeling with Pathways](/explore/10-Papers/10-标杆锚点/PaLM- Scaling Language Modeling with Pathways（PaLM）) · [Qwen2.5 Technical Report](/explore/10-Papers/10-标杆锚点/Qwen2.5 Technical Report（Qwen2.5）) · [The Llama 3 Herd of Models](/explore/10-Papers/10-标杆锚点/The Llama 3 Herd of Models（Llama3）) · [The Pile- An 800GB Dataset of Diverse Text for Language Modeling](/explore/10-Papers/10-标杆锚点/The Pile- An 800GB Dataset of Diverse Text for Language Modeling（Pile）) · [Training Compute-Optimal Large Language Models](/explore/10-Papers/10-标杆锚点/Training Compute-Optimal Large Language Models（Chinchilla）)
+> 谱系成员（10）：[Emergent Abilities of Large Language Models](/ai-fa/explore/10-Papers/10-标杆锚点/Emergent Abilities of Large Language Models（涌现）) · [Gemini 1.5- Unlocking Multimodal Understanding Across Millions of Tokens of Context](/ai-fa/explore/10-Papers/10-标杆锚点/Gemini 1.5- Unlocking Multimodal Understanding Across Millions of Tokens of Context（Gemini 1.5）) · [Large Language Models- A Survey](/ai-fa/explore/10-Papers/10-标杆锚点/Large Language Models- A Survey（LLM Survey 2024）) · [Length-Controlled AlpacaEval- A Simple Way to Debias Automatic Evaluators](/ai-fa/explore/10-Papers/10-标杆锚点/Length-Controlled AlpacaEval- A Simple Way to Debias Automatic Evaluators（AlpacaEval2）) · [MixEval- Deriving Wisdom of the Crowd from LLM Benchmark Mixtures](/ai-fa/explore/10-Papers/10-标杆锚点/MixEval- Deriving Wisdom of the Crowd from LLM Benchmark Mixtures（MixEval）) · [PaLM - Scaling Language Modeling with Pathways](/ai-fa/explore/10-Papers/10-标杆锚点/PaLM- Scaling Language Modeling with Pathways（PaLM）) · [Qwen2.5 Technical Report](/ai-fa/explore/10-Papers/10-标杆锚点/Qwen2.5 Technical Report（Qwen2.5）) · [The Llama 3 Herd of Models](/ai-fa/explore/10-Papers/10-标杆锚点/The Llama 3 Herd of Models（Llama3）) · [The Pile- An 800GB Dataset of Diverse Text for Language Modeling](/ai-fa/explore/10-Papers/10-标杆锚点/The Pile- An 800GB Dataset of Diverse Text for Language Modeling（Pile）) · [Training Compute-Optimal Large Language Models](/ai-fa/explore/10-Papers/10-标杆锚点/Training Compute-Optimal Large Language Models（Chinchilla）)

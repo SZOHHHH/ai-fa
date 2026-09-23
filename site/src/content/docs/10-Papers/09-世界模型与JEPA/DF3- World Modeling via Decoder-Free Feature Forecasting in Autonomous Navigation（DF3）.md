@@ -38,15 +38,15 @@ $$
 
 ## 5. 与前作/矩阵关系
 
-🚩 世界模型矩阵"特征预测×导航"格；≡ [Revisiting Feature Prediction for Learning Visual Representations from Video](/explore/10-Papers/09-世界模型与JEPA/Revisiting Feature Prediction for Learning Visual Representations from Video（V-JEPA）)（域扩张）
+🚩 世界模型矩阵"特征预测×导航"格；≡ [Revisiting Feature Prediction for Learning Visual Representations from Video](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Revisiting Feature Prediction for Learning Visual Representations from Video（V-JEPA）)（域扩张）
 
 
 ## 6. 影响与占位意义
 
 RS 库 08-03 情报（rel=3）；JEPA 路线任务面证据。
 
-> 近邻同族：[Delta-JEPA- Learning Action-Sensitive World Models via Latent Difference Decoding](/explore/10-Papers/09-世界模型与JEPA/Delta-JEPA- Learning Action-Sensitive World Models via Latent Difference Decoding（Delta-JEPA）)
-> 数学根基（占位层）：[扩散条件去噪](/explore/30-Formulas/扩散条件去噪) · [贝尔曼方程](/explore/40-Concepts/贝尔曼方程)
+> 近邻同族：[Delta-JEPA- Learning Action-Sensitive World Models via Latent Difference Decoding](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Delta-JEPA- Learning Action-Sensitive World Models via Latent Difference Decoding（Delta-JEPA）)
+> 数学根基（占位层）：[扩散条件去噪](/ai-fa/explore/30-Formulas/扩散条件去噪) · [贝尔曼方程](/ai-fa/explore/40-Concepts/贝尔曼方程)
 
 ## 7. 读前须知
 

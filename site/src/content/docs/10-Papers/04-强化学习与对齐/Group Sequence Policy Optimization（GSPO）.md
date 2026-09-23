@@ -26,26 +26,26 @@ pdf: 已下载（PDF/）
 
 ## 3. 方法概要
 
-1. [GRPO](/explore/20-Algorithms/GRPO与RLVR) 的组相对优势保留
+1. [GRPO](/ai-fa/explore/20-Algorithms/GRPO与RLVR) 的组相对优势保留
 2. PPO 裁剪作用于序列级比率（单值）而非逐 token
 3. 理论：序列级比率的偏差-方差权衡优于 token 级
 
 ## 4. 核心公式
 
-- $$\rho_{\text{seq}}$$ 如上——[PPO裁剪目标](/explore/30-Formulas/PPO裁剪目标) 的 $$\rho_t$$ 换成序列聚合版
-- 几何平均 ≈ [SimPO损失](/explore/30-Formulas/SimPO损失) 的长度归一化思想（对数域平均）——跨线呼应
+- $$\rho_{\text{seq}}$$ 如上——[PPO裁剪目标](/ai-fa/explore/30-Formulas/PPO裁剪目标) 的 $$\rho_t$$ 换成序列聚合版
+- 几何平均 ≈ [SimPO损失](/ai-fa/explore/30-Formulas/SimPO损失) 的长度归一化思想（对数域平均）——跨线呼应
 
 ## 5. 与前作的关系
 
-- 改进了 [GRPO目标](/explore/30-Formulas/GRPO目标)（token 级裁剪在长推理链上的失稳）
-- 被 [SAPO](/explore/10-Papers/04-强化学习与对齐/Soft Adaptive Policy Optimization（SAPO）) 继承发展（序列级 + 软门控）
+- 改进了 [GRPO目标](/ai-fa/explore/30-Formulas/GRPO目标)（token 级裁剪在长推理链上的失稳）
+- 被 [SAPO](/ai-fa/explore/10-Papers/04-强化学习与对齐/Soft Adaptive Policy Optimization（SAPO）) 继承发展（序列级 + 软门控）
 
 ## 6. 影响与后续
 
 - Qwen3 全系 RL 基座；"比率粒度"成为 RL 稳定化矩阵的轴（token/序列/组）
 - 学术界跟进序列级重要性分析
-- 段级粒度跟进（260916）：[HISPO](/explore/10-Papers/04-强化学习与对齐/HISPO Hierarchical Importance-Sampling Policy Optimization with Entropy-Derived Segments) 在 token 级（GRPO/DAPO）与序列级（本文）之间插入熵导出连续段级 IS 修正——"比率粒度"轴再添一格
+- 段级粒度跟进（260916）：[HISPO](/ai-fa/explore/10-Papers/04-强化学习与对齐/HISPO Hierarchical Importance-Sampling Policy Optimization with Entropy-Derived Segments) 在 token 级（GRPO/DAPO）与序列级（本文）之间插入熵导出连续段级 IS 修正——"比率粒度"轴再添一格
 
 ## 7. 读前须知
 
-[PPO裁剪目标](/explore/30-Formulas/PPO裁剪目标)、[GRPO目标](/explore/30-Formulas/GRPO目标)、[Soft Adaptive Policy Optimization](/explore/10-Papers/04-强化学习与对齐/Soft Adaptive Policy Optimization（SAPO）)
+[PPO裁剪目标](/ai-fa/explore/30-Formulas/PPO裁剪目标)、[GRPO目标](/ai-fa/explore/30-Formulas/GRPO目标)、[Soft Adaptive Policy Optimization](/ai-fa/explore/10-Papers/04-强化学习与对齐/Soft Adaptive Policy Optimization（SAPO）)

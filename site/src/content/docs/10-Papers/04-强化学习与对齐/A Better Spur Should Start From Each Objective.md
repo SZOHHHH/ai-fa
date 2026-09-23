@@ -30,8 +30,8 @@ layer: 占位
 （待精读）
 
 ## 5. 与前作/矩阵关系
-- 线锚：[A General Theoretical Paradigm to Understand Learning from Human Preferences](/explore/10-Papers/04-强化学习与对齐/A General Theoretical Paradigm to Understand Learning from Human Preferences（IPO）)（偏好优化理论家族→多边际多目标版）· [Proximal Policy Optimization Algorithms](/explore/10-Papers/04-强化学习与对齐/Proximal Policy Optimization Algorithms（PPO）)（底层优化器锚）
-- 概念链：[策略梯度定理](/explore/40-Concepts/策略梯度定理)
+- 线锚：[A General Theoretical Paradigm to Understand Learning from Human Preferences](/ai-fa/explore/10-Papers/04-强化学习与对齐/A General Theoretical Paradigm to Understand Learning from Human Preferences（IPO）)（偏好优化理论家族→多边际多目标版）· [Proximal Policy Optimization Algorithms](/ai-fa/explore/10-Papers/04-强化学习与对齐/Proximal Policy Optimization Algorithms（PPO）)（底层优化器锚）
+- 概念链：[策略梯度定理](/ai-fa/explore/40-Concepts/策略梯度定理)
 
 ## 6. 影响后续
 （待精读）

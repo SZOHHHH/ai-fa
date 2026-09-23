@@ -10,7 +10,7 @@ tags: [formula]
 
 ## 1. 标准形式
 
-**数学上完全等于** [注意力核心公式](/explore/30-Formulas/注意力核心公式)：$$\mathrm{softmax}(QK^\top/\sqrt{d_k})V$$。
+**数学上完全等于** [注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)：$$\mathrm{softmax}(QK^\top/\sqrt{d_k})V$$。
 变化只在**计算顺序**：把 $$Q, K, V$$ 分成小块，逐块载入 SRAM（快显存），用**在线 softmax**（online softmax）增量更新结果，永不物化 $$n \times n$$ 注意力矩阵。
 
 **在线 softmax 更新式**（灵魂算法）：
@@ -38,16 +38,16 @@ $$O_{\text{new}} = \frac{e^{m_{\text{old}} - m_{\text{new}}} l_{\text{old}}\, O_
 
 | 论文 | 贡献 |
 |---|---|
-| [FlashAttention - Fast and Memory-Efficient Exact Attention with IO-Awareness](/explore/10-Papers/01-架构演进/FlashAttention- Fast and Memory-Efficient Exact Attention with IO-Awareness（FlashAttention）) | 提出 tiling + online softmax |
+| [FlashAttention - Fast and Memory-Efficient Exact Attention with IO-Awareness](/ai-fa/explore/10-Papers/01-架构演进/FlashAttention- Fast and Memory-Efficient Exact Attention with IO-Awareness（FlashAttention）) | 提出 tiling + online softmax |
 
 ## 5. 数学概念分解
 
-- [注意力核心公式](/explore/30-Formulas/注意力核心公式)：被重排的母公式
-- [softmax函数](/explore/40-Concepts/softmax函数)：数值稳定与在线化
-- [注意力计算复杂度](/explore/30-Formulas/注意力计算复杂度)：IO 复杂度视角
+- [注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)：被重排的母公式
+- [softmax函数](/ai-fa/explore/40-Concepts/softmax函数)：数值稳定与在线化
+- [注意力计算复杂度](/ai-fa/explore/30-Formulas/注意力计算复杂度)：IO 复杂度视角
 
 ## 6. 与其他公式的关系
 
-- ≡ **等价变形**（数学不变）：[注意力核心公式](/explore/30-Formulas/注意力核心公式)
+- ≡ **等价变形**（数学不变）：[注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)
 - → 被所有训练/推理框架默认采用；长上下文可行性的工程基石
 - 对比线性注意力（Performer 等）：它们改**数学**（近似），Flash 不改数学只改**计算图**——两条路线正交可叠加

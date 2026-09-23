@@ -31,8 +31,8 @@ layer: 占位
 （待精读）
 
 ## 5. 与前作/矩阵关系
-- 线锚：[扩散模型](/explore/20-Algorithms/扩散模型) · [一致性模型](/explore/20-Algorithms/一致性模型)（占位挂链，Tier B 精化）
-- 应用位：[扩散模型](/explore/20-Algorithms/扩散模型)；范式近邻：[Diffuser](/explore/10-Papers/04-强化学习与对齐/Planning with Diffusion for Flexible Behavior Synthesis（Diffuser）)（"生成即功能"两例：界面/行为）
+- 线锚：[扩散模型](/ai-fa/explore/20-Algorithms/扩散模型) · [一致性模型](/ai-fa/explore/20-Algorithms/一致性模型)（占位挂链，Tier B 精化）
+- 应用位：[扩散模型](/ai-fa/explore/20-Algorithms/扩散模型)；范式近邻：[Diffuser](/ai-fa/explore/10-Papers/04-强化学习与对齐/Planning with Diffusion for Flexible Behavior Synthesis（Diffuser）)（"生成即功能"两例：界面/行为）
 
 ## 6. 影响后续
 （待精读）

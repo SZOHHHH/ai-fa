@@ -33,21 +33,21 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- [RLHF目标](/explore/30-Formulas/RLHF目标) —— 全流程目标
-- [PPO裁剪目标](/explore/30-Formulas/PPO裁剪目标) —— 优化器（LLM 版配置）
+- [RLHF目标](/ai-fa/explore/30-Formulas/RLHF目标) —— 全流程目标
+- [PPO裁剪目标](/ai-fa/explore/30-Formulas/PPO裁剪目标) —— 优化器（LLM 版配置）
 
 ## 5. 与前作的关系
 
-- 组合了 [Deep reinforcement learning from human preferences](/explore/10-Papers/04-强化学习与对齐/Deep reinforcement learning from human preferences（RLHF）)（范式）与 [Proximal Policy Optimization Algorithms](/explore/10-Papers/04-强化学习与对齐/Proximal Policy Optimization Algorithms（PPO）)（优化器）
+- 组合了 [Deep reinforcement learning from human preferences](/ai-fa/explore/10-Papers/04-强化学习与对齐/Deep reinforcement learning from human preferences（RLHF）)（范式）与 [Proximal Policy Optimization Algorithms](/ai-fa/explore/10-Papers/04-强化学习与对齐/Proximal Policy Optimization Algorithms（PPO）)（优化器）
 - 扩展了 [GPT-3 few-shot] 到指令跟随场景
 
 ## 6. 影响与后续
 
 - ChatGPT 的技术底座；"对齐税"（alignment tax）概念实证
 - 催生 Alpaca/self-instruct 等指令数据生态
-- 三阶段范式被 [DPO](/explore/10-Papers/04-强化学习与对齐/Direct Preference Optimization- Your Language Model is Secretly a Reward Model（DPO）) 论文当作靶子（"两步就够了"）
-- → 后继补记（260916）：[Good Pretraining, Bad SFT](/explore/10-Papers/05-MoE/Good Pretraining, Bad SFT Checkpoint Quality Across the Training Stack)（"预训练指标好≠SFT 后好"——三阶段范式的 checkpoint 质量横切视角）
+- 三阶段范式被 [DPO](/ai-fa/explore/10-Papers/04-强化学习与对齐/Direct Preference Optimization- Your Language Model is Secretly a Reward Model（DPO）) 论文当作靶子（"两步就够了"）
+- → 后继补记（260916）：[Good Pretraining, Bad SFT](/ai-fa/explore/10-Papers/05-MoE/Good Pretraining, Bad SFT Checkpoint Quality Across the Training Stack)（"预训练指标好≠SFT 后好"——三阶段范式的 checkpoint 质量横切视角）
 
 ## 7. 读前须知
 
-[RLHF](/explore/20-Algorithms/RLHF)、[RLHF目标](/explore/30-Formulas/RLHF目标)、[PPO裁剪目标](/explore/30-Formulas/PPO裁剪目标)、[广义优势估计GAE](/explore/40-Concepts/广义优势估计GAE)
+[RLHF](/ai-fa/explore/20-Algorithms/RLHF)、[RLHF目标](/ai-fa/explore/30-Formulas/RLHF目标)、[PPO裁剪目标](/ai-fa/explore/30-Formulas/PPO裁剪目标)、[广义优势估计GAE](/ai-fa/explore/40-Concepts/广义优势估计GAE)

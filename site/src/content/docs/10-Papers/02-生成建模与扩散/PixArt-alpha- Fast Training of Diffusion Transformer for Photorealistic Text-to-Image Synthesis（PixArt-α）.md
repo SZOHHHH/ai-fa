@@ -20,12 +20,12 @@ tags: [paper]
 
 ## 2. 核心贡献
 
-1. 三阶段分解+复用 SD 的 [VAE](/explore/10-Papers/02-生成建模与扩散/Auto-Encoding Variational Bayes（VAE）) 与 token 映射（不重学）
-2. [DMD](/explore/10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）) 蒸馏直接到 4 步的后续（PixArt-δ）
+1. 三阶段分解+复用 SD 的 [VAE](/ai-fa/explore/10-Papers/02-生成建模与扩散/Auto-Encoding Variational Bayes（VAE）) 与 token 映射（不重学）
+2. [DMD](/ai-fa/explore/10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）) 蒸馏直接到 4 步的后续（PixArt-δ）
 
 ## 3. 方法概要
 
-三阶段分解+复用 SD 的 [VAE](/explore/10-Papers/02-生成建模与扩散/Auto-Encoding Variational Bayes（VAE）) 与 token 映射（不重学）；[DMD](/explore/10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）) 蒸馏直接到 4 步的后续（PixArt-δ）。
+三阶段分解+复用 SD 的 [VAE](/ai-fa/explore/10-Papers/02-生成建模与扩散/Auto-Encoding Variational Bayes（VAE）) 与 token 映射（不重学）；[DMD](/ai-fa/explore/10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）) 蒸馏直接到 4 步的后续（PixArt-δ）。
 ## 4. 核心公式
 
 
@@ -34,7 +34,7 @@ $$
 $$
 
 
-**直觉**：→ [Scalable Diffusion Models with Transformers](/explore/10-Papers/02-生成建模与扩散/Scalable Diffusion Models with Transformers（DiT）)（骨干）→ PixArt-δ（+DMD 蒸馏）；生成加速矩阵"潜扩散×蒸馏"的算法侧减法
+**直觉**：→ [Scalable Diffusion Models with Transformers](/ai-fa/explore/10-Papers/02-生成建模与扩散/Scalable Diffusion Models with Transformers（DiT）)（骨干）→ PixArt-δ（+DMD 蒸馏）；生成加速矩阵"潜扩散×蒸馏"的算法侧减法
 
 ## 5. 与前作/矩阵关系
 
@@ -48,8 +48,8 @@ $$
 
 undefined
 
-> 近邻同族：[Analyzing and Improving the Training Dynamics of Diffusion Models](/explore/10-Papers/02-生成建模与扩散/Analyzing and Improving the Training Dynamics of Diffusion Models（EDM2）) · [Classifier-Free Diffusion Guidance](/explore/10-Papers/02-生成建模与扩散/Classifier-Free Diffusion Guidance（CFG）)
+> 近邻同族：[Analyzing and Improving the Training Dynamics of Diffusion Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Analyzing and Improving the Training Dynamics of Diffusion Models（EDM2）) · [Classifier-Free Diffusion Guidance](/ai-fa/explore/10-Papers/02-生成建模与扩散/Classifier-Free Diffusion Guidance（CFG）)
 
-> 数学根基：[概率分布](/explore/40-Concepts/概率分布)
+> 数学根基：[概率分布](/ai-fa/explore/40-Concepts/概率分布)
 
-> 数学根基：[DSM目标](/explore/30-Formulas/DSM目标) · [条件流匹配损失](/explore/30-Formulas/条件流匹配损失)
+> 数学根基：[DSM目标](/ai-fa/explore/30-Formulas/DSM目标) · [条件流匹配损失](/ai-fa/explore/30-Formulas/条件流匹配损失)

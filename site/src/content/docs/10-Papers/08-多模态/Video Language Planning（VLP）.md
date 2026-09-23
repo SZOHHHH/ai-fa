@@ -49,8 +49,8 @@ undefined
 
 ---
 
-> 谱系枢纽：[Learning Transferable Visual Models From Natural Language Supervision](/explore/10-Papers/08-多模态/Learning Transferable Visual Models From Natural Language Supervision（CLIP）)（图谱连通入口）
+> 谱系枢纽：[Learning Transferable Visual Models From Natural Language Supervision](/ai-fa/explore/10-Papers/08-多模态/Learning Transferable Visual Models From Natural Language Supervision（CLIP）)（图谱连通入口）
 
-> 近邻同族：[BLIP-2 - Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models](/explore/10-Papers/08-多模态/BLIP-2- Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Lan（BLIP-2）) · [Flamingo - a Visual Language Model for Few-Shot Learning](/explore/10-Papers/08-多模态/Flamingo- a Visual Language Model for Few-Shot Learning（Flamingo）)
+> 近邻同族：[BLIP-2 - Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models](/ai-fa/explore/10-Papers/08-多模态/BLIP-2- Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Lan（BLIP-2）) · [Flamingo - a Visual Language Model for Few-Shot Learning](/ai-fa/explore/10-Papers/08-多模态/Flamingo- a Visual Language Model for Few-Shot Learning（Flamingo）)
 
-> 数学根基：[视觉语言模型（VLM）](/explore/40-Concepts/视觉语言模型（VLM）)
+> 数学根基：[视觉语言模型（VLM）](/ai-fa/explore/40-Concepts/视觉语言模型（VLM）)

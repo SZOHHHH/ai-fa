@@ -20,12 +20,12 @@ tags: [paper]
 
 ## 2. 核心贡献
 
-1. 1800 任务+[CoT](/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）) 混合消融
+1. 1800 任务+[CoT](/ai-fa/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）) 混合消融
 2. held-out 泛化随任务数增长
 
 ## 3. 方法概要
 
-1800 任务+[CoT](/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）) 混合消融；held-out 泛化随任务数增长。
+1800 任务+[CoT](/ai-fa/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）) 混合消融；held-out 泛化随任务数增长。
 ## 4. 核心公式
 
 
@@ -34,7 +34,7 @@ $$
 $$
 
 
-**直觉**：← [Training language models to follow instructions with human feedback](/explore/10-Papers/04-强化学习与对齐/Training language models to follow instructions with human feedback（InstructGPT）)（RLHF 路线）vs Flan（纯 SFT 路线）——对齐双证的 SFT 极；→ [LIMA- Less Is More for Alignment](/explore/10-Papers/04-强化学习与对齐/LIMA- Less Is More for Alignment（LIMA）)（质量极）
+**直觉**：← [Training language models to follow instructions with human feedback](/ai-fa/explore/10-Papers/04-强化学习与对齐/Training language models to follow instructions with human feedback（InstructGPT）)（RLHF 路线）vs Flan（纯 SFT 路线）——对齐双证的 SFT 极；→ [LIMA- Less Is More for Alignment](/ai-fa/explore/10-Papers/04-强化学习与对齐/LIMA- Less Is More for Alignment（LIMA）)（质量极）
 
 ## 5. 与前作/矩阵关系
 
@@ -48,6 +48,6 @@ $$
 
 undefined
 
-> 近邻同族：[A Survey on In-context Learning](/explore/10-Papers/07-推理模型/A Survey on In-context Learning（ICL Survey）) · [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）)
+> 近邻同族：[A Survey on In-context Learning](/ai-fa/explore/10-Papers/07-推理模型/A Survey on In-context Learning（ICL Survey）) · [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](/ai-fa/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）)
 
-> 数学根基：[思维链（CoT）](/explore/40-Concepts/思维链（CoT）)
+> 数学根基：[思维链（CoT）](/ai-fa/explore/40-Concepts/思维链（CoT）)

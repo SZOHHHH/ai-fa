@@ -17,7 +17,7 @@ $$\log p_\theta(x) = \log \int p_\theta(x, z)\, dz = \log \mathbb{E}_{q(z\mid x)
 
 ## 2. 数学形式
 
-两种等价写法（本库两种都要认得，见 [ELBO目标](/explore/30-Formulas/ELBO目标) 的对照表）：
+两种等价写法（本库两种都要认得，见 [ELBO目标](/ai-fa/explore/30-Formulas/ELBO目标) 的对照表）：
 
 **重建 + 正则**：
 $$\text{ELBO} = \mathbb{E}_{q(z\mid x)}\!\left[ \log p_\theta(x \mid z) \right] - D_{\mathrm{KL}}\!\left( q(z\mid x) \,\|\, p(z) \right)$$
@@ -33,9 +33,9 @@ $$\text{ELBO} KLW = \mathbb{E}_{q(z\mid x)}\!\left[ \log p_\theta(x, z) \right] 
 
 | 出现场景 | 用法 |
 |---|---|
-| [Auto-Encoding Variational Bayes](/explore/10-Papers/02-生成建模与扩散/Auto-Encoding Variational Bayes（VAE）) | 整个 VAE 的训练目标就是 ELBO |
-| [DDPM训练目标](/explore/30-Formulas/DDPM训练目标) | DDPM 的变分界是 ELBO 的马尔可夫链版本，逐项化简成 MSE |
-| [条件流匹配损失](/explore/30-Formulas/条件流匹配损失) | 理论上 FM 损失是 ELBO 的连续时间/速度场版本（Stochastic Interpolants 论文证明） |
+| [Auto-Encoding Variational Bayes](/ai-fa/explore/10-Papers/02-生成建模与扩散/Auto-Encoding Variational Bayes（VAE）) | 整个 VAE 的训练目标就是 ELBO |
+| [DDPM训练目标](/ai-fa/explore/30-Formulas/DDPM训练目标) | DDPM 的变分界是 ELBO 的马尔可夫链版本，逐项化简成 MSE |
+| [条件流匹配损失](/ai-fa/explore/30-Formulas/条件流匹配损失) | 理论上 FM 损失是 ELBO 的连续时间/速度场版本（Stochastic Interpolants 论文证明） |
 | 统一视角 | VAE / 扩散 / FM 都是"抬 ELBO"，差别只在隐变量结构和推断方式 |
 
 **这是 B1 线最重要的"大一统"概念**：VAE（一次跳）、DDPM（T 步跳）、FM/SI（连续时间流）是同一数学骨架的三种实例化。
@@ -48,7 +48,7 @@ $$\text{ELBO} KLW = \mathbb{E}_{q(z\mid x)}\!\left[ \log p_\theta(x, z) \right] 
 
 ## 5. 相关概念
 
-- [KL散度](/explore/40-Concepts/KL散度)：ELBO 与真值的差距恰是 KL
-- [期望](/explore/40-Concepts/期望)：ELBO 全程是期望形式
-- [重参数化](/explore/40-Concepts/重参数化)：让 ELBO 可梯度下降的关键技巧
-- [Jensen不等式](/explore/40-Concepts/Jensen不等式)：下界成立的原因
+- [KL散度](/ai-fa/explore/40-Concepts/KL散度)：ELBO 与真值的差距恰是 KL
+- [期望](/ai-fa/explore/40-Concepts/期望)：ELBO 全程是期望形式
+- [重参数化](/ai-fa/explore/40-Concepts/重参数化)：让 ELBO 可梯度下降的关键技巧
+- [Jensen不等式](/ai-fa/explore/40-Concepts/Jensen不等式)：下界成立的原因

@@ -34,7 +34,7 @@ $$
 $$
 
 
-**直觉**：← [Diff-Instruct- A Universal Approach for Transferring Knowledge From Pre-trained Diffusion Models](/explore/10-Papers/02-生成建模与扩散/Diff-Instruct- A Universal Approach for Transferring Knowledge From Pre-trained Diffusion Models（Diff-Instruct）)（B18 入库）；→ 生成对齐线（一步+偏好）；≡ OPD×RLVR 组合的生成域镜像（LLM 域已被占，生成域此卡占先手）
+**直觉**：← [Diff-Instruct- A Universal Approach for Transferring Knowledge From Pre-trained Diffusion Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Diff-Instruct- A Universal Approach for Transferring Knowledge From Pre-trained Diffusion Models（Diff-Instruct）)（B18 入库）；→ 生成对齐线（一步+偏好）；≡ OPD×RLVR 组合的生成域镜像（LLM 域已被占，生成域此卡占先手）
 
 ## 5. 与前作/矩阵关系
 
@@ -48,8 +48,8 @@ $$
 
 undefined
 
-> 近邻同族：[Diffusion Fine-tuning with Rewarded Moment Matching Distillation](/explore/10-Papers/02-生成建模与扩散/Diffusion Fine-tuning with Rewarded Moment Matching Distillation（RMMD）)
+> 近邻同族：[Diffusion Fine-tuning with Rewarded Moment Matching Distillation](/ai-fa/explore/10-Papers/02-生成建模与扩散/Diffusion Fine-tuning with Rewarded Moment Matching Distillation（RMMD）)
 
-> 数学根基：[概率分布](/explore/40-Concepts/概率分布)
+> 数学根基：[概率分布](/ai-fa/explore/40-Concepts/概率分布)
 
-> 数学根基：[蒸馏损失](/explore/30-Formulas/蒸馏损失) · [DSM目标](/explore/30-Formulas/DSM目标)
+> 数学根基：[蒸馏损失](/ai-fa/explore/30-Formulas/蒸馏损失) · [DSM目标](/ai-fa/explore/30-Formulas/DSM目标)

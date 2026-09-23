@@ -17,11 +17,11 @@ tags: [paper, 占位层]
 
 ## 1. 一句话贡献
 
-[GSPO](/explore/10-Papers/04-强化学习与对齐/Group Sequence Policy Optimization（GSPO）) 裁剪机制的长度偏置分析：序列似然比集中于 1 附近，固定裁剪范围引发长度相关的覆盖偏置——给出公平化修法。
+[GSPO](/ai-fa/explore/10-Papers/04-强化学习与对齐/Group Sequence Policy Optimization（GSPO）) 裁剪机制的长度偏置分析：序列似然比集中于 1 附近，固定裁剪范围引发长度相关的覆盖偏置——给出公平化修法。
 
 ## 2. 核心贡献
 
-1. [GSPO](/explore/10-Papers/04-强化学习与对齐/Group Sequence Policy Optimization（GSPO）) 裁剪机制的长度偏置分析：序列似然比集中于 1 附近，固定裁剪范围引发长度相关的覆盖偏置——给出公平化修法。
+1. [GSPO](/ai-fa/explore/10-Papers/04-强化学习与对齐/Group Sequence Policy Optimization（GSPO）) 裁剪机制的长度偏置分析：序列似然比集中于 1 附近，固定裁剪范围引发长度相关的覆盖偏置——给出公平化修法。
 
 ## 3. 方法概要
 
@@ -44,9 +44,9 @@ $$
 
 GSPO 系 2025-09 后继占位。
 
-> 近邻同族：[A General Language Assistant as a Laboratory for Alignment](/explore/10-Papers/04-强化学习与对齐/A General Language Assistant as a Laboratory for Alignment（Assistant Lab）) · [A General Theoretical Paradigm to Understand Learning from Human Preferences](/explore/10-Papers/04-强化学习与对齐/A General Theoretical Paradigm to Understand Learning from Human Preferences（IPO）)
-> 数学根基（占位层）：[策略梯度定理](/explore/40-Concepts/策略梯度定理)
-> 数学根基：[REINFORCE目标](/explore/30-Formulas/REINFORCE目标)
+> 近邻同族：[A General Language Assistant as a Laboratory for Alignment](/ai-fa/explore/10-Papers/04-强化学习与对齐/A General Language Assistant as a Laboratory for Alignment（Assistant Lab）) · [A General Theoretical Paradigm to Understand Learning from Human Preferences](/ai-fa/explore/10-Papers/04-强化学习与对齐/A General Theoretical Paradigm to Understand Learning from Human Preferences（IPO）)
+> 数学根基（占位层）：[策略梯度定理](/ai-fa/explore/40-Concepts/策略梯度定理)
+> 数学根基：[REINFORCE目标](/ai-fa/explore/30-Formulas/REINFORCE目标)
 
 ## 7. 读前须知
 

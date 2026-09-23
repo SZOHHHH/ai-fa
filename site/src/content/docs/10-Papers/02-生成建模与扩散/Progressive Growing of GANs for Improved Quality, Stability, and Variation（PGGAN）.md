@@ -16,7 +16,7 @@ tags: [paper]
 
 ## 1. 一句话贡献
 
-渐进式生长 [GAN](/explore/10-Papers/02-生成建模与扩散/Generative Adversarial Networks（GAN）)：从 4×4 一路长到 1024×1024——训练稳定化的"课程学习"（StyleGAN 的直接前身）。
+渐进式生长 [GAN](/ai-fa/explore/10-Papers/02-生成建模与扩散/Generative Adversarial Networks（GAN）)：从 4×4 一路长到 1024×1024——训练稳定化的"课程学习"（StyleGAN 的直接前身）。
 
 ## 2. 核心贡献
 
@@ -48,6 +48,6 @@ $$
 
 需要：GAN 基础； fading-in 新层的平滑技巧
 
-> 近邻同族：[Analyzing and Improving the Image Quality of StyleGAN](/explore/10-Papers/02-生成建模与扩散/Analyzing and Improving the Image Quality of StyleGAN（StyleGAN2）) · [Generative Adversarial Networks](/explore/10-Papers/02-生成建模与扩散/Generative Adversarial Networks（GAN）)
+> 近邻同族：[Analyzing and Improving the Image Quality of StyleGAN](/ai-fa/explore/10-Papers/02-生成建模与扩散/Analyzing and Improving the Image Quality of StyleGAN（StyleGAN2）) · [Generative Adversarial Networks](/ai-fa/explore/10-Papers/02-生成建模与扩散/Generative Adversarial Networks（GAN）)
 
-> 数学根基：[GAN目标](/explore/30-Formulas/GAN目标) · [谱归一化](/explore/30-Formulas/谱归一化)
+> 数学根基：[GAN目标](/ai-fa/explore/30-Formulas/GAN目标) · [谱归一化](/ai-fa/explore/30-Formulas/谱归一化)

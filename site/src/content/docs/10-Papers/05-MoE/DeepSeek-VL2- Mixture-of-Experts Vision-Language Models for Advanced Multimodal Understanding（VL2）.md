@@ -34,7 +34,7 @@ $$
 $$
 
 
-**直觉**：≡ [混合专家（MoE）](/explore/20-Algorithms/混合专家（MoE）)（视觉输入的粒度路由）
+**直觉**：≡ [混合专家（MoE）](/ai-fa/explore/20-Algorithms/混合专家（MoE）)（视觉输入的粒度路由）
 
 ## 5. 与前作/矩阵关系
 
@@ -43,11 +43,12 @@ MoE×多模态交叉的第一批代表（DeepSeek 系）
 ## 6. 影响后续
 
 需要：DeepSeekMoE 细粒度专家（库内有卡）；动态 tiling=粒度轴思想在视觉输入侧的应用
+- → 后继补记（260918）：[MVLGeo](/ai-fa/explore/10-Papers/05-MoE/Multi-View Mixture-of-Experts with Vision-Language Reranking for Cross-View Object Geo-Localization)（MoE×视觉语言家族应用面扩张：多视角统一+VLM 重排序做跨视角地理定位）
 
 ## 7. 读前须知
 
 undefined
 
-> 近邻同族：[Auxiliary-Loss-Free Load Balancing Strategy for Mixture-of-Experts](/explore/10-Papers/05-MoE/Auxiliary-Loss-Free Load Balancing Strategy for Mixture-of-Experts（无辅助损失MoE）) · [DeepSeek-V3 Technical Report](/explore/10-Papers/05-MoE/DeepSeek-V3 Technical Report（DeepSeek-V3）)
+> 近邻同族：[Auxiliary-Loss-Free Load Balancing Strategy for Mixture-of-Experts](/ai-fa/explore/10-Papers/05-MoE/Auxiliary-Loss-Free Load Balancing Strategy for Mixture-of-Experts（无辅助损失MoE）) · [DeepSeek-V3 Technical Report](/ai-fa/explore/10-Papers/05-MoE/DeepSeek-V3 Technical Report（DeepSeek-V3）)
 
-> 数学根基：[三层感知机投影](/explore/30-Formulas/三层感知机投影) · [CLIP对比损失](/explore/30-Formulas/CLIP对比损失) · [注意力核心公式](/explore/30-Formulas/注意力核心公式)
+> 数学根基：[三层感知机投影](/ai-fa/explore/30-Formulas/三层感知机投影) · [CLIP对比损失](/ai-fa/explore/30-Formulas/CLIP对比损失) · [注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)

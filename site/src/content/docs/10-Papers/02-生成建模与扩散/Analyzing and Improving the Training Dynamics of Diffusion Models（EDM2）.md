@@ -34,12 +34,12 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- 框架沿用 [Score-SDE前向过程](/explore/30-Formulas/Score-SDE前向过程) 的 EDM 重参数化（σ-空间）
-- [范数](/explore/40-Concepts/范数)（层幅度监控核心）
+- 框架沿用 [Score-SDE前向过程](/ai-fa/explore/30-Formulas/Score-SDE前向过程) 的 EDM 重参数化（σ-空间）
+- [范数](/ai-fa/explore/40-Concepts/范数)（层幅度监控核心）
 
 ## 5. 与前作的关系
 
-- 深化了 [Elucidating the Design Space of Diffusion-Based Generative Models](/explore/10-Papers/02-生成建模与扩散/Elucidating the Design Space of Diffusion-Based Generative Models（EDM）)：从设计空间到训练动态
+- 深化了 [Elucidating the Design Space of Diffusion-Based Generative Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Elucidating the Design Space of Diffusion-Based Generative Models（EDM）)：从设计空间到训练动态
 - 与 [MuP/参数化转移] 思想同源（超参迁移线交叉）
 
 ## 6. 影响与后续
@@ -49,6 +49,6 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[Elucidating the Design Space of Diffusion-Based Generative Models](/explore/10-Papers/02-生成建模与扩散/Elucidating the Design Space of Diffusion-Based Generative Models（EDM）)、[范数](/explore/40-Concepts/范数)、[梯度](/explore/40-Concepts/梯度)
+[Elucidating the Design Space of Diffusion-Based Generative Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Elucidating the Design Space of Diffusion-Based Generative Models（EDM）)、[范数](/ai-fa/explore/40-Concepts/范数)、[梯度](/ai-fa/explore/40-Concepts/梯度)
 
-> 近邻同族：[Classifier-Free Diffusion Guidance](/explore/10-Papers/02-生成建模与扩散/Classifier-Free Diffusion Guidance（CFG）) · [Common Diffusion Noise Schedules and Sample Steps are Flawed](/explore/10-Papers/02-生成建模与扩散/Common Diffusion Noise Schedules and Sample Steps are Flawed（Zero Terminal SNR）)
+> 近邻同族：[Classifier-Free Diffusion Guidance](/ai-fa/explore/10-Papers/02-生成建模与扩散/Classifier-Free Diffusion Guidance（CFG）) · [Common Diffusion Noise Schedules and Sample Steps are Flawed](/ai-fa/explore/10-Papers/02-生成建模与扩散/Common Diffusion Noise Schedules and Sample Steps are Flawed（Zero Terminal SNR）)

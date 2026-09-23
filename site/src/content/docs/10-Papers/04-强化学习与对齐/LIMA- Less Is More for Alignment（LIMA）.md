@@ -34,7 +34,7 @@ $$
 $$
 
 
-**直觉**：↔ [InstructGPT](/explore/10-Papers/04-强化学习与对齐/Training language models to follow instructions with human feedback（InstructGPT）)（RL 路线）；偏好优化矩阵"隐式偏好×RL目标"格的 SFT 极端对照
+**直觉**：↔ [InstructGPT](/ai-fa/explore/10-Papers/04-强化学习与对齐/Training language models to follow instructions with human feedback（InstructGPT）)（RL 路线）；偏好优化矩阵"隐式偏好×RL目标"格的 SFT 极端对照
 
 ## 5. 与前作/矩阵关系
 
@@ -48,8 +48,8 @@ $$
 
 undefined
 
-> 近邻同族：[Aya Dataset- An Open-Access Collection for Multilingual Instruction Tuning](/explore/10-Papers/04-强化学习与对齐/Aya Dataset- An Open-Access Collection for Multilingual Instruction Tuning（Aya）) · [RAFT - Reward rAnked FineTuning for Generative Foundation Model Alignment](/explore/10-Papers/04-强化学习与对齐/RAFT- Reward rAnked FineTuning for Generative Foundation Model Alignment（RAFT）)
+> 近邻同族：[Aya Dataset- An Open-Access Collection for Multilingual Instruction Tuning](/ai-fa/explore/10-Papers/04-强化学习与对齐/Aya Dataset- An Open-Access Collection for Multilingual Instruction Tuning（Aya）) · [RAFT - Reward rAnked FineTuning for Generative Foundation Model Alignment](/ai-fa/explore/10-Papers/04-强化学习与对齐/RAFT- Reward rAnked FineTuning for Generative Foundation Model Alignment（RAFT）)
 
-> 数学根基：[策略梯度定理](/explore/40-Concepts/策略梯度定理)
+> 数学根基：[策略梯度定理](/ai-fa/explore/40-Concepts/策略梯度定理)
 
-> 数学根基：[REINFORCE目标](/explore/30-Formulas/REINFORCE目标)
+> 数学根基：[REINFORCE目标](/ai-fa/explore/30-Formulas/REINFORCE目标)

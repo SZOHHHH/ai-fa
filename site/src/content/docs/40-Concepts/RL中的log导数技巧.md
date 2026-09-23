@@ -15,7 +15,7 @@ tags: [concept]
 $$\nabla_\theta \mathbb{E}_{x \sim p_\theta}[f(x)] = \mathbb{E}_{x \sim p_\theta}\!\left[ f(x)\, \nabla_\theta \log p_\theta(x) \right]$$
 推导：$$\nabla_\theta \int f p_\theta = \int f \nabla_\theta p_\theta = \int f\, p_\theta \nabla_\theta \log p_\theta$$。
 
-**名字混乱警示**：$$\nabla_\theta \log p_\theta$$ 也被叫 "score function"——与 [Score函数](/explore/40-Concepts/Score函数)（$$\nabla_x \log p$$，对变量求导）**同名不同物**。本库约定：**对参数求导的语境叫"log 导数技巧"，对变量求导的才叫 Score 函数**。
+**名字混乱警示**：$$\nabla_\theta \log p_\theta$$ 也被叫 "score function"——与 [Score函数](/ai-fa/explore/40-Concepts/Score函数)（$$\nabla_x \log p$$，对变量求导）**同名不同物**。本库约定：**对参数求导的语境叫"log 导数技巧"，对变量求导的才叫 Score 函数**。
 
 ## 2. 数学形式
 
@@ -26,7 +26,7 @@ $$\nabla_\theta \mathbb{E}_{x \sim p_\theta}[f(x)] = \mathbb{E}_{x \sim p_\theta
 | 方法 | 梯度路径 | 方差 | 适用 |
 |---|---|---|---|
 | log 导数技巧 | 不穿过网络 | 高 | 离散分布 |
-| [重参数化](/explore/40-Concepts/重参数化) | 穿过网络 | 低 | 连续（位置-尺度族）|
+| [重参数化](/ai-fa/explore/40-Concepts/重参数化) | 穿过网络 | 低 | 连续（位置-尺度族）|
 
 - **代价函数不需要可导**：$$f$$ 只需可采样评估——RL 中 reward 是黑盒的原因
 
@@ -35,7 +35,7 @@ $$\nabla_\theta \mathbb{E}_{x \sim p_\theta}[f(x)] = \mathbb{E}_{x \sim p_\theta
 | 出现场景 | 用法 |
 |---|---|
 | 策略梯度 / REINFORCE | $$\nabla_\theta J = \mathbb{E}[\nabla_\theta \log \pi_\theta \cdot R]$$——整个 RL 的地基（B2 线） |
-| [Consistency Models](/explore/10-Papers/02-生成建模与扩散/Consistency Models（一致性模型）) | 一致性蒸馏中的期望梯度处理 |
+| [Consistency Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Consistency Models（一致性模型）) | 一致性蒸馏中的期望梯度处理 |
 | Gumbel-Softmax | 离散选择的可微松弛（结合两者） |
 | 变分推断 | score function 估计器家族 |
 
@@ -47,6 +47,6 @@ $$\nabla_\theta \mathbb{E}_{x \sim p_\theta}[f(x)] = \mathbb{E}_{x \sim p_\theta
 
 ## 5. 相关概念
 
-- [重参数化](/explore/40-Concepts/重参数化)：低方差替代方案
-- [梯度](/explore/40-Concepts/梯度)：技巧的本质是恒等式改写
-- [期望](/explore/40-Concepts/期望)：期望的梯度估计
+- [重参数化](/ai-fa/explore/40-Concepts/重参数化)：低方差替代方案
+- [梯度](/ai-fa/explore/40-Concepts/梯度)：技巧的本质是恒等式改写
+- [期望](/ai-fa/explore/40-Concepts/期望)：期望的梯度估计

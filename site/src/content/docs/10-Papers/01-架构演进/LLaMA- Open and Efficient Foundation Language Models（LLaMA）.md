@@ -33,13 +33,13 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- 配方组件各自成页：[RoPE旋转位置编码](/explore/30-Formulas/RoPE旋转位置编码)、RMSNorm（[Root Mean Square Layer Normalization](/explore/10-Papers/01-架构演进/Root Mean Square Layer Normalization（RMSNorm）)）、SwiGLU（[GLU Variants Improve Transformer](/explore/10-Papers/01-架构演进/GLU Variants Improve Transformer（SwiGLU）)）
-- 自回归目标 = [注意力核心公式](/explore/30-Formulas/注意力核心公式) 因果版
+- 配方组件各自成页：[RoPE旋转位置编码](/ai-fa/explore/30-Formulas/RoPE旋转位置编码)、RMSNorm（[Root Mean Square Layer Normalization](/ai-fa/explore/10-Papers/01-架构演进/Root Mean Square Layer Normalization（RMSNorm）)）、SwiGLU（[GLU Variants Improve Transformer](/ai-fa/explore/10-Papers/01-架构演进/GLU Variants Improve Transformer（SwiGLU）)）
+- 自回归目标 = [注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式) 因果版
 
 ## 5. 与前作的关系
 
 - 继承了 Chinchilla 数据配比结论（2112.11446）
-- 依托 [Attention Is All You Need](/explore/10-Papers/01-架构演进/Attention Is All You Need（Transformer）) 谱系全部组件研究
+- 依托 [Attention Is All You Need](/ai-fa/explore/10-Papers/01-架构演进/Attention Is All You Need（Transformer）) 谱系全部组件研究
 
 ## 6. 影响与后续
 
@@ -49,4 +49,4 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[Transformer](/explore/20-Algorithms/Transformer)、[RoPE旋转位置编码](/explore/30-Formulas/RoPE旋转位置编码)、[Scaling Laws for Neural Language Models](/explore/10-Papers/01-架构演进/Scaling Laws for Neural Language Models（Scaling Laws）)
+[Transformer](/ai-fa/explore/20-Algorithms/Transformer)、[RoPE旋转位置编码](/ai-fa/explore/30-Formulas/RoPE旋转位置编码)、[Scaling Laws for Neural Language Models](/ai-fa/explore/10-Papers/01-架构演进/Scaling Laws for Neural Language Models（Scaling Laws）)

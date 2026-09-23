@@ -26,19 +26,19 @@ pdf: 已下载（PDF/）
 
 ## 3. 方法概要
 
-1. 数据：成对偏好（同 [DPO](/explore/10-Papers/04-强化学习与对齐/Direct Preference Optimization- Your Language Model is Secretly a Reward Model（DPO）)）
+1. 数据：成对偏好（同 [DPO](/ai-fa/explore/10-Papers/04-强化学习与对齐/Direct Preference Optimization- Your Language Model is Secretly a Reward Model（DPO）)）
 2. 损失 = 对 $$y^+$$ 的 SFT 交叉熵 + λ × odds 比率对比项
 3. 单模型单阶段端到端
 4. 推理部署与 SFT 模型无差别
 
 ## 4. 核心公式
 
-- [ORPO损失](/explore/30-Formulas/ORPO损失)
+- [ORPO损失](/ai-fa/explore/30-Formulas/ORPO损失)
 
 ## 5. 与前作的关系
 
-- 组合/简化了 [Direct Preference Optimization - Your Language Model is Secretly a Reward Model](/explore/10-Papers/04-强化学习与对齐/Direct Preference Optimization- Your Language Model is Secretly a Reward Model（DPO）)（去参考）与 SFT 流程（单阶段化）
-- 与 [SimPO - Simple Preference Optimization with a Reference-Free Reward](/explore/10-Papers/04-强化学习与对齐/SimPO- Simple Preference Optimization with a Reference-Free Reward（SimPO）) 同为去参考路线，机制不同（odds vs 长度归一似然）
+- 组合/简化了 [Direct Preference Optimization - Your Language Model is Secretly a Reward Model](/ai-fa/explore/10-Papers/04-强化学习与对齐/Direct Preference Optimization- Your Language Model is Secretly a Reward Model（DPO）)（去参考）与 SFT 流程（单阶段化）
+- 与 [SimPO - Simple Preference Optimization with a Reference-Free Reward](/ai-fa/explore/10-Papers/04-强化学习与对齐/SimPO- Simple Preference Optimization with a Reference-Free Reward（SimPO）) 同为去参考路线，机制不同（odds vs 长度归一似然）
 
 ## 6. 影响与后续
 
@@ -47,6 +47,6 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[DPO损失](/explore/30-Formulas/DPO损失)、[期望](/explore/40-Concepts/期望)
+[DPO损失](/ai-fa/explore/30-Formulas/DPO损失)、[期望](/ai-fa/explore/40-Concepts/期望)
 
-> 近邻同族：[A General Language Assistant as a Laboratory for Alignment](/explore/10-Papers/04-强化学习与对齐/A General Language Assistant as a Laboratory for Alignment（Assistant Lab）) · [A General Theoretical Paradigm to Understand Learning from Human Preferences](/explore/10-Papers/04-强化学习与对齐/A General Theoretical Paradigm to Understand Learning from Human Preferences（IPO）)
+> 近邻同族：[A General Language Assistant as a Laboratory for Alignment](/ai-fa/explore/10-Papers/04-强化学习与对齐/A General Language Assistant as a Laboratory for Alignment（Assistant Lab）) · [A General Theoretical Paradigm to Understand Learning from Human Preferences](/ai-fa/explore/10-Papers/04-强化学习与对齐/A General Theoretical Paradigm to Understand Learning from Human Preferences（IPO）)

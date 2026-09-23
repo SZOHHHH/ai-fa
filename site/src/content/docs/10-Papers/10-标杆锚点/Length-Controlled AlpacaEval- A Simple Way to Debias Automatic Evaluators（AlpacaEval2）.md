@@ -37,16 +37,16 @@ $$
 
 ## 5. 与前作/矩阵关系
 
-← [Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena](/explore/10-Papers/04-强化学习与对齐/Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena（LLM-as-Judge）)（库内）的偏差修复线；→ 偏好优化矩阵评测依赖
+← [Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena](/ai-fa/explore/10-Papers/04-强化学习与对齐/Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena（LLM-as-Judge）)（库内）的偏差修复线；→ 偏好优化矩阵评测依赖
 
 
 ## 6. 影响与占位意义
 
 自动评测可信度的标准件。
 
-> 近邻同族：[Emergent Abilities of Large Language Models](/explore/10-Papers/10-标杆锚点/Emergent Abilities of Large Language Models（涌现）) · [Gemini 1.5- Unlocking Multimodal Understanding Across Millions of Tokens of Context](/explore/10-Papers/10-标杆锚点/Gemini 1.5- Unlocking Multimodal Understanding Across Millions of Tokens of Context（Gemini 1.5）)
-> 数学根基（占位层）：[注意力机制](/explore/40-Concepts/注意力机制)
-> 数学根基：[REINFORCE目标](/explore/30-Formulas/REINFORCE目标)
+> 近邻同族：[Emergent Abilities of Large Language Models](/ai-fa/explore/10-Papers/10-标杆锚点/Emergent Abilities of Large Language Models（涌现）) · [Gemini 1.5- Unlocking Multimodal Understanding Across Millions of Tokens of Context](/ai-fa/explore/10-Papers/10-标杆锚点/Gemini 1.5- Unlocking Multimodal Understanding Across Millions of Tokens of Context（Gemini 1.5）)
+> 数学根基（占位层）：[注意力机制](/ai-fa/explore/40-Concepts/注意力机制)
+> 数学根基：[REINFORCE目标](/ai-fa/explore/30-Formulas/REINFORCE目标)
 
 ## 7. 读前须知
 

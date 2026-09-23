@@ -34,7 +34,7 @@ $$
 $$
 
 
-**直觉**：→ [Elucidating the Design Space of Diffusion-Based Generative Models](/explore/10-Papers/02-生成建模与扩散/Elucidating the Design Space of Diffusion-Based Generative Models（EDM）)（设计空间清理）同方向；SD 系社区修复运动的技术依据
+**直觉**：→ [Elucidating the Design Space of Diffusion-Based Generative Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Elucidating the Design Space of Diffusion-Based Generative Models（EDM）)（设计空间清理）同方向；SD 系社区修复运动的技术依据
 
 ## 5. 与前作/矩阵关系
 
@@ -48,8 +48,8 @@ $$
 
 undefined
 
-> 近邻同族：[Analyzing and Improving the Training Dynamics of Diffusion Models](/explore/10-Papers/02-生成建模与扩散/Analyzing and Improving the Training Dynamics of Diffusion Models（EDM2）) · [Classifier-Free Diffusion Guidance](/explore/10-Papers/02-生成建模与扩散/Classifier-Free Diffusion Guidance（CFG）)
+> 近邻同族：[Analyzing and Improving the Training Dynamics of Diffusion Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Analyzing and Improving the Training Dynamics of Diffusion Models（EDM2）) · [Classifier-Free Diffusion Guidance](/ai-fa/explore/10-Papers/02-生成建模与扩散/Classifier-Free Diffusion Guidance（CFG）)
 
-> 数学根基：[概率分布](/explore/40-Concepts/概率分布)
+> 数学根基：[概率分布](/ai-fa/explore/40-Concepts/概率分布)
 
-> 数学根基：[DSM目标](/explore/30-Formulas/DSM目标) · [DDPM前向过程](/explore/30-Formulas/DDPM前向过程)
+> 数学根基：[DSM目标](/ai-fa/explore/30-Formulas/DSM目标) · [DDPM前向过程](/ai-fa/explore/30-Formulas/DDPM前向过程)

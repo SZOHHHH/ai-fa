@@ -38,15 +38,15 @@ $$
 
 ## 5. 与前作/矩阵关系
 
-🚩 3D 生成约束格；→ [ProlificDreamer- High-Fidelity and Diverse Text-to-3D Generation with Variational Score Distillation](/explore/10-Papers/02-生成建模与扩散/ProlificDreamer- High-Fidelity and Diverse Text-to-3D Generation with Variational Score Distillation（VSD）)
+🚩 3D 生成约束格；→ [ProlificDreamer- High-Fidelity and Diverse Text-to-3D Generation with Variational Score Distillation](/ai-fa/explore/10-Papers/02-生成建模与扩散/ProlificDreamer- High-Fidelity and Diverse Text-to-3D Generation with Variational Score Distillation（VSD）)
 
 
 ## 6. 影响与占位意义
 
 RS 库 03-14 情报。
 
-> 近邻同族：[Diff-Instruct++- Training One-step Text-to-image Generator Model to Align with Human Preferences](/explore/10-Papers/02-生成建模与扩散/Diff-Instruct++- Training One-step Text-to-image Generator Model to Align with Human Preferences（Diff-Instruct++）) · [Diff-Instruct- A Universal Approach for Transferring Knowledge From Pre-trained Diffusion Models](/explore/10-Papers/02-生成建模与扩散/Diff-Instruct- A Universal Approach for Transferring Knowledge From Pre-trained Diffusion Models（Diff-Instruct）)
-> 数学根基（占位层）：[条件流匹配损失](/explore/30-Formulas/条件流匹配损失) · [注意力核心公式](/explore/30-Formulas/注意力核心公式)
+> 近邻同族：[Diff-Instruct++- Training One-step Text-to-image Generator Model to Align with Human Preferences](/ai-fa/explore/10-Papers/02-生成建模与扩散/Diff-Instruct++- Training One-step Text-to-image Generator Model to Align with Human Preferences（Diff-Instruct++）) · [Diff-Instruct- A Universal Approach for Transferring Knowledge From Pre-trained Diffusion Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Diff-Instruct- A Universal Approach for Transferring Knowledge From Pre-trained Diffusion Models（Diff-Instruct）)
+> 数学根基（占位层）：[条件流匹配损失](/ai-fa/explore/30-Formulas/条件流匹配损失) · [注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)
 
 ## 7. 读前须知
 

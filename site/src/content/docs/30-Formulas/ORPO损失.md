@@ -37,15 +37,15 @@ $$\mathcal{L}_{\text{OR}} = -\log\sigma\!\left( \delta\log\frac{\mathrm{odds}_{\
 
 | 论文 | 贡献 |
 |---|---|
-| [ORPO - Monolithic Preference Optimization without Reference Model](/explore/10-Papers/04-强化学习与对齐/ORPO- Monolithic Preference Optimization without Reference Model（ORPO）) | 提出 |
+| [ORPO - Monolithic Preference Optimization without Reference Model](/ai-fa/explore/10-Papers/04-强化学习与对齐/ORPO- Monolithic Preference Optimization without Reference Model（ORPO）) | 提出 |
 
 ## 5. 数学概念分解
 
-- [期望](/explore/40-Concepts/期望)、[梯度](/explore/40-Concepts/梯度)
-- [KL散度](/explore/40-Concepts/KL散度)（对比：隐式约束 vs 显式 KL）
+- [期望](/ai-fa/explore/40-Concepts/期望)、[梯度](/ai-fa/explore/40-Concepts/梯度)
+- [KL散度](/ai-fa/explore/40-Concepts/KL散度)（对比：隐式约束 vs 显式 KL）
 
 ## 6. 与其他公式的关系
 
-- → **组合/简化自** [DPO损失](/explore/30-Formulas/DPO损失)（去参考）+ SFT 损失（单阶段化）
-- 同族：[SimPO损失](/explore/30-Formulas/SimPO损失)（同去参考）、[KTO损失](/explore/30-Formulas/KTO损失)（同数据形态革新）
+- → **组合/简化自** [DPO损失](/ai-fa/explore/30-Formulas/DPO损失)（去参考）+ SFT 损失（单阶段化）
+- 同族：[SimPO损失](/ai-fa/explore/30-Formulas/SimPO损失)（同去参考）、[KTO损失](/ai-fa/explore/30-Formulas/KTO损失)（同数据形态革新）
 - → **体现**"流程简化"演进线：RLHF（4 阶段）→ DPO（2 阶段）→ ORPO（1 阶段）

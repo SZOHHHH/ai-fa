@@ -49,8 +49,8 @@ undefined
 
 ---
 
-> 谱系枢纽：[Dream to Control - Learning Behaviors by Latent Imagination](/explore/10-Papers/09-世界模型与JEPA/Dream to Control- Learning Behaviors by Latent Imagination（Dreamer）)（图谱连通入口）
+> 谱系枢纽：[Dream to Control - Learning Behaviors by Latent Imagination](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Dream to Control- Learning Behaviors by Latent Imagination（Dreamer）)（图谱连通入口）
 
-> 近邻同族：[Co-Evolving Latent Action World Models](/explore/10-Papers/09-世界模型与JEPA/Co-Evolving Latent Action World Models（CoLA）) · [Factored Latent Action World Models](/explore/10-Papers/09-世界模型与JEPA/Factored Latent Action World Models（FLAM）)
+> 近邻同族：[Co-Evolving Latent Action World Models](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Co-Evolving Latent Action World Models（CoLA）) · [Factored Latent Action World Models](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Factored Latent Action World Models（FLAM）)
 
-> 数学根基：[扩散条件去噪](/explore/30-Formulas/扩散条件去噪) · [贝尔曼方程](/explore/40-Concepts/贝尔曼方程)
+> 数学根基：[扩散条件去噪](/ai-fa/explore/30-Formulas/扩散条件去噪) · [贝尔曼方程](/ai-fa/explore/40-Concepts/贝尔曼方程)

@@ -39,12 +39,12 @@ $$J(\pi)\;=\;\sum_t\mathbb{E}_{(s_t,a_t)\sim\rho_\pi}\Big[r(s_t,a_t)\;+\;\alpha\
 
 **直觉解释**：普通 RL 的最优解是"每步挑最好的那个动作"（尖峰）；最大熵的最优解是"**把所有能拿同样高分的动作按比例都留着**"（分布）——等价于在约束"期望回报≥某个水平"下求最大熵分布（这是个凸问题，解有唯一性）。$$\alpha$$ 是两种货币的兑换率：$$\alpha\to0$$ 退化普通 RL；$$\alpha$$ 大则宁可丢分也要随机。
 
-- 需要的前置：[熵正则RL](/explore/40-Concepts/熵正则RL)（本文的概念页，含家族谱）、[on-policy与off-policy](/explore/40-Concepts/on-policy与off-policy)（off 大回放的吃法）、[重参数化](/explore/40-Concepts/重参数化)、[TD误差与自举](/explore/40-Concepts/TD误差与自举)、[价值函数（V与Q）](/explore/40-Concepts/价值函数（V与Q）)
+- 需要的前置：[熵正则RL](/ai-fa/explore/40-Concepts/熵正则RL)（本文的概念页，含家族谱）、[on-policy与off-policy](/ai-fa/explore/40-Concepts/on-policy与off-policy)（off 大回放的吃法）、[重参数化](/ai-fa/explore/40-Concepts/重参数化)、[TD误差与自举](/ai-fa/explore/40-Concepts/TD误差与自举)、[价值函数（V与Q）](/ai-fa/explore/40-Concepts/价值函数（V与Q）)
 
 ## 5. 与前作/矩阵关系
 
 - ← **最大熵逆 RL**（Ziebart 2010：人类行为=最大熵下的最优，解释"为什么人走路不抄最短直线"）→ **软 Q 学习**（2017：把熵并进 Q，但用采样的 actor 不稳）→ **SAC**（换成重参数化的显式 actor，稳定）；
-- ← 与 [DQN](/explore/10-Papers/04-强化学习与对齐/Playing Atari with Deep Reinforcement Learning（DQN）)：双 Q 取小继承自 TD3/Double DQN 一脉的过估计治理线；
+- ← 与 [DQN](/ai-fa/explore/10-Papers/04-强化学习与对齐/Playing Atari with Deep Reinforcement Learning（DQN）)：双 Q 取小继承自 TD3/Double DQN 一脉的过估计治理线；
 - → SAC-Automatic（自动 α，即常引版本）、离散动作版 SAC-Discrete；**小系数熵正则**（A3C 式 $$-\beta\mathcal{H}$$ 挂在 loss 末尾）= 本文思想的轻量版——现代世界模型（Dreamer/DIAMOND 系）的 AC loss 里那个 $$10^{-3}$$ 级熵项即此传统。
 
 ## 6. 影响与后续
@@ -56,6 +56,6 @@ $$J(\pi)\;=\;\sum_t\mathbb{E}_{(s_t,a_t)\sim\rho_\pi}\Big[r(s_t,a_t)\;+\;\alpha\
 
 ## 7. 读前须知
 
-- **必前置**：[熵正则RL](/explore/40-Concepts/熵正则RL)、[on-policy与off-policy](/explore/40-Concepts/on-policy与off-policy)、[重参数化](/explore/40-Concepts/重参数化)；
+- **必前置**：[熵正则RL](/ai-fa/explore/40-Concepts/熵正则RL)、[on-policy与off-policy](/ai-fa/explore/40-Concepts/on-policy与off-policy)、[重参数化](/ai-fa/explore/40-Concepts/重参数化)；
 - **易混点**：①SAC 的"软"= 软贝尔曼（熵内嵌），不是 soft target/软更新；②双 Q 是**同构双胞胎**（都估 Q），与"actor/critic 双头"不是一回事；③自动温度 α 与 softmax 蒸馏温度是不同机制的巧合同名；
 - **读法建议**：算法 1（一页伪代码）+ 附录 A 软策略迭代推导；正文实验部分可略读（结论"最稳"已成常识）。

@@ -21,8 +21,8 @@ pdf: 已下载（PDF/）
 ## 2. 核心贡献
 
 - **BoN 分布刻画**：$$p_{\text{BoN}}(y\mid x) \propto p_\theta(y\mid x)\,\sigma(r(x,y))^N$$ 的渐近分析——BoN 是奖励的幂次重加权
-- **RSO 训练**：重要性采样的拒绝采样生成偏好对 + [DPO](/explore/10-Papers/04-强化学习与对齐/Direct Preference Optimization- Your Language Model is Secretly a Reward Model（DPO）) 训练
-- 揭示 BoN 与 RLHF 目标（Boltzmann 重加权，[RLHF目标](/explore/30-Formulas/RLHF目标) §2）的家族关系
+- **RSO 训练**：重要性采样的拒绝采样生成偏好对 + [DPO](/ai-fa/explore/10-Papers/04-强化学习与对齐/Direct Preference Optimization- Your Language Model is Secretly a Reward Model（DPO）) 训练
+- 揭示 BoN 与 RLHF 目标（Boltzmann 重加权，[RLHF目标](/ai-fa/explore/30-Formulas/RLHF目标) §2）的家族关系
 
 ## 3. 方法概要
 
@@ -37,8 +37,8 @@ pdf: 已下载（PDF/）
 
 ## 5. 与前作的关系
 
-- 理论化了推理时 BoN 常用技巧；连接 [Direct Preference Optimization - Your Language Model is Secretly a Reward Model](/explore/10-Papers/04-强化学习与对齐/Direct Preference Optimization- Your Language Model is Secretly a Reward Model（DPO）) 与 [RLHF目标](/explore/30-Formulas/RLHF目标)
-- 下游 [RAFT - Reward rAnked FineTuning for Generative Foundation Model Alignment](/explore/10-Papers/04-强化学习与对齐/RAFT- Reward rAnked FineTuning for Generative Foundation Model Alignment（RAFT）) 的迭代化
+- 理论化了推理时 BoN 常用技巧；连接 [Direct Preference Optimization - Your Language Model is Secretly a Reward Model](/ai-fa/explore/10-Papers/04-强化学习与对齐/Direct Preference Optimization- Your Language Model is Secretly a Reward Model（DPO）) 与 [RLHF目标](/ai-fa/explore/30-Formulas/RLHF目标)
+- 下游 [RAFT - Reward rAnked FineTuning for Generative Foundation Model Alignment](/ai-fa/explore/10-Papers/04-强化学习与对齐/RAFT- Reward rAnked FineTuning for Generative Foundation Model Alignment（RAFT）) 的迭代化
 
 ## 6. 影响与后续
 
@@ -46,4 +46,4 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[RLHF目标](/explore/30-Formulas/RLHF目标)（闭式解）、[DPO损失](/explore/30-Formulas/DPO损失)、[期望](/explore/40-Concepts/期望)（拒绝采样统计）
+[RLHF目标](/ai-fa/explore/30-Formulas/RLHF目标)（闭式解）、[DPO损失](/ai-fa/explore/30-Formulas/DPO损失)、[期望](/ai-fa/explore/40-Concepts/期望)（拒绝采样统计）

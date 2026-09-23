@@ -11,39 +11,39 @@ tags: [algo]
 
 **非数学语言**：全靠注意力的序列处理网络。每个词同时看到所有词（并行），按相关度加权取信息；叠几十层"注意力+前馈"块。两大流派：BERT（完形填空式双向）与 GPT（接龙式单向）。
 
-**数学语言**：$$L \times$$（多头自注意力 [注意力核心公式](/explore/30-Formulas/注意力核心公式) + FFN + LayerNorm + 残差 [残差连接](/explore/30-Formulas/残差连接)）堆叠；自回归分解 $$p(x) = \prod_t p(x_t \mid x_{<t})$$（GPT）或掩码双向建模（BERT）。
+**数学语言**：$$L \times$$（多头自注意力 [注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式) + FFN + LayerNorm + 残差 [残差连接](/ai-fa/explore/30-Formulas/残差连接)）堆叠；自回归分解 $$p(x) = \prod_t p(x_t \mid x_{<t})$$（GPT）或掩码双向建模（BERT）。
 
 ## 2. 本命论文群
 
 | 论文 | 引入/发展了什么 | 年份 |
 |---|---|---|
-| [Attention Is All You Need](/explore/10-Papers/01-架构演进/Attention Is All You Need（Transformer）) | 抛弃 RNN/CNN，纯注意力 | 2017 |
-| [BERT - Pre-training of Deep Bidirectional Transformers for Language Understanding](/explore/10-Papers/01-架构演进/BERT- Pre-training of Deep Bidirectional Transformers for Language Understanding（BERT）) | 双向编码器 + MLM 预训练 | 2018 |
-| GPT-1（[Improving Language Understanding by Generative Pre-Training](/explore/10-Papers/01-架构演进/Improving Language Understanding by Generative Pre-Training（GPT-1）)，OpenAI 官网来源） | 生成式预训练 + 任务微调范式 | 2018 |
-| GPT-2/GPT-3（[Language Models are Few-Shot Learners](/explore/10-Papers/01-架构演进/Language Models are Few-Shot Learners（GPT-3）)） | 规模化 + 上下文学习 | 2019/2020 |
-| [LLaMA - Open and Efficient Foundation Language Models](/explore/10-Papers/01-架构演进/LLaMA- Open and Efficient Foundation Language Models（LLaMA）) | 开源权重 + 现代配方（RoPE/RMSNorm/SwiGLU/GQA） | 2023 |
+| [Attention Is All You Need](/ai-fa/explore/10-Papers/01-架构演进/Attention Is All You Need（Transformer）) | 抛弃 RNN/CNN，纯注意力 | 2017 |
+| [BERT - Pre-training of Deep Bidirectional Transformers for Language Understanding](/ai-fa/explore/10-Papers/01-架构演进/BERT- Pre-training of Deep Bidirectional Transformers for Language Understanding（BERT）) | 双向编码器 + MLM 预训练 | 2018 |
+| GPT-1（[Improving Language Understanding by Generative Pre-Training](/ai-fa/explore/10-Papers/01-架构演进/Improving Language Understanding by Generative Pre-Training（GPT-1）)，OpenAI 官网来源） | 生成式预训练 + 任务微调范式 | 2018 |
+| GPT-2/GPT-3（[Language Models are Few-Shot Learners](/ai-fa/explore/10-Papers/01-架构演进/Language Models are Few-Shot Learners（GPT-3）)） | 规模化 + 上下文学习 | 2019/2020 |
+| [LLaMA - Open and Efficient Foundation Language Models](/ai-fa/explore/10-Papers/01-架构演进/LLaMA- Open and Efficient Foundation Language Models（LLaMA）) | 开源权重 + 现代配方（RoPE/RMSNorm/SwiGLU/GQA） | 2023 |
 
 ## 3. 核心公式
 
-- [注意力核心公式](/explore/30-Formulas/注意力核心公式) —— 灵魂
-- [残差连接](/explore/30-Formulas/残差连接) —— 结构胶水
-- [位置编码](/explore/40-Concepts/位置编码) —— 顺序信息
-- [注意力计算复杂度](/explore/30-Formulas/注意力计算复杂度) —— 原罪与改进动机
+- [注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式) —— 灵魂
+- [残差连接](/ai-fa/explore/30-Formulas/残差连接) —— 结构胶水
+- [位置编码](/ai-fa/explore/40-Concepts/位置编码) —— 顺序信息
+- [注意力计算复杂度](/ai-fa/explore/30-Formulas/注意力计算复杂度) —— 原罪与改进动机
 
 ## 4. 数学概念分解
 
-[注意力机制](/explore/40-Concepts/注意力机制)、[softmax函数](/explore/40-Concepts/softmax函数)、[内积](/explore/40-Concepts/内积)、[梯度](/explore/40-Concepts/梯度)（残差反传）、[期望](/explore/40-Concepts/期望)（自回归似然）
+[注意力机制](/ai-fa/explore/40-Concepts/注意力机制)、[softmax函数](/ai-fa/explore/40-Concepts/softmax函数)、[内积](/ai-fa/explore/40-Concepts/内积)、[梯度](/ai-fa/explore/40-Concepts/梯度)（残差反传）、[期望](/ai-fa/explore/40-Concepts/期望)（自回归似然）
 
 ## 5. 变体与演进
 
 | 变体 | 相比本概念改了什么 | 代表 |
 |---|---|---|
-| 编码器系（BERT） | 双向掩码 + MLM | [BERT - Pre-training of Deep Bidirectional Transformers for Language Understanding](/explore/10-Papers/01-架构演进/BERT- Pre-training of Deep Bidirectional Transformers for Language Understanding（BERT）) |
+| 编码器系（BERT） | 双向掩码 + MLM | [BERT - Pre-training of Deep Bidirectional Transformers for Language Understanding](/ai-fa/explore/10-Papers/01-架构演进/BERT- Pre-training of Deep Bidirectional Transformers for Language Understanding（BERT）) |
 | 解码器系（GPT） | 因果掩码自回归 | GPT 系 / LLaMA |
-- 现代化组件替换 | 正弦PE→RoPE、LayerNorm→RMSNorm、ReLU→SwiGLU（[激活函数族](/explore/40-Concepts/激活函数族)） | LLaMA 配方 |
-| 骨干替换 | 注意力→SSM | [Mamba - Linear-Time Sequence Modeling with Selective State Spaces](/explore/10-Papers/01-架构演进/Mamba- Linear-Time Sequence Modeling with Selective State Spaces（Mamba）) |
-| 稀疏化 | FFN→MoE | [混合专家（MoE）](/explore/20-Algorithms/混合专家（MoE）) |
-| 视觉化 | patch 化进 Transformer | [An Image is Worth 16x16 Words - Transformers for Image Recognition at Scale](/explore/10-Papers/01-架构演进/An Image is Worth 16x16 Words- Transformers for Image Recognition at Scale（ViT）) |
+- 现代化组件替换 | 正弦PE→RoPE、LayerNorm→RMSNorm、ReLU→SwiGLU（[激活函数族](/ai-fa/explore/40-Concepts/激活函数族)） | LLaMA 配方 |
+| 骨干替换 | 注意力→SSM | [Mamba - Linear-Time Sequence Modeling with Selective State Spaces](/ai-fa/explore/10-Papers/01-架构演进/Mamba- Linear-Time Sequence Modeling with Selective State Spaces（Mamba）) |
+| 稀疏化 | FFN→MoE | [混合专家（MoE）](/ai-fa/explore/20-Algorithms/混合专家（MoE）) |
+| 视觉化 | patch 化进 Transformer | [An Image is Worth 16x16 Words - Transformers for Image Recognition at Scale](/ai-fa/explore/10-Papers/01-架构演进/An Image is Worth 16x16 Words- Transformers for Image Recognition at Scale（ViT）) |
 
 ## 6. 对比表
 

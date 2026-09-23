@@ -34,15 +34,15 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- [条件流匹配损失](/explore/30-Formulas/条件流匹配损失)（线性插值特例：$$u_t = z - x_0$$）
-- [概率流ODE](/explore/30-Formulas/概率流ODE)（直 = 好积分）
-- [Wasserstein距离](/explore/40-Concepts/Wasserstein距离)（最优传输动机）
+- [条件流匹配损失](/ai-fa/explore/30-Formulas/条件流匹配损失)（线性插值特例：$$u_t = z - x_0$$）
+- [概率流ODE](/ai-fa/explore/30-Formulas/概率流ODE)（直 = 好积分）
+- [Wasserstein距离](/ai-fa/explore/40-Concepts/Wasserstein距离)（最优传输动机）
 
 ## 5. 与前作的关系
 
-- 与 [Flow Matching for Generative Modeling](/explore/10-Papers/02-生成建模与扩散/Flow Matching for Generative Modeling（流匹配）) 同年独立、同构（直线路径强调不同）
-- 对比 [Score-Based Generative Modeling through Stochastic Differential Equations](/explore/10-Papers/02-生成建模与扩散/Score-Based Generative Modeling through Stochastic Differential Equations（Score-SDE）)：放弃 SDE、专攻 ODE 直轨迹
-- 一步生成目标与 [Consistency Models](/explore/10-Papers/02-生成建模与扩散/Consistency Models（一致性模型）) 呼应（路线不同：拉直 vs 蒸馏）
+- 与 [Flow Matching for Generative Modeling](/ai-fa/explore/10-Papers/02-生成建模与扩散/Flow Matching for Generative Modeling（流匹配）) 同年独立、同构（直线路径强调不同）
+- 对比 [Score-Based Generative Modeling through Stochastic Differential Equations](/ai-fa/explore/10-Papers/02-生成建模与扩散/Score-Based Generative Modeling through Stochastic Differential Equations（Score-SDE）)：放弃 SDE、专攻 ODE 直轨迹
+- 一步生成目标与 [Consistency Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Consistency Models（一致性模型）) 呼应（路线不同：拉直 vs 蒸馏）
 
 ## 6. 影响与后续
 
@@ -52,6 +52,6 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[常微分方程](/explore/40-Concepts/常微分方程（ODE）)、[矩形流](/explore/20-Algorithms/矩形流)、[流匹配](/explore/20-Algorithms/流匹配)、[Wasserstein距离](/explore/40-Concepts/Wasserstein距离)
+[常微分方程](/ai-fa/explore/40-Concepts/常微分方程（ODE）)、[矩形流](/ai-fa/explore/20-Algorithms/矩形流)、[流匹配](/ai-fa/explore/20-Algorithms/流匹配)、[Wasserstein距离](/ai-fa/explore/40-Concepts/Wasserstein距离)
 
-> 矩形流谱系环：[One Diffusion Step to Real-World Super-Resolution via Flow Trajectory Distillation](/explore/10-Papers/02-生成建模与扩散/One Diffusion Step to Real-World Super-Resolution via Flow Trajectory Distillation（OSEDiff）) ← 本卡 → [Towards Hierarchical Rectified Flow](/explore/10-Papers/02-生成建模与扩散/Towards Hierarchical Rectified Flow（HRFlow）)
+> 矩形流谱系环：[One Diffusion Step to Real-World Super-Resolution via Flow Trajectory Distillation](/ai-fa/explore/10-Papers/02-生成建模与扩散/One Diffusion Step to Real-World Super-Resolution via Flow Trajectory Distillation（OSEDiff）) ← 本卡 → [Towards Hierarchical Rectified Flow](/ai-fa/explore/10-Papers/02-生成建模与扩散/Towards Hierarchical Rectified Flow（HRFlow）)

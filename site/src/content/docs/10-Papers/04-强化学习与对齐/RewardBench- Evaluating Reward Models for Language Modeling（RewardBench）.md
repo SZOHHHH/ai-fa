@@ -34,7 +34,7 @@ $$
 $$
 
 
-**直觉**：→ [Hybrid Reinforcement- When Reward Is Sparse, It is Better to Be Dense](/explore/10-Papers/04-强化学习与对齐/Hybrid Reinforcement- When Reward Is Sparse, It is Better to Be Dense（HERO）)（B12：RM 集成+verifier）；→ reward hacking 线（评测是防线）
+**直觉**：→ [Hybrid Reinforcement- When Reward Is Sparse, It is Better to Be Dense](/ai-fa/explore/10-Papers/04-强化学习与对齐/Hybrid Reinforcement- When Reward Is Sparse, It is Better to Be Dense（HERO）)（B12：RM 集成+verifier）；→ reward hacking 线（评测是防线）
 
 ## 5. 与前作/矩阵关系
 
@@ -48,8 +48,8 @@ RM 生态的锚点基准
 
 undefined
 
-> 近邻同族：[Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena](/explore/10-Papers/04-强化学习与对齐/Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena（LLM-as-Judge）) · [KTO - Model Alignment as Prospect Theoretic Optimization](/explore/10-Papers/04-强化学习与对齐/KTO- Model Alignment as Prospect Theoretic Optimization（KTO）)
+> 近邻同族：[Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena](/ai-fa/explore/10-Papers/04-强化学习与对齐/Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena（LLM-as-Judge）) · [KTO - Model Alignment as Prospect Theoretic Optimization](/ai-fa/explore/10-Papers/04-强化学习与对齐/KTO- Model Alignment as Prospect Theoretic Optimization（KTO）)
 
-> 数学根基：[策略梯度定理](/explore/40-Concepts/策略梯度定理)
+> 数学根基：[策略梯度定理](/ai-fa/explore/40-Concepts/策略梯度定理)
 
-> 数学根基：[REINFORCE目标](/explore/30-Formulas/REINFORCE目标)
+> 数学根基：[REINFORCE目标](/ai-fa/explore/30-Formulas/REINFORCE目标)

@@ -16,7 +16,7 @@ tags: [paper]
 
 ## 1. 一句话贡献
 
-文生图扩散的先行者：[CLIP](/explore/10-Papers/08-多模态/Learning Transferable Visual Models From Natural Language Supervision（CLIP）) 引导 vs 无分类器引导（CFG）对决——**CFG 胜出**，从此成为扩散标配。
+文生图扩散的先行者：[CLIP](/ai-fa/explore/10-Papers/08-多模态/Learning Transferable Visual Models From Natural Language Supervision（CLIP）) 引导 vs 无分类器引导（CFG）对决——**CFG 胜出**，从此成为扩散标配。
 
 ## 2. 核心贡献
 
@@ -34,7 +34,7 @@ $$
 $$
 
 
-**直觉**：← DDPM/DDIM；→ Imagen/SD 系全家用 CFG——[无分类器引导（CFG）](/explore/30-Formulas/无分类器引导（CFG）) 的实证出处
+**直觉**：← DDPM/DDIM；→ Imagen/SD 系全家用 CFG——[无分类器引导（CFG）](/ai-fa/explore/30-Formulas/无分类器引导（CFG）) 的实证出处
 
 ## 5. 与前作/矩阵关系
 
@@ -48,4 +48,4 @@ CFG 的诞生地；文生图扩散时代的第一块基石
 
 undefined
 
-> 近邻同族：[Analyzing and Improving the Training Dynamics of Diffusion Models](/explore/10-Papers/02-生成建模与扩散/Analyzing and Improving the Training Dynamics of Diffusion Models（EDM2）) · [Classifier-Free Diffusion Guidance](/explore/10-Papers/02-生成建模与扩散/Classifier-Free Diffusion Guidance（CFG）)
+> 近邻同族：[Analyzing and Improving the Training Dynamics of Diffusion Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Analyzing and Improving the Training Dynamics of Diffusion Models（EDM2）) · [Classifier-Free Diffusion Guidance](/ai-fa/explore/10-Papers/02-生成建模与扩散/Classifier-Free Diffusion Guidance（CFG）)

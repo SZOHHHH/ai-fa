@@ -50,10 +50,10 @@ undefined
 
 ---
 
-> 谱系枢纽：[Learning Transferable Visual Models From Natural Language Supervision](/explore/10-Papers/08-多模态/Learning Transferable Visual Models From Natural Language Supervision（CLIP）)（图谱连通入口）
+> 谱系枢纽：[Learning Transferable Visual Models From Natural Language Supervision](/ai-fa/explore/10-Papers/08-多模态/Learning Transferable Visual Models From Natural Language Supervision（CLIP）)（图谱连通入口）
 
-> 近邻同族：[Chameleon - Mixed-Modal Early-Fusion Foundation Models](/explore/10-Papers/08-多模态/Chameleon- Mixed-Modal Early-Fusion Foundation Models（Chameleon）) · [Sora 技术报告 - Video Generation Models as World Simulators](/explore/10-Papers/08-多模态/Sora 技术报告- Video Generation Models as World Simulators（Sora）)
+> 近邻同族：[Chameleon - Mixed-Modal Early-Fusion Foundation Models](/ai-fa/explore/10-Papers/08-多模态/Chameleon- Mixed-Modal Early-Fusion Foundation Models（Chameleon）) · [Sora 技术报告 - Video Generation Models as World Simulators](/ai-fa/explore/10-Papers/08-多模态/Sora 技术报告- Video Generation Models as World Simulators（Sora）)
 
-> 数学根基：[视觉语言模型（VLM）](/explore/40-Concepts/视觉语言模型（VLM）)
+> 数学根基：[视觉语言模型（VLM）](/ai-fa/explore/40-Concepts/视觉语言模型（VLM）)
 
-> 数学根基：[VQ-VAE目标](/explore/30-Formulas/VQ-VAE目标) · [条件流匹配损失](/explore/30-Formulas/条件流匹配损失)
+> 数学根基：[VQ-VAE目标](/ai-fa/explore/30-Formulas/VQ-VAE目标) · [条件流匹配损失](/ai-fa/explore/30-Formulas/条件流匹配损失)

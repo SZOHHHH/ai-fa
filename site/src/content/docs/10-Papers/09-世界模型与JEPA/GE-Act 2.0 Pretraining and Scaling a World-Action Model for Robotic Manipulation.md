@@ -38,17 +38,18 @@ layer: 占位
 - validity gap 形式化：联训对 $$(\hat z, a)$$ 满足 $$\hat z\sim p_\theta(z\mid o,c),\; a\sim p_{\text{data}}(a\mid o,s,c),\; \hat z\perp a\mid(o,s,c)$$ —— 直觉：同一场景有多条合法完成方式，随机采样的未来可能演的是"另一种解法"，硬配录制动作等于让 IDM 学两个模式的平均。
 
 ## 5. 与前作/矩阵关系
-- 线锚：[世界模型](/explore/20-Algorithms/世界模型)（生成式路线向控制接口的延伸——WAM=世界模型+动作头）
-- ← 方法基座：[Mean Flows for One-step Generative Modeling](/explore/10-Papers/02-生成建模与扩散/Mean Flows for One-step Generative Modeling（MeanFlow）)（SVP=其条件化+多视角+掩码轨迹扩展）；CoAE 初始化自 DC-AE（128→512 通道，库内无卡）
-- ≡ 同族机器人 WAM：[LaWAM- Latent World Action Models for Efficient Dynamics-Aware Robot Policies](/explore/10-Papers/09-世界模型与JEPA/LaWAM- Latent World Action Models for Efficient Dynamics-Aware Robot Policies（LaWAM）)（潜空间 WAM）；前身 GE-Act 1.0（并行动作支路，库内无卡，本代改为显式未来接口）
-- ↔ 对照 [Diffusion for World Modeling- Visual Details Matter in Atari](/explore/10-Papers/09-世界模型与JEPA/Diffusion for World Modeling- Visual Details Matter in Atari（DIAMOND）)：同为"生成式 WM 出未来"，但域（机器人操作 vs 游戏 RL）、生成方式（从零单步流 vs 多步扩散）、下游（IDM 反推 vs 策略在 WM 内训练）三处全不同——**E1 主线正面对照位**
-- 概念链：[逆动力学（IDM）](/explore/40-Concepts/逆动力学（IDM）)（imagine-then-act 家族最新成员）· [条件流匹配损失](/explore/30-Formulas/条件流匹配损失)（SVP 与 IDM 双双落在流匹配框架）
+- 线锚：[世界模型](/ai-fa/explore/20-Algorithms/世界模型)（生成式路线向控制接口的延伸——WAM=世界模型+动作头）
+- ← 方法基座：[Mean Flows for One-step Generative Modeling](/ai-fa/explore/10-Papers/02-生成建模与扩散/Mean Flows for One-step Generative Modeling（MeanFlow）)（SVP=其条件化+多视角+掩码轨迹扩展）；CoAE 初始化自 DC-AE（128→512 通道，库内无卡）
+- ≡ 同族机器人 WAM：[LaWAM- Latent World Action Models for Efficient Dynamics-Aware Robot Policies](/ai-fa/explore/10-Papers/09-世界模型与JEPA/LaWAM- Latent World Action Models for Efficient Dynamics-Aware Robot Policies（LaWAM）)（潜空间 WAM）；前身 GE-Act 1.0（并行动作支路，库内无卡，本代改为显式未来接口）
+- ≡ 同族（模态扩展，260922 建卡）：[DexTacWAM: A Visuo-Tactile World-Action Model for Dexterous Manipulation](/ai-fa/explore/10-Papers/09-世界模型与JEPA/DexTacWAM A Visuo-Tactile World-Action Model for Dexterous Manipulation)——视觉-触觉 WAM：五指触觉沿视角轴注入视频扩散 WM 联合去噪，把"接触演化"做进世界状态（消融 74.7→26.6 证明状态化 vs 条件化的差别）
+- ↔ 对照 [Diffusion for World Modeling- Visual Details Matter in Atari](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Diffusion for World Modeling- Visual Details Matter in Atari（DIAMOND）)：同为"生成式 WM 出未来"，但域（机器人操作 vs 游戏 RL）、生成方式（从零单步流 vs 多步扩散）、下游（IDM 反推 vs 策略在 WM 内训练）三处全不同——**E1 主线正面对照位**
+- 概念链：[逆动力学（IDM）](/ai-fa/explore/40-Concepts/逆动力学（IDM）)（imagine-then-act 家族最新成员）· [条件流匹配损失](/ai-fa/explore/30-Formulas/条件流匹配损失)（SVP 与 IDM 双双落在流匹配框架）
 
 ## 6. 影响后续
 机器人 WAM "从零预训练+缩放规律"的旗舰证据（30k 小时数据、跨本体迁移、技能覆盖-成功相关）；确立"单步生成器=可微世界-动作接口"范式，IDM 可独立吃无标注轨迹预训练。对游戏域 WAM（DIAMOND 系）构成路线压力：单步从零 vs 多步蒸馏之争。
 > 敌情备注（260909）：与 E1（少步生成轴：MeanFlow 从零单步=蒸馏之外的平行路线，无决策保真度量）与 E2（后验反推轴：IDM=p(a|o,s,未来视觉) 即 p(a|x_t,goal) 的机器人版）双轴近邻不撞车，详见晨报 260909 研判；其 IDM 头工程（流匹配动作头/动作恢复探针）与 KASO（生成未来×录制动作的模式失配警示）对两轨皆有直接参照价值。
 
-- → 后继补记（260914）：[RodForesight](/explore/10-Papers/09-世界模型与JEPA/RodForesight - A World Model Enhanced Diffusion Policy for Slender and Material Agnostic Rod Insertion（杆件插装）)（机器人操作×WM：把 WM 用作预执行评估器而非训练信号）
+- → 后继补记（260914）：[RodForesight](/ai-fa/explore/10-Papers/09-世界模型与JEPA/RodForesight - A World Model Enhanced Diffusion Policy for Slender and Material Agnostic Rod Insertion（杆件插装）)（机器人操作×WM：把 WM 用作预执行评估器而非训练信号）
 
 ## 7. 读前须知
-[条件流匹配损失](/explore/30-Formulas/条件流匹配损失)与[流匹配](/explore/20-Algorithms/流匹配)（流生成基础）、[Mean Flows for One-step Generative Modeling](/explore/10-Papers/02-生成建模与扩散/Mean Flows for One-step Generative Modeling（MeanFlow）)（平均速度场思想）、[逆动力学（IDM）](/explore/40-Concepts/逆动力学（IDM）)（由果找因的可解性地图）、[ELBO](/explore/40-Concepts/ELBO)/[VQ-VAE目标](/explore/30-Formulas/VQ-VAE目标)（自编码器潜空间一族）、动作多模态（同一目标多种完成方式→回归 vs 生成式头的差别）。
+[条件流匹配损失](/ai-fa/explore/30-Formulas/条件流匹配损失)与[流匹配](/ai-fa/explore/20-Algorithms/流匹配)（流生成基础）、[Mean Flows for One-step Generative Modeling](/ai-fa/explore/10-Papers/02-生成建模与扩散/Mean Flows for One-step Generative Modeling（MeanFlow）)（平均速度场思想）、[逆动力学（IDM）](/ai-fa/explore/40-Concepts/逆动力学（IDM）)（由果找因的可解性地图）、[ELBO](/ai-fa/explore/40-Concepts/ELBO)/[VQ-VAE目标](/ai-fa/explore/30-Formulas/VQ-VAE目标)（自编码器潜空间一族）、动作多模态（同一目标多种完成方式→回归 vs 生成式头的差别）。

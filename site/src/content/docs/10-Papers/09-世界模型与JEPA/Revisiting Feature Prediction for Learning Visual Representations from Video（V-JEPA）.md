@@ -26,27 +26,27 @@ pdf: 已下载（PDF/）
 
 ## 3. 方法概要
 
-1. [ViT](/explore/10-Papers/01-架构演进/An Image is Worth 16x16 Words- Transformers for Image Recognition at Scale（ViT）) 编码器（EMA 目标塔）
+1. [ViT](/ai-fa/explore/10-Papers/01-架构演进/An Image is Worth 16x16 Words- Transformers for Image Recognition at Scale（ViT）) 编码器（EMA 目标塔）
 2. 时空分块遮罩（如时空 90% 遮挡率）
 3. 预测器按目标块位置回归目标表征
 4. 下游微调/探针评测
 
 ## 4. 核心公式
 
-- [JEPA联合嵌入预测架构](/explore/40-Concepts/JEPA联合嵌入预测架构) §1（视频实例化）
+- [JEPA联合嵌入预测架构](/ai-fa/explore/40-Concepts/JEPA联合嵌入预测架构) §1（视频实例化）
 
 ## 5. 与前作的关系
 
 - 扩展了 I-JEPA（同团队，图像 → 视频）
-- 对照同期 [Genie - Generative Interactive Environments](/explore/10-Papers/09-世界模型与JEPA/Genie- Generative Interactive Environments（Genie）)：预测表征 vs 生成像素——2024 世界模型两条路线的化身
+- 对照同期 [Genie - Generative Interactive Environments](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Genie- Generative Interactive Environments（Genie）)：预测表征 vs 生成像素——2024 世界模型两条路线的化身
 
 ## 6. 影响与后续
 
-- [V-JEPA 2 - Self-Supervised Video Models Enable Understanding, Prediction and Planning](/explore/10-Papers/09-世界模型与JEPA/V-JEPA 2- Self-Supervised Video Models Enable Understanding, Prediction and Planning（V-JEPA 2）)（2025）直接续作：加动作条件与规划
+- [V-JEPA 2 - Self-Supervised Video Models Enable Understanding, Prediction and Planning](/ai-fa/explore/10-Papers/09-世界模型与JEPA/V-JEPA 2- Self-Supervised Video Models Enable Understanding, Prediction and Planning（V-JEPA 2）)（2025）直接续作：加动作条件与规划
 - Meta 具身智能栈的感知基座
 
 ## 7. 读前须知
 
-[JEPA联合嵌入预测架构](/explore/40-Concepts/JEPA联合嵌入预测架构)、[世界模型](/explore/20-Algorithms/世界模型)
+[JEPA联合嵌入预测架构](/ai-fa/explore/40-Concepts/JEPA联合嵌入预测架构)、[世界模型](/ai-fa/explore/20-Algorithms/世界模型)
 
-> 数学根基：[注意力核心公式](/explore/30-Formulas/注意力核心公式) · [CLIP对比损失](/explore/30-Formulas/CLIP对比损失)
+> 数学根基：[注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式) · [CLIP对比损失](/ai-fa/explore/30-Formulas/CLIP对比损失)

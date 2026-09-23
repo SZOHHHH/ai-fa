@@ -20,7 +20,7 @@ pdf: 已下载（PDF/）
 
 ## 2. 核心贡献
 
-- **残差块**：$$y = \mathcal{F}(x) + x$$（[残差连接](/explore/30-Formulas/残差连接)）
+- **残差块**：$$y = \mathcal{F}(x) + x$$（[残差连接](/ai-fa/explore/30-Formulas/残差连接)）
 - **退化问题诊断**：普通网络加深训练误差反升（不是过拟合！是优化困难）——残差一举解决
 - 152 层 ImageNet 冠军；之后所有架构的默认结构
 
@@ -33,7 +33,7 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- [残差连接](/explore/30-Formulas/残差连接) —— 本文灵魂
+- [残差连接](/ai-fa/explore/30-Formulas/残差连接) —— 本文灵魂
 
 ## 5. 与前作的关系
 
@@ -42,11 +42,11 @@ pdf: 已下载（PDF/）
 
 ## 6. 影响与后续
 
-- [Attention Is All You Need](/explore/10-Papers/01-架构演进/Attention Is All You Need（Transformer）) 的每层结构 = 残差块 + 注意力/FFN
-- 神经 ODE 理论视角（层数 → 连续流）——连 [常微分方程（ODE）](/explore/40-Concepts/常微分方程（ODE）)
-- U-Net 的 skip 连接（[U-Net - Convolutional Networks for Biomedical Image Segmentation](/explore/10-Papers/02-生成建模与扩散/U-Net- Convolutional Networks for Biomedical Image Segmentation（U-Net）)）是它在生成侧的亲戚
+- [Attention Is All You Need](/ai-fa/explore/10-Papers/01-架构演进/Attention Is All You Need（Transformer）) 的每层结构 = 残差块 + 注意力/FFN
+- 神经 ODE 理论视角（层数 → 连续流）——连 [常微分方程（ODE）](/ai-fa/explore/40-Concepts/常微分方程（ODE）)
+- U-Net 的 skip 连接（[U-Net - Convolutional Networks for Biomedical Image Segmentation](/ai-fa/explore/10-Papers/02-生成建模与扩散/U-Net- Convolutional Networks for Biomedical Image Segmentation（U-Net）)）是它在生成侧的亲戚
 - LoRA 的接入方式（线 3）继承"增量加在捷径上"的思想
 
 ## 7. 读前须知
 
-[梯度](/explore/40-Concepts/梯度)（为什么 +1 救梯度）、[残差连接](/explore/30-Formulas/残差连接) §3 直觉
+[梯度](/ai-fa/explore/40-Concepts/梯度)（为什么 +1 救梯度）、[残差连接](/ai-fa/explore/30-Formulas/残差连接) §3 直觉

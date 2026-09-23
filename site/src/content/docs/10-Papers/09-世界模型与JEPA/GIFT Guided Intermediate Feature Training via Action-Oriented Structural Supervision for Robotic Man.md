@@ -57,11 +57,11 @@ tags: [paper]
 
 ## 5. 与前作/矩阵关系
 
-- ← 前身：[LaWAM](/explore/10-Papers/09-世界模型与JEPA/LaWAM- Latent World Action Models for Efficient Dynamics-Aware Robot Policies（LaWAM）)/Fast-WAM 家族（WAM 骨干与 IDM 变体的宿主）+ [TFD](/explore/10-Papers/02-生成建模与扩散/Teacher-Feature Drifting- One-Step Diffusion Distillation with Pretrained Diffusion Representations（TFD）) 一族的"教师特征对齐"工具（本文用 VGGT 当几何教师，训练期挂载推理期丢弃与 TFD 的表示空间蒸馏同工）；
-- ↔ 对照 [DIAMOND](/explore/10-Papers/09-世界模型与JEPA/Diffusion for World Modeling- Visual Details Matter in Atari（DIAMOND）)：同问"视觉细节里哪些是控制信号"——DIAMOND 答"全要保"（像素直绘），GIFT 答"保三类结构就够"（监督塑形），我们的 E1 答"保**读出**就够"（价值/奖励头过帧）；三方构成"保什么"光谱的三站；
+- ← 前身：[LaWAM](/ai-fa/explore/10-Papers/09-世界模型与JEPA/LaWAM- Latent World Action Models for Efficient Dynamics-Aware Robot Policies（LaWAM）)/Fast-WAM 家族（WAM 骨干与 IDM 变体的宿主）+ [TFD](/ai-fa/explore/10-Papers/02-生成建模与扩散/Teacher-Feature Drifting- One-Step Diffusion Distillation with Pretrained Diffusion Representations（TFD）) 一族的"教师特征对齐"工具（本文用 VGGT 当几何教师，训练期挂载推理期丢弃与 TFD 的表示空间蒸馏同工）；
+- ↔ 对照 [DIAMOND](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Diffusion for World Modeling- Visual Details Matter in Atari（DIAMOND）)：同问"视觉细节里哪些是控制信号"——DIAMOND 答"全要保"（像素直绘），GIFT 答"保三类结构就够"（监督塑形），我们的 E1 答"保**读出**就够"（价值/奖励头过帧）；三方构成"保什么"光谱的三站；
 - ↔ 对照 决策保真 DF：**思想最近邻**——同认"视觉丰富≠控制有用"，但其 gap 是**度量+监督目标**（冻结读出头 h 读两种 rollout），GIFT 的 gap 是**结构枚举**（几何/可供性/目标三类手工结构监督从头训练的表征）；GIFT 无蒸馏设定（学生不是压缩的教师）、无理论闭环、域是机器人模仿非游戏 RL——划界一句话："他们枚举结构教特征学什么，我们用读出头逼蒸馏保什么信号"；
-- ↔ 对照 [逆动力学（IDM）](/explore/40-Concepts/逆动力学（IDM）)：其 WAM-IDM 变体="先想象未来视频再反推动作"（imagine-then-act），条件是**教师强制的真未来**而非反推分布本身，与 E2 的后验反推 p(a|x_t,goal) 仍是两码事——但"未来条件逆动力学"的范式命名与我们 IDM 头设计文档的语境相通，值得在其家族表里挂一行；
-- ≡ 同族谱系：[SA-WAM](/explore/10-Papers/09-世界模型与JEPA/Spatially Aware World Action Model via Geometric Latent Diffusion)（3D 作为输入模态）vs 本文（3D 作为训练期监督）——"几何进模型"的两种进法；[Physically Grounded JEPA](/explore/10-Papers/09-世界模型与JEPA/Toward Physically Grounded JEPA World Models for Goal-Conditioned Robotic Planning)（潜空间+规划）——同机器人域 goal-conditioned 邻居。
+- ↔ 对照 [逆动力学（IDM）](/ai-fa/explore/40-Concepts/逆动力学（IDM）)：其 WAM-IDM 变体="先想象未来视频再反推动作"（imagine-then-act），条件是**教师强制的真未来**而非反推分布本身，与 E2 的后验反推 p(a|x_t,goal) 仍是两码事——但"未来条件逆动力学"的范式命名与我们 IDM 头设计文档的语境相通，值得在其家族表里挂一行；
+- ≡ 同族谱系：[SA-WAM](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Spatially Aware World Action Model via Geometric Latent Diffusion)（3D 作为输入模态）vs 本文（3D 作为训练期监督）——"几何进模型"的两种进法；[Physically Grounded JEPA](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Toward Physically Grounded JEPA World Models for Goal-Conditioned Robotic Planning)（潜空间+规划）——同机器人域 goal-conditioned 邻居。
 
 ## 6. 影响后续
 
@@ -69,15 +69,15 @@ tags: [paper]
 - 方法论上确立两个可迁移结论：①**监督只走梯度不走推理**（no-injection 优于 injection）——"表征塑造"与"输入增广"的分离实验设计干净，此后类似设计都绕不开引用这张消融表；②**跨动作范式通用的表征原则**（同一 λ 配方直接迁移回归/扩散/IDM 三种头）；
 - 对我们：E1 论文 Related Work 的"表征侧近邻"必引+一段划界；其消融（Table 4 各路监督分扰动类型的增益：几何救相机扰动、可供性救初始状态扰动、目标救背景/噪声）提供了"结构×扰动类型"对应关系的现成证据格式，E1 消融表可借鉴此布局呈现"读出项×游戏类型"。
 
-- → 后继补记（260914）：[RodForesight](/explore/10-Papers/09-世界模型与JEPA/RodForesight - A World Model Enhanced Diffusion Policy for Slender and Material Agnostic Rod Insertion（杆件插装）)（机器人操作域邻格：动作导向监督 vs 动作条件预测评估）
+- → 后继补记（260914）：[RodForesight](/ai-fa/explore/10-Papers/09-世界模型与JEPA/RodForesight - A World Model Enhanced Diffusion Policy for Slender and Material Agnostic Rod Insertion（杆件插装）)（机器人操作域邻格：动作导向监督 vs 动作条件预测评估）
 
 ## 7. 读前须知
 
-- **必前置**：[逆动力学（IDM）](/explore/40-Concepts/逆动力学（IDM）)（WAM-IDM 变体的动作机制）、[知识蒸馏](/explore/40-Concepts/知识蒸馏)（教师特征对齐的母框架——注意本文不是严格蒸馏：VGGT 是特征教师非生成教师）、[世界模型](/explore/20-Algorithms/世界模型)（WAM 语境）；
+- **必前置**：[逆动力学（IDM）](/ai-fa/explore/40-Concepts/逆动力学（IDM）)（WAM-IDM 变体的动作机制）、[知识蒸馏](/ai-fa/explore/40-Concepts/知识蒸馏)（教师特征对齐的母框架——注意本文不是严格蒸馏：VGGT 是特征教师非生成教师）、[世界模型](/ai-fa/explore/20-Algorithms/世界模型)（WAM 语境）；
 - **易混点**：①GIFT ≠ GIFT-Teacher（散度最小化蒸馏，撞名不同文）；②"guidance"是训练期监督不是推理期 classifier-free/diffusion guidance——同名不同期；③可供性（affordance）监督用的是**演示特权数据**（仿真器位姿/人工标注），非从视频自监督学出——真机成本在标注管线（Grounding DINO+SAM2+人工校验）；④几何教师对齐的是**中间特征不是深度图**——深度解码只是诊断可视化（Fig 4），不是训练目标；
 - **数学前置**：6D 旋转表示（位姿 9=平移 3+旋转 6）、软 Dice 系数、余弦相似度；无需扩散数学细节（原生损失整体继承宿主）；
 - **读法建议**：Fig 2（总览，一张图看懂三路监督挂哪层）→ §3.2（三路监督定义）→ Table 4/5（本文最硬的两张消融：分路增益+no-injection 优势）→ §4.4 Q5（失败案例——监督信号本身被分布漂移打坏时全链崩，诚实）。
 
-> 谱系枢纽：[LaWAM](/explore/10-Papers/09-世界模型与JEPA/LaWAM- Latent World Action Models for Efficient Dynamics-Aware Robot Policies（LaWAM）)（图谱连通入口）
-> 近邻同族：[SA-WAM](/explore/10-Papers/09-世界模型与JEPA/Spatially Aware World Action Model via Geometric Latent Diffusion) · [Physically Grounded JEPA](/explore/10-Papers/09-世界模型与JEPA/Toward Physically Grounded JEPA World Models for Goal-Conditioned Robotic Planning)
-> 数学根基：[逆动力学（IDM）](/explore/40-Concepts/逆动力学（IDM）) · [知识蒸馏](/explore/40-Concepts/知识蒸馏) · 决策保真DF
+> 谱系枢纽：[LaWAM](/ai-fa/explore/10-Papers/09-世界模型与JEPA/LaWAM- Latent World Action Models for Efficient Dynamics-Aware Robot Policies（LaWAM）)（图谱连通入口）
+> 近邻同族：[SA-WAM](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Spatially Aware World Action Model via Geometric Latent Diffusion) · [Physically Grounded JEPA](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Toward Physically Grounded JEPA World Models for Goal-Conditioned Robotic Planning)
+> 数学根基：[逆动力学（IDM）](/ai-fa/explore/40-Concepts/逆动力学（IDM）) · [知识蒸馏](/ai-fa/explore/40-Concepts/知识蒸馏) · 决策保真DF

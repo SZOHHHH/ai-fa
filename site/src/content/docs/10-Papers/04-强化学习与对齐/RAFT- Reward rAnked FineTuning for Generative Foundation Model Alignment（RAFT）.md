@@ -38,8 +38,8 @@ pdf: 已下载（PDF/）
 
 ## 5. 与前作的关系
 
-- 与 [BoN](/explore/10-Papers/04-强化学习与对齐/Statistical Rejection Sampling Improves Preference Optimization（BoN）) 上下游呼应：BoN 论证筛选分布的最优性，RAFT 把它变成训练循环
-- 对照 [GRPO与RLVR](/explore/20-Algorithms/GRPO与RLVR)：同为"组内竞争"思想（GRPO 用梯度、RAFT 用数据筛选）
+- 与 [BoN](/ai-fa/explore/10-Papers/04-强化学习与对齐/Statistical Rejection Sampling Improves Preference Optimization（BoN）) 上下游呼应：BoN 论证筛选分布的最优性，RAFT 把它变成训练循环
+- 对照 [GRPO与RLVR](/ai-fa/explore/20-Algorithms/GRPO与RLVR)：同为"组内竞争"思想（GRPO 用梯度、RAFT 用数据筛选）
 
 ## 6. 影响与后续
 
@@ -48,4 +48,4 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[RLHF目标](/explore/30-Formulas/RLHF目标)、[Statistical Rejection Sampling Improves Preference Optimization](/explore/10-Papers/04-强化学习与对齐/Statistical Rejection Sampling Improves Preference Optimization（BoN）)
+[RLHF目标](/ai-fa/explore/30-Formulas/RLHF目标)、[Statistical Rejection Sampling Improves Preference Optimization](/ai-fa/explore/10-Papers/04-强化学习与对齐/Statistical Rejection Sampling Improves Preference Optimization（BoN）)

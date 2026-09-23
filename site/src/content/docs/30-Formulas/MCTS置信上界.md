@@ -41,18 +41,18 @@ $$a^{*}\;=\;\arg\max_{a}\Big[Q(s,a)\;+\;c\,P(s,a)\,\frac{\sqrt{N(s)}}{1+N(s,a)}\
 |---|---|
 | Kocsis & Szepesvári 2006（UCT） | 树上套 UCB |
 | AlphaGo（2016）/ AlphaZero | PUCT + 神经网络先验 |
-| [MuZero 2019](/explore/10-Papers/09-世界模型与JEPA/Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model（MuZero）) | 学到的 $$P,V$$ 头 + PUCT（不必学忠实环境） |
-| [MCTS 置信上界](/explore/30-Formulas/MCTS置信上界) 与 [TD-MPC2](/explore/10-Papers/09-世界模型与JEPA/TD-MPC2- Scalable, Robust World Models for Continuous Control（TD-MPC2）) | 射击轨迹规划里同类"利用+探索"打分 |
+| [MuZero 2019](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model（MuZero）) | 学到的 $$P,V$$ 头 + PUCT（不必学忠实环境） |
+| [MCTS 置信上界](/ai-fa/explore/30-Formulas/MCTS置信上界) 与 [TD-MPC2](/ai-fa/explore/10-Papers/09-世界模型与JEPA/TD-MPC2- Scalable, Robust World Models for Continuous Control（TD-MPC2）) | 射击轨迹规划里同类"利用+探索"打分 |
 
 ## 5. 数学概念分解
 
-- [期望](/explore/40-Concepts/期望)：$$Q(s,a)$$ 是模拟回报的样本均值
-- [概率分布](/explore/40-Concepts/概率分布)：根节点访问分布被当作策略使用
-- [贝尔曼方程](/explore/40-Concepts/贝尔曼方程)：叶节点价值=价值头对 $$V$$ 的一步估计（树内是它的逐层展开）
-- [马尔可夫决策过程](/explore/40-Concepts/马尔可夫决策过程)：树=MDP 的前向展开
+- [期望](/ai-fa/explore/40-Concepts/期望)：$$Q(s,a)$$ 是模拟回报的样本均值
+- [概率分布](/ai-fa/explore/40-Concepts/概率分布)：根节点访问分布被当作策略使用
+- [贝尔曼方程](/ai-fa/explore/40-Concepts/贝尔曼方程)：叶节点价值=价值头对 $$V$$ 的一步估计（树内是它的逐层展开）
+- [马尔可夫决策过程](/ai-fa/explore/40-Concepts/马尔可夫决策过程)：树=MDP 的前向展开
 
 ## 6. 与其他公式的关系
 
-- → [MuZero](/explore/10-Papers/09-世界模型与JEPA/Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model（MuZero）)：本公式是其"决策时刻规划"的心脏
-- ↔ 对照 [Diffuser](/explore/10-Papers/04-强化学习与对齐/Planning with Diffusion for Flexible Behavior Synthesis（Diffuser）)：**搜索分配预算 vs 采样直接生成**——同在"利用模型做决策"，机制相反
-- ↔ 对照 [后验采样与planning-as-inference](/explore/40-Concepts/后验采样与planning-as-inference)：置信上界=乐观点估计路线；后验采样=保留分布路线
+- → [MuZero](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model（MuZero）)：本公式是其"决策时刻规划"的心脏
+- ↔ 对照 [Diffuser](/ai-fa/explore/10-Papers/04-强化学习与对齐/Planning with Diffusion for Flexible Behavior Synthesis（Diffuser）)：**搜索分配预算 vs 采样直接生成**——同在"利用模型做决策"，机制相反
+- ↔ 对照 [后验采样与planning-as-inference](/ai-fa/explore/40-Concepts/后验采样与planning-as-inference)：置信上界=乐观点估计路线；后验采样=保留分布路线

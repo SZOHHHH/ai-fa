@@ -38,17 +38,17 @@ $$
 
 ## 5. 与前作/矩阵关系
 
-🚩 占 FM×蒸馏×超分格；[MFD](/explore/10-Papers/02-生成建模与扩散/Mean Flow Distillation - Robust and Stable Distillation for Flow Matching Models（MFD）) 管线的任务面证据
+🚩 占 FM×蒸馏×超分格；[MFD](/ai-fa/explore/10-Papers/02-生成建模与扩散/Mean Flow Distillation - Robust and Stable Distillation for Flow Matching Models（MFD）) 管线的任务面证据
 
 
 ## 6. 影响与占位意义
 
 RS 库 02-04 已有情报卡；少步生成的应用侧。
 
-> 近邻同族：[Align Your Flow - Scaling Continuous-Time Flow Map Distillation](/explore/10-Papers/02-生成建模与扩散/Align Your Flow- Scaling Continuous-Time Flow Map Distillation（AYF）) · [Computational and Statistical Guarantees of the c-Rectified flow](/explore/10-Papers/02-生成建模与扩散/Computational and Statistical Guarantees of the c-Rectified flow（c-RF理论）)
-> 矩形流谱系环：[ProReflow- Progressive Reflow with Decomposed Velocity](/explore/10-Papers/02-生成建模与扩散/ProReflow- Progressive Reflow with Decomposed Velocity（ProReflow）) ← 本卡 → [Flow Straight and Fast - Learning to Generate and Transfer Data with Rectified Flow](/explore/10-Papers/02-生成建模与扩散/Flow Straight and Fast- Learning to Generate and Transfer Data with Rectified Flow（矩形流）)
-> 数学根基（占位层）：[概率分布](/explore/40-Concepts/概率分布)
-> 数学根基：[蒸馏损失](/explore/30-Formulas/蒸馏损失) · [DSM目标](/explore/30-Formulas/DSM目标)
+> 近邻同族：[Align Your Flow - Scaling Continuous-Time Flow Map Distillation](/ai-fa/explore/10-Papers/02-生成建模与扩散/Align Your Flow- Scaling Continuous-Time Flow Map Distillation（AYF）) · [Computational and Statistical Guarantees of the c-Rectified flow](/ai-fa/explore/10-Papers/02-生成建模与扩散/Computational and Statistical Guarantees of the c-Rectified flow（c-RF理论）)
+> 矩形流谱系环：[ProReflow- Progressive Reflow with Decomposed Velocity](/ai-fa/explore/10-Papers/02-生成建模与扩散/ProReflow- Progressive Reflow with Decomposed Velocity（ProReflow）) ← 本卡 → [Flow Straight and Fast - Learning to Generate and Transfer Data with Rectified Flow](/ai-fa/explore/10-Papers/02-生成建模与扩散/Flow Straight and Fast- Learning to Generate and Transfer Data with Rectified Flow（矩形流）)
+> 数学根基（占位层）：[概率分布](/ai-fa/explore/40-Concepts/概率分布)
+> 数学根基：[蒸馏损失](/ai-fa/explore/30-Formulas/蒸馏损失) · [DSM目标](/ai-fa/explore/30-Formulas/DSM目标)
 
 ## 7. 读前须知
 

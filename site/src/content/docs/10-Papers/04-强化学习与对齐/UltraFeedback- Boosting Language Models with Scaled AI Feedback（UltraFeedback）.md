@@ -21,11 +21,11 @@ tags: [paper]
 ## 2. 核心贡献
 
 1. 细粒度指令遵循/真实性/诚实/有用四维打分
-2. 直接 [DPO](/explore/10-Papers/04-强化学习与对齐/Direct Preference Optimization- Your Language Model is Secretly a Reward Model（DPO）) 训练（无需 RM 阶段）
+2. 直接 [DPO](/ai-fa/explore/10-Papers/04-强化学习与对齐/Direct Preference Optimization- Your Language Model is Secretly a Reward Model（DPO）) 训练（无需 RM 阶段）
 
 ## 3. 方法概要
 
-细粒度指令遵循/真实性/诚实/有用四维打分；直接 [DPO](/explore/10-Papers/04-强化学习与对齐/Direct Preference Optimization- Your Language Model is Secretly a Reward Model（DPO）) 训练（无需 RM 阶段）。
+细粒度指令遵循/真实性/诚实/有用四维打分；直接 [DPO](/ai-fa/explore/10-Papers/04-强化学习与对齐/Direct Preference Optimization- Your Language Model is Secretly a Reward Model（DPO）) 训练（无需 RM 阶段）。
 ## 4. 核心公式
 
 
@@ -34,7 +34,7 @@ $$
 $$
 
 
-**直觉**：→ [偏好优化矩阵](/explore/60-Matrices/偏好优化矩阵)；DPO 数据管线的事实标准之一
+**直觉**：→ [偏好优化矩阵](/ai-fa/explore/60-Matrices/偏好优化矩阵)；DPO 数据管线的事实标准之一
 
 ## 5. 与前作/矩阵关系
 
@@ -48,8 +48,8 @@ AI 反馈的质量/规模化争议的起点之一
 
 undefined
 
-> 近邻同族：[Constitutional AI - Harmlessness from AI Feedback](/explore/10-Papers/04-强化学习与对齐/Constitutional AI- Harmlessness from AI Feedback（CAI）) · [A General Language Assistant as a Laboratory for Alignment](/explore/10-Papers/04-强化学习与对齐/A General Language Assistant as a Laboratory for Alignment（Assistant Lab）)
+> 近邻同族：[Constitutional AI - Harmlessness from AI Feedback](/ai-fa/explore/10-Papers/04-强化学习与对齐/Constitutional AI- Harmlessness from AI Feedback（CAI）) · [A General Language Assistant as a Laboratory for Alignment](/ai-fa/explore/10-Papers/04-强化学习与对齐/A General Language Assistant as a Laboratory for Alignment（Assistant Lab）)
 
-> 数学根基：[策略梯度定理](/explore/40-Concepts/策略梯度定理)
+> 数学根基：[策略梯度定理](/ai-fa/explore/40-Concepts/策略梯度定理)
 
-> 数学根基：[REINFORCE目标](/explore/30-Formulas/REINFORCE目标)
+> 数学根基：[REINFORCE目标](/ai-fa/explore/30-Formulas/REINFORCE目标)

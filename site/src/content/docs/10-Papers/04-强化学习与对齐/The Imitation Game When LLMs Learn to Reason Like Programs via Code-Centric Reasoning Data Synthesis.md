@@ -30,9 +30,9 @@ layer: 占位
 （待精读）
 
 ## 5. 与前作/矩阵关系
-- 线锚：[GRPO与RLVR](/explore/20-Algorithms/GRPO与RLVR)
-- 数学根基：[过程奖励与结果奖励（PRM-ORM）](/explore/40-Concepts/过程奖励与结果奖励（PRM-ORM）)（CIR=代码插桩中间执行状态构成的稠密过程监督——免外部 PRM 的过程奖励路线）
-- 近邻同族：[Process Reinforcement through Implicit Rewards](/explore/10-Papers/04-强化学习与对齐/Process Reinforcement through Implicit Rewards（PRIME）)（隐式过程奖励同族）· [GRPO is Secretly a Process Reward Model](/explore/10-Papers/04-强化学习与对齐/GRPO is Secretly a Process Reward Model（GRPO-PRM）)（组内信号当过程奖励的结构分析）
+- 线锚：[GRPO与RLVR](/ai-fa/explore/20-Algorithms/GRPO与RLVR)
+- 数学根基：[过程奖励与结果奖励（PRM-ORM）](/ai-fa/explore/40-Concepts/过程奖励与结果奖励（PRM-ORM）)（CIR=代码插桩中间执行状态构成的稠密过程监督——免外部 PRM 的过程奖励路线）
+- 近邻同族：[Process Reinforcement through Implicit Rewards](/ai-fa/explore/10-Papers/04-强化学习与对齐/Process Reinforcement through Implicit Rewards（PRIME）)（隐式过程奖励同族）· [GRPO is Secretly a Process Reward Model](/ai-fa/explore/10-Papers/04-强化学习与对齐/GRPO is Secretly a Process Reward Model（GRPO-PRM）)（组内信号当过程奖励的结构分析）
 
 ## 6. 影响后续
 （待精读）

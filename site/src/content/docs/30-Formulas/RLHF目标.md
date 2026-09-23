@@ -13,7 +13,7 @@ tags: [formula]
 
 $$\max_{\pi_\theta}\ \mathbb{E}_{x \sim \mathcal{D},\ y \sim \pi_\theta(\cdot \mid x)}\!\left[ r_\phi(x, y) \right] - \beta\, D_{\mathrm{KL}}\!\left( \pi_\theta(\cdot \mid x)\ \Big\|\ \pi_{\mathrm{ref}}(\cdot \mid x) \right)$$
 
-- $$r_\phi(x, y)$$：奖励模型（从人类偏好学出，见 [Bradley-Terry模型](/explore/40-Concepts/Bradley-Terry模型)）
+- $$r_\phi(x, y)$$：奖励模型（从人类偏好学出，见 [Bradley-Terry模型](/ai-fa/explore/40-Concepts/Bradley-Terry模型)）
 - $$\pi_{\mathrm{ref}}$$：参考策略（通常是 SFT 后的模型）——"别飘太远"的锚
 - $$\beta$$：KL 惩罚系数（本库记号规范 §3）
 - **读法**：最大化奖励模型打分，同时别偏离初始语言模型太远
@@ -38,22 +38,22 @@ $$\max_{\pi_\theta}\ \mathbb{E}_{x \sim \mathcal{D},\ y \sim \pi_\theta(\cdot \m
 
 | 论文 | 贡献 |
 |---|---|
-| [Deep reinforcement learning from human preferences](/explore/10-Papers/04-强化学习与对齐/Deep reinforcement learning from human preferences（RLHF）) | RLHF 框架 |
-| [Training language models to follow instructions with human feedback](/explore/10-Papers/04-强化学习与对齐/Training language models to follow instructions with human feedback（InstructGPT）) | LLM 规模化落地 |
-| [A General Language Assistant as a Laboratory for Alignment](/explore/10-Papers/04-强化学习与对齐/A General Language Assistant as a Laboratory for Alignment（Assistant Lab）) | 系统比较对齐方法 |
-| [Constitutional AI - Harmlessness from AI Feedback](/explore/10-Papers/04-强化学习与对齐/Constitutional AI- Harmlessness from AI Feedback（CAI）) | RLAIF：反馈源换 AI |
+| [Deep reinforcement learning from human preferences](/ai-fa/explore/10-Papers/04-强化学习与对齐/Deep reinforcement learning from human preferences（RLHF）) | RLHF 框架 |
+| [Training language models to follow instructions with human feedback](/ai-fa/explore/10-Papers/04-强化学习与对齐/Training language models to follow instructions with human feedback（InstructGPT）) | LLM 规模化落地 |
+| [A General Language Assistant as a Laboratory for Alignment](/ai-fa/explore/10-Papers/04-强化学习与对齐/A General Language Assistant as a Laboratory for Alignment（Assistant Lab）) | 系统比较对齐方法 |
+| [Constitutional AI - Harmlessness from AI Feedback](/ai-fa/explore/10-Papers/04-强化学习与对齐/Constitutional AI- Harmlessness from AI Feedback（CAI）) | RLAIF：反馈源换 AI |
 
 ## 5. 数学概念分解
 
-- [Bradley-Terry模型](/explore/40-Concepts/Bradley-Terry模型)：奖励模型的训练方式
-- [KL散度](/explore/40-Concepts/KL散度)：正则项
-- [期望](/explore/40-Concepts/期望)：目标骨架
-- [贝尔曼方程](/explore/40-Concepts/贝尔曼方程) / [策略梯度定理](/explore/40-Concepts/策略梯度定理)：优化路径（PPO）
+- [Bradley-Terry模型](/ai-fa/explore/40-Concepts/Bradley-Terry模型)：奖励模型的训练方式
+- [KL散度](/ai-fa/explore/40-Concepts/KL散度)：正则项
+- [期望](/ai-fa/explore/40-Concepts/期望)：目标骨架
+- [贝尔曼方程](/ai-fa/explore/40-Concepts/贝尔曼方程) / [策略梯度定理](/ai-fa/explore/40-Concepts/策略梯度定理)：优化路径（PPO）
 
 ## 6. 与其他公式的关系
 
-- → **由 PPO 优化**：[PPO裁剪目标](/explore/30-Formulas/PPO裁剪目标)（工程主路径）
-- → **闭式解反推**：[DPO损失](/explore/30-Formulas/DPO损失)（理论主路径）——"同一目标的两种解法"是 B2 线核心叙事
-- → **简化**：[GRPO目标](/explore/30-Formulas/GRPO目标)（去 critic、组内基线）
-- → **无参考变体**：[ORPO损失](/explore/30-Formulas/ORPO损失)（KL 融进对比项）
-- 对比 [条件流匹配损失](/explore/30-Formulas/条件流匹配损失)：同为"期望下优化"，RL 的期望在**策略诱导的分布**上（可采样），生成模型的期望在**固定数据分布**上
+- → **由 PPO 优化**：[PPO裁剪目标](/ai-fa/explore/30-Formulas/PPO裁剪目标)（工程主路径）
+- → **闭式解反推**：[DPO损失](/ai-fa/explore/30-Formulas/DPO损失)（理论主路径）——"同一目标的两种解法"是 B2 线核心叙事
+- → **简化**：[GRPO目标](/ai-fa/explore/30-Formulas/GRPO目标)（去 critic、组内基线）
+- → **无参考变体**：[ORPO损失](/ai-fa/explore/30-Formulas/ORPO损失)（KL 融进对比项）
+- 对比 [条件流匹配损失](/ai-fa/explore/30-Formulas/条件流匹配损失)：同为"期望下优化"，RL 的期望在**策略诱导的分布**上（可采样），生成模型的期望在**固定数据分布**上

@@ -51,8 +51,8 @@ $$
 
 ---
 
-> 谱系枢纽：[Attention Is All You Need](/explore/10-Papers/01-架构演进/Attention Is All You Need（Transformer）)（图谱连通入口）
+> 谱系枢纽：[Attention Is All You Need](/ai-fa/explore/10-Papers/01-架构演进/Attention Is All You Need（Transformer）)（图谱连通入口）
 
-> 近邻同族：[Deep Residual Learning for Image Recognition](/explore/10-Papers/01-架构演进/Deep Residual Learning for Image Recognition（ResNet）) · [Encoder-Decoder with Atrous Separable Convolution for Semantic Image Segmentation](/explore/10-Papers/01-架构演进/Encoder-Decoder with Atrous Separable Convolution for Semantic Image Segmentation（DeepLabv3+）)
+> 近邻同族：[Deep Residual Learning for Image Recognition](/ai-fa/explore/10-Papers/01-架构演进/Deep Residual Learning for Image Recognition（ResNet）) · [Encoder-Decoder with Atrous Separable Convolution for Semantic Image Segmentation](/ai-fa/explore/10-Papers/01-架构演进/Encoder-Decoder with Atrous Separable Convolution for Semantic Image Segmentation（DeepLabv3+）)
 
-> 数学根基：[注意力核心公式](/explore/30-Formulas/注意力核心公式) · [残差连接](/explore/30-Formulas/残差连接) · [梯度](/explore/40-Concepts/梯度)
+> 数学根基：[注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式) · [残差连接](/ai-fa/explore/30-Formulas/残差连接) · [梯度](/ai-fa/explore/40-Concepts/梯度)

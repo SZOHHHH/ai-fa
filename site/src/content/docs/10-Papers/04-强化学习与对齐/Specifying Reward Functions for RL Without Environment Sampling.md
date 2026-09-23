@@ -30,9 +30,9 @@ layer: 占位
 （待精读）
 
 ## 5. 与前作/矩阵关系
-- 线锚：[RLHF](/explore/20-Algorithms/RLHF)
-- 数学根基：[Bradley-Terry模型](/explore/40-Concepts/Bradley-Terry模型)（想象轨迹对的偏好→特征权重，BT 似然照用）· [RLHF目标](/explore/30-Formulas/RLHF目标)
-- 近邻同族：[Deep reinforcement learning from human preferences](/explore/10-Papers/04-强化学习与对齐/Deep reinforcement learning from human preferences（RLHF）)（在线偏好 elicitation 本源——EARS 把"采样真轨迹"换成"在 LLM 构造的特征空间采想象轨迹"，偏好学习循环不变）
+- 线锚：[RLHF](/ai-fa/explore/20-Algorithms/RLHF)
+- 数学根基：[Bradley-Terry模型](/ai-fa/explore/40-Concepts/Bradley-Terry模型)（想象轨迹对的偏好→特征权重，BT 似然照用）· [RLHF目标](/ai-fa/explore/30-Formulas/RLHF目标)
+- 近邻同族：[Deep reinforcement learning from human preferences](/ai-fa/explore/10-Papers/04-强化学习与对齐/Deep reinforcement learning from human preferences（RLHF）)（在线偏好 elicitation 本源——EARS 把"采样真轨迹"换成"在 LLM 构造的特征空间采想象轨迹"，偏好学习循环不变）
 
 ## 6. 影响后续
 （待精读）

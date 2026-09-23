@@ -33,11 +33,11 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- [KTO损失](/explore/30-Formulas/KTO损失)
+- [KTO损失](/ai-fa/explore/30-Formulas/KTO损失)
 
 ## 5. 与前作的关系
 
-- 重构了 [DPO](/explore/10-Papers/04-强化学习与对齐/Direct Preference Optimization- Your Language Model is Secretly a Reward Model（DPO）) 的数据假设（BT 成对 → 前景理论单点）
+- 重构了 [DPO](/ai-fa/explore/10-Papers/04-强化学习与对齐/Direct Preference Optimization- Your Language Model is Secretly a Reward Model（DPO）) 的数据假设（BT 成对 → 前景理论单点）
 - 理论地基于 Kahneman–Tversky 1979（经济学心理学，诺奖工作）——跨学科输入的范例
 
 ## 6. 影响与后续
@@ -47,6 +47,6 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[DPO损失](/explore/30-Formulas/DPO损失)、[KL散度](/explore/40-Concepts/KL散度)
+[DPO损失](/ai-fa/explore/30-Formulas/DPO损失)、[KL散度](/ai-fa/explore/40-Concepts/KL散度)
 
-> 近邻同族：[Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena](/explore/10-Papers/04-强化学习与对齐/Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena（LLM-as-Judge）) · [RewardBench- Evaluating Reward Models for Language Modeling](/explore/10-Papers/04-强化学习与对齐/RewardBench- Evaluating Reward Models for Language Modeling（RewardBench）)
+> 近邻同族：[Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena](/ai-fa/explore/10-Papers/04-强化学习与对齐/Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena（LLM-as-Judge）) · [RewardBench- Evaluating Reward Models for Language Modeling](/ai-fa/explore/10-Papers/04-强化学习与对齐/RewardBench- Evaluating Reward Models for Language Modeling（RewardBench）)

@@ -43,11 +43,11 @@ $$
 
 ## 6. 影响与占位意义
 
-RS 库 12-21 已有；[MFD](/explore/10-Papers/02-生成建模与扩散/Mean Flow Distillation - Robust and Stable Distillation for Flow Matching Models（MFD）) 血统计画——**平均速度范式已跨 5 个任务域**。
+RS 库 12-21 已有；[MFD](/ai-fa/explore/10-Papers/02-生成建模与扩散/Mean Flow Distillation - Robust and Stable Distillation for Flow Matching Models（MFD）) 血统计画——**平均速度范式已跨 5 个任务域**。
 
-> 近邻同族：[Align Your Flow - Scaling Continuous-Time Flow Map Distillation](/explore/10-Papers/02-生成建模与扩散/Align Your Flow- Scaling Continuous-Time Flow Map Distillation（AYF）) · [Computational and Statistical Guarantees of the c-Rectified flow](/explore/10-Papers/02-生成建模与扩散/Computational and Statistical Guarantees of the c-Rectified flow（c-RF理论）)
-> 数学根基（占位层）：[概率分布](/explore/40-Concepts/概率分布)
-> 数学根基：[条件流匹配损失](/explore/30-Formulas/条件流匹配损失) · [概率流ODE](/explore/30-Formulas/概率流ODE)
+> 近邻同族：[Align Your Flow - Scaling Continuous-Time Flow Map Distillation](/ai-fa/explore/10-Papers/02-生成建模与扩散/Align Your Flow- Scaling Continuous-Time Flow Map Distillation（AYF）) · [Computational and Statistical Guarantees of the c-Rectified flow](/ai-fa/explore/10-Papers/02-生成建模与扩散/Computational and Statistical Guarantees of the c-Rectified flow（c-RF理论）)
+> 数学根基（占位层）：[概率分布](/ai-fa/explore/40-Concepts/概率分布)
+> 数学根基：[条件流匹配损失](/ai-fa/explore/30-Formulas/条件流匹配损失) · [概率流ODE](/ai-fa/explore/30-Formulas/概率流ODE)
 
 ## 7. 读前须知
 

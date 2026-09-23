@@ -30,7 +30,7 @@ layer: 占位
 （待精读）
 
 ## 5. 与前作/矩阵关系
-- 线锚：[扩散模型](/explore/20-Algorithms/扩散模型) · [一致性模型](/explore/20-Algorithms/一致性模型)（占位挂链，Tier B 精化）
+- 线锚：[扩散模型](/ai-fa/explore/20-Algorithms/扩散模型) · [一致性模型](/ai-fa/explore/20-Algorithms/一致性模型)（占位挂链，Tier B 精化）
 
 ## 6. 影响后续
 （待精读）

@@ -38,15 +38,15 @@ $$
 
 ## 5. 与前作/矩阵关系
 
-← [One Step Diffusion via Shortcut Models](/explore/10-Papers/02-生成建模与扩散/One Step Diffusion via Shortcut Models（Shortcut）)（B13 入库）；🚩 占 FM×免蒸馏少步格（与 [MFD](/explore/10-Papers/02-生成建模与扩散/Mean Flow Distillation - Robust and Stable Distillation for Flow Matching Models（MFD）) 蒸馏路线正交的捷径）
+← [One Step Diffusion via Shortcut Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/One Step Diffusion via Shortcut Models（Shortcut）)（B13 入库）；🚩 占 FM×免蒸馏少步格（与 [MFD](/ai-fa/explore/10-Papers/02-生成建模与扩散/Mean Flow Distillation - Robust and Stable Distillation for Flow Matching Models（MFD）) 蒸馏路线正交的捷径）
 
 
 ## 6. 影响与占位意义
 
 RS 库 10-15 已有；**对 MFD 类蒸馏的竞争**：如果微调头够便宜，完整蒸馏的价值叙事受压——敌情价值高。
 
-> 近邻同族：[Align Your Flow - Scaling Continuous-Time Flow Map Distillation](/explore/10-Papers/02-生成建模与扩散/Align Your Flow- Scaling Continuous-Time Flow Map Distillation（AYF）) · [Computational and Statistical Guarantees of the c-Rectified flow](/explore/10-Papers/02-生成建模与扩散/Computational and Statistical Guarantees of the c-Rectified flow（c-RF理论）)
-> 数学根基（占位层）：[条件流匹配损失](/explore/30-Formulas/条件流匹配损失) · [注意力核心公式](/explore/30-Formulas/注意力核心公式)
+> 近邻同族：[Align Your Flow - Scaling Continuous-Time Flow Map Distillation](/ai-fa/explore/10-Papers/02-生成建模与扩散/Align Your Flow- Scaling Continuous-Time Flow Map Distillation（AYF）) · [Computational and Statistical Guarantees of the c-Rectified flow](/ai-fa/explore/10-Papers/02-生成建模与扩散/Computational and Statistical Guarantees of the c-Rectified flow（c-RF理论）)
+> 数学根基（占位层）：[条件流匹配损失](/ai-fa/explore/30-Formulas/条件流匹配损失) · [注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)
 
 ## 7. 读前须知
 

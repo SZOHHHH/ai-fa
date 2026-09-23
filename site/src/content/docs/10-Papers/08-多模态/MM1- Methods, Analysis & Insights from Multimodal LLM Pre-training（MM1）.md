@@ -34,7 +34,7 @@ $$
 $$
 
 
-**直觉**：→ 多模态矩阵投影行的配方参考；↔ [LLaVA](/explore/10-Papers/08-多模态/Visual Instruction Tuning（LLaVA）)（库内，轻配方）与 MM1（重消融）互补
+**直觉**：→ 多模态矩阵投影行的配方参考；↔ [LLaVA](/ai-fa/explore/10-Papers/08-多模态/Visual Instruction Tuning（LLaVA）)（库内，轻配方）与 MM1（重消融）互补
 
 ## 5. 与前作/矩阵关系
 
@@ -48,6 +48,6 @@ VLM 训练配方的公开参考标准（Apple 的开放代表作之一）
 
 undefined
 
-> 近邻同族：[BLIP-2 - Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models](/explore/10-Papers/08-多模态/BLIP-2- Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Lan（BLIP-2）) · [Flamingo - a Visual Language Model for Few-Shot Learning](/explore/10-Papers/08-多模态/Flamingo- a Visual Language Model for Few-Shot Learning（Flamingo）)
+> 近邻同族：[BLIP-2 - Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models](/ai-fa/explore/10-Papers/08-多模态/BLIP-2- Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Lan（BLIP-2）) · [Flamingo - a Visual Language Model for Few-Shot Learning](/ai-fa/explore/10-Papers/08-多模态/Flamingo- a Visual Language Model for Few-Shot Learning（Flamingo）)
 
-> 数学根基：[三层感知机投影](/explore/30-Formulas/三层感知机投影) · [CLIP对比损失](/explore/30-Formulas/CLIP对比损失) · [注意力核心公式](/explore/30-Formulas/注意力核心公式)
+> 数学根基：[三层感知机投影](/ai-fa/explore/30-Formulas/三层感知机投影) · [CLIP对比损失](/ai-fa/explore/30-Formulas/CLIP对比损失) · [注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)

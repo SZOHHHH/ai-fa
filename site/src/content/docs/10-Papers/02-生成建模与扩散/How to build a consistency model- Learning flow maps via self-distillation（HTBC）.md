@@ -38,15 +38,15 @@ $$
 
 ## 5. 与前作/矩阵关系
 
-🚩 占 FM×一致性×自蒸馏格；→ [One Step Diffusion via Shortcut Models](/explore/10-Papers/02-生成建模与扩散/One Step Diffusion via Shortcut Models（Shortcut）)（同用 EMA 思想）；← [Consistency Models](/explore/10-Papers/02-生成建模与扩散/Consistency Models（一致性模型）)
+🚩 占 FM×一致性×自蒸馏格；→ [One Step Diffusion via Shortcut Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/One Step Diffusion via Shortcut Models（Shortcut）)（同用 EMA 思想）；← [Consistency Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Consistency Models（一致性模型）)
 
 
 ## 6. 影响与占位意义
 
 一致性家族 2025 年的工程化收束点。
 
-> 近邻同族：[Align Your Flow - Scaling Continuous-Time Flow Map Distillation](/explore/10-Papers/02-生成建模与扩散/Align Your Flow- Scaling Continuous-Time Flow Map Distillation（AYF）) · [Computational and Statistical Guarantees of the c-Rectified flow](/explore/10-Papers/02-生成建模与扩散/Computational and Statistical Guarantees of the c-Rectified flow（c-RF理论）)
-> 数学根基（占位层）：[条件流匹配损失](/explore/30-Formulas/条件流匹配损失) · [注意力核心公式](/explore/30-Formulas/注意力核心公式)
+> 近邻同族：[Align Your Flow - Scaling Continuous-Time Flow Map Distillation](/ai-fa/explore/10-Papers/02-生成建模与扩散/Align Your Flow- Scaling Continuous-Time Flow Map Distillation（AYF）) · [Computational and Statistical Guarantees of the c-Rectified flow](/ai-fa/explore/10-Papers/02-生成建模与扩散/Computational and Statistical Guarantees of the c-Rectified flow（c-RF理论）)
+> 数学根基（占位层）：[条件流匹配损失](/ai-fa/explore/30-Formulas/条件流匹配损失) · [注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)
 
 ## 7. 读前须知
 

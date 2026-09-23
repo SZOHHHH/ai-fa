@@ -33,13 +33,13 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- $$V(z_t) \approx \hat P(\text{最终正确} \mid z_{\le t})$$（[过程奖励与结果奖励（PRM-ORM）](/explore/40-Concepts/过程奖励与结果奖励（PRM-ORM）) §2）
-- 结构上是 [贝尔曼方程](/explore/40-Concepts/贝尔曼方程) 的蒙特卡洛价值估计——PRM = 推理的 critic
+- $$V(z_t) \approx \hat P(\text{最终正确} \mid z_{\le t})$$（[过程奖励与结果奖励（PRM-ORM）](/ai-fa/explore/40-Concepts/过程奖励与结果奖励（PRM-ORM）) §2）
+- 结构上是 [贝尔曼方程](/ai-fa/explore/40-Concepts/贝尔曼方程) 的蒙特卡洛价值估计——PRM = 推理的 critic
 
 ## 5. 与前作的关系
 
 - 正面检验了 [GSM8K verifier（Cobbe 2021）] 的 ORM 路线——过程粒度完胜
-- 与 [GRPO与RLVR](/explore/20-Algorithms/GRPO与RLVR) 的规则 ORM 形成路线对照（OpenAI PRM 派 vs DeepSeek 规则派）
+- 与 [GRPO与RLVR](/ai-fa/explore/20-Algorithms/GRPO与RLVR) 的规则 ORM 形成路线对照（OpenAI PRM 派 vs DeepSeek 规则派）
 
 ## 6. 影响与后续
 
@@ -48,6 +48,6 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[过程奖励与结果奖励（PRM-ORM）](/explore/40-Concepts/过程奖励与结果奖励（PRM-ORM）)、[贝尔曼方程](/explore/40-Concepts/贝尔曼方程)、[CoT](/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）)
+[过程奖励与结果奖励（PRM-ORM）](/ai-fa/explore/40-Concepts/过程奖励与结果奖励（PRM-ORM）)、[贝尔曼方程](/ai-fa/explore/40-Concepts/贝尔曼方程)、[CoT](/ai-fa/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）)
 
-> 数学根基：[思维链（CoT）](/explore/40-Concepts/思维链（CoT）)
+> 数学根基：[思维链（CoT）](/ai-fa/explore/40-Concepts/思维链（CoT）)

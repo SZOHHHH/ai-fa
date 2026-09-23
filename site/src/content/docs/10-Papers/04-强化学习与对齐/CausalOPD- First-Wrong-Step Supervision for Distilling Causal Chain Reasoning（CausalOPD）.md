@@ -38,16 +38,16 @@ $$
 
 ## 5. 与前作/矩阵关系
 
-🚩🚩 蒸馏域矩阵"步级×OPD"新格——OPD 占坑仍在加速（第 10 篇）；≡ [When Teachers Mislead- Spurious-Signal-Aware On-Policy Distillation](/explore/10-Papers/04-强化学习与对齐/When Teachers Mislead- Spurious-Signal-Aware On-Policy Distillation（SA-OPD）)（都是 teacher-信号定位）
+🚩🚩 蒸馏域矩阵"步级×OPD"新格——OPD 占坑仍在加速（第 10 篇）；≡ [When Teachers Mislead- Spurious-Signal-Aware On-Policy Distillation](/ai-fa/explore/10-Papers/04-强化学习与对齐/When Teachers Mislead- Spurious-Signal-Aware On-Policy Distillation（SA-OPD）)（都是 teacher-信号定位）
 
 
 ## 6. 影响与占位意义
 
 RS 库 08-04 情报；OPD 家族 2026-08 仍在月更。
 
-> 近邻同族：[Any-OPD- Heterogeneous On-Policy Distillation for Flow-Matching Models via Representation-Space Bridging](/explore/10-Papers/04-强化学习与对齐/Any-OPD- Heterogeneous On-Policy Distillation for Flow-Matching Models via Representation-Space Bridging（Any-OPD）) · [Entropy-Aware On-Policy Distillation of Language Models](/explore/10-Papers/04-强化学习与对齐/Entropy-Aware On-Policy Distillation of Language Models（EOPD）)
-> 数学根基（占位层）：[策略梯度定理](/explore/40-Concepts/策略梯度定理)
-> 数学根基：[蒸馏损失](/explore/30-Formulas/蒸馏损失) · [DSM目标](/explore/30-Formulas/DSM目标)
+> 近邻同族：[Any-OPD- Heterogeneous On-Policy Distillation for Flow-Matching Models via Representation-Space Bridging](/ai-fa/explore/10-Papers/04-强化学习与对齐/Any-OPD- Heterogeneous On-Policy Distillation for Flow-Matching Models via Representation-Space Bridging（Any-OPD）) · [Entropy-Aware On-Policy Distillation of Language Models](/ai-fa/explore/10-Papers/04-强化学习与对齐/Entropy-Aware On-Policy Distillation of Language Models（EOPD）)
+> 数学根基（占位层）：[策略梯度定理](/ai-fa/explore/40-Concepts/策略梯度定理)
+> 数学根基：[蒸馏损失](/ai-fa/explore/30-Formulas/蒸馏损失) · [DSM目标](/ai-fa/explore/30-Formulas/DSM目标)
 
 ## 7. 读前须知
 

@@ -38,16 +38,16 @@ $$
 
 ## 5. 与前作/矩阵关系
 
-🚩 占 [生成模型加速矩阵](/explore/60-Matrices/生成模型加速矩阵) FM×蒸馏格的早期占位；→ [Any-OPD- Heterogeneous On-Policy Distillation for Flow-Matching Models via Representation-Space Bridging](/explore/10-Papers/04-强化学习与对齐/Any-OPD- Heterogeneous On-Policy Distillation for Flow-Matching Models via Representation-Space Bridging（Any-OPD）)（B12）把该思想推到异构黑盒场景
+🚩 占 [生成模型加速矩阵](/ai-fa/explore/60-Matrices/生成模型加速矩阵) FM×蒸馏格的早期占位；→ [Any-OPD- Heterogeneous On-Policy Distillation for Flow-Matching Models via Representation-Space Bridging](/ai-fa/explore/10-Papers/04-强化学习与对齐/Any-OPD- Heterogeneous On-Policy Distillation for Flow-Matching Models via Representation-Space Bridging（Any-OPD）)（B12）把该思想推到异构黑盒场景
 
 
 ## 6. 影响与占位意义
 
 RS 库 Planning/04 点名的"flow 蒸馏拥挤区"成员。
 
-> 近邻同族：[Align Your Flow - Scaling Continuous-Time Flow Map Distillation](/explore/10-Papers/02-生成建模与扩散/Align Your Flow- Scaling Continuous-Time Flow Map Distillation（AYF）) · [Computational and Statistical Guarantees of the c-Rectified flow](/explore/10-Papers/02-生成建模与扩散/Computational and Statistical Guarantees of the c-Rectified flow（c-RF理论）)
-> 数学根基（占位层）：[概率分布](/explore/40-Concepts/概率分布)
-> 数学根基：[蒸馏损失](/explore/30-Formulas/蒸馏损失) · [DSM目标](/explore/30-Formulas/DSM目标)
+> 近邻同族：[Align Your Flow - Scaling Continuous-Time Flow Map Distillation](/ai-fa/explore/10-Papers/02-生成建模与扩散/Align Your Flow- Scaling Continuous-Time Flow Map Distillation（AYF）) · [Computational and Statistical Guarantees of the c-Rectified flow](/ai-fa/explore/10-Papers/02-生成建模与扩散/Computational and Statistical Guarantees of the c-Rectified flow（c-RF理论）)
+> 数学根基（占位层）：[概率分布](/ai-fa/explore/40-Concepts/概率分布)
+> 数学根基：[蒸馏损失](/ai-fa/explore/30-Formulas/蒸馏损失) · [DSM目标](/ai-fa/explore/30-Formulas/DSM目标)
 
 ## 7. 读前须知
 

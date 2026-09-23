@@ -30,8 +30,8 @@ layer: 占位
 （待精读）
 
 ## 5. 与前作/矩阵关系
-- 线锚：[Hybrid Reinforcement- When Reward Is Sparse, It is Better to Be Dense](/explore/10-Papers/04-强化学习与对齐/Hybrid Reinforcement- When Reward Is Sparse, It is Better to Be Dense（HERO）)（同攻奖励稀疏：HERO 走混合奖励侧、本文走环境反馈富化侧）· [DeepSeek-R1 - Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](/explore/10-Papers/04-强化学习与对齐/DeepSeek-R1- Incentivizing Reasoning Capability in LLMs via Reinforcement Learning（R1）)（LLM 智能体 RL 训练范式锚）
-- 概念链：[过程奖励与结果奖励（PRM-ORM）](/explore/40-Concepts/过程奖励与结果奖励（PRM-ORM）)（反馈粒度加密的思想同源）
+- 线锚：[Hybrid Reinforcement- When Reward Is Sparse, It is Better to Be Dense](/ai-fa/explore/10-Papers/04-强化学习与对齐/Hybrid Reinforcement- When Reward Is Sparse, It is Better to Be Dense（HERO）)（同攻奖励稀疏：HERO 走混合奖励侧、本文走环境反馈富化侧）· [DeepSeek-R1 - Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](/ai-fa/explore/10-Papers/04-强化学习与对齐/DeepSeek-R1- Incentivizing Reasoning Capability in LLMs via Reinforcement Learning（R1）)（LLM 智能体 RL 训练范式锚）
+- 概念链：[过程奖励与结果奖励（PRM-ORM）](/ai-fa/explore/40-Concepts/过程奖励与结果奖励（PRM-ORM）)（反馈粒度加密的思想同源）
 
 ## 6. 影响后续
 （待精读）

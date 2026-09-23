@@ -17,16 +17,16 @@ tags: [algo]
 
 | 论文 | 引入/发展了什么 | 年份 |
 |---|---|---|
-| [Outrageously Large Neural Networks - The Sparsely-Gated Mixture-of-Experts Layer](/explore/10-Papers/03-后处理/Outrageously Large Neural Networks- The Sparsely-Gated Mixture-of-Experts Layer（稀疏MoE）) | 路由 + top-k 门控 + 负载均衡 | 2017 |
-| [GShard - Scaling Giant Models with Conditional Computation and Automatic Sharding](/explore/10-Papers/05-MoE/GShard- Scaling Giant Models with Conditional Computation and Automatic Sharding（GShard）) | MoE 进 Transformer、双层路由 | 2020 |
-| [Switch Transformers - Scaling to Trillion Parameter Models with Simple and Efficient Sparsity](/explore/10-Papers/05-MoE/Switch Transformers- Scaling to Trillion Parameter Models with Simple and Efficient Spars（Switch）) | top-1 路由简化、规模化验证 | 2021 |
-| [GLaM - Efficient Scaling of Language Models with Mixture-of-Experts](/explore/10-Papers/05-MoE/GLaM- Efficient Scaling of Language Models with Mixture-of-Experts（GLaM）) | 1.2T 参数、64 专家、效果超 GPT-3 用 1/3 能耗 | 2021 |
-| [Mixture-of-Experts with Expert Choice Routing](/explore/10-Papers/05-MoE/Mixture-of-Experts with Expert Choice Routing（Expert Choice）) | 反转路由：专家选 token | 2022 |
-| [From Sparse to Soft Mixtures of Experts](/explore/10-Papers/05-MoE/From Sparse to Soft Mixtures of Experts（Soft MoE）) | 连续软混合（离散路由的连续松弛） | 2023 |
-| [Mixtral of Experts](/explore/10-Papers/05-MoE/Mixtral of Experts（Mixtral）) | 开源 MoE 8×7B 顶流 | 2024 |
-| [DeepSeekMoE - Towards Ultimate Expert Specialization in Mixture-of-Experts Language Models](/explore/10-Papers/05-MoE/DeepSeekMoE- Towards Ultimate Expert Specialization in Mixture-of-Experts Language Model（DeepSeekMoE）) | 细粒度专家 + 共享专家 | 2024 |
-| [Chimaera: A Mixture-of-Graph-Experts Architecture for Cross-Task and Cross-Dataset Graph Learning](/explore/10-Papers/05-MoE/Chimaera A Mixture-of-Graph-Experts Architecture for Cross-Task and Cross-Dataset Graph Learning) | MoE 思想跨域移植（图学习跨任务/跨数据集） | 2026 |
-| [Data Scarcity and Model Sparsity: Mixtures-of-Experts Overfit More to Repeated Data](/explore/10-Papers/05-MoE/Data Scarcity and Model Sparsity Mixtures-of-Experts Overfit More to Repeated Data) | 稀疏性风险实证（MoE 更易过拟合重复数据） | 2026 |
+| [Outrageously Large Neural Networks - The Sparsely-Gated Mixture-of-Experts Layer](/ai-fa/explore/10-Papers/03-后处理/Outrageously Large Neural Networks- The Sparsely-Gated Mixture-of-Experts Layer（稀疏MoE）) | 路由 + top-k 门控 + 负载均衡 | 2017 |
+| [GShard - Scaling Giant Models with Conditional Computation and Automatic Sharding](/ai-fa/explore/10-Papers/05-MoE/GShard- Scaling Giant Models with Conditional Computation and Automatic Sharding（GShard）) | MoE 进 Transformer、双层路由 | 2020 |
+| [Switch Transformers - Scaling to Trillion Parameter Models with Simple and Efficient Sparsity](/ai-fa/explore/10-Papers/05-MoE/Switch Transformers- Scaling to Trillion Parameter Models with Simple and Efficient Spars（Switch）) | top-1 路由简化、规模化验证 | 2021 |
+| [GLaM - Efficient Scaling of Language Models with Mixture-of-Experts](/ai-fa/explore/10-Papers/05-MoE/GLaM- Efficient Scaling of Language Models with Mixture-of-Experts（GLaM）) | 1.2T 参数、64 专家、效果超 GPT-3 用 1/3 能耗 | 2021 |
+| [Mixture-of-Experts with Expert Choice Routing](/ai-fa/explore/10-Papers/05-MoE/Mixture-of-Experts with Expert Choice Routing（Expert Choice）) | 反转路由：专家选 token | 2022 |
+| [From Sparse to Soft Mixtures of Experts](/ai-fa/explore/10-Papers/05-MoE/From Sparse to Soft Mixtures of Experts（Soft MoE）) | 连续软混合（离散路由的连续松弛） | 2023 |
+| [Mixtral of Experts](/ai-fa/explore/10-Papers/05-MoE/Mixtral of Experts（Mixtral）) | 开源 MoE 8×7B 顶流 | 2024 |
+| [DeepSeekMoE - Towards Ultimate Expert Specialization in Mixture-of-Experts Language Models](/ai-fa/explore/10-Papers/05-MoE/DeepSeekMoE- Towards Ultimate Expert Specialization in Mixture-of-Experts Language Model（DeepSeekMoE）) | 细粒度专家 + 共享专家 | 2024 |
+| [Chimaera: A Mixture-of-Graph-Experts Architecture for Cross-Task and Cross-Dataset Graph Learning](/ai-fa/explore/10-Papers/05-MoE/Chimaera A Mixture-of-Graph-Experts Architecture for Cross-Task and Cross-Dataset Graph Learning) | MoE 思想跨域移植（图学习跨任务/跨数据集） | 2026 |
+| [Data Scarcity and Model Sparsity: Mixtures-of-Experts Overfit More to Repeated Data](/ai-fa/explore/10-Papers/05-MoE/Data Scarcity and Model Sparsity Mixtures-of-Experts Overfit More to Repeated Data) | 稀疏性风险实证（MoE 更易过拟合重复数据） | 2026 |
 
 ## 3. 核心公式（B4 批建公式页，此处先列骨架）
 
@@ -37,7 +37,7 @@ tags: [algo]
 
 ## 4. 数学概念分解
 
-[softmax函数](/explore/40-Concepts/softmax函数)（门控）、[期望](/explore/40-Concepts/期望)（均衡损失的统计形式）、[梯度](/explore/40-Concepts/梯度)（不可导 top-k 的处理：直通估计，连 [重参数化](/explore/40-Concepts/重参数化) 孪生话题）
+[softmax函数](/ai-fa/explore/40-Concepts/softmax函数)（门控）、[期望](/ai-fa/explore/40-Concepts/期望)（均衡损失的统计形式）、[梯度](/ai-fa/explore/40-Concepts/梯度)（不可导 top-k 的处理：直通估计，连 [重参数化](/ai-fa/explore/40-Concepts/重参数化) 孪生话题）
 
 ## 5. 变体与演进
 
@@ -59,6 +59,7 @@ tags: [algo]
 | 训练效率 | 基准 | 同算力 loss 降更快 |
 | 风险点 | — | 负载不均、路由坍缩、专家冗余 |
 
-**与 [MLA多头潜在注意力](/explore/30-Formulas/MLA多头潜在注意力) 的分工**：MLA 省推理 KV cache、MoE 省激活 FLOPs——DeepSeek 系"省资源双剑客"。
+**与 [MLA多头潜在注意力](/ai-fa/explore/30-Formulas/MLA多头潜在注意力) 的分工**：MLA 省推理 KV cache、MoE 省激活 FLOPs——DeepSeek 系"省资源双剑客"。
 
-- → 后继补记（260916）：[ACE](/explore/10-Papers/01-架构演进/ACE Adaptive Calibration-Free Expert Skipping for MoE-based LLMs)（MoE 推理效率轴：免校准专家跳过）
+- → 后继补记（260916）：[ACE](/ai-fa/explore/10-Papers/01-架构演进/ACE Adaptive Calibration-Free Expert Skipping for MoE-based LLMs)（MoE 推理效率轴：免校准专家跳过）
+- → 后继补记（260918）：[HOPE](/ai-fa/explore/10-Papers/05-MoE/Higher-order pruning of experts in mixture-of-experts language models)（专家剪枝从一阶可加假设升级到二阶协作目标）、[Infinite-Parameter LLMs](/ai-fa/explore/10-Papers/05-MoE/Infinite-Parameter LLMs Generating and Adapting Weights from Live Data)（静态专家池→活数据生成权重的变体轴）

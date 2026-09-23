@@ -34,13 +34,13 @@ pdf: 已下载（PDF/）
 ## 4. 核心公式
 
 - 平均速度恒等式：$$\bar u(x_t, t, r) = \frac{x_{t+r} - x_t}{r}$$（位移均分）
-- 目标：$$\mathbb{E}\| v_\theta - \bar u_{\text{target}} \|^2$$——[条件流匹配损失](/explore/30-Formulas/条件流匹配损失) 的平均化变体
+- 目标：$$\mathbb{E}\| v_\theta - \bar u_{\text{target}} \|^2$$——[条件流匹配损失](/ai-fa/explore/30-Formulas/条件流匹配损失) 的平均化变体
 
 ## 5. 与前作的关系
 
-- 改进了 [Flow Matching for Generative Modeling](/explore/10-Papers/02-生成建模与扩散/Flow Matching for Generative Modeling（流匹配）)：瞬时→平均，一步生成为直接目标
-- 对照蒸馏系（[Consistency Models](/explore/10-Papers/02-生成建模与扩散/Consistency Models（一致性模型）)/[DMD](/explore/10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）)）：免教师路线的代表作
-- **被 [MFD](/explore/10-Papers/02-生成建模与扩散/Mean Flow Distillation - Robust and Stable Distillation for Flow Matching Models（MFD）) 发展**：[Mean Flow Distillation - Robust and Stable Distillation for Flow Matching Models](/explore/10-Papers/02-生成建模与扩散/Mean Flow Distillation - Robust and Stable Distillation for Flow Matching Models（MFD）) 把它从"从头训练"格推到"蒸馏预训练"格
+- 改进了 [Flow Matching for Generative Modeling](/ai-fa/explore/10-Papers/02-生成建模与扩散/Flow Matching for Generative Modeling（流匹配）)：瞬时→平均，一步生成为直接目标
+- 对照蒸馏系（[Consistency Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Consistency Models（一致性模型）)/[DMD](/ai-fa/explore/10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）)）：免教师路线的代表作
+- **被 [MFD](/ai-fa/explore/10-Papers/02-生成建模与扩散/Mean Flow Distillation - Robust and Stable Distillation for Flow Matching Models（MFD）) 发展**：[Mean Flow Distillation - Robust and Stable Distillation for Flow Matching Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Mean Flow Distillation - Robust and Stable Distillation for Flow Matching Models（MFD）) 把它从"从头训练"格推到"蒸馏预训练"格
 
 ## 6. 影响与后续
 
@@ -49,4 +49,4 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[条件流匹配损失](/explore/30-Formulas/条件流匹配损失)、[Flow Matching for Generative Modeling](/explore/10-Papers/02-生成建模与扩散/Flow Matching for Generative Modeling（流匹配）)、[Mean Flow Distillation - Robust and Stable Distillation for Flow Matching Models](/explore/10-Papers/02-生成建模与扩散/Mean Flow Distillation - Robust and Stable Distillation for Flow Matching Models（MFD）)
+[条件流匹配损失](/ai-fa/explore/30-Formulas/条件流匹配损失)、[Flow Matching for Generative Modeling](/ai-fa/explore/10-Papers/02-生成建模与扩散/Flow Matching for Generative Modeling（流匹配）)、[Mean Flow Distillation - Robust and Stable Distillation for Flow Matching Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Mean Flow Distillation - Robust and Stable Distillation for Flow Matching Models（MFD）)

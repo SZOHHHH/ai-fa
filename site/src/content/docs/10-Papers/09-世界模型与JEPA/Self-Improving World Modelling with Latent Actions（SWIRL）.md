@@ -46,9 +46,9 @@ $$
 
 ---
 
-> 谱系枢纽：[Denoising Diffusion Probabilistic Models](/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Probabilistic Models（DDPM）)（图谱连通入口）
-> 近邻同族：[Analytic Planning under Uncertainty with Moment Closure](/explore/10-Papers/09-世界模型与JEPA/Analytic Planning under Uncertainty with Moment Closure（矩闭合规划）) · [Co-Evolving Latent Action World Models](/explore/10-Papers/09-世界模型与JEPA/Co-Evolving Latent Action World Models（CoLA）)
-> 数学根基（占位层）：[扩散条件去噪](/explore/30-Formulas/扩散条件去噪) · [贝尔曼方程](/explore/40-Concepts/贝尔曼方程)
+> 谱系枢纽：[Denoising Diffusion Probabilistic Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Probabilistic Models（DDPM）)（图谱连通入口）
+> 近邻同族：[Analytic Planning under Uncertainty with Moment Closure](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Analytic Planning under Uncertainty with Moment Closure（矩闭合规划）) · [Co-Evolving Latent Action World Models](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Co-Evolving Latent Action World Models（CoLA）)
+> 数学根基（占位层）：[扩散条件去噪](/ai-fa/explore/30-Formulas/扩散条件去噪) · [贝尔曼方程](/ai-fa/explore/40-Concepts/贝尔曼方程)
 
 ## 7. 读前须知
 

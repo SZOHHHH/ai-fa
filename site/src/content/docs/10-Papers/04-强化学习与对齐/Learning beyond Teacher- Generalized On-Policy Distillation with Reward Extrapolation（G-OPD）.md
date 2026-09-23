@@ -38,16 +38,16 @@ $$
 
 ## 5. 与前作/矩阵关系
 
-← [On-Policy Distillation（Thinking Machines 博客）](/explore/10-Papers/04-强化学习与对齐/On-Policy Distillation（Thinking Machines 博客）)（证明其 1:1 特例地位）；🚩 占 [蒸馏域矩阵](/explore/60-Matrices/蒸馏域矩阵) §3 核心机会格——**该格由此关闭**
+← [On-Policy Distillation（Thinking Machines 博客）](/ai-fa/explore/10-Papers/04-强化学习与对齐/On-Policy Distillation（Thinking Machines 博客）)（证明其 1:1 特例地位）；🚩 占 [蒸馏域矩阵](/ai-fa/explore/60-Matrices/蒸馏域矩阵) §3 核心机会格——**该格由此关闭**
 
 
 ## 6. 影响与占位意义
 
 该工作占据了混合奖励 on-policy 蒸馏的主要框架位（奖励外推的权重泛化 + 理论分析），后续同方向工作需重大差异化。
 
-> 近邻同族：[Hybrid Reinforcement- When Reward Is Sparse, It is Better to Be Dense](/explore/10-Papers/04-强化学习与对齐/Hybrid Reinforcement- When Reward Is Sparse, It is Better to Be Dense（HERO）) · [Process Reinforcement through Implicit Rewards](/explore/10-Papers/04-强化学习与对齐/Process Reinforcement through Implicit Rewards（PRIME）)
-> 数学根基（占位层）：[策略梯度定理](/explore/40-Concepts/策略梯度定理)
-> 数学根基：[蒸馏损失](/explore/30-Formulas/蒸馏损失) · [DSM目标](/explore/30-Formulas/DSM目标)
+> 近邻同族：[Hybrid Reinforcement- When Reward Is Sparse, It is Better to Be Dense](/ai-fa/explore/10-Papers/04-强化学习与对齐/Hybrid Reinforcement- When Reward Is Sparse, It is Better to Be Dense（HERO）) · [Process Reinforcement through Implicit Rewards](/ai-fa/explore/10-Papers/04-强化学习与对齐/Process Reinforcement through Implicit Rewards（PRIME）)
+> 数学根基（占位层）：[策略梯度定理](/ai-fa/explore/40-Concepts/策略梯度定理)
+> 数学根基：[蒸馏损失](/ai-fa/explore/30-Formulas/蒸馏损失) · [DSM目标](/ai-fa/explore/30-Formulas/DSM目标)
 
 ## 7. 读前须知
 

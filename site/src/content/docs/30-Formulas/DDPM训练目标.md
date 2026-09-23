@@ -26,7 +26,7 @@ $$\mathcal{L}_{\text{simple}} = \mathbb{E}_{t, x_0, \epsilon}\!\left[ \left\| \e
 | ε-预测 L_simple | $$\|\epsilon - \epsilon_\theta(x_t, t)\|_2^2$$ | DDPM Ho et al. 2020 | 实操标准，`#loss/regression` |
 | x₀-预测 | $$\|x_0 - \hat{x}_0(x_t,t)\|_2^2$$ | DDPM 理论节、像素空间常用 | 与 ε 版差一个时变缩放因子 |
 | v-预测 | $$\|v - v_\theta(x_t,t)\|_2^2$$，$$v = \sqrt{\bar\alpha_t}\epsilon - \sqrt{1-\bar\alpha_t}x_0$$ | Salimans & Ho 2022 | 信噪比低时更稳（视频扩散主流） |
-| score matching | $$\lambda_t \|s_\theta(x_t,t) - \nabla\log q(x_t\mid x_0)\|^2$$ | SMLD/Score-SDE | 理论母体，见 [DSM目标](/explore/30-Formulas/DSM目标) |
+| score matching | $$\lambda_t \|s_\theta(x_t,t) - \nabla\log q(x_t\mid x_0)\|^2$$ | SMLD/Score-SDE | 理论母体，见 [DSM目标](/ai-fa/explore/30-Formulas/DSM目标) |
 | 加权一般式 | $$\mathbb{E}\left[\lambda_t \|\epsilon - \epsilon_\theta\|^2\right]$$ | iDDPM | $$\lambda_t \equiv 1$$ 时退化为 L_simple |
 
 **换算关系**（三者互为线性变换）：$$\hat{x}_0 = \frac{x_t - \sqrt{1-\bar\alpha_t}\epsilon_\theta}{\sqrt{\bar\alpha_t}}$$，$$v = \sqrt{\bar\alpha_t}\,\epsilon - \sqrt{1-\bar\alpha_t}\,x_0$$——预测目标不同、模型等价，仅训练动态有别。
@@ -42,21 +42,21 @@ $$\mathcal{L}_{\text{simple}} = \mathbb{E}_{t, x_0, \epsilon}\!\left[ \left\| \e
 
 | 论文 | 贡献 |
 |---|---|
-| [Denoising Diffusion Probabilistic Models](/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Probabilistic Models（DDPM）) | 提出 L_simple，FID 首超 GAN |
-| [Improved Denoising Diffusion Probabilistic Models](/explore/10-Papers/02-生成建模与扩散/Improved Denoising Diffusion Probabilistic Models（iDDPM）) | 证明 L_simple ≈ 加权 score matching，提出余弦调度 |
-| [Score-Based Generative Modeling through Stochastic Differential Equations](/explore/10-Papers/02-生成建模与扩散/Score-Based Generative Modeling through Stochastic Differential Equations（Score-SDE）) | 统一为 score matching 框架 |
+| [Denoising Diffusion Probabilistic Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Probabilistic Models（DDPM）) | 提出 L_simple，FID 首超 GAN |
+| [Improved Denoising Diffusion Probabilistic Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Improved Denoising Diffusion Probabilistic Models（iDDPM）) | 证明 L_simple ≈ 加权 score matching，提出余弦调度 |
+| [Score-Based Generative Modeling through Stochastic Differential Equations](/ai-fa/explore/10-Papers/02-生成建模与扩散/Score-Based Generative Modeling through Stochastic Differential Equations（Score-SDE）) | 统一为 score matching 框架 |
 
 ## 5. 数学概念分解
 
-- [期望](/explore/40-Concepts/期望)：损失是三变量联合期望（batch 平均近似）
-- [范数](/explore/40-Concepts/范数)：平方 L2 距离
-- [Score函数](/explore/40-Concepts/Score函数)：ε-预测 ≈ score × 时变尺度
-- [ELBO](/explore/40-Concepts/ELBO)：变分界是 ELBO 的负数形式
-- [马尔可夫链](/explore/40-Concepts/马尔可夫链)：逐项 KL 依赖马尔可夫分解
+- [期望](/ai-fa/explore/40-Concepts/期望)：损失是三变量联合期望（batch 平均近似）
+- [范数](/ai-fa/explore/40-Concepts/范数)：平方 L2 距离
+- [Score函数](/ai-fa/explore/40-Concepts/Score函数)：ε-预测 ≈ score × 时变尺度
+- [ELBO](/ai-fa/explore/40-Concepts/ELBO)：变分界是 ELBO 的负数形式
+- [马尔可夫链](/ai-fa/explore/40-Concepts/马尔可夫链)：逐项 KL 依赖马尔可夫分解
 
 ## 6. 与其他公式的关系
 
-- → **由** [DDPM后验分布](/explore/30-Formulas/DDPM后验分布) **推导**：KL(q‖p_θ) 展开后高斯间的 KL 只剩均值差 MSE
-- ≡ **等价于** [DSM目标](/explore/30-Formulas/DSM目标)（denoising score matching 特例）
-- ⊃ **泛化为** [条件流匹配损失](/explore/30-Formulas/条件流匹配损失)：FM 的 $$x_t = \alpha_t x_0 + \sigma_t z$$ 加 MSE 是同一骨架、不同预测量（速度场）
-- 对比 [GAN目标](/explore/30-Formulas/GAN目标)：`#loss/regression` vs `#loss/adversarial` ——扩散把 GAN 的对抗博弈换成纯回归，稳定性来源
+- → **由** [DDPM后验分布](/ai-fa/explore/30-Formulas/DDPM后验分布) **推导**：KL(q‖p_θ) 展开后高斯间的 KL 只剩均值差 MSE
+- ≡ **等价于** [DSM目标](/ai-fa/explore/30-Formulas/DSM目标)（denoising score matching 特例）
+- ⊃ **泛化为** [条件流匹配损失](/ai-fa/explore/30-Formulas/条件流匹配损失)：FM 的 $$x_t = \alpha_t x_0 + \sigma_t z$$ 加 MSE 是同一骨架、不同预测量（速度场）
+- 对比 [GAN目标](/ai-fa/explore/30-Formulas/GAN目标)：`#loss/regression` vs `#loss/adversarial` ——扩散把 GAN 的对抗博弈换成纯回归，稳定性来源

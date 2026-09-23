@@ -35,14 +35,14 @@ layer: 精化层（摘要级+摘要核实，PDF 待深读）
 （待 PDF 精读补全——摘要级暂记直觉）时空解耦可写作 $$z = (z_s, z_d)$$，$$z_s$$ 对时间置换/视角变化不变、$$z_d$$ 沿轨迹对齐聚合：**世界 = 不变的骨架（静态）+ 沿轨迹演化的过程（动态），token 预算按这个先验分账，而不是按帧切片平摊**。
 
 ## 5. 与前作/矩阵关系
-- ← 谱系前身：[Genie](/explore/10-Papers/09-世界模型与JEPA/Genie- Generative Interactive Environments（Genie）)（视频→离散潜 token 驱动交互环境生成的 tokenizer 路线源头）——VideoTok4D 把该路线从 2D 观察 token 推向 4D 世界 token。
-- ↔ 同域对照：[Diffusion Forcing](/explore/10-Papers/09-世界模型与JEPA/Diffusion Forcing- Next-token Prediction Meets Full-Sequence Diffusion（Diffusion Forcing）)（在什么粒度上组织"序列+扩散"——DF 逐帧扩散、VideoTok4D 在解耦 token 上扩散）。
-- 概念链：[逆动力学（IDM）](/explore/40-Concepts/逆动力学（IDM）)（4D 表征的意义侧：轨迹级世界表征正是 IDM 反推动作的理想潜空间——E2 侧参考）。
+- ← 谱系前身：[Genie](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Genie- Generative Interactive Environments（Genie）)（视频→离散潜 token 驱动交互环境生成的 tokenizer 路线源头）——VideoTok4D 把该路线从 2D 观察 token 推向 4D 世界 token。
+- ↔ 同域对照：[Diffusion Forcing](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Diffusion Forcing- Next-token Prediction Meets Full-Sequence Diffusion（Diffusion Forcing）)（在什么粒度上组织"序列+扩散"——DF 逐帧扩散、VideoTok4D 在解耦 token 上扩散）。
+- 概念链：[逆动力学（IDM）](/ai-fa/explore/40-Concepts/逆动力学（IDM）)（4D 表征的意义侧：轨迹级世界表征正是 IDM 反推动作的理想潜空间——E2 侧参考）。
 
 ## 6. 影响后续
 - 视频 tokenizer 从"压缩工具"转向"世界先验载体"的一步；后续 4D 生成/世界模型可能直接吃这类 token。
 - 对库内：占据"表征轴×4D"格，与 E1/E2 的像素扩散 WM（帧级 2D 观察）形成表征粒度对照位。
 
 ## 7. 读前须知
-- 前置：视频自编码/tokenizer 基本流程、扩散模型去噪（可先看 [知识蒸馏](/explore/40-Concepts/知识蒸馏) 之外的概念卡与 [DIAMOND](/explore/10-Papers/09-世界模型与JEPA/Diffusion for World Modeling- Visual Details Matter in Atari（DIAMOND）) 的扩散 WM 直觉）。
+- 前置：视频自编码/tokenizer 基本流程、扩散模型去噪（可先看 [知识蒸馏](/ai-fa/explore/40-Concepts/知识蒸馏) 之外的概念卡与 [DIAMOND](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Diffusion for World Modeling- Visual Details Matter in Atari（DIAMOND）) 的扩散 WM 直觉）。
 - 4D/轨迹相关术语（track、多视角一致）需要少量多视几何直觉；公式细节待 PDF 深读后补全第 4 节。

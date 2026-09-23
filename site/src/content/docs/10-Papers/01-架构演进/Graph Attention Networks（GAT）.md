@@ -33,7 +33,7 @@ $$
 $$
 
 
-**直觉**：← [Transformer](/explore/20-Algorithms/Transformer)（注意力量化）；注意力=加权聚合的通用性证明（线1 边界扩展）
+**直觉**：← [Transformer](/ai-fa/explore/20-Algorithms/Transformer)（注意力量化）；注意力=加权聚合的通用性证明（线1 边界扩展）
 
 ## 5. 与前作/矩阵关系
 
@@ -47,8 +47,10 @@ GNN×注意力交叉的奠基；科学计算 ML 线（分子图）的地基
 
 undefined
 
-> 近邻同族：[Adam- A Method for Stochastic Optimization](/explore/10-Papers/01-架构演进/Adam- A Method for Stochastic Optimization（Adam）) · [Bag of Tricks for Efficient Text Classification](/explore/10-Papers/01-架构演进/Bag of Tricks for Efficient Text Classification（FastText）)
+> 近邻同族：[Adam- A Method for Stochastic Optimization](/ai-fa/explore/10-Papers/01-架构演进/Adam- A Method for Stochastic Optimization（Adam）) · [Bag of Tricks for Efficient Text Classification](/ai-fa/explore/10-Papers/01-架构演进/Bag of Tricks for Efficient Text Classification（FastText）)
 
-> 数学根基：[注意力机制](/explore/40-Concepts/注意力机制)
+> 数学根基：[注意力机制](/ai-fa/explore/40-Concepts/注意力机制)
 
-> 数学根基：[注意力核心公式](/explore/30-Formulas/注意力核心公式)
+> 数学根基：[注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)
+
+> 近邻同族补记（260921）：[Relational Attention](/ai-fa/explore/10-Papers/01-架构演进/Relational Attention for Data-Efficient Language Modeling)（关系注意力与自注意力解耦→数据高效语言建模，BabyLM 严格赛道 6/55）

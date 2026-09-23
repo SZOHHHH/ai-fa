@@ -39,12 +39,12 @@ $$x_{t+1}\;\sim\;p_\theta\big(x\,\big|\,x_{t-3:t},\,a_{t-3:t}\big)\ \text{（扩
 
 **直觉解释**：三个部件的关系像"发动机+裁判+选手"——去噪器是发动机（画世界），判头是裁判（给帧打分），actor-critic 是选手（在梦里练）。**为什么要像素直绘**：Atari 的得分信号常是"几个像素的事"（门开没开、弹药数字、对手位置）——潜压缩/均值化之后这些微差信号被抹平，策略在梦里看到的"平均世界"里学不到精确出拳。**步数消融的教训**：生成质量的下限（1 步糊）直接变成 RL 性能的天花板——"模型快"与"决策可用"的张力在本文附录里第一次被量化。
 
-- 需要的前置：[EDM](/explore/10-Papers/02-生成建模与扩散/Elucidating the Design Space of Diffusion-Based Generative Models（EDM）)（预条件化与采样框架）、[NFE（函数求值次数）](/explore/40-Concepts/NFE（函数求值次数）)、[Dreamer](/explore/10-Papers/09-世界模型与JEPA/Dream to Control- Learning Behaviors by Latent Imagination（Dreamer）)（想象训练循环）
+- 需要的前置：[EDM](/ai-fa/explore/10-Papers/02-生成建模与扩散/Elucidating the Design Space of Diffusion-Based Generative Models（EDM）)（预条件化与采样框架）、[NFE（函数求值次数）](/ai-fa/explore/40-Concepts/NFE（函数求值次数）)、[Dreamer](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Dream to Control- Learning Behaviors by Latent Imagination（Dreamer）)（想象训练循环）
 
 ## 5. 与前作/矩阵关系
 
-- ← [Dreamer](/explore/10-Papers/09-世界模型与JEPA/Dream to Control- Learning Behaviors by Latent Imagination（Dreamer）) 系（想象训练骨架）+ [EDM](/explore/10-Papers/02-生成建模与扩散/Elucidating the Design Space of Diffusion-Based Generative Models（EDM）)（扩散工程）——"Dreamer 的发动机换成 EDM 扩散"；
-- ↔ 对照 [DreamerV3](/explore/10-Papers/09-世界模型与JEPA/Mastering Diverse Domains through World Models（DreamerV3）)（正面对手：细节丢失方）；对照 [MuZero](/explore/10-Papers/09-世界模型与JEPA/Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model（MuZero）)（"不用重建"哲学的反命题——重建本身即信道）；
+- ← [Dreamer](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Dream to Control- Learning Behaviors by Latent Imagination（Dreamer）) 系（想象训练骨架）+ [EDM](/ai-fa/explore/10-Papers/02-生成建模与扩散/Elucidating the Design Space of Diffusion-Based Generative Models（EDM）)（扩散工程）——"Dreamer 的发动机换成 EDM 扩散"；
+- ↔ 对照 [DreamerV3](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Mastering Diverse Domains through World Models（DreamerV3）)（正面对手：细节丢失方）；对照 [MuZero](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model（MuZero）)（"不用重建"哲学的反命题——重建本身即信道）；
 - → 后续：EDELINE（Mamba 记忆增强，家族新 SOTA）、少步蒸馏与决策保真类工作（"3 NFE 慢"与"1 NFE 糊"的双重压力正成为该家族的核心问题轴）。
 
 ## 6. 影响与后续
@@ -53,14 +53,15 @@ $$x_{t+1}\;\sim\;p_\theta\big(x\,\big|\,x_{t-3:t},\,a_{t-3:t}\big)\ \text{（扩
 - 附录 L 的步数消融与图 4 的叠影可视化，成为"生成保真与决策可用"讨论中被反复引用的两个图；
 - 局限：每帧 3 次去噪前向使想象训练昂贵（串行链，GPU 并行救不了）；40 游戏平均分仍低于非想象训练混血方法（如 EfficientZero）；单种子消融的步数结论有待多 seed 复核。
 
-- → 后继补记（260914）：[Pelican-Sim 1.0](/explore/10-Papers/09-世界模型与JEPA/Pelican-Sim 1.0 - A General World Model Simulator for Embodied Intelligence（具身WM仿真器）)（像素级动作条件 WM 在机器人域的对应物；其少步蒸馏目标仍是生成指标——对照本卡"视觉细节决策相关"论点的反面镜）
+- → 后继补记（260914）：[Pelican-Sim 1.0](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Pelican-Sim 1.0 - A General World Model Simulator for Embodied Intelligence（具身WM仿真器）)（像素级动作条件 WM 在机器人域的对应物；其少步蒸馏目标仍是生成指标——对照本卡"视觉细节决策相关"论点的反面镜）
+- → 后继补记（260918）：[Astronex-World 1.0](/ai-fa/explore/10-Papers/02-生成建模与扩散/Astronex-World 1.0 Real-Time Interactive World Model Foundation)（"扩散当动力学"从游戏域放大到 5B 视频先验的基础模型化对应物；其少步蒸馏配运动保持正则但目标仍是生成指标——E1 决策保真格仍空）
 
 ## 7. 读前须知
 
-- **必前置**：[EDM](/explore/10-Papers/02-生成建模与扩散/Elucidating the Design Space of Diffusion-Based Generative Models（EDM）)、[NFE（函数求值次数）](/explore/40-Concepts/NFE（函数求值次数）)、[Dreamer](/explore/10-Papers/09-世界模型与JEPA/Dream to Control- Learning Behaviors by Latent Imagination（Dreamer）)；
+- **必前置**：[EDM](/ai-fa/explore/10-Papers/02-生成建模与扩散/Elucidating the Design Space of Diffusion-Based Generative Models（EDM）)、[NFE（函数求值次数）](/ai-fa/explore/40-Concepts/NFE（函数求值次数）)、[Dreamer](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Dream to Control- Learning Behaviors by Latent Imagination（Dreamer）)；
 - **易混点**：①奖励不是环境给的，是判头从帧上**读**出来的——梦里的一切信号都要过这道读出；②"3 步"是采样步数（NFE）不是时间步；③叠影≠bug，是少步去噪在多模态下的**数学最优解**（条件均值）——理解这一点是理解后续蒸馏类工作的钥匙；
 - **读法建议**：图 1（管线）→ 图 4（叠影可视化，全文之眼）→ §5 对比表；附录 L（步数消融）务必读——它是"为什么少步化难"的原始证据。
 
-> 近邻同族：[Diffusion Forcing- Next-token Prediction Meets Full-Sequence Diffusion](/explore/10-Papers/09-世界模型与JEPA/Diffusion Forcing- Next-token Prediction Meets Full-Sequence Diffusion（Diffusion Forcing）) · [Genie - Generative Interactive Environments](/explore/10-Papers/09-世界模型与JEPA/Genie- Generative Interactive Environments（Genie）)
+> 近邻同族：[Diffusion Forcing- Next-token Prediction Meets Full-Sequence Diffusion](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Diffusion Forcing- Next-token Prediction Meets Full-Sequence Diffusion（Diffusion Forcing）) · [Genie - Generative Interactive Environments](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Genie- Generative Interactive Environments（Genie）)
 
-> 数学根基：[扩散条件去噪](/explore/30-Formulas/扩散条件去噪) · [贝尔曼方程](/explore/40-Concepts/贝尔曼方程) · [NFE（函数求值次数）](/explore/40-Concepts/NFE（函数求值次数）)
+> 数学根基：[扩散条件去噪](/ai-fa/explore/30-Formulas/扩散条件去噪) · [贝尔曼方程](/ai-fa/explore/40-Concepts/贝尔曼方程) · [NFE（函数求值次数）](/ai-fa/explore/40-Concepts/NFE（函数求值次数）)

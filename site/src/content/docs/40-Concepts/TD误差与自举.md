@@ -24,7 +24,7 @@ $$\delta_t \;=\; \underbrace{r_t+\gamma V(s_{t+1})}_{\text{新证据：真奖励
 |---|---|---|---|
 | 蒙特卡洛（MC） | 真实完整回报 $$G_t$$ | 无偏/方差大（一局定音） | REINFORCE 的回报 |
 | 纯 TD（自举） | $$r+\gamma V(s')$$ | 有偏（V 还不准）/方差小 | Q-learning、DQN |
-| **λ-return（折中）** | $$(1-\lambda)\sum_n\lambda^{n-1}G_t^{(n)}$$ | 偏差方差之间可调 | [广义优势估计GAE](/explore/40-Concepts/广义优势估计GAE)：$$\lambda=1$$ 退化成 MC，$$\lambda=0$$ 退化成纯 TD |
+| **λ-return（折中）** | $$(1-\lambda)\sum_n\lambda^{n-1}G_t^{(n)}$$ | 偏差方差之间可调 | [广义优势估计GAE](/ai-fa/explore/40-Concepts/广义优势估计GAE)：$$\lambda=1$$ 退化成 MC，$$\lambda=0$$ 退化成纯 TD |
 
 ## 3. 自举项在高层的三个化身
 
@@ -40,6 +40,6 @@ $$\delta_t \;=\; \underbrace{r_t+\gamma V(s_{t+1})}_{\text{新证据：真奖励
 
 ## 5. 与库内实体的关系
 
-- ← 地基：[价值函数（V与Q）](/explore/40-Concepts/价值函数（V与Q）)（TD 误差作用其上）、[贝尔曼方程](/explore/40-Concepts/贝尔曼方程)（$$r+\gamma V(s')$$ 即它的影子）
-- → 用户：[广义优势估计GAE](/explore/40-Concepts/广义优势估计GAE)（λ 折中）、[自举](/explore/40-Concepts/TD误差与自举)出现在所有 Dreamer 系的"V 收尾"里
-- 论文侧：[DQN](/explore/10-Papers/04-强化学习与对齐/Playing Atari with Deep Reinforcement Learning（DQN）)（自举+目标网络的稳定化范本）、[GAE](/explore/10-Papers/04-强化学习与对齐/High-Dimensional Continuous Control Using Generalized Advantage Estimation（GAE）)
+- ← 地基：[价值函数（V与Q）](/ai-fa/explore/40-Concepts/价值函数（V与Q）)（TD 误差作用其上）、[贝尔曼方程](/ai-fa/explore/40-Concepts/贝尔曼方程)（$$r+\gamma V(s')$$ 即它的影子）
+- → 用户：[广义优势估计GAE](/ai-fa/explore/40-Concepts/广义优势估计GAE)（λ 折中）、[自举](/ai-fa/explore/40-Concepts/TD误差与自举)出现在所有 Dreamer 系的"V 收尾"里
+- 论文侧：[DQN](/ai-fa/explore/10-Papers/04-强化学习与对齐/Playing Atari with Deep Reinforcement Learning（DQN）)（自举+目标网络的稳定化范本）、[GAE](/ai-fa/explore/10-Papers/04-强化学习与对齐/High-Dimensional Continuous Control Using Generalized Advantage Estimation（GAE）)

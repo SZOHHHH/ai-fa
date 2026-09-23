@@ -33,20 +33,20 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- [DDIM更新规则](/explore/30-Formulas/DDIM更新规则) —— 本文灵魂
-- 与 [概率流ODE](/explore/30-Formulas/概率流ODE) 的等价关系
+- [DDIM更新规则](/ai-fa/explore/30-Formulas/DDIM更新规则) —— 本文灵魂
+- 与 [概率流ODE](/ai-fa/explore/30-Formulas/概率流ODE) 的等价关系
 
 ## 5. 与前作的关系
 
-- 扩展了 [Denoising Diffusion Probabilistic Models](/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Probabilistic Models（DDPM）)：训练不变、采样解耦
-- 呼应 [Score-Based Generative Modeling through Stochastic Differential Equations](/explore/10-Papers/02-生成建模与扩散/Score-Based Generative Modeling through Stochastic Differential Equations（Score-SDE）) 的 ODE 采样（同年独立工作，互为印证）
+- 扩展了 [Denoising Diffusion Probabilistic Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Probabilistic Models（DDPM）)：训练不变、采样解耦
+- 呼应 [Score-Based Generative Modeling through Stochastic Differential Equations](/ai-fa/explore/10-Papers/02-生成建模与扩散/Score-Based Generative Modeling through Stochastic Differential Equations（Score-SDE）) 的 ODE 采样（同年独立工作，互为印证）
 
 ## 6. 影响与后续
 
 - 少步采样成为标配；CFG+DDIM 组合统治文生图早期
 - 确定性映射是后续 inversion、编辑、蒸馏的基石
-- [Progressive Distillation for Fast Sampling of Diffusion Models](/explore/10-Papers/02-生成建模与扩散/Progressive Distillation for Fast Sampling of Diffusion Models（渐进蒸馏）) 与 [Consistency Models](/explore/10-Papers/02-生成建模与扩散/Consistency Models（一致性模型）) 都在其轨迹上做加速
+- [Progressive Distillation for Fast Sampling of Diffusion Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Progressive Distillation for Fast Sampling of Diffusion Models（渐进蒸馏）) 与 [Consistency Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Consistency Models（一致性模型）) 都在其轨迹上做加速
 
 ## 7. 读前须知
 
-[DDPM前向过程](/explore/30-Formulas/DDPM前向过程)、[概率流ODE](/explore/30-Formulas/概率流ODE)、[采样器](/explore/40-Concepts/采样器)、[高斯分布](/explore/40-Concepts/高斯分布)
+[DDPM前向过程](/ai-fa/explore/30-Formulas/DDPM前向过程)、[概率流ODE](/ai-fa/explore/30-Formulas/概率流ODE)、[采样器](/ai-fa/explore/40-Concepts/采样器)、[高斯分布](/ai-fa/explore/40-Concepts/高斯分布)

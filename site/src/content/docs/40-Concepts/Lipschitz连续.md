@@ -20,15 +20,15 @@ $$\|f(x_1) - f(x_2)\| \le L\, \|x_1 - x_2\| \quad \forall x_1, x_2$$
 - **与可导性**：Lipschitz ⇒ 一致连续 ⇒ 连续；可导函数的 $$L \le \sup\|\nabla f\|$$
 - **Kantorovich–Rubinstein 对偶**：$$W_1(P,Q) = \sup_{\|f\|_L \le 1} [\,\mathbb{E}_P f - \mathbb{E}_Q f\,]$$——WGAN critic 必须被约束为 1-Lipschitz
 - **实现约束的手段**：权重裁剪（WGAN 原文，粗糙）、梯度惩罚 WGAN-GP（2017，主流）、谱归一化（2018）
-- **ODE 存在唯一性**：速度场 Lipschitz ⇒ 轨迹不交叉、解唯一（流的正则性）——[流匹配](/explore/20-Algorithms/流匹配) 理论的基石之一
+- **ODE 存在唯一性**：速度场 Lipschitz ⇒ 轨迹不交叉、解唯一（流的正则性）——[流匹配](/ai-fa/explore/20-Algorithms/流匹配) 理论的基石之一
 
 ## 3. 为什么 AI 需要它
 
 | 出现场景 | 用法 |
 |---|---|
-| [Wasserstein GAN](/explore/10-Papers/02-生成建模与扩散/Wasserstein GAN（WGAN）) | critic 的 1-Lipschitz 约束（权重裁剪实现） |
+| [Wasserstein GAN](/ai-fa/explore/10-Papers/02-生成建模与扩散/Wasserstein GAN（WGAN）) | critic 的 1-Lipschitz 约束（权重裁剪实现） |
 | WGAN-GP | 惩罚梯度的范数使其 ≈ 1 |
-| [常微分方程](/explore/40-Concepts/常微分方程（ODE）)：解的存在唯一性条件 | |
+| [常微分方程](/ai-fa/explore/40-Concepts/常微分方程（ODE）)：解的存在唯一性条件 | |
 | 神经 ODE | 控制轨迹畸变 |
 | 谱归一化（GAN 谱系） | 每层权重除以最大奇异值 |
 
@@ -40,6 +40,6 @@ $$\|f(x_1) - f(x_2)\| \le L\, \|x_1 - x_2\| \quad \forall x_1, x_2$$
 
 ## 5. 相关概念
 
-- [Wasserstein距离](/explore/40-Concepts/Wasserstein距离)：对偶理论里的角色
-- [梯度](/explore/40-Concepts/梯度)：Lipschitz 常数 = 梯度范数上确界
-- [范数](/explore/40-Concepts/范数)：定义里的度量
+- [Wasserstein距离](/ai-fa/explore/40-Concepts/Wasserstein距离)：对偶理论里的角色
+- [梯度](/ai-fa/explore/40-Concepts/梯度)：Lipschitz 常数 = 梯度范数上确界
+- [范数](/ai-fa/explore/40-Concepts/范数)：定义里的度量

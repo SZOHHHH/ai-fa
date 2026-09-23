@@ -20,7 +20,7 @@ pdf: 已下载（PDF/）
 
 ## 2. 核心贡献
 
-- **SSD 对偶理论**：SSM 序列算子 = 半可分矩阵；注意力是其二次子块形式——两大架构的统一数学（[状态空间模型方程](/explore/30-Formulas/状态空间模型方程) 对偶行）
+- **SSD 对偶理论**：SSM 序列算子 = 半可分矩阵；注意力是其二次子块形式——两大架构的统一数学（[状态空间模型方程](/ai-fa/explore/30-Formulas/状态空间模型方程) 对偶行）
 - **Mamba-2 简化**：标量×恒等结构替代对角 A（与注意力张量形状对齐）
 - 块分解算法：块内（对角，递归）+ 块间（低秩，注意力式矩阵乘）混合计算
 
@@ -33,20 +33,20 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- [状态空间模型方程](/explore/30-Formulas/状态空间模型方程)（SSD 对偶行）
-- [注意力核心公式](/explore/30-Formulas/注意力核心公式)（对偶的另一半）
+- [状态空间模型方程](/ai-fa/explore/30-Formulas/状态空间模型方程)（SSD 对偶行）
+- [注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)（对偶的另一半）
 
 ## 5. 与前作的关系
 
-- 统一了 [Mamba - Linear-Time Sequence Modeling with Selective State Spaces](/explore/10-Papers/01-架构演进/Mamba- Linear-Time Sequence Modeling with Selective State Spaces（Mamba）)（作者自家）与注意力谱系
+- 统一了 [Mamba - Linear-Time Sequence Modeling with Selective State Spaces](/ai-fa/explore/10-Papers/01-架构演进/Mamba- Linear-Time Sequence Modeling with Selective State Spaces（Mamba）)（作者自家）与注意力谱系
 - 依托 [线性注意力（Katharopoulos 2020）] 的矩阵形式视角
 
 ## 6. 影响与后续
 
 - "架构统一"叙事的标志：此后论文常以"半可分/线性注意力家族"自述
 - Mamba-3（2026）等继续沿此理论线扩展
-- [Jamba](/explore/10-Papers/01-架构演进/Jamba- A Hybrid Transformer-Mamba Language Model（Jamba）) 类混合架构获得理论支撑（两种块本来就同族）
+- [Jamba](/ai-fa/explore/10-Papers/01-架构演进/Jamba- A Hybrid Transformer-Mamba Language Model（Jamba）) 类混合架构获得理论支撑（两种块本来就同族）
 
 ## 7. 读前须知
 
-- [状态空间模型方程](/explore/30-Formulas/状态空间模型方程)、[注意力核心公式](/explore/30-Formulas/注意力核心公式)、[Mamba - Linear-Time Sequence Modeling with Selective State Spaces](/explore/10-Papers/01-架构演进/Mamba- Linear-Time Sequence Modeling with Selective State Spaces（Mamba）)
+- [状态空间模型方程](/ai-fa/explore/30-Formulas/状态空间模型方程)、[注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)、[Mamba - Linear-Time Sequence Modeling with Selective State Spaces](/ai-fa/explore/10-Papers/01-架构演进/Mamba- Linear-Time Sequence Modeling with Selective State Spaces（Mamba）)

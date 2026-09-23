@@ -30,9 +30,9 @@ layer: 占位
 （待精读）
 
 ## 5. 与前作/矩阵关系
-- 线锚：[知识蒸馏](/explore/40-Concepts/知识蒸馏) · [蒸馏损失](/explore/30-Formulas/蒸馏损失)
+- 线锚：[知识蒸馏](/ai-fa/explore/40-Concepts/知识蒸馏) · [蒸馏损失](/ai-fa/explore/30-Formulas/蒸馏损失)
 - 蒸馏形态：**不确定性加权蒸馏**（DWKD 动态加权 KD）——按教师不确定性生成权重图、逐体素加权监督，把学习焦点引向难分区域（肿瘤边界/增强子区），配 SDF 边界损失做几何约束；参数减 97.56%、FLOPs 减 73.03%、推理内存减 81.58% 的同时 Dice 平均反超 SOTA +1.47%（BraTS2023-GLI/MSD-BTS）。
-- 反面范式：标准均匀蒸馏（[TinyBERT](/explore/10-Papers/03-后处理/TinyBERT- Distilling BERT for Natural Language Understanding（TinyBERT）) 等）假设样本难度齐一——本文证明空间异质性显式建模是轻量模型守住复杂区域的关键。
+- 反面范式：标准均匀蒸馏（[TinyBERT](/ai-fa/explore/10-Papers/03-后处理/TinyBERT- Distilling BERT for Natural Language Understanding（TinyBERT）) 等）假设样本难度齐一——本文证明空间异质性显式建模是轻量模型守住复杂区域的关键。
 
 ## 6. 影响后续
 （待精读）

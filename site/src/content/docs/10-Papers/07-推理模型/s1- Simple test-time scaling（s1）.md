@@ -34,12 +34,12 @@ pdf: 已下载（PDF/）
 ## 4. 核心公式
 
 - 无核心数学公式；贡献是数据与"预算控制"协议
-- 扩展曲线：性能 vs 测试算力（与 [Scaling Laws for Neural Language Models](/explore/10-Papers/01-架构演进/Scaling Laws for Neural Language Models（Scaling Laws）) 的训练时定律对照——**测试时缩放定律**）
+- 扩展曲线：性能 vs 测试算力（与 [Scaling Laws for Neural Language Models](/ai-fa/explore/10-Papers/01-架构演进/Scaling Laws for Neural Language Models（Scaling Laws）) 的训练时定律对照——**测试时缩放定律**）
 
 ## 5. 与前作的关系
 
-- 对比 [DeepSeek-R1 - Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](/explore/10-Papers/04-强化学习与对齐/DeepSeek-R1- Incentivizing Reasoning Capability in LLMs via Reinforcement Learning（R1）)：纯 SFT 蒸馏 vs 纯 RL——推理能力的两条低成本路线
-- 承接 [PRM](/explore/10-Papers/07-推理模型/Let's Verify Step by Step（PRM）) 后的"蒸馏+测试控制"路线
+- 对比 [DeepSeek-R1 - Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](/ai-fa/explore/10-Papers/04-强化学习与对齐/DeepSeek-R1- Incentivizing Reasoning Capability in LLMs via Reinforcement Learning（R1）)：纯 SFT 蒸馏 vs 纯 RL——推理能力的两条低成本路线
+- 承接 [PRM](/ai-fa/explore/10-Papers/07-推理模型/Let's Verify Step by Step（PRM）) 后的"蒸馏+测试控制"路线
 
 ## 6. 影响与后续
 
@@ -48,6 +48,6 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[CoT](/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）)、[DeepSeek-R1 - Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](/explore/10-Papers/04-强化学习与对齐/DeepSeek-R1- Incentivizing Reasoning Capability in LLMs via Reinforcement Learning（R1）)
+[CoT](/ai-fa/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）)、[DeepSeek-R1 - Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](/ai-fa/explore/10-Papers/04-强化学习与对齐/DeepSeek-R1- Incentivizing Reasoning Capability in LLMs via Reinforcement Learning（R1）)
 
-> 数学根基：[思维链（CoT）](/explore/40-Concepts/思维链（CoT）)
+> 数学根基：[思维链（CoT）](/ai-fa/explore/40-Concepts/思维链（CoT）)

@@ -34,11 +34,11 @@ pdf: 已下载（PDF/）
 ## 4. 核心公式
 
 - MLM 目标：$$-\sum_{i \in \text{masked}} \log p(x_i \mid x_{\backslash i})$$（双向条件）
-- 架构即 [注意力核心公式](/explore/30-Formulas/注意力核心公式) 的双向（无因果掩码）版
+- 架构即 [注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式) 的双向（无因果掩码）版
 
 ## 5. 与前作的关系
 
-- 组合了 [Attention Is All You Need](/explore/10-Papers/01-架构演进/Attention Is All You Need（Transformer）)（架构）与 [GPT 生成式预训练]（范式）——改单向为双向
+- 组合了 [Attention Is All You Need](/ai-fa/explore/10-Papers/01-架构演进/Attention Is All You Need（Transformer）)（架构）与 [GPT 生成式预训练]（范式）——改单向为双向
 - 对比 GPT-1：GPT 用生成目标损失换双向视野，BERT 反向取舍（NLU 上大胜，生成任务弱）
 
 ## 6. 影响与后续
@@ -49,4 +49,6 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[Transformer](/explore/20-Algorithms/Transformer)、[注意力核心公式](/explore/30-Formulas/注意力核心公式)、[softmax函数](/explore/40-Concepts/softmax函数)
+[Transformer](/ai-fa/explore/20-Algorithms/Transformer)、[注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)、[softmax函数](/ai-fa/explore/40-Concepts/softmax函数)
+
+- → 后继补记（260921）：[Not All Irregularity Is Equal](/ai-fa/explore/10-Papers/01-架构演进/Not All Irregularity Is Equal Causally Isolating a Rare Failure Mode in Japanese Morphological Infle)（字符级形态谱系的稀有子类错误诊断：日语变形 97% 精度下 <1% 子类贡献 30-43% 残差）

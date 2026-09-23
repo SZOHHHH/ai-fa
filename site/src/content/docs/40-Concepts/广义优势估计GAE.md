@@ -29,18 +29,18 @@ $$\hat{A}_t^{\text{GAE}(\gamma, \lambda)} = \sum_{l=0}^{\infty} (\gamma\lambda)^
 
 | 出现场景 | 用法 |
 |---|---|
-| [High-Dimensional Continuous Control Using Generalized Advantage Estimation](/explore/10-Papers/04-强化学习与对齐/High-Dimensional Continuous Control Using Generalized Advantage Estimation（GAE）) | 提出（ Schulman et al. 2015） |
-| [PPO裁剪目标](/explore/30-Formulas/PPO裁剪目标) | 优势项的标准估计器 |
-| [Training language models to follow instructions with human feedback](/explore/10-Papers/04-强化学习与对齐/Training language models to follow instructions with human feedback（InstructGPT）) | PPO+GAE 直接套用于 LLM |
+| [High-Dimensional Continuous Control Using Generalized Advantage Estimation](/ai-fa/explore/10-Papers/04-强化学习与对齐/High-Dimensional Continuous Control Using Generalized Advantage Estimation（GAE）) | 提出（ Schulman et al. 2015） |
+| [PPO裁剪目标](/ai-fa/explore/30-Formulas/PPO裁剪目标) | 优势项的标准估计器 |
+| [Training language models to follow instructions with human feedback](/ai-fa/explore/10-Papers/04-强化学习与对齐/Training language models to follow instructions with human feedback（InstructGPT）) | PPO+GAE 直接套用于 LLM |
 
 ## 4. 常见误区
 
 - **误区**：$$\lambda$$ 是折扣——不是！$$\gamma$$ 管折扣，$$\lambda$$ 管估计器的混合比例，职责分离
 - **误区**：GAE 消除偏差——只是**可调**偏差-方差，$$\lambda\in(0,1)$$ 时两者兼有
-- **误区**：GAE 需要 critic 完美——critic 误差是偏差来源，$$\lambda$$ 小则更依赖 critic
+- **误区**：GAE 需要 critic 完美——critic 误差是偏差来源，$$\lambda$$ 小则更依赖 critic。[PACT](/ai-fa/explore/10-Papers/04-强化学习与对齐/PACT From Credit Assignment to Critic Alignment) 给出定量版：有界结果奖励下 token 信用近似稀疏（$$\mathbb{E}[\sum C_i^2] = \text{Var}(R) \le 1/4$$），$$\lambda<1$$ 的中段 critic 误差可与真信用同量级甚至更大；$$\lambda=1$$ 时中段误差全消、只剩前缀误差 $$\hat A_t^1 = R - \hat V_{t-1}$$——R1 的"$$\lambda=1$$ 更好"经验由此获解释
 
 ## 5. 相关概念
 
-- [贝尔曼方程](/explore/40-Concepts/贝尔曼方程)：TD 误差的定义
-- [策略梯度定理](/explore/40-Concepts/策略梯度定理)：GAE 服务的对象
-- [期望](/explore/40-Concepts/期望)：估计的统计基础
+- [贝尔曼方程](/ai-fa/explore/40-Concepts/贝尔曼方程)：TD 误差的定义
+- [策略梯度定理](/ai-fa/explore/40-Concepts/策略梯度定理)：GAE 服务的对象
+- [期望](/ai-fa/explore/40-Concepts/期望)：估计的统计基础

@@ -34,7 +34,7 @@ $$
 
 ## 4. 核心公式
 
-≡ [Score-Based Generative Modeling through Stochastic Differential Equations](/explore/10-Papers/02-生成建模与扩散/Score-Based Generative Modeling through Stochastic Differential Equations（Score-SDE）)（统一者角色）；⊃ [DMD](/explore/10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）)/f-distill/Diff-Instruct；🚩 占蒸馏损失族统一格
+≡ [Score-Based Generative Modeling through Stochastic Differential Equations](/ai-fa/explore/10-Papers/02-生成建模与扩散/Score-Based Generative Modeling through Stochastic Differential Equations（Score-SDE）)（统一者角色）；⊃ [DMD](/ai-fa/explore/10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）)/f-distill/Diff-Instruct；🚩 占蒸馏损失族统一格
 
 **直觉**：占位层公式为结构示意，精读原文后应校正为论文最终形式并补逐项解释。
 
@@ -47,8 +47,8 @@ B18 奠基补齐：蒸馏损失族的统一层（B13 检索发现，RS 情报亦
 
 undefined
 
-> 近邻同族：[Diff-Instruct++- Training One-step Text-to-image Generator Model to Align with Human Preferences](/explore/10-Papers/02-生成建模与扩散/Diff-Instruct++- Training One-step Text-to-image Generator Model to Align with Human Preferences（Diff-Instruct++）) · [Diff-Instruct- A Universal Approach for Transferring Knowledge From Pre-trained Diffusion Models](/explore/10-Papers/02-生成建模与扩散/Diff-Instruct- A Universal Approach for Transferring Knowledge From Pre-trained Diffusion Models（Diff-Instruct）)
-> 数学根基（占位层）：[概率分布](/explore/40-Concepts/概率分布)
+> 近邻同族：[Diff-Instruct++- Training One-step Text-to-image Generator Model to Align with Human Preferences](/ai-fa/explore/10-Papers/02-生成建模与扩散/Diff-Instruct++- Training One-step Text-to-image Generator Model to Align with Human Preferences（Diff-Instruct++）) · [Diff-Instruct- A Universal Approach for Transferring Knowledge From Pre-trained Diffusion Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Diff-Instruct- A Universal Approach for Transferring Knowledge From Pre-trained Diffusion Models（Diff-Instruct）)
+> 数学根基（占位层）：[概率分布](/ai-fa/explore/40-Concepts/概率分布)
 
 ## 7. 读前须知
 

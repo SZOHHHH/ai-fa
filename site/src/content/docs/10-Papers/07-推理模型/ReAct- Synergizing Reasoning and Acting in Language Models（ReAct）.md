@@ -22,7 +22,7 @@ pdf: 已下载（PDF/）
 
 - **Thought-Action-Observation 循环**：内部推理指导外部行动、观察反馈修正推理
 - **幻觉抑制实证**：HotpotQA 等任务中行动反馈大幅减少编造
-- 与 [CoT](/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）) 对照：纯推理（无外部事实）易幻觉；纯行动（无规划）易迷航
+- 与 [CoT](/ai-fa/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）) 对照：纯推理（无外部事实）易幻觉；纯行动（无规划）易迷航
 
 ## 3. 方法概要
 
@@ -37,8 +37,8 @@ pdf: 已下载（PDF/）
 
 ## 5. 与前作的关系
 
-- 组合了 [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）)（推理）与 [Act（行动）] 两条线
-- 同作者团队与 [Tree of Thoughts - Deliberate Problem Solving with Large Language Models](/explore/10-Papers/07-推理模型/Tree of Thoughts- Deliberate Problem Solving with Large Language Models（ToT）) 呼应（ToT 纯内部搜索、ReAct 外部交互）
+- 组合了 [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](/ai-fa/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）)（推理）与 [Act（行动）] 两条线
+- 同作者团队与 [Tree of Thoughts - Deliberate Problem Solving with Large Language Models](/ai-fa/explore/10-Papers/07-推理模型/Tree of Thoughts- Deliberate Problem Solving with Large Language Models（ToT）) 呼应（ToT 纯内部搜索、ReAct 外部交互）
 
 ## 6. 影响与后续
 
@@ -47,4 +47,4 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[思维链（CoT）](/explore/40-Concepts/思维链（CoT）)、[Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）)
+[思维链（CoT）](/ai-fa/explore/40-Concepts/思维链（CoT）)、[Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](/ai-fa/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）)

@@ -33,12 +33,12 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- 替换式蒸馏（结构策略）；配合 [蒸馏损失](/explore/30-Formulas/蒸馏损失) 使用
+- 替换式蒸馏（结构策略）；配合 [蒸馏损失](/ai-fa/explore/30-Formulas/蒸馏损失) 使用
 
 ## 5. 与前作的关系
 
-- 改进了 [DistilBERT, a distilled version of BERT - smaller, faster, cheaper and lighter](/explore/10-Papers/03-后处理/DistilBERT, a distilled version of BERT- smaller, faster, cheaper and lighter（DistilBERT）) 式一次性蒸馏的分布漂移问题
-- 同族 [TinyBERT - Distilling BERT for Natural Language Understanding](/explore/10-Papers/03-后处理/TinyBERT- Distilling BERT for Natural Language Understanding（TinyBERT）)（层对齐）——三种蒸馏组织方式
+- 改进了 [DistilBERT, a distilled version of BERT - smaller, faster, cheaper and lighter](/ai-fa/explore/10-Papers/03-后处理/DistilBERT, a distilled version of BERT- smaller, faster, cheaper and lighter（DistilBERT）) 式一次性蒸馏的分布漂移问题
+- 同族 [TinyBERT - Distilling BERT for Natural Language Understanding](/ai-fa/explore/10-Papers/03-后处理/TinyBERT- Distilling BERT for Natural Language Understanding（TinyBERT）)（层对齐）——三种蒸馏组织方式
 
 ## 6. 影响与后续
 
@@ -47,6 +47,6 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[蒸馏损失](/explore/30-Formulas/蒸馏损失)、[DistilBERT, a distilled version of BERT - smaller, faster, cheaper and lighter](/explore/10-Papers/03-后处理/DistilBERT, a distilled version of BERT- smaller, faster, cheaper and lighter（DistilBERT）)
+[蒸馏损失](/ai-fa/explore/30-Formulas/蒸馏损失)、[DistilBERT, a distilled version of BERT - smaller, faster, cheaper and lighter](/ai-fa/explore/10-Papers/03-后处理/DistilBERT, a distilled version of BERT- smaller, faster, cheaper and lighter（DistilBERT）)
 
-> 近邻同族：[DistilBERT, a distilled version of BERT - smaller, faster, cheaper and lighter](/explore/10-Papers/03-后处理/DistilBERT, a distilled version of BERT- smaller, faster, cheaper and lighter（DistilBERT）) · [Distilling the Knowledge in a Neural Network](/explore/10-Papers/03-后处理/Distilling the Knowledge in a Neural Network（KD）)
+> 近邻同族：[DistilBERT, a distilled version of BERT - smaller, faster, cheaper and lighter](/ai-fa/explore/10-Papers/03-后处理/DistilBERT, a distilled version of BERT- smaller, faster, cheaper and lighter（DistilBERT）) · [Distilling the Knowledge in a Neural Network](/ai-fa/explore/10-Papers/03-后处理/Distilling the Knowledge in a Neural Network（KD）)

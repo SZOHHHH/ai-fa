@@ -22,7 +22,7 @@ pdf: 已下载（PDF/）
 
 - **广义一致性**：锚点从 $$\{0\}$$ 扩展为时间网格——每段内自洽
 - 单一模型覆盖 1/2/4/8 步（质量-速度谱）
-- 已被 [Align Your Flow - Scaling Continuous-Time Flow Map Distillation](/explore/10-Papers/02-生成建模与扩散/Align Your Flow- Scaling Continuous-Time Flow Map Distillation（AYF）) 引为"离散版前身"
+- 已被 [Align Your Flow - Scaling Continuous-Time Flow Map Distillation](/ai-fa/explore/10-Papers/02-生成建模与扩散/Align Your Flow- Scaling Continuous-Time Flow Map Distillation（AYF）) 引为"离散版前身"
 
 ## 3. 方法概要
 
@@ -33,12 +33,12 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- 段内一致性：$$F(x_t, t) = F(x_{t'}, t')\ \forall t,t' \in \text{同段}$$——[Consistency Models](/explore/10-Papers/02-生成建模与扩散/Consistency Models（一致性模型）) 的分段版
+- 段内一致性：$$F(x_t, t) = F(x_{t'}, t')\ \forall t,t' \in \text{同段}$$——[Consistency Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Consistency Models（一致性模型）) 的分段版
 
 ## 5. 与前作的关系
 
-- 泛化了 [Consistency Models](/explore/10-Papers/02-生成建模与扩散/Consistency Models（一致性模型）)（单段→多段网格）
-- 与 LCM（[Latent Consistency Models - Synthesizing High-Resolution Images with Few-Step Inference](/explore/10-Papers/02-生成建模与扩散/Latent Consistency Models- Synthesizing High-Resolution Images with Few-Step Inference（LCM）)）同期：潜空间 vs 多步网格两方向
+- 泛化了 [Consistency Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Consistency Models（一致性模型）)（单段→多段网格）
+- 与 LCM（[Latent Consistency Models - Synthesizing High-Resolution Images with Few-Step Inference](/ai-fa/explore/10-Papers/02-生成建模与扩散/Latent Consistency Models- Synthesizing High-Resolution Images with Few-Step Inference（LCM）)）同期：潜空间 vs 多步网格两方向
 
 ## 6. 影响与后续
 
@@ -47,4 +47,4 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[Consistency Models](/explore/10-Papers/02-生成建模与扩散/Consistency Models（一致性模型）)、[概率流ODE](/explore/30-Formulas/概率流ODE)、[Align Your Flow - Scaling Continuous-Time Flow Map Distillation](/explore/10-Papers/02-生成建模与扩散/Align Your Flow- Scaling Continuous-Time Flow Map Distillation（AYF）)
+[Consistency Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Consistency Models（一致性模型）)、[概率流ODE](/ai-fa/explore/30-Formulas/概率流ODE)、[Align Your Flow - Scaling Continuous-Time Flow Map Distillation](/ai-fa/explore/10-Papers/02-生成建模与扩散/Align Your Flow- Scaling Continuous-Time Flow Map Distillation（AYF）)

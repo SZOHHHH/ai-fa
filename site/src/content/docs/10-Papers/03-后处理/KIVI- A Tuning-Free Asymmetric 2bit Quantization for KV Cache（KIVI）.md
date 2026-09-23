@@ -38,7 +38,7 @@ $$
 
 ## 5. 与前作/矩阵关系
 
-🚩🚩 **占 [模型压缩矩阵](/explore/60-Matrices/模型压缩矩阵) "KV cache×量化"机会格的主位**（B9 识别格 7）——KIVI 是该格的奠基占位，后续 KVQuant/NVFP4 已跟进
+🚩🚩 **占 [模型压缩矩阵](/ai-fa/explore/60-Matrices/模型压缩矩阵) "KV cache×量化"机会格的主位**（B9 识别格 7）——KIVI 是该格的奠基占位，后续 KVQuant/NVFP4 已跟进
 
 
 ## 6. 影响与占位意义
@@ -47,10 +47,10 @@ $$
 
 ---
 
-> 谱系枢纽：[LoRA - Low-Rank Adaptation of Large Language Models](/explore/10-Papers/03-后处理/LoRA- Low-Rank Adaptation of Large Language Models（LoRA）)（图谱连通入口）
-> 近邻同族：[A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning](/explore/10-Papers/03-后处理/A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning（DAGGER）) · [A Simple and Effective Pruning Approach for Large Language Models](/explore/10-Papers/03-后处理/A Simple and Effective Pruning Approach for Large Language Models（SparseGPT）)
-> 数学根基（占位层）：[KV缓存](/explore/40-Concepts/KV缓存) · [量化](/explore/40-Concepts/量化)
-> 数学根基：[注意力计算复杂度](/explore/30-Formulas/注意力计算复杂度)
+> 谱系枢纽：[LoRA - Low-Rank Adaptation of Large Language Models](/ai-fa/explore/10-Papers/03-后处理/LoRA- Low-Rank Adaptation of Large Language Models（LoRA）)（图谱连通入口）
+> 近邻同族：[A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning](/ai-fa/explore/10-Papers/03-后处理/A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning（DAGGER）) · [A Simple and Effective Pruning Approach for Large Language Models](/ai-fa/explore/10-Papers/03-后处理/A Simple and Effective Pruning Approach for Large Language Models（SparseGPT）)
+> 数学根基（占位层）：[KV缓存](/ai-fa/explore/40-Concepts/KV缓存) · [量化](/ai-fa/explore/40-Concepts/量化)
+> 数学根基：[注意力计算复杂度](/ai-fa/explore/30-Formulas/注意力计算复杂度)
 
 ## 7. 读前须知
 

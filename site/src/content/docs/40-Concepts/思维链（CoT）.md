@@ -18,21 +18,21 @@ $$p(y \mid x) = \frac{p(y, z \mid x)}{p(z \mid x, y)} \le p(y, z \mid x)$$
 ## 2. 数学形式
 
 - **计算深度论证**：常数深度的 Transformer 表达能力有限（电路复杂度类 TC⁰）；CoT 步数 $$t$$ 使可表达问题类随 $$t$$ 扩展（如迭代算法、组合问题）——"时间换深度"
-- **涌现性**：CoT 增益随模型规模阶跃（小模型 CoT 反而降分）——[Language Models are Few-Shot Learners](/explore/10-Papers/01-架构演进/Language Models are Few-Shot Learners（GPT-3）) 规模叙事的延续
+- **涌现性**：CoT 增益随模型规模阶跃（小模型 CoT 反而降分）——[Language Models are Few-Shot Learners](/ai-fa/explore/10-Papers/01-架构演进/Language Models are Few-Shot Learners（GPT-3）) 规模叙事的延续
 - **测试时计算**（2024–25 主线）：答案质量随"思考预算"（采样条数/步长）提升——o1/R1/s1 的经济学
 
 ## 3. 为什么 AI 需要它
 
 | 出现场景 | 用法 |
 |---|---|
-| [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）) | 提出（few-shot CoT） |
-| [Self-Consistency Improves Chain of Thought Reasoning in Language Models](/explore/10-Papers/07-推理模型/Self-Consistency Improves Chain of Thought Reasoning in Language Models（Self-Consistency）) | 多数投票增强 |
-| [Tree of Thoughts - Deliberate Problem Solving with Large Language Models](/explore/10-Papers/07-推理模型/Tree of Thoughts- Deliberate Problem Solving with Large Language Models（ToT）) | 链 → 树（搜索化） |
-| [ReAct - Synergizing Reasoning and Acting in Language Models](/explore/10-Papers/07-推理模型/ReAct- Synergizing Reasoning and Acting in Language Models（ReAct）) | 推理+行动交织 |
-| R1/o1 | RL 训练自发长 CoT（见 [DeepSeek-R1 - Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](/explore/10-Papers/04-强化学习与对齐/DeepSeek-R1- Incentivizing Reasoning Capability in LLMs via Reinforcement Learning（R1）)） |
-| [Structural Process Supervision for Latent Chain-of-Thought Reasoning](/explore/10-Papers/07-推理模型/Structural Process Supervision for Latent Chain-of-Thought Reasoning（PMPS）) | 显式→潜压缩：原型过程监督 |
-| [Think Wider: Mitigating Latent Rank Collapse in Implicit Chain-of-Thought Reasoning](/explore/10-Papers/07-推理模型/Think Wider - Mitigating Latent Rank Collapse in Implicit Chain-of-Thought Reasoning（WIDER）) | 潜推理的秩坍缩与谱正则 |
-| [Answer-Distribution Trajectories: A Stochastic-Dynamics View of LLM Reasoning](/explore/10-Papers/07-推理模型/Answer-Distribution Trajectories - A Stochastic-Dynamics View of LLM Reasoning（ADT）) | 推理过程的分布动力学读法 |
+| [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](/ai-fa/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）) | 提出（few-shot CoT） |
+| [Self-Consistency Improves Chain of Thought Reasoning in Language Models](/ai-fa/explore/10-Papers/07-推理模型/Self-Consistency Improves Chain of Thought Reasoning in Language Models（Self-Consistency）) | 多数投票增强 |
+| [Tree of Thoughts - Deliberate Problem Solving with Large Language Models](/ai-fa/explore/10-Papers/07-推理模型/Tree of Thoughts- Deliberate Problem Solving with Large Language Models（ToT）) | 链 → 树（搜索化） |
+| [ReAct - Synergizing Reasoning and Acting in Language Models](/ai-fa/explore/10-Papers/07-推理模型/ReAct- Synergizing Reasoning and Acting in Language Models（ReAct）) | 推理+行动交织 |
+| R1/o1 | RL 训练自发长 CoT（见 [DeepSeek-R1 - Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](/ai-fa/explore/10-Papers/04-强化学习与对齐/DeepSeek-R1- Incentivizing Reasoning Capability in LLMs via Reinforcement Learning（R1）)） |
+| [Structural Process Supervision for Latent Chain-of-Thought Reasoning](/ai-fa/explore/10-Papers/07-推理模型/Structural Process Supervision for Latent Chain-of-Thought Reasoning（PMPS）) | 显式→潜压缩：原型过程监督 |
+| [Think Wider: Mitigating Latent Rank Collapse in Implicit Chain-of-Thought Reasoning](/ai-fa/explore/10-Papers/07-推理模型/Think Wider - Mitigating Latent Rank Collapse in Implicit Chain-of-Thought Reasoning（WIDER）) | 潜推理的秩坍缩与谱正则 |
+| [Answer-Distribution Trajectories: A Stochastic-Dynamics View of LLM Reasoning](/ai-fa/explore/10-Papers/07-推理模型/Answer-Distribution Trajectories - A Stochastic-Dynamics View of LLM Reasoning（ADT）) | 推理过程的分布动力学读法 |
 
 ## 4. 常见误区
 
@@ -42,10 +42,11 @@ $$p(y \mid x) = \frac{p(y, z \mid x)}{p(z \mid x, y)} \le p(y, z \mid x)$$
 
 ## 5. 相关概念
 
-- [马尔可夫链](/explore/40-Concepts/马尔可夫链)：生成即逐步展开
-- [期望](/explore/40-Concepts/期望)：Self-Consistency 的边缘化视角
-- [GRPO目标](/explore/30-Formulas/GRPO目标)：R1 时代 CoT 被 RL 塑形
+- [马尔可夫链](/ai-fa/explore/40-Concepts/马尔可夫链)：生成即逐步展开
+- [期望](/ai-fa/explore/40-Concepts/期望)：Self-Consistency 的边缘化视角
+- [GRPO目标](/ai-fa/explore/30-Formulas/GRPO目标)：R1 时代 CoT 被 RL 塑形
 
-- → 后继补记（260916）：[Continuous Actions from Discrete Minds](/explore/10-Papers/07-推理模型/Continuous Actions from Discrete Minds Latent-Aligned Planning for End-to-End Autonomous Driving)（CoT 落地控制：离散推理到连续动作）
+- → 后继补记（260916）：[Continuous Actions from Discrete Minds](/ai-fa/explore/10-Papers/07-推理模型/Continuous Actions from Discrete Minds Latent-Aligned Planning for End-to-End Autonomous Driving)（CoT 落地控制：离散推理到连续动作）
 
-- → 后继补记（260916）：[Legibility is Not Interpretability](/explore/10-Papers/07-推理模型/Legibility is Not Interpretability Comparing Judged and Actual Importance in Chain-Of-Thought Reason)（CoT 语义审计：可读≠可解释）
+- → 后继补记（260916）：[Legibility is Not Interpretability](/ai-fa/explore/10-Papers/07-推理模型/Legibility is Not Interpretability Comparing Judged and Actual Importance in Chain-Of-Thought Reason)（CoT 语义审计：可读≠可解释）
+- → 后继补记（260917）：[RIR](/ai-fa/explore/10-Papers/03-后处理/Rollback the World, Keep the Reflection Rollback-Induced Reflection for Long-Horizon LLM Agents)（反思记忆=CoT 的经验固化形态：回滚环境状态但保留从被弃轨迹蒸馏的结构化反思，指导后续决策）

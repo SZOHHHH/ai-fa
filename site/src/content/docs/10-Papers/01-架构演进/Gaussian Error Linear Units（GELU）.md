@@ -38,7 +38,7 @@ $$
 
 ## 5. 与前作/矩阵关系
 
-← ReLU/ELU；≡ [GLU Variants Improve Transformer](/explore/10-Papers/01-架构演进/GLU Variants Improve Transformer（SwiGLU）)（库内，门控+线性组合的另一代）；激活函数谱系的当代默认
+← ReLU/ELU；≡ [GLU Variants Improve Transformer](/ai-fa/explore/10-Papers/01-架构演进/GLU Variants Improve Transformer（SwiGLU）)（库内，门控+线性组合的另一代）；激活函数谱系的当代默认
 
 ## 6. 影响后续
 
@@ -48,6 +48,6 @@ $$
 
 需要：正态 CDF；为何软化边界帮助优化平滑性
 
-> 近邻同族：[An Image is Worth 16x16 Words - Transformers for Image Recognition at Scale](/explore/10-Papers/01-架构演进/An Image is Worth 16x16 Words- Transformers for Image Recognition at Scale（ViT）) · [Attention Is All You Need](/explore/10-Papers/01-架构演进/Attention Is All You Need（Transformer）)
+> 近邻同族：[An Image is Worth 16x16 Words - Transformers for Image Recognition at Scale](/ai-fa/explore/10-Papers/01-架构演进/An Image is Worth 16x16 Words- Transformers for Image Recognition at Scale（ViT）) · [Attention Is All You Need](/ai-fa/explore/10-Papers/01-架构演进/Attention Is All You Need（Transformer）)
 
-> 数学根基：[GELU激活](/explore/30-Formulas/GELU激活) · [SwiGLU门控](/explore/30-Formulas/SwiGLU门控)
+> 数学根基：[GELU激活](/ai-fa/explore/30-Formulas/GELU激活) · [SwiGLU门控](/ai-fa/explore/30-Formulas/SwiGLU门控)

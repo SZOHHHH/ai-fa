@@ -21,7 +21,7 @@ tags: [paper]
 ## 2. 核心贡献
 
 - **隐式模型三函数**：表示函数 $$h$$（观测→隐状态）、转移函数 $$g$$（隐状态+动作→新隐状态）、预测函数 $$f$$（隐状态→策略先验 $$p$$ /价值 $$v$$ /奖励 $$r$$）——**没有任何观测重建损失**；
-- **潜空间 MCTS**：搜索在 $$g$$ 展开的隐状态树上进行，用 [PUCT](/explore/30-Formulas/MCTS置信上界) 选择、$$f$$ 的头评价叶节点——棋类+Atari 通用（AlphaZero 的棋类专用+Atari 不能版的统一）；
+- **潜空间 MCTS**：搜索在 $$g$$ 展开的隐状态树上进行，用 [PUCT](/ai-fa/explore/30-Formulas/MCTS置信上界) 选择、$$f$$ 的头评价叶节点——棋类+Atari 通用（AlphaZero 的棋类专用+Atari 不能版的统一）；
 - **训练=自己跟自己的搜索对弈**：行为来自搜索（更深的树=更强的策略蒸馏目标），价值/奖励头对真实对局结果回归，策略头对搜索分布回归（reanalyse 复用旧数据）；
 - **哲学贡献**："模型只需在价值层面等价于真实环境"——后续 value-equivalence 理论线（Grimm et al.）与"决策充分统计量"分析的直接源头。
 
@@ -38,13 +38,13 @@ $$s^{k+1}=g\big(s^{k},a^{k}\big),\qquad \big(p^{k},v^{k},r^{k}\big)=f\big(s^{k+1
 
 **直觉解释**：把世界模型想成"考官"——Dreamer 系考官必须画出下一帧（生成式），MuZero 考官只回答三个问题："走这步得几分、局面值多少、该优先试哪步"（决策式）。**画得像 ≠ 答得对**：两条哲学各自成立的前提域不同——MuZero 证明"答题不必会画画"；而需要完整未来分布的任务（想象训练多步）后来被证明离不开生成能力。**这一分界正是"该保什么"问题最早的清晰表达**。
 
-- 需要的前置：[MCTS置信上界](/explore/30-Formulas/MCTS置信上界)、[贝尔曼最优方程](/explore/30-Formulas/贝尔曼最优方程)、[贝尔曼方程](/explore/40-Concepts/贝尔曼方程)
+- 需要的前置：[MCTS置信上界](/ai-fa/explore/30-Formulas/MCTS置信上界)、[贝尔曼最优方程](/ai-fa/explore/30-Formulas/贝尔曼最优方程)、[贝尔曼方程](/ai-fa/explore/40-Concepts/贝尔曼方程)
 
 ## 5. 与前作/矩阵关系
 
 - ← AlphaGo/AlphaZero（真规则 MCTS + 神经网络）→ MuZero（**规则也学掉**，只剩三头模型）；← Atari 的 EfficientZero/StMuZer 等后续继续拉高样本效率；
-- ↔ 对照 [Dreamer](/explore/10-Papers/09-世界模型与JEPA/Dream to Control- Learning Behaviors by Latent Imagination（Dreamer）)：**搜索式（决策时刻展开树）vs 学习式（训练时想象 rollout）**；两线在 test-time search 类新工作里重新汇合；
-- ↔ 对照 [DIAMOND](/explore/10-Papers/09-世界模型与JEPA/Diffusion for World Modeling- Visual Details Matter in Atari（DIAMOND）)：DIAMOND 用像素证据反问"压缩掉的信息真的没用吗"——与 MuZero 的"不需要重建"形成谱系两极的张力；决策保真/价值等价思想在两极之间架桥。
+- ↔ 对照 [Dreamer](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Dream to Control- Learning Behaviors by Latent Imagination（Dreamer）)：**搜索式（决策时刻展开树）vs 学习式（训练时想象 rollout）**；两线在 test-time search 类新工作里重新汇合；
+- ↔ 对照 [DIAMOND](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Diffusion for World Modeling- Visual Details Matter in Atari（DIAMOND）)：DIAMOND 用像素证据反问"压缩掉的信息真的没用吗"——与 MuZero 的"不需要重建"形成谱系两极的张力；决策保真/价值等价思想在两极之间架桥。
 
 ## 6. 影响与后续
 
@@ -54,10 +54,10 @@ $$s^{k+1}=g\big(s^{k},a^{k}\big),\qquad \big(p^{k},v^{k},r^{k}\big)=f\big(s^{k+1
 
 ## 7. 读前须知
 
-- **必前置**：[MCTS置信上界](/explore/30-Formulas/MCTS置信上界)（PUCT 是搜索的心脏）、[贝尔曼方程](/explore/40-Concepts/贝尔曼方程)、[马尔可夫决策过程](/explore/40-Concepts/马尔可夫决策过程)；
+- **必前置**：[MCTS置信上界](/ai-fa/explore/30-Formulas/MCTS置信上界)（PUCT 是搜索的心脏）、[贝尔曼方程](/ai-fa/explore/40-Concepts/贝尔曼方程)、[马尔可夫决策过程](/ai-fa/explore/40-Concepts/马尔可夫决策过程)；
 - **易混点**：①MuZero 的"模型"不是世界模型常规定义（不预测观测）——读文献时"learned model"一词在两哲学下含义不同；②奖励头 $$r$$ 预测的是**立即奖励**（供树内累计），价值头 $$v$$ 是局面估值——别混；③策略头是"搜索的蒸馏目标"而非直接行为——**搜索深度=老师水平**；
 - **读法建议**：图 1（三函数图）→ 图 2（搜索示意图）→ 表 1（四域成绩）；附录 A 的隐状态一致性分析是理论向读者彩蛋。
 
-> 近邻同族：[Analytic Planning under Uncertainty with Moment Closure](/explore/10-Papers/09-世界模型与JEPA/Analytic Planning under Uncertainty with Moment Closure（矩闭合规划）)
+> 近邻同族：[Analytic Planning under Uncertainty with Moment Closure](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Analytic Planning under Uncertainty with Moment Closure（矩闭合规划）)
 
-> 数学根基：[MCTS置信上界](/explore/30-Formulas/MCTS置信上界) · [贝尔曼最优方程](/explore/30-Formulas/贝尔曼最优方程) · [贝尔曼方程](/explore/40-Concepts/贝尔曼方程)
+> 数学根基：[MCTS置信上界](/ai-fa/explore/30-Formulas/MCTS置信上界) · [贝尔曼最优方程](/ai-fa/explore/30-Formulas/贝尔曼最优方程) · [贝尔曼方程](/ai-fa/explore/40-Concepts/贝尔曼方程)

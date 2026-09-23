@@ -46,10 +46,10 @@ tags: [paper, 每日推荐]
 
 ## 5. 与前作/矩阵关系
 
-- **←前身**：[Efficient Streaming Language Models with Attention Sinks](/explore/10-Papers/06-长上下文/Efficient Streaming Language Models with Attention Sinks（StreamingLLM）)——sink 的命名者，"驱逐首 token 流式模型崩溃"是 sink 结构性作用的最早证据；本文把该现象的**测量**推到 1M 窗口并完成归因
-- 概念根基：[注意力核心公式](/explore/30-Formulas/注意力核心公式)（预算=1 的根源在归一化）· [softmax函数](/explore/40-Concepts/softmax函数) · [注意力机制](/explore/40-Concepts/注意力机制)
-- 线内对话：[稀疏与线性注意力](/explore/40-Concepts/稀疏与线性注意力)（K3 的 Kimi Delta Attention 即线性注意力家族，定长递归状态是消 sink 的另一条路）· [KV缓存](/explore/40-Concepts/KV缓存)（cache 增长模型：69/93 层不随上下文增长）· [位置编码](/explore/40-Concepts/位置编码)（K3 干脆弃用位置编码）
-- 同日同族：[Fine-Tuning a KV Cache Concatenation-Aware Model or Recomputing KV Caches? Why Not Both?](/explore/10-Papers/06-长上下文/Fine-Tuning a KV Cache Concatenation-Aware Model or Recomputing KV Caches Why Not Both)（EPIC 家族恰以块内 sink 位置选重算 token——sink 的工程利用面）
+- **←前身**：[Efficient Streaming Language Models with Attention Sinks](/ai-fa/explore/10-Papers/06-长上下文/Efficient Streaming Language Models with Attention Sinks（StreamingLLM）)——sink 的命名者，"驱逐首 token 流式模型崩溃"是 sink 结构性作用的最早证据；本文把该现象的**测量**推到 1M 窗口并完成归因
+- 概念根基：[注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)（预算=1 的根源在归一化）· [softmax函数](/ai-fa/explore/40-Concepts/softmax函数) · [注意力机制](/ai-fa/explore/40-Concepts/注意力机制)
+- 线内对话：[稀疏与线性注意力](/ai-fa/explore/40-Concepts/稀疏与线性注意力)（K3 的 Kimi Delta Attention 即线性注意力家族，定长递归状态是消 sink 的另一条路）· [KV缓存](/ai-fa/explore/40-Concepts/KV缓存)（cache 增长模型：69/93 层不随上下文增长）· [位置编码](/ai-fa/explore/40-Concepts/位置编码)（K3 干脆弃用位置编码）
+- 同日同族：[Fine-Tuning a KV Cache Concatenation-Aware Model or Recomputing KV Caches? Why Not Both?](/ai-fa/explore/10-Papers/06-长上下文/Fine-Tuning a KV Cache Concatenation-Aware Model or Recomputing KV Caches Why Not Both)（EPIC 家族恰以块内 sink 位置选重算 token——sink 的工程利用面）
 
 ## 6. 影响后续
 
@@ -57,10 +57,10 @@ tags: [paper, 每日推荐]
 - 给门控注意力的已发表结论划出**规模边界**（其 ~1M 参数阶梯上未复现），提醒机制声明需在部署规模复查
 - 谱系定位：sink 研究"发现（StreamingLLM）→ 利用（KV 驱逐/EPIC）→ 修复（门控）→ **审计**（本文）"四阶段的审计段
 
-- → 后继补记（260914）：[SMELT](/explore/10-Papers/05-MoE/SMELT - Scaling Laws for Compute-Matched MoE Looped Transformers（循环MoE缩放律）)（跨设定证据补记：计算路径改变（层循环两次）同样削 sink——支持"sink 是训练动态产物"结论）
+- → 后继补记（260914）：[SMELT](/ai-fa/explore/10-Papers/05-MoE/SMELT - Scaling Laws for Compute-Matched MoE Looped Transformers（循环MoE缩放律）)（跨设定证据补记：计算路径改变（层循环两次）同样削 sink——支持"sink 是训练动态产物"结论）
 
 ## 7. 读前须知
 
-- 前置：[注意力核心公式](/explore/30-Formulas/注意力核心公式) · [softmax函数](/explore/40-Concepts/softmax函数)（归一性是根源）· [Efficient Streaming Language Models with Attention Sinks](/explore/10-Papers/06-长上下文/Efficient Streaming Language Models with Attention Sinks（StreamingLLM）)（sink 命名与流式背景）
+- 前置：[注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式) · [softmax函数](/ai-fa/explore/40-Concepts/softmax函数)（归一性是根源）· [Efficient Streaming Language Models with Attention Sinks](/ai-fa/explore/10-Papers/06-长上下文/Efficient Streaming Language Models with Attention Sinks（StreamingLLM）)（sink 命名与流式背景）
 - 易混点：sink ≠ 缺陷——softmax 约束下的涌现泄压策略；"修复 sink" ≠ "均匀阅读"，二者独立（本文第三结论）
 - 外推警告：~1M 参数小模型的结论不直接预测前沿规模（作者自申限制，作者机构为印度地方学院，单人小团队工作，数字需独立复现）

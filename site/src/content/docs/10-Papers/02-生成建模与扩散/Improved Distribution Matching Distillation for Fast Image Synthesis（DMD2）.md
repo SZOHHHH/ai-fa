@@ -16,7 +16,7 @@ pdf: 已下载（PDF/）
 
 ## 1. 一句话贡献
 
-[DMD](/explore/10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）) 的全面升级：回归损失 + [GAN](/explore/10-Papers/02-生成建模与扩散/Generative Adversarial Networks（GAN）) 项 + 教师引导的推理时 CFG——一步/两步生成质量逼近教师 50 步，SDXL/[DiT](/explore/10-Papers/02-生成建模与扩散/Scalable Diffusion Models with Transformers（DiT）) 级加速实用化。
+[DMD](/ai-fa/explore/10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）) 的全面升级：回归损失 + [GAN](/ai-fa/explore/10-Papers/02-生成建模与扩散/Generative Adversarial Networks（GAN）) 项 + 教师引导的推理时 CFG——一步/两步生成质量逼近教师 50 步，SDXL/[DiT](/ai-fa/explore/10-Papers/02-生成建模与扩散/Scalable Diffusion Models with Transformers（DiT）) 级加速实用化。
 
 ## 2. 核心贡献
 
@@ -33,13 +33,13 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- $$\mathcal{L} = \mathcal{L}_{\text{DMD}} + \lambda_{\text{reg}}\mathcal{L}_{\text{reg}} + \lambda_{\text{GAN}}\mathcal{L}_{\text{GAN}}$$——三合一（[GAN目标](/explore/30-Formulas/GAN目标) 回归 + [KL散度](/explore/40-Concepts/KL散度) score 差）
-- 承接 [One-step Diffusion with Distribution Matching Distillation](/explore/10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）)
+- $$\mathcal{L} = \mathcal{L}_{\text{DMD}} + \lambda_{\text{reg}}\mathcal{L}_{\text{reg}} + \lambda_{\text{GAN}}\mathcal{L}_{\text{GAN}}$$——三合一（[GAN目标](/ai-fa/explore/30-Formulas/GAN目标) 回归 + [KL散度](/ai-fa/explore/40-Concepts/KL散度) score 差）
+- 承接 [One-step Diffusion with Distribution Matching Distillation](/ai-fa/explore/10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）)
 
 ## 5. 与前作的关系
 
-- 改进了 [One-step Diffusion with Distribution Matching Distillation](/explore/10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）)（同一作）：退化问题、CFG 蒸馏
-- 对照 [Consistency Models](/explore/10-Papers/02-生成建模与扩散/Consistency Models（一致性模型）)：分布级 vs 轨迹自洽的两条一步生成路线齐头并进
+- 改进了 [One-step Diffusion with Distribution Matching Distillation](/ai-fa/explore/10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）)（同一作）：退化问题、CFG 蒸馏
+- 对照 [Consistency Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Consistency Models（一致性模型）)：分布级 vs 轨迹自洽的两条一步生成路线齐头并进
 
 ## 6. 影响与后续
 
@@ -48,4 +48,4 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[One-step Diffusion with Distribution Matching Distillation](/explore/10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）)（先读）、[GAN目标](/explore/30-Formulas/GAN目标)、[一致性模型](/explore/20-Algorithms/一致性模型)
+[One-step Diffusion with Distribution Matching Distillation](/ai-fa/explore/10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）)（先读）、[GAN目标](/ai-fa/explore/30-Formulas/GAN目标)、[一致性模型](/ai-fa/explore/20-Algorithms/一致性模型)

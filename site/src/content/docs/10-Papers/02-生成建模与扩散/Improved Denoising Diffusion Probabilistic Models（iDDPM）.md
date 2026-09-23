@@ -34,20 +34,20 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- 复用 [DDPM前向过程](/explore/30-Formulas/DDPM前向过程)（调度重设计）
-- [DDPM训练目标](/explore/30-Formulas/DDPM训练目标) §2 的加权一般式（$$\lambda_t$$ 讨论）
-- [DDPM后验分布](/explore/30-Formulas/DDPM后验分布)（方差学习对象）
+- 复用 [DDPM前向过程](/ai-fa/explore/30-Formulas/DDPM前向过程)（调度重设计）
+- [DDPM训练目标](/ai-fa/explore/30-Formulas/DDPM训练目标) §2 的加权一般式（$$\lambda_t$$ 讨论）
+- [DDPM后验分布](/ai-fa/explore/30-Formulas/DDPM后验分布)（方差学习对象）
 
 ## 5. 与前作的关系
 
-- 改进了 [Denoising Diffusion Probabilistic Models](/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Probabilistic Models（DDPM）)：调度、方差、加权三处精修
+- 改进了 [Denoising Diffusion Probabilistic Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Probabilistic Models（DDPM）)：调度、方差、加权三处精修
 
 ## 6. 影响与后续
 
 - 余弦调度成为默认选项之一
-- "设计空间"意识直接启发 [Elucidating the Design Space of Diffusion-Based Generative Models](/explore/10-Papers/02-生成建模与扩散/Elucidating the Design Space of Diffusion-Based Generative Models（EDM）) 的系统消融
+- "设计空间"意识直接启发 [Elucidating the Design Space of Diffusion-Based Generative Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Elucidating the Design Space of Diffusion-Based Generative Models（EDM）) 的系统消融
 - cosLD 等后续沿用
 
 ## 7. 读前须知
 
-[高斯分布](/explore/40-Concepts/高斯分布)、[KL散度](/explore/40-Concepts/KL散度)（方差学习=KL 权衡）、[DDPM训练目标](/explore/30-Formulas/DDPM训练目标)（先懂 L_simple）
+[高斯分布](/ai-fa/explore/40-Concepts/高斯分布)、[KL散度](/ai-fa/explore/40-Concepts/KL散度)（方差学习=KL 权衡）、[DDPM训练目标](/ai-fa/explore/30-Formulas/DDPM训练目标)（先懂 L_simple）

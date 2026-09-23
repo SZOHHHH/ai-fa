@@ -34,22 +34,23 @@ tags: [paper]
 
 ## 4. 核心公式
 
-- 框架 = [条件流匹配损失](/explore/30-Formulas/条件流匹配损失)/[DDPM训练目标](/explore/30-Formulas/DDPM训练目标) 家族（潜扩散）+ 自回归帧级生成——组件级复用，无新公开公式
+- 框架 = [条件流匹配损失](/ai-fa/explore/30-Formulas/条件流匹配损失)/[DDPM训练目标](/ai-fa/explore/30-Formulas/DDPM训练目标) 家族（潜扩散）+ 自回归帧级生成——组件级复用，无新公开公式
 
 ## 5. 与前作的关系
 
-- 规模化 [Genie - Generative Interactive Environments](/explore/10-Papers/09-世界模型与JEPA/Genie- Generative Interactive Environments（Genie）)：2D 动作发现 → 3D 世界生成
-- 对照 [V-JEPA 2 - Self-Supervised Video Models Enable Understanding, Prediction and Planning](/explore/10-Papers/09-世界模型与JEPA/V-JEPA 2- Self-Supervised Video Models Enable Understanding, Prediction and Planning（V-JEPA 2）)：生成式（像素世界）vs 预测式（抽象表征）——Google 内部两条路线并行
+- 规模化 [Genie - Generative Interactive Environments](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Genie- Generative Interactive Environments（Genie）)：2D 动作发现 → 3D 世界生成
+- 对照 [V-JEPA 2 - Self-Supervised Video Models Enable Understanding, Prediction and Planning](/ai-fa/explore/10-Papers/09-世界模型与JEPA/V-JEPA 2- Self-Supervised Video Models Enable Understanding, Prediction and Planning（V-JEPA 2）)：生成式（像素世界）vs 预测式（抽象表征）——Google 内部两条路线并行
 
 ## 6. 影响与后续
 
 - "世界模型=游戏引擎"叙事的最强公开证据；具身训练环境合成（sim-to-real 数据工厂）
 - 与 Sora 系的边界：交互性 vs 影视级画质
 
-- → 后继补记（260914）：[Pelican-Sim 1.0](/explore/10-Papers/09-世界模型与JEPA/Pelican-Sim 1.0 - A General World Model Simulator for Embodied Intelligence（具身WM仿真器）)（具身域的"通用基础 WM"实例：统一动作空间跨本体+渲染式动作注入）
+- → 后继补记（260914）：[Pelican-Sim 1.0](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Pelican-Sim 1.0 - A General World Model Simulator for Embodied Intelligence（具身WM仿真器）)（具身域的"通用基础 WM"实例：统一动作空间跨本体+渲染式动作注入）
+- → 后继补记（260918）：[Astronex-World 1.0](/ai-fa/explore/10-Papers/02-生成建模与扩散/Astronex-World 1.0 Real-Time Interactive World Model Foundation)（开源侧"基础交互 WM"新锚：两卡 L20 后训练 Wan2.2 先验，因果形态单卡实时流式）
 
 ## 7. 读前须知
 
-[世界模型](/explore/20-Algorithms/世界模型)、[Genie - Generative Interactive Environments](/explore/10-Papers/09-世界模型与JEPA/Genie- Generative Interactive Environments（Genie）)、[Sora 技术报告 - Video Generation Models as World Simulators](/explore/10-Papers/08-多模态/Sora 技术报告- Video Generation Models as World Simulators（Sora）)
+[世界模型](/ai-fa/explore/20-Algorithms/世界模型)、[Genie - Generative Interactive Environments](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Genie- Generative Interactive Environments（Genie）)、[Sora 技术报告 - Video Generation Models as World Simulators](/ai-fa/explore/10-Papers/08-多模态/Sora 技术报告- Video Generation Models as World Simulators（Sora）)
 
-> 近邻同族：[Analytic Planning under Uncertainty with Moment Closure](/explore/10-Papers/09-世界模型与JEPA/Analytic Planning under Uncertainty with Moment Closure（矩闭合规划）) · [Co-Evolving Latent Action World Models](/explore/10-Papers/09-世界模型与JEPA/Co-Evolving Latent Action World Models（CoLA）)
+> 近邻同族：[Analytic Planning under Uncertainty with Moment Closure](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Analytic Planning under Uncertainty with Moment Closure（矩闭合规划）) · [Co-Evolving Latent Action World Models](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Co-Evolving Latent Action World Models（CoLA）)

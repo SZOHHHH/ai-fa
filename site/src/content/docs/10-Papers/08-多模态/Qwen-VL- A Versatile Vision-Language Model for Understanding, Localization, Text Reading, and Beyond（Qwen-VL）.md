@@ -30,11 +30,11 @@ tags: [paper]
 
 
 $$
-V = \mathrm{Adapter}\big(\mathrm{[ViT](/explore/10-Papers/01-架构演进/An Image is Worth 16x16 Words- Transformers for Image Recognition at Scale（ViT）)}(I)\big) \to 256\ \text{tokens}\ \text{拼入 LLM 词表}
+V = \mathrm{Adapter}\big(\mathrm{[ViT](/ai-fa/explore/10-Papers/01-架构演进/An Image is Worth 16x16 Words- Transformers for Image Recognition at Scale（ViT）)}(I)\big) \to 256\ \text{tokens}\ \text{拼入 LLM 词表}
 $$
 
 
-**直觉**：→ Qwen-VL2/Qwen2.5-VL 谱系；≡ BLIP-2/[LLaVA](/explore/10-Papers/08-多模态/Visual Instruction Tuning（LLaVA）)（同期投影路线）
+**直觉**：→ Qwen-VL2/Qwen2.5-VL 谱系；≡ BLIP-2/[LLaVA](/ai-fa/explore/10-Papers/08-多模态/Visual Instruction Tuning（LLaVA）)（同期投影路线）
 
 ## 5. 与前作/矩阵关系
 
@@ -48,6 +48,6 @@ $$
 
 undefined
 
-> 近邻同族：[BLIP-2 - Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models](/explore/10-Papers/08-多模态/BLIP-2- Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Lan（BLIP-2）) · [Flamingo - a Visual Language Model for Few-Shot Learning](/explore/10-Papers/08-多模态/Flamingo- a Visual Language Model for Few-Shot Learning（Flamingo）)
+> 近邻同族：[BLIP-2 - Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models](/ai-fa/explore/10-Papers/08-多模态/BLIP-2- Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Lan（BLIP-2）) · [Flamingo - a Visual Language Model for Few-Shot Learning](/ai-fa/explore/10-Papers/08-多模态/Flamingo- a Visual Language Model for Few-Shot Learning（Flamingo）)
 
-> 数学根基：[三层感知机投影](/explore/30-Formulas/三层感知机投影) · [CLIP对比损失](/explore/30-Formulas/CLIP对比损失) · [注意力核心公式](/explore/30-Formulas/注意力核心公式)
+> 数学根基：[三层感知机投影](/ai-fa/explore/30-Formulas/三层感知机投影) · [CLIP对比损失](/ai-fa/explore/30-Formulas/CLIP对比损失) · [注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)

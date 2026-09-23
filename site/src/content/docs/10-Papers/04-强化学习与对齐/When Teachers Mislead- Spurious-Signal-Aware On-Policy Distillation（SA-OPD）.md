@@ -38,16 +38,16 @@ $$
 
 ## 5. 与前作/矩阵关系
 
-🚩 占"teacher 信号不可靠"诊断位（与 [EOPD](/explore/10-Papers/04-强化学习与对齐/Entropy-Aware On-Policy Distillation of Language Models（EOPD）) 熵诊断互补：EOPD 管 teacher 不确定，SA-OPD 管 teacher 错得自信）
+🚩 占"teacher 信号不可靠"诊断位（与 [EOPD](/ai-fa/explore/10-Papers/04-强化学习与对齐/Entropy-Aware On-Policy Distillation of Language Models（EOPD）) 熵诊断互补：EOPD 管 teacher 不确定，SA-OPD 管 teacher 错得自信）
 
 
 ## 6. 影响与占位意义
 
 方向占坑速度的活证据（同类工作密集出现）。
 
-> 近邻同族：[Any-OPD- Heterogeneous On-Policy Distillation for Flow-Matching Models via Representation-Space Bridging](/explore/10-Papers/04-强化学习与对齐/Any-OPD- Heterogeneous On-Policy Distillation for Flow-Matching Models via Representation-Space Bridging（Any-OPD）) · [CausalOPD- First-Wrong-Step Supervision for Distilling Causal Chain Reasoning](/explore/10-Papers/04-强化学习与对齐/CausalOPD- First-Wrong-Step Supervision for Distilling Causal Chain Reasoning（CausalOPD）)
-> 数学根基（占位层）：[策略梯度定理](/explore/40-Concepts/策略梯度定理)
-> 数学根基：[蒸馏损失](/explore/30-Formulas/蒸馏损失) · [DSM目标](/explore/30-Formulas/DSM目标)
+> 近邻同族：[Any-OPD- Heterogeneous On-Policy Distillation for Flow-Matching Models via Representation-Space Bridging](/ai-fa/explore/10-Papers/04-强化学习与对齐/Any-OPD- Heterogeneous On-Policy Distillation for Flow-Matching Models via Representation-Space Bridging（Any-OPD）) · [CausalOPD- First-Wrong-Step Supervision for Distilling Causal Chain Reasoning](/ai-fa/explore/10-Papers/04-强化学习与对齐/CausalOPD- First-Wrong-Step Supervision for Distilling Causal Chain Reasoning（CausalOPD）)
+> 数学根基（占位层）：[策略梯度定理](/ai-fa/explore/40-Concepts/策略梯度定理)
+> 数学根基：[蒸馏损失](/ai-fa/explore/30-Formulas/蒸馏损失) · [DSM目标](/ai-fa/explore/30-Formulas/DSM目标)
 
 ## 7. 读前须知
 

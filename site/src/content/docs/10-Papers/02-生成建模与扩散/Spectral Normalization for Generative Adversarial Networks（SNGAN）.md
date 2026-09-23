@@ -16,7 +16,7 @@ tags: [paper]
 
 ## 1. 一句话贡献
 
-谱归一化：用最大奇异值约束判别器 Lipschitz——权重矩阵的幂迭代软约束（[WGAN](/explore/10-Papers/02-生成建模与扩散/Wasserstein GAN（WGAN）)-GP 的竞争对手）。
+谱归一化：用最大奇异值约束判别器 Lipschitz——权重矩阵的幂迭代软约束（[WGAN](/ai-fa/explore/10-Papers/02-生成建模与扩散/Wasserstein GAN（WGAN）)-GP 的竞争对手）。
 
 ## 2. 核心贡献
 
@@ -33,11 +33,11 @@ $$
 $$
 
 
-**直觉**：← [Improved Training of Wasserstein GANs](/explore/10-Papers/02-生成建模与扩散/Improved Training of Wasserstein GANs（WGAN-GP）)（本批）；Lipschitz 约束两条路（梯度惩罚 vs 谱归一）——软硬对偶共振的又一实例
+**直觉**：← [Improved Training of Wasserstein GANs](/ai-fa/explore/10-Papers/02-生成建模与扩散/Improved Training of Wasserstein GANs（WGAN-GP）)（本批）；Lipschitz 约束两条路（梯度惩罚 vs 谱归一）——软硬对偶共振的又一实例
 
 ## 5. 与前作/矩阵关系
 
-归一化思想反向流入 [GAN](/explore/10-Papers/02-生成建模与扩散/Generative Adversarial Networks（GAN）) 稳定化的代表；StyleGAN 系的基础件之一
+归一化思想反向流入 [GAN](/ai-fa/explore/10-Papers/02-生成建模与扩散/Generative Adversarial Networks（GAN）) 稳定化的代表；StyleGAN 系的基础件之一
 
 ## 6. 影响后续
 
@@ -47,6 +47,6 @@ $$
 
 undefined
 
-> 近邻同族：[Analyzing and Improving the Image Quality of StyleGAN](/explore/10-Papers/02-生成建模与扩散/Analyzing and Improving the Image Quality of StyleGAN（StyleGAN2）) · [Generative Adversarial Networks](/explore/10-Papers/02-生成建模与扩散/Generative Adversarial Networks（GAN）)
+> 近邻同族：[Analyzing and Improving the Image Quality of StyleGAN](/ai-fa/explore/10-Papers/02-生成建模与扩散/Analyzing and Improving the Image Quality of StyleGAN（StyleGAN2）) · [Generative Adversarial Networks](/ai-fa/explore/10-Papers/02-生成建模与扩散/Generative Adversarial Networks（GAN）)
 
-> 数学根基：[梯度惩罚](/explore/30-Formulas/梯度惩罚) · [谱归一化](/explore/30-Formulas/谱归一化) · [Wasserstein距离](/explore/40-Concepts/Wasserstein距离) · [Lipschitz连续](/explore/40-Concepts/Lipschitz连续)
+> 数学根基：[梯度惩罚](/ai-fa/explore/30-Formulas/梯度惩罚) · [谱归一化](/ai-fa/explore/30-Formulas/谱归一化) · [Wasserstein距离](/ai-fa/explore/40-Concepts/Wasserstein距离) · [Lipschitz连续](/ai-fa/explore/40-Concepts/Lipschitz连续)

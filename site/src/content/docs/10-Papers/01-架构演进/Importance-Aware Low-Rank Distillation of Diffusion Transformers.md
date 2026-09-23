@@ -31,8 +31,8 @@ layer: 占位
 （待精读）
 
 ## 5. 与前作/矩阵关系
-- 线锚：[Transformer](/explore/20-Algorithms/Transformer) · [注意力核心公式](/explore/30-Formulas/注意力核心公式)（占位挂链，Tier B 精化）
-- 同族：[知识蒸馏](/explore/40-Concepts/知识蒸馏)·[蒸馏损失](/explore/30-Formulas/蒸馏损失)·[低秩分解](/explore/40-Concepts/低秩分解)（LoRA 同族数学）；压缩线：[KD](/explore/10-Papers/03-后处理/Distilling the Knowledge in a Neural Network（KD）)
+- 线锚：[Transformer](/ai-fa/explore/20-Algorithms/Transformer) · [注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)（占位挂链，Tier B 精化）
+- 同族：[知识蒸馏](/ai-fa/explore/40-Concepts/知识蒸馏)·[蒸馏损失](/ai-fa/explore/30-Formulas/蒸馏损失)·[低秩分解](/ai-fa/explore/40-Concepts/低秩分解)（LoRA 同族数学）；压缩线：[KD](/ai-fa/explore/10-Papers/03-后处理/Distilling the Knowledge in a Neural Network（KD）)
 
 ## 6. 影响后续
 （待精读）

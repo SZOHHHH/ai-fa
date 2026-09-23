@@ -22,16 +22,16 @@ $$\text{正向（世界模型）}:\;p(s'\mid s,a)\qquad\longleftrightarrow\qquad
 
 | 家族 | 用 IDM 干什么 | 代表 |
 |---|---|---|
-| **打标签**（模仿学习） | 给无动作标注的视频补动作标签 → 变成可监督数据 | VPT（Minecraft）、Genie 的 latent action model、[LAPA](/explore/10-Papers/09-世界模型与JEPA/Latent Action Pretraining from Videos（LAPA）) |
+| **打标签**（模仿学习） | 给无动作标注的视频补动作标签 → 变成可监督数据 | VPT（Minecraft）、Genie 的 latent action model、[LAPA](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Latent Action Pretraining from Videos（LAPA）) |
 | **规划/反推**（goal-conditioned） | 给定目标帧，反推动作直接执行或进规划代价 | Paster 2020（IDM-first 规划）；规划一致性检查（ACID 类） |
-| **imagine-then-act**（机器人 WAM） | 先扩散生成未来视频，再由未来帧反推动作 | Fast-WAM-IDM；[GIFT](/explore/10-Papers/09-世界模型与JEPA/GIFT Guided Intermediate Feature Training via Action-Oriented Structural Supervision for Robotic Man) 的 WAM-IDM 变体（未来条件 IDM + 表征监督）；[GE-Act 2.0](/explore/10-Papers/09-世界模型与JEPA/GE-Act 2.0 Pretraining and Scaling a World-Action Model for Robotic Manipulation)（单步流生成未来→IDM 反推 + KASO 兼容选择，2026 旗舰缩放） |
+| **imagine-then-act**（机器人 WAM） | 先扩散生成未来视频，再由未来帧反推动作 | Fast-WAM-IDM；[GIFT](/ai-fa/explore/10-Papers/09-世界模型与JEPA/GIFT Guided Intermediate Feature Training via Action-Oriented Structural Supervision for Robotic Man) 的 WAM-IDM 变体（未来条件 IDM + 表征监督）；[GE-Act 2.0](/ai-fa/explore/10-Papers/09-世界模型与JEPA/GE-Act 2.0 Pretraining and Scaling a World-Action Model for Robotic Manipulation)（单步流生成未来→IDM 反推 + KASO 兼容选择，2026 旗舰缩放） |
 | **正则/一致性** | "前向预测的帧反推回的动作应与条件动作一致"——当验钞机用 | 世界模型训练辅助件 |
 
 ## 3. 什么时候"逆"得动（良定义性）
 
 | 场景 | 后验 $$q(a\mid s,s')$$ | 说明 |
 |---|---|---|
-| 确定动态（球类物理） | 尖峰（接近 [one-hot](/explore/40-Concepts/独热编码（One-Hot）)） | 果几乎唯一锁定因——反推可靠 |
+| 确定动态（球类物理） | 尖峰（接近 [one-hot](/ai-fa/explore/40-Concepts/独热编码（One-Hot）)） | 果几乎唯一锁定因——反推可靠 |
 | 环境随机（对手随机） | 宽/多峰 | 同样的果可由多种因产生——反推病态，只能给分布 |
 | 动作对转移无影响 | 无信息 | 有些帧变化根本不由 agent 造成（对手自走） |
 
@@ -40,16 +40,17 @@ $$\text{正向（世界模型）}:\;p(s'\mid s,a)\qquad\longleftrightarrow\qquad
 ## 4. 易混点
 
 - **IDM ≠ 反向模拟器**：IDM 不需要"倒放世界"（那要求可逆动力学）；它只是学一个条件分布，与正向模型是否可逆无关。
-- **IDM ≠ BC**：[BC](/explore/40-Concepts/行为克隆与模仿学习) 学 $$\pi(a\mid s)$$（只看当前，学老师习惯）；IDM 多看一个未来帧（学环境因果）。同一堆数据能干两件事。
-- **软输出才是宝**：用 [交叉熵](/explore/30-Formulas/交叉熵) 训练的 IDM，其总体最优=匹配真后验 $$p(a\mid s,s')$$（交叉熵=KL+熵的恒等式直接给出）——18 维概率向量（[one-hot](/explore/40-Concepts/独热编码（One-Hot）) 动作空间的软形态）本身就是"哪些按键都行"的完整答案，argmax 只是它的一个投影。
+- **IDM ≠ BC**：[BC](/ai-fa/explore/40-Concepts/行为克隆与模仿学习) 学 $$\pi(a\mid s)$$（只看当前，学老师习惯）；IDM 多看一个未来帧（学环境因果）。同一堆数据能干两件事。
+- **软输出才是宝**：用 [交叉熵](/ai-fa/explore/30-Formulas/交叉熵) 训练的 IDM，其总体最优=匹配真后验 $$p(a\mid s,s')$$（交叉熵=KL+熵的恒等式直接给出）——18 维概率向量（[one-hot](/ai-fa/explore/40-Concepts/独热编码（One-Hot）) 动作空间的软形态）本身就是"哪些按键都行"的完整答案，argmax 只是它的一个投影。
 - **逆强化学习（IRL）**：反推的是"奖励"不是"动作"，另一码事。
 
 ## 5. 与库内实体的关系
 
-- ← 地基：[贝叶斯公式](/explore/40-Concepts/贝叶斯公式)与[条件概率](/explore/40-Concepts/条件概率)（后验语言）、[马尔可夫决策过程](/explore/40-Concepts/马尔可夫决策过程)（转移定义因果）
-- → 配套：[行为克隆与模仿学习](/explore/40-Concepts/行为克隆与模仿学习)（镜像零件）、[DAGGER](/explore/10-Papers/03-后处理/A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning（DAGGER）)（分布对齐同源）
-- 论文侧：[LAPA](/explore/10-Papers/09-世界模型与JEPA/Latent Action Pretraining from Videos（LAPA）)/[Genie](/explore/10-Papers/09-世界模型与JEPA/Genie- Generative Interactive Environments（Genie）)（latent action 家族）、[Diffuser](/explore/10-Papers/04-强化学习与对齐/Planning with Diffusion for Flexible Behavior Synthesis（Diffuser）)（目标条件生成的对照路线：不用 IDM、由扩散直接生成动作）
-- 正演对照补记（260914）：[RodForesight](/explore/10-Papers/09-世界模型与JEPA/RodForesight - A World Model Enhanced Diffusion Policy for Slender and Material Agnostic Rod Insertion（杆件插装）)（动作条件 WM 当**正演评估器** p(对齐效果|s,a)——与本概念的反演 p(a|x,goal) 一正一反同构）
-- 表征侧补记（260914）：[VideoTok4D](/explore/10-Papers/09-世界模型与JEPA/VideoTok4D - A 4D-Aware Video Tokenizer for Compact World Representation（4D视频分词器）)（轨迹对齐的 4D 世界 token——IDM 反推的理想潜空间形态候选）
-- 正演对照补记二（260915）：[WAM 挖掘](/explore/10-Papers/09-世界模型与JEPA/From Prediction to Decision - World-Model-Guided Action Selection for Continuous Pile Excavation（挖掘WAM）)（goal 条件扩散提案+冻结 WM 正演排序——"按目标撒候选、用正演挑"以 5 次前向近似一次反演的工程路线，与 RodForesight 同族成对）
-- 光流中介补记（260916）：[CueNav](/explore/10-Papers/09-世界模型与JEPA/Seeing What Matters Visual Cue Guided Video Planning for Generalizable Robot Navigation)（视频规划器生成未来帧→AllTracker 密集光流→embodiment 专用 transformer IDM 回归 15 步动作——**帧对条件的流中介实现**：MSE 点估计、无后验，goal 走规划器不进 IDM 本体；与 WAM 同周构成 imagine-then-act 族的正演/反演对偶）
+- ← 地基：[贝叶斯公式](/ai-fa/explore/40-Concepts/贝叶斯公式)与[条件概率](/ai-fa/explore/40-Concepts/条件概率)（后验语言）、[马尔可夫决策过程](/ai-fa/explore/40-Concepts/马尔可夫决策过程)（转移定义因果）
+- → 配套：[行为克隆与模仿学习](/ai-fa/explore/40-Concepts/行为克隆与模仿学习)（镜像零件）、[DAGGER](/ai-fa/explore/10-Papers/03-后处理/A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning（DAGGER）)（分布对齐同源）
+- 论文侧：[LAPA](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Latent Action Pretraining from Videos（LAPA）)/[Genie](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Genie- Generative Interactive Environments（Genie）)（latent action 家族）、[Diffuser](/ai-fa/explore/10-Papers/04-强化学习与对齐/Planning with Diffusion for Flexible Behavior Synthesis（Diffuser）)（目标条件生成的对照路线：不用 IDM、由扩散直接生成动作）
+- 正演对照补记（260914）：[RodForesight](/ai-fa/explore/10-Papers/09-世界模型与JEPA/RodForesight - A World Model Enhanced Diffusion Policy for Slender and Material Agnostic Rod Insertion（杆件插装）)（动作条件 WM 当**正演评估器** p(对齐效果|s,a)——与本概念的反演 p(a|x,goal) 一正一反同构）
+- 表征侧补记（260914）：[VideoTok4D](/ai-fa/explore/10-Papers/09-世界模型与JEPA/VideoTok4D - A 4D-Aware Video Tokenizer for Compact World Representation（4D视频分词器）)（轨迹对齐的 4D 世界 token——IDM 反推的理想潜空间形态候选）
+- 正演对照补记二（260915）：[WAM 挖掘](/ai-fa/explore/10-Papers/09-世界模型与JEPA/From Prediction to Decision - World-Model-Guided Action Selection for Continuous Pile Excavation（挖掘WAM）)（goal 条件扩散提案+冻结 WM 正演排序——"按目标撒候选、用正演挑"以 5 次前向近似一次反演的工程路线，与 RodForesight 同族成对）
+- 光流中介补记（260916）：[CueNav](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Seeing What Matters Visual Cue Guided Video Planning for Generalizable Robot Navigation)（视频规划器生成未来帧→AllTracker 密集光流→embodiment 专用 transformer IDM 回归 15 步动作——**帧对条件的流中介实现**：MSE 点估计、无后验，goal 走规划器不进 IDM 本体；与 WAM 同周构成 imagine-then-act 族的正演/反演对偶）
+- 查询读出补记（260917）：[ACT-LAM](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Reconstructing Is Not Acting Action-Centric Latent Dynamics Modeling)（LAM 族指认**重构-动作失配**：重构误差更低≠潜动作更好；其 AQ-IDM 用可学习动作查询+门控聚合选择性读出动作线索——**帧对条件的查询读出实现**：连续潜动作点估计、无后验、无 goal 条件，DINOv2 潜空间非像素扩散；IDM 设计从"信息瓶颈逼动作相关"转向"选择性读出"的范式信号，E2 引用矩阵 IDM 设计轴新增支线）

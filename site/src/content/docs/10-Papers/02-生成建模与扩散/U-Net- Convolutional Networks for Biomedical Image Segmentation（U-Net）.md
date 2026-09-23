@@ -35,19 +35,19 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- 结构性贡献（无核心数学公式）；扩散用法见 [DDPM训练目标](/explore/30-Formulas/DDPM训练目标)（$$\epsilon_\theta$$ 的载体）
+- 结构性贡献（无核心数学公式）；扩散用法见 [DDPM训练目标](/ai-fa/explore/30-Formulas/DDPM训练目标)（$$\epsilon_\theta$$ 的载体）
 
 ## 5. 与前作的关系
 
 - 改进了 [全卷积网络 FCN]：加对称解码器与稠密跳跃
-- 被 [Denoising Diffusion Probabilistic Models](/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Probabilistic Models（DDPM）) 采纳为噪声预测骨干（历史偶然成就经典复用）
+- 被 [Denoising Diffusion Probabilistic Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Probabilistic Models（DDPM）) 采纳为噪声预测骨干（历史偶然成就经典复用）
 
 ## 6. 影响与后续
 
-- 扩散时代前 7 年标准骨干（DDPM/[LDM](/explore/10-Papers/02-生成建模与扩散/High-Resolution Image Synthesis with Latent Diffusion Models（LDM）)/SD1.x/SDXL）
-- 被 [DiT](/explore/10-Papers/02-生成建模与扩散/Scalable Diffusion Models with Transformers（DiT）) 取代（Transformer 化浪潮）
+- 扩散时代前 7 年标准骨干（DDPM/[LDM](/ai-fa/explore/10-Papers/02-生成建模与扩散/High-Resolution Image Synthesis with Latent Diffusion Models（LDM）)/SD1.x/SDXL）
+- 被 [DiT](/ai-fa/explore/10-Papers/02-生成建模与扩散/Scalable Diffusion Models with Transformers（DiT）) 取代（Transformer 化浪潮）
 - 医学影像领域至今仍是基准
 
 ## 7. 读前须知
 
-无前置数学要求；扩散语境下配合 [扩散模型](/explore/20-Algorithms/扩散模型) 阅读
+无前置数学要求；扩散语境下配合 [扩散模型](/ai-fa/explore/20-Algorithms/扩散模型) 阅读

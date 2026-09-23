@@ -33,12 +33,12 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- 组件复用：[状态空间模型方程](/explore/30-Formulas/状态空间模型方程)（Mamba 层）+ [注意力核心公式](/explore/30-Formulas/注意力核心公式)（注意力层）+ [MoE门控公式](/explore/30-Formulas/MoE门控公式)（FFN）
+- 组件复用：[状态空间模型方程](/ai-fa/explore/30-Formulas/状态空间模型方程)（Mamba 层）+ [注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)（注意力层）+ [MoE门控公式](/ai-fa/explore/30-Formulas/MoE门控公式)（FFN）
 - 贡献在**组合配比**而非新公式
 
 ## 5. 与前作的关系
 
-- 组合了 [Mamba - Linear-Time Sequence Modeling with Selective State Spaces](/explore/10-Papers/01-架构演进/Mamba- Linear-Time Sequence Modeling with Selective State Spaces（Mamba）)（作者自家）与标准 Transformer/MoE 组件
+- 组合了 [Mamba - Linear-Time Sequence Modeling with Selective State Spaces](/ai-fa/explore/10-Papers/01-架构演进/Mamba- Linear-Time Sequence Modeling with Selective State Spaces（Mamba）)（作者自家）与标准 Transformer/MoE 组件
 - 实用主义回应"架构之争"：不选边、混着用
 
 ## 6. 影响与后续
@@ -48,4 +48,4 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[状态空间模型方程](/explore/30-Formulas/状态空间模型方程)、[MoE门控公式](/explore/30-Formulas/MoE门控公式)、[Mamba - Linear-Time Sequence Modeling with Selective State Spaces](/explore/10-Papers/01-架构演进/Mamba- Linear-Time Sequence Modeling with Selective State Spaces（Mamba）)
+[状态空间模型方程](/ai-fa/explore/30-Formulas/状态空间模型方程)、[MoE门控公式](/ai-fa/explore/30-Formulas/MoE门控公式)、[Mamba - Linear-Time Sequence Modeling with Selective State Spaces](/ai-fa/explore/10-Papers/01-架构演进/Mamba- Linear-Time Sequence Modeling with Selective State Spaces（Mamba）)

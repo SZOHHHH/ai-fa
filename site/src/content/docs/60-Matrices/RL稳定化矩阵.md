@@ -23,9 +23,9 @@ updated: 2026-08-17
 
 | 基座 \ 机制   | 硬裁剪                           | 软门控                                                                         | KL 锚                           | 组基线                            | 序列级比率                                                                   |
 | --------- | ----------------------------- | --------------------------------------------------------------------------- | ------------------------------ | ------------------------------ | ----------------------------------------------------------------------- |
-| **PPO**   | [PPO裁剪目标](/explore/30-Formulas/PPO裁剪目标)（2017） | [Soft Adaptive Policy Optimization](/explore/10-Papers/04-强化学习与对齐/Soft Adaptive Policy Optimization（SAPO）)（软门控版，2025） | RLHF 目标配 PPO                   | —                              | [Group Sequence Policy Optimization](/explore/10-Papers/04-强化学习与对齐/Group Sequence Policy Optimization（GSPO）)（2025） |
-| **GRPO**  | [GRPO目标](/explore/30-Formulas/GRPO目标)（继承裁剪）  | SAPO（组+软门控，Qwen 3.5）                                                        | GRPO 自带                        | [GRPO目标](/explore/30-Formulas/GRPO目标)（组均值即基线） | GSPO（组+序列）                                                              |
-| **DPO 系** | —（无采样无裁剪）                     | —                                                                           | β 隐式 KL（[DPO损失](/explore/30-Formulas/DPO损失)） | —                              | SimPO 的长度归一近亲                                                           |
+| **PPO**   | [PPO裁剪目标](/ai-fa/explore/30-Formulas/PPO裁剪目标)（2017） | [Soft Adaptive Policy Optimization](/ai-fa/explore/10-Papers/04-强化学习与对齐/Soft Adaptive Policy Optimization（SAPO）)（软门控版，2025） | RLHF 目标配 PPO                   | —                              | [Group Sequence Policy Optimization](/ai-fa/explore/10-Papers/04-强化学习与对齐/Group Sequence Policy Optimization（GSPO）)（2025） |
+| **GRPO**  | [GRPO目标](/ai-fa/explore/30-Formulas/GRPO目标)（继承裁剪）  | SAPO（组+软门控，Qwen 3.5）                                                        | GRPO 自带                        | [GRPO目标](/ai-fa/explore/30-Formulas/GRPO目标)（组均值即基线） | GSPO（组+序列）                                                              |
+| **DPO 系** | —（无采样无裁剪）                     | —                                                                           | β 隐式 KL（[DPO损失](/ai-fa/explore/30-Formulas/DPO损失)） | —                              | SimPO 的长度归一近亲                                                           |
 
 ## 3. 格评估（B14 占位层更新：🚩=已占位）
 
@@ -33,10 +33,10 @@ updated: 2026-08-17
 |---|---|---|
 | PPO×软门控 | 3/5/3/3 | SAPO 已占；纯"软化"的 novelty 窗口已关 |
 | GRPO×软门控 | 4/5/3/4 | SAPO 覆盖（生产验证），学术空间在理论解释 |
-| **序列级比率×理论分析** | 4/4/4/4 | 🚩 **部分被占（B14）**：[Clip Your Sequences Fairly- Enforcing Length Fairness for Sequence-Level RL](/explore/10-Papers/04-强化学习与对齐/Clip Your Sequences Fairly- Enforcing Length Fairness for Sequence-Level RL（LF-clip）)（2509.09177）已做 GSPO 裁剪的覆盖偏置理论——"为什么几何平均好"的正面理论仍薄，但最近邻已被踩 |
-| **优势估计×过程信号**（PRM×GRPO） | 5/4/4/5 | 🚩🚩🚩 **已被合围占死（B14 核查）**：[GRPO is Secretly a Process Reward Model](/explore/10-Papers/04-强化学习与对齐/GRPO is Secretly a Process Reward Model（GRPO-PRM）)（理论侧：证明 GRPO 隐式就是 PRM + 频率偏置定理，**ICML 2026 已中**）+ [PRPO- Aligning Process Reward with Outcome Reward in Policy Optimization](/explore/10-Papers/04-强化学习与对齐/PRPO- Aligning Process Reward with Outcome Reward in Policy Optimization（PRPO）)（机制侧：过程×结果混合优势的具体形式）+ [Self-Guided Process Reward Optimization with Redefined Step-wise Advantage for Process Reinforcement Learning](/explore/10-Papers/04-强化学习与对齐/Self-Guided Process Reward Optimization with Redefined Step-wise Advantage for Process Reinforcement Learning（SPRO）)（免标注步级优势）——**B9 榜首格关闭**。残留：频率偏置修复等次生问题（GRPO-PRM 论文自己留的口子） |
+| **序列级比率×理论分析** | 4/4/4/4 | 🚩 **部分被占（B14）**：[Clip Your Sequences Fairly- Enforcing Length Fairness for Sequence-Level RL](/ai-fa/explore/10-Papers/04-强化学习与对齐/Clip Your Sequences Fairly- Enforcing Length Fairness for Sequence-Level RL（LF-clip）)（2509.09177）已做 GSPO 裁剪的覆盖偏置理论——"为什么几何平均好"的正面理论仍薄，但最近邻已被踩 |
+| **优势估计×过程信号**（PRM×GRPO） | 5/4/4/5 | 🚩🚩🚩 **已被合围占死（B14 核查）**：[GRPO is Secretly a Process Reward Model](/ai-fa/explore/10-Papers/04-强化学习与对齐/GRPO is Secretly a Process Reward Model（GRPO-PRM）)（理论侧：证明 GRPO 隐式就是 PRM + 频率偏置定理，**ICML 2026 已中**）+ [PRPO- Aligning Process Reward with Outcome Reward in Policy Optimization](/ai-fa/explore/10-Papers/04-强化学习与对齐/PRPO- Aligning Process Reward with Outcome Reward in Policy Optimization（PRPO）)（机制侧：过程×结果混合优势的具体形式）+ [Self-Guided Process Reward Optimization with Redefined Step-wise Advantage for Process Reinforcement Learning](/ai-fa/explore/10-Papers/04-强化学习与对齐/Self-Guided Process Reward Optimization with Redefined Step-wise Advantage for Process Reinforcement Learning（SPRO）)（免标注步级优势）——**B9 榜首格关闭**。残留：频率偏置修复等次生问题（GRPO-PRM 论文自己留的口子） |
 | DPO×在线采样（混合范式） | 4/4/3/4 | 迭代 DPO/在线 DPO 线活跃（部分占据），novelty 需在"何时在线/离线切换"的理论 |
-| （B14 新）GRPO 偏置修正 | — | 🚩 [DAPO- An Open-Source LLM Reinforcement Learning System at Scale](/explore/10-Papers/04-强化学习与对齐/DAPO- An Open-Source LLM Reinforcement Learning System at Scale（DAPO）)（四件套工业化）+ [Understanding R1-Zero-Like Training- A Critical Perspective](/explore/10-Papers/04-强化学习与对齐/Understanding R1-Zero-Like Training- A Critical Perspective（Dr.GRPO）)（去长度/std 偏置）——**B8 遗留补卡**；裁剪半径自适应：[DCPO- Dynamic Clipping Policy Optimization](/explore/10-Papers/04-强化学习与对齐/DCPO- Dynamic Clipping Policy Optimization（DCPO）) |
+| （B14 新）GRPO 偏置修正 | — | 🚩 [DAPO- An Open-Source LLM Reinforcement Learning System at Scale](/ai-fa/explore/10-Papers/04-强化学习与对齐/DAPO- An Open-Source LLM Reinforcement Learning System at Scale（DAPO）)（四件套工业化）+ [Understanding R1-Zero-Like Training- A Critical Perspective](/ai-fa/explore/10-Papers/04-强化学习与对齐/Understanding R1-Zero-Like Training- A Critical Perspective（Dr.GRPO）)（去长度/std 偏置）——**B8 遗留补卡**；裁剪半径自适应：[DCPO- Dynamic Clipping Policy Optimization](/ai-fa/explore/10-Papers/04-强化学习与对齐/DCPO- Dynamic Clipping Policy Optimization（DCPO）) |
 
 ## 4. 矩阵洞察
 
@@ -49,6 +49,6 @@ updated: 2026-08-17
 - ~~DAPO/Dr.GRPO 补卡~~ ✅ B14 已清（含 GRPO-PRM/SPRO/PRPO/LF-clip/DCPO 共 7 篇占位层）
 - 矩阵 Canvas 视图待生成
 
-> 姊妹矩阵：[偏好优化矩阵](/explore/60-Matrices/偏好优化矩阵) · [推理增强矩阵](/explore/60-Matrices/推理增强矩阵)
+> 姊妹矩阵：[偏好优化矩阵](/ai-fa/explore/60-Matrices/偏好优化矩阵) · [推理增强矩阵](/ai-fa/explore/60-Matrices/推理增强矩阵)
 
 > 全景定位：本矩阵格况见 全景机会格图（12 矩阵汇总）

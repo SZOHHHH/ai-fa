@@ -51,8 +51,8 @@ undefined
 
 ---
 
-> 谱系枢纽：[Attention Is All You Need](/explore/10-Papers/01-架构演进/Attention Is All You Need（Transformer）)（图谱连通入口）
+> 谱系枢纽：[Attention Is All You Need](/ai-fa/explore/10-Papers/01-架构演进/Attention Is All You Need（Transformer）)（图谱连通入口）
 
-> 近邻同族：[An Image is Worth 16x16 Words - Transformers for Image Recognition at Scale](/explore/10-Papers/01-架构演进/An Image is Worth 16x16 Words- Transformers for Image Recognition at Scale（ViT）)
+> 近邻同族：[An Image is Worth 16x16 Words - Transformers for Image Recognition at Scale](/ai-fa/explore/10-Papers/01-架构演进/An Image is Worth 16x16 Words- Transformers for Image Recognition at Scale（ViT）)
 
-> 数学根基：[量化](/explore/40-Concepts/量化) · [注意力核心公式](/explore/30-Formulas/注意力核心公式)
+> 数学根基：[量化](/ai-fa/explore/40-Concepts/量化) · [注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)

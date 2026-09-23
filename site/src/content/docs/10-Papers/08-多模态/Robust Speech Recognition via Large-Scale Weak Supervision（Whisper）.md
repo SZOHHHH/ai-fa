@@ -38,7 +38,7 @@ pdf: 已下载（PDF/）
 ## 5. 与前作的关系
 
 - 反潮流：同期 ASR 界在卷自监督（wav2vec 2.0 系），Whisper 回到"监督+规模"
-- 数据哲学同 [Scaling Up Visual and Vision-Language Representation Learning With Noisy Text Supervision](/explore/10-Papers/08-多模态/Scaling Up Visual and Vision-Language Representation Learning With Noisy Text Supervision（ALIGN）)：噪声规模 > 精洗小数据
+- 数据哲学同 [Scaling Up Visual and Vision-Language Representation Learning With Noisy Text Supervision](/ai-fa/explore/10-Papers/08-多模态/Scaling Up Visual and Vision-Language Representation Learning With Noisy Text Supervision（ALIGN）)：噪声规模 > 精洗小数据
 
 ## 6. 影响与后续
 
@@ -47,10 +47,10 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[Transformer](/explore/20-Algorithms/Transformer)（encoder-decoder 复习）、[Attention Is All You Need](/explore/10-Papers/01-架构演进/Attention Is All You Need（Transformer）)
+[Transformer](/ai-fa/explore/20-Algorithms/Transformer)（encoder-decoder 复习）、[Attention Is All You Need](/ai-fa/explore/10-Papers/01-架构演进/Attention Is All You Need（Transformer）)
 
-> 近邻同族：[BLIP-2 - Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models](/explore/10-Papers/08-多模态/BLIP-2- Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Lan（BLIP-2）) · [Chameleon - Mixed-Modal Early-Fusion Foundation Models](/explore/10-Papers/08-多模态/Chameleon- Mixed-Modal Early-Fusion Foundation Models（Chameleon）)
+> 近邻同族：[BLIP-2 - Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models](/ai-fa/explore/10-Papers/08-多模态/BLIP-2- Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Lan（BLIP-2）) · [Chameleon - Mixed-Modal Early-Fusion Foundation Models](/ai-fa/explore/10-Papers/08-多模态/Chameleon- Mixed-Modal Early-Fusion Foundation Models（Chameleon）)
 
-> 数学根基：[视觉语言模型（VLM）](/explore/40-Concepts/视觉语言模型（VLM）)
+> 数学根基：[视觉语言模型（VLM）](/ai-fa/explore/40-Concepts/视觉语言模型（VLM）)
 
-> 数学根基：[注意力核心公式](/explore/30-Formulas/注意力核心公式) · [CLIP对比损失](/explore/30-Formulas/CLIP对比损失)
+> 数学根基：[注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式) · [CLIP对比损失](/ai-fa/explore/30-Formulas/CLIP对比损失)

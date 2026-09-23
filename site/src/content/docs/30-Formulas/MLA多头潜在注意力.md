@@ -26,9 +26,9 @@ $$q_t = W^{UQ} c_t^{Q}, \quad q_t^{R} = W^{QR} h_t \quad (\text{位置分量单�
 | 表示名 | Cache 体积（相对 MHA） | 出处 | 说明 |
 |---|---|---|---|
 | MHA | 100% | Transformer 2017 | 基准 |
-| MQA | $$1/h$$（如 1/32） | [Efficiently Scaling Transformer Inference](/explore/10-Papers/01-架构演进/Efficiently Scaling Transformer Inference（MQA）) | 最省但质量略降 |
-| GQA | $$g/h$$（如 8/32） | [GQA - Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints](/explore/10-Papers/01-架构演进/GQA- Training Generalized Multi-Query Transformer Models from Multi-Head Checkoffs（GQA）) | 质量/成本甜点（LLaMA-2/3 采用） |
-| **MLA** | ≈ 低秩比（$$d_c/d$$，可低至 ~10%）+ 解耦项 | [DeepSeek-V2 - A Strong, Economical, and Efficient Mixture-of-Experts Language Model](/explore/10-Papers/01-架构演进/DeepSeek-V2- A Strong, Economical, and Efficient Mixture-of-Experts Language Model（MLA）) | 质量不降反升（等效大 KV 表达） |
+| MQA | $$1/h$$（如 1/32） | [Efficiently Scaling Transformer Inference](/ai-fa/explore/10-Papers/01-架构演进/Efficiently Scaling Transformer Inference（MQA）) | 最省但质量略降 |
+| GQA | $$g/h$$（如 8/32） | [GQA - Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints](/ai-fa/explore/10-Papers/01-架构演进/GQA- Training Generalized Multi-Query Transformer Models from Multi-Head Checkoffs（GQA）) | 质量/成本甜点（LLaMA-2/3 采用） |
+| **MLA** | ≈ 低秩比（$$d_c/d$$，可低至 ~10%）+ 解耦项 | [DeepSeek-V2 - A Strong, Economical, and Efficient Mixture-of-Experts Language Model](/ai-fa/explore/10-Papers/01-架构演进/DeepSeek-V2- A Strong, Economical, and Efficient Mixture-of-Experts Language Model（MLA）) | 质量不降反升（等效大 KV 表达） |
 
 ## 3. 直觉解释
 
@@ -41,18 +41,18 @@ $$q_t = W^{UQ} c_t^{Q}, \quad q_t^{R} = W^{QR} h_t \quad (\text{位置分量单�
 
 | 论文 | 贡献 |
 |---|---|
-| [DeepSeek-V2 - A Strong, Economical, and Efficient Mixture-of-Experts Language Model](/explore/10-Papers/01-架构演进/DeepSeek-V2- A Strong, Economical, and Efficient Mixture-of-Experts Language Model（MLA）) | 提出（DeepSeek-V2/V3/R1 全系采用） |
+| [DeepSeek-V2 - A Strong, Economical, and Efficient Mixture-of-Experts Language Model](/ai-fa/explore/10-Papers/01-架构演进/DeepSeek-V2- A Strong, Economical, and Efficient Mixture-of-Experts Language Model（MLA）) | 提出（DeepSeek-V2/V3/R1 全系采用） |
 
 ## 5. 数学概念分解
 
-- [注意力机制](/explore/40-Concepts/注意力机制)：母结构
-- [KV缓存](/explore/40-Concepts/KV缓存)：优化目标
-- [RoPE旋转位置编码](/explore/30-Formulas/RoPE旋转位置编码)：解耦的原因
-- [位置编码](/explore/40-Concepts/位置编码)：位置与压缩的冲突
+- [注意力机制](/ai-fa/explore/40-Concepts/注意力机制)：母结构
+- [KV缓存](/ai-fa/explore/40-Concepts/KV缓存)：优化目标
+- [RoPE旋转位置编码](/ai-fa/explore/30-Formulas/RoPE旋转位置编码)：解耦的原因
+- [位置编码](/ai-fa/explore/40-Concepts/位置编码)：位置与压缩的冲突
 
 ## 6. 与其他公式的关系
 
-- → **改进自** [注意力机制](/explore/40-Concepts/注意力机制) 的 KV 路线（MHA→MQA→GQA→MLA）
-- → **组合** [RoPE旋转位置编码](/explore/30-Formulas/RoPE旋转位置编码)（解耦设计）
+- → **改进自** [注意力机制](/ai-fa/explore/40-Concepts/注意力机制) 的 KV 路线（MHA→MQA→GQA→MLA）
+- → **组合** [RoPE旋转位置编码](/ai-fa/explore/30-Formulas/RoPE旋转位置编码)（解耦设计）
 - 精神同源 LoRA（线 3 建链后回填）：低秩分解双向应用
-- 与 [混合专家（MoE）](/explore/20-Algorithms/混合专家（MoE）) 并列：DeepSeek 系"省显存两大件"（MLA 省 KV cache、MoE 省激活 FLOPs）
+- 与 [混合专家（MoE）](/ai-fa/explore/20-Algorithms/混合专家（MoE）) 并列：DeepSeek 系"省显存两大件"（MLA 省 KV cache、MoE 省激活 FLOPs）

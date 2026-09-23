@@ -16,7 +16,7 @@ tags: [paper]
 
 ## 1. 一句话贡献
 
-开源旗舰的完整披露：405B/70B/8B 三档，15T token，系统化的 scaling 后训练（SFT+[DPO](/explore/10-Papers/04-强化学习与对齐/Direct Preference Optimization- Your Language Model is Secretly a Reward Model（DPO）)+RLHF 三阶段）+ 多语言/长上下文/工具使用全能力。
+开源旗舰的完整披露：405B/70B/8B 三档，15T token，系统化的 scaling 后训练（SFT+[DPO](/ai-fa/explore/10-Papers/04-强化学习与对齐/Direct Preference Optimization- Your Language Model is Secretly a Reward Model（DPO）)+RLHF 三阶段）+ 多语言/长上下文/工具使用全能力。
 
 ## 2. 核心贡献
 
@@ -34,7 +34,7 @@ $$
 $$
 
 
-**直觉**：← [Training Compute-Optimal Large Language Models](/explore/10-Papers/10-标杆锚点/Training Compute-Optimal Large Language Models（Chinchilla）)（算力最优比）的实践版；→ Qwen/DeepSeek 系技术报告同格式——线10 锚点家族
+**直觉**：← [Training Compute-Optimal Large Language Models](/ai-fa/explore/10-Papers/10-标杆锚点/Training Compute-Optimal Large Language Models（Chinchilla）)（算力最优比）的实践版；→ Qwen/DeepSeek 系技术报告同格式——线10 锚点家族
 
 ## 5. 与前作/矩阵关系
 
@@ -48,8 +48,8 @@ $$
 
 undefined
 
-> 近邻同族：[Gemini 1.5- Unlocking Multimodal Understanding Across Millions of Tokens of Context](/explore/10-Papers/10-标杆锚点/Gemini 1.5- Unlocking Multimodal Understanding Across Millions of Tokens of Context（Gemini 1.5）) · [Large Language Models- A Survey](/explore/10-Papers/10-标杆锚点/Large Language Models- A Survey（LLM Survey 2024）)
+> 近邻同族：[Gemini 1.5- Unlocking Multimodal Understanding Across Millions of Tokens of Context](/ai-fa/explore/10-Papers/10-标杆锚点/Gemini 1.5- Unlocking Multimodal Understanding Across Millions of Tokens of Context（Gemini 1.5）) · [Large Language Models- A Survey](/ai-fa/explore/10-Papers/10-标杆锚点/Large Language Models- A Survey（LLM Survey 2024）)
 
-> 数学根基：[注意力机制](/explore/40-Concepts/注意力机制)
+> 数学根基：[注意力机制](/ai-fa/explore/40-Concepts/注意力机制)
 
-> 数学根基：[注意力核心公式](/explore/30-Formulas/注意力核心公式)
+> 数学根基：[注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)

@@ -45,6 +45,7 @@ GPU + 深层 CNN + 大数据 = ImageNet 错误率骤降 10 个点——深度学
 ## 6. 影响与后续
 
 - 直接开启 CV 深度学习时代 → VGG → [[10-Papers/01-架构演进/Deep Residual Learning for Image Recognition（ResNet）]]
+- 算法实体：本文是 [[20-Algorithms/CNN]] 深度化引爆点（ReLU+GPU+dropout 三件套，详见 [[40-Concepts/ReLU]]）
 - "GPU 训练"范式确立——算力从此成为第一生产力
 - 作者 Sutskever 后为 OpenAI 联创——血脉延续到 GPT 系
 

@@ -28,7 +28,7 @@ $$\Pi(P,Q)$$ 是所有"边缘分布分别为 P、Q 的联合分布"（传输方�
 
 - **Kantorovich–Rubinstein 对偶**（WGAN 全靠它）：
 $$W(P, Q) = \sup_{\|f\|_{L} \le 1} \left| \mathbb{E}_{x\sim P}[f(x)] - \mathbb{E}_{y\sim Q}[f(y)] \right|$$
-上确界在所有 1-[Lipschitz连续](/explore/40-Concepts/Lipschitz连续) 函数 $$f$$ 上取。$$f$$ 就是 WGAN 的**critic**——把"算距离"变成"学一个函数"。
+上确界在所有 1-[Lipschitz连续](/ai-fa/explore/40-Concepts/Lipschitz连续) 函数 $$f$$ 上取。$$f$$ 就是 WGAN 的**critic**——把"算距离"变成"学一个函数"。
 - **梯度可用**：对偶形式光滑可导，训练稳定
 - **WGAN 训练**：critic 最大化差值（学距离），生成器最小化被 critic 量出的距离
 
@@ -36,9 +36,9 @@ $$W(P, Q) = \sup_{\|f\|_{L} \le 1} \left| \mathbb{E}_{x\sim P}[f(x)] - \mathbb{E
 
 | 出现场景 | 用法 |
 |---|---|
-| [Wasserstein GAN](/explore/10-Papers/02-生成建模与扩散/Wasserstein GAN（WGAN）) | 把 GAN 的 JS 散度换成 W 距离，解决梯度消失与不稳定 |
-| [流匹配](/explore/20-Algorithms/流匹配) | 理论上 FM 目标是 Wasserstein 泛函的变分形式（连通最优传输） |
-| 最优传输 | 大师理论：Monge / Kantorovich 问题，[矩形流](/explore/20-Algorithms/矩形流) 的"直线路径"即 OT 最优 |
+| [Wasserstein GAN](/ai-fa/explore/10-Papers/02-生成建模与扩散/Wasserstein GAN（WGAN）) | 把 GAN 的 JS 散度换成 W 距离，解决梯度消失与不稳定 |
+| [流匹配](/ai-fa/explore/20-Algorithms/流匹配) | 理论上 FM 目标是 Wasserstein 泛函的变分形式（连通最优传输） |
+| 最优传输 | 大师理论：Monge / Kantorovich 问题，[矩形流](/ai-fa/explore/20-Algorithms/矩形流) 的"直线路径"即 OT 最优 |
 
 ## 4. 常见误区
 
@@ -48,7 +48,7 @@ $$W(P, Q) = \sup_{\|f\|_{L} \le 1} \left| \mathbb{E}_{x\sim P}[f(x)] - \mathbb{E
 
 ## 5. 相关概念
 
-- [KL散度](/explore/40-Concepts/KL散度)：另一种分布距离，各有优劣
-- [Lipschitz连续](/explore/40-Concepts/Lipschitz连续)：对偶形式里的约束
-- [概率分布](/explore/40-Concepts/概率分布)：距离的作用对象
-- [范数](/explore/40-Concepts/范数)：搬运代价里的距离定义
+- [KL散度](/ai-fa/explore/40-Concepts/KL散度)：另一种分布距离，各有优劣
+- [Lipschitz连续](/ai-fa/explore/40-Concepts/Lipschitz连续)：对偶形式里的约束
+- [概率分布](/ai-fa/explore/40-Concepts/概率分布)：距离的作用对象
+- [范数](/ai-fa/explore/40-Concepts/范数)：搬运代价里的距离定义

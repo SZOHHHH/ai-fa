@@ -38,7 +38,7 @@ $$
 
 ## 5. 与前作/矩阵关系
 
-🚩🚩 占 [生成建模范式矩阵](/explore/60-Matrices/生成建模范式矩阵)"流×离散码本"机会格——**该格已被占，全景图排行榜第 2 名需降级**
+🚩🚩 占 [生成建模范式矩阵](/ai-fa/explore/60-Matrices/生成建模范式矩阵)"流×离散码本"机会格——**该格已被占，全景图排行榜第 2 名需降级**
 
 
 ## 6. 影响与占位意义
@@ -47,10 +47,10 @@ $$
 
 ---
 
-> 谱系枢纽：[Denoising Diffusion Probabilistic Models](/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Probabilistic Models（DDPM）)（图谱连通入口）
-> 近邻同族：[Align Your Flow - Scaling Continuous-Time Flow Map Distillation](/explore/10-Papers/02-生成建模与扩散/Align Your Flow- Scaling Continuous-Time Flow Map Distillation（AYF）) · [Analyzing and Improving the Image Quality of StyleGAN](/explore/10-Papers/02-生成建模与扩散/Analyzing and Improving the Image Quality of StyleGAN（StyleGAN2）)
-> 数学根基（占位层）：[概率分布](/explore/40-Concepts/概率分布)
-> 数学根基：[蒸馏损失](/explore/30-Formulas/蒸馏损失) · [DSM目标](/explore/30-Formulas/DSM目标)
+> 谱系枢纽：[Denoising Diffusion Probabilistic Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Probabilistic Models（DDPM）)（图谱连通入口）
+> 近邻同族：[Align Your Flow - Scaling Continuous-Time Flow Map Distillation](/ai-fa/explore/10-Papers/02-生成建模与扩散/Align Your Flow- Scaling Continuous-Time Flow Map Distillation（AYF）) · [Analyzing and Improving the Image Quality of StyleGAN](/ai-fa/explore/10-Papers/02-生成建模与扩散/Analyzing and Improving the Image Quality of StyleGAN（StyleGAN2）)
+> 数学根基（占位层）：[概率分布](/ai-fa/explore/40-Concepts/概率分布)
+> 数学根基：[蒸馏损失](/ai-fa/explore/30-Formulas/蒸馏损失) · [DSM目标](/ai-fa/explore/30-Formulas/DSM目标)
 
 ## 7. 读前须知
 

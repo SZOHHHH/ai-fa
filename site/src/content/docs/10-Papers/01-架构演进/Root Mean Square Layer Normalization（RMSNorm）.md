@@ -33,7 +33,7 @@ LayerNorm 砍掉均值中心化、只按均方根缩放——更快更省、效�
 
 ## 4. 核心公式
 
-- 如上——本质是 [范数](/explore/40-Concepts/范数)（均方根缩放）+ [梯度](/explore/40-Concepts/梯度)（重新参数化的稳定化效应）
+- 如上——本质是 [范数](/ai-fa/explore/40-Concepts/范数)（均方根缩放）+ [梯度](/ai-fa/explore/40-Concepts/梯度)（重新参数化的稳定化效应）
 
 ## 5. 与前作的关系
 
@@ -48,6 +48,6 @@ LayerNorm 砍掉均值中心化、只按均方根缩放——更快更省、效�
 
 ## 7. 读前须知
 
-[范数](/explore/40-Concepts/范数)、[Transformer](/explore/20-Algorithms/Transformer)（归一化位置）
+[范数](/ai-fa/explore/40-Concepts/范数)、[Transformer](/ai-fa/explore/20-Algorithms/Transformer)（归一化位置）
 
-> 数学根基：[批归一化](/explore/30-Formulas/批归一化) · [层归一化](/explore/30-Formulas/层归一化) · [均方根归一化](/explore/30-Formulas/均方根归一化)
+> 数学根基：[批归一化](/ai-fa/explore/30-Formulas/批归一化) · [层归一化](/ai-fa/explore/30-Formulas/层归一化) · [均方根归一化](/ai-fa/explore/30-Formulas/均方根归一化)

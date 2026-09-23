@@ -34,11 +34,11 @@ $$
 $$
 
 
-**直觉**：→ [Qwen2.5-Math Technical Report- Toward Mathematical Expert Model via Self-Improvement](/explore/10-Papers/07-推理模型/Qwen2.5-Math Technical Report- Toward Mathematical Expert Model via Self-Improvement（Qwen2.5-Math）)（本批单卡）/Qwen3（OPD 实验基座）——Qwen 谱系的枢纽
+**直觉**：→ [Qwen2.5-Math Technical Report- Toward Mathematical Expert Model via Self-Improvement](/ai-fa/explore/10-Papers/07-推理模型/Qwen2.5-Math Technical Report- Toward Mathematical Expert Model via Self-Improvement（Qwen2.5-Math）)（本批单卡）/Qwen3（OPD 实验基座）——Qwen 谱系的枢纽
 
 ## 5. 与前作/矩阵关系
 
-OPD/RLVR 实验的标准基座家族（[EOPD](/explore/10-Papers/04-强化学习与对齐/Entropy-Aware On-Policy Distillation of Language Models（EOPD）) 用 Qwen3，[PRIME](/explore/10-Papers/04-强化学习与对齐/Process Reinforcement through Implicit Rewards（PRIME）) 用 Qwen2.5-Math）
+OPD/RLVR 实验的标准基座家族（[EOPD](/ai-fa/explore/10-Papers/04-强化学习与对齐/Entropy-Aware On-Policy Distillation of Language Models（EOPD）) 用 Qwen3，[PRIME](/ai-fa/explore/10-Papers/04-强化学习与对齐/Process Reinforcement through Implicit Rewards（PRIME）) 用 Qwen2.5-Math）
 
 ## 6. 影响后续
 
@@ -48,8 +48,8 @@ OPD/RLVR 实验的标准基座家族（[EOPD](/explore/10-Papers/04-强化学习
 
 undefined
 
-> 近邻同族：[Gemini 1.5- Unlocking Multimodal Understanding Across Millions of Tokens of Context](/explore/10-Papers/10-标杆锚点/Gemini 1.5- Unlocking Multimodal Understanding Across Millions of Tokens of Context（Gemini 1.5）) · [Large Language Models- A Survey](/explore/10-Papers/10-标杆锚点/Large Language Models- A Survey（LLM Survey 2024）)
+> 近邻同族：[Gemini 1.5- Unlocking Multimodal Understanding Across Millions of Tokens of Context](/ai-fa/explore/10-Papers/10-标杆锚点/Gemini 1.5- Unlocking Multimodal Understanding Across Millions of Tokens of Context（Gemini 1.5）) · [Large Language Models- A Survey](/ai-fa/explore/10-Papers/10-标杆锚点/Large Language Models- A Survey（LLM Survey 2024）)
 
-> 数学根基：[注意力机制](/explore/40-Concepts/注意力机制)
+> 数学根基：[注意力机制](/ai-fa/explore/40-Concepts/注意力机制)
 
-> 数学根基：[注意力核心公式](/explore/30-Formulas/注意力核心公式)
+> 数学根基：[注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)

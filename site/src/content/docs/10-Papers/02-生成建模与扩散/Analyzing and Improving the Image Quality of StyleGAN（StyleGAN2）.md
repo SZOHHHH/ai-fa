@@ -34,7 +34,7 @@ $$
 
 ## 4. 核心公式
 
-← [GAN](/explore/10-Papers/02-生成建模与扩散/Generative Adversarial Networks（GAN）)/[WGAN](/explore/10-Papers/02-生成建模与扩散/Wasserstein GAN（WGAN）) 谱系；生成建模范式矩阵"对抗×潜空间"格从此有主
+← [GAN](/ai-fa/explore/10-Papers/02-生成建模与扩散/Generative Adversarial Networks（GAN）)/[WGAN](/ai-fa/explore/10-Papers/02-生成建模与扩散/Wasserstein GAN（WGAN）) 谱系；生成建模范式矩阵"对抗×潜空间"格从此有主
 
 **直觉**：占位层公式为结构示意，精读原文后应校正为论文最终形式并补逐项解释。
 
@@ -47,8 +47,8 @@ B18 奠基补齐：对抗潜空间支线（该格此前空置）。
 
 undefined
 
-> 近邻同族：[Generative Adversarial Networks](/explore/10-Papers/02-生成建模与扩散/Generative Adversarial Networks（GAN）) · [Improved Training of Wasserstein GANs](/explore/10-Papers/02-生成建模与扩散/Improved Training of Wasserstein GANs（WGAN-GP）)
-> 数学根基（占位层）：[GAN目标](/explore/30-Formulas/GAN目标) · [谱归一化](/explore/30-Formulas/谱归一化)
+> 近邻同族：[Generative Adversarial Networks](/ai-fa/explore/10-Papers/02-生成建模与扩散/Generative Adversarial Networks（GAN）) · [Improved Training of Wasserstein GANs](/ai-fa/explore/10-Papers/02-生成建模与扩散/Improved Training of Wasserstein GANs（WGAN-GP）)
+> 数学根基（占位层）：[GAN目标](/ai-fa/explore/30-Formulas/GAN目标) · [谱归一化](/ai-fa/explore/30-Formulas/谱归一化)
 
 ## 7. 读前须知
 

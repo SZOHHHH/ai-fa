@@ -37,15 +37,15 @@ layer: 精化层（摘要级+摘要核实，PDF 待深读；wm-distill-fewstep �
 （待 PDF 精读补全——摘要级暂记直觉）少步蒸馏目标是生成质量监督的浓缩：$$\mathcal{L} = \mathcal{L}_{\text{pixel/感知}}(\hat x_{1:4步}, x)$$ 类形态。**关键在"蒸馏什么"：它蒸的是"更少步数下复现像素级未来"，不蒸决策/控制信号**——4 步学生只需画得像，不需要会决策。这正是 E1 批判的"蒸馏目标只用像素/生成质量指标"在具身域的又一个大规模实例。
 
 ## 5. 与前作/矩阵关系
-- ← 谱系：[Genie 2](/explore/10-Papers/09-世界模型与JEPA/Genie 2- A Large-Scale Foundation World Model（Genie 2）)（通用基础世界模型路线）、[Genie](/explore/10-Papers/09-世界模型与JEPA/Genie- Generative Interactive Environments（Genie）)（动作条件交互环境生成起点）。
-- ↔ 像素级动作条件 WM：[DIAMOND](/explore/10-Papers/09-世界模型与JEPA/Diffusion for World Modeling- Visual Details Matter in Atari（DIAMOND）)（像素扩散 WM×游戏）——同"像素级动作条件生成"轴，域不同（机器人 vs Atari）。
-- 蒸馏轴：[知识蒸馏](/explore/40-Concepts/知识蒸馏) + [KD 奠基](/explore/10-Papers/03-后处理/Distilling the Knowledge in a Neural Network（KD）)——其"35→4 步"属少步蒸馏族（同族的扩散少步化：一致性/渐进蒸馏谱系），概念卡蒸馏形态表可记一行"步数蒸馏×世界模型"。
-- ↔ 下游评估用法：与 [RodForesight](/explore/10-Papers/09-世界模型与JEPA/RodForesight - A World Model Enhanced Diffusion Policy for Slender and Material Agnostic Rod Insertion（杆件插装）)（同日命中，WM 当预演评估器）互证"WM 评估策略"已成工程惯例——**而其评估有效的前提恰是 WM 保真未失：从反面提醒 E1 的问题意识（蒸馏后 WM 的决策保真塌缩）在具身域同样存在但被生成指标遮蔽**。
+- ← 谱系：[Genie 2](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Genie 2- A Large-Scale Foundation World Model（Genie 2）)（通用基础世界模型路线）、[Genie](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Genie- Generative Interactive Environments（Genie）)（动作条件交互环境生成起点）。
+- ↔ 像素级动作条件 WM：[DIAMOND](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Diffusion for World Modeling- Visual Details Matter in Atari（DIAMOND）)（像素扩散 WM×游戏）——同"像素级动作条件生成"轴，域不同（机器人 vs Atari）。
+- 蒸馏轴：[知识蒸馏](/ai-fa/explore/40-Concepts/知识蒸馏) + [KD 奠基](/ai-fa/explore/10-Papers/03-后处理/Distilling the Knowledge in a Neural Network（KD）)——其"35→4 步"属少步蒸馏族（同族的扩散少步化：一致性/渐进蒸馏谱系），概念卡蒸馏形态表可记一行"步数蒸馏×世界模型"。
+- ↔ 下游评估用法：与 [RodForesight](/ai-fa/explore/10-Papers/09-世界模型与JEPA/RodForesight - A World Model Enhanced Diffusion Policy for Slender and Material Agnostic Rod Insertion（杆件插装）)（同日命中，WM 当预演评估器）互证"WM 评估策略"已成工程惯例——**而其评估有效的前提恰是 WM 保真未失：从反面提醒 E1 的问题意识（蒸馏后 WM 的决策保真塌缩）在具身域同样存在但被生成指标遮蔽**。
 
 ## 6. 影响后续
 - 具身智能数据飞轮（WM 造数据→策略变强→更多数据）的基础设施化；动作-视觉注入可能成为动作条件化的新默认。
 - 敌情位：**"WM 少步蒸馏"词面与 E1 同轴**，但其蒸馏对象=采样步数（不是把 WM 蒸进策略）、评估口径=PSNR/FVD（无决策保真）——格不撞；不过该团队若下一步在仿真器里加策略蒸馏/闭环控制，将进入邻格，需盯 6-8 周窗口。
 
 ## 7. 读前须知
-- 前置：视频预测 WM 基本结构（[Genie](/explore/10-Papers/09-世界模型与JEPA/Genie- Generative Interactive Environments（Genie）) 先看）、稀疏 MoE 直觉（[DeepSeekMoE](/explore/10-Papers/05-MoE/DeepSeekMoE- Towards Ultimate Expert Specialization in Mixture-of-Experts Language Model（DeepSeekMoE）)）、蒸馏基础（[知识蒸馏](/explore/40-Concepts/知识蒸馏)）。
+- 前置：视频预测 WM 基本结构（[Genie](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Genie- Generative Interactive Environments（Genie）) 先看）、稀疏 MoE 直觉（[DeepSeekMoE](/ai-fa/explore/10-Papers/05-MoE/DeepSeekMoE- Towards Ultimate Expert Specialization in Mixture-of-Experts Language Model（DeepSeekMoE）)）、蒸馏基础（[知识蒸馏](/ai-fa/explore/40-Concepts/知识蒸馏)）。
 - 少步蒸馏部分可对照扩散少步化谱系理解；技术报告工程细节多，第 4 节公式待 PDF 深读补全。

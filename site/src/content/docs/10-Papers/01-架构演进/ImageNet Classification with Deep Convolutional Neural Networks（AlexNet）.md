@@ -44,7 +44,7 @@ GPU + 深层 CNN + 大数据 = ImageNet 错误率骤降 10 个点——深度学
 
 ## 6. 影响与后续
 
-- 直接开启 CV 深度学习时代 → VGG → [Deep Residual Learning for Image Recognition](/explore/10-Papers/01-架构演进/Deep Residual Learning for Image Recognition（ResNet）)
+- 直接开启 CV 深度学习时代 → VGG → [Deep Residual Learning for Image Recognition](/ai-fa/explore/10-Papers/01-架构演进/Deep Residual Learning for Image Recognition（ResNet）)
 - "GPU 训练"范式确立——算力从此成为第一生产力
 - 作者 Sutskever 后为 OpenAI 联创——血脉延续到 GPT 系
 
@@ -52,6 +52,6 @@ GPU + 深层 CNN + 大数据 = ImageNet 错误率骤降 10 个点——深度学
 
 无前置数学；作为架构线"第 0 章"阅读
 
-> 近邻同族：[Deep Residual Learning for Image Recognition](/explore/10-Papers/01-架构演进/Deep Residual Learning for Image Recognition（ResNet）) · [Encoder-Decoder with Atrous Separable Convolution for Semantic Image Segmentation](/explore/10-Papers/01-架构演进/Encoder-Decoder with Atrous Separable Convolution for Semantic Image Segmentation（DeepLabv3+）)
+> 近邻同族：[Deep Residual Learning for Image Recognition](/ai-fa/explore/10-Papers/01-架构演进/Deep Residual Learning for Image Recognition（ResNet）) · [Encoder-Decoder with Atrous Separable Convolution for Semantic Image Segmentation](/ai-fa/explore/10-Papers/01-架构演进/Encoder-Decoder with Atrous Separable Convolution for Semantic Image Segmentation（DeepLabv3+）)
 
-> 数学根基：[注意力核心公式](/explore/30-Formulas/注意力核心公式) · [残差连接](/explore/30-Formulas/残差连接) · [梯度](/explore/40-Concepts/梯度)
+> 数学根基：[注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式) · [残差连接](/ai-fa/explore/30-Formulas/残差连接) · [梯度](/ai-fa/explore/40-Concepts/梯度)

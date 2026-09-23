@@ -33,12 +33,12 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- [稀疏与线性注意力](/explore/40-Concepts/稀疏与线性注意力) 保留/压缩家族（压缩记忆路线）
+- [稀疏与线性注意力](/ai-fa/explore/40-Concepts/稀疏与线性注意力) 保留/压缩家族（压缩记忆路线）
 
 ## 5. 与前作的关系
 
-- 呼应 [Efficient Streaming Language Models with Attention Sinks](/explore/10-Papers/06-长上下文/Efficient Streaming Language Models with Attention Sinks（StreamingLLM）)（无限流式）但机制不同：sink 保原始 token、Infini 压缩成参数记忆
-- 压缩记忆思想接 SSM 的隐状态（[状态空间模型方程](/explore/30-Formulas/状态空间模型方程)）——"有界记忆"路线
+- 呼应 [Efficient Streaming Language Models with Attention Sinks](/ai-fa/explore/10-Papers/06-长上下文/Efficient Streaming Language Models with Attention Sinks（StreamingLLM）)（无限流式）但机制不同：sink 保原始 token、Infini 压缩成参数记忆
+- 压缩记忆思想接 SSM 的隐状态（[状态空间模型方程](/ai-fa/explore/30-Formulas/状态空间模型方程)）——"有界记忆"路线
 
 ## 6. 影响与后续
 
@@ -46,6 +46,6 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[注意力核心公式](/explore/30-Formulas/注意力核心公式)、[状态空间模型方程](/explore/30-Formulas/状态空间模型方程)（压缩记忆的对照）、[稀疏与线性注意力](/explore/40-Concepts/稀疏与线性注意力)
+[注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)、[状态空间模型方程](/ai-fa/explore/30-Formulas/状态空间模型方程)（压缩记忆的对照）、[稀疏与线性注意力](/ai-fa/explore/40-Concepts/稀疏与线性注意力)
 
-> 近邻同族：[Dodo- Dynamic Contextual Compression for Decoder-only LMs](/explore/10-Papers/06-长上下文/Dodo- Dynamic Contextual Compression for Decoder-only LMs（Dodo）) · [Efficient Streaming Language Models with Attention Sinks](/explore/10-Papers/06-长上下文/Efficient Streaming Language Models with Attention Sinks（StreamingLLM）)
+> 近邻同族：[Dodo- Dynamic Contextual Compression for Decoder-only LMs](/ai-fa/explore/10-Papers/06-长上下文/Dodo- Dynamic Contextual Compression for Decoder-only LMs（Dodo）) · [Efficient Streaming Language Models with Attention Sinks](/ai-fa/explore/10-Papers/06-长上下文/Efficient Streaming Language Models with Attention Sinks（StreamingLLM）)

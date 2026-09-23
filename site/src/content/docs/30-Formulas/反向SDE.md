@@ -31,7 +31,7 @@ $$dx = \left[ f(x, t) - g^2(t)\, \nabla_x \log p_t(x) \right] dt + g(t)\, d\bar 
 
 - 正向把数据"抹成"噪声；反向把噪声"雕回"数据——但反向的方程**不能白嫖**：需要知道每点的 score
 - score 项像"纠偏器"：纯扩散会把样本推向无信息区，score 项持续把它拽回数据流形
-- 反向**仍有噪声项**——与 [概率流ODE](/explore/30-Formulas/概率流ODE)（完全无噪声）的区别
+- 反向**仍有噪声项**——与 [概率流ODE](/ai-fa/explore/30-Formulas/概率流ODE)（完全无噪声）的区别
 - 离散化误差 + 步数决定质量：预测-校正采样器把 SDE 步与朗之万步交替使用
 
 ## 4. 出处
@@ -39,19 +39,19 @@ $$dx = \left[ f(x, t) - g^2(t)\, \nabla_x \log p_t(x) \right] dt + g(t)\, d\bar 
 | 论文 | 贡献 |
 |---|---|
 | Anderson 1982（随机过程文献） | 反向方程原初形式 |
-| [Score-Based Generative Modeling through Stochastic Differential Equations](/explore/10-Papers/02-生成建模与扩散/Score-Based Generative Modeling through Stochastic Differential Equations（Score-SDE）) | 首次用作生成模型 + score 网络 |
-| [Denoising Diffusion Probabilistic Models](/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Probabilistic Models（DDPM）) | 离散版隐含使用 |
+| [Score-Based Generative Modeling through Stochastic Differential Equations](/ai-fa/explore/10-Papers/02-生成建模与扩散/Score-Based Generative Modeling through Stochastic Differential Equations（Score-SDE）) | 首次用作生成模型 + score 网络 |
+| [Denoising Diffusion Probabilistic Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Probabilistic Models（DDPM）) | 离散版隐含使用 |
 
 ## 5. 数学概念分解
 
-- [随机微分方程](/explore/40-Concepts/随机微分方程（SDE）)：母类
-- [Score函数](/explore/40-Concepts/Score函数)：漂移修正项
-- [维纳过程](/explore/40-Concepts/维纳过程)：反向噪声
-- [采样器](/explore/40-Concepts/采样器)：离散化策略
+- [随机微分方程](/ai-fa/explore/40-Concepts/随机微分方程（SDE）)：母类
+- [Score函数](/ai-fa/explore/40-Concepts/Score函数)：漂移修正项
+- [维纳过程](/ai-fa/explore/40-Concepts/维纳过程)：反向噪声
+- [采样器](/ai-fa/explore/40-Concepts/采样器)：离散化策略
 
 ## 6. 与其他公式的关系
 
-- → **由** [Score-SDE前向过程](/explore/30-Formulas/Score-SDE前向过程) **推导**
-- ≡ **等价变形**（去噪声版）：[概率流ODE](/explore/30-Formulas/概率流ODE)
-- → **离散化为** DDPM 祖先采样（[DDPM后验分布](/explore/30-Formulas/DDPM后验分布) 的采样实现）
-- 训练靠 [DSM目标](/explore/30-Formulas/DSM目标) / [DDPM训练目标](/explore/30-Formulas/DDPM训练目标)（score/噪声预测）
+- → **由** [Score-SDE前向过程](/ai-fa/explore/30-Formulas/Score-SDE前向过程) **推导**
+- ≡ **等价变形**（去噪声版）：[概率流ODE](/ai-fa/explore/30-Formulas/概率流ODE)
+- → **离散化为** DDPM 祖先采样（[DDPM后验分布](/ai-fa/explore/30-Formulas/DDPM后验分布) 的采样实现）
+- 训练靠 [DSM目标](/ai-fa/explore/30-Formulas/DSM目标) / [DDPM训练目标](/ai-fa/explore/30-Formulas/DDPM训练目标)（score/噪声预测）

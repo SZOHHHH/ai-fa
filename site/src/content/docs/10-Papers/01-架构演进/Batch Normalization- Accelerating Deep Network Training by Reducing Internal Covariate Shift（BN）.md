@@ -37,7 +37,7 @@ $$
 
 ## 5. 与前作/矩阵关系
 
-→ [Layer Normalization](/explore/10-Papers/01-架构演进/Layer Normalization（LayerNorm）)（本批已入库，序列版）/RMSNorm（简化版）——**归一化四代谱系 BN→LN→RMSNorm→QK-Norm 补齐前两代**
+→ [Layer Normalization](/ai-fa/explore/10-Papers/01-架构演进/Layer Normalization（LayerNorm）)（本批已入库，序列版）/RMSNorm（简化版）——**归一化四代谱系 BN→LN→RMSNorm→QK-Norm 补齐前两代**
 
 ## 6. 影响后续
 
@@ -47,6 +47,6 @@ $$
 
 需要：内部协变量漂移概念；训练/推理统计差异的坑
 
-> 近邻同族：[Adam- A Method for Stochastic Optimization](/explore/10-Papers/01-架构演进/Adam- A Method for Stochastic Optimization（Adam）) · [Bag of Tricks for Efficient Text Classification](/explore/10-Papers/01-架构演进/Bag of Tricks for Efficient Text Classification（FastText）)
+> 近邻同族：[Adam- A Method for Stochastic Optimization](/ai-fa/explore/10-Papers/01-架构演进/Adam- A Method for Stochastic Optimization（Adam）) · [Bag of Tricks for Efficient Text Classification](/ai-fa/explore/10-Papers/01-架构演进/Bag of Tricks for Efficient Text Classification（FastText）)
 
-> 数学根基：[批归一化](/explore/30-Formulas/批归一化) · [层归一化](/explore/30-Formulas/层归一化) · [均方根归一化](/explore/30-Formulas/均方根归一化)
+> 数学根基：[批归一化](/ai-fa/explore/30-Formulas/批归一化) · [层归一化](/ai-fa/explore/30-Formulas/层归一化) · [均方根归一化](/ai-fa/explore/30-Formulas/均方根归一化)

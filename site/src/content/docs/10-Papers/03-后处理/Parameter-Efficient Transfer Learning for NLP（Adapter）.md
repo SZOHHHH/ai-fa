@@ -33,11 +33,11 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- 串行式见 [LoRA分解](/explore/30-Formulas/LoRA分解) §2 Adapter 行（对照 LoRA 的旁路式）
+- 串行式见 [LoRA分解](/ai-fa/explore/30-Formulas/LoRA分解) §2 Adapter 行（对照 LoRA 的旁路式）
 
 ## 5. 与前作的关系
 
-- 前置于 [Prefix-Tuning - Optimizing Continuous Prompts for Generation](/explore/10-Papers/03-后处理/Prefix-Tuning- Optimizing Continuous Prompts for Generation（Prefix-Tuning）) 与 [LoRA - Low-Rank Adaptation of Large Language Models](/explore/10-Papers/03-后处理/LoRA- Low-Rank Adaptation of Large Language Models（LoRA）)——PEFT 谱系的起点
+- 前置于 [Prefix-Tuning - Optimizing Continuous Prompts for Generation](/ai-fa/explore/10-Papers/03-后处理/Prefix-Tuning- Optimizing Continuous Prompts for Generation（Prefix-Tuning）) 与 [LoRA - Low-Rank Adaptation of Large Language Models](/ai-fa/explore/10-Papers/03-后处理/LoRA- Low-Rank Adaptation of Large Language Models（LoRA）)——PEFT 谱系的起点
 - 对比 prompt tuning 早期工作：位置更"深"（层内 vs 输入）
 
 ## 6. 影响与后续
@@ -48,4 +48,4 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[参数高效微调（PEFT）](/explore/20-Algorithms/参数高效微调（PEFT）)、[LoRA分解](/explore/30-Formulas/LoRA分解)
+[参数高效微调（PEFT）](/ai-fa/explore/20-Algorithms/参数高效微调（PEFT）)、[LoRA分解](/ai-fa/explore/30-Formulas/LoRA分解)

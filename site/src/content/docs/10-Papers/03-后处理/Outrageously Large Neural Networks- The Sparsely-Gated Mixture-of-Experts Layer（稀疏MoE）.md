@@ -20,7 +20,7 @@ pdf: 已下载（PDF/）
 
 ## 2. 核心贡献
 
-- **稀疏门控公式**：$$G(x)=\mathrm{softmax}(\mathrm{topk}(W_gx+\epsilon))$$（[MoE门控公式](/explore/30-Formulas/MoE门控公式)）
+- **稀疏门控公式**：$$G(x)=\mathrm{softmax}(\mathrm{topk}(W_gx+\epsilon))$$（[MoE门控公式](/ai-fa/explore/30-Formulas/MoE门控公式)）
 - **负载均衡损失**：$$f_i P_i$$ 设计——防路由坍缩的标准件
 - **容量/效率实证**：137B 参数 LSTM，6× 计算效率提升
 
@@ -33,12 +33,12 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- [MoE门控公式](/explore/30-Formulas/MoE门控公式) —— 本文全部
+- [MoE门控公式](/ai-fa/explore/30-Formulas/MoE门控公式) —— 本文全部
 
 ## 5. 与前作的关系
 
 - 复兴了 [Jacobs 1991 的混合专家思想]（25 年前！）——现代算力 + 噪声门控 + 均衡损失使其实用
-- 为 [GShard - Scaling Giant Models with Conditional Computation and Automatic Sharding](/explore/10-Papers/05-MoE/GShard- Scaling Giant Models with Conditional Computation and Automatic Sharding（GShard）) 入 Transformer 铺路
+- 为 [GShard - Scaling Giant Models with Conditional Computation and Automatic Sharding](/ai-fa/explore/10-Papers/05-MoE/GShard- Scaling Giant Models with Conditional Computation and Automatic Sharding（GShard）) 入 Transformer 铺路
 
 ## 6. 影响与后续
 
@@ -47,4 +47,4 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[混合专家（MoE）](/explore/20-Algorithms/混合专家（MoE）)、[MoE门控公式](/explore/30-Formulas/MoE门控公式)、[softmax函数](/explore/40-Concepts/softmax函数)
+[混合专家（MoE）](/ai-fa/explore/20-Algorithms/混合专家（MoE）)、[MoE门控公式](/ai-fa/explore/30-Formulas/MoE门控公式)、[softmax函数](/ai-fa/explore/40-Concepts/softmax函数)

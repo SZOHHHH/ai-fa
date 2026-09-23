@@ -17,11 +17,11 @@ tags: [paper, 占位层]
 
 ## 1. 一句话贡献
 
-senior 模型跑 [GRPO](/explore/20-Algorithms/GRPO与RLVR) 式 RLVR、junior 冻结模型同步蒸馏的串联范式——蒸馏 student 成为 senior 的隐式正则（团队奖励结构替代 KL 惩罚）。
+senior 模型跑 [GRPO](/ai-fa/explore/20-Algorithms/GRPO与RLVR) 式 RLVR、junior 冻结模型同步蒸馏的串联范式——蒸馏 student 成为 senior 的隐式正则（团队奖励结构替代 KL 惩罚）。
 
 ## 2. 核心贡献
 
-1. senior 模型跑 [GRPO](/explore/20-Algorithms/GRPO与RLVR) 式 RLVR、junior 冻结模型同步蒸馏的串联范式
+1. senior 模型跑 [GRPO](/ai-fa/explore/20-Algorithms/GRPO与RLVR) 式 RLVR、junior 冻结模型同步蒸馏的串联范式
 2. 蒸馏 student 成为 senior 的隐式正则（团队奖励结构替代 KL 惩罚）。
 
 ## 3. 方法概要
@@ -45,9 +45,9 @@ $$
 
 串联/团队训练路线的代表作。
 
-> 近邻同族：[Hybrid Reinforcement- When Reward Is Sparse, It is Better to Be Dense](/explore/10-Papers/04-强化学习与对齐/Hybrid Reinforcement- When Reward Is Sparse, It is Better to Be Dense（HERO）) · [Learning beyond Teacher- Generalized On-Policy Distillation with Reward Extrapolation](/explore/10-Papers/04-强化学习与对齐/Learning beyond Teacher- Generalized On-Policy Distillation with Reward Extrapolation（G-OPD）)
-> 数学根基（占位层）：[策略梯度定理](/explore/40-Concepts/策略梯度定理)
-> 数学根基：[REINFORCE目标](/explore/30-Formulas/REINFORCE目标)
+> 近邻同族：[Hybrid Reinforcement- When Reward Is Sparse, It is Better to Be Dense](/ai-fa/explore/10-Papers/04-强化学习与对齐/Hybrid Reinforcement- When Reward Is Sparse, It is Better to Be Dense（HERO）) · [Learning beyond Teacher- Generalized On-Policy Distillation with Reward Extrapolation](/ai-fa/explore/10-Papers/04-强化学习与对齐/Learning beyond Teacher- Generalized On-Policy Distillation with Reward Extrapolation（G-OPD）)
+> 数学根基（占位层）：[策略梯度定理](/ai-fa/explore/40-Concepts/策略梯度定理)
+> 数学根基：[REINFORCE目标](/ai-fa/explore/30-Formulas/REINFORCE目标)
 
 ## 7. 读前须知
 

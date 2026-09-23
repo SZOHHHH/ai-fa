@@ -33,12 +33,12 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- 门控初始化 $$g=0$$：$$\text{out} = \text{attn}\cdot \tanh(g)$$——零初始化保护预训练（与 LoRA 的 B=0 同哲学！见 [LoRA分解](/explore/30-Formulas/LoRA分解) §3）
+- 门控初始化 $$g=0$$：$$\text{out} = \text{attn}\cdot \tanh(g)$$——零初始化保护预训练（与 LoRA 的 B=0 同哲学！见 [LoRA分解](/ai-fa/explore/30-Formulas/LoRA分解) §3）
 
 ## 5. 与前作的关系
 
-- 组合了冻结 LLM + 视觉编码（[CLIP](/explore/10-Papers/08-多模态/Learning Transferable Visual Models From Natural Language Supervision（CLIP）)）
-- 对比后续 [LLaVA](/explore/10-Papers/08-多模态/Visual Instruction Tuning（LLaVA）)：插层（保语言）vs 简单投影（端到端）
+- 组合了冻结 LLM + 视觉编码（[CLIP](/ai-fa/explore/10-Papers/08-多模态/Learning Transferable Visual Models From Natural Language Supervision（CLIP）)）
+- 对比后续 [LLaVA](/ai-fa/explore/10-Papers/08-多模态/Visual Instruction Tuning（LLaVA）)：插层（保语言）vs 简单投影（端到端）
 
 ## 6. 影响与后续
 
@@ -47,4 +47,4 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[视觉语言模型（VLM）](/explore/40-Concepts/视觉语言模型（VLM）)、[注意力机制](/explore/40-Concepts/注意力机制)、[Learning Transferable Visual Models From Natural Language Supervision](/explore/10-Papers/08-多模态/Learning Transferable Visual Models From Natural Language Supervision（CLIP）)
+[视觉语言模型（VLM）](/ai-fa/explore/40-Concepts/视觉语言模型（VLM）)、[注意力机制](/ai-fa/explore/40-Concepts/注意力机制)、[Learning Transferable Visual Models From Natural Language Supervision](/ai-fa/explore/10-Papers/08-多模态/Learning Transferable Visual Models From Natural Language Supervision（CLIP）)

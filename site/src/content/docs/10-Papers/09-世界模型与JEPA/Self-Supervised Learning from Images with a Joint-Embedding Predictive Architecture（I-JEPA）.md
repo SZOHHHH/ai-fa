@@ -50,12 +50,12 @@ undefined
 
 ---
 
-> 谱系枢纽：[Dream to Control - Learning Behaviors by Latent Imagination](/explore/10-Papers/09-世界模型与JEPA/Dream to Control- Learning Behaviors by Latent Imagination（Dreamer）)（图谱连通入口）
+> 谱系枢纽：[Dream to Control - Learning Behaviors by Latent Imagination](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Dream to Control- Learning Behaviors by Latent Imagination（Dreamer）)（图谱连通入口）
 
-> 近邻同族：[Delta-JEPA- Learning Action-Sensitive World Models via Latent Difference Decoding](/explore/10-Papers/09-世界模型与JEPA/Delta-JEPA- Learning Action-Sensitive World Models via Latent Difference Decoding（Delta-JEPA）) · [DF3- World Modeling via Decoder-Free Feature Forecasting in Autonomous Navigation](/explore/10-Papers/09-世界模型与JEPA/DF3- World Modeling via Decoder-Free Feature Forecasting in Autonomous Navigation（DF3）)
+> 近邻同族：[Delta-JEPA- Learning Action-Sensitive World Models via Latent Difference Decoding](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Delta-JEPA- Learning Action-Sensitive World Models via Latent Difference Decoding（Delta-JEPA）) · [DF3- World Modeling via Decoder-Free Feature Forecasting in Autonomous Navigation](/ai-fa/explore/10-Papers/09-世界模型与JEPA/DF3- World Modeling via Decoder-Free Feature Forecasting in Autonomous Navigation（DF3）)
 
-> 数学根基：[JEPA联合嵌入预测架构](/explore/40-Concepts/JEPA联合嵌入预测架构)
+> 数学根基：[JEPA联合嵌入预测架构](/ai-fa/explore/40-Concepts/JEPA联合嵌入预测架构)
 
-> 数学根基：[注意力核心公式](/explore/30-Formulas/注意力核心公式) · [CLIP对比损失](/explore/30-Formulas/CLIP对比损失)
+> 数学根基：[注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式) · [CLIP对比损失](/ai-fa/explore/30-Formulas/CLIP对比损失)
 
-> 核心公式：[自监督掩码重建](/explore/30-Formulas/自监督掩码重建)
+> 核心公式：[自监督掩码重建](/ai-fa/explore/30-Formulas/自监督掩码重建)

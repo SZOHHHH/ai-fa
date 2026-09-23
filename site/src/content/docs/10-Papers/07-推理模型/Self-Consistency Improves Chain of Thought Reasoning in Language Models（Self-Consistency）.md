@@ -20,7 +20,7 @@ pdf: 已下载（PDF/）
 
 ## 2. 核心贡献
 
-- **多数投票法**：温度采样 N 条 [CoT](/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）) → 答案聚类 → 取众数
+- **多数投票法**：温度采样 N 条 [CoT](/ai-fa/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）) → 答案聚类 → 取众数
 - **边缘化视角**：单条链 $$p(y\mid x)$$ 的贪心估计 → $$\sum_z p(y, z \mid x)$$ 的近似（对推理路径积分掉不确定性）
 - GSM8K +17.9% 等全面提升
 
@@ -33,20 +33,20 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- $$p(y \mid x) = \sum_z p(y, z \mid x)$$ 的蒙特卡洛近似（[期望](/explore/40-Concepts/期望)）——Self-Consistency 是"答案空间"的边缘化
+- $$p(y \mid x) = \sum_z p(y, z \mid x)$$ 的蒙特卡洛近似（[期望](/ai-fa/explore/40-Concepts/期望)）——Self-Consistency 是"答案空间"的边缘化
 
 ## 5. 与前作的关系
 
-- 增强了 [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）)：单链 → 多链集成
+- 增强了 [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](/ai-fa/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）)：单链 → 多链集成
 - 是 test-time compute scaling（o1 之前）的朴素形态
 
 ## 6. 影响与后续
 
 - 测试时计算范式的先声：算力花在推理时
-- R1 时代 [GRPO](/explore/20-Algorithms/GRPO与RLVR) 的组采样（G 条轨迹）与它形式同构——**组基线思想的推理版前身**
+- R1 时代 [GRPO](/ai-fa/explore/20-Algorithms/GRPO与RLVR) 的组采样（G 条轨迹）与它形式同构——**组基线思想的推理版前身**
 
 ## 7. 读前须知
 
-[思维链（CoT）](/explore/40-Concepts/思维链（CoT）)、[期望](/explore/40-Concepts/期望)、[Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）)
+[思维链（CoT）](/ai-fa/explore/40-Concepts/思维链（CoT）)、[期望](/ai-fa/explore/40-Concepts/期望)、[Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](/ai-fa/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）)
 
-> 数学根基：[条件流匹配损失](/explore/30-Formulas/条件流匹配损失) · [注意力核心公式](/explore/30-Formulas/注意力核心公式)
+> 数学根基：[条件流匹配损失](/ai-fa/explore/30-Formulas/条件流匹配损失) · [注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)

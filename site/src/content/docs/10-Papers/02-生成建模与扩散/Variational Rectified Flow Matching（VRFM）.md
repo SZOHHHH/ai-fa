@@ -47,10 +47,10 @@ RS 库 02-13 已有；FM 理论支线。
 
 ---
 
-> 谱系枢纽：[Denoising Diffusion Probabilistic Models](/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Probabilistic Models（DDPM）)（图谱连通入口）
-> 近邻同族：[Align Your Flow - Scaling Continuous-Time Flow Map Distillation](/explore/10-Papers/02-生成建模与扩散/Align Your Flow- Scaling Continuous-Time Flow Map Distillation（AYF）) · [Computational and Statistical Guarantees of the c-Rectified flow](/explore/10-Papers/02-生成建模与扩散/Computational and Statistical Guarantees of the c-Rectified flow（c-RF理论）)
-> 矩形流谱系环：[Towards Hierarchical Rectified Flow](/explore/10-Papers/02-生成建模与扩散/Towards Hierarchical Rectified Flow（HRFlow）) ← 本卡 → [Statistical Properties of Rectified Flow](/explore/10-Papers/02-生成建模与扩散/Statistical Properties of Rectified Flow（RF统计理论）)
-> 数学根基（占位层）：[条件流匹配损失](/explore/30-Formulas/条件流匹配损失) · [概率流ODE](/explore/30-Formulas/概率流ODE) · [常微分方程（ODE）](/explore/40-Concepts/常微分方程（ODE）)
+> 谱系枢纽：[Denoising Diffusion Probabilistic Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Probabilistic Models（DDPM）)（图谱连通入口）
+> 近邻同族：[Align Your Flow - Scaling Continuous-Time Flow Map Distillation](/ai-fa/explore/10-Papers/02-生成建模与扩散/Align Your Flow- Scaling Continuous-Time Flow Map Distillation（AYF）) · [Computational and Statistical Guarantees of the c-Rectified flow](/ai-fa/explore/10-Papers/02-生成建模与扩散/Computational and Statistical Guarantees of the c-Rectified flow（c-RF理论）)
+> 矩形流谱系环：[Towards Hierarchical Rectified Flow](/ai-fa/explore/10-Papers/02-生成建模与扩散/Towards Hierarchical Rectified Flow（HRFlow）) ← 本卡 → [Statistical Properties of Rectified Flow](/ai-fa/explore/10-Papers/02-生成建模与扩散/Statistical Properties of Rectified Flow（RF统计理论）)
+> 数学根基（占位层）：[条件流匹配损失](/ai-fa/explore/30-Formulas/条件流匹配损失) · [概率流ODE](/ai-fa/explore/30-Formulas/概率流ODE) · [常微分方程（ODE）](/ai-fa/explore/40-Concepts/常微分方程（ODE）)
 
 ## 7. 读前须知
 

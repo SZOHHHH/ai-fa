@@ -22,7 +22,7 @@ $$\mathcal{L} = \| \mathrm{pred}_\theta(E_\phi(x_{\text{ctx}}), \rho_\psi(x_{\te
 
 - **坍缩问题**：对比学习用负样本对抗坍缩；JEPA 用非对称结构（EMA 教师 + 预测器）——**BYOL/SimSiam 的谱系**
 - **与掩码建模对比**：MAE（何恺明）重建像素；I-JEPA 预测表征——同是"遮住猜内容"，猜的对象不同
-- **能量视角**（LeCun 立场论文）：预测误差 = 能量；正确未来能量低、错误未来能量高——接 [能量模型](/explore/40-Concepts/能量模型)
+- **能量视角**（LeCun 立场论文）：预测误差 = 能量；正确未来能量低、错误未来能量高——接 [能量模型](/ai-fa/explore/40-Concepts/能量模型)
 - **V-JEPA**：视频版（时空遮罩 + 表征预测）；V-JEPA 2 加动作条件化与规划能力
 
 ## 3. 为什么 AI 需要它
@@ -42,6 +42,6 @@ $$\mathcal{L} = \| \mathrm{pred}_\theta(E_\phi(x_{\text{ctx}}), \rho_\psi(x_{\te
 
 ## 5. 相关概念
 
-- [能量模型](/explore/40-Concepts/能量模型)：LeCun 的理论语言
-- [范数](/explore/40-Concepts/范数)：预测损失
-- [世界模型](/explore/20-Algorithms/世界模型)：所属算法家族（B5 后建）
+- [能量模型](/ai-fa/explore/40-Concepts/能量模型)：LeCun 的理论语言
+- [范数](/ai-fa/explore/40-Concepts/范数)：预测损失
+- [世界模型](/ai-fa/explore/20-Algorithms/世界模型)：所属算法家族（B5 后建）

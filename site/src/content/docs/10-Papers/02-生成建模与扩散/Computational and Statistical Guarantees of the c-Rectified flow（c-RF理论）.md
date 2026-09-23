@@ -38,16 +38,16 @@ $$
 
 ## 5. 与前作/矩阵关系
 
-🚩 RF×理论格最新占位；← [Flow Straight and Fast - Learning to Generate and Transfer Data with Rectified Flow](/explore/10-Papers/02-生成建模与扩散/Flow Straight and Fast- Learning to Generate and Transfer Data with Rectified Flow（矩形流）)（本批）
+🚩 RF×理论格最新占位；← [Flow Straight and Fast - Learning to Generate and Transfer Data with Rectified Flow](/ai-fa/explore/10-Papers/02-生成建模与扩散/Flow Straight and Fast- Learning to Generate and Transfer Data with Rectified Flow（矩形流）)（本批）
 
 
 ## 6. 影响与占位意义
 
 RS 库 08-03 已有；理论侧持续活跃的信号。
 
-> 近邻同族：[Align Your Flow - Scaling Continuous-Time Flow Map Distillation](/explore/10-Papers/02-生成建模与扩散/Align Your Flow- Scaling Continuous-Time Flow Map Distillation（AYF）) · [Drift Flow Matching](/explore/10-Papers/02-生成建模与扩散/Drift Flow Matching（DFM）)
-> 矩形流谱系环：[Text-to-Image Rectified Flow as Plug-and-Play Priors](/explore/10-Papers/02-生成建模与扩散/Text-to-Image Rectified Flow as Plug-and-Play Priors（RF先验）) ← 本卡 → [ProReflow- Progressive Reflow with Decomposed Velocity](/explore/10-Papers/02-生成建模与扩散/ProReflow- Progressive Reflow with Decomposed Velocity（ProReflow）)
-> 数学根基（占位层）：[条件流匹配损失](/explore/30-Formulas/条件流匹配损失) · [概率流ODE](/explore/30-Formulas/概率流ODE) · [常微分方程（ODE）](/explore/40-Concepts/常微分方程（ODE）)
+> 近邻同族：[Align Your Flow - Scaling Continuous-Time Flow Map Distillation](/ai-fa/explore/10-Papers/02-生成建模与扩散/Align Your Flow- Scaling Continuous-Time Flow Map Distillation（AYF）) · [Drift Flow Matching](/ai-fa/explore/10-Papers/02-生成建模与扩散/Drift Flow Matching（DFM）)
+> 矩形流谱系环：[Text-to-Image Rectified Flow as Plug-and-Play Priors](/ai-fa/explore/10-Papers/02-生成建模与扩散/Text-to-Image Rectified Flow as Plug-and-Play Priors（RF先验）) ← 本卡 → [ProReflow- Progressive Reflow with Decomposed Velocity](/ai-fa/explore/10-Papers/02-生成建模与扩散/ProReflow- Progressive Reflow with Decomposed Velocity（ProReflow）)
+> 数学根基（占位层）：[条件流匹配损失](/ai-fa/explore/30-Formulas/条件流匹配损失) · [概率流ODE](/ai-fa/explore/30-Formulas/概率流ODE) · [常微分方程（ODE）](/ai-fa/explore/40-Concepts/常微分方程（ODE）)
 
 ## 7. 读前须知
 

@@ -23,6 +23,6 @@ $$
 
 ## 本命论文
 
-[WaveNet- A Generative Model for Raw Audio](/explore/10-Papers/08-多模态/WaveNet- A Generative Model for Raw Audio（WaveNet）)
+[WaveNet- A Generative Model for Raw Audio](/ai-fa/explore/10-Papers/08-多模态/WaveNet- A Generative Model for Raw Audio（WaveNet）)
 
 > 待办：精读时补"表示对照表"（不同论文的符号差异换算）

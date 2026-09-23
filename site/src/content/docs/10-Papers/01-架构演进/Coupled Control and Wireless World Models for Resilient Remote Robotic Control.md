@@ -31,8 +31,8 @@ layer: 占位
 （待精读）
 
 ## 5. 与前作/矩阵关系
-- 线锚：[Transformer](/explore/20-Algorithms/Transformer) · [注意力核心公式](/explore/30-Formulas/注意力核心公式)（占位挂链，Tier B 精化）
-- 同族：[世界模型](/explore/20-Algorithms/世界模型)·[马尔可夫决策过程](/explore/40-Concepts/马尔可夫决策过程)；韧性视角对照：[DIAMOND](/explore/10-Papers/09-世界模型与JEPA/Diffusion for World Modeling- Visual Details Matter in Atari（DIAMOND）)（理想环境 vs 退化环境）
+- 线锚：[Transformer](/ai-fa/explore/20-Algorithms/Transformer) · [注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)（占位挂链，Tier B 精化）
+- 同族：[世界模型](/ai-fa/explore/20-Algorithms/世界模型)·[马尔可夫决策过程](/ai-fa/explore/40-Concepts/马尔可夫决策过程)；韧性视角对照：[DIAMOND](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Diffusion for World Modeling- Visual Details Matter in Atari（DIAMOND）)（理想环境 vs 退化环境）
 
 ## 6. 影响后续
 （待精读）

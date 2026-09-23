@@ -38,16 +38,16 @@ $$
 
 ## 5. 与前作/矩阵关系
 
-🚩 占蒸馏域矩阵"组合奖励"格（门控路线）；← [On-Policy Distillation（Thinking Machines 博客）](/explore/10-Papers/04-强化学习与对齐/On-Policy Distillation（Thinking Machines 博客）)
+🚩 占蒸馏域矩阵"组合奖励"格（门控路线）；← [On-Policy Distillation（Thinking Machines 博客）](/ai-fa/explore/10-Papers/04-强化学习与对齐/On-Policy Distillation（Thinking Machines 博客）)
 
 
 ## 6. 影响与占位意义
 
 与 SG-OPD（符号一致性 token 级）构成门控路线双占位。
 
-> 近邻同族：[Hybrid Reinforcement- When Reward Is Sparse, It is Better to Be Dense](/explore/10-Papers/04-强化学习与对齐/Hybrid Reinforcement- When Reward Is Sparse, It is Better to Be Dense（HERO）) · [Learning beyond Teacher- Generalized On-Policy Distillation with Reward Extrapolation](/explore/10-Papers/04-强化学习与对齐/Learning beyond Teacher- Generalized On-Policy Distillation with Reward Extrapolation（G-OPD）)
-> 数学根基（占位层）：[策略梯度定理](/explore/40-Concepts/策略梯度定理)
-> 数学根基：[蒸馏损失](/explore/30-Formulas/蒸馏损失) · [DSM目标](/explore/30-Formulas/DSM目标)
+> 近邻同族：[Hybrid Reinforcement- When Reward Is Sparse, It is Better to Be Dense](/ai-fa/explore/10-Papers/04-强化学习与对齐/Hybrid Reinforcement- When Reward Is Sparse, It is Better to Be Dense（HERO）) · [Learning beyond Teacher- Generalized On-Policy Distillation with Reward Extrapolation](/ai-fa/explore/10-Papers/04-强化学习与对齐/Learning beyond Teacher- Generalized On-Policy Distillation with Reward Extrapolation（G-OPD）)
+> 数学根基（占位层）：[策略梯度定理](/ai-fa/explore/40-Concepts/策略梯度定理)
+> 数学根基：[蒸馏损失](/ai-fa/explore/30-Formulas/蒸馏损失) · [DSM目标](/ai-fa/explore/30-Formulas/DSM目标)
 
 ## 7. 读前须知
 

@@ -38,7 +38,7 @@ $$
 
 ## 5. 与前作/矩阵关系
 
-← FCN/U-Net/DeepLab v1-3；CNN 结构谱系的终点站（[ViT](/explore/10-Papers/01-架构演进/An Image is Worth 16x16 Words- Transformers for Image Recognition at Scale（ViT）) 之前的分割 SOTA）
+← FCN/U-Net/DeepLab v1-3；CNN 结构谱系的终点站（[ViT](/ai-fa/explore/10-Papers/01-架构演进/An Image is Worth 16x16 Words- Transformers for Image Recognition at Scale（ViT）) 之前的分割 SOTA）
 
 ## 6. 影响后续
 
@@ -48,6 +48,6 @@ $$
 
 需要：空洞卷积；可分离卷积的 FLOPs 账
 
-> 近邻同族：[Deep Residual Learning for Image Recognition](/explore/10-Papers/01-架构演进/Deep Residual Learning for Image Recognition（ResNet）) · [ImageNet Classification with Deep Convolutional Neural Networks](/explore/10-Papers/01-架构演进/ImageNet Classification with Deep Convolutional Neural Networks（AlexNet）)
+> 近邻同族：[Deep Residual Learning for Image Recognition](/ai-fa/explore/10-Papers/01-架构演进/Deep Residual Learning for Image Recognition（ResNet）) · [ImageNet Classification with Deep Convolutional Neural Networks](/ai-fa/explore/10-Papers/01-架构演进/ImageNet Classification with Deep Convolutional Neural Networks（AlexNet）)
 
-> 数学根基：[注意力核心公式](/explore/30-Formulas/注意力核心公式) · [残差连接](/explore/30-Formulas/残差连接) · [梯度](/explore/40-Concepts/梯度)
+> 数学根基：[注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式) · [残差连接](/ai-fa/explore/30-Formulas/残差连接) · [梯度](/ai-fa/explore/40-Concepts/梯度)

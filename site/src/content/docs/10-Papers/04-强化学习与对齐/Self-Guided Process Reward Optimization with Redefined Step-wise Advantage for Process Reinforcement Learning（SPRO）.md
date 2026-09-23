@@ -17,11 +17,11 @@ tags: [paper, 占位层]
 
 ## 1. 一句话贡献
 
-自引导过程奖励：掩码估计重定义步级优势，免 [PRM](/explore/10-Papers/07-推理模型/Let's Verify Step by Step（PRM）) 标注的过程强化——精度与训练效率双升。
+自引导过程奖励：掩码估计重定义步级优势，免 [PRM](/ai-fa/explore/10-Papers/07-推理模型/Let's Verify Step by Step（PRM）) 标注的过程强化——精度与训练效率双升。
 
 ## 2. 核心贡献
 
-1. 自引导过程奖励：掩码估计重定义步级优势，免 [PRM](/explore/10-Papers/07-推理模型/Let's Verify Step by Step（PRM）) 标注的过程强化——精度与训练效率双升。
+1. 自引导过程奖励：掩码估计重定义步级优势，免 [PRM](/ai-fa/explore/10-Papers/07-推理模型/Let's Verify Step by Step（PRM）) 标注的过程强化——精度与训练效率双升。
 
 ## 3. 方法概要
 
@@ -37,16 +37,16 @@ $$
 
 ## 5. 与前作/矩阵关系
 
-🚩 占过程强化×免标注格；≡ [GRPO与RLVR](/explore/20-Algorithms/GRPO与RLVR)（一个证理论一个给方法）
+🚩 占过程强化×免标注格；≡ [GRPO与RLVR](/ai-fa/explore/20-Algorithms/GRPO与RLVR)（一个证理论一个给方法）
 
 
 ## 6. 影响与占位意义
 
 过程奖励免标注路线的活跃证据。
 
-> 近邻同族：[DAPO- An Open-Source LLM Reinforcement Learning System at Scale](/explore/10-Papers/04-强化学习与对齐/DAPO- An Open-Source LLM Reinforcement Learning System at Scale（DAPO）) · [DCPO- Dynamic Clipping Policy Optimization](/explore/10-Papers/04-强化学习与对齐/DCPO- Dynamic Clipping Policy Optimization（DCPO）)
-> 数学根基（占位层）：[策略梯度定理](/explore/40-Concepts/策略梯度定理)
-> 数学根基：[REINFORCE目标](/explore/30-Formulas/REINFORCE目标)
+> 近邻同族：[DAPO- An Open-Source LLM Reinforcement Learning System at Scale](/ai-fa/explore/10-Papers/04-强化学习与对齐/DAPO- An Open-Source LLM Reinforcement Learning System at Scale（DAPO）) · [DCPO- Dynamic Clipping Policy Optimization](/ai-fa/explore/10-Papers/04-强化学习与对齐/DCPO- Dynamic Clipping Policy Optimization（DCPO）)
+> 数学根基（占位层）：[策略梯度定理](/ai-fa/explore/40-Concepts/策略梯度定理)
+> 数学根基：[REINFORCE目标](/ai-fa/explore/30-Formulas/REINFORCE目标)
 
 ## 7. 读前须知
 

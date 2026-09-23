@@ -15,7 +15,7 @@ tags: [concept]
 $$dx = f(x_t, t)\, dt + g(t)\, dw$$
 - $$f(x_t, t)$$：**漂移系数**（确定性速度）
 - $$g(t)$$：**扩散系数**（噪声强度，本库标准只取时间函数形式）
-- $$dw$$：[维纳过程](/explore/40-Concepts/维纳过程) 的增量，$$\Delta w \sim \mathcal{N}(0, \Delta t\, I)$$
+- $$dw$$：[维纳过程](/ai-fa/explore/40-Concepts/维纳过程) 的增量，$$\Delta w \sim \mathcal{N}(0, \Delta t\, I)$$
 - 记号 $$dx$$、$$dw$$ 是微分形式，理解成"$$dt$$ 时间内的增量"
 
 ## 2. 数学形式
@@ -24,17 +24,17 @@ $$dx = f(x_t, t)\, dt + g(t)\, dw$$
 - **Fokker–Planck 方程**：$$p_t$$ 满足的 PDE $$\partial_t p = -\nabla \cdot (f p) + \frac{1}{2} g^2 \nabla^2 p$$——描述整个分布如何被推着变形
 - **反向 SDE**（Anderson 1982）：正向 $$dx = f\,dt + g\,dw$$ 的反向时间过程为
 $$dx = \left[ f - g^2 \nabla_x \log p_t(x) \right] dt + g\, d\bar w$$
-反向漂移需要 **[Score函数](/explore/40-Concepts/Score函数)** $$\nabla_x \log p_t$$——这就是"学习 score 就能反向采样"的数学根据
-- **概率流 ODE**：每个 SDE 都有同边缘分布的确定性 ODE 伴生（见 [概率流ODE](/explore/30-Formulas/概率流ODE)）
+反向漂移需要 **[Score函数](/ai-fa/explore/40-Concepts/Score函数)** $$\nabla_x \log p_t$$——这就是"学习 score 就能反向采样"的数学根据
+- **概率流 ODE**：每个 SDE 都有同边缘分布的确定性 ODE 伴生（见 [概率流ODE](/ai-fa/explore/30-Formulas/概率流ODE)）
 
 ## 3. 为什么 AI 需要它
 
 | 出现场景 | 用法 |
 |---|---|
-| [Score-SDE前向过程](/explore/30-Formulas/Score-SDE前向过程) | 统一 SMLD（VP-SDE）与 DDPM（VE-SDE）的框架 |
-| [DDPM前向过程](/explore/30-Formulas/DDPM前向过程) | 离散步极限 = VP-SDE |
-| [概率流ODE](/explore/30-Formulas/概率流ODE) | SDE ↔ ODE 双采样通道 |
-| [随机插值论文](/explore/10-Papers/02-生成建模与扩散/Building Normalizing Flows with Stochastic Interpolants（随机插值）) | 在 SDE 与 ODE 之间连续插值的统一理论 |
+| [Score-SDE前向过程](/ai-fa/explore/30-Formulas/Score-SDE前向过程) | 统一 SMLD（VP-SDE）与 DDPM（VE-SDE）的框架 |
+| [DDPM前向过程](/ai-fa/explore/30-Formulas/DDPM前向过程) | 离散步极限 = VP-SDE |
+| [概率流ODE](/ai-fa/explore/30-Formulas/概率流ODE) | SDE ↔ ODE 双采样通道 |
+| [随机插值论文](/ai-fa/explore/10-Papers/02-生成建模与扩散/Building Normalizing Flows with Stochastic Interpolants（随机插值）) | 在 SDE 与 ODE 之间连续插值的统一理论 |
 
 ## 4. 常见误区
 
@@ -44,7 +44,7 @@ $$dx = \left[ f - g^2 \nabla_x \log p_t(x) \right] dt + g\, d\bar w$$
 
 ## 5. 相关概念
 
-- [常微分方程](/explore/40-Concepts/常微分方程（ODE）)：无噪声版本
-- [维纳过程](/explore/40-Concepts/维纳过程)：噪声的数学对象
-- [Score函数](/explore/40-Concepts/Score函数)：反向 SDE 的关键拼图
-- [马尔可夫链](/explore/40-Concepts/马尔可夫链)：SDE 是连续时间马尔可夫过程
+- [常微分方程](/ai-fa/explore/40-Concepts/常微分方程（ODE）)：无噪声版本
+- [维纳过程](/ai-fa/explore/40-Concepts/维纳过程)：噪声的数学对象
+- [Score函数](/ai-fa/explore/40-Concepts/Score函数)：反向 SDE 的关键拼图
+- [马尔可夫链](/ai-fa/explore/40-Concepts/马尔可夫链)：SDE 是连续时间马尔可夫过程

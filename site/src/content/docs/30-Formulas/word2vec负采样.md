@@ -19,10 +19,10 @@ $$
 
 skip-gram 负采样损失
 
-**直觉**：正邻居拉近、随机负词推远（$$\sigma$$ = [sigmoid](/explore/40-Concepts/sigmoid函数)，当"真/假邻居"的二分类打分）
+**直觉**：正邻居拉近、随机负词推远（$$\sigma$$ = [sigmoid](/ai-fa/explore/40-Concepts/sigmoid函数)，当"真/假邻居"的二分类打分）
 
 ## 本命论文
 
-[Efficient Estimation of Word Representations in Vector Space](/explore/10-Papers/01-架构演进/Efficient Estimation of Word Representations in Vector Space（word2vec）)
+[Efficient Estimation of Word Representations in Vector Space](/ai-fa/explore/10-Papers/01-架构演进/Efficient Estimation of Word Representations in Vector Space（word2vec）)
 
 > 待办：精读时补"表示对照表"（不同论文的符号差异换算）

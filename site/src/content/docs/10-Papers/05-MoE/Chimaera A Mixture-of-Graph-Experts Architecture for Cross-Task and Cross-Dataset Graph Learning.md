@@ -30,9 +30,9 @@ layer: 精化占位
 （待精读）
 
 ## 5. 与前作/矩阵关系
-- 线锚：[混合专家（MoE）](/explore/20-Algorithms/混合专家（MoE）) · [MoE门控公式](/explore/30-Formulas/MoE门控公式)（占位挂链，处理段精化）
+- 线锚：[混合专家（MoE）](/ai-fa/explore/20-Algorithms/混合专家（MoE）) · [MoE门控公式](/ai-fa/explore/30-Formulas/MoE门控公式)（占位挂链，处理段精化）
 - 研判：⚪ 架构多样性参考，与主线正交
-- MoE 架构谱系：[GShard](/explore/10-Papers/05-MoE/GShard- Scaling Giant Models with Conditional Computation and Automatic Sharding（GShard）) · [Switch](/explore/10-Papers/05-MoE/Switch Transformers- Scaling to Trillion Parameter Models with Simple and Efficient Spars（Switch）)
+- MoE 架构谱系：[GShard](/ai-fa/explore/10-Papers/05-MoE/GShard- Scaling Giant Models with Conditional Computation and Automatic Sharding（GShard）) · [Switch](/ai-fa/explore/10-Papers/05-MoE/Switch Transformers- Scaling to Trillion Parameter Models with Simple and Efficient Spars（Switch）)
 
 ## 6. 影响后续
 （待精读）

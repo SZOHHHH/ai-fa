@@ -13,14 +13,14 @@ tags: [concept]
 
 **形式**：$$K$$ 类中的第 $$y$$ 类编码为 $$e_y \in \{0,1\}^K$$，其中 $$(e_y)_i = \mathcal{I}[i = y]$$（只有第 $$y$$ 位是 1）。
 
-- 记号 $$e_y$$ 与 [概率分布](/explore/40-Concepts/概率分布) 的**独热分布**（categorical 分布的退化情形）完全同构：作为"编码"用时强调向量表示，作为"分布"用时强调概率含义（概率 1 全押在第 y 类）。
+- 记号 $$e_y$$ 与 [概率分布](/ai-fa/explore/40-Concepts/概率分布) 的**独热分布**（categorical 分布的退化情形）完全同构：作为"编码"用时强调向量表示，作为"分布"用时强调概率含义（概率 1 全押在第 y 类）。
 
 ## 2. 三个身份（为什么它无处不在）
 
 | 身份 | 用法 | 库内出现处 |
 |---|---|---|
-| **标签表示** | 分类监督的硬标签 y | [交叉熵](/explore/30-Formulas/交叉熵)：one-hot CE = $$-\log q_y$$（NLL） |
-| **动作空间** | 离散动作（按键）的向量表示 | [逆动力学（IDM）](/explore/40-Concepts/逆动力学（IDM）)：Atari 18 维按键；BC/DPO 同款动作头 |
+| **标签表示** | 分类监督的硬标签 y | [交叉熵](/ai-fa/explore/30-Formulas/交叉熵)：one-hot CE = $$-\log q_y$$（NLL） |
+| **动作空间** | 离散动作（按键）的向量表示 | [逆动力学（IDM）](/ai-fa/explore/40-Concepts/逆动力学（IDM）)：Atari 18 维按键；BC/DPO 同款动作头 |
 | **离散采样** | categorical 采样的结果形态 | 从 softmax 分布采样 → one-hot 向量 |
 
 - **身份切换的本质**：one-hot 向量 = 概率分布的极端点。softmax 输出软分布、训练用软目标（soft-CE）；环境执行时 argmax/采样回 one-hot——**软硬切换发生在网络出口处**。
@@ -39,8 +39,8 @@ tags: [concept]
 
 ## 5. 相关概念
 
-- [概率分布](/explore/40-Concepts/概率分布)：one-hot 是它的退化情形（概率全押一类）
-- [交叉熵](/explore/30-Formulas/交叉熵)：one-hot 标签使 CE 塌缩为 NLL——标准搭档
-- [sigmoid函数](/explore/40-Concepts/sigmoid函数)：二分类时 one-hot(2 维) 与"0/1 单标量 + sigmoid"等价
-- [word2vec负采样](/explore/30-Formulas/word2vec负采样)：从词表均匀采负例——one-hot 世界的 embedding 化起点
-- [VQ-VAE目标](/explore/30-Formulas/VQ-VAE目标)：镜像问题——把稠密连续编码拉向离散码本（最近邻≈"软 one-hot 化"隐空间）
+- [概率分布](/ai-fa/explore/40-Concepts/概率分布)：one-hot 是它的退化情形（概率全押一类）
+- [交叉熵](/ai-fa/explore/30-Formulas/交叉熵)：one-hot 标签使 CE 塌缩为 NLL——标准搭档
+- [sigmoid函数](/ai-fa/explore/40-Concepts/sigmoid函数)：二分类时 one-hot(2 维) 与"0/1 单标量 + sigmoid"等价
+- [word2vec负采样](/ai-fa/explore/30-Formulas/word2vec负采样)：从词表均匀采负例——one-hot 世界的 embedding 化起点
+- [VQ-VAE目标](/ai-fa/explore/30-Formulas/VQ-VAE目标)：镜像问题——把稠密连续编码拉向离散码本（最近邻≈"软 one-hot 化"隐空间）

@@ -38,7 +38,7 @@ $$
 
 ## 5. 与前作/矩阵关系
 
-← [Adam- A Method for Stochastic Optimization](/explore/10-Papers/01-架构演进/Adam- A Method for Stochastic Optimization（Adam）)（本批已入库）；→ AdamW 成 Transformer 训练标配（全库实验假设）
+← [Adam- A Method for Stochastic Optimization](/ai-fa/explore/10-Papers/01-架构演进/Adam- A Method for Stochastic Optimization（Adam）)（本批已入库）；→ AdamW 成 Transformer 训练标配（全库实验假设）
 
 ## 6. 影响后续
 
@@ -48,6 +48,6 @@ $$
 
 需要：先读 Adam；"L2 与 weight decay 等价"只在 SGD 成立的证明是本卡核心
 
-> 近邻同族：[Bag of Tricks for Efficient Text Classification](/explore/10-Papers/01-架构演进/Bag of Tricks for Efficient Text Classification（FastText）)
+> 近邻同族：[Bag of Tricks for Efficient Text Classification](/ai-fa/explore/10-Papers/01-架构演进/Bag of Tricks for Efficient Text Classification（FastText）)
 
-> 数学根基：[Adam更新规则](/explore/30-Formulas/Adam更新规则) · [梯度](/explore/40-Concepts/梯度)
+> 数学根基：[Adam更新规则](/ai-fa/explore/30-Formulas/Adam更新规则) · [梯度](/ai-fa/explore/40-Concepts/梯度)

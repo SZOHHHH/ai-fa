@@ -34,7 +34,7 @@ $$
 $$
 
 
-**直觉**：→ [ReAct - Synergizing Reasoning and Acting in Language Models](/explore/10-Papers/07-推理模型/ReAct- Synergizing Reasoning and Acting in Language Models（ReAct）)（库内，推理×行动）；推理矩阵触发列的工具分支
+**直觉**：→ [ReAct - Synergizing Reasoning and Acting in Language Models](/ai-fa/explore/10-Papers/07-推理模型/ReAct- Synergizing Reasoning and Acting in Language Models（ReAct）)（库内，推理×行动）；推理矩阵触发列的工具分支
 
 ## 5. 与前作/矩阵关系
 
@@ -48,6 +48,6 @@ $$
 
 undefined
 
-> 近邻同族：[BLIP-2 - Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models](/explore/10-Papers/08-多模态/BLIP-2- Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Lan（BLIP-2）) · [Chameleon - Mixed-Modal Early-Fusion Foundation Models](/explore/10-Papers/08-多模态/Chameleon- Mixed-Modal Early-Fusion Foundation Models（Chameleon）)
+> 近邻同族：[BLIP-2 - Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models](/ai-fa/explore/10-Papers/08-多模态/BLIP-2- Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Lan（BLIP-2）) · [Chameleon - Mixed-Modal Early-Fusion Foundation Models](/ai-fa/explore/10-Papers/08-多模态/Chameleon- Mixed-Modal Early-Fusion Foundation Models（Chameleon）)
 
-> 数学根基：[视觉语言模型（VLM）](/explore/40-Concepts/视觉语言模型（VLM）)
+> 数学根基：[视觉语言模型（VLM）](/ai-fa/explore/40-Concepts/视觉语言模型（VLM）)

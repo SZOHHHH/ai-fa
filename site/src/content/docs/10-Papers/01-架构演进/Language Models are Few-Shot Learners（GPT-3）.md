@@ -34,19 +34,19 @@ pdf: 已下载（PDF/）
 ## 4. 核心公式
 
 - 自回归似然：$$\log p(y \mid x) = \sum_t \log p(y_t \mid x, y_{<t})$$——ICL 的全部机制（无隐藏更新）
-- 架构同 [注意力核心公式](/explore/30-Formulas/注意力核心公式)（因果掩码版）
+- 架构同 [注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)（因果掩码版）
 
 ## 5. 与前作的关系
 
 - 扩展了 GPT-2（零样本）到 few-shot 生态位
-- 依托 [Language Models are Few-Shot Learners](/explore/10-Papers/01-架构演进/Language Models are Few-Shot Learners（GPT-3）) 同期的 [Scaling Laws for Neural Language Models](/explore/10-Papers/01-架构演进/Scaling Laws for Neural Language Models（Scaling Laws）)（同团队，尺度信念的数学版）
+- 依托 [Language Models are Few-Shot Learners](/ai-fa/explore/10-Papers/01-架构演进/Language Models are Few-Shot Learners（GPT-3）) 同期的 [Scaling Laws for Neural Language Models](/ai-fa/explore/10-Papers/01-架构演进/Scaling Laws for Neural Language Models（Scaling Laws）)（同团队，尺度信念的数学版）
 
 ## 6. 影响与后续
 
-- "大即美"路线的引爆点 → ChatGPT/[InstructGPT](/explore/10-Papers/04-强化学习与对齐/Training language models to follow instructions with human feedback（InstructGPT）) 的底座
+- "大即美"路线的引爆点 → ChatGPT/[InstructGPT](/ai-fa/explore/10-Papers/04-强化学习与对齐/Training language models to follow instructions with human feedback（InstructGPT）) 的底座
 - ICL 机制研究成为独立方向（后续理论论文试图解释"梯度在哪"）
 - 上下文学习改变了整个人机交互范式
 
 ## 7. 读前须知
 
-[Transformer](/explore/20-Algorithms/Transformer)、[注意力核心公式](/explore/30-Formulas/注意力核心公式)、[Scaling Laws for Neural Language Models](/explore/10-Papers/01-架构演进/Scaling Laws for Neural Language Models（Scaling Laws）)
+[Transformer](/ai-fa/explore/20-Algorithms/Transformer)、[注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)、[Scaling Laws for Neural Language Models](/ai-fa/explore/10-Papers/01-架构演进/Scaling Laws for Neural Language Models（Scaling Laws）)

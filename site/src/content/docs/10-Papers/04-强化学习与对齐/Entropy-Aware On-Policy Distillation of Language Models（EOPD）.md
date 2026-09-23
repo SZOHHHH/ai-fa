@@ -38,8 +38,8 @@ w(H) 随教师熵单调增（如 sigmoid(γ(H−H₀))）。
 
 ## 5. 与前作关系
 
-- ← [GKD](/explore/10-Papers/04-强化学习与对齐/On-Policy Distillation of Language Models- Learning from Self-Generated Mistakes（GKD）)：GKD 的 β（散度混合系数）是**全局常数**，EOPD 把它变成**逐 token 的函数**（熵门控）——"常数→函数"是典型的 B 级论文操作
-- ≡ 软硬对偶：PPO 硬裁剪↔[SAPO](/explore/10-Papers/04-强化学习与对齐/Soft Adaptive Policy Optimization（SAPO）) 软门控（[RL 稳定化矩阵](/explore/60-Matrices/RL稳定化矩阵)）、Top-K↔Soft MoE（[MoE 路由矩阵](/explore/60-Matrices/MoE路由矩阵)）——**自适应切换又一次出现**，这次在散度轴上
+- ← [GKD](/ai-fa/explore/10-Papers/04-强化学习与对齐/On-Policy Distillation of Language Models- Learning from Self-Generated Mistakes（GKD）)：GKD 的 β（散度混合系数）是**全局常数**，EOPD 把它变成**逐 token 的函数**（熵门控）——"常数→函数"是典型的 B 级论文操作
+- ≡ 软硬对偶：PPO 硬裁剪↔[SAPO](/ai-fa/explore/10-Papers/04-强化学习与对齐/Soft Adaptive Policy Optimization（SAPO）) 软门控（[RL 稳定化矩阵](/ai-fa/explore/60-Matrices/RL稳定化矩阵)）、Top-K↔Soft MoE（[MoE 路由矩阵](/ai-fa/explore/60-Matrices/MoE路由矩阵)）——**自适应切换又一次出现**，这次在散度轴上
 - #loss/distillation
 
 ## 6. 影响后续
@@ -51,8 +51,8 @@ w(H) 随教师熵单调增（如 sigmoid(γ(H−H₀))）。
 - 需要：前向/反向 KL 的质量覆盖 vs 模式搜索（EOPD 的全部故事建立在这组对偶上）
 - 本卡是 **ICML 2026 已接收**作品——**B 级"占格创新"的活体样本**：一个格（学生×散度切换×token级）+ 一个诊断定理（高熵区反向 KL 的方差界）+ 多规模实验（0.6B/1.7B/4B）。**用户的 3 个月目标可以直接对标这张卡的体量**
 
-> 近邻同族：[Any-OPD- Heterogeneous On-Policy Distillation for Flow-Matching Models via Representation-Space Bridging](/explore/10-Papers/04-强化学习与对齐/Any-OPD- Heterogeneous On-Policy Distillation for Flow-Matching Models via Representation-Space Bridging（Any-OPD）) · [CausalOPD- First-Wrong-Step Supervision for Distilling Causal Chain Reasoning](/explore/10-Papers/04-强化学习与对齐/CausalOPD- First-Wrong-Step Supervision for Distilling Causal Chain Reasoning（CausalOPD）)
+> 近邻同族：[Any-OPD- Heterogeneous On-Policy Distillation for Flow-Matching Models via Representation-Space Bridging](/ai-fa/explore/10-Papers/04-强化学习与对齐/Any-OPD- Heterogeneous On-Policy Distillation for Flow-Matching Models via Representation-Space Bridging（Any-OPD）) · [CausalOPD- First-Wrong-Step Supervision for Distilling Causal Chain Reasoning](/ai-fa/explore/10-Papers/04-强化学习与对齐/CausalOPD- First-Wrong-Step Supervision for Distilling Causal Chain Reasoning（CausalOPD）)
 
-> 数学根基：[策略梯度定理](/explore/40-Concepts/策略梯度定理)
+> 数学根基：[策略梯度定理](/ai-fa/explore/40-Concepts/策略梯度定理)
 
-> 数学根基：[蒸馏损失](/explore/30-Formulas/蒸馏损失) · [DSM目标](/explore/30-Formulas/DSM目标)
+> 数学根基：[蒸馏损失](/ai-fa/explore/30-Formulas/蒸馏损失) · [DSM目标](/ai-fa/explore/30-Formulas/DSM目标)

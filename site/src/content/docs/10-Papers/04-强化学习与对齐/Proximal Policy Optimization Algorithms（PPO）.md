@@ -47,12 +47,12 @@ $$L^{CLIP}(\theta)\;=\;\mathbb{E}_t\Big[\min\big(\rho_t\hat A_t,\;\;\mathrm{clip
 
 裁剪的精髓：**只有"变好还没变够"的方向有梯度，"已经变过头"的方向自动断电**——悲观下界：取 min 保证目标不高于真实代理目标（保守估计，宁可不涨也不虚涨）。
 
-- 需要的前置：[PPO裁剪目标](/explore/30-Formulas/PPO裁剪目标)（完整推导）、[策略梯度定理](/explore/40-Concepts/策略梯度定理)、[重要性采样](/explore/40-Concepts/重要性采样)、[TRPO](/explore/10-Papers/04-强化学习与对齐/Trust Region Policy Optimization（TRPO）)
+- 需要的前置：[PPO裁剪目标](/ai-fa/explore/30-Formulas/PPO裁剪目标)（完整推导）、[策略梯度定理](/ai-fa/explore/40-Concepts/策略梯度定理)、[重要性采样](/ai-fa/explore/40-Concepts/重要性采样)、[TRPO](/ai-fa/explore/10-Papers/04-强化学习与对齐/Trust Region Policy Optimization（TRPO）)
 
 ## 5. 与前作/矩阵关系
 
-- ← [TRPO](/explore/10-Papers/04-强化学习与对齐/Trust Region Policy Optimization（TRPO）)（二阶→一阶）；← [GAE](/explore/10-Papers/04-强化学习与对齐/High-Dimensional Continuous Control Using Generalized Advantage Estimation（GAE）)（优势估计标配）；
-- → [InstructGPT](/explore/10-Papers/04-强化学习与对齐/Training language models to follow instructions with human feedback（InstructGPT）)/ChatGPT 的 RLHF 引擎；→ DeepSeekMath 的 GRPO（去掉价值头、组内相对优势）——LLM 时代两大继承者；
+- ← [TRPO](/ai-fa/explore/10-Papers/04-强化学习与对齐/Trust Region Policy Optimization（TRPO）)（二阶→一阶）；← [GAE](/ai-fa/explore/10-Papers/04-强化学习与对齐/High-Dimensional Continuous Control Using Generalized Advantage Estimation（GAE）)（优势估计标配）；
+- → [InstructGPT](/ai-fa/explore/10-Papers/04-强化学习与对齐/Training language models to follow instructions with human feedback（InstructGPT）)/ChatGPT 的 RLHF 引擎；→ DeepSeekMath 的 GRPO（去掉价值头、组内相对优势）——LLM 时代两大继承者；
 - → 世界模型想象训练系（Dreamer/DIAMOND 的 actor 损失=REINFORCE 式+熵，风格上比 PPO 更朴素——读代码时注意想象系未必用 clip）。
 
 ## 6. 影响与后续
@@ -63,8 +63,8 @@ $$L^{CLIP}(\theta)\;=\;\mathbb{E}_t\Big[\min\big(\rho_t\hat A_t,\;\;\mathrm{clip
 
 ## 7. 读前须知
 
-- **必前置**：[策略梯度定理](/explore/40-Concepts/策略梯度定理)、[重要性采样](/explore/40-Concepts/重要性采样)、[PPO裁剪目标](/explore/30-Formulas/PPO裁剪目标)、[TRPO](/explore/10-Papers/04-强化学习与对齐/Trust Region Policy Optimization（TRPO）)（对照着读，理解"裁剪≈信赖域的廉价版"）；
+- **必前置**：[策略梯度定理](/ai-fa/explore/40-Concepts/策略梯度定理)、[重要性采样](/ai-fa/explore/40-Concepts/重要性采样)、[PPO裁剪目标](/ai-fa/explore/30-Formulas/PPO裁剪目标)、[TRPO](/ai-fa/explore/10-Papers/04-强化学习与对齐/Trust Region Policy Optimization（TRPO）)（对照着读，理解"裁剪≈信赖域的廉价版"）；
 - **易混点**：①min 是"悲观下界"不是保守主义美学——数学上防止目标高估；②裁剪的是**概率比率**不是概率本身；③价值头与策略头共享主干（A3C 形态）——"PPO 算法"与"网络形态"是两件事；
-- **读法建议**：正文极短（8 页）；先读 [PPO裁剪目标](/explore/30-Formulas/PPO裁剪目标) 公式卡的直觉，再看本文图 1（裁剪曲线图——一图胜千言）与算法 1。
+- **读法建议**：正文极短（8 页）；先读 [PPO裁剪目标](/ai-fa/explore/30-Formulas/PPO裁剪目标) 公式卡的直觉，再看本文图 1（裁剪曲线图——一图胜千言）与算法 1。
 
-> 数学根基：[PPO裁剪目标](/explore/30-Formulas/PPO裁剪目标) · [策略梯度定理](/explore/40-Concepts/策略梯度定理) · [广义优势估计GAE](/explore/40-Concepts/广义优势估计GAE)
+> 数学根基：[PPO裁剪目标](/ai-fa/explore/30-Formulas/PPO裁剪目标) · [策略梯度定理](/ai-fa/explore/40-Concepts/策略梯度定理) · [广义优势估计GAE](/ai-fa/explore/40-Concepts/广义优势估计GAE)

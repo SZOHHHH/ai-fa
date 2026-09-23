@@ -34,20 +34,20 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- [GRPO目标](/explore/30-Formulas/GRPO目标) —— 本文灵魂
+- [GRPO目标](/ai-fa/explore/30-Formulas/GRPO目标) —— 本文灵魂
 
 ## 5. 与前作的关系
 
-- 简化了 [Proximal Policy Optimization Algorithms](/explore/10-Papers/04-强化学习与对齐/Proximal Policy Optimization Algorithms（PPO）)（去 critic）于 LLM 场景
-- 继承 [Deep reinforcement learning from human preferences](/explore/10-Papers/04-强化学习与对齐/Deep reinforcement learning from human preferences（RLHF）) 的 KL 锚思想
+- 简化了 [Proximal Policy Optimization Algorithms](/ai-fa/explore/10-Papers/04-强化学习与对齐/Proximal Policy Optimization Algorithms（PPO）)（去 critic）于 LLM 场景
+- 继承 [Deep reinforcement learning from human preferences](/ai-fa/explore/10-Papers/04-强化学习与对齐/Deep reinforcement learning from human preferences（RLHF）) 的 KL 锚思想
 - RLOO（leave-one-out 基线）同期平行工作
 
 ## 6. 影响与后续
 
-- [DeepSeek-R1 - Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](/explore/10-Papers/04-强化学习与对齐/DeepSeek-R1- Incentivizing Reasoning Capability in LLMs via Reinforcement Learning（R1）) 直接沿用——GRPO 因 R1 出圈
-- [Dr.GRPO](/explore/10-Papers/04-强化学习与对齐/Understanding R1-Zero-Like Training- A Critical Perspective（Dr.GRPO）)/[DAPO](/explore/10-Papers/04-强化学习与对齐/DAPO- An Open-Source LLM Reinforcement Learning System at Scale（DAPO）) 等修正系跟进
+- [DeepSeek-R1 - Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](/ai-fa/explore/10-Papers/04-强化学习与对齐/DeepSeek-R1- Incentivizing Reasoning Capability in LLMs via Reinforcement Learning（R1）) 直接沿用——GRPO 因 R1 出圈
+- [Dr.GRPO](/ai-fa/explore/10-Papers/04-强化学习与对齐/Understanding R1-Zero-Like Training- A Critical Perspective（Dr.GRPO）)/[DAPO](/ai-fa/explore/10-Papers/04-强化学习与对齐/DAPO- An Open-Source LLM Reinforcement Learning System at Scale（DAPO）) 等修正系跟进
 - 开源 RL 训练框架默认实现之一
 
 ## 7. 读前须知
 
-[PPO裁剪目标](/explore/30-Formulas/PPO裁剪目标)、[贝尔曼方程](/explore/40-Concepts/贝尔曼方程)（为什么组均值能替代 V）、[重要性采样](/explore/40-Concepts/重要性采样)
+[PPO裁剪目标](/ai-fa/explore/30-Formulas/PPO裁剪目标)、[贝尔曼方程](/ai-fa/explore/40-Concepts/贝尔曼方程)（为什么组均值能替代 V）、[重要性采样](/ai-fa/explore/40-Concepts/重要性采样)

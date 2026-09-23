@@ -47,9 +47,9 @@ RS 库 08-03 情报；评测基准=领域成熟的标志。
 
 ---
 
-> 谱系枢纽：[Dream to Control - Learning Behaviors by Latent Imagination](/explore/10-Papers/09-世界模型与JEPA/Dream to Control- Learning Behaviors by Latent Imagination（Dreamer）)（图谱连通入口）
-> 近邻同族：[Quo Vadis, World Modeling](/explore/10-Papers/09-世界模型与JEPA/Quo Vadis, World Modeling（WM路线图）) · [Analytic Planning under Uncertainty with Moment Closure](/explore/10-Papers/09-世界模型与JEPA/Analytic Planning under Uncertainty with Moment Closure（矩闭合规划）)
-> 数学根基（占位层）：[扩散条件去噪](/explore/30-Formulas/扩散条件去噪) · [贝尔曼方程](/explore/40-Concepts/贝尔曼方程)
+> 谱系枢纽：[Dream to Control - Learning Behaviors by Latent Imagination](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Dream to Control- Learning Behaviors by Latent Imagination（Dreamer）)（图谱连通入口）
+> 近邻同族：[Quo Vadis, World Modeling](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Quo Vadis, World Modeling（WM路线图）) · [Analytic Planning under Uncertainty with Moment Closure](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Analytic Planning under Uncertainty with Moment Closure（矩闭合规划）)
+> 数学根基（占位层）：[扩散条件去噪](/ai-fa/explore/30-Formulas/扩散条件去噪) · [贝尔曼方程](/ai-fa/explore/40-Concepts/贝尔曼方程)
 
 ## 7. 读前须知
 

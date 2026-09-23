@@ -33,20 +33,20 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- 架构即 [注意力核心公式](/explore/30-Formulas/注意力核心公式)（无因果掩码版）
+- 架构即 [注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)（无因果掩码版）
 - patch 嵌入：$$z_i = W_p \, \text{flatten}(p_i) + e_i$$（一次卷积实现）
 
 ## 5. 与前作的关系
 
-- 移植了 [Attention Is All You Need](/explore/10-Papers/01-架构演进/Attention Is All You Need（Transformer）) 到像素域
+- 移植了 [Attention Is All You Need](/ai-fa/explore/10-Papers/01-架构演进/Attention Is All You Need（Transformer）) 到像素域
 - 对比 [CNN 数十年的归纳偏置]：平移不变性/局部性被"大数据 + 预训练"替代
 
 ## 6. 影响与后续
 
-- [CLIP](/explore/10-Papers/08-多模态/Learning Transferable Visual Models From Natural Language Supervision（CLIP）) 的视觉编码器（线 8 前置）；[DiT](/explore/10-Papers/02-生成建模与扩散/Scalable Diffusion Models with Transformers（DiT）)（[Scalable Diffusion Models with Transformers](/explore/10-Papers/02-生成建模与扩散/Scalable Diffusion Models with Transformers（DiT）)）直接沿用 patch 化
+- [CLIP](/ai-fa/explore/10-Papers/08-多模态/Learning Transferable Visual Models From Natural Language Supervision（CLIP）) 的视觉编码器（线 8 前置）；[DiT](/ai-fa/explore/10-Papers/02-生成建模与扩散/Scalable Diffusion Models with Transformers（DiT）)（[Scalable Diffusion Models with Transformers](/ai-fa/explore/10-Papers/02-生成建模与扩散/Scalable Diffusion Models with Transformers（DiT）)）直接沿用 patch 化
 - 多模态统一 token 化的起点（图文音视频全走 patch/token 路线）
 - 视觉骨干全面 Transformer 化（Swin/DeiT 系列迭代）
 
 ## 7. 读前须知
 
-[Transformer](/explore/20-Algorithms/Transformer)、[注意力核心公式](/explore/30-Formulas/注意力核心公式)、[位置编码](/explore/40-Concepts/位置编码)（可学习版）
+[Transformer](/ai-fa/explore/20-Algorithms/Transformer)、[注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)、[位置编码](/ai-fa/explore/40-Concepts/位置编码)（可学习版）

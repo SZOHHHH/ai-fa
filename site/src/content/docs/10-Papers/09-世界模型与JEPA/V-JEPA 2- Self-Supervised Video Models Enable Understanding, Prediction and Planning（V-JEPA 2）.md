@@ -33,12 +33,12 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- [JEPA联合嵌入预测架构](/explore/40-Concepts/JEPA联合嵌入预测架构) + 动作条件化（[世界模型](/explore/20-Algorithms/世界模型) §3 的 JEPA 实例）
+- [JEPA联合嵌入预测架构](/ai-fa/explore/40-Concepts/JEPA联合嵌入预测架构) + 动作条件化（[世界模型](/ai-fa/explore/20-Algorithms/世界模型) §3 的 JEPA 实例）
 
 ## 5. 与前作的关系
 
-- 扩展了 [Revisiting Feature Prediction for Learning Visual Representations from Video](/explore/10-Papers/09-世界模型与JEPA/Revisiting Feature Prediction for Learning Visual Representations from Video（V-JEPA）)：理解 → 预测+规划
-- 与 [Dreamer](/explore/10-Papers/09-世界模型与JEPA/Dream to Control- Learning Behaviors by Latent Imagination（Dreamer）) 系对照：同样"想象中规划"，但学的是抽象表征而非像素重建（LeCun 蓝图的落地）
+- 扩展了 [Revisiting Feature Prediction for Learning Visual Representations from Video](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Revisiting Feature Prediction for Learning Visual Representations from Video（V-JEPA）)：理解 → 预测+规划
+- 与 [Dreamer](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Dream to Control- Learning Behaviors by Latent Imagination（Dreamer）) 系对照：同样"想象中规划"，但学的是抽象表征而非像素重建（LeCun 蓝图的落地）
 
 ## 6. 影响与后续
 
@@ -47,4 +47,4 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[JEPA联合嵌入预测架构](/explore/40-Concepts/JEPA联合嵌入预测架构)、[世界模型](/explore/20-Algorithms/世界模型)、[Revisiting Feature Prediction for Learning Visual Representations from Video](/explore/10-Papers/09-世界模型与JEPA/Revisiting Feature Prediction for Learning Visual Representations from Video（V-JEPA）)
+[JEPA联合嵌入预测架构](/ai-fa/explore/40-Concepts/JEPA联合嵌入预测架构)、[世界模型](/ai-fa/explore/20-Algorithms/世界模型)、[Revisiting Feature Prediction for Learning Visual Representations from Video](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Revisiting Feature Prediction for Learning Visual Representations from Video（V-JEPA）)

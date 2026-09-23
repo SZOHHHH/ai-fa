@@ -20,7 +20,7 @@ pdf: 已下载（PDF/）
 
 ## 2. 核心贡献
 
-- **MQA 结构**：$$h$$ 个 Q 头 × **1** 组 KV（[注意力机制](/explore/40-Concepts/注意力机制) 谱系表）
+- **MQA 结构**：$$h$$ 个 Q 头 × **1** 组 KV（[注意力机制](/ai-fa/explore/40-Concepts/注意力机制) 谱系表）
 - 自回归解码显存带宽瓶颈的定量分析（MQA 让 decode 从 memory-bound 松绑）
 - "质量小损换成本大降"的实用权衡
 
@@ -33,19 +33,19 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- [KV缓存](/explore/40-Concepts/KV缓存)：cache 体积公式的直接受益者（$$h$$ 因子消失）
+- [KV缓存](/ai-fa/explore/40-Concepts/KV缓存)：cache 体积公式的直接受益者（$$h$$ 因子消失）
 
 ## 5. 与前作的关系
 
-- 前置于 [GQA - Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints](/explore/10-Papers/01-架构演进/GQA- Training Generalized Multi-Query Transformer Models from Multi-Head Checkoffs（GQA）)：GQA 是它的质量修复版
+- 前置于 [GQA - Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints](/ai-fa/explore/10-Papers/01-架构演进/GQA- Training Generalized Multi-Query Transformer Models from Multi-Head Checkoffs（GQA）)：GQA 是它的质量修复版
 - 依托 [自回归推理的 roofline 分析]（同文 PaLM 推理实验）
 
 ## 6. 影响与后续
 
-- [GQA - Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints](/explore/10-Papers/01-架构演进/GQA- Training Generalized Multi-Query Transformer Models from Multi-Head Checkoffs（GQA）) 提出"MHA→MQA 的中间档"
-- [MLA多头潜在注意力](/explore/30-Formulas/MLA多头潜在注意力) 用低秩压缩走出另一条路（质量不损）
+- [GQA - Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints](/ai-fa/explore/10-Papers/01-架构演进/GQA- Training Generalized Multi-Query Transformer Models from Multi-Head Checkoffs（GQA）) 提出"MHA→MQA 的中间档"
+- [MLA多头潜在注意力](/ai-fa/explore/30-Formulas/MLA多头潜在注意力) 用低秩压缩走出另一条路（质量不损）
 - 推理引擎批处理能力量级提升的起点
 
 ## 7. 读前须知
 
-[注意力机制](/explore/40-Concepts/注意力机制)、[KV缓存](/explore/40-Concepts/KV缓存)、[注意力计算复杂度](/explore/30-Formulas/注意力计算复杂度)
+[注意力机制](/ai-fa/explore/40-Concepts/注意力机制)、[KV缓存](/ai-fa/explore/40-Concepts/KV缓存)、[注意力计算复杂度](/ai-fa/explore/30-Formulas/注意力计算复杂度)

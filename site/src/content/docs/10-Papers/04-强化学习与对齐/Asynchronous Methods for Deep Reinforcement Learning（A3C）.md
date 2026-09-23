@@ -37,14 +37,14 @@ tags: [paper]
 
 $$\mathcal{L}(\theta)\;=\;-\sum_t\log\pi_\theta(a_t\mid s_t)\,\underbrace{\big(R_t-V_\theta(s_t)\big)}_{\text{优势：这段比预想好多少}}\;+\;c\sum_t\big(V_\theta(s_t)-R_t\big)^2\;-\;\beta\sum_t\mathcal{H}\big(\pi_\theta(\cdot\mid s_t)\big)$$
 
-**直觉解释（三项各是谁）**：①策略项=带优势加权的对数似然（[REINFORCE目标](/explore/30-Formulas/REINFORCE目标) 加了 baseline）；②价值项=对 n-step 回报的回归（critic 的监督）；③熵项=奖励"别太确定"（[熵正则RL](/explore/40-Concepts/熵正则RL) 的二等公民版）。**梯度分配律**保证三项相加合法：各自对 $$\theta$$ 求导后线性叠加，共用的主干特征同时接受三份监督。
+**直觉解释（三项各是谁）**：①策略项=带优势加权的对数似然（[REINFORCE目标](/ai-fa/explore/30-Formulas/REINFORCE目标) 加了 baseline）；②价值项=对 n-step 回报的回归（critic 的监督）；③熵项=奖励"别太确定"（[熵正则RL](/ai-fa/explore/40-Concepts/熵正则RL) 的二等公民版）。**梯度分配律**保证三项相加合法：各自对 $$\theta$$ 求导后线性叠加，共用的主干特征同时接受三份监督。
 
-- 需要的前置：[策略梯度定理](/explore/40-Concepts/策略梯度定理)、[价值函数（V与Q）](/explore/40-Concepts/价值函数（V与Q）)、[TD误差与自举](/explore/40-Concepts/TD误差与自举)（n-step 与尾项自举）、[熵正则RL](/explore/40-Concepts/熵正则RL)、[on-policy与off-policy](/explore/40-Concepts/on-policy与off-policy)（为什么 on 家族需要并行去相关）
+- 需要的前置：[策略梯度定理](/ai-fa/explore/40-Concepts/策略梯度定理)、[价值函数（V与Q）](/ai-fa/explore/40-Concepts/价值函数（V与Q）)、[TD误差与自举](/ai-fa/explore/40-Concepts/TD误差与自举)（n-step 与尾项自举）、[熵正则RL](/ai-fa/explore/40-Concepts/熵正则RL)、[on-policy与off-policy](/ai-fa/explore/40-Concepts/on-policy与off-policy)（为什么 on 家族需要并行去相关）
 
 ## 5. 与前作/矩阵关系
 
 - ← **actor-critic 架构**（Barto-Sutton-Anderson 1983 的 ASE/ACE 元件，43 岁的老思想）+ **REINFORCE** + DQN 时代的深度稳定化经验；
-- ← 与 [DQN](/explore/10-Papers/04-强化学习与对齐/Playing Atari with Deep Reinforcement Learning（DQN）) 是**双解对照**：同一个病（数据相关+训练不稳），DQN 开药"回放+目标网络"（off 路线），A3C 开药"并行去相关"（on 路线）；
+- ← 与 [DQN](/ai-fa/explore/10-Papers/04-强化学习与对齐/Playing Atari with Deep Reinforcement Learning（DQN）) 是**双解对照**：同一个病（数据相关+训练不稳），DQN 开药"回放+目标网络"（off 路线），A3C 开药"并行去相关"（on 路线）；
 - → IMPALA（分布式批量版）、A2C（去掉异步的同步版——往往更稳更快）；**共享主干双头**从本文定型，一路传到现代 MBRL：Dreamer 系在 RSSM 上挂 actor/critic 双头、像素世界模型（DIAMOND）在 CNN+LSTM 主干上挂双头——**都是 A3C 形态的当代化身**。
 
 ## 6. 影响与后续
@@ -56,6 +56,6 @@ $$\mathcal{L}(\theta)\;=\;-\sum_t\log\pi_\theta(a_t\mid s_t)\,\underbrace{\big(R
 
 ## 7. 读前须知
 
-- **必前置**：[策略梯度定理](/explore/40-Concepts/策略梯度定理)、[熵正则RL](/explore/40-Concepts/熵正则RL)、[on-policy与off-policy](/explore/40-Concepts/on-policy与off-policy)；
+- **必前置**：[策略梯度定理](/ai-fa/explore/40-Concepts/策略梯度定理)、[熵正则RL](/ai-fa/explore/40-Concepts/熵正则RL)、[on-policy与off-policy](/ai-fa/explore/40-Concepts/on-policy与off-policy)；
 - **易混点**：①A3C 的"3"= Asynchronous Advantage Actor-Critic（不是三代）；②共享主干≠参数共享的 actor 和 critic——是**同一个网络**，只是输出端拆两路；③n-step 回报里的尾部自举与 GAE 的 λ 加权是两种不同的"看多远"方案（GAE 是它的平滑推广）；
 - **读法建议**：重点读 §2（算法表）与图 1（架构图，双头结构一目了然）；4 个算法变体可只看 A3C。

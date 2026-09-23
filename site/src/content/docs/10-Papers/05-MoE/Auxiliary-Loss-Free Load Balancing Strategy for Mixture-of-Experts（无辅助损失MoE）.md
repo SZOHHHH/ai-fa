@@ -38,7 +38,7 @@ $$
 
 ## 5. 与前作/矩阵关系
 
-🚩🚩 **占 [MoE 路由矩阵](/explore/60-Matrices/MoE路由矩阵) "去偏置路由"机会格的主位**——B9 机会格"去偏置路由×理论"的工程实现已被 DeepSeek 占（理论保证侧仍薄但窗口窄）
+🚩🚩 **占 [MoE 路由矩阵](/ai-fa/explore/60-Matrices/MoE路由矩阵) "去偏置路由"机会格的主位**——B9 机会格"去偏置路由×理论"的工程实现已被 DeepSeek 占（理论保证侧仍薄但窗口窄）
 
 
 ## 6. 影响与占位意义
@@ -47,9 +47,9 @@ $$
 
 ---
 
-> 谱系枢纽：[Mixtral of Experts](/explore/10-Papers/05-MoE/Mixtral of Experts（Mixtral）)（图谱连通入口）
-> 近邻同族：[DeepSeek-V3 Technical Report](/explore/10-Papers/05-MoE/DeepSeek-V3 Technical Report（DeepSeek-V3）) · [DeepSeekMoE - Towards Ultimate Expert Specialization in Mixture-of-Experts Language Models](/explore/10-Papers/05-MoE/DeepSeekMoE- Towards Ultimate Expert Specialization in Mixture-of-Experts Language Model（DeepSeekMoE）)
-> 数学根基（占位层）：[softmax函数](/explore/40-Concepts/softmax函数)
+> 谱系枢纽：[Mixtral of Experts](/ai-fa/explore/10-Papers/05-MoE/Mixtral of Experts（Mixtral）)（图谱连通入口）
+> 近邻同族：[DeepSeek-V3 Technical Report](/ai-fa/explore/10-Papers/05-MoE/DeepSeek-V3 Technical Report（DeepSeek-V3）) · [DeepSeekMoE - Towards Ultimate Expert Specialization in Mixture-of-Experts Language Models](/ai-fa/explore/10-Papers/05-MoE/DeepSeekMoE- Towards Ultimate Expert Specialization in Mixture-of-Experts Language Model（DeepSeekMoE）)
+> 数学根基（占位层）：[softmax函数](/ai-fa/explore/40-Concepts/softmax函数)
 
 ## 7. 读前须知
 

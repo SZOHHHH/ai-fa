@@ -37,15 +37,15 @@ $$
 
 ## 5. 与前作/矩阵关系
 
-🚩 占混合架构格（与 Qwen3-Next 同代）；→ [GDN2](/explore/10-Papers/01-架构演进/Gated DeltaNet-2- Decoupling Erase and Write in Linear Attention（GDN2）)/[DeltaNet并行](/explore/10-Papers/01-架构演进/Parallelizing Linear Transformers with the Delta Rule over Sequence Length（DeltaNet并行）)（技术底座）
+🚩 占混合架构格（与 Qwen3-Next 同代）；→ [GDN2](/ai-fa/explore/10-Papers/01-架构演进/Gated DeltaNet-2- Decoupling Erase and Write in Linear Attention（GDN2）)/[DeltaNet并行](/ai-fa/explore/10-Papers/01-架构演进/Parallelizing Linear Transformers with the Delta Rule over Sequence Length（DeltaNet并行）)（技术底座）
 
 
 ## 6. 影响与占位意义
 
 混合配方"3:1 线性:全注意力"成为 2025-26 生产共识的旗舰证据。
 
-> 近邻同族：[A Systematic Analysis of Hybrid Linear Attention](/explore/10-Papers/01-架构演进/A Systematic Analysis of Hybrid Linear Attention（混合线性分析）) · [Griffin- Mixing Gated Linear Recurrences with Local Attention for Efficient Language Models](/explore/10-Papers/01-架构演进/Griffin- Mixing Gated Linear Recurrences with Local Attention for Efficient Language Models（Griffin）)
-> 数学根基（占位层）：[状态空间模型方程](/explore/30-Formulas/状态空间模型方程) · [选择机制](/explore/30-Formulas/选择机制) · [稀疏与线性注意力](/explore/40-Concepts/稀疏与线性注意力)
+> 近邻同族：[A Systematic Analysis of Hybrid Linear Attention](/ai-fa/explore/10-Papers/01-架构演进/A Systematic Analysis of Hybrid Linear Attention（混合线性分析）) · [Griffin- Mixing Gated Linear Recurrences with Local Attention for Efficient Language Models](/ai-fa/explore/10-Papers/01-架构演进/Griffin- Mixing Gated Linear Recurrences with Local Attention for Efficient Language Models（Griffin）)
+> 数学根基（占位层）：[状态空间模型方程](/ai-fa/explore/30-Formulas/状态空间模型方程) · [选择机制](/ai-fa/explore/30-Formulas/选择机制) · [稀疏与线性注意力](/ai-fa/explore/40-Concepts/稀疏与线性注意力)
 
 ## 7. 读前须知
 

@@ -33,16 +33,16 @@ tags: [paper]
 - 方向夹角判据：$$\theta_n = \arccos\big(\frac{z_n^\top z_0}{\lVert z_n\rVert\,\lVert z_0\rVert}\big)$$
 **直觉**：一步推理若顺着"从问题指向解"的大方向走，它大概率是可预测的常规推导（压掉不心疼）；若大角度拐弯，往往在检查/纠错/换思路——这类信息密度高，保留显式。
 - 软标签构造：$$y_{soft}^{(n)} = \frac{1}{l^{(n)}}\sum_{j=1}^{l^{(n)}} y_j^{(n)}$$
-**直觉**：一个潜 token 要"一句话说清整步"，目标就不该是某个具体 token，而是这步所有 token 的语义混合分布——与蒸馏里的软目标同理（[归一化温度与蒸馏](/explore/30-Formulas/归一化温度与蒸馏)）。
+**直觉**：一个潜 token 要"一句话说清整步"，目标就不该是某个具体 token，而是这步所有 token 的语义混合分布——与蒸馏里的软目标同理（[归一化温度与蒸馏](/ai-fa/explore/30-Formulas/归一化温度与蒸馏)）。
 
 ## 5. 与前作/矩阵关系
-- 线锚：[思维链（CoT）](/explore/40-Concepts/思维链（CoT）) · [归一化温度与蒸馏](/explore/30-Formulas/归一化温度与蒸馏)（软标签监督）· [独热编码（One-Hot）](/explore/40-Concepts/独热编码（One-Hot）)（软硬标签之辨）
+- 线锚：[思维链（CoT）](/ai-fa/explore/40-Concepts/思维链（CoT）) · [归一化温度与蒸馏](/ai-fa/explore/30-Formulas/归一化温度与蒸馏)（软标签监督）· [独热编码（One-Hot）](/ai-fa/explore/40-Concepts/独热编码（One-Hot）)（软硬标签之辨）
 - ← 前身：A*-Thought（二维树搜索硬剪枝——丢信息；V2 改为压入潜空间保信息）
-- 同日同题：[Structural Process Supervision for Latent Chain-of-Thought Reasoning](/explore/10-Papers/07-推理模型/Structural Process Supervision for Latent Chain-of-Thought Reasoning（PMPS）) · [Think Wider: Mitigating Latent Rank Collapse in Implicit Chain-of-Thought Reasoning](/explore/10-Papers/07-推理模型/Think Wider - Mitigating Latent Rank Collapse in Implicit Chain-of-Thought Reasoning（WIDER）)（三篇构成 9 月上旬 latent CoT 压缩小高潮）
-- 同族：[CoT-Valve- Length-Compressible Chain-of-Thought Tuning](/explore/10-Papers/07-推理模型/CoT-Valve- Length-Compressible Chain-of-Thought Tuning（CoT-Valve）)
+- 同日同题：[Structural Process Supervision for Latent Chain-of-Thought Reasoning](/ai-fa/explore/10-Papers/07-推理模型/Structural Process Supervision for Latent Chain-of-Thought Reasoning（PMPS）) · [Think Wider: Mitigating Latent Rank Collapse in Implicit Chain-of-Thought Reasoning](/ai-fa/explore/10-Papers/07-推理模型/Think Wider - Mitigating Latent Rank Collapse in Implicit Chain-of-Thought Reasoning（WIDER）)（三篇构成 9 月上旬 latent CoT 压缩小高潮）
+- 同族：[CoT-Valve- Length-Compressible Chain-of-Thought Tuning](/ai-fa/explore/10-Papers/07-推理模型/CoT-Valve- Length-Compressible Chain-of-Thought Tuning（CoT-Valve）)
 
 ## 6. 影响后续
 "角度=语义"的几何读法给 CoT 压缩提供了可解释的选步准则（对比学习式启发式）；显隐交替架构是 Coconut（全潜）与纯文本之间的可调中间态。
 
 ## 7. 读前须知
-PCA 降到 3D 是大胆简化——需要接受"前 3 主成分够分辨推理动态"这一经验假设；其余只需 [思维链（CoT）](/explore/40-Concepts/思维链（CoT）) 与均值池化常识。
+PCA 降到 3D 是大胆简化——需要接受"前 3 主成分够分辨推理动态"这一经验假设；其余只需 [思维链（CoT）](/ai-fa/explore/40-Concepts/思维链（CoT）) 与均值池化常识。

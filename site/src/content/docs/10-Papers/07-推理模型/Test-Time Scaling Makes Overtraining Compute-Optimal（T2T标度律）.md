@@ -38,15 +38,15 @@ $$
 
 ## 5. 与前作/矩阵关系
 
-🚩 占"缩放律平移"格的另一侧（← [Training Compute-Optimal Large Language Models](/explore/10-Papers/10-标杆锚点/Training Compute-Optimal Large Language Models（Chinchilla）) 的测试时推广）
+🚩 占"缩放律平移"格的另一侧（← [Training Compute-Optimal Large Language Models](/ai-fa/explore/10-Papers/10-标杆锚点/Training Compute-Optimal Large Language Models（Chinchilla）) 的测试时推广）
 
 
 ## 6. 影响与占位意义
 
 榜 6 的邻格占位：训练/测试算力权衡已成正式研究对象。
 
-> 近邻同族：[Controlled Decoding from Language Models](/explore/10-Papers/07-推理模型/Controlled Decoding from Language Models（CD）) · [Large Language Monkeys- Scaling Inference Compute with Repeated Sampling](/explore/10-Papers/07-推理模型/Large Language Monkeys- Scaling Inference Compute with Repeated Sampling（LL Monkeys）)
-> 数学根基（占位层）：[思维链（CoT）](/explore/40-Concepts/思维链（CoT）)
+> 近邻同族：[Controlled Decoding from Language Models](/ai-fa/explore/10-Papers/07-推理模型/Controlled Decoding from Language Models（CD）) · [Large Language Monkeys- Scaling Inference Compute with Repeated Sampling](/ai-fa/explore/10-Papers/07-推理模型/Large Language Monkeys- Scaling Inference Compute with Repeated Sampling（LL Monkeys）)
+> 数学根基（占位层）：[思维链（CoT）](/ai-fa/explore/40-Concepts/思维链（CoT）)
 
 ## 7. 读前须知
 

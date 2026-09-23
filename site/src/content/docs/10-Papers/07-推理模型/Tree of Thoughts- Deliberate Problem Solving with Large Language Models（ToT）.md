@@ -37,7 +37,7 @@ pdf: 已下载（PDF/）
 
 ## 5. 与前作的关系
 
-- 泛化了 [CoT](/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）)（链=单路径树）与 [Self-Consistency Improves Chain of Thought Reasoning in Language Models](/explore/10-Papers/07-推理模型/Self-Consistency Improves Chain of Thought Reasoning in Language Models（Self-Consistency）)（平行链=无分叉树）
+- 泛化了 [CoT](/ai-fa/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）)（链=单路径树）与 [Self-Consistency Improves Chain of Thought Reasoning in Language Models](/ai-fa/explore/10-Papers/07-推理模型/Self-Consistency Improves Chain of Thought Reasoning in Language Models（Self-Consistency）)（平行链=无分叉树）
 - 思想源头：Newell & Simon 1972 的人类问题求解理论（搜索空间）
 
 ## 6. 影响与后续
@@ -47,4 +47,4 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[思维链（CoT）](/explore/40-Concepts/思维链（CoT）)、[Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）)
+[思维链（CoT）](/ai-fa/explore/40-Concepts/思维链（CoT）)、[Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](/ai-fa/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）)

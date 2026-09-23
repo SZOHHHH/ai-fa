@@ -12,7 +12,7 @@ matrix_coords: [对抗, 像素空间, 对抗(矩匹配)]
 tags: [paper]
 ---
 
-# [WGAN](/explore/10-Papers/02-生成建模与扩散/Wasserstein GAN（WGAN）)-GP
+# [WGAN](/ai-fa/explore/10-Papers/02-生成建模与扩散/Wasserstein GAN（WGAN）)-GP
 
 ## 1. 一句话贡献
 
@@ -33,7 +33,7 @@ $$
 $$
 
 
-**直觉**：← [Generative Adversarial Networks](/explore/10-Papers/02-生成建模与扩散/Generative Adversarial Networks（GAN）)（库内）；→ 谱归一化（另一条 Lipschitz 路线）；对抗谱系的稳定化收束
+**直觉**：← [Generative Adversarial Networks](/ai-fa/explore/10-Papers/02-生成建模与扩散/Generative Adversarial Networks（GAN）)（库内）；→ 谱归一化（另一条 Lipschitz 路线）；对抗谱系的稳定化收束
 
 ## 5. 与前作/矩阵关系
 
@@ -47,8 +47,8 @@ $$
 
 undefined
 
-> 近邻同族：[Analyzing and Improving the Image Quality of StyleGAN](/explore/10-Papers/02-生成建模与扩散/Analyzing and Improving the Image Quality of StyleGAN（StyleGAN2）)
+> 近邻同族：[Analyzing and Improving the Image Quality of StyleGAN](/ai-fa/explore/10-Papers/02-生成建模与扩散/Analyzing and Improving the Image Quality of StyleGAN（StyleGAN2）)
 
-> 数学根基：[梯度惩罚](/explore/30-Formulas/梯度惩罚) · [谱归一化](/explore/30-Formulas/谱归一化) · [Wasserstein距离](/explore/40-Concepts/Wasserstein距离) · [Lipschitz连续](/explore/40-Concepts/Lipschitz连续)
+> 数学根基：[梯度惩罚](/ai-fa/explore/30-Formulas/梯度惩罚) · [谱归一化](/ai-fa/explore/30-Formulas/谱归一化) · [Wasserstein距离](/ai-fa/explore/40-Concepts/Wasserstein距离) · [Lipschitz连续](/ai-fa/explore/40-Concepts/Lipschitz连续)
 
-> 核心公式：[梯度惩罚与谱归一对照](/explore/30-Formulas/梯度惩罚与谱归一对照)
+> 核心公式：[梯度惩罚与谱归一对照](/ai-fa/explore/30-Formulas/梯度惩罚与谱归一对照)

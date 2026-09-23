@@ -32,8 +32,8 @@ layer: 占位
 （待精读）
 
 ## 5. 与前作/矩阵关系
-- 线锚：[世界模型](/explore/20-Algorithms/世界模型) · [策略梯度定理](/explore/40-Concepts/策略梯度定理)（占位挂链，Tier B 精化）
-- 方法近邻：[价值函数（V与Q）](/explore/40-Concepts/价值函数（V与Q）)（"value-aware"=按重要性分配采样预算）·[期望](/explore/40-Concepts/期望)（统计抽样框架）
+- 线锚：[世界模型](/ai-fa/explore/20-Algorithms/世界模型) · [策略梯度定理](/ai-fa/explore/40-Concepts/策略梯度定理)（占位挂链，Tier B 精化）
+- 方法近邻：[价值函数（V与Q）](/ai-fa/explore/40-Concepts/价值函数（V与Q）)（"value-aware"=按重要性分配采样预算）·[期望](/ai-fa/explore/40-Concepts/期望)（统计抽样框架）
 
 ## 6. 影响后续
 （待精读）

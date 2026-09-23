@@ -35,12 +35,12 @@ tags: [paper]
 **直觉**：投影损失被第一奇异值能量上下夹住——压它就是在压主奇异方向，免 SVD 的代价只是夹逼而非精确。
 
 ## 5. 与前作/矩阵关系
-- 线锚：[思维链（CoT）](/explore/40-Concepts/思维链（CoT）) · [VICReg三正则](/explore/30-Formulas/VICReg三正则)（同族防坍缩正则：VICReg 治表征学习维度坍缩，本文治推理轨迹秩坍缩——同一几何病灶换了器官）· [范数](/explore/40-Concepts/范数)（投影与归一化）
+- 线锚：[思维链（CoT）](/ai-fa/explore/40-Concepts/思维链（CoT）) · [VICReg三正则](/ai-fa/explore/30-Formulas/VICReg三正则)（同族防坍缩正则：VICReg 治表征学习维度坍缩，本文治推理轨迹秩坍缩——同一几何病灶换了器官）· [范数](/ai-fa/explore/40-Concepts/范数)（投影与归一化）
 - ← 应用基座：CODI / SIM-CoT（WIDER 是挂在其上的即插即用损失，两基座都涨）
-- 同日同题：[Structural Process Supervision for Latent Chain-of-Thought Reasoning](/explore/10-Papers/07-推理模型/Structural Process Supervision for Latent Chain-of-Thought Reasoning（PMPS）)（原型锚治语义坍缩，本文谱正则治几何坍缩——正交互补）· [Astar-Thought-V2: Efficient Latent Reasoning via Geometric Dynamics of LLM](/explore/10-Papers/07-推理模型/Astar-Thought-V2 - Efficient Latent Reasoning via Geometric Dynamics of LLM（Astar-Thought-V2）)
+- 同日同题：[Structural Process Supervision for Latent Chain-of-Thought Reasoning](/ai-fa/explore/10-Papers/07-推理模型/Structural Process Supervision for Latent Chain-of-Thought Reasoning（PMPS）)（原型锚治语义坍缩，本文谱正则治几何坍缩——正交互补）· [Astar-Thought-V2: Efficient Latent Reasoning via Geometric Dynamics of LLM](/ai-fa/explore/10-Papers/07-推理模型/Astar-Thought-V2 - Efficient Latent Reasoning via Geometric Dynamics of LLM（Astar-Thought-V2）)
 
 ## 6. 影响后续
 "潜子空间利用率"成为隐式推理的新诊断轴；有效秩/主方向能量可成为任何 latent 表征质量评估的标准仪表（对我们：蒸馏学生策略表征、WM 潜状态质量分析同款工具）。
 
 ## 7. 读前须知
-需要 [VICReg三正则](/explore/30-Formulas/VICReg三正则)（方差-协方差正则的防坍缩思想）与奇异值/有效秩直觉（$$erank = \exp(H(\sigma^2/\sum\sigma^2))$$，熵加权的秩）；命题 1 证明在附录 A.1，只需懂"矩阵行都落在 r 维子空间 ⇒ 信息只剩 m×r 个坐标"。
+需要 [VICReg三正则](/ai-fa/explore/30-Formulas/VICReg三正则)（方差-协方差正则的防坍缩思想）与奇异值/有效秩直觉（$$erank = \exp(H(\sigma^2/\sum\sigma^2))$$，熵加权的秩）；命题 1 证明在附录 A.1，只需懂"矩阵行都落在 r 维子空间 ⇒ 信息只剩 m×r 个坐标"。

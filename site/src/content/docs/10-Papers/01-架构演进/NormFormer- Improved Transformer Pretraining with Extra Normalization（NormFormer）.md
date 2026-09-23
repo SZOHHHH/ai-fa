@@ -33,7 +33,7 @@ $$
 $$
 
 
-**直觉**：← [Layer Normalization](/explore/10-Papers/01-架构演进/Layer Normalization（LayerNorm）)（本批入库）；→ [Root Mean Square Layer Normalization](/explore/10-Papers/01-架构演进/Root Mean Square Layer Normalization（RMSNorm）)；架构矩阵归一化列的中间节点
+**直觉**：← [Layer Normalization](/ai-fa/explore/10-Papers/01-架构演进/Layer Normalization（LayerNorm）)（本批入库）；→ [Root Mean Square Layer Normalization](/ai-fa/explore/10-Papers/01-架构演进/Root Mean Square Layer Normalization（RMSNorm）)；架构矩阵归一化列的中间节点
 
 ## 5. 与前作/矩阵关系
 
@@ -47,6 +47,6 @@ $$
 
 undefined
 
-> 近邻同族：[An Image is Worth 16x16 Words - Transformers for Image Recognition at Scale](/explore/10-Papers/01-架构演进/An Image is Worth 16x16 Words- Transformers for Image Recognition at Scale（ViT）) · [Attention Is All You Need](/explore/10-Papers/01-架构演进/Attention Is All You Need（Transformer）)
+> 近邻同族：[An Image is Worth 16x16 Words - Transformers for Image Recognition at Scale](/ai-fa/explore/10-Papers/01-架构演进/An Image is Worth 16x16 Words- Transformers for Image Recognition at Scale（ViT）) · [Attention Is All You Need](/ai-fa/explore/10-Papers/01-架构演进/Attention Is All You Need（Transformer）)
 
-> 数学根基：[批归一化](/explore/30-Formulas/批归一化) · [层归一化](/explore/30-Formulas/层归一化) · [均方根归一化](/explore/30-Formulas/均方根归一化)
+> 数学根基：[批归一化](/ai-fa/explore/30-Formulas/批归一化) · [层归一化](/ai-fa/explore/30-Formulas/层归一化) · [均方根归一化](/ai-fa/explore/30-Formulas/均方根归一化)

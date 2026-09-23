@@ -34,7 +34,7 @@ P(i \succ j) = \sigma\big(r_i - r_j\big)\ \text{(BT→Elo)}
 $$
 
 
-**直觉**：→ CAI/Self-Rewarding（裁判可靠性是它们的命门）；→ [When Teachers Mislead- Spurious-Signal-Aware On-Policy Distillation](/explore/10-Papers/04-强化学习与对齐/When Teachers Mislead- Spurious-Signal-Aware On-Policy Distillation（SA-OPD）)（B12：teacher 会错——judge 也会错）
+**直觉**：→ CAI/Self-Rewarding（裁判可靠性是它们的命门）；→ [When Teachers Mislead- Spurious-Signal-Aware On-Policy Distillation](/ai-fa/explore/10-Papers/04-强化学习与对齐/When Teachers Mislead- Spurious-Signal-Aware On-Policy Distillation（SA-OPD）)（B12：teacher 会错——judge 也会错）
 
 ## 5. 与前作/矩阵关系
 
@@ -48,8 +48,10 @@ $$
 
 undefined
 
-> 近邻同族：[KTO - Model Alignment as Prospect Theoretic Optimization](/explore/10-Papers/04-强化学习与对齐/KTO- Model Alignment as Prospect Theoretic Optimization（KTO）) · [RewardBench- Evaluating Reward Models for Language Modeling](/explore/10-Papers/04-强化学习与对齐/RewardBench- Evaluating Reward Models for Language Modeling（RewardBench）)
+> 近邻同族：[KTO - Model Alignment as Prospect Theoretic Optimization](/ai-fa/explore/10-Papers/04-强化学习与对齐/KTO- Model Alignment as Prospect Theoretic Optimization（KTO）) · [RewardBench- Evaluating Reward Models for Language Modeling](/ai-fa/explore/10-Papers/04-强化学习与对齐/RewardBench- Evaluating Reward Models for Language Modeling（RewardBench）)
 
-> 数学根基：[策略梯度定理](/explore/40-Concepts/策略梯度定理)
+> 数学根基：[策略梯度定理](/ai-fa/explore/40-Concepts/策略梯度定理)
 
-> 数学根基：[REINFORCE目标](/explore/30-Formulas/REINFORCE目标)
+> 数学根基：[REINFORCE目标](/ai-fa/explore/30-Formulas/REINFORCE目标)
+
+> 近邻同族补记（260921）：[EnterpriseVal](/ai-fa/explore/10-Papers/01-架构演进/EnterpriseVal Quantifying the Efficacy, Reliability and Value of Generative AI in the Enterprise)（校准 LLM 评审×盲评专家经预测驱动推断扩表→企业部署两级决策门）

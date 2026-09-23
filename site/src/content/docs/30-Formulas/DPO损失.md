@@ -29,7 +29,7 @@ $$\mathcal{L}_{\text{DPO}}(\theta) = -\,\mathbb{E}_{(x,\, y^+,\, y^-)\sim\mathca
 
 ## 3. 直觉解释
 
-**推导链一行版**：RLHF 目标 → 有闭式最优解（[RLHF目标](/explore/30-Formulas/RLHF目标) §2 末行）→ 反解出 $$r$$ = $$\beta\log\frac{\pi}{\pi_{\text{ref}}} + \beta\log Z$$ → 代入 [Bradley-Terry模型](/explore/40-Concepts/Bradley-Terry模型) 的偏好似然 → $$Z(x)$$ 在 $$y^+/y^-$$ 相减时**抵消** → 得 DPO。**奖励模型被"内嵌"进策略本身**——不再需要训练单独的 $$r_\phi$$，不再需要在线采样，纯监督学习搞定对齐。
+**推导链一行版**：RLHF 目标 → 有闭式最优解（[RLHF目标](/ai-fa/explore/30-Formulas/RLHF目标) §2 末行）→ 反解出 $$r$$ = $$\beta\log\frac{\pi}{\pi_{\text{ref}}} + \beta\log Z$$ → 代入 [Bradley-Terry模型](/ai-fa/explore/40-Concepts/Bradley-Terry模型) 的偏好似然 → $$Z(x)$$ 在 $$y^+/y^-$$ 相减时**抵消** → 得 DPO。**奖励模型被"内嵌"进策略本身**——不再需要训练单独的 $$r_\phi$$，不再需要在线采样，纯监督学习搞定对齐。
 
 - **损失直觉**：像"对比学习"——拉近 $$y^+$$、推远 $$y^-$$，但都在**对数概率比空间**里做
 - **梯度洞察**：$$\sigma(\hat r^- - \hat r^+)$$ 是自适应权重——模型已经很对时梯度趋零；模型判断与人类偏好冲突时全力拉
@@ -40,22 +40,22 @@ $$\mathcal{L}_{\text{DPO}}(\theta) = -\,\mathbb{E}_{(x,\, y^+,\, y^-)\sim\mathca
 
 | 论文 | 贡献 |
 |---|---|
-| [Direct Preference Optimization - Your Language Model is Secretly a Reward Model](/explore/10-Papers/04-强化学习与对齐/Direct Preference Optimization- Your Language Model is Secretly a Reward Model（DPO）) | 提出 |
-| [A General Theoretical Paradigm to Understand Learning from Human Preferences](/explore/10-Papers/04-强化学习与对齐/A General Theoretical Paradigm to Understand Learning from Human Preferences（IPO）) | 理论重审，指出过优化病态 |
-| [SimPO - Simple Preference Optimization with a Reference-Free Reward](/explore/10-Papers/04-强化学习与对齐/SimPO- Simple Preference Optimization with a Reference-Free Reward（SimPO）) | 无参考变体 |
-| [KTO - Model Alignment as Prospect Theoretic Optimization](/explore/10-Papers/04-强化学习与对齐/KTO- Model Alignment as Prospect Theoretic Optimization（KTO）) | 前景理论重构 |
+| [Direct Preference Optimization - Your Language Model is Secretly a Reward Model](/ai-fa/explore/10-Papers/04-强化学习与对齐/Direct Preference Optimization- Your Language Model is Secretly a Reward Model（DPO）) | 提出 |
+| [A General Theoretical Paradigm to Understand Learning from Human Preferences](/ai-fa/explore/10-Papers/04-强化学习与对齐/A General Theoretical Paradigm to Understand Learning from Human Preferences（IPO）) | 理论重审，指出过优化病态 |
+| [SimPO - Simple Preference Optimization with a Reference-Free Reward](/ai-fa/explore/10-Papers/04-强化学习与对齐/SimPO- Simple Preference Optimization with a Reference-Free Reward（SimPO）) | 无参考变体 |
+| [KTO - Model Alignment as Prospect Theoretic Optimization](/ai-fa/explore/10-Papers/04-强化学习与对齐/KTO- Model Alignment as Prospect Theoretic Optimization（KTO）) | 前景理论重构 |
 
 ## 5. 数学概念分解
 
-- [Bradley-Terry模型](/explore/40-Concepts/Bradley-Terry模型)：偏好似然骨架
-- [KL散度](/explore/40-Concepts/KL散度)：β 的来源
-- [sigmoid函数](/explore/40-Concepts/sigmoid函数)：$$\log\sigma$$ 骨架件（数值稳定实现与饱和刹车）
-- [期望](/explore/40-Concepts/期望)：数据集期望
-- [梯度](/explore/40-Concepts/梯度)：梯度权重 $$\sigma$$ 的自适应机制
+- [Bradley-Terry模型](/ai-fa/explore/40-Concepts/Bradley-Terry模型)：偏好似然骨架
+- [KL散度](/ai-fa/explore/40-Concepts/KL散度)：β 的来源
+- [sigmoid函数](/ai-fa/explore/40-Concepts/sigmoid函数)：$$\log\sigma$$ 骨架件（数值稳定实现与饱和刹车）
+- [期望](/ai-fa/explore/40-Concepts/期望)：数据集期望
+- [梯度](/ai-fa/explore/40-Concepts/梯度)：梯度权重 $$\sigma$$ 的自适应机制
 
 ## 6. 与其他公式的关系
 
-- ⊂ **特化自** [RLHF目标](/explore/30-Formulas/RLHF目标)：闭式解代入 BT 模型（等价变形链）
-- 对比 [PPO裁剪目标](/explore/30-Formulas/PPO裁剪目标)：离线 vs 在线；单阶段 vs 多阶段——**对齐两范式的分水岭**
-- → **衍生家族**：[IPO损失](/explore/30-Formulas/IPO损失)、[SimPO损失](/explore/30-Formulas/SimPO损失)、[KTO损失](/explore/30-Formulas/KTO损失)、[ORPO损失](/explore/30-Formulas/ORPO损失)
+- ⊂ **特化自** [RLHF目标](/ai-fa/explore/30-Formulas/RLHF目标)：闭式解代入 BT 模型（等价变形链）
+- 对比 [PPO裁剪目标](/ai-fa/explore/30-Formulas/PPO裁剪目标)：离线 vs 在线；单阶段 vs 多阶段——**对齐两范式的分水岭**
+- → **衍生家族**：[IPO损失](/ai-fa/explore/30-Formulas/IPO损失)、[SimPO损失](/ai-fa/explore/30-Formulas/SimPO损失)、[KTO损失](/ai-fa/explore/30-Formulas/KTO损失)、[ORPO损失](/ai-fa/explore/30-Formulas/ORPO损失)
 - `#loss/expectation-of-ratio`（对数概率比族的代表）

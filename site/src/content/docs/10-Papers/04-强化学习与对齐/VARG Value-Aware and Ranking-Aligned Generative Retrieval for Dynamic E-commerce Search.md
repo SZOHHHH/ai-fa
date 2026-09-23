@@ -30,9 +30,10 @@ layer: 占位
 （待精读）
 
 ## 5. 与前作/矩阵关系
-- 线锚：[GRPO与RLVR](/explore/20-Algorithms/GRPO与RLVR)（Prefix-GRPO：合法性/用户行为/排序优势/搜索相关性四路门控奖励+前缀感知 token 加权）· 跨线 [Neural Discrete Representation Learning](/explore/10-Papers/02-生成建模与扩散/Neural Discrete Representation Learning（VQ-VAE）)（RQ-VAE 语义前缀=残差量化版 VQ-VAE，"物品地址"本源）
-- 数学根基：[VQ-VAE目标](/explore/30-Formulas/VQ-VAE目标) · [GRPO目标](/explore/30-Formulas/GRPO目标)
-- 近邻同族：[DeepSeekMath - Pushing the Limits of Mathematical Reasoning in Open Language Models](/explore/10-Papers/04-强化学习与对齐/DeepSeekMath- Pushing the Limits of Mathematical Reasoning in Open Language Models（DeepSeekMath）)（GRPO 本源——VARG 把组相对优化搬进电商检索域并对齐排序器）
+- 线锚：[GRPO与RLVR](/ai-fa/explore/20-Algorithms/GRPO与RLVR)（Prefix-GRPO：合法性/用户行为/排序优势/搜索相关性四路门控奖励+前缀感知 token 加权）· 跨线 [Neural Discrete Representation Learning](/ai-fa/explore/10-Papers/02-生成建模与扩散/Neural Discrete Representation Learning（VQ-VAE）)（RQ-VAE 语义前缀=残差量化版 VQ-VAE，"物品地址"本源）
+- 数学根基：[VQ-VAE目标](/ai-fa/explore/30-Formulas/VQ-VAE目标) · [GRPO目标](/ai-fa/explore/30-Formulas/GRPO目标)
+- 近邻同族：[DeepSeekMath - Pushing the Limits of Mathematical Reasoning in Open Language Models](/ai-fa/explore/10-Papers/04-强化学习与对齐/DeepSeekMath- Pushing the Limits of Mathematical Reasoning in Open Language Models（DeepSeekMath）)（GRPO 本源——VARG 把组相对优化搬进电商检索域并对齐排序器）
+- 同组同盟（260917）：[Accuracy Is Not Service](/ai-fa/explore/10-Papers/04-强化学习与对齐/Accuracy Is Not Service A Decision-Aware Benchmark for Intermittent-Demand Forecasting)（decision-aware 组新员：预测精度排名与订单服务排名**负相关** −0.555——"模型指标≠决策指标"在预测域的定量实证，与 VARG"生成质量≠商业价值"同命题）
 
 ## 6. 影响后续
 （待精读）

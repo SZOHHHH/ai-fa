@@ -33,12 +33,12 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- 输入侧 PEFT，见 [参数高效微调（PEFT）](/explore/20-Algorithms/参数高效微调（PEFT）) §2 家族表
+- 输入侧 PEFT，见 [参数高效微调（PEFT）](/ai-fa/explore/20-Algorithms/参数高效微调（PEFT）) §2 家族表
 
 ## 5. 与前作的关系
 
 - 改进了 [GPT-3 手工 prompt]：离散搜索 → 连续梯度优化
-- 与 [Parameter-Efficient Transfer Learning for NLP](/explore/10-Papers/03-后处理/Parameter-Efficient Transfer Learning for NLP（Adapter）)（层内）对照：作用在注意力输入侧
+- 与 [Parameter-Efficient Transfer Learning for NLP](/ai-fa/explore/10-Papers/03-后处理/Parameter-Efficient Transfer Learning for NLP（Adapter）)（层内）对照：作用在注意力输入侧
 
 ## 6. 影响与后续
 
@@ -48,4 +48,4 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[注意力机制](/explore/40-Concepts/注意力机制)（K/V 的插入处）、[参数高效微调（PEFT）](/explore/20-Algorithms/参数高效微调（PEFT）)
+[注意力机制](/ai-fa/explore/40-Concepts/注意力机制)（K/V 的插入处）、[参数高效微调（PEFT）](/ai-fa/explore/20-Algorithms/参数高效微调（PEFT）)

@@ -31,8 +31,8 @@ layer: 占位
 （待精读）
 
 ## 5. 与前作/矩阵关系
-- 线锚：[Transformer](/explore/20-Algorithms/Transformer) · [注意力核心公式](/explore/30-Formulas/注意力核心公式)（占位挂链，Tier B 精化）
-- 交叉位：[Transformer](/explore/20-Algorithms/Transformer)×[策略梯度定理](/explore/40-Concepts/策略梯度定理)（RL 用于推理加速）；效率家族：[NFE（函数求值次数）](/explore/40-Concepts/NFE（函数求值次数）)（计算分配思想）
+- 线锚：[Transformer](/ai-fa/explore/20-Algorithms/Transformer) · [注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)（占位挂链，Tier B 精化）
+- 交叉位：[Transformer](/ai-fa/explore/20-Algorithms/Transformer)×[策略梯度定理](/ai-fa/explore/40-Concepts/策略梯度定理)（RL 用于推理加速）；效率家族：[NFE（函数求值次数）](/ai-fa/explore/40-Concepts/NFE（函数求值次数）)（计算分配思想）
 
 ## 6. 影响后续
 （待精读）

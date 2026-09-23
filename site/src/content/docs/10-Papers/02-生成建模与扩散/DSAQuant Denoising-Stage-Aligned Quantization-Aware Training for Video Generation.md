@@ -37,8 +37,8 @@ layer: 精读
 
 ## 5. 与前作/矩阵关系
 
-- 线锚：[扩散模型](/explore/20-Algorithms/扩散模型) · [量化](/explore/40-Concepts/量化)
-- 谱系：QAT for Diffusion 家族（图像扩散量化→视频扩散量化）；与 [SelfLift](/explore/10-Papers/02-生成建模与扩散/SelfLift Accelerating Few-Step Diffusion via Self-Recovering Resolution Transition) 同属"扩散部署效率"战线的两条正交轴——SelfLift 压**空间**（分辨率），DSAQuant 压**位宽**（精度），E1 压**步数**（NFE）。
+- 线锚：[扩散模型](/ai-fa/explore/20-Algorithms/扩散模型) · [量化](/ai-fa/explore/40-Concepts/量化)
+- 谱系：QAT for Diffusion 家族（图像扩散量化→视频扩散量化）；与 [SelfLift](/ai-fa/explore/10-Papers/02-生成建模与扩散/SelfLift Accelerating Few-Step Diffusion via Self-Recovering Resolution Transition) 同属"扩散部署效率"战线的两条正交轴——SelfLift 压**空间**（分辨率），DSAQuant 压**位宽**（精度），E1 压**步数**（NFE）。
 - 对我们：Related Work"扩散压缩三轴（步数/空间/位宽）"的位宽轴代表，一句话引用位。
 
 ## 6. 影响后续
@@ -47,4 +47,4 @@ layer: 精读
 
 ## 7. 读前须知
 
-前置：[扩散模型](/explore/20-Algorithms/扩散模型)（去噪阶段语义）；量化基础（INT8/位宽/伪量化）概念可从摘要级理解。PDF 已入库，全篇精读时补第 4 节公式。
+前置：[扩散模型](/ai-fa/explore/20-Algorithms/扩散模型)（去噪阶段语义）；量化基础（INT8/位宽/伪量化）概念可从摘要级理解。PDF 已入库，全篇精读时补第 4 节公式。

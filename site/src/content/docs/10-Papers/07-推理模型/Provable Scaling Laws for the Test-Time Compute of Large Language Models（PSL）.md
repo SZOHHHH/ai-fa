@@ -38,7 +38,7 @@ $$
 
 ## 5. 与前作/矩阵关系
 
-🚩🚩 **占 [推理增强矩阵](/explore/60-Matrices/推理增强矩阵) "测试时延长×理论"机会格的主位**（榜 6 关闭）
+🚩🚩 **占 [推理增强矩阵](/ai-fa/explore/60-Matrices/推理增强矩阵) "测试时延长×理论"机会格的主位**（榜 6 关闭）
 
 
 ## 6. 影响与占位意义
@@ -47,9 +47,9 @@ $$
 
 ---
 
-> 谱系枢纽：[Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）)（图谱连通入口）
-> 近邻同族：[Controlled Decoding from Language Models](/explore/10-Papers/07-推理模型/Controlled Decoding from Language Models（CD）) · [Large Language Monkeys- Scaling Inference Compute with Repeated Sampling](/explore/10-Papers/07-推理模型/Large Language Monkeys- Scaling Inference Compute with Repeated Sampling（LL Monkeys）)
-> 数学根基（占位层）：[注意力核心公式](/explore/30-Formulas/注意力核心公式)
+> 谱系枢纽：[Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](/ai-fa/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）)（图谱连通入口）
+> 近邻同族：[Controlled Decoding from Language Models](/ai-fa/explore/10-Papers/07-推理模型/Controlled Decoding from Language Models（CD）) · [Large Language Monkeys- Scaling Inference Compute with Repeated Sampling](/ai-fa/explore/10-Papers/07-推理模型/Large Language Monkeys- Scaling Inference Compute with Repeated Sampling（LL Monkeys）)
+> 数学根基（占位层）：[注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)
 
 ## 7. 读前须知
 

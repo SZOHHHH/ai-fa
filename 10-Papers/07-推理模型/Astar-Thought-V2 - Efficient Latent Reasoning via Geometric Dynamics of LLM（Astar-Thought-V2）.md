@@ -46,3 +46,5 @@ tags: [paper]
 
 ## 7. 读前须知
 PCA 降到 3D 是大胆简化——需要接受"前 3 主成分够分辨推理动态"这一经验假设；其余只需 [[40-Concepts/思维链（CoT）]] 与均值池化常识。
+
+- → 后继补记（260923）：[[10-Papers/07-推理模型/Learn Your Own Thoughts Abstract Token Curriculum|Learn Your Own Thoughts]]（抽象 token 课程——潜推理的显式课程化路线）

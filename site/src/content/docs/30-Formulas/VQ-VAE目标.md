@@ -39,18 +39,18 @@ $$\mathcal{L} = \underbrace{\mathbb{E}\left[ \log p(x \mid z_q(x)) \right]}_{\te
 
 | 论文 | 贡献 |
 |---|---|
-| [Neural Discrete Representation Learning](/explore/10-Papers/02-生成建模与扩散/Neural Discrete Representation Learning（VQ-VAE）) | 提出 |
-| [Taming Transformers for High-Resolution Image Synthesis](/explore/10-Papers/02-生成建模与扩散/Taming Transformers for High-Resolution Image Synthesis（VQGAN）) | +感知损失 + Transformer 先验 |
+| [Neural Discrete Representation Learning](/ai-fa/explore/10-Papers/02-生成建模与扩散/Neural Discrete Representation Learning（VQ-VAE）) | 提出 |
+| [Taming Transformers for High-Resolution Image Synthesis](/ai-fa/explore/10-Papers/02-生成建模与扩散/Taming Transformers for High-Resolution Image Synthesis（VQGAN）) | +感知损失 + Transformer 先验 |
 
 ## 5. 数学概念分解
 
-- [期望](/explore/40-Concepts/期望)：重建项
-- [范数](/explore/40-Concepts/范数)：codebook/承诺项
-- [重参数化](/explore/40-Concepts/重参数化)：直通估计是其离散孪生（都为"梯度穿过不可导层"）
-- [KL散度](/explore/40-Concepts/KL散度)：ELBO 家族中 VQ-VAE 的理论位置（先验为学习所得而非固定）
+- [期望](/ai-fa/explore/40-Concepts/期望)：重建项
+- [范数](/ai-fa/explore/40-Concepts/范数)：codebook/承诺项
+- [重参数化](/ai-fa/explore/40-Concepts/重参数化)：直通估计是其离散孪生（都为"梯度穿过不可导层"）
+- [KL散度](/ai-fa/explore/40-Concepts/KL散度)：ELBO 家族中 VQ-VAE 的理论位置（先验为学习所得而非固定）
 
 ## 6. 与其他公式的关系
 
-- ⊂ **特化自** [ELBO目标](/explore/30-Formulas/ELBO目标)（离散隐变量 + 学习先验版本）
-- 对比 [DDPM训练目标](/explore/30-Formulas/DDPM训练目标)：同为回归型重建，但隐空间离散 vs 连续加噪
+- ⊂ **特化自** [ELBO目标](/ai-fa/explore/30-Formulas/ELBO目标)（离散隐变量 + 学习先验版本）
+- 对比 [DDPM训练目标](/ai-fa/explore/30-Formulas/DDPM训练目标)：同为回归型重建，但隐空间离散 vs 连续加噪
 - → **组合出** VQGAN / DALL·E / Sora 的 tokenizer 路线（多模态线会回链）

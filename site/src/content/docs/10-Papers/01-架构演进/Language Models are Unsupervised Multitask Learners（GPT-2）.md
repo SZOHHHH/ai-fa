@@ -36,8 +36,8 @@ tags: [paper]
 
 ## 5. 与前作的关系
 
-- 扩展了 [Improving Language Understanding by Generative Pre-Training](/explore/10-Papers/01-架构演进/Improving Language Understanding by Generative Pre-Training（GPT-1）)（预训练+微调 → 零样本）
-- 为 [Language Models are Few-Shot Learners](/explore/10-Papers/01-架构演进/Language Models are Few-Shot Learners（GPT-3）) 的 few-shot 结论铺路
+- 扩展了 [Improving Language Understanding by Generative Pre-Training](/ai-fa/explore/10-Papers/01-架构演进/Improving Language Understanding by Generative Pre-Training（GPT-1）)（预训练+微调 → 零样本）
+- 为 [Language Models are Few-Shot Learners](/ai-fa/explore/10-Papers/01-架构演进/Language Models are Few-Shot Learners（GPT-3）) 的 few-shot 结论铺路
 
 ## 6. 影响与后续
 
@@ -46,10 +46,10 @@ tags: [paper]
 
 ## 7. 读前须知
 
-[Improving Language Understanding by Generative Pre-Training](/explore/10-Papers/01-架构演进/Improving Language Understanding by Generative Pre-Training（GPT-1）)
+[Improving Language Understanding by Generative Pre-Training](/ai-fa/explore/10-Papers/01-架构演进/Improving Language Understanding by Generative Pre-Training（GPT-1）)
 
-> 近邻同族：[An Image is Worth 16x16 Words - Transformers for Image Recognition at Scale](/explore/10-Papers/01-架构演进/An Image is Worth 16x16 Words- Transformers for Image Recognition at Scale（ViT）) · [Attention Is All You Need](/explore/10-Papers/01-架构演进/Attention Is All You Need（Transformer）)
+> 近邻同族：[An Image is Worth 16x16 Words - Transformers for Image Recognition at Scale](/ai-fa/explore/10-Papers/01-架构演进/An Image is Worth 16x16 Words- Transformers for Image Recognition at Scale（ViT）) · [Attention Is All You Need](/ai-fa/explore/10-Papers/01-架构演进/Attention Is All You Need（Transformer）)
 
-> 数学根基：[注意力机制](/explore/40-Concepts/注意力机制)
+> 数学根基：[注意力机制](/ai-fa/explore/40-Concepts/注意力机制)
 
-> 数学根基：[注意力核心公式](/explore/30-Formulas/注意力核心公式)
+> 数学根基：[注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)

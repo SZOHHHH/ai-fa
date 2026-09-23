@@ -20,7 +20,7 @@ MQA 与 MHA 的折中：KV 头分组共享（如 32 Q 头配 8 KV 组）——�
 
 ## 2. 核心贡献
 
-- **GQA 谱系定位**：MHA（质量上限）↔ GQA（甜点）↔ MQA（最省）（[注意力机制](/explore/40-Concepts/注意力机制) 谱系表）
+- **GQA 谱系定位**：MHA（质量上限）↔ GQA（甜点）↔ MQA（最省）（[注意力机制](/ai-fa/explore/40-Concepts/注意力机制) 谱系表）
 - **检查点转换法**：已有 MHA 模型 mean-pool KV 头转 GQA——免重训
 - 质量与速度的系统权衡曲线
 
@@ -33,12 +33,12 @@ MQA 与 MHA 的折中：KV 头分组共享（如 32 Q 头配 8 KV 组）——�
 
 ## 4. 核心公式
 
-- [KV缓存](/explore/40-Concepts/KV缓存) 体积公式中 $$h_{\text{kv}} = g$$ 的插值
+- [KV缓存](/ai-fa/explore/40-Concepts/KV缓存) 体积公式中 $$h_{\text{kv}} = g$$ 的插值
 
 ## 5. 与前作的关系
 
-- 折中了 [Efficiently Scaling Transformer Inference](/explore/10-Papers/01-架构演进/Efficiently Scaling Transformer Inference（MQA）)（省但降质）与 MHA（好但贵）
-- 与 [MLA多头潜在注意力](/explore/30-Formulas/MLA多头潜在注意力) 并列两条路线：分组共享 vs 低秩压缩
+- 折中了 [Efficiently Scaling Transformer Inference](/ai-fa/explore/10-Papers/01-架构演进/Efficiently Scaling Transformer Inference（MQA）)（省但降质）与 MHA（好但贵）
+- 与 [MLA多头潜在注意力](/ai-fa/explore/30-Formulas/MLA多头潜在注意力) 并列两条路线：分组共享 vs 低秩压缩
 
 ## 6. 影响与后续
 
@@ -48,4 +48,4 @@ MQA 与 MHA 的折中：KV 头分组共享（如 32 Q 头配 8 KV 组）——�
 
 ## 7. 读前须知
 
-[注意力机制](/explore/40-Concepts/注意力机制)、[KV缓存](/explore/40-Concepts/KV缓存)、[Efficiently Scaling Transformer Inference](/explore/10-Papers/01-架构演进/Efficiently Scaling Transformer Inference（MQA）)
+[注意力机制](/ai-fa/explore/40-Concepts/注意力机制)、[KV缓存](/ai-fa/explore/40-Concepts/KV缓存)、[Efficiently Scaling Transformer Inference](/ai-fa/explore/10-Papers/01-架构演进/Efficiently Scaling Transformer Inference（MQA）)

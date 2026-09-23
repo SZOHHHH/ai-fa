@@ -26,7 +26,7 @@ tags: [paper, 占位层]
 
 ## 3. 方法概要
 
-绕开 latent/架构不匹配：两模型输出各自解码后在共享冻结表示空间比较；锚定阶段用 student [VAE](/explore/10-Papers/02-生成建模与扩散/Auto-Encoding Variational Bayes（VAE）) 重编码 teacher 样本保证梯度反映质量而非域差。
+绕开 latent/架构不匹配：两模型输出各自解码后在共享冻结表示空间比较；锚定阶段用 student [VAE](/ai-fa/explore/10-Papers/02-生成建模与扩散/Auto-Encoding Variational Bayes（VAE）) 重编码 teacher 样本保证梯度反映质量而非域差。
 
 ## 4. 核心公式
 
@@ -38,16 +38,16 @@ $$
 
 ## 5. 与前作/矩阵关系
 
-🚩 **OPD 思想进入生成域（FM）的首批占位**——蒸馏域矩阵与 [生成模型加速矩阵](/explore/60-Matrices/生成模型加速矩阵) 的跨矩阵格；关联 [Learning Latent Action World Models In The Wild](/explore/10-Papers/09-世界模型与JEPA/Learning Latent Action World Models In The Wild（3R2D）) 的冻结表示思想
+🚩 **OPD 思想进入生成域（FM）的首批占位**——蒸馏域矩阵与 [生成模型加速矩阵](/ai-fa/explore/60-Matrices/生成模型加速矩阵) 的跨矩阵格；关联 [Learning Latent Action World Models In The Wild](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Learning Latent Action World Models In The Wild（3R2D）) 的冻结表示思想
 
 
 ## 6. 影响与占位意义
 
 RS 库 08-05 已收（relevance 5/5）；本卡入库使两库情报同步。
 
-> 近邻同族：[CausalOPD- First-Wrong-Step Supervision for Distilling Causal Chain Reasoning](/explore/10-Papers/04-强化学习与对齐/CausalOPD- First-Wrong-Step Supervision for Distilling Causal Chain Reasoning（CausalOPD）) · [Entropy-Aware On-Policy Distillation of Language Models](/explore/10-Papers/04-强化学习与对齐/Entropy-Aware On-Policy Distillation of Language Models（EOPD）)
-> 数学根基（占位层）：[策略梯度定理](/explore/40-Concepts/策略梯度定理)
-> 数学根基：[蒸馏损失](/explore/30-Formulas/蒸馏损失) · [DSM目标](/explore/30-Formulas/DSM目标)
+> 近邻同族：[CausalOPD- First-Wrong-Step Supervision for Distilling Causal Chain Reasoning](/ai-fa/explore/10-Papers/04-强化学习与对齐/CausalOPD- First-Wrong-Step Supervision for Distilling Causal Chain Reasoning（CausalOPD）) · [Entropy-Aware On-Policy Distillation of Language Models](/ai-fa/explore/10-Papers/04-强化学习与对齐/Entropy-Aware On-Policy Distillation of Language Models（EOPD）)
+> 数学根基（占位层）：[策略梯度定理](/ai-fa/explore/40-Concepts/策略梯度定理)
+> 数学根基：[蒸馏损失](/ai-fa/explore/30-Formulas/蒸馏损失) · [DSM目标](/ai-fa/explore/30-Formulas/DSM目标)
 
 ## 7. 读前须知
 

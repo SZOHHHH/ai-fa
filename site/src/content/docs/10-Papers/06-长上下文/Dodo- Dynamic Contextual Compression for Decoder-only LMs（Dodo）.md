@@ -49,10 +49,11 @@ undefined
 
 ---
 
-> 谱系枢纽：[Longformer - The Long-Document Transformer](/explore/10-Papers/06-长上下文/Longformer- The Long-Document Transformer（Longformer）)（图谱连通入口）
+> 谱系枢纽：[Longformer - The Long-Document Transformer](/ai-fa/explore/10-Papers/06-长上下文/Longformer- The Long-Document Transformer（Longformer）)（图谱连通入口）
 
-> 近邻同族：[Efficient Streaming Language Models with Attention Sinks](/explore/10-Papers/06-长上下文/Efficient Streaming Language Models with Attention Sinks（StreamingLLM）) · [Information-Aware KV Cache Compression for Long Reasoning](/explore/10-Papers/06-长上下文/Information-Aware KV Cache Compression for Long Reasoning（InfoKV）)
+> 近邻同族：[Efficient Streaming Language Models with Attention Sinks](/ai-fa/explore/10-Papers/06-长上下文/Efficient Streaming Language Models with Attention Sinks（StreamingLLM）) · [Information-Aware KV Cache Compression for Long Reasoning](/ai-fa/explore/10-Papers/06-长上下文/Information-Aware KV Cache Compression for Long Reasoning（InfoKV）)
+> 近邻同族（续，260919）：[Video-HolmesV2](/ai-fa/explore/10-Papers/06-长上下文/Video-HolmesV2 Can MLLMs Reason with Spatio-Temporal Audio-Visual Evidence in Long Videos)（长视频侧 token 压缩：音-文本引导蒸馏高价值推理线索，对抗"证据-上下文"权衡）
 
-> 数学根基：[KV缓存](/explore/40-Concepts/KV缓存)
+> 数学根基：[KV缓存](/ai-fa/explore/40-Concepts/KV缓存)
 
-> 数学根基：[注意力计算复杂度](/explore/30-Formulas/注意力计算复杂度)
+> 数学根基：[注意力计算复杂度](/ai-fa/explore/30-Formulas/注意力计算复杂度)

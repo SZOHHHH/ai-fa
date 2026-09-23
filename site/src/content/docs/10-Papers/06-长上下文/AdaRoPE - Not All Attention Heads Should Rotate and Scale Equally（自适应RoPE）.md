@@ -34,8 +34,8 @@ RoPE 的"统一频率表"批判：每个注意力头学自己的旋转频率与�
 （待 PDF 精读补全——摘要级暂记直觉）RoPE 频率表逐头化：$$\theta_{h,i} = b_h^{-2i/d}$$，每头自己的 base $$b_h$$ 加自己的缩放 $$\alpha_h$$：**"近看细纹理、远看大轮廓"——有的头管局部句法（高频），有的头管长程检索（低频），强行共用一张频率表等于让所有头用同一副眼镜**。可学习化让分工自发涌现。
 
 ## 5. 与前作/矩阵关系
-- ← 谱系前身：[RoFormer（RoPE）](/explore/10-Papers/01-架构演进/RoFormer- Enhanced Transformer with Rotary Position Embedding（RoPE）)（旋转位置编码之源——AdaRoPE 直接改造它的"全局频率表"假设）。
-- ↔ 上下文扩展家族：[YaRN](/explore/10-Papers/06-长上下文/YaRN- Efficient Context Window Extension of Large Language Models（YaRN）)（统一缩放外推——本文证明其次优）、[PI](/explore/10-Papers/06-长上下文/Extending Context Window of Large Language Models via Positional Interpolation（PI）)（位置插值路线）。
+- ← 谱系前身：[RoFormer（RoPE）](/ai-fa/explore/10-Papers/01-架构演进/RoFormer- Enhanced Transformer with Rotary Position Embedding（RoPE）)（旋转位置编码之源——AdaRoPE 直接改造它的"全局频率表"假设）。
+- ↔ 上下文扩展家族：[YaRN](/ai-fa/explore/10-Papers/06-长上下文/YaRN- Efficient Context Window Extension of Large Language Models（YaRN）)（统一缩放外推——本文证明其次优）、[PI](/ai-fa/explore/10-Papers/06-长上下文/Extending Context Window of Large Language Models via Positional Interpolation（PI）)（位置插值路线）。
 - 方法论呼应：**"平均参数掩盖异质子群"的批判模式**——与 SinkProbe（sink 是优化目标产物非架构宿命）、WIDER（潜秩坍缩诊断）同一批判家族：全局统一设定常是对混合总体的错误简化。
 
 ## 6. 影响后续
@@ -43,5 +43,5 @@ RoPE 的"统一频率表"批判：每个注意力头学自己的旋转频率与�
 - 与 E1/E2 无域重叠（LLM 位置编码 vs 像素扩散 WM），arch 线教学参考。
 
 ## 7. 读前须知
-- 前置：RoPE 旋转机制（[RoPE旋转位置编码](/explore/30-Formulas/RoPE旋转位置编码) 的复数旋转直觉 + [位置编码](/explore/40-Concepts/位置编码) 总览；论文细节先看 [RoFormer](/explore/10-Papers/01-架构演进/RoFormer- Enhanced Transformer with Rotary Position Embedding（RoPE）) 卡）、频率-波长的直觉（低频=长程、高频=局部）。
+- 前置：RoPE 旋转机制（[RoPE旋转位置编码](/ai-fa/explore/30-Formulas/RoPE旋转位置编码) 的复数旋转直觉 + [位置编码](/ai-fa/explore/40-Concepts/位置编码) 总览；论文细节先看 [RoFormer](/ai-fa/explore/10-Papers/01-架构演进/RoFormer- Enhanced Transformer with Rotary Position Embedding（RoPE）) 卡）、频率-波长的直觉（低频=长程、高频=局部）。
 - 理论部分（头的频率需求刻画）需线性代数基础；公式细节待 PDF 深读补第 4 节。

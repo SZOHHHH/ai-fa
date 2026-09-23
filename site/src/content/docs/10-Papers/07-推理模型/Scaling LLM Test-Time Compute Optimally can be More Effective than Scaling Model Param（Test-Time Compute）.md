@@ -27,18 +27,18 @@ pdf: 已下载（PDF/）
 ## 3. 方法概要
 
 1. 限定算力预算下的两种推理策略扫描
-2. 验证器（[PRM](/explore/10-Papers/07-推理模型/Let's Verify Step by Step（PRM）)）给并行采样 rerank
+2. 验证器（[PRM](/ai-fa/explore/10-Papers/07-推理模型/Let's Verify Step by Step（PRM）)）给并行采样 rerank
 3. 顺序修订模型自我纠错
 4. 拟合 compute-accuracy 曲线，与模型规模曲线对照
 
 ## 4. 核心公式
 
-- 准确率函数 $$A(C_{\text{test}}, N_{\text{model}})$$ 的经验刻画——"两种缩放定律的等值线"（与 [Scaling Laws for Neural Language Models](/explore/10-Papers/01-架构演进/Scaling Laws for Neural Language Models（Scaling Laws）) 的训练时定律并列）
-- 与 [s1 - Simple test-time scaling](/explore/10-Papers/07-推理模型/s1- Simple test-time scaling（s1）)：本文是科学、s1 是工程配方
+- 准确率函数 $$A(C_{\text{test}}, N_{\text{model}})$$ 的经验刻画——"两种缩放定律的等值线"（与 [Scaling Laws for Neural Language Models](/ai-fa/explore/10-Papers/01-架构演进/Scaling Laws for Neural Language Models（Scaling Laws）) 的训练时定律并列）
+- 与 [s1 - Simple test-time scaling](/ai-fa/explore/10-Papers/07-推理模型/s1- Simple test-time scaling（s1）)：本文是科学、s1 是工程配方
 
 ## 5. 与前作的关系
 
-- 定量化了 [Self-Consistency Improves Chain of Thought Reasoning in Language Models](/explore/10-Papers/07-推理模型/Self-Consistency Improves Chain of Thought Reasoning in Language Models（Self-Consistency）)（并行）与 [Tree of Thoughts - Deliberate Problem Solving with Large Language Models](/explore/10-Papers/07-推理模型/Tree of Thoughts- Deliberate Problem Solving with Large Language Models（ToT）)（搜索）的算力-收益关系
+- 定量化了 [Self-Consistency Improves Chain of Thought Reasoning in Language Models](/ai-fa/explore/10-Papers/07-推理模型/Self-Consistency Improves Chain of Thought Reasoning in Language Models（Self-Consistency）)（并行）与 [Tree of Thoughts - Deliberate Problem Solving with Large Language Models](/ai-fa/explore/10-Papers/07-推理模型/Tree of Thoughts- Deliberate Problem Solving with Large Language Models（ToT）)（搜索）的算力-收益关系
 - o1 时代（2024.9）前的公开理论基础
 
 ## 6. 影响与后续
@@ -48,8 +48,8 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[Training Compute-Optimal Large Language Models](/explore/10-Papers/10-标杆锚点/Training Compute-Optimal Large Language Models（Chinchilla）)（训练时对照）、[CoT](/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）)、[过程奖励与结果奖励（PRM-ORM）](/explore/40-Concepts/过程奖励与结果奖励（PRM-ORM）)
+[Training Compute-Optimal Large Language Models](/ai-fa/explore/10-Papers/10-标杆锚点/Training Compute-Optimal Large Language Models（Chinchilla）)（训练时对照）、[CoT](/ai-fa/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）)、[过程奖励与结果奖励（PRM-ORM）](/ai-fa/explore/40-Concepts/过程奖励与结果奖励（PRM-ORM）)
 
-> 近邻同族：[Controlled Decoding from Language Models](/explore/10-Papers/07-推理模型/Controlled Decoding from Language Models（CD）) · [Large Language Monkeys- Scaling Inference Compute with Repeated Sampling](/explore/10-Papers/07-推理模型/Large Language Monkeys- Scaling Inference Compute with Repeated Sampling（LL Monkeys）)
+> 近邻同族：[Controlled Decoding from Language Models](/ai-fa/explore/10-Papers/07-推理模型/Controlled Decoding from Language Models（CD）) · [Large Language Monkeys- Scaling Inference Compute with Repeated Sampling](/ai-fa/explore/10-Papers/07-推理模型/Large Language Monkeys- Scaling Inference Compute with Repeated Sampling（LL Monkeys）)
 
-> 数学根基：[思维链（CoT）](/explore/40-Concepts/思维链（CoT）)
+> 数学根基：[思维链（CoT）](/ai-fa/explore/40-Concepts/思维链（CoT）)

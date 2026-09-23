@@ -19,10 +19,10 @@ $$
 
 概率门控线性单元
 
-**直觉**：ReLU 的软开关版（族谱定位见 [激活函数族](/explore/40-Concepts/激活函数族)：sigmoid→ReLU→Swish→GELU 的平滑化主线）
+**直觉**：ReLU 的软开关版（族谱定位见 [激活函数族](/ai-fa/explore/40-Concepts/激活函数族)：sigmoid→ReLU→Swish→GELU 的平滑化主线）
 
 ## 本命论文
 
-[Gaussian Error Linear Units](/explore/10-Papers/01-架构演进/Gaussian Error Linear Units（GELU）) · 相关论文：SwiGLU
+[Gaussian Error Linear Units](/ai-fa/explore/10-Papers/01-架构演进/Gaussian Error Linear Units（GELU）) · 相关论文：SwiGLU
 
 > 待办：精读时补"表示对照表"（不同论文的符号差异换算）

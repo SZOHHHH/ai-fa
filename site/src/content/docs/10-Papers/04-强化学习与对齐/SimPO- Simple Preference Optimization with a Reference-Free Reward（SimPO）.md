@@ -16,7 +16,7 @@ pdf: 已下载（PDF/）
 
 ## 1. 一句话贡献
 
-去掉参考模型、用长度归一化平均对数似然当奖励——比 [DPO](/explore/10-Papers/04-强化学习与对齐/Direct Preference Optimization- Your Language Model is Secretly a Reward Model（DPO）) 更简单且普遍更强。
+去掉参考模型、用长度归一化平均对数似然当奖励——比 [DPO](/ai-fa/explore/10-Papers/04-强化学习与对齐/Direct Preference Optimization- Your Language Model is Secretly a Reward Model（DPO）) 更简单且普遍更强。
 
 ## 2. 核心贡献
 
@@ -33,11 +33,11 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- [SimPO损失](/explore/30-Formulas/SimPO损失)
+- [SimPO损失](/ai-fa/explore/30-Formulas/SimPO损失)
 
 ## 5. 与前作的关系
 
-- 简化了 [Direct Preference Optimization - Your Language Model is Secretly a Reward Model](/explore/10-Papers/04-强化学习与对齐/Direct Preference Optimization- Your Language Model is Secretly a Reward Model（DPO）)：去参考 + 长度归一
+- 简化了 [Direct Preference Optimization - Your Language Model is Secretly a Reward Model](/ai-fa/explore/10-Papers/04-强化学习与对齐/Direct Preference Optimization- Your Language Model is Secretly a Reward Model（DPO）)：去参考 + 长度归一
 - 同期平行：ORPO 也去参考但走 odds 路线
 
 ## 6. 影响与后续
@@ -47,4 +47,4 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[DPO损失](/explore/30-Formulas/DPO损失)（对照阅读最佳）
+[DPO损失](/ai-fa/explore/30-Formulas/DPO损失)（对照阅读最佳）

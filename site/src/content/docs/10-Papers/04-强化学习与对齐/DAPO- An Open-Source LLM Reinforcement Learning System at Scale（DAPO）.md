@@ -17,11 +17,11 @@ tags: [paper, 占位层]
 
 ## 1. 一句话贡献
 
-[GRPO](/explore/20-Algorithms/GRPO与RLVR) 工业化四件套：Clip-Higher（解耦上下裁剪促探索）、动态采样（丢弃全对/全错组）、token 级损失（去长度归一偏置）、超长奖励整形——B8 遗留补卡。
+[GRPO](/ai-fa/explore/20-Algorithms/GRPO与RLVR) 工业化四件套：Clip-Higher（解耦上下裁剪促探索）、动态采样（丢弃全对/全错组）、token 级损失（去长度归一偏置）、超长奖励整形——B8 遗留补卡。
 
 ## 2. 核心贡献
 
-1. [GRPO](/explore/20-Algorithms/GRPO与RLVR) 工业化四件套：Clip-Higher（解耦上下裁剪促探索）、动态采样（丢弃全对/全错组）、token 级损失（去长度归一偏置）、超长奖励整形——B8 遗留补卡。
+1. [GRPO](/ai-fa/explore/20-Algorithms/GRPO与RLVR) 工业化四件套：Clip-Higher（解耦上下裁剪促探索）、动态采样（丢弃全对/全错组）、token 级损失（去长度归一偏置）、超长奖励整形——B8 遗留补卡。
 
 ## 3. 方法概要
 
@@ -37,16 +37,16 @@ $$
 
 ## 5. 与前作/矩阵关系
 
-🚩 占 GRPO×硬裁剪改造格；→ [Understanding R1-Zero-Like Training- A Critical Perspective](/explore/10-Papers/04-强化学习与对齐/Understanding R1-Zero-Like Training- A Critical Perspective（Dr.GRPO）)（另一条偏置修正路线）；verl 官方 recipe 已收录
+🚩 占 GRPO×硬裁剪改造格；→ [Understanding R1-Zero-Like Training- A Critical Perspective](/ai-fa/explore/10-Papers/04-强化学习与对齐/Understanding R1-Zero-Like Training- A Critical Perspective（Dr.GRPO）)（另一条偏置修正路线）；verl 官方 recipe 已收录
 
 
 ## 6. 影响与占位意义
 
 GRPO 系工业级占位（2000+ 引用）。
 
-> 近邻同族：[DCPO- Dynamic Clipping Policy Optimization](/explore/10-Papers/04-强化学习与对齐/DCPO- Dynamic Clipping Policy Optimization（DCPO）) · [GRPO is Secretly a Process Reward Model](/explore/10-Papers/04-强化学习与对齐/GRPO is Secretly a Process Reward Model（GRPO-PRM）)
-> 数学根基（占位层）：[策略梯度定理](/explore/40-Concepts/策略梯度定理)
-> 数学根基：[REINFORCE目标](/explore/30-Formulas/REINFORCE目标)
+> 近邻同族：[DCPO- Dynamic Clipping Policy Optimization](/ai-fa/explore/10-Papers/04-强化学习与对齐/DCPO- Dynamic Clipping Policy Optimization（DCPO）) · [GRPO is Secretly a Process Reward Model](/ai-fa/explore/10-Papers/04-强化学习与对齐/GRPO is Secretly a Process Reward Model（GRPO-PRM）)
+> 数学根基（占位层）：[策略梯度定理](/ai-fa/explore/40-Concepts/策略梯度定理)
+> 数学根基：[REINFORCE目标](/ai-fa/explore/30-Formulas/REINFORCE目标)
 
 ## 7. 读前须知
 

@@ -38,19 +38,19 @@ $$\tilde\mu_t = \frac{\sqrt{\bar\alpha_{t-1}}\, \beta_t}{1-\bar\alpha_t}\, x_0 +
 
 | 论文 | 贡献 |
 |---|---|
-| [Denoising Diffusion Probabilistic Models](/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Probabilistic Models（DDPM）) | 推导并用于训练 |
-| [Improved Denoising Diffusion Probabilistic Models](/explore/10-Papers/02-生成建模与扩散/Improved Denoising Diffusion Probabilistic Models（iDDPM）) | 讨论学习 $$\Sigma$$ 的变体 |
+| [Denoising Diffusion Probabilistic Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Probabilistic Models（DDPM）) | 推导并用于训练 |
+| [Improved Denoising Diffusion Probabilistic Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Improved Denoising Diffusion Probabilistic Models（iDDPM）) | 讨论学习 $$\Sigma$$ 的变体 |
 
 ## 5. 数学概念分解
 
-- [高斯分布](/explore/40-Concepts/高斯分布)：**高斯条件分布仍是高斯**——后验有闭式解的根源
-- [马尔可夫链](/explore/40-Concepts/马尔可夫链)：反向链的转移核
-- [贝叶斯公式](/explore/40-Concepts/贝叶斯公式)：$$q(x_{t-1}\mid x_t, x_0) \propto q(x_t\mid x_{t-1}) q(x_{t-1}\mid x_0)$$
-- [期望](/explore/40-Concepts/期望)：均值即条件期望
+- [高斯分布](/ai-fa/explore/40-Concepts/高斯分布)：**高斯条件分布仍是高斯**——后验有闭式解的根源
+- [马尔可夫链](/ai-fa/explore/40-Concepts/马尔可夫链)：反向链的转移核
+- [贝叶斯公式](/ai-fa/explore/40-Concepts/贝叶斯公式)：$$q(x_{t-1}\mid x_t, x_0) \propto q(x_t\mid x_{t-1}) q(x_{t-1}\mid x_0)$$
+- [期望](/ai-fa/explore/40-Concepts/期望)：均值即条件期望
 
 ## 6. 与其他公式的关系
 
-- → **由** [DDPM前向过程](/explore/30-Formulas/DDPM前向过程) **推导**（贝叶斯 + 高斯代数）
-- → **推导出** [DDPM训练目标](/explore/30-Formulas/DDPM训练目标)：KL(q‖p_θ) 化简后只剩 MSE
-- ≡ **等价于** [反向SDE](/explore/30-Formulas/反向SDE) 的离散化（随机采样每步的转移）
+- → **由** [DDPM前向过程](/ai-fa/explore/30-Formulas/DDPM前向过程) **推导**（贝叶斯 + 高斯代数）
+- → **推导出** [DDPM训练目标](/ai-fa/explore/30-Formulas/DDPM训练目标)：KL(q‖p_θ) 化简后只剩 MSE
+- ≡ **等价于** [反向SDE](/ai-fa/explore/30-Formulas/反向SDE) 的离散化（随机采样每步的转移）
 - ⊃ **被泛化**：Score-SDE 的反向 SDE 是它的连续极限

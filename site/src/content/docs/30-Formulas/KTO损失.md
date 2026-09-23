@@ -37,16 +37,16 @@ $$z_0 = \beta\, \mathrm{KL}\!\left( \pi_\theta \| \pi_{\text{ref}} \right) + \te
 
 | 论文 | 贡献 |
 |---|---|
-| [KTO - Model Alignment as Prospect Theoretic Optimization](/explore/10-Papers/04-强化学习与对齐/KTO- Model Alignment as Prospect Theoretic Optimization（KTO）) | 提出 |
+| [KTO - Model Alignment as Prospect Theoretic Optimization](/ai-fa/explore/10-Papers/04-强化学习与对齐/KTO- Model Alignment as Prospect Theoretic Optimization（KTO）) | 提出 |
 
 ## 5. 数学概念分解
 
-- [KL散度](/explore/40-Concepts/KL散度)：基准点构成
-- [期望](/explore/40-Concepts/期望)：好坏两支独立期望
-- [梯度](/explore/40-Concepts/梯度)
+- [KL散度](/ai-fa/explore/40-Concepts/KL散度)：基准点构成
+- [期望](/ai-fa/explore/40-Concepts/期望)：好坏两支独立期望
+- [梯度](/ai-fa/explore/40-Concepts/梯度)
 
 ## 6. 与其他公式的关系
 
-- → **重构自** [DPO损失](/explore/30-Formulas/DPO损失) 的数据假设（成对 → 单标签）
-- 同族：[SimPO损失](/explore/30-Formulas/SimPO损失)、[IPO损失](/explore/30-Formulas/IPO损失)、[ORPO损失](/explore/30-Formulas/ORPO损失)
-- 理论基础从 [Bradley-Terry模型](/explore/40-Concepts/Bradley-Terry模型) 换成前景理论——家族内"换地基"的代表
+- → **重构自** [DPO损失](/ai-fa/explore/30-Formulas/DPO损失) 的数据假设（成对 → 单标签）
+- 同族：[SimPO损失](/ai-fa/explore/30-Formulas/SimPO损失)、[IPO损失](/ai-fa/explore/30-Formulas/IPO损失)、[ORPO损失](/ai-fa/explore/30-Formulas/ORPO损失)
+- 理论基础从 [Bradley-Terry模型](/ai-fa/explore/40-Concepts/Bradley-Terry模型) 换成前景理论——家族内"换地基"的代表

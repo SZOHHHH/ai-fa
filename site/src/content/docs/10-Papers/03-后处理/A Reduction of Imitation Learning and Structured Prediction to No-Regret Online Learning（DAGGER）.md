@@ -36,17 +36,17 @@ $$
 
 ## 5. 与前作/矩阵关系
 
-→ [On-Policy Distillation of Language Models - Learning from Self-Generated Mistakes](/explore/10-Papers/04-强化学习与对齐/On-Policy Distillation of Language Models- Learning from Self-Generated Mistakes（GKD）)（LM 版 DAGGER）/ OPD 全家（RS 库与 Thinking Machines 博客均引其为思想源头）；#loss 关系：imitation 损失的分布失配定理
+→ [On-Policy Distillation of Language Models - Learning from Self-Generated Mistakes](/ai-fa/explore/10-Papers/04-强化学习与对齐/On-Policy Distillation of Language Models- Learning from Self-Generated Mistakes（GKD）)（LM 版 DAGGER）/ OPD 全家（RS 库与 Thinking Machines 博客均引其为思想源头）；#loss 关系：imitation 损失的分布失配定理
 
 ## 6. 影响与占位意义
 
 B18 奠基补齐：OPD 家族的理论祖师爷，此前在多张卡里被引用却无卡可链（补齐后消除断链风险）。
 
-> 近邻同族：[Variational Autoencoders and Nonlinear ICA- A Unifying Framework](/explore/10-Papers/03-后处理/Variational Autoencoders and Nonlinear ICA- A Unifying Framework（iVAE）) · [A Simple and Effective Pruning Approach for Large Language Models](/explore/10-Papers/03-后处理/A Simple and Effective Pruning Approach for Large Language Models（SparseGPT）)
+> 近邻同族：[Variational Autoencoders and Nonlinear ICA- A Unifying Framework](/ai-fa/explore/10-Papers/03-后处理/Variational Autoencoders and Nonlinear ICA- A Unifying Framework（iVAE）) · [A Simple and Effective Pruning Approach for Large Language Models](/ai-fa/explore/10-Papers/03-后处理/A Simple and Effective Pruning Approach for Large Language Models（SparseGPT）)
 
-> 相关：[QLoRA - Efficient Finetuning of Quantized LLMs](/explore/10-Papers/03-后处理/QLoRA- Efficient Finetuning of Quantized LLMs（QLoRA）)
+> 相关：[QLoRA - Efficient Finetuning of Quantized LLMs](/ai-fa/explore/10-Papers/03-后处理/QLoRA- Efficient Finetuning of Quantized LLMs（QLoRA）)
 
-> 数学根基：[蒸馏损失](/explore/30-Formulas/蒸馏损失) · [量化](/explore/40-Concepts/量化)
+> 数学根基：[蒸馏损失](/ai-fa/explore/30-Formulas/蒸馏损失) · [量化](/ai-fa/explore/40-Concepts/量化)
 
 
 ## 7. 读前须知

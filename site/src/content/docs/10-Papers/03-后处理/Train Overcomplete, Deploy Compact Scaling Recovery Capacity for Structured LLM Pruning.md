@@ -30,8 +30,8 @@ layer: 占位
 （待精读）
 
 ## 5. 与前作/矩阵关系
-- 线锚：[知识蒸馏](/explore/40-Concepts/知识蒸馏) · [低秩分解](/explore/40-Concepts/低秩分解)
-- ← 前身：结构化剪枝两段式（识别冗余→恢复微调）——恢复段基线即 [LoRA](/explore/10-Papers/03-后处理/LoRA- Low-Rank Adaptation of Large Language Models（LoRA）) 族低容量模块；剪枝侧 [SparseGPT](/explore/10-Papers/03-后处理/A Simple and Effective Pruning Approach for Large Language Models（SparseGPT）)、容量可分离性假说 [Lottery Ticket](/explore/10-Papers/03-后处理/The Lottery Ticket Hypothesis- Finding Sparse, Trainable Neural Networks（Lottery Ticket）)
+- 线锚：[知识蒸馏](/ai-fa/explore/40-Concepts/知识蒸馏) · [低秩分解](/ai-fa/explore/40-Concepts/低秩分解)
+- ← 前身：结构化剪枝两段式（识别冗余→恢复微调）——恢复段基线即 [LoRA](/ai-fa/explore/10-Papers/03-后处理/LoRA- Low-Rank Adaptation of Large Language Models（LoRA）) 族低容量模块；剪枝侧 [SparseGPT](/ai-fa/explore/10-Papers/03-后处理/A Simple and Effective Pruning Approach for Large Language Models（SparseGPT）)、容量可分离性假说 [Lottery Ticket](/ai-fa/explore/10-Papers/03-后处理/The Lottery Ticket Hypothesis- Finding Sparse, Trainable Neural Networks（Lottery Ticket）)
 - 核心概念：**容量-知识不对称**（capacity-knowledge asymmetry）——剪掉的知识复杂度远超恢复模块的表达容量；解法="**训练过完备、部署紧凑**"：恢复模块训练期扩容吸收从原模型蒸馏来的知识，部署前把过完备重参数化**代数合并**成数学等价的紧凑模块（退火激活：训练早期非线性、平滑收敛到线性域保证精确合并）。25%/50% 剪枝下保持推理性能比强恢复基线高至多 5.5/8.4 点，内存与 TFLOPs 持平。
 
 ## 6. 影响后续

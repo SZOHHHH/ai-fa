@@ -30,8 +30,8 @@ layer: 占位
 （待精读）
 
 ## 5. 与前作/矩阵关系
-- 线锚：[GRPO与RLVR](/explore/20-Algorithms/GRPO与RLVR) · 数学根基 [GRPO目标](/explore/30-Formulas/GRPO目标)
-- ← 范式先行：[DeepSeek-R1 - Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](/explore/10-Papers/04-强化学习与对齐/DeepSeek-R1- Incentivizing Reasoning Capability in LLMs via Reinforcement Learning（R1）)（RL-only 激发行为：R1 激发推理、SVRL 激发多模态智能体的自我验证）
+- 线锚：[GRPO与RLVR](/ai-fa/explore/20-Algorithms/GRPO与RLVR) · 数学根基 [GRPO目标](/ai-fa/explore/30-Formulas/GRPO目标)
+- ← 范式先行：[DeepSeek-R1 - Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](/ai-fa/explore/10-Papers/04-强化学习与对齐/DeepSeek-R1- Incentivizing Reasoning Capability in LLMs via Reinforcement Learning（R1）)（RL-only 激发行为：R1 激发推理、SVRL 激发多模态智能体的自我验证）
 
 ## 6. 影响后续
 （待精读）

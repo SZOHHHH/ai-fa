@@ -37,18 +37,18 @@ $$o_t = \sum_{b \in \{\text{comp, sel, slide}\}} g_{t,b}\cdot \mathrm{Attn}_b\bi
 
 ## 5. 与前作关系
 
-- ⊃ Longformer/BigBird（[Longformer - The Long-Document Transformer](/explore/10-Papers/06-长上下文/Longformer- The Long-Document Transformer（Longformer）)）：固定模式→可学习模式，推理期→训练期
-- ≡ MoBA（[MoBA - Mixture of Block Attention for Long-Context LLMs](/explore/10-Papers/06-长上下文/MoBA- Mixture of Block Attention for Long-Context LLMs（MoBA）)）：同期平行工作（Moonshot 路线，MoE 式块路由 vs 三分支）
-- → [Gated DeltaNet-2- Decoupling Erase and Write in Linear Attention](/explore/10-Papers/01-架构演进/Gated DeltaNet-2- Decoupling Erase and Write in Linear Attention（GDN2）) 等线性注意力路线：稀疏注意力与线性注意力在注意力=矩阵低秩/稀疏分解处汇合
+- ⊃ Longformer/BigBird（[Longformer - The Long-Document Transformer](/ai-fa/explore/10-Papers/06-长上下文/Longformer- The Long-Document Transformer（Longformer）)）：固定模式→可学习模式，推理期→训练期
+- ≡ MoBA（[MoBA - Mixture of Block Attention for Long-Context LLMs](/ai-fa/explore/10-Papers/06-长上下文/MoBA- Mixture of Block Attention for Long-Context LLMs（MoBA）)）：同期平行工作（Moonshot 路线，MoE 式块路由 vs 三分支）
+- → [Gated DeltaNet-2- Decoupling Erase and Write in Linear Attention](/ai-fa/explore/10-Papers/01-架构演进/Gated DeltaNet-2- Decoupling Erase and Write in Linear Attention（GDN2）) 等线性注意力路线：稀疏注意力与线性注意力在注意力=矩阵低秩/稀疏分解处汇合
 
 ## 6. 影响后续
 
-ACL 2025 正式收录；与 MoBA 并列 2025 稀疏注意力双塔；[长上下文机制矩阵](/explore/60-Matrices/长上下文机制矩阵) §3 "稀疏×原生训练"格的主占位（生产验证）。硬件对齐路线延伸（2026-09）：[AMEND: Audited Margins Enable Nonblocking Drops in GPU-PIM LLM Decoding](/explore/10-Papers/06-长上下文/AMEND Audited Margins Enable Nonblocking Drops in GPU-PIM LLM Decoding)——将对齐目标从 tensor core 内核推进到存内计算（HBM-PIM）层。
+ACL 2025 正式收录；与 MoBA 并列 2025 稀疏注意力双塔；[长上下文机制矩阵](/ai-fa/explore/60-Matrices/长上下文机制矩阵) §3 "稀疏×原生训练"格的主占位（生产验证）。硬件对齐路线延伸（2026-09）：[AMEND: Audited Margins Enable Nonblocking Drops in GPU-PIM LLM Decoding](/ai-fa/explore/10-Papers/06-长上下文/AMEND Audited Margins Enable Nonblocking Drops in GPU-PIM LLM Decoding)——将对齐目标从 tensor core 内核推进到存内计算（HBM-PIM）层。
 
-- → 后继补记（260914）：[SAS](/explore/10-Papers/06-长上下文/SAS - Simple Attention Sparsification via End-to-End Optimization of Context Ranking（端到端稀疏注意力）)（训练后稀疏化的目标对齐改进：端到端门控替代注意力分布蒸馏）
-- → 后继补记（260914）：[RouteRelay](/explore/10-Papers/06-长上下文/RouteRelay - Event-Triggered Cross-Layer Route Reuse for Efficient Dynamic Sparse Attention（跨层路由复用）)（router-agnostic 的路由开销优化：跨层复用+事件触发重路由）
+- → 后继补记（260914）：[SAS](/ai-fa/explore/10-Papers/06-长上下文/SAS - Simple Attention Sparsification via End-to-End Optimization of Context Ranking（端到端稀疏注意力）)（训练后稀疏化的目标对齐改进：端到端门控替代注意力分布蒸馏）
+- → 后继补记（260914）：[RouteRelay](/ai-fa/explore/10-Papers/06-长上下文/RouteRelay - Event-Triggered Cross-Layer Route Reuse for Efficient Dynamic Sparse Attention（跨层路由复用）)（router-agnostic 的路由开销优化：跨层复用+事件触发重路由）
 
 ## 7. 读前须知
 
-- 需要：softmax 注意力的块化计算（[注意力核心公式](/explore/30-Formulas/注意力核心公式)）
+- 需要：softmax 注意力的块化计算（[注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)）
 - 易混点：NSA 的"压缩分支"≠ 有损 KV 压缩（Infini-attention 系）——压缩的是注意力输入而非 KV 存储；两条路线在"率失真"视角下才汇合

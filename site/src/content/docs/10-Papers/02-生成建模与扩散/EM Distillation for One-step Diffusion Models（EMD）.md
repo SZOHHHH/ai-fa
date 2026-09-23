@@ -33,12 +33,12 @@ pdf: 已下载（PDF/）
 ## 4. 核心公式
 
 - EM 分解：$$q^{(k+1)} = \arg\min_q \mathbb{E}_{p_{\text{teacher}}}[\ldots]$$（Wasserstein 正则）
-- 与 [ELBO](/explore/40-Concepts/ELBO) 的 EM 家族同构——蒸馏目标写成变分形式（[期望](/explore/40-Concepts/期望)）
+- 与 [ELBO](/ai-fa/explore/40-Concepts/ELBO) 的 EM 家族同构——蒸馏目标写成变分形式（[期望](/ai-fa/explore/40-Concepts/期望)）
 
 ## 5. 与前作的关系
 
-- 与 [Inductive Moment Matching](/explore/10-Papers/02-生成建模与扩散/Inductive Moment Matching（IMM）) 同属“矩/分布匹配”大格（EMD 蒸馏预训练、IMM 从头）
-- 对照 [DMD](/explore/10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）)（KL vs W 距离）
+- 与 [Inductive Moment Matching](/ai-fa/explore/10-Papers/02-生成建模与扩散/Inductive Moment Matching（IMM）) 同属“矩/分布匹配”大格（EMD 蒸馏预训练、IMM 从头）
+- 对照 [DMD](/ai-fa/explore/10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）)（KL vs W 距离）
 
 ## 6. 影响与后续
 
@@ -46,10 +46,10 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[ELBO](/explore/40-Concepts/ELBO)、[Wasserstein距离](/explore/40-Concepts/Wasserstein距离)、[One-step Diffusion with Distribution Matching Distillation](/explore/10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）)
+[ELBO](/ai-fa/explore/40-Concepts/ELBO)、[Wasserstein距离](/ai-fa/explore/40-Concepts/Wasserstein距离)、[One-step Diffusion with Distribution Matching Distillation](/ai-fa/explore/10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）)
 
-> 近邻同族：[Diff-Instruct++- Training One-step Text-to-image Generator Model to Align with Human Preferences](/explore/10-Papers/02-生成建模与扩散/Diff-Instruct++- Training One-step Text-to-image Generator Model to Align with Human Preferences（Diff-Instruct++）) · [Diff-Instruct- A Universal Approach for Transferring Knowledge From Pre-trained Diffusion Models](/explore/10-Papers/02-生成建模与扩散/Diff-Instruct- A Universal Approach for Transferring Knowledge From Pre-trained Diffusion Models（Diff-Instruct）)
+> 近邻同族：[Diff-Instruct++- Training One-step Text-to-image Generator Model to Align with Human Preferences](/ai-fa/explore/10-Papers/02-生成建模与扩散/Diff-Instruct++- Training One-step Text-to-image Generator Model to Align with Human Preferences（Diff-Instruct++）) · [Diff-Instruct- A Universal Approach for Transferring Knowledge From Pre-trained Diffusion Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Diff-Instruct- A Universal Approach for Transferring Knowledge From Pre-trained Diffusion Models（Diff-Instruct）)
 
-> 数学根基：[概率分布](/explore/40-Concepts/概率分布)
+> 数学根基：[概率分布](/ai-fa/explore/40-Concepts/概率分布)
 
-> 数学根基：[蒸馏损失](/explore/30-Formulas/蒸馏损失) · [DSM目标](/explore/30-Formulas/DSM目标)
+> 数学根基：[蒸馏损失](/ai-fa/explore/30-Formulas/蒸馏损失) · [DSM目标](/ai-fa/explore/30-Formulas/DSM目标)

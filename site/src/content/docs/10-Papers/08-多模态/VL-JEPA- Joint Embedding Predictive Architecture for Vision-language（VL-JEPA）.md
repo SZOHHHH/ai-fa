@@ -38,7 +38,7 @@ $$
 
 ## 5. 与前作/矩阵关系
 
-🚩 **占 [世界模型矩阵](/explore/60-Matrices/世界模型矩阵) "JEPA×生成头"机会格的最近邻**（榜 8）——"预测潜量+按需解码"结构已出现
+🚩 **占 [世界模型矩阵](/ai-fa/explore/60-Matrices/世界模型矩阵) "JEPA×生成头"机会格的最近邻**（榜 8）——"预测潜量+按需解码"结构已出现
 
 
 ## 6. 影响与占位意义
@@ -47,10 +47,10 @@ $$
 
 ---
 
-> 谱系枢纽：[Learning Transferable Visual Models From Natural Language Supervision](/explore/10-Papers/08-多模态/Learning Transferable Visual Models From Natural Language Supervision（CLIP）)（图谱连通入口）
-> 近邻同族：[BLIP-2 - Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models](/explore/10-Papers/08-多模态/BLIP-2- Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Lan（BLIP-2）) · [Chameleon - Mixed-Modal Early-Fusion Foundation Models](/explore/10-Papers/08-多模态/Chameleon- Mixed-Modal Early-Fusion Foundation Models（Chameleon）)
-> 数学根基（占位层）：[视觉语言模型（VLM）](/explore/40-Concepts/视觉语言模型（VLM）)
-> 数学根基：[注意力核心公式](/explore/30-Formulas/注意力核心公式) · [CLIP对比损失](/explore/30-Formulas/CLIP对比损失)
+> 谱系枢纽：[Learning Transferable Visual Models From Natural Language Supervision](/ai-fa/explore/10-Papers/08-多模态/Learning Transferable Visual Models From Natural Language Supervision（CLIP）)（图谱连通入口）
+> 近邻同族：[BLIP-2 - Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models](/ai-fa/explore/10-Papers/08-多模态/BLIP-2- Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Lan（BLIP-2）) · [Chameleon - Mixed-Modal Early-Fusion Foundation Models](/ai-fa/explore/10-Papers/08-多模态/Chameleon- Mixed-Modal Early-Fusion Foundation Models（Chameleon）)
+> 数学根基（占位层）：[视觉语言模型（VLM）](/ai-fa/explore/40-Concepts/视觉语言模型（VLM）)
+> 数学根基：[注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式) · [CLIP对比损失](/ai-fa/explore/30-Formulas/CLIP对比损失)
 
 ## 7. 读前须知
 

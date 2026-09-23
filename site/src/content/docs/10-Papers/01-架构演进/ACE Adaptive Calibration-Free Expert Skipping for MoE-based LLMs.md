@@ -31,8 +31,8 @@ layer: 占位
 （待精读）
 
 ## 5. 与前作/矩阵关系
-- 线锚：[Transformer](/explore/20-Algorithms/Transformer) · [注意力核心公式](/explore/30-Formulas/注意力核心公式)（占位挂链，Tier B 精化）
-- 同族：[混合专家（MoE）](/explore/20-Algorithms/混合专家（MoE）)·[MoE门控公式](/explore/30-Formulas/MoE门控公式)（top-k 路由本体）；效率近邻：[NFE（函数求值次数）](/explore/40-Concepts/NFE（函数求值次数）)（"激活多少专家"与"调用几次网络"同族思想）
+- 线锚：[Transformer](/ai-fa/explore/20-Algorithms/Transformer) · [注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)（占位挂链，Tier B 精化）
+- 同族：[混合专家（MoE）](/ai-fa/explore/20-Algorithms/混合专家（MoE）)·[MoE门控公式](/ai-fa/explore/30-Formulas/MoE门控公式)（top-k 路由本体）；效率近邻：[NFE（函数求值次数）](/ai-fa/explore/40-Concepts/NFE（函数求值次数）)（"激活多少专家"与"调用几次网络"同族思想）
 
 ## 6. 影响后续
 （待精读）

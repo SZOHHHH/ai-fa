@@ -33,7 +33,7 @@ $$
 $$
 
 
-**直觉**：→ [ReAct](/explore/10-Papers/07-推理模型/ReAct- Synergizing Reasoning and Acting in Language Models（ReAct）)/agent 线的理论背书；≡ 世界模型=推理链类比（世界模型矩阵洞察）
+**直觉**：→ [ReAct](/ai-fa/explore/10-Papers/07-推理模型/ReAct- Synergizing Reasoning and Acting in Language Models（ReAct）)/agent 线的理论背书；≡ 世界模型=推理链类比（世界模型矩阵洞察）
 
 ## 5. 与前作/矩阵关系
 
@@ -47,6 +47,6 @@ LLM 决策能力归因（不是推理是模式匹配）的代表作
 
 undefined
 
-> 近邻同族：[A Survey on Hallucination in Large Language Models](/explore/10-Papers/04-强化学习与对齐/A Survey on Hallucination in Large Language Models（Hallucination Survey）) · [PCSD- Persistent Consistency for Self-Distillation in Agentic Reinforcement Learning](/explore/10-Papers/04-强化学习与对齐/PCSD- Persistent Consistency for Self-Distillation in Agentic Reinforcement Learning（PCSD）)
+> 近邻同族：[A Survey on Hallucination in Large Language Models](/ai-fa/explore/10-Papers/04-强化学习与对齐/A Survey on Hallucination in Large Language Models（Hallucination Survey）) · [PCSD- Persistent Consistency for Self-Distillation in Agentic Reinforcement Learning](/ai-fa/explore/10-Papers/04-强化学习与对齐/PCSD- Persistent Consistency for Self-Distillation in Agentic Reinforcement Learning（PCSD）)
 
-> 数学根基：[策略梯度定理](/explore/40-Concepts/策略梯度定理)
+> 数学根基：[策略梯度定理](/ai-fa/explore/40-Concepts/策略梯度定理)

@@ -36,17 +36,17 @@ $$
 
 ## 5. 与前作/矩阵关系
 
-← [KIVI- A Tuning-Free Asymmetric 2bit Quantization for KV Cache](/explore/10-Papers/03-后处理/KIVI- A Tuning-Free Asymmetric 2bit Quantization for KV Cache（KIVI）)（同格前作）；🚩 KV 量化格的第二个顶会占位（与 KIVI 并立）
+← [KIVI- A Tuning-Free Asymmetric 2bit Quantization for KV Cache](/ai-fa/explore/10-Papers/03-后处理/KIVI- A Tuning-Free Asymmetric 2bit Quantization for KV Cache（KIVI）)（同格前作）；🚩 KV 量化格的第二个顶会占位（与 KIVI 并立）
 
 ## 6. 影响与占位意义
 
 B18 奠基补齐：KV 压缩支线的系统化代表作。
 
-> 近邻同族：[Dodo- Dynamic Contextual Compression for Decoder-only LMs](/explore/10-Papers/06-长上下文/Dodo- Dynamic Contextual Compression for Decoder-only LMs（Dodo）) · [Efficient Streaming Language Models with Attention Sinks](/explore/10-Papers/06-长上下文/Efficient Streaming Language Models with Attention Sinks（StreamingLLM）)
+> 近邻同族：[Dodo- Dynamic Contextual Compression for Decoder-only LMs](/ai-fa/explore/10-Papers/06-长上下文/Dodo- Dynamic Contextual Compression for Decoder-only LMs（Dodo）) · [Efficient Streaming Language Models with Attention Sinks](/ai-fa/explore/10-Papers/06-长上下文/Efficient Streaming Language Models with Attention Sinks（StreamingLLM）)
 
-> 数学根基：[KV缓存](/explore/40-Concepts/KV缓存) · [量化](/explore/40-Concepts/量化)
+> 数学根基：[KV缓存](/ai-fa/explore/40-Concepts/KV缓存) · [量化](/ai-fa/explore/40-Concepts/量化)
 
-> 数学根基：[注意力计算复杂度](/explore/30-Formulas/注意力计算复杂度)
+> 数学根基：[注意力计算复杂度](/ai-fa/explore/30-Formulas/注意力计算复杂度)
 
 
 ## 7. 读前须知

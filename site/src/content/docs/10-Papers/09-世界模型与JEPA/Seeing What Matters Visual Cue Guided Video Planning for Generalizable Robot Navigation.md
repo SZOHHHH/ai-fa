@@ -38,8 +38,8 @@ layer: 精读层（PDF 前 8 页全读，260916）
 - 消融锚点：CueNav(w/o IDM)=同规划器+MASt3R 几何重建+启发式跟踪控制器——SR 0.667 vs 0.933：**视觉运动→动作的接地质量是闭环成败的主闸门**（比具身线索更关键）。
 
 ## 5. 与前作/矩阵关系
-- 线锚：[世界模型](/explore/20-Algorithms/世界模型) · [逆动力学（IDM）](/explore/40-Concepts/逆动力学（IDM）)（方法核心实体：光流中介、MSE 点估计、embodiment 专用）
-- 近邻同族：[Diffusion Forcing- Next-token Prediction Meets Full-Sequence Diffusion](/explore/10-Papers/09-世界模型与JEPA/Diffusion Forcing- Next-token Prediction Meets Full-Sequence Diffusion（Diffusion Forcing）)（其后训练即 diffusion forcing 式自回归视频预测）· [From Prediction to Decision: World-Model-Guided Action Selection for Continuous Pile Excavation](/explore/10-Papers/09-世界模型与JEPA/From Prediction to Decision - World-Model-Guided Action Selection for Continuous Pile Excavation（挖掘WAM）)（同周对照组：WAM"撒动作候选+WM 正演排序"vs CueNav"生成未来视频+IDM 反演"——imagine-then-act 族的正演/反演两条落地路径，已互挂）· [Diffusion for World Modeling- Visual Details Matter in Atari](/explore/10-Papers/09-世界模型与JEPA/Diffusion for World Modeling- Visual Details Matter in Atari（DIAMOND）)（像素扩散 WM 的游戏域对应物——同为"扩散视频预测当动力学"，用途分叉在规划器 vs 可玩环境）
+- 线锚：[世界模型](/ai-fa/explore/20-Algorithms/世界模型) · [逆动力学（IDM）](/ai-fa/explore/40-Concepts/逆动力学（IDM）)（方法核心实体：光流中介、MSE 点估计、embodiment 专用）
+- 近邻同族：[Diffusion Forcing- Next-token Prediction Meets Full-Sequence Diffusion](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Diffusion Forcing- Next-token Prediction Meets Full-Sequence Diffusion（Diffusion Forcing）)（其后训练即 diffusion forcing 式自回归视频预测）· [From Prediction to Decision: World-Model-Guided Action Selection for Continuous Pile Excavation](/ai-fa/explore/10-Papers/09-世界模型与JEPA/From Prediction to Decision - World-Model-Guided Action Selection for Continuous Pile Excavation（挖掘WAM）)（同周对照组：WAM"撒动作候选+WM 正演排序"vs CueNav"生成未来视频+IDM 反演"——imagine-then-act 族的正演/反演两条落地路径，已互挂）· [Diffusion for World Modeling- Visual Details Matter in Atari](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Diffusion for World Modeling- Visual Details Matter in Atari（DIAMOND）)（像素扩散 WM 的游戏域对应物——同为"扩散视频预测当动力学"，用途分叉在规划器 vs 可玩环境）
 - ↔ E2 划界（占位研判 260916 详见当日晨报⑤）：其 IDM 是帧对条件确定性回归（流中介、MSE 点估计、无后验），goal 走视频规划器不进 IDM 本体；E2 是 goal 条件下从像素直接反推**全后验** $$p(a\mid x_t,\text{goal})$$ 并以闭环 goal-hit 评命中——反演深度与条件结构两维都不同格，域=机器人导航非游戏。
 
 ## 6. 影响后续
@@ -48,4 +48,4 @@ layer: 精读层（PDF 前 8 页全读，260916）
 - 局限：IDM 绑定固定相机配置（自列）；短视野+有限观测窗；模拟域仅 DeepMind Lab 迷宫。
 
 ## 7. 读前须知
-[Diffusion Forcing- Next-token Prediction Meets Full-Sequence Diffusion](/explore/10-Papers/09-世界模型与JEPA/Diffusion Forcing- Next-token Prediction Meets Full-Sequence Diffusion（Diffusion Forcing）)、[逆动力学（IDM）](/explore/40-Concepts/逆动力学（IDM）)、[世界模型](/explore/20-Algorithms/世界模型)
+[Diffusion Forcing- Next-token Prediction Meets Full-Sequence Diffusion](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Diffusion Forcing- Next-token Prediction Meets Full-Sequence Diffusion（Diffusion Forcing）)、[逆动力学（IDM）](/ai-fa/explore/40-Concepts/逆动力学（IDM）)、[世界模型](/ai-fa/explore/20-Algorithms/世界模型)

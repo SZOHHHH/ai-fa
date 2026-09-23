@@ -47,9 +47,9 @@ RS 库 08-03 情报（rel=3 但敌情价值高）：缓存路线 vs 蒸馏路线
 
 ---
 
-> 谱系枢纽：[Dream to Control - Learning Behaviors by Latent Imagination](/explore/10-Papers/09-世界模型与JEPA/Dream to Control- Learning Behaviors by Latent Imagination（Dreamer）)（图谱连通入口）
-> 近邻同族：[Diffusion for World Modeling- Visual Details Matter in Atari](/explore/10-Papers/09-世界模型与JEPA/Diffusion for World Modeling- Visual Details Matter in Atari（DIAMOND）) · [Diffusion Forcing- Next-token Prediction Meets Full-Sequence Diffusion](/explore/10-Papers/09-世界模型与JEPA/Diffusion Forcing- Next-token Prediction Meets Full-Sequence Diffusion（Diffusion Forcing）)
-> 数学根基（占位层）：[RSSM转移模型](/explore/30-Formulas/RSSM转移模型) · [贝尔曼方程](/explore/40-Concepts/贝尔曼方程) · [ELBO](/explore/40-Concepts/ELBO)
+> 谱系枢纽：[Dream to Control - Learning Behaviors by Latent Imagination](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Dream to Control- Learning Behaviors by Latent Imagination（Dreamer）)（图谱连通入口）
+> 近邻同族：[Diffusion for World Modeling- Visual Details Matter in Atari](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Diffusion for World Modeling- Visual Details Matter in Atari（DIAMOND）) · [Diffusion Forcing- Next-token Prediction Meets Full-Sequence Diffusion](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Diffusion Forcing- Next-token Prediction Meets Full-Sequence Diffusion（Diffusion Forcing）)
+> 数学根基（占位层）：[RSSM转移模型](/ai-fa/explore/30-Formulas/RSSM转移模型) · [贝尔曼方程](/ai-fa/explore/40-Concepts/贝尔曼方程) · [ELBO](/ai-fa/explore/40-Concepts/ELBO)
 
 ## 7. 读前须知
 

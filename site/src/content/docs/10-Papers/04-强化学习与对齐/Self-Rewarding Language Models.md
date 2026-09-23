@@ -16,7 +16,7 @@ pdf: 已下载（PDF/）
 
 ## 1. 一句话贡献
 
-让 LLM 自己给自己的回答当裁判并据此 [DPO](/explore/10-Papers/04-强化学习与对齐/Direct Preference Optimization- Your Language Model is Secretly a Reward Model（DPO）) 训练自己——奖励模型岗位取消，对齐进入自我迭代循环。
+让 LLM 自己给自己的回答当裁判并据此 [DPO](/ai-fa/explore/10-Papers/04-强化学习与对齐/Direct Preference Optimization- Your Language Model is Secretly a Reward Model（DPO）) 训练自己——奖励模型岗位取消，对齐进入自我迭代循环。
 
 ## 2. 核心贡献
 
@@ -28,16 +28,16 @@ pdf: 已下载（PDF/）
 
 1. 给模型 judge 提示（偏好比较模板）
 2. 对每个 prompt 生成多个候选，模型自评选优/劣
-3. 用自评偏好做 DPO（见 [DPO损失](/explore/30-Formulas/DPO损失)）
+3. 用自评偏好做 DPO（见 [DPO损失](/ai-fa/explore/30-Formulas/DPO损失)）
 4. 新模型再自评再 DPO，迭代数代
 
 ## 4. 核心公式
 
-- 复用 [DPO损失](/explore/30-Formulas/DPO损失)（数据来自自评）
+- 复用 [DPO损失](/ai-fa/explore/30-Formulas/DPO损失)（数据来自自评）
 
 ## 5. 与前作的关系
 
-- 组合了 [Constitutional AI - Harmlessness from AI Feedback](/explore/10-Papers/04-强化学习与对齐/Constitutional AI- Harmlessness from AI Feedback（CAI）)（AI 反馈思想）与 [Direct Preference Optimization - Your Language Model is Secretly a Reward Model](/explore/10-Papers/04-强化学习与对齐/Direct Preference Optimization- Your Language Model is Secretly a Reward Model（DPO）)（优化器）
+- 组合了 [Constitutional AI - Harmlessness from AI Feedback](/ai-fa/explore/10-Papers/04-强化学习与对齐/Constitutional AI- Harmlessness from AI Feedback（CAI）)（AI 反馈思想）与 [Direct Preference Optimization - Your Language Model is Secretly a Reward Model](/ai-fa/explore/10-Papers/04-强化学习与对齐/Direct Preference Optimization- Your Language Model is Secretly a Reward Model（DPO）)（优化器）
 - 更彻底的自动化：CAI 还要宪法提示，Self-Rewarding 连外部结构都内化
 
 ## 6. 影响与后续
@@ -48,4 +48,4 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[DPO损失](/explore/30-Formulas/DPO损失)、[RLAIF与ConstitutionalAI](/explore/20-Algorithms/RLAIF与ConstitutionalAI)
+[DPO损失](/ai-fa/explore/30-Formulas/DPO损失)、[RLAIF与ConstitutionalAI](/ai-fa/explore/20-Algorithms/RLAIF与ConstitutionalAI)

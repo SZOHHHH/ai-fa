@@ -21,7 +21,7 @@ pdf: 已下载（PDF/）
 ## 2. 核心贡献
 
 - **对抗框架**：$$\min_G \max_D$$ 把"拟合分布"转成"两人零和博弈"
-- **免配分函数**：绕开 [能量模型](/explore/40-Concepts/能量模型) 的 $$Z$$ 灾难，也绕开 ELBO
+- **免配分函数**：绕开 [能量模型](/ai-fa/explore/40-Concepts/能量模型) 的 $$Z$$ 灾难，也绕开 ELBO
 - **单步生成**：一次前向出图——速度优势保持至今
 
 ## 3. 方法概要
@@ -33,20 +33,20 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- [GAN目标](/explore/30-Formulas/GAN目标) —— 极小极大目标与非饱和变体
-- 均衡等价于 [Jensen-Shannon散度](/explore/40-Concepts/Jensen-Shannon散度) 最小化
+- [GAN目标](/ai-fa/explore/30-Formulas/GAN目标) —— 极小极大目标与非饱和变体
+- 均衡等价于 [Jensen-Shannon散度](/ai-fa/explore/40-Concepts/Jensen-Shannon散度) 最小化
 
 ## 5. 与前作的关系
 
-- 对比 [VAE](/explore/10-Papers/02-生成建模与扩散/Auto-Encoding Variational Bayes（VAE）)：VAE 走下界（稳但模糊）、GAN 走对抗（锐但不稳）——两大路线分野的起点
+- 对比 [VAE](/ai-fa/explore/10-Papers/02-生成建模与扩散/Auto-Encoding Variational Bayes（VAE）)：VAE 走下界（稳但模糊）、GAN 走对抗（锐但不稳）——两大路线分野的起点
 - 对比 [深度玻尔兹曼机]：EBM 免采样近似对难以训练 → GAN 完全绕开密度
 
 ## 6. 影响与后续
 
-- 被 [WGAN](/explore/10-Papers/02-生成建模与扩散/Wasserstein GAN（WGAN）) 改进稳定性
-- 奠基了 StyleGAN/BigGAN 等视觉黄金时代；2021 后被 [Denoising Diffusion Probabilistic Models](/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Probabilistic Models（DDPM）) 系反超
-- 对抗思想在 [DMD](/explore/10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）) 中复活
+- 被 [WGAN](/ai-fa/explore/10-Papers/02-生成建模与扩散/Wasserstein GAN（WGAN）) 改进稳定性
+- 奠基了 StyleGAN/BigGAN 等视觉黄金时代；2021 后被 [Denoising Diffusion Probabilistic Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Probabilistic Models（DDPM）) 系反超
+- 对抗思想在 [DMD](/ai-fa/explore/10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）) 中复活
 
 ## 7. 读前须知
 
-[概率分布](/explore/40-Concepts/概率分布)、[Jensen-Shannon散度](/explore/40-Concepts/Jensen-Shannon散度)、[期望](/explore/40-Concepts/期望)、[梯度](/explore/40-Concepts/梯度)（博弈的交替优化）
+[概率分布](/ai-fa/explore/40-Concepts/概率分布)、[Jensen-Shannon散度](/ai-fa/explore/40-Concepts/Jensen-Shannon散度)、[期望](/ai-fa/explore/40-Concepts/期望)、[梯度](/ai-fa/explore/40-Concepts/梯度)（博弈的交替优化）

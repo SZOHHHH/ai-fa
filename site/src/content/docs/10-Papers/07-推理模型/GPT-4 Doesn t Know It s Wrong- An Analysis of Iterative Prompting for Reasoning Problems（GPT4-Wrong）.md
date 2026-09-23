@@ -34,7 +34,7 @@ P(\text{self-correct}\ \vert\ \text{wrong}) \ll 1
 $$
 
 
-**直觉**：→ [Self-Rewarding Language Models](/explore/10-Papers/04-强化学习与对齐/Self-Rewarding Language Models)（库内）的病症侧证据链；自我奖励矩阵格的对照
+**直觉**：→ [Self-Rewarding Language Models](/ai-fa/explore/10-Papers/04-强化学习与对齐/Self-Rewarding Language Models)（库内）的病症侧证据链；自我奖励矩阵格的对照
 
 ## 5. 与前作/矩阵关系
 
@@ -48,6 +48,6 @@ $$
 
 undefined
 
-> 近邻同族：[A Survey on In-context Learning](/explore/10-Papers/07-推理模型/A Survey on In-context Learning（ICL Survey）) · [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）)
+> 近邻同族：[A Survey on In-context Learning](/ai-fa/explore/10-Papers/07-推理模型/A Survey on In-context Learning（ICL Survey）) · [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](/ai-fa/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）)
 
-> 数学根基：[思维链（CoT）](/explore/40-Concepts/思维链（CoT）)
+> 数学根基：[思维链（CoT）](/ai-fa/explore/40-Concepts/思维链（CoT）)

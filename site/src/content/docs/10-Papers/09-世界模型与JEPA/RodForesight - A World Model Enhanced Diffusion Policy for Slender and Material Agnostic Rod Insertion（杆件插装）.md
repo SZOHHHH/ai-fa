@@ -35,15 +35,15 @@ layer: 精化层（摘要级+摘要核实，PDF 待深读）
 （待 PDF 精读补全——摘要级暂记直觉）选择规则形如 $$a^\* = \arg\min_{a \in \text{候选块}} \; \hat{e}_{\text{tilt}}(s, a) + \hat{e}_{\text{radial}}(s, a)$$，其中两个 $$\hat e$$ 是 WM 预测的对齐误差：**策略给出"怎么做"的选项菜单，WM 当裁判在想象里试吃每道菜——用模型预测的物理量替代真实执行的代价**。这与 MPC 的代价函数评估同构，但候选来自扩散策略而非参数化控制序列。
 
 ## 5. 与前作/矩阵关系
-- ↔ 机器人 WM 族：[GE-Act 2.0](/explore/10-Papers/09-世界模型与JEPA/GE-Act 2.0 Pretraining and Scaling a World-Action Model for Robotic Manipulation)（世界-动作统一预训练）、[GIFT](/explore/10-Papers/09-世界模型与JEPA/GIFT Guided Intermediate Feature Training via Action-Oriented Structural Supervision for Robotic Man)（动作导向结构监督）——同"机器人操作×动作条件预测"格，RodForesight 特点是 WM 只做评估不做生成训练信号。
-- ↔ E2 对偶位：[逆动力学（IDM）](/explore/40-Concepts/逆动力学（IDM）)——RodForesight 是**正演**评估器 p(对齐效果 | 状态, 动作)，E2 反推 p(a | x_t, goal) 是**反演**；一正一反共享"用模型内知识连接动作与目标状态"的问题结构。E2 论文 related work 可引作正演侧对照。
-- ↔ 想象评估谱系：[Dreamer](/explore/10-Papers/09-世界模型与JEPA/Dream to Control- Learning Behaviors by Latent Imagination（Dreamer）)（在想象中训练策略）——RodForesight 是"在想象中做选择"，想象用途从训练挪到决策。
-- ↔ 同族续接（260915）：[WAM 挖掘](/explore/10-Papers/09-世界模型与JEPA/From Prediction to Decision - World-Model-Guided Action Selection for Continuous Pile Excavation（挖掘WAM）)——"扩散提案+WM 预演筛选"第二例（连续堆料耗尽+真机部署，matched-candidate 消融隔离选择规则贡献，实证更干净）。
+- ↔ 机器人 WM 族：[GE-Act 2.0](/ai-fa/explore/10-Papers/09-世界模型与JEPA/GE-Act 2.0 Pretraining and Scaling a World-Action Model for Robotic Manipulation)（世界-动作统一预训练）、[GIFT](/ai-fa/explore/10-Papers/09-世界模型与JEPA/GIFT Guided Intermediate Feature Training via Action-Oriented Structural Supervision for Robotic Man)（动作导向结构监督）——同"机器人操作×动作条件预测"格，RodForesight 特点是 WM 只做评估不做生成训练信号。
+- ↔ E2 对偶位：[逆动力学（IDM）](/ai-fa/explore/40-Concepts/逆动力学（IDM）)——RodForesight 是**正演**评估器 p(对齐效果 | 状态, 动作)，E2 反推 p(a | x_t, goal) 是**反演**；一正一反共享"用模型内知识连接动作与目标状态"的问题结构。E2 论文 related work 可引作正演侧对照。
+- ↔ 想象评估谱系：[Dreamer](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Dream to Control- Learning Behaviors by Latent Imagination（Dreamer）)（在想象中训练策略）——RodForesight 是"在想象中做选择"，想象用途从训练挪到决策。
+- ↔ 同族续接（260915）：[WAM 挖掘](/ai-fa/explore/10-Papers/09-世界模型与JEPA/From Prediction to Decision - World-Model-Guided Action Selection for Continuous Pile Excavation（挖掘WAM）)——"扩散提案+WM 预演筛选"第二例（连续堆料耗尽+真机部署，matched-candidate 消融隔离选择规则贡献，实证更干净）。
 
 ## 6. 影响后续
 - "扩散策略生成 + WM 预演筛选"的可移植结构：任何需要候选评估的连续控制任务都能套。
 - 对库内：制造域外缘参考，不进 E1/E2 主线叙事；占"WM×扩散策略×装配"格。
 
 ## 7. 读前须知
-- 前置：diffusion policy 的去噪采样直觉（可借 [DIAMOND](/explore/10-Papers/09-世界模型与JEPA/Diffusion for World Modeling- Visual Details Matter in Atari（DIAMOND）) 的扩散基础）、MPC 中"模型预测代价评估"思想。
+- 前置：diffusion policy 的去噪采样直觉（可借 [DIAMOND](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Diffusion for World Modeling- Visual Details Matter in Atari（DIAMOND）) 的扩散基础）、MPC 中"模型预测代价评估"思想。
 - 机器人术语（视觉伺服/构型）只需字面理解；公式细节待 PDF 深读补第 4 节。

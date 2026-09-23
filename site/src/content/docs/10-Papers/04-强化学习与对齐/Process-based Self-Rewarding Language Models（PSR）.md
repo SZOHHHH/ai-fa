@@ -17,12 +17,12 @@ tags: [paper, 占位层]
 
 ## 1. 一句话贡献
 
-过程级自奖励：自奖励信号从答案级细化到推理步级，并天然支持测试时扩展——**占 [偏好优化矩阵](/explore/60-Matrices/偏好优化矩阵) "自我奖励×无参考"机会格的一半**。
+过程级自奖励：自奖励信号从答案级细化到推理步级，并天然支持测试时扩展——**占 [偏好优化矩阵](/ai-fa/explore/60-Matrices/偏好优化矩阵) "自我奖励×无参考"机会格的一半**。
 
 ## 2. 核心贡献
 
 1. 过程级自奖励：自奖励信号从答案级细化到推理步级，并天然支持测试时扩展
-2. 占 [偏好优化矩阵](/explore/60-Matrices/偏好优化矩阵) "自我奖励×无参考"机会格的一半。
+2. 占 [偏好优化矩阵](/ai-fa/explore/60-Matrices/偏好优化矩阵) "自我奖励×无参考"机会格的一半。
 
 ## 3. 方法概要
 
@@ -31,7 +31,7 @@ tags: [paper, 占位层]
 ## 4. 核心公式
 
 $$
-r^{\text{self}}_{\text{step}} = f_{\text{judge}}\big(\text{step}_t\ \vert\ \text{context}\big),\ \text{迭代 [DPO](/explore/10-Papers/04-强化学习与对齐/Direct Preference Optimization- Your Language Model is Secretly a Reward Model（DPO）) 训练}
+r^{\text{self}}_{\text{step}} = f_{\text{judge}}\big(\text{step}_t\ \vert\ \text{context}\big),\ \text{迭代 [DPO](/ai-fa/explore/10-Papers/04-强化学习与对齐/Direct Preference Optimization- Your Language Model is Secretly a Reward Model（DPO）) 训练}
 $$
 
 **直觉**：占位层公式为结构示意，精读原文后应校正为论文最终形式并补逐项解释。
@@ -45,9 +45,9 @@ $$
 
 B9 机会格 5 号的敌情：已被 ACL Findings 2025 占半格。
 
-> 近邻同族：[Self-Rewarding Language Models](/explore/10-Papers/04-强化学习与对齐/Self-Rewarding Language Models) · [A General Language Assistant as a Laboratory for Alignment](/explore/10-Papers/04-强化学习与对齐/A General Language Assistant as a Laboratory for Alignment（Assistant Lab）)
-> 数学根基（占位层）：[策略梯度定理](/explore/40-Concepts/策略梯度定理)
-> 数学根基：[REINFORCE目标](/explore/30-Formulas/REINFORCE目标)
+> 近邻同族：[Self-Rewarding Language Models](/ai-fa/explore/10-Papers/04-强化学习与对齐/Self-Rewarding Language Models) · [A General Language Assistant as a Laboratory for Alignment](/ai-fa/explore/10-Papers/04-强化学习与对齐/A General Language Assistant as a Laboratory for Alignment（Assistant Lab）)
+> 数学根基（占位层）：[策略梯度定理](/ai-fa/explore/40-Concepts/策略梯度定理)
+> 数学根基：[REINFORCE目标](/ai-fa/explore/30-Formulas/REINFORCE目标)
 
 ## 7. 读前须知
 

@@ -41,10 +41,10 @@ layer: 精读
 
 ## 5. 与前作/矩阵关系
 
-- 线锚：[扩散模型](/explore/20-Algorithms/扩散模型) · [知识蒸馏](/explore/40-Concepts/知识蒸馏)
+- 线锚：[扩散模型](/ai-fa/explore/20-Algorithms/扩散模型) · [知识蒸馏](/ai-fa/explore/40-Concepts/知识蒸馏)
 - ← 前身：ACT（chunk+时间集成）、Diffusion Policy（生成式动作头）、π₀/π₀.₅（流匹配 VLA、teacher 参照系）、LIBERO-PRO（"LIBERO=记忆测试"论断的出处，本文把它推到容量极致）。
 - ≡ 对话位：与 E1 决策保真蒸馏**同题异域**——都在问"压到多小还能保任务表现"，但 MINERVA 压**策略本体**（机器人操作、容量地板），E1 压**世界模型**（游戏 RL、蒸馏目标保真）；其"种子带 ±1 点淹没多数单跑消融"是我们评估纪律的直接参照（E1 六线每线多 seed 的做法被印证必要）。
-- 近邻：[Physically Grounded JEPA](/explore/10-Papers/09-世界模型与JEPA/Toward Physically Grounded JEPA World Models for Goal-Conditioned Robotic Planning)——同周机器人域，一个做策略容量地板、一个做 WM 表征接地。
+- 近邻：[Physically Grounded JEPA](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Toward Physically Grounded JEPA World Models for Goal-Conditioned Robotic Planning)——同周机器人域，一个做策略容量地板、一个做 WM 表征接地。
 
 ## 6. 影响后续
 
@@ -52,4 +52,4 @@ layer: 精读
 
 ## 7. 读前须知
 
-前置：[扩散模型](/explore/20-Algorithms/扩散模型)（流匹配=连续正规化流/扩散的直线路径变体）；概念：action chunking（一次预测 H 步再执行）、temporal ensembling（重叠预测加权平均）。LIBERO 四套件（Spatial/Object/Goal/Long）结构在图 2。
+前置：[扩散模型](/ai-fa/explore/20-Algorithms/扩散模型)（流匹配=连续正规化流/扩散的直线路径变体）；概念：action chunking（一次预测 H 步再执行）、temporal ensembling（重叠预测加权平均）。LIBERO 四套件（Spatial/Object/Goal/Long）结构在图 2。

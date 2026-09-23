@@ -36,8 +36,8 @@ layer: 精化层（摘要级+摘要核实，PDF 待深读）
 （待 PDF 精读补全精确形式——摘要级暂记直觉）门控注入形如 $$\text{logit}_{q,i} \leftarrow \text{logit}_{q,i} + \log g_i$$，$$g$$ 是选择器分数的归一化 softmax：**软偏置而非硬选择——梯度能穿过门流回选择器，"看哪里"第一次由下游损失而非教师注意力直接决定**。log 门保证 $$g_i \in (0,1]$$ 只调强弱不翻符号；拿当前块当校准锚（分母里恒有它）使历史单元的分数天然以"必留项"为 1 的标尺归一。
 
 ## 5. 与前作/矩阵关系
-- ← 谱系：可训练稀疏注意力族 [NSA](/explore/10-Papers/06-长上下文/Native Sparse Attention- Hardware-Aligned and Natively Trainable Sparse Attention（NSA）)（原生可训练稀疏注意力）、[MoBA](/explore/10-Papers/06-长上下文/MoBA- Mixture of Block Attention for Long-Context LLMs（MoBA）)（块级混合注意力路由）——SAS 定位是其"训练后+端到端目标对齐"改进。
-- 概念链：[稀疏与线性注意力](/explore/40-Concepts/稀疏与线性注意力)（稀疏化两大范式：训练时原生 vs 训练后改造，SAS 属后者）。
+- ← 谱系：可训练稀疏注意力族 [NSA](/ai-fa/explore/10-Papers/06-长上下文/Native Sparse Attention- Hardware-Aligned and Natively Trainable Sparse Attention（NSA）)（原生可训练稀疏注意力）、[MoBA](/ai-fa/explore/10-Papers/06-长上下文/MoBA- Mixture of Block Attention for Long-Context LLMs（MoBA）)（块级混合注意力路由）——SAS 定位是其"训练后+端到端目标对齐"改进。
+- 概念链：[稀疏与线性注意力](/ai-fa/explore/40-Concepts/稀疏与线性注意力)（稀疏化两大范式：训练时原生 vs 训练后改造，SAS 属后者）。
 - ↔ **E1 方法论镜像**（库内对话位）：SAS 批判"蒸馏中间量（注意力分布）无法保证最终目标（预测质量）"与 E1 红线"蒸馏目标只用像素/生成质量指标无法保证决策保真"同构——**代理目标与真实目标的错位在不同领域反复出现**，E1 论文 Discussion 可引作跨域证据。
 
 ## 6. 影响后续
@@ -45,5 +45,5 @@ layer: 精化层（摘要级+摘要核实，PDF 待深读）
 - 跨域启示：任何"用中间量蒸馏教选择器/控制器"的场景（KV 淘汰、检索路由、早退）都适用同样的对齐批判。
 
 ## 7. 读前须知
-- 前置：softmax 注意力计算流程（[Transformer](/explore/10-Papers/01-架构演进/Attention Is All You Need（Transformer）)）、Top-K 硬选择的梯度截断问题（重参数化/Gumbel 直觉有帮助）。
+- 前置：softmax 注意力计算流程（[Transformer](/ai-fa/explore/10-Papers/01-架构演进/Attention Is All You Need（Transformer）)）、Top-K 硬选择的梯度截断问题（重参数化/Gumbel 直觉有帮助）。
 - 公式细节（门的精确归一化形式）待 PDF 深读补全第 4 节。

@@ -47,10 +47,10 @@ $$
 
 ---
 
-> 谱系枢纽：[Dream to Control - Learning Behaviors by Latent Imagination](/explore/10-Papers/09-世界模型与JEPA/Dream to Control- Learning Behaviors by Latent Imagination（Dreamer）)（图谱连通入口）
-> 近邻同族：[Co-Evolving Latent Action World Models](/explore/10-Papers/09-世界模型与JEPA/Co-Evolving Latent Action World Models（CoLA）) · [Factored Latent Action World Models](/explore/10-Papers/09-世界模型与JEPA/Factored Latent Action World Models（FLAM）)
-> 数学根基（占位层）：[JEPA联合嵌入预测架构](/explore/40-Concepts/JEPA联合嵌入预测架构)
-> 数学根基：[REINFORCE目标](/explore/30-Formulas/REINFORCE目标)
+> 谱系枢纽：[Dream to Control - Learning Behaviors by Latent Imagination](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Dream to Control- Learning Behaviors by Latent Imagination（Dreamer）)（图谱连通入口）
+> 近邻同族：[Co-Evolving Latent Action World Models](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Co-Evolving Latent Action World Models（CoLA）) · [Factored Latent Action World Models](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Factored Latent Action World Models（FLAM）)
+> 数学根基（占位层）：[JEPA联合嵌入预测架构](/ai-fa/explore/40-Concepts/JEPA联合嵌入预测架构)
+> 数学根基：[REINFORCE目标](/ai-fa/explore/30-Formulas/REINFORCE目标)
 
 ## 7. 读前须知
 

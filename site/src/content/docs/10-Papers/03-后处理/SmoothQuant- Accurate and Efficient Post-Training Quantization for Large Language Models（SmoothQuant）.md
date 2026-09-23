@@ -33,18 +33,18 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- [量化误差与异常值](/explore/30-Formulas/量化误差与异常值) §1 SmoothQuant 式
+- [量化误差与异常值](/ai-fa/explore/30-Formulas/量化误差与异常值) §1 SmoothQuant 式
 
 ## 5. 与前作的关系
 
-- 改进了 [LLM.int8() - 8-bit Matrix Multiplication for Transformers at Scale](/explore/10-Papers/03-后处理/LLM.int8()- 8-bit Matrix Multiplication for Transformers at Scale（LLM.int8）)：分治（双路径）→ 转移（单路径）
+- 改进了 [LLM.int8() - 8-bit Matrix Multiplication for Transformers at Scale](/ai-fa/explore/10-Papers/03-后处理/LLM.int8()- 8-bit Matrix Multiplication for Transformers at Scale（LLM.int8）)：分治（双路径）→ 转移（单路径）
 - 同样基于其异常值发现（哲学不同：搬迁 vs 分离）
 
 ## 6. 影响与后续
 
 - W8A8 成为服务端标配之一（TensorRT-LLM 集成）
-- "数学恒等变形解决工程问题"的教学案例（[概率分布](/explore/40-Concepts/概率分布) 家族之外的恒等式思想）
+- "数学恒等变形解决工程问题"的教学案例（[概率分布](/ai-fa/explore/40-Concepts/概率分布) 家族之外的恒等式思想）
 
 ## 7. 读前须知
 
-[量化](/explore/40-Concepts/量化)、[量化误差与异常值](/explore/30-Formulas/量化误差与异常值)、[LLM.int8() - 8-bit Matrix Multiplication for Transformers at Scale](/explore/10-Papers/03-后处理/LLM.int8()- 8-bit Matrix Multiplication for Transformers at Scale（LLM.int8）)
+[量化](/ai-fa/explore/40-Concepts/量化)、[量化误差与异常值](/ai-fa/explore/30-Formulas/量化误差与异常值)、[LLM.int8() - 8-bit Matrix Multiplication for Transformers at Scale](/ai-fa/explore/10-Papers/03-后处理/LLM.int8()- 8-bit Matrix Multiplication for Transformers at Scale（LLM.int8）)

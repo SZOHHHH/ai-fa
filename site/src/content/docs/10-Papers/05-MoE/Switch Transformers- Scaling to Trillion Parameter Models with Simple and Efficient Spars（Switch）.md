@@ -34,12 +34,12 @@ Top-1 路由的极简化 + 稳定训练技巧（选择性精度）——MoE 从�
 
 ## 4. 核心公式
 
-- [MoE门控公式](/explore/30-Formulas/MoE门控公式) §2 Switch 行
+- [MoE门控公式](/ai-fa/explore/30-Formulas/MoE门控公式) §2 Switch 行
 
 ## 5. 与前作的关系
 
-- 简化了 [GShard - Scaling Giant Models with Conditional Computation and Automatic Sharding](/explore/10-Papers/05-MoE/GShard- Scaling Giant Models with Conditional Computation and Automatic Sharding（GShard）) 的 top-2 与启发式
-- 作者一脉相承 [Outrageously Large Neural Networks - The Sparsely-Gated Mixture-of-Experts Layer](/explore/10-Papers/03-后处理/Outrageously Large Neural Networks- The Sparsely-Gated Mixture-of-Experts Layer（稀疏MoE）)（Shazeer）
+- 简化了 [GShard - Scaling Giant Models with Conditional Computation and Automatic Sharding](/ai-fa/explore/10-Papers/05-MoE/GShard- Scaling Giant Models with Conditional Computation and Automatic Sharding（GShard）) 的 top-2 与启发式
+- 作者一脉相承 [Outrageously Large Neural Networks - The Sparsely-Gated Mixture-of-Experts Layer](/ai-fa/explore/10-Papers/03-后处理/Outrageously Large Neural Networks- The Sparsely-Gated Mixture-of-Experts Layer（稀疏MoE）)（Shazeer）
 
 ## 6. 影响与后续
 
@@ -48,4 +48,4 @@ Top-1 路由的极简化 + 稳定训练技巧（选择性精度）——MoE 从�
 
 ## 7. 读前须知
 
-[混合专家（MoE）](/explore/20-Algorithms/混合专家（MoE）)、[MoE门控公式](/explore/30-Formulas/MoE门控公式)、[GShard - Scaling Giant Models with Conditional Computation and Automatic Sharding](/explore/10-Papers/05-MoE/GShard- Scaling Giant Models with Conditional Computation and Automatic Sharding（GShard）)
+[混合专家（MoE）](/ai-fa/explore/20-Algorithms/混合专家（MoE）)、[MoE门控公式](/ai-fa/explore/30-Formulas/MoE门控公式)、[GShard - Scaling Giant Models with Conditional Computation and Automatic Sharding](/ai-fa/explore/10-Papers/05-MoE/GShard- Scaling Giant Models with Conditional Computation and Automatic Sharding（GShard）)

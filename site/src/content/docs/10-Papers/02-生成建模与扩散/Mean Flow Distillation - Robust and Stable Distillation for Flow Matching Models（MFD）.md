@@ -35,20 +35,20 @@ tags: [paper]
 ## 4. 核心公式
 
 - Mean Flow 定义：$$\bar u(x_t, t, r) = \frac{1}{r}\left[ \Psi(x_t, t+r) - \Psi(x_t, t) \right]$$（速度的时间平均 = 位移/时长）
-- 对齐目标：$$\mathcal{L} = \mathbb{E}\| v_\theta - \bar u_\phi \|_2^2$$（结构同 [条件流匹配损失](/explore/30-Formulas/条件流匹配损失)，对齐量替换）
-- 与 [DSM目标](/explore/30-Formulas/DSM目标) 系的对照：score 蒸馏需噪声尺度换算，MFD 在速度场原生空间直接对齐
+- 对齐目标：$$\mathcal{L} = \mathbb{E}\| v_\theta - \bar u_\phi \|_2^2$$（结构同 [条件流匹配损失](/ai-fa/explore/30-Formulas/条件流匹配损失)，对齐量替换）
+- 与 [DSM目标](/ai-fa/explore/30-Formulas/DSM目标) 系的对照：score 蒸馏需噪声尺度换算，MFD 在速度场原生空间直接对齐
 
 ## 5. 与前作的关系
 
-- 改进了 [变分 score 蒸馏（VSD/[DMD](/explore/10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）) 系）]：从扩散硬搬 score 到 FM 的不稳定/高方差问题——用 FM 原生几何结构（速度场）替代间接转换
-- 借鉴 [MeanFlow](/explore/10-Papers/02-生成建模与扩散/Mean Flows for One-step Generative Modeling（MeanFlow）) 的平均速度思想：MeanFlow 是**从头训练**（免蒸馏），MFD 是**蒸馏预训练模型**——一格之差（范式轴）
-- 对照 [One-step Diffusion with Distribution Matching Distillation](/explore/10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）)：分布级对齐（KL）vs 平均速度对齐（轨迹级）
+- 改进了 [变分 score 蒸馏（VSD/[DMD](/ai-fa/explore/10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）) 系）]：从扩散硬搬 score 到 FM 的不稳定/高方差问题——用 FM 原生几何结构（速度场）替代间接转换
+- 借鉴 [MeanFlow](/ai-fa/explore/10-Papers/02-生成建模与扩散/Mean Flows for One-step Generative Modeling（MeanFlow）) 的平均速度思想：MeanFlow 是**从头训练**（免蒸馏），MFD 是**蒸馏预训练模型**——一格之差（范式轴）
+- 对照 [One-step Diffusion with Distribution Matching Distillation](/ai-fa/explore/10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）)：分布级对齐（KL）vs 平均速度对齐（轨迹级）
 
 ## 6. 影响与后续
 
-- FM 加速矩阵的"蒸馏×平均速度"格占位（见 [生成模型加速矩阵](/explore/60-Matrices/生成模型加速矩阵)）
+- FM 加速矩阵的"蒸馏×平均速度"格占位（见 [生成模型加速矩阵](/ai-fa/explore/60-Matrices/生成模型加速矩阵)）
 - 4D 占据预测这一非常规实验域——FM 加速向科学计算场景的示范
 
 ## 7. 读前须知
 
-[条件流匹配损失](/explore/30-Formulas/条件流匹配损失)、[Mean Flows for One-step Generative Modeling](/explore/10-Papers/02-生成建模与扩散/Mean Flows for One-step Generative Modeling（MeanFlow）)、[One-step Diffusion with Distribution Matching Distillation](/explore/10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）)、[范数](/explore/40-Concepts/范数)
+[条件流匹配损失](/ai-fa/explore/30-Formulas/条件流匹配损失)、[Mean Flows for One-step Generative Modeling](/ai-fa/explore/10-Papers/02-生成建模与扩散/Mean Flows for One-step Generative Modeling（MeanFlow）)、[One-step Diffusion with Distribution Matching Distillation](/ai-fa/explore/10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）)、[范数](/ai-fa/explore/40-Concepts/范数)

@@ -34,11 +34,11 @@ Retention 机制：同一架构同时支持并行训练/递归推理/分块推�
 ## 4. 核心公式
 
 - $$\mathrm{Retention}(X) = \sum_{n} \gamma^{t-n}\,(Qx_n)(Kx_n)^\top Vx_n$$（衰减显式）
-- 与 [状态空间模型方程](/explore/30-Formulas/状态空间模型方程)：衰减矩阵 ≈ SSM 的 $$\bar A^t$$——同一思想的两种记号（后被 SSD 统一）
+- 与 [状态空间模型方程](/ai-fa/explore/30-Formulas/状态空间模型方程)：衰减矩阵 ≈ SSM 的 $$\bar A^t$$——同一思想的两种记号（后被 SSD 统一）
 
 ## 5. 与前作的关系
 
-- 与 [RWKV - Reinventing RNNs for the Transformer Era](/explore/10-Papers/01-架构演进/RWKV- Reinventing RNNs for the Transformer Era（RWKV）)/[Mamba - Linear-Time Sequence Modeling with Selective State Spaces](/explore/10-Papers/01-架构演进/Mamba- Linear-Time Sequence Modeling with Selective State Spaces（Mamba）) 并称 2023 线性三杰
+- 与 [RWKV - Reinventing RNNs for the Transformer Era](/ai-fa/explore/10-Papers/01-架构演进/RWKV- Reinventing RNNs for the Transformer Era（RWKV）)/[Mamba - Linear-Time Sequence Modeling with Selective State Spaces](/ai-fa/explore/10-Papers/01-架构演进/Mamba- Linear-Time Sequence Modeling with Selective State Spaces（Mamba）) 并称 2023 线性三杰
 - 微软系（与 GLM 同期竞赛）；理论收编于 Mamba-2 对偶
 
 ## 6. 影响与后续
@@ -48,6 +48,6 @@ Retention 机制：同一架构同时支持并行训练/递归推理/分块推�
 
 ## 7. 读前须知
 
-[注意力机制](/explore/40-Concepts/注意力机制)、[状态空间模型方程](/explore/30-Formulas/状态空间模型方程)
+[注意力机制](/ai-fa/explore/40-Concepts/注意力机制)、[状态空间模型方程](/ai-fa/explore/30-Formulas/状态空间模型方程)
 
-> 近邻同族：[Gated DeltaNet-2- Decoupling Erase and Write in Linear Attention](/explore/10-Papers/01-架构演进/Gated DeltaNet-2- Decoupling Erase and Write in Linear Attention（GDN2）) · [Parallelizing Linear Transformers with the Delta Rule over Sequence Length](/explore/10-Papers/01-架构演进/Parallelizing Linear Transformers with the Delta Rule over Sequence Length（DeltaNet并行）)
+> 近邻同族：[Gated DeltaNet-2- Decoupling Erase and Write in Linear Attention](/ai-fa/explore/10-Papers/01-架构演进/Gated DeltaNet-2- Decoupling Erase and Write in Linear Attention（GDN2）) · [Parallelizing Linear Transformers with the Delta Rule over Sequence Length](/ai-fa/explore/10-Papers/01-架构演进/Parallelizing Linear Transformers with the Delta Rule over Sequence Length（DeltaNet并行）)

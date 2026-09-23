@@ -30,8 +30,8 @@ layer: 占位
 （待精读）
 
 ## 5. 与前作/矩阵关系
-- 线锚：[世界模型](/explore/20-Algorithms/世界模型) · [逆动力学（IDM）](/explore/40-Concepts/逆动力学（IDM）)（占位挂链，Tier B 精化）
-- 近邻：[GIFT](/explore/10-Papers/09-世界模型与JEPA/GIFT Guided Intermediate Feature Training via Action-Oriented Structural Supervision for Robotic Man)——同"表征保控制相关结构"动机：本文物理接地 JEPA+IDM 反塌缩，GIFT 枚举几何/可供性/目标三路监督（域=操作，路线=潜空间 vs 特征监督）
+- 线锚：[世界模型](/ai-fa/explore/20-Algorithms/世界模型) · [逆动力学（IDM）](/ai-fa/explore/40-Concepts/逆动力学（IDM）)（占位挂链，Tier B 精化）
+- 近邻：[GIFT](/ai-fa/explore/10-Papers/09-世界模型与JEPA/GIFT Guided Intermediate Feature Training via Action-Oriented Structural Supervision for Robotic Man)——同"表征保控制相关结构"动机：本文物理接地 JEPA+IDM 反塌缩，GIFT 枚举几何/可供性/目标三路监督（域=操作，路线=潜空间 vs 特征监督）
 
 ## 6. 影响后续
 （待精读）

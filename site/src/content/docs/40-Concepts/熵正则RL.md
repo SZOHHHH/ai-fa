@@ -36,16 +36,16 @@ $$J_\eta(\pi)\;=\;\mathbb{E}\Big[\sum_t \big(r_t \;+\;\eta\,\mathcal{H}(\pi(\cdo
 | 世界模型系（Dreamer/DIAMOND 的 AC） | 同上——小系数熵项（$$10^{-3}$$ 量级）挂进总 loss | 二等公民 |
 | 离散 vs 连续 | 离散动作熵= categorical 熵直接算；连续动作=高斯微分熵 | |
 
-一句话史：最大熵思想从**最大熵逆强化学习**（Ziebart 2010，解释人类行为为何"不抄近道死磕"）进入 RL，经软 Q 学习（2017）理论化，由 [SAC](/explore/10-Papers/04-强化学习与对齐/Soft Actor-Critic- Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor（SAC）) 成为连续控制标配。
+一句话史：最大熵思想从**最大熵逆强化学习**（Ziebart 2010，解释人类行为为何"不抄近道死磕"）进入 RL，经软 Q 学习（2017）理论化，由 [SAC](/ai-fa/explore/10-Papers/04-强化学习与对齐/Soft Actor-Critic- Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor（SAC）) 成为连续控制标配。
 
 ## 4. 易混点
 
-- **熵正则 ≠ 温度参数**：熵正则是目标里的一项；[温度参数](/explore/40-Concepts/温度参数)是 softmax/蒸馏里控制分布尖锐度的旋钮——名字常混，机制不同（虽然 SAC 的自动温度 α 确实在调"这一项多重"）。
+- **熵正则 ≠ 温度参数**：熵正则是目标里的一项；[温度参数](/ai-fa/explore/40-Concepts/温度参数)是 softmax/蒸馏里控制分布尖锐度的旋钮——名字常混，机制不同（虽然 SAC 的自动温度 α 确实在调"这一项多重"）。
 - **熵 vs 探索噪声**：ε-greedy 是外面撒噪声（策略不变）；熵正则是把随机性**长进策略本身**（策略自己学会保留随机）。
 - **加法合法性**：熵项并进目标后，策略梯度定理对**新目标**照常成立——它不是 trick，是换了一个（等价的）优化目标。
 
 ## 5. 与库内实体的关系
 
-- ← 地基：[softmax函数](/explore/40-Concepts/softmax函数)（策略输出与熵的计算）、[交叉熵](/explore/30-Formulas/交叉熵)（$$\mathcal{H}+\mathrm{KL}$$ 语言同源）
-- → 用户：[SAC](/explore/10-Papers/04-强化学习与对齐/Soft Actor-Critic- Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor（SAC）)（一等公民版）、[A3C](/explore/10-Papers/04-强化学习与对齐/Asynchronous Methods for Deep Reinforcement Learning（A3C）)（二等公民版首挂）、[REINFORCE目标](/explore/30-Formulas/REINFORCE目标)（未正则的裸目标对照）
-- → 概念亲缘：[策略梯度定理](/explore/40-Concepts/策略梯度定理)（"换目标重跑定理"的合法性来源）
+- ← 地基：[softmax函数](/ai-fa/explore/40-Concepts/softmax函数)（策略输出与熵的计算）、[交叉熵](/ai-fa/explore/30-Formulas/交叉熵)（$$\mathcal{H}+\mathrm{KL}$$ 语言同源）
+- → 用户：[SAC](/ai-fa/explore/10-Papers/04-强化学习与对齐/Soft Actor-Critic- Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor（SAC）)（一等公民版）、[A3C](/ai-fa/explore/10-Papers/04-强化学习与对齐/Asynchronous Methods for Deep Reinforcement Learning（A3C）)（二等公民版首挂）、[REINFORCE目标](/ai-fa/explore/30-Formulas/REINFORCE目标)（未正则的裸目标对照）
+- → 概念亲缘：[策略梯度定理](/ai-fa/explore/40-Concepts/策略梯度定理)（"换目标重跑定理"的合法性来源）

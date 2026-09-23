@@ -33,7 +33,7 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- 补偿式见 [量化误差与异常值](/explore/30-Formulas/量化误差与异常值) §2 GPTQ 行
+- 补偿式见 [量化误差与异常值](/ai-fa/explore/30-Formulas/量化误差与异常值) §2 GPTQ 行
 
 ## 5. 与前作的关系
 
@@ -47,4 +47,4 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[量化](/explore/40-Concepts/量化)、[量化误差与异常值](/explore/30-Formulas/量化误差与异常值)、[期望](/explore/40-Concepts/期望)（校准统计）
+[量化](/ai-fa/explore/40-Concepts/量化)、[量化误差与异常值](/ai-fa/explore/30-Formulas/量化误差与异常值)、[期望](/ai-fa/explore/40-Concepts/期望)（校准统计）

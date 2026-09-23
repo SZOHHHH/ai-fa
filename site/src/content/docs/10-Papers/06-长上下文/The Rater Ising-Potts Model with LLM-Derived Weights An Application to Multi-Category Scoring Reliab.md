@@ -30,7 +30,7 @@ layer: 占位
 （待精读）
 
 ## 5. 与前作/矩阵关系
-- 概念/公式锚：[能量模型](/explore/40-Concepts/能量模型)（Potts 模型=Ising 的多类别能量模型推广，配分函数 $$Z$$ 同源同难）· [CLIP对比损失](/explore/30-Formulas/CLIP对比损失)（嵌入余弦相似度作耦合权重的同源用法）· [softmax函数](/explore/40-Concepts/softmax函数)（条件分布=相似度特征上的多项 logistic/softmax）
+- 概念/公式锚：[能量模型](/ai-fa/explore/40-Concepts/能量模型)（Potts 模型=Ising 的多类别能量模型推广，配分函数 $$Z$$ 同源同难）· [CLIP对比损失](/ai-fa/explore/30-Formulas/CLIP对比损失)（嵌入余弦相似度作耦合权重的同源用法）· [softmax函数](/ai-fa/explore/40-Concepts/softmax函数)（条件分布=相似度特征上的多项 logistic/softmax）
 - **线位备注**：本卡与"长上下文"线仅经 LLM 嵌入弱关联（stat.AP 测评统计），系轮换采集词面命中所致归类；实质属测评统计/心理测量，待批次整理时迁线，勿据此推进长上下文矩阵结论。
 
 ## 6. 影响后续

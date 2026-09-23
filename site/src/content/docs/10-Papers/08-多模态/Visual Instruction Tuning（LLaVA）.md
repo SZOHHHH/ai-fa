@@ -16,7 +16,7 @@ pdf: 已下载（PDF/）
 
 ## 1. 一句话贡献
 
-[CLIP](/explore/10-Papers/08-多模态/Learning Transferable Visual Models From Natural Language Supervision（CLIP）) 视觉编码 + 一层线性投影 + LLM + GPT-4 生成的指令数据——最简 VLM 走通"视觉指令微调"，开源多模态的标准起点。
+[CLIP](/ai-fa/explore/10-Papers/08-多模态/Learning Transferable Visual Models From Natural Language Supervision（CLIP）) 视觉编码 + 一层线性投影 + LLM + GPT-4 生成的指令数据——最简 VLM 走通"视觉指令微调"，开源多模态的标准起点。
 
 ## 2. 核心贡献
 
@@ -26,7 +26,7 @@ pdf: 已下载（PDF/）
 
 ## 3. 方法概要
 
-1. CLIP [ViT](/explore/10-Papers/01-架构演进/An Image is Worth 16x16 Words- Transformers for Image Recognition at Scale（ViT）) 出图像特征（最后一层前的网格特征）
+1. CLIP [ViT](/ai-fa/explore/10-Papers/01-架构演进/An Image is Worth 16x16 Words- Transformers for Image Recognition at Scale（ViT）) 出图像特征（最后一层前的网格特征）
 2. 线性投影到 LLM（Vicuna）隐藏维
 3. GPT-4 生成的 158k 指令数据微调
 4. 两阶段：对齐预训练 → 指令微调
@@ -37,8 +37,8 @@ pdf: 已下载（PDF/）
 
 ## 5. 与前作的关系
 
-- 简化了 [Flamingo - a Visual Language Model for Few-Shot Learning](/explore/10-Papers/08-多模态/Flamingo- a Visual Language Model for Few-Shot Learning（Flamingo）)/[BLIP-2 - Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models](/explore/10-Papers/08-多模态/BLIP-2- Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Lan（BLIP-2）) 的桥接（"最简单的连接往往够了"）
-- 组件来源：[Learning Transferable Visual Models From Natural Language Supervision](/explore/10-Papers/08-多模态/Learning Transferable Visual Models From Natural Language Supervision（CLIP）) + LLaMA 系
+- 简化了 [Flamingo - a Visual Language Model for Few-Shot Learning](/ai-fa/explore/10-Papers/08-多模态/Flamingo- a Visual Language Model for Few-Shot Learning（Flamingo）)/[BLIP-2 - Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models](/ai-fa/explore/10-Papers/08-多模态/BLIP-2- Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Lan（BLIP-2）) 的桥接（"最简单的连接往往够了"）
+- 组件来源：[Learning Transferable Visual Models From Natural Language Supervision](/ai-fa/explore/10-Papers/08-多模态/Learning Transferable Visual Models From Natural Language Supervision（CLIP）) + LLaMA 系
 
 ## 6. 影响与后续
 
@@ -47,6 +47,6 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[视觉语言模型（VLM）](/explore/40-Concepts/视觉语言模型（VLM）)、[Learning Transferable Visual Models From Natural Language Supervision](/explore/10-Papers/08-多模态/Learning Transferable Visual Models From Natural Language Supervision（CLIP）)
+[视觉语言模型（VLM）](/ai-fa/explore/40-Concepts/视觉语言模型（VLM）)、[Learning Transferable Visual Models From Natural Language Supervision](/ai-fa/explore/10-Papers/08-多模态/Learning Transferable Visual Models From Natural Language Supervision（CLIP）)
 
-> 数学根基：[三层感知机投影](/explore/30-Formulas/三层感知机投影) · [CLIP对比损失](/explore/30-Formulas/CLIP对比损失) · [注意力核心公式](/explore/30-Formulas/注意力核心公式)
+> 数学根基：[三层感知机投影](/ai-fa/explore/30-Formulas/三层感知机投影) · [CLIP对比损失](/ai-fa/explore/30-Formulas/CLIP对比损失) · [注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)

@@ -16,7 +16,7 @@ pdf: 已下载（PDF/）
 
 ## 1. 一句话贡献
 
-系统改进扩散架构（多分辨率注意力等）并引入分类器引导，首次全面反超 [GAN](/explore/10-Papers/02-生成建模与扩散/Generative Adversarial Networks（GAN）)——扩散加冕之战。
+系统改进扩散架构（多分辨率注意力等）并引入分类器引导，首次全面反超 [GAN](/ai-fa/explore/10-Papers/02-生成建模与扩散/Generative Adversarial Networks（GAN）)——扩散加冕之战。
 
 ## 2. 核心贡献
 
@@ -34,19 +34,19 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- [无分类器引导（CFG）](/explore/30-Formulas/无分类器引导（CFG）) §2 的"分类器引导"行（本文前身）
-- 架构侧复用 [DDPM训练目标](/explore/30-Formulas/DDPM训练目标)
+- [无分类器引导（CFG）](/ai-fa/explore/30-Formulas/无分类器引导（CFG）) §2 的"分类器引导"行（本文前身）
+- 架构侧复用 [DDPM训练目标](/ai-fa/explore/30-Formulas/DDPM训练目标)
 
 ## 5. 与前作的关系
 
-- 扩展了 [Denoising Diffusion Probabilistic Models](/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Probabilistic Models（DDPM）) 与 [Improved Denoising Diffusion Probabilistic Models](/explore/10-Papers/02-生成建模与扩散/Improved Denoising Diffusion Probabilistic Models（iDDPM）)（同团队延续）
-- 对比 [Generative Adversarial Networks](/explore/10-Papers/02-生成建模与扩散/Generative Adversarial Networks（GAN）)：宣告范式交替
+- 扩展了 [Denoising Diffusion Probabilistic Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Probabilistic Models（DDPM）) 与 [Improved Denoising Diffusion Probabilistic Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Improved Denoising Diffusion Probabilistic Models（iDDPM）)（同团队延续）
+- 对比 [Generative Adversarial Networks](/ai-fa/explore/10-Papers/02-生成建模与扩散/Generative Adversarial Networks（GAN）)：宣告范式交替
 
 ## 6. 影响与后续
 
-- 引导思想被 [Classifier-Free Diffusion Guidance](/explore/10-Papers/02-生成建模与扩散/Classifier-Free Diffusion Guidance（CFG）) 去分类器化，成为标配
+- 引导思想被 [Classifier-Free Diffusion Guidance](/ai-fa/explore/10-Papers/02-生成建模与扩散/Classifier-Free Diffusion Guidance（CFG）) 去分类器化，成为标配
 - ADM 架构是后续 U-Net 扩散的标准参考实现
 
 ## 7. 读前须知
 
-[DDPM训练目标](/explore/30-Formulas/DDPM训练目标)、[梯度](/explore/40-Concepts/梯度)、[概率分布](/explore/40-Concepts/概率分布)（精度-召回即分布形状权衡）
+[DDPM训练目标](/ai-fa/explore/30-Formulas/DDPM训练目标)、[梯度](/ai-fa/explore/40-Concepts/梯度)、[概率分布](/ai-fa/explore/40-Concepts/概率分布)（精度-召回即分布形状权衡）

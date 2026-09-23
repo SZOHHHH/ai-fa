@@ -50,10 +50,10 @@ undefined
 
 ---
 
-> 谱系枢纽：[Denoising Diffusion Probabilistic Models](/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Probabilistic Models（DDPM）)（图谱连通入口）
+> 谱系枢纽：[Denoising Diffusion Probabilistic Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Probabilistic Models（DDPM）)（图谱连通入口）
 
-> 近邻同族：[Auto-Encoding Variational Bayes](/explore/10-Papers/02-生成建模与扩散/Auto-Encoding Variational Bayes（VAE）) · [MaskGIT- A Masked Generative Image Transformer](/explore/10-Papers/02-生成建模与扩散/MaskGIT- A Masked Generative Image Transformer（MaskGIT）)
+> 近邻同族：[Auto-Encoding Variational Bayes](/ai-fa/explore/10-Papers/02-生成建模与扩散/Auto-Encoding Variational Bayes（VAE）) · [MaskGIT- A Masked Generative Image Transformer](/ai-fa/explore/10-Papers/02-生成建模与扩散/MaskGIT- A Masked Generative Image Transformer（MaskGIT）)
 
-> 数学根基：[概率分布](/explore/40-Concepts/概率分布)
+> 数学根基：[概率分布](/ai-fa/explore/40-Concepts/概率分布)
 
-> 数学根基：[VQ-VAE目标](/explore/30-Formulas/VQ-VAE目标) · [条件流匹配损失](/explore/30-Formulas/条件流匹配损失)
+> 数学根基：[VQ-VAE目标](/ai-fa/explore/30-Formulas/VQ-VAE目标) · [条件流匹配损失](/ai-fa/explore/30-Formulas/条件流匹配损失)

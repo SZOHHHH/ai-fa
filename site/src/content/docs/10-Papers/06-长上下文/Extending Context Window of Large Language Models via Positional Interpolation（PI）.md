@@ -20,7 +20,7 @@ pdf: 已下载（PDF/）
 
 ## 2. 核心贡献
 
-- **PI 公式**：$$\tilde m = m \cdot L_{\text{train}}/L_{\text{target}}$$（[RoPE上下文扩展（PI-NTK-YaRN）](/explore/30-Formulas/RoPE上下文扩展（PI-NTK-YaRN）) §1）
+- **PI 公式**：$$\tilde m = m \cdot L_{\text{train}}/L_{\text{target}}$$（[RoPE上下文扩展（PI-NTK-YaRN）](/ai-fa/explore/30-Formulas/RoPE上下文扩展（PI-NTK-YaRN）) §1）
 - **核心论证**：插值比外推容易——"在训练分布**内部**重新分配位置" vs "外推到没见过的角度"
 - 极少微调（1000 步）即可适配
 
@@ -33,20 +33,20 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- [RoPE上下文扩展（PI-NTK-YaRN）](/explore/30-Formulas/RoPE上下文扩展（PI-NTK-YaRN）) —— 本文是其中 PI 行
+- [RoPE上下文扩展（PI-NTK-YaRN）](/ai-fa/explore/30-Formulas/RoPE上下文扩展（PI-NTK-YaRN）) —— 本文是其中 PI 行
 
 ## 5. 与前作的关系
 
-- 手术对象是 [RoFormer - Enhanced Transformer with Rotary Position Embedding](/explore/10-Papers/01-架构演进/RoFormer- Enhanced Transformer with Rotary Position Embedding（RoPE）)
-- 被 [YaRN - Efficient Context Window Extension of Large Language Models](/explore/10-Papers/06-长上下文/YaRN- Efficient Context Window Extension of Large Language Models（YaRN）) 继承改进（保高频）
+- 手术对象是 [RoFormer - Enhanced Transformer with Rotary Position Embedding](/ai-fa/explore/10-Papers/01-架构演进/RoFormer- Enhanced Transformer with Rotary Position Embedding（RoPE）)
+- 被 [YaRN - Efficient Context Window Extension of Large Language Models](/ai-fa/explore/10-Papers/06-长上下文/YaRN- Efficient Context Window Extension of Large Language Models（YaRN）) 继承改进（保高频）
 
 ## 6. 影响与后续
 
 - 所有上下文扩展方法的祖师爷；NTK/YaRN/Dynamic NTK 全部引用
 - LLaMA-Long、Qwen 等长版本的技术底座之一
 
-- → 后继补记（260914）：[AdaRoPE](/explore/10-Papers/06-长上下文/AdaRoPE - Not All Attention Heads Should Rotate and Scale Equally（自适应RoPE）)（位置编码自适应路线延伸：从全局插值到逐头频率学习）
+- → 后继补记（260914）：[AdaRoPE](/ai-fa/explore/10-Papers/06-长上下文/AdaRoPE - Not All Attention Heads Should Rotate and Scale Equally（自适应RoPE）)（位置编码自适应路线延伸：从全局插值到逐头频率学习）
 
 ## 7. 读前须知
 
-[RoPE旋转位置编码](/explore/30-Formulas/RoPE旋转位置编码)（先懂频率结构）、[RoPE上下文扩展（PI-NTK-YaRN）](/explore/30-Formulas/RoPE上下文扩展（PI-NTK-YaRN）)
+[RoPE旋转位置编码](/ai-fa/explore/30-Formulas/RoPE旋转位置编码)（先懂频率结构）、[RoPE上下文扩展（PI-NTK-YaRN）](/ai-fa/explore/30-Formulas/RoPE上下文扩展（PI-NTK-YaRN）)

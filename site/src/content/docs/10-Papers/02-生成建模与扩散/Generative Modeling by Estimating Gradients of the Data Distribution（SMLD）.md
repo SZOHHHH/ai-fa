@@ -33,19 +33,19 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- [DSM目标](/explore/30-Formulas/DSM目标) —— 训练目标（含 score↔噪声换算表）
-- [朗之万动力学](/explore/40-Concepts/朗之万动力学) —— 采样器
+- [DSM目标](/ai-fa/explore/30-Formulas/DSM目标) —— 训练目标（含 score↔噪声换算表）
+- [朗之万动力学](/ai-fa/explore/40-Concepts/朗之万动力学) —— 采样器
 
 ## 5. 与前作的关系
 
 - 扩展了 [Vincent 2011 的 DSM 等价定理] 到深度生成建模
-- 与 [Denoising Diffusion Probabilistic Models](/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Probabilistic Models（DDPM）) 并行独立（score 视角 vs 变分视角），后被统一
+- 与 [Denoising Diffusion Probabilistic Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Probabilistic Models（DDPM）) 并行独立（score 视角 vs 变分视角），后被统一
 
 ## 6. 影响与后续
 
-- 被 [Score-Based Generative Modeling through Stochastic Differential Equations](/explore/10-Papers/02-生成建模与扩散/Score-Based Generative Modeling through Stochastic Differential Equations（Score-SDE）) 连续化统一（VE-SDE）
+- 被 [Score-Based Generative Modeling through Stochastic Differential Equations](/ai-fa/explore/10-Papers/02-生成建模与扩散/Score-Based Generative Modeling through Stochastic Differential Equations（Score-SDE）) 连续化统一（VE-SDE）
 - score 记号体系传播全领域；EDM 的 σ-空间直接继承
 
 ## 7. 读前须知
 
-[Score函数](/explore/40-Concepts/Score函数)、[能量模型](/explore/40-Concepts/能量模型)（score 的出身）、[朗之万动力学](/explore/40-Concepts/朗之万动力学)、[高斯分布](/explore/40-Concepts/高斯分布)
+[Score函数](/ai-fa/explore/40-Concepts/Score函数)、[能量模型](/ai-fa/explore/40-Concepts/能量模型)（score 的出身）、[朗之万动力学](/ai-fa/explore/40-Concepts/朗之万动力学)、[高斯分布](/ai-fa/explore/40-Concepts/高斯分布)

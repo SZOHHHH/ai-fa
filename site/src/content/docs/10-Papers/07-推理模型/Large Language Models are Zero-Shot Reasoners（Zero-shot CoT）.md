@@ -34,7 +34,7 @@ y \sim p_\theta(\cdot \mid x \oplus \text{step-by-step 咒语})
 $$
 
 
-**直觉**：← [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）)（库内 few-shot 版）；→ [LIMA- Less Is More for Alignment](/explore/10-Papers/04-强化学习与对齐/LIMA- Less Is More for Alignment（LIMA）)（浅层激发假说的互证链）
+**直觉**：← [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](/ai-fa/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）)（库内 few-shot 版）；→ [LIMA- Less Is More for Alignment](/ai-fa/explore/10-Papers/04-强化学习与对齐/LIMA- Less Is More for Alignment（LIMA）)（浅层激发假说的互证链）
 
 ## 5. 与前作/矩阵关系
 
@@ -48,6 +48,6 @@ $$
 
 undefined
 
-> 近邻同族：[A Survey on In-context Learning](/explore/10-Papers/07-推理模型/A Survey on In-context Learning（ICL Survey）)
+> 近邻同族：[A Survey on In-context Learning](/ai-fa/explore/10-Papers/07-推理模型/A Survey on In-context Learning（ICL Survey）)
 
-> 数学根基：[思维链（CoT）](/explore/40-Concepts/思维链（CoT）)
+> 数学根基：[思维链（CoT）](/ai-fa/explore/40-Concepts/思维链（CoT）)

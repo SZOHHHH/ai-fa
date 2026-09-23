@@ -23,11 +23,12 @@ $$\text{KV Cache} = 2 \times n_{\text{layers}} \times n_{\text{ctx}} \times h_{\
 
 - **显存压力示例**：7B 模型（32 层、32 头、128 维、FP16）上下文 128k → 每条请求 KV Cache ≈ 8GB+——**长上下文瓶颈往往不在计算在显存**
 - **由此驱动的三大优化线**：
-  1. 头数削减：MQA（1 组 KV）/ GQA（分组）→ [GQA - Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints](/explore/10-Papers/01-架构演进/GQA- Training Generalized Multi-Query Transformer Models from Multi-Head Checkoffs（GQA）)
-  2. 压缩表示：MLA 低秩潜在 → [DeepSeek-V2 - A Strong, Economical, and Efficient Mixture-of-Experts Language Model](/explore/10-Papers/01-架构演进/DeepSeek-V2- A Strong, Economical, and Efficient Mixture-of-Experts Language Model（MLA）)
+  1. 头数削减：MQA（1 组 KV）/ GQA（分组）→ [GQA - Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints](/ai-fa/explore/10-Papers/01-架构演进/GQA- Training Generalized Multi-Query Transformer Models from Multi-Head Checkoffs（GQA）)
+  2. 压缩表示：MLA 低秩潜在 → [DeepSeek-V2 - A Strong, Economical, and Efficient Mixture-of-Experts Language Model](/ai-fa/explore/10-Papers/01-架构演进/DeepSeek-V2- A Strong, Economical, and Efficient Mixture-of-Experts Language Model（MLA）)
   3. 投机采样/前缀共享：系统层方案
 - **PagedAttention**：操作系统式分页管理碎片化 cache（vLLM 核心）
-- 与 [注意力计算复杂度](/explore/30-Formulas/注意力计算复杂度) 联动：prefill 是 compute-bound、decode 是 memory-bound
+- → 压缩极限新锚（260918）：[DeepSeek-V4.1-Flash](/ai-fa/explore/10-Papers/05-MoE/DeepSeek-V4.1-Flash Pushing the Limits of KV Cache Compression)（552B 多模态 MoE 正面攻坚 prefill 计算+HBM/SSD 存储+传输带宽三重瓶颈）
+- 与 [注意力计算复杂度](/ai-fa/explore/30-Formulas/注意力计算复杂度) 联动：prefill 是 compute-bound、decode 是 memory-bound
 
 ## 3. 为什么 AI 需要它
 
@@ -36,7 +37,7 @@ $$\text{KV Cache} = 2 \times n_{\text{layers}} \times n_{\text{ctx}} \times h_{\
 | 所有 LLM 推理引擎 | 默认开启 |
 | GQA/MLA 论文的动机章节 | "为什么 cache 太大" |
 | 批处理调度 | cache 显存决定并发数 |
-| [注意力机制](/explore/40-Concepts/注意力机制) 多头家族对比 | MHA vs MQA vs GQA vs MLA 的真实差异就在 cache 体积 |
+| [注意力机制](/ai-fa/explore/40-Concepts/注意力机制) 多头家族对比 | MHA vs MQA vs GQA vs MLA 的真实差异就在 cache 体积 |
 
 ## 4. 常见误区
 
@@ -46,6 +47,6 @@ $$\text{KV Cache} = 2 \times n_{\text{layers}} \times n_{\text{ctx}} \times h_{\
 
 ## 5. 相关概念
 
-- [注意力机制](/explore/40-Concepts/注意力机制)：缓存的对象
-- [注意力计算复杂度](/explore/30-Formulas/注意力计算复杂度)：性能模型
-- [混合专家（MoE）](/explore/20-Algorithms/混合专家（MoE）)：参数显存优化的另一极（权重稀疏 vs 缓存压缩）
+- [注意力机制](/ai-fa/explore/40-Concepts/注意力机制)：缓存的对象
+- [注意力计算复杂度](/ai-fa/explore/30-Formulas/注意力计算复杂度)：性能模型
+- [混合专家（MoE）](/ai-fa/explore/20-Algorithms/混合专家（MoE）)：参数显存优化的另一极（权重稀疏 vs 缓存压缩）

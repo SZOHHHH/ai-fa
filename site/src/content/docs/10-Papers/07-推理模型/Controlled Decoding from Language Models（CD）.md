@@ -50,8 +50,8 @@ undefined
 
 ---
 
-> 谱系枢纽：[Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）)（图谱连通入口）
+> 谱系枢纽：[Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](/ai-fa/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）)（图谱连通入口）
 
-> 近邻同族：[Large Language Monkeys- Scaling Inference Compute with Repeated Sampling](/explore/10-Papers/07-推理模型/Large Language Monkeys- Scaling Inference Compute with Repeated Sampling（LL Monkeys）) · [Provable Scaling Laws for the Test-Time Compute of Large Language Models](/explore/10-Papers/07-推理模型/Provable Scaling Laws for the Test-Time Compute of Large Language Models（PSL）)
+> 近邻同族：[Large Language Monkeys- Scaling Inference Compute with Repeated Sampling](/ai-fa/explore/10-Papers/07-推理模型/Large Language Monkeys- Scaling Inference Compute with Repeated Sampling（LL Monkeys）) · [Provable Scaling Laws for the Test-Time Compute of Large Language Models](/ai-fa/explore/10-Papers/07-推理模型/Provable Scaling Laws for the Test-Time Compute of Large Language Models（PSL）)
 
-> 数学根基：[思维链（CoT）](/explore/40-Concepts/思维链（CoT）)
+> 数学根基：[思维链（CoT）](/ai-fa/explore/40-Concepts/思维链（CoT）)

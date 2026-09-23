@@ -16,7 +16,7 @@ tags: [paper]
 
 ## 1. 一句话贡献
 
-数学专家模型的自我改进三件套：[CoT](/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）) 蒸馏 + 多格式训练 + **自我改进迭代**（用自身高分样本迭代 SFT）——PRIME/Eurus 的直接前置。
+数学专家模型的自我改进三件套：[CoT](/ai-fa/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）) 蒸馏 + 多格式训练 + **自我改进迭代**（用自身高分样本迭代 SFT）——PRIME/Eurus 的直接前置。
 
 ## 2. 核心贡献
 
@@ -33,7 +33,7 @@ $$
 $$
 
 
-**直觉**：→ [Process Reinforcement through Implicit Rewards](/explore/10-Papers/04-强化学习与对齐/Process Reinforcement through Implicit Rewards（PRIME）)（Eurus-2 基座即 Qwen2.5-Math）；→ R1（RLVR 路线的 SFT 侧对照）
+**直觉**：→ [Process Reinforcement through Implicit Rewards](/ai-fa/explore/10-Papers/04-强化学习与对齐/Process Reinforcement through Implicit Rewards（PRIME）)（Eurus-2 基座即 Qwen2.5-Math）；→ R1（RLVR 路线的 SFT 侧对照）
 
 ## 5. 与前作/矩阵关系
 
@@ -47,8 +47,8 @@ $$
 
 undefined
 
-> 近邻同族：[CoT-Valve- Length-Compressible Chain-of-Thought Tuning](/explore/10-Papers/07-推理模型/CoT-Valve- Length-Compressible Chain-of-Thought Tuning（CoT-Valve）) · [Kimi k1.5- Scaling Reinforcement Learning with LLMs](/explore/10-Papers/07-推理模型/Kimi k1.5- Scaling Reinforcement Learning with LLMs（Kimi k1.5）)
+> 近邻同族：[CoT-Valve- Length-Compressible Chain-of-Thought Tuning](/ai-fa/explore/10-Papers/07-推理模型/CoT-Valve- Length-Compressible Chain-of-Thought Tuning（CoT-Valve）) · [Kimi k1.5- Scaling Reinforcement Learning with LLMs](/ai-fa/explore/10-Papers/07-推理模型/Kimi k1.5- Scaling Reinforcement Learning with LLMs（Kimi k1.5）)
 
-> 数学根基：[思维链（CoT）](/explore/40-Concepts/思维链（CoT）)
+> 数学根基：[思维链（CoT）](/ai-fa/explore/40-Concepts/思维链（CoT）)
 
-> 数学根基：[注意力核心公式](/explore/30-Formulas/注意力核心公式)
+> 数学根基：[注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)

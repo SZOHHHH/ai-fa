@@ -14,7 +14,7 @@ tags: [formula]
 $$\min_G \max_{\|D\|_L \le 1}\ \mathbb{E}_{x \sim p_{\text{data}}}\!\left[ D(x) \right] - \mathbb{E}_{z \sim \mathcal{N}(0,I)}\!\left[ D(G(z)) \right]$$
 
 - $$D$$ 现在叫 **critic**（不再是判别器）：输出实数打分而非概率，被约束为 **1-Lipschitz**
-- 内层最大化 = 学出 [Wasserstein距离](/explore/40-Concepts/Wasserstein距离)（Kantorovich–Rubinstein 对偶）
+- 内层最大化 = 学出 [Wasserstein距离](/ai-fa/explore/40-Concepts/Wasserstein距离)（Kantorovich–Rubinstein 对偶）
 - 外层最小化 = 把分布搬近
 - 工程实现：权重裁剪 $$[-c, c]$$（原文）→ 梯度惩罚（WGAN-GP）→ 谱归一化
 
@@ -38,20 +38,20 @@ $$\min_G \max_{\|D\|_L \le 1}\ \mathbb{E}_{x \sim p_{\text{data}}}\!\left[ D(x) 
 
 | 论文 | 贡献 |
 |---|---|
-| [Wasserstein GAN](/explore/10-Papers/02-生成建模与扩散/Wasserstein GAN（WGAN）) | 提出目标与理论 |
+| [Wasserstein GAN](/ai-fa/explore/10-Papers/02-生成建模与扩散/Wasserstein GAN（WGAN）) | 提出目标与理论 |
 | WGAN-GP (Gulrajani 2017) | 梯度惩罚实现（B3 或 B6 补充论文卡） |
-| [Flow Matching for Generative Modeling](/explore/10-Papers/02-生成建模与扩散/Flow Matching for Generative Modeling（流匹配）) | FM 理论与 W 距离泛函连通 |
+| [Flow Matching for Generative Modeling](/ai-fa/explore/10-Papers/02-生成建模与扩散/Flow Matching for Generative Modeling（流匹配）) | FM 理论与 W 距离泛函连通 |
 
 ## 5. 数学概念分解
 
-- [Wasserstein距离](/explore/40-Concepts/Wasserstein距离)：本体定义
-- [Lipschitz连续](/explore/40-Concepts/Lipschitz连续)：critic 的约束
-- [期望](/explore/40-Concepts/期望)：双期望差
-- [KL散度](/explore/40-Concepts/KL散度)：被替换的 JS 的母概念
+- [Wasserstein距离](/ai-fa/explore/40-Concepts/Wasserstein距离)：本体定义
+- [Lipschitz连续](/ai-fa/explore/40-Concepts/Lipschitz连续)：critic 的约束
+- [期望](/ai-fa/explore/40-Concepts/期望)：双期望差
+- [KL散度](/ai-fa/explore/40-Concepts/KL散度)：被替换的 JS 的母概念
 
 ## 6. 与其他公式的关系
 
-- → **改进自** [GAN目标](/explore/30-Formulas/GAN目标)：JS → W，判别器 → critic
+- → **改进自** [GAN目标](/ai-fa/explore/30-Formulas/GAN目标)：JS → W，判别器 → critic
 - ≡ **等价变形**：Kantorovich–Rubinstein 对偶（原问题 ↔ 对偶问题）
-- 对比 [DDPM训练目标](/explore/30-Formulas/DDPM训练目标)：`#loss/adversarial` vs `#loss/regression`
-- ↗ **理论连通** [条件流匹配损失](/explore/30-Formulas/条件流匹配损失)：最优传输视角下的统一
+- 对比 [DDPM训练目标](/ai-fa/explore/30-Formulas/DDPM训练目标)：`#loss/adversarial` vs `#loss/regression`
+- ↗ **理论连通** [条件流匹配损失](/ai-fa/explore/30-Formulas/条件流匹配损失)：最优传输视角下的统一

@@ -21,7 +21,7 @@ pdf: 已下载（PDF/）
 ## 2. 核心贡献
 
 - **统一框架**：前向 $$dx = f\,dt + g\,dw$$；VE（SMLD 极限）与 VP（DDPM 极限）只是系数选择
-- **反向 SDE**：唯一未知量是 score → 学习 [Score函数](/explore/40-Concepts/Score函数) 即生成
+- **反向 SDE**：唯一未知量是 score → 学习 [Score函数](/ai-fa/explore/40-Concepts/Score函数) 即生成
 - **概率流 ODE**：与 SDE 同边缘分布的确定性版本 → 精确似然、可逆、少步潜力
 - **Predictor-Corrector 采样器**：SDE 步 + 朗之万步交替，质量最优
 
@@ -34,22 +34,22 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- [Score-SDE前向过程](/explore/30-Formulas/Score-SDE前向过程) —— 统一前向与 VE/VP 对照
-- [反向SDE](/explore/30-Formulas/反向SDE) —— 生成方程
-- [概率流ODE](/explore/30-Formulas/概率流ODE) —— 确定性伴生
+- [Score-SDE前向过程](/ai-fa/explore/30-Formulas/Score-SDE前向过程) —— 统一前向与 VE/VP 对照
+- [反向SDE](/ai-fa/explore/30-Formulas/反向SDE) —— 生成方程
+- [概率流ODE](/ai-fa/explore/30-Formulas/概率流ODE) —— 确定性伴生
 
 ## 5. 与前作的关系
 
-- 统一了 [Generative Modeling by Estimating Gradients of the Data Distribution](/explore/10-Papers/02-生成建模与扩散/Generative Modeling by Estimating Gradients of the Data Distribution（SMLD）)（→VE）与 [Denoising Diffusion Probabilistic Models](/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Probabilistic Models（DDPM）)（→VP）
+- 统一了 [Generative Modeling by Estimating Gradients of the Data Distribution](/ai-fa/explore/10-Papers/02-生成建模与扩散/Generative Modeling by Estimating Gradients of the Data Distribution（SMLD）)（→VE）与 [Denoising Diffusion Probabilistic Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Probabilistic Models（DDPM）)（→VP）
 - 扩展了 [Anderson 1982 反向 SDE] 到深度生成
-- 与 [Denoising Diffusion Implicit Models](/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Implicit Models（DDIM）) 互证 ODE 视角
+- 与 [Denoising Diffusion Implicit Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Implicit Models（DDIM）) 互证 ODE 视角
 
 ## 6. 影响与后续
 
 - 整个领域的公共语言：此后论文默认 SDE/ODE 记号
-- 奠基了 [Elucidating the Design Space of Diffusion-Based Generative Models](/explore/10-Papers/02-生成建模与扩散/Elucidating the Design Space of Diffusion-Based Generative Models（EDM）) 的统一消融与 [Building Normalizing Flows with Stochastic Interpolants](/explore/10-Papers/02-生成建模与扩散/Building Normalizing Flows with Stochastic Interpolants（随机插值）) 的理论推广
+- 奠基了 [Elucidating the Design Space of Diffusion-Based Generative Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Elucidating the Design Space of Diffusion-Based Generative Models（EDM）) 的统一消融与 [Building Normalizing Flows with Stochastic Interpolants](/ai-fa/explore/10-Papers/02-生成建模与扩散/Building Normalizing Flows with Stochastic Interpolants（随机插值）) 的理论推广
 - 概率流 ODE 是流匹配复兴的直接铺垫
 
 ## 7. 读前须知
 
-[随机微分方程](/explore/40-Concepts/随机微分方程（SDE）)、[维纳过程](/explore/40-Concepts/维纳过程)、[Score函数](/explore/40-Concepts/Score函数)、[常微分方程](/explore/40-Concepts/常微分方程（ODE）)、[采样器](/explore/40-Concepts/采样器)
+[随机微分方程](/ai-fa/explore/40-Concepts/随机微分方程（SDE）)、[维纳过程](/ai-fa/explore/40-Concepts/维纳过程)、[Score函数](/ai-fa/explore/40-Concepts/Score函数)、[常微分方程](/ai-fa/explore/40-Concepts/常微分方程（ODE）)、[采样器](/ai-fa/explore/40-Concepts/采样器)

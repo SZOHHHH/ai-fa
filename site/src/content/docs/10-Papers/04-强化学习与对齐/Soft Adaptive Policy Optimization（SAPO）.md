@@ -16,7 +16,7 @@ pdf: 已下载（PDF/）
 
 ## 1. 一句话贡献
 
-把 PPO/[GRPO](/explore/20-Algorithms/GRPO与RLVR) 的**硬裁剪**换成温度控制的**平滑软门控**——更新幅度随状态自适应调制，LLM RL 训练稳定性大幅提升（Qwen 3.5 的 RL 配方）。
+把 PPO/[GRPO](/ai-fa/explore/20-Algorithms/GRPO与RLVR) 的**硬裁剪**换成温度控制的**平滑软门控**——更新幅度随状态自适应调制，LLM RL 训练稳定性大幅提升（Qwen 3.5 的 RL 配方）。
 
 ## 2. 核心贡献
 
@@ -29,23 +29,23 @@ pdf: 已下载（PDF/）
 1. 保持 GRPO 组相对优势结构
 2. 比率修正项换软门控：越界样本仍有小梯度（可回拉），门内样本梯度平滑过渡
 3. 温度 τ 调度：训练早期宽容、后期收紧
-4. 与 [GSPO](/explore/10-Papers/04-强化学习与对齐/Group Sequence Policy Optimization（GSPO）)（序列级重要性）正交可组合
+4. 与 [GSPO](/ai-fa/explore/10-Papers/04-强化学习与对齐/Group Sequence Policy Optimization（GSPO）)（序列级重要性）正交可组合
 
 ## 4. 核心公式
 
-- 软门控版目标：$$\mathcal{L} = \mathbb{E}[\sigma_\tau(\rho\text{-修正项}) \cdot \hat A]$$（[PPO裁剪目标](/explore/30-Formulas/PPO裁剪目标) 的 min+clip 换 sigmoid 族）
-- 与 [Direct Preference Optimization - Your Language Model is Secretly a Reward Model](/explore/10-Papers/04-强化学习与对齐/Direct Preference Optimization- Your Language Model is Secretly a Reward Model（DPO）) 的 $$\sigma$$ 权重同族——**sigmoid 作为"软边界"的又一次登场**
+- 软门控版目标：$$\mathcal{L} = \mathbb{E}[\sigma_\tau(\rho\text{-修正项}) \cdot \hat A]$$（[PPO裁剪目标](/ai-fa/explore/30-Formulas/PPO裁剪目标) 的 min+clip 换 sigmoid 族）
+- 与 [Direct Preference Optimization - Your Language Model is Secretly a Reward Model](/ai-fa/explore/10-Papers/04-强化学习与对齐/Direct Preference Optimization- Your Language Model is Secretly a Reward Model（DPO）) 的 $$\sigma$$ 权重同族——**sigmoid 作为"软边界"的又一次登场**
 
 ## 5. 与前作的关系
 
-- 改进了 [PPO裁剪目标](/explore/30-Formulas/PPO裁剪目标)（硬裁剪的梯度不连续问题）与 [GRPO目标](/explore/30-Formulas/GRPO目标)（组内裁剪继承同样问题）
-- 承接 [Group Sequence Policy Optimization](/explore/10-Papers/04-强化学习与对齐/Group Sequence Policy Optimization（GSPO）)（Qwen 自家前置：token 级→序列级比率）
+- 改进了 [PPO裁剪目标](/ai-fa/explore/30-Formulas/PPO裁剪目标)（硬裁剪的梯度不连续问题）与 [GRPO目标](/ai-fa/explore/30-Formulas/GRPO目标)（组内裁剪继承同样问题）
+- 承接 [Group Sequence Policy Optimization](/ai-fa/explore/10-Papers/04-强化学习与对齐/Group Sequence Policy Optimization（GSPO）)（Qwen 自家前置：token 级→序列级比率）
 
 ## 6. 影响与后续
 
 - Qwen 3.5 生产配方；"软门控 vs 硬裁剪"成为 RL 稳定化矩阵的独立轴
-- 与 [温度参数](/explore/40-Concepts/温度参数) 家族再添一员（门控温度）
+- 与 [温度参数](/ai-fa/explore/40-Concepts/温度参数) 家族再添一员（门控温度）
 
 ## 7. 读前须知
 
-[PPO裁剪目标](/explore/30-Formulas/PPO裁剪目标)（先懂硬裁剪四象限）、[GRPO目标](/explore/30-Formulas/GRPO目标)、[Group Sequence Policy Optimization](/explore/10-Papers/04-强化学习与对齐/Group Sequence Policy Optimization（GSPO）)
+[PPO裁剪目标](/ai-fa/explore/30-Formulas/PPO裁剪目标)（先懂硬裁剪四象限）、[GRPO目标](/ai-fa/explore/30-Formulas/GRPO目标)、[Group Sequence Policy Optimization](/ai-fa/explore/10-Papers/04-强化学习与对齐/Group Sequence Policy Optimization（GSPO）)

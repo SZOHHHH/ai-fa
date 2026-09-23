@@ -23,6 +23,6 @@ Diffusion Forcing 的 k_t 谱
 
 ## 本命论文
 
-[Diffusion Forcing- Next-token Prediction Meets Full-Sequence Diffusion](/explore/10-Papers/09-世界模型与JEPA/Diffusion Forcing- Next-token Prediction Meets Full-Sequence Diffusion（Diffusion Forcing）)
+[Diffusion Forcing- Next-token Prediction Meets Full-Sequence Diffusion](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Diffusion Forcing- Next-token Prediction Meets Full-Sequence Diffusion（Diffusion Forcing）)
 
 > 待办：精读时补"表示对照表"（不同论文的符号差异换算）

@@ -30,8 +30,8 @@ layer: 占位
 （待精读）
 
 ## 5. 与前作/矩阵关系
-- 概念/公式锚：[低秩分解](/explore/40-Concepts/低秩分解)（草图=序列长度维的隐式低秩压缩，尺寸与 $$n$$ 无关）· [KV缓存](/explore/40-Concepts/KV缓存)（跨请求/跨目标复用的可缓存状态）· [注意力计算复杂度](/explore/30-Formulas/注意力计算复杂度)（$$O(L^2)\to O(L)\to O(1)$$ 的完整阶梯）
-- 同族：[Information-Aware KV Cache Compression for Long Reasoning](/explore/10-Papers/06-长上下文/Information-Aware KV Cache Compression for Long Reasoning（InfoKV）)（长序列压缩家族：推理期 KV 压缩 vs 原型草图摘要）· [稀疏与线性注意力](/explore/40-Concepts/稀疏与线性注意力)（STCA 稀疏目标注意力属保留家族）
+- 概念/公式锚：[低秩分解](/ai-fa/explore/40-Concepts/低秩分解)（草图=序列长度维的隐式低秩压缩，尺寸与 $$n$$ 无关）· [KV缓存](/ai-fa/explore/40-Concepts/KV缓存)（跨请求/跨目标复用的可缓存状态）· [注意力计算复杂度](/ai-fa/explore/30-Formulas/注意力计算复杂度)（$$O(L^2)\to O(L)\to O(1)$$ 的完整阶梯）
+- 同族：[Information-Aware KV Cache Compression for Long Reasoning](/ai-fa/explore/10-Papers/06-长上下文/Information-Aware KV Cache Compression for Long Reasoning（InfoKV）)（长序列压缩家族：推理期 KV 压缩 vs 原型草图摘要）· [稀疏与线性注意力](/ai-fa/explore/40-Concepts/稀疏与线性注意力)（STCA 稀疏目标注意力属保留家族）
 
 ## 6. 影响后续
 （待精读）

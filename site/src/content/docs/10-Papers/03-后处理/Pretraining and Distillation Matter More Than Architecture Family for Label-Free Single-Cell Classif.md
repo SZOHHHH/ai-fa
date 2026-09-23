@@ -30,8 +30,8 @@ layer: 占位
 （待精读）
 
 ## 5. 与前作/矩阵关系
-- 线锚：[知识蒸馏](/explore/40-Concepts/知识蒸馏) · [Transformer](/explore/20-Algorithms/Transformer)（CNN vs ViT 架构族对比的受控基准）
-- 蒸馏形态：**council 蒸馏**（多教师平均）——EN-B0 学生从 EN-B5×3 议会蒸馏后**超过一切单训骨干**（含教师本身与 EVA-02）；与 [TinyBERT](/explore/10-Papers/03-后处理/TinyBERT- Distilling BERT for Natural Language Understanding（TinyBERT）) 同属"小模型吃教师红利"证据链，且把红利推到"学生反超教师"。
+- 线锚：[知识蒸馏](/ai-fa/explore/40-Concepts/知识蒸馏) · [Transformer](/ai-fa/explore/20-Algorithms/Transformer)（CNN vs ViT 架构族对比的受控基准）
+- 蒸馏形态：**council 蒸馏**（多教师平均）——EN-B0 学生从 EN-B5×3 议会蒸馏后**超过一切单训骨干**（含教师本身与 EVA-02）；与 [TinyBERT](/ai-fa/explore/10-Papers/03-后处理/TinyBERT- Distilling BERT for Natural Language Understanding（TinyBERT）) 同属"小模型吃教师红利"证据链，且把红利推到"学生反超教师"。
 - 方法论：源图不相交切分防泄漏 + 匹配优化/增广协议——把"架构家族效应"从"预训练效应"里剥离（此前报告的 CNN 优势大部分是预训练优势；ViT-S/8 细 token 化对小细胞裁剪占优、层间学习率衰减不迁移）。
 
 ## 6. 影响后续

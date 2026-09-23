@@ -20,7 +20,7 @@ MLA（多头潜在注意力）把 KV 压进低秩潜在向量——cache 降一�
 
 ## 2. 核心贡献
 
-- **MLA**：KV 联合低秩压缩 $$c^{KV} = W^{DKV} h$$，cache 只存 $$c^{KV}$$（[MLA多头潜在注意力](/explore/30-Formulas/MLA多头潜在注意力)）
+- **MLA**：KV 联合低秩压缩 $$c^{KV} = W^{DKV} h$$，cache 只存 $$c^{KV}$$（[MLA多头潜在注意力](/ai-fa/explore/30-Formulas/MLA多头潜在注意力)）
 - **解耦 RoPE**：位置分量与压缩通道分流的工程解
 - **DeepSeekMoE 组合**：细粒度专家 + 共享专家 + MLA——236B 总参/21B 激活的经济学
 - 生成吞吐较 V1 提升 ~5.76×（官方数字）
@@ -35,14 +35,14 @@ MLA（多头潜在注意力）把 KV 压进低秩潜在向量——cache 降一�
 
 ## 4. 核心公式
 
-- [MLA多头潜在注意力](/explore/30-Formulas/MLA多头潜在注意力) —— 本文灵魂（压缩/升维/解耦三式）
-- [RoPE旋转位置编码](/explore/30-Formulas/RoPE旋转位置编码)（解耦对象）
+- [MLA多头潜在注意力](/ai-fa/explore/30-Formulas/MLA多头潜在注意力) —— 本文灵魂（压缩/升维/解耦三式）
+- [RoPE旋转位置编码](/ai-fa/explore/30-Formulas/RoPE旋转位置编码)（解耦对象）
 
 ## 5. 与前作的关系
 
-- 超越了 [Efficiently Scaling Transformer Inference](/explore/10-Papers/01-架构演进/Efficiently Scaling Transformer Inference（MQA）)→[GQA - Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints](/explore/10-Papers/01-架构演进/GQA- Training Generalized Multi-Query Transformer Models from Multi-Head Checkoffs（GQA）) 的头数削减路线：低秩压缩保表达
+- 超越了 [Efficiently Scaling Transformer Inference](/ai-fa/explore/10-Papers/01-架构演进/Efficiently Scaling Transformer Inference（MQA）)→[GQA - Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints](/ai-fa/explore/10-Papers/01-架构演进/GQA- Training Generalized Multi-Query Transformer Models from Multi-Head Checkoffs（GQA）) 的头数削减路线：低秩压缩保表达
 - 精神同源 LoRA（线 3）：低秩分解的"减法"应用
-- 组合 [混合专家（MoE）](/explore/20-Algorithms/混合专家（MoE）)（DeepSeekMoE 细粒度版）
+- 组合 [混合专家（MoE）](/ai-fa/explore/20-Algorithms/混合专家（MoE）)（DeepSeekMoE 细粒度版）
 
 ## 6. 影响与后续
 
@@ -52,4 +52,4 @@ MLA（多头潜在注意力）把 KV 压进低秩潜在向量——cache 降一�
 
 ## 7. 读前须知
 
-[KV缓存](/explore/40-Concepts/KV缓存)、[注意力机制](/explore/40-Concepts/注意力机制)、[MLA多头潜在注意力](/explore/30-Formulas/MLA多头潜在注意力)、[混合专家（MoE）](/explore/20-Algorithms/混合专家（MoE）)
+[KV缓存](/ai-fa/explore/40-Concepts/KV缓存)、[注意力机制](/ai-fa/explore/40-Concepts/注意力机制)、[MLA多头潜在注意力](/ai-fa/explore/30-Formulas/MLA多头潜在注意力)、[混合专家（MoE）](/ai-fa/explore/20-Algorithms/混合专家（MoE）)

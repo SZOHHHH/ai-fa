@@ -38,15 +38,15 @@ $$
 
 ## 5. 与前作/矩阵关系
 
-🚩 一致性×agent RL 交叉格；→ [One Step Diffusion via Shortcut Models](/explore/10-Papers/02-生成建模与扩散/One Step Diffusion via Shortcut Models（Shortcut）)（一致性家族）
+🚩 一致性×agent RL 交叉格；→ [One Step Diffusion via Shortcut Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/One Step Diffusion via Shortcut Models（Shortcut）)（一致性家族）
 
 
 ## 6. 影响与占位意义
 
 RS 库 08-03 情报；一致性家族应用面扩张。
 
-> 近邻同族：[A Survey on Hallucination in Large Language Models](/explore/10-Papers/04-强化学习与对齐/A Survey on Hallucination in Large Language Models（Hallucination Survey）) · [Large Language Models as General Pattern Machines](/explore/10-Papers/04-强化学习与对齐/Large Language Models as General Pattern Machines（Pattern Machines）)
-> 数学根基（占位层）：[条件流匹配损失](/explore/30-Formulas/条件流匹配损失) · [注意力核心公式](/explore/30-Formulas/注意力核心公式)
+> 近邻同族：[A Survey on Hallucination in Large Language Models](/ai-fa/explore/10-Papers/04-强化学习与对齐/A Survey on Hallucination in Large Language Models（Hallucination Survey）) · [Large Language Models as General Pattern Machines](/ai-fa/explore/10-Papers/04-强化学习与对齐/Large Language Models as General Pattern Machines（Pattern Machines）)
+> 数学根基（占位层）：[条件流匹配损失](/ai-fa/explore/30-Formulas/条件流匹配损失) · [注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)
 
 ## 7. 读前须知
 

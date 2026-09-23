@@ -39,13 +39,13 @@ $$\hat{M}_{c2l}^{(j,i)} = M_{c2l}^{(j,i)} - \alpha\cdot\big(\frac{j}{N_c-1} - \f
 **直觉**：训练早期强罚"第 1 个潜嵌入配最后一步 CoT"这种乱序匹配，先把顺序骨架立住；后期放开，允许语义驱动的自由聚合。
 
 ## 5. 与前作/矩阵关系
-- 线锚：[思维链（CoT）](/explore/40-Concepts/思维链（CoT）) · [知识蒸馏](/explore/40-Concepts/知识蒸馏) · [交叉熵](/explore/30-Formulas/交叉熵)
+- 线锚：[思维链（CoT）](/ai-fa/explore/40-Concepts/思维链（CoT）) · [知识蒸馏](/ai-fa/explore/40-Concepts/知识蒸馏) · [交叉熵](/ai-fa/explore/30-Formulas/交叉熵)
 - ← 前身：CODI（答案位置自蒸馏，无过程监督）/ SIM-CoT（辅助解码器一对一硬配）——本文诊断出二者各自的坍缩形态（奇偶 / 尾部）
-- 同族（CoT 长度压缩线）：[CoT-Valve- Length-Compressible Chain-of-Thought Tuning](/explore/10-Papers/07-推理模型/CoT-Valve- Length-Compressible Chain-of-Thought Tuning（CoT-Valve）)
-- 同日同题：[Think Wider: Mitigating Latent Rank Collapse in Implicit Chain-of-Thought Reasoning](/explore/10-Papers/07-推理模型/Think Wider - Mitigating Latent Rank Collapse in Implicit Chain-of-Thought Reasoning（WIDER）)（治几何坍缩，与本文治语义坍缩互补）· [Astar-Thought-V2: Efficient Latent Reasoning via Geometric Dynamics of LLM](/explore/10-Papers/07-推理模型/Astar-Thought-V2 - Efficient Latent Reasoning via Geometric Dynamics of LLM（Astar-Thought-V2）)（显隐交替压缩）
+- 同族（CoT 长度压缩线）：[CoT-Valve- Length-Compressible Chain-of-Thought Tuning](/ai-fa/explore/10-Papers/07-推理模型/CoT-Valve- Length-Compressible Chain-of-Thought Tuning（CoT-Valve）)
+- 同日同题：[Think Wider: Mitigating Latent Rank Collapse in Implicit Chain-of-Thought Reasoning](/ai-fa/explore/10-Papers/07-推理模型/Think Wider - Mitigating Latent Rank Collapse in Implicit Chain-of-Thought Reasoning（WIDER）)（治几何坍缩，与本文治语义坍缩互补）· [Astar-Thought-V2: Efficient Latent Reasoning via Geometric Dynamics of LLM](/ai-fa/explore/10-Papers/07-推理模型/Astar-Thought-V2 - Efficient Latent Reasoning via Geometric Dynamics of LLM（Astar-Thought-V2）)（显隐交替压缩）
 
 ## 6. 影响后续
 过程监督（PRM 线）从离散推理步迁入连续潜空间的第一站；原型/Sinkhorn 工具箱（SwAV 系）被引入推理压缩。坍缩诊断方法（逐对余弦相似度热图）是所有 latent reasoning 工作的通用体检项。
 
 ## 7. 读前须知
-需要 [知识蒸馏](/explore/40-Concepts/知识蒸馏)（自蒸馏 teacher/student 架构）与 [交叉熵](/explore/30-Formulas/交叉熵)（软标签交叉熵的读法）；Sinkhorn-Knopp 只需当作"带均匀使用约束的软聚类"理解，细节可跳过。
+需要 [知识蒸馏](/ai-fa/explore/40-Concepts/知识蒸馏)（自蒸馏 teacher/student 架构）与 [交叉熵](/ai-fa/explore/30-Formulas/交叉熵)（软标签交叉熵的读法）；Sinkhorn-Knopp 只需当作"带均匀使用约束的软聚类"理解，细节可跳过。

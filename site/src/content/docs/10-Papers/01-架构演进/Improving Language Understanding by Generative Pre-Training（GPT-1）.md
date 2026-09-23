@@ -33,19 +33,19 @@ tags: [paper]
 
 ## 4. 核心公式
 
-- 自回归似然 $$\log p(x) = \sum_t \log p(x_t \mid x_{<t})$$（[注意力核心公式](/explore/30-Formulas/注意力核心公式) 因果版为架构载体）
+- 自回归似然 $$\log p(x) = \sum_t \log p(x_t \mid x_{<t})$$（[注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式) 因果版为架构载体）
 
 ## 5. 与前作的关系
 
-- 组合了 [Attention Is All You Need](/explore/10-Papers/01-架构演进/Attention Is All You Need（Transformer）)（架构）与 [ULMFiT 的预训练-微调思想]（范式），选生成式而非 ELMo 的特征式
-- 与 [BERT - Pre-training of Deep Bidirectional Transformers for Language Understanding](/explore/10-Papers/01-架构演进/BERT- Pre-training of Deep Bidirectional Transformers for Language Understanding（BERT）)（同年稍后）构成"NLU 双解"：GPT 单向深挖生成、BERT 双向深挖理解
+- 组合了 [Attention Is All You Need](/ai-fa/explore/10-Papers/01-架构演进/Attention Is All You Need（Transformer）)（架构）与 [ULMFiT 的预训练-微调思想]（范式），选生成式而非 ELMo 的特征式
+- 与 [BERT - Pre-training of Deep Bidirectional Transformers for Language Understanding](/ai-fa/explore/10-Papers/01-架构演进/BERT- Pre-training of Deep Bidirectional Transformers for Language Understanding（BERT）)（同年稍后）构成"NLU 双解"：GPT 单向深挖生成、BERT 双向深挖理解
 
 ## 6. 影响与后续
 
-- GPT-2（规模+zero-shot）→ [Language Models are Few-Shot Learners](/explore/10-Papers/01-架构演进/Language Models are Few-Shot Learners（GPT-3）)（规模+ICL）→ ChatGPT 整条血脉
+- GPT-2（规模+zero-shot）→ [Language Models are Few-Shot Learners](/ai-fa/explore/10-Papers/01-架构演进/Language Models are Few-Shot Learners（GPT-3）)（规模+ICL）→ ChatGPT 整条血脉
 - "decoder-only + 自回归"最终成为 LLM 事实标准（BERT 路线后式微）
-- 来源说明：本文从未上 arXiv，PDF 从 OpenAI 官方 CDN 下载（见 [论文来源策略](/explore/00-Meta/论文来源策略) 案例1）
+- 来源说明：本文从未上 arXiv，PDF 从 OpenAI 官方 CDN 下载（见 [论文来源策略](/ai-fa/explore/00-Meta/论文来源策略) 案例1）
 
 ## 7. 读前须知
 
-[Transformer](/explore/20-Algorithms/Transformer)、[注意力核心公式](/explore/30-Formulas/注意力核心公式)
+[Transformer](/ai-fa/explore/20-Algorithms/Transformer)、[注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)

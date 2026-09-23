@@ -49,10 +49,10 @@ undefined
 
 ---
 
-> 谱系枢纽：[Direct Preference Optimization - Your Language Model is Secretly a Reward Model](/explore/10-Papers/04-强化学习与对齐/Direct Preference Optimization- Your Language Model is Secretly a Reward Model（DPO）)（图谱连通入口）
+> 谱系枢纽：[Direct Preference Optimization - Your Language Model is Secretly a Reward Model](/ai-fa/explore/10-Papers/04-强化学习与对齐/Direct Preference Optimization- Your Language Model is Secretly a Reward Model（DPO）)（图谱连通入口）
 
-> 近邻同族：[LIMA- Less Is More for Alignment](/explore/10-Papers/04-强化学习与对齐/LIMA- Less Is More for Alignment（LIMA）) · [RAFT - Reward rAnked FineTuning for Generative Foundation Model Alignment](/explore/10-Papers/04-强化学习与对齐/RAFT- Reward rAnked FineTuning for Generative Foundation Model Alignment（RAFT）)
+> 近邻同族：[LIMA- Less Is More for Alignment](/ai-fa/explore/10-Papers/04-强化学习与对齐/LIMA- Less Is More for Alignment（LIMA）) · [RAFT - Reward rAnked FineTuning for Generative Foundation Model Alignment](/ai-fa/explore/10-Papers/04-强化学习与对齐/RAFT- Reward rAnked FineTuning for Generative Foundation Model Alignment（RAFT）)
 
-> 数学根基：[策略梯度定理](/explore/40-Concepts/策略梯度定理)
+> 数学根基：[策略梯度定理](/ai-fa/explore/40-Concepts/策略梯度定理)
 
-> 数学根基：[注意力核心公式](/explore/30-Formulas/注意力核心公式)
+> 数学根基：[注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)

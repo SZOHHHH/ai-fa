@@ -33,8 +33,8 @@ FFN 的门控线性单元变体（SwiGLU）以微小改动换稳定增益——L
 
 ## 4. 核心公式
 
-- $$\mathrm{SwiGLU}(x) = (\mathrm{Swish}(xW_1) \odot xV) W_2$$——[softmax函数](/explore/40-Concepts/softmax函数) 的 σ 是 Swish 的组件
-- 结构上属于 [残差连接](/explore/30-Formulas/残差连接) 内的 FFN 支路
+- $$\mathrm{SwiGLU}(x) = (\mathrm{Swish}(xW_1) \odot xV) W_2$$——[softmax函数](/ai-fa/explore/40-Concepts/softmax函数) 的 σ 是 Swish 的组件
+- 结构上属于 [残差连接](/ai-fa/explore/30-Formulas/残差连接) 内的 FFN 支路
 
 ## 5. 与前作的关系
 
@@ -44,8 +44,8 @@ FFN 的门控线性单元变体（SwiGLU）以微小改动换稳定增益——L
 ## 6. 影响与后续
 
 - LLaMA/Qwen/DeepSeek/Mistral 等 FFN 默认（"现代 LLM 配方四件套"之一：RoPE+RMSNorm+SwiGLU+GQA/MLA）
-- 门控思想与 MoE 路由（[混合专家（MoE）](/explore/20-Algorithms/混合专家（MoE）)）同构——稀疏选择 vs 稠密门控
+- 门控思想与 MoE 路由（[混合专家（MoE）](/ai-fa/explore/20-Algorithms/混合专家（MoE）)）同构——稀疏选择 vs 稠密门控
 
 ## 7. 读前须知
 
-[softmax函数](/explore/40-Concepts/softmax函数)（σ/Swish）、[Transformer](/explore/20-Algorithms/Transformer)（FFN 位置）
+[softmax函数](/ai-fa/explore/40-Concepts/softmax函数)（σ/Swish）、[Transformer](/ai-fa/explore/20-Algorithms/Transformer)（FFN 位置）

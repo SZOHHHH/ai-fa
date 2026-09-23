@@ -26,20 +26,20 @@ pdf: 已下载（PDF/）
 
 ## 3. 方法概要
 
-1. 教师：预训练 [LDM](/explore/10-Papers/02-生成建模与扩散/High-Resolution Image Synthesis with Latent Diffusion Models（LDM）)（冻结）
+1. 教师：预训练 [LDM](/ai-fa/explore/10-Papers/02-生成建模与扩散/High-Resolution Image Synthesis with Latent Diffusion Models（LDM）)（冻结）
 2. 学生在潜空间学一致性映射
 3. 教师逐步 ODE 解当目标
 4. 可选 LoRA 蒸馏（数 KB 权重换 4 步生成）
 
 ## 4. 核心公式
 
-- 一致性损失 + 潜域蒸馏目标——[Consistency Models](/explore/10-Papers/02-生成建模与扩散/Consistency Models（一致性模型）) 的潜空间实例化
-- LCM-LoRA 组合 [LoRA分解](/explore/30-Formulas/LoRA分解)
+- 一致性损失 + 潜域蒸馏目标——[Consistency Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Consistency Models（一致性模型）) 的潜空间实例化
+- LCM-LoRA 组合 [LoRA分解](/ai-fa/explore/30-Formulas/LoRA分解)
 
 ## 5. 与前作的关系
 
-- 组合了 [Consistency Models](/explore/10-Papers/02-生成建模与扩散/Consistency Models（一致性模型）) + [High-Resolution Image Synthesis with Latent Diffusion Models](/explore/10-Papers/02-生成建模与扩散/High-Resolution Image Synthesis with Latent Diffusion Models（LDM）)
-- 同期 [Multistep Consistency Models](/explore/10-Papers/02-生成建模与扩散/Multistep Consistency Models（MCM）)：多步化 vs 潜空间化——同格两优化方向
+- 组合了 [Consistency Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Consistency Models（一致性模型）) + [High-Resolution Image Synthesis with Latent Diffusion Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/High-Resolution Image Synthesis with Latent Diffusion Models（LDM）)
+- 同期 [Multistep Consistency Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Multistep Consistency Models（MCM）)：多步化 vs 潜空间化——同格两优化方向
 
 ## 6. 影响与后续
 
@@ -48,4 +48,4 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[Consistency Models](/explore/10-Papers/02-生成建模与扩散/Consistency Models（一致性模型）)、[High-Resolution Image Synthesis with Latent Diffusion Models](/explore/10-Papers/02-生成建模与扩散/High-Resolution Image Synthesis with Latent Diffusion Models（LDM）)、[LoRA分解](/explore/30-Formulas/LoRA分解)
+[Consistency Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Consistency Models（一致性模型）)、[High-Resolution Image Synthesis with Latent Diffusion Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/High-Resolution Image Synthesis with Latent Diffusion Models（LDM）)、[LoRA分解](/ai-fa/explore/30-Formulas/LoRA分解)

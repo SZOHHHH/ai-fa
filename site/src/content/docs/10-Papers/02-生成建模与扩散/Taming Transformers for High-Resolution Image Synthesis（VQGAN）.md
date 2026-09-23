@@ -16,7 +16,7 @@ pdf: 已下载（PDF/）
 
 ## 1. 一句话贡献
 
-VQ-[VAE](/explore/10-Papers/02-生成建模与扩散/Auto-Encoding Variational Bayes（VAE）) 压缩 + Transformer 在码序列上自回归 = 高分辨率图像生成——"CNN 管压缩、Transformer 管生成"的两阶段范式定型。
+VQ-[VAE](/ai-fa/explore/10-Papers/02-生成建模与扩散/Auto-Encoding Variational Bayes（VAE）) 压缩 + Transformer 在码序列上自回归 = 高分辨率图像生成——"CNN 管压缩、Transformer 管生成"的两阶段范式定型。
 
 ## 2. 核心贡献
 
@@ -33,20 +33,20 @@ VQ-[VAE](/explore/10-Papers/02-生成建模与扩散/Auto-Encoding Variational B
 
 ## 4. 核心公式
 
-- [VQ-VAE目标](/explore/30-Formulas/VQ-VAE目标)（量化损失骨架）+ 感知/对抗项
-- [Generative Adversarial Networks](/explore/10-Papers/02-生成建模与扩散/Generative Adversarial Networks（GAN）)（判别器部分）
+- [VQ-VAE目标](/ai-fa/explore/30-Formulas/VQ-VAE目标)（量化损失骨架）+ 感知/对抗项
+- [Generative Adversarial Networks](/ai-fa/explore/10-Papers/02-生成建模与扩散/Generative Adversarial Networks（GAN）)（判别器部分）
 
 ## 5. 与前作的关系
 
-- 扩展了 [Neural Discrete Representation Learning](/explore/10-Papers/02-生成建模与扩散/Neural Discrete Representation Learning（VQ-VAE）)：+感知损失 +Transformer 先验
+- 扩展了 [Neural Discrete Representation Learning](/ai-fa/explore/10-Papers/02-生成建模与扩散/Neural Discrete Representation Learning（VQ-VAE）)：+感知损失 +Transformer 先验
 - 组合了 [ViT/Transformer 架构线] 与 [VQ 压缩线]（线 1 交叉）
 
 ## 6. 影响与后续
 
-- 作者同一团队的 [LDM](/explore/10-Papers/02-生成建模与扩散/High-Resolution Image Synthesis with Latent Diffusion Models（LDM）) 直接继承其压缩器
+- 作者同一团队的 [LDM](/ai-fa/explore/10-Papers/02-生成建模与扩散/High-Resolution Image Synthesis with Latent Diffusion Models（LDM）) 直接继承其压缩器
 - 奠基了 DALL·E、Parti 系列与视频 tokenizer 路线（多模态线交叉）
 - "压缩器 + 生成先验"的两阶段思想成为整个 AIGC 时代的结构模板
 
 ## 7. 读前须知
 
-[VQ-VAE目标](/explore/30-Formulas/VQ-VAE目标)、[期望](/explore/40-Concepts/期望)（自回归似然）、[生成对抗网络](/explore/20-Algorithms/生成对抗网络)（对抗损失部分）
+[VQ-VAE目标](/ai-fa/explore/30-Formulas/VQ-VAE目标)、[期望](/ai-fa/explore/40-Concepts/期望)（自回归似然）、[生成对抗网络](/ai-fa/explore/20-Algorithms/生成对抗网络)（对抗损失部分）

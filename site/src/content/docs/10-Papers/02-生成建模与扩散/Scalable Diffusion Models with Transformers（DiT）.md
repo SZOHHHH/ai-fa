@@ -29,18 +29,18 @@ pdf: 已下载（PDF/）
 1. 潜空间划分 patch（如 2×2）→ token 序列
 2. 纯 Transformer 编码：每块 adaLN-Zero 注入 $$(t, c)$$
 3. 输出头预测 ε / v（与 U-Net 版 DDPM 损失一致）
-4. 采样：CFG + DDIM，潜空间 → [Auto-Encoding Variational Bayes](/explore/10-Papers/02-生成建模与扩散/Auto-Encoding Variational Bayes（VAE）)
+4. 采样：CFG + DDIM，潜空间 → [Auto-Encoding Variational Bayes](/ai-fa/explore/10-Papers/02-生成建模与扩散/Auto-Encoding Variational Bayes（VAE）)
 
 ## 4. 核心公式
 
-- 损失复用 [DDPM训练目标](/explore/30-Formulas/DDPM训练目标)（v-预测为主，见 §2 对照）
-- [无分类器引导（CFG）](/explore/30-Formulas/无分类器引导（CFG）) 采样期外推
+- 损失复用 [DDPM训练目标](/ai-fa/explore/30-Formulas/DDPM训练目标)（v-预测为主，见 §2 对照）
+- [无分类器引导（CFG）](/ai-fa/explore/30-Formulas/无分类器引导（CFG）) 采样期外推
 - 架构侧：[缩放定律]（线 6 标杆交叉）
 
 ## 5. 与前作的关系
 
-- 组合了 [LDM](/explore/10-Papers/02-生成建模与扩散/High-Resolution Image Synthesis with Latent Diffusion Models（LDM）)（潜扩散）与 [ViT]（线 1 交叉：patch 化思想）
-- 替代了 [Denoising Diffusion Probabilistic Models](/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Probabilistic Models（DDPM）) 以来的 U-Net 骨干
+- 组合了 [LDM](/ai-fa/explore/10-Papers/02-生成建模与扩散/High-Resolution Image Synthesis with Latent Diffusion Models（LDM）)（潜扩散）与 [ViT]（线 1 交叉：patch 化思想）
+- 替代了 [Denoising Diffusion Probabilistic Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Probabilistic Models（DDPM）) 以来的 U-Net 骨干
 
 ## 6. 影响与后续
 
@@ -50,4 +50,4 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[潜在扩散模型（LDM）](/explore/20-Algorithms/潜在扩散模型（LDM）)、[DDPM训练目标](/explore/30-Formulas/DDPM训练目标)、[无分类器引导（CFG）](/explore/30-Formulas/无分类器引导（CFG）)
+[潜在扩散模型（LDM）](/ai-fa/explore/20-Algorithms/潜在扩散模型（LDM）)、[DDPM训练目标](/ai-fa/explore/30-Formulas/DDPM训练目标)、[无分类器引导（CFG）](/ai-fa/explore/30-Formulas/无分类器引导（CFG）)

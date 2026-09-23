@@ -16,7 +16,7 @@ tags: [paper]
 
 ## 1. 一句话贡献
 
-RLHF/RLVR 训练系统的解耦设计：单控制器编排+混合引擎（训练/生成/推理三角色复用）——**OPD/[GRPO](/explore/20-Algorithms/GRPO与RLVR) 实验的标准底座**。
+RLHF/RLVR 训练系统的解耦设计：单控制器编排+混合引擎（训练/生成/推理三角色复用）——**OPD/[GRPO](/ai-fa/explore/20-Algorithms/GRPO与RLVR) 实验的标准底座**。
 
 ## 2. 核心贡献
 
@@ -35,7 +35,7 @@ $$
 $$
 
 
-**直觉**：→ OPD 文档（verl 内置）/[DAPO](/explore/10-Papers/04-强化学习与对齐/DAPO- An Open-Source LLM Reinforcement Learning System at Scale（DAPO）) recipe/[EOPD](/explore/10-Papers/04-强化学习与对齐/Entropy-Aware On-Policy Distillation of Language Models（EOPD）) 实验底座——B10-B14 全部 OPD 论文的公共基础设施；→ [Efficient Memory Management for Large Language Model Serving with PagedAttention](/explore/10-Papers/01-架构演进/Efficient Memory Management for Large Language Model Serving with PagedAttention（vLLM）)（同系）
+**直觉**：→ OPD 文档（verl 内置）/[DAPO](/ai-fa/explore/10-Papers/04-强化学习与对齐/DAPO- An Open-Source LLM Reinforcement Learning System at Scale（DAPO）) recipe/[EOPD](/ai-fa/explore/10-Papers/04-强化学习与对齐/Entropy-Aware On-Policy Distillation of Language Models（EOPD）) 实验底座——B10-B14 全部 OPD 论文的公共基础设施；→ [Efficient Memory Management for Large Language Model Serving with PagedAttention](/ai-fa/explore/10-Papers/01-架构演进/Efficient Memory Management for Large Language Model Serving with PagedAttention（vLLM）)（同系）
 
 ## 5. 与前作/矩阵关系
 
@@ -49,8 +49,8 @@ OPD 浪潮的工程使能者；用户若做 OPD 系实验即在此框架上
 
 undefined
 
-> 近邻同族：[Adam- A Method for Stochastic Optimization](/explore/10-Papers/01-架构演进/Adam- A Method for Stochastic Optimization（Adam）) · [Bag of Tricks for Efficient Text Classification](/explore/10-Papers/01-架构演进/Bag of Tricks for Efficient Text Classification（FastText）)
+> 近邻同族：[Adam- A Method for Stochastic Optimization](/ai-fa/explore/10-Papers/01-架构演进/Adam- A Method for Stochastic Optimization（Adam）) · [Bag of Tricks for Efficient Text Classification](/ai-fa/explore/10-Papers/01-架构演进/Bag of Tricks for Efficient Text Classification（FastText）)
 
-> 数学根基：[注意力机制](/explore/40-Concepts/注意力机制)
+> 数学根基：[注意力机制](/ai-fa/explore/40-Concepts/注意力机制)
 
-> 数学根基：[REINFORCE目标](/explore/30-Formulas/REINFORCE目标)
+> 数学根基：[REINFORCE目标](/ai-fa/explore/30-Formulas/REINFORCE目标)

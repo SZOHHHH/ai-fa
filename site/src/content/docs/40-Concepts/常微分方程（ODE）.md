@@ -22,17 +22,17 @@ $$\frac{dx}{dt} = v(x_t, t)$$
 ## 2. 数学形式
 
 - **欧拉离散化**：$$x_{t+\Delta t} \approx x_t + \Delta t \cdot v(x_t, t)$$——所有"采样步数"的本质
-- **存在唯一性**：$$v$$ 满足 [Lipschitz连续](/explore/40-Concepts/Lipschitz连续) 时，初值问题有唯一解
-- **与 SDE 的关系**：[随机微分方程](/explore/40-Concepts/随机微分方程（SDE）) 去掉噪声项 $$dw$$ 就是 ODE；概率流 ODE 与 Score-SDE 边缘分布相同（见 [概率流ODE](/explore/30-Formulas/概率流ODE)）
+- **存在唯一性**：$$v$$ 满足 [Lipschitz连续](/ai-fa/explore/40-Concepts/Lipschitz连续) 时，初值问题有唯一解
+- **与 SDE 的关系**：[随机微分方程](/ai-fa/explore/40-Concepts/随机微分方程（SDE）) 去掉噪声项 $$dw$$ 就是 ODE；概率流 ODE 与 Score-SDE 边缘分布相同（见 [概率流ODE](/ai-fa/explore/30-Formulas/概率流ODE)）
 - **常微分 ≠ 偏微分**：变量只有时间 $$t$$ 一个自变量的导数（PDE 还含空间偏导）
 
 ## 3. 为什么 AI 需要它
 
 | 出现场景 | 用法 |
 |---|---|
-| [流匹配](/explore/20-Algorithms/流匹配) | 训练速度场 $$v_\theta$$，采样 = 数值积分 ODE |
-| [概率流ODE](/explore/30-Formulas/概率流ODE) | 每个 SDE 都有同边缘分布的确定性 ODE 伴生 |
-| [矩形流](/explore/20-Algorithms/矩形流) | 目标是学"直"的 ODE 轨迹，一步到位 |
+| [流匹配](/ai-fa/explore/20-Algorithms/流匹配) | 训练速度场 $$v_\theta$$，采样 = 数值积分 ODE |
+| [概率流ODE](/ai-fa/explore/30-Formulas/概率流ODE) | 每个 SDE 都有同边缘分布的确定性 ODE 伴生 |
+| [矩形流](/ai-fa/explore/20-Algorithms/矩形流) | 目标是学"直"的 ODE 轨迹，一步到位 |
 | 神经 ODE | ResNet 的连续深度极限 |
 | Mamba/SSM（线 1） | 状态空间模型源于 ODE 的离散化 |
 
@@ -46,7 +46,7 @@ $$\frac{dx}{dt} = v(x_t, t)$$
 
 ## 5. 相关概念
 
-- [随机微分方程](/explore/40-Concepts/随机微分方程（SDE）)：加噪声版
-- [维纳过程](/explore/40-Concepts/维纳过程)：SDE 里的噪声源
-- [采样器](/explore/40-Concepts/采样器)：数值积分的具体方法
-- [Lipschitz连续](/explore/40-Concepts/Lipschitz连续)：解存在唯一的条件
+- [随机微分方程](/ai-fa/explore/40-Concepts/随机微分方程（SDE）)：加噪声版
+- [维纳过程](/ai-fa/explore/40-Concepts/维纳过程)：SDE 里的噪声源
+- [采样器](/ai-fa/explore/40-Concepts/采样器)：数值积分的具体方法
+- [Lipschitz连续](/ai-fa/explore/40-Concepts/Lipschitz连续)：解存在唯一的条件

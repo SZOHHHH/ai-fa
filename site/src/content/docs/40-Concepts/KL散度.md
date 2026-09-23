@@ -22,16 +22,16 @@ $$D_{\mathrm{KL}}(P \,\|\, Q) = \mathbb{E}_{x \sim P}\!\left[ \log \frac{P(x)}{Q
 - **不对称**：$$D_{\mathrm{KL}}(P\|Q) \neq D_{\mathrm{KL}}(Q\|P)$$
   - 前向 KL $$D_{\mathrm{KL}}(P\|Q)$$：质量覆盖（Q 被迫覆盖 P 的所有模式）→ "均值搜索"
   - 反向 KL $$D_{\mathrm{KL}}(Q\|P)$$：模式坍缩（Q 集中在 P 的单一众数）→ GAN 早期坍缩、VAE 的选择
-- **与交叉熵**：$$D_{\mathrm{KL}}(P\|Q) = H(P, Q) - H(P)$$，当 $$H(P)$$ 固定时最小化 KL = 最小化交叉熵（[交叉熵](/explore/30-Formulas/交叉熵)）= 分类损失
-- **与 ELBO**：见 [ELBO目标](/explore/30-Formulas/ELBO目标)—— $$\log p(x) = \text{ELBO} + D_{\mathrm{KL}}(q \| p_\theta)$$，所以最大化 ELBO = 最小化近似后验与真后验的差距
+- **与交叉熵**：$$D_{\mathrm{KL}}(P\|Q) = H(P, Q) - H(P)$$，当 $$H(P)$$ 固定时最小化 KL = 最小化交叉熵（[交叉熵](/ai-fa/explore/30-Formulas/交叉熵)）= 分类损失
+- **与 ELBO**：见 [ELBO目标](/ai-fa/explore/30-Formulas/ELBO目标)—— $$\log p(x) = \text{ELBO} + D_{\mathrm{KL}}(q \| p_\theta)$$，所以最大化 ELBO = 最小化近似后验与真后验的差距
 - **两个高斯的 KL 有闭式解**（扩散论文反复使用）
 
 ## 3. 为什么 AI 需要它
 
 | 出现场景 | 用法 |
 |---|---|
-| [ELBO目标](/explore/30-Formulas/ELBO目标) | ELBO 的正则项就是 KL |
-| [DDPM训练目标](/explore/30-Formulas/DDPM训练目标) | 变分界 = 逐步 KL 之和，化简后得 MSE |
+| [ELBO目标](/ai-fa/explore/30-Formulas/ELBO目标) | ELBO 的正则项就是 KL |
+| [DDPM训练目标](/ai-fa/explore/30-Formulas/DDPM训练目标) | 变分界 = 逐步 KL 之和，化简后得 MSE |
 | RLHF/PPO | KL 惩罚防止策略偏离参考策略 |
 | 蒸馏（线 3） | 学生模仿教师的软标签 = 最小化 KL |
 
@@ -43,6 +43,6 @@ $$D_{\mathrm{KL}}(P \,\|\, Q) = \mathbb{E}_{x \sim P}\!\left[ \log \frac{P(x)}{Q
 
 ## 5. 相关概念
 
-- [概率分布](/explore/40-Concepts/概率分布)：KL 比较两个分布
-- [期望](/explore/40-Concepts/期望)：KL 本质是对数似然比的期望
-- [Wasserstein距离](/explore/40-Concepts/Wasserstein距离)：另一种分布距离，对称且即使支撑不重叠也有限——WGAN 的根基
+- [概率分布](/ai-fa/explore/40-Concepts/概率分布)：KL 比较两个分布
+- [期望](/ai-fa/explore/40-Concepts/期望)：KL 本质是对数似然比的期望
+- [Wasserstein距离](/ai-fa/explore/40-Concepts/Wasserstein距离)：另一种分布距离，对称且即使支撑不重叠也有限——WGAN 的根基

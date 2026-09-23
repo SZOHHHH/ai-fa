@@ -28,12 +28,12 @@ pdf: 已下载（PDF/）
 
 1. 序列切成 N 块，每设备持一块 Q/KV
 2. KV 块按环逐跳传递；到达即与本地 Q 算部分注意力
-3. 在线 softmax 累积（[FlashAttention分块计算](/explore/30-Formulas/FlashAttention分块计算) 同款）
+3. 在线 softmax 累积（[FlashAttention分块计算](/ai-fa/explore/30-Formulas/FlashAttention分块计算) 同款）
 4. 通信隐藏在计算背后——近零开销
 
 ## 4. 核心公式
 
-- [注意力计算复杂度](/explore/30-Formulas/注意力计算复杂度) Ring 行；算法内核复用 [FlashAttention分块计算](/explore/30-Formulas/FlashAttention分块计算)
+- [注意力计算复杂度](/ai-fa/explore/30-Formulas/注意力计算复杂度) Ring 行；算法内核复用 [FlashAttention分块计算](/ai-fa/explore/30-Formulas/FlashAttention分块计算)
 
 ## 5. 与前作的关系
 
@@ -44,9 +44,10 @@ pdf: 已下载（PDF/）
 
 - 长上下文训练基础设施（Llama-3-128k、百万上下文研究）
 - Ring-FlashAttention3 等工程演进
+- 后继补记（260919）：[Block Parallelism](/ai-fa/explore/10-Papers/06-长上下文/Block Parallelism For Efficient Distributed Long-Context Diffusion Language Model Training)（CP 的 BDLM 专用继任：块所有权并行+上下文分片，corrupted KV 不再跨卡——序列维并行的通信维度重构）
 
 ## 7. 读前须知
 
-[FlashAttention分块计算](/explore/30-Formulas/FlashAttention分块计算)、[注意力计算复杂度](/explore/30-Formulas/注意力计算复杂度)、[softmax函数](/explore/40-Concepts/softmax函数)
+[FlashAttention分块计算](/ai-fa/explore/30-Formulas/FlashAttention分块计算)、[注意力计算复杂度](/ai-fa/explore/30-Formulas/注意力计算复杂度)、[softmax函数](/ai-fa/explore/40-Concepts/softmax函数)
 
-> 近邻同族：[Dodo- Dynamic Contextual Compression for Decoder-only LMs](/explore/10-Papers/06-长上下文/Dodo- Dynamic Contextual Compression for Decoder-only LMs（Dodo）) · [Efficient Streaming Language Models with Attention Sinks](/explore/10-Papers/06-长上下文/Efficient Streaming Language Models with Attention Sinks（StreamingLLM）)
+> 近邻同族：[Dodo- Dynamic Contextual Compression for Decoder-only LMs](/ai-fa/explore/10-Papers/06-长上下文/Dodo- Dynamic Contextual Compression for Decoder-only LMs（Dodo）) · [Efficient Streaming Language Models with Attention Sinks](/ai-fa/explore/10-Papers/06-长上下文/Efficient Streaming Language Models with Attention Sinks（StreamingLLM）)

@@ -34,14 +34,14 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- [条件流匹配损失](/explore/30-Formulas/条件流匹配损失)（一般化母体）
-- [ELBO目标](/explore/30-Formulas/ELBO目标)（连续时间版等价）
-- [Score-SDE前向过程](/explore/30-Formulas/Score-SDE前向过程) / [概率流ODE](/explore/30-Formulas/概率流ODE)（两端特例）
+- [条件流匹配损失](/ai-fa/explore/30-Formulas/条件流匹配损失)（一般化母体）
+- [ELBO目标](/ai-fa/explore/30-Formulas/ELBO目标)（连续时间版等价）
+- [Score-SDE前向过程](/ai-fa/explore/30-Formulas/Score-SDE前向过程) / [概率流ODE](/ai-fa/explore/30-Formulas/概率流ODE)（两端特例）
 
 ## 5. 与前作的关系
 
-- 泛化了 [Score-Based Generative Modeling through Stochastic Differential Equations](/explore/10-Papers/02-生成建模与扩散/Score-Based Generative Modeling through Stochastic Differential Equations（Score-SDE）)（随机端）与 [Flow Matching for Generative Modeling](/explore/10-Papers/02-生成建模与扩散/Flow Matching for Generative Modeling（流匹配）)（确定端）
-- 与 [Flow Straight and Fast - Learning to Generate and Transfer Data with Rectified Flow](/explore/10-Papers/02-生成建模与扩散/Flow Straight and Fast- Learning to Generate and Transfer Data with Rectified Flow（矩形流）) 同期互证
+- 泛化了 [Score-Based Generative Modeling through Stochastic Differential Equations](/ai-fa/explore/10-Papers/02-生成建模与扩散/Score-Based Generative Modeling through Stochastic Differential Equations（Score-SDE）)（随机端）与 [Flow Matching for Generative Modeling](/ai-fa/explore/10-Papers/02-生成建模与扩散/Flow Matching for Generative Modeling（流匹配）)（确定端）
+- 与 [Flow Straight and Fast - Learning to Generate and Transfer Data with Rectified Flow](/ai-fa/explore/10-Papers/02-生成建模与扩散/Flow Straight and Fast- Learning to Generate and Transfer Data with Rectified Flow（矩形流）) 同期互证
 - 数学前史：[Schrödinger bridge / optimal transport] 的计算统计版
 
 ## 6. 影响与后续
@@ -52,4 +52,4 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[常微分方程](/explore/40-Concepts/常微分方程（ODE）)、[随机微分方程](/explore/40-Concepts/随机微分方程（SDE）)、[ELBO](/explore/40-Concepts/ELBO)、[条件流匹配损失](/explore/30-Formulas/条件流匹配损失)（建议先读 FM 论文卡）
+[常微分方程](/ai-fa/explore/40-Concepts/常微分方程（ODE）)、[随机微分方程](/ai-fa/explore/40-Concepts/随机微分方程（SDE）)、[ELBO](/ai-fa/explore/40-Concepts/ELBO)、[条件流匹配损失](/ai-fa/explore/30-Formulas/条件流匹配损失)（建议先读 FM 论文卡）

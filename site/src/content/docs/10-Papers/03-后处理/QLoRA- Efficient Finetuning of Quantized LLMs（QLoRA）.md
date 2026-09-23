@@ -20,7 +20,7 @@ pdf: 已下载（PDF/）
 
 ## 2. 核心贡献
 
-- **NF4**：正态权重的分位数最优 4 位格式（[量化误差与异常值](/explore/30-Formulas/量化误差与异常值) NF4 行）
+- **NF4**：正态权重的分位数最优 4 位格式（[量化误差与异常值](/ai-fa/explore/30-Formulas/量化误差与异常值) NF4 行）
 - **双重量化**：量化常数本身再量化（省 ~0.37 bit/参数）
 - **分页优化器**：显存峰值平滑（NVIDIA 统一内存）
 - 证明"量化底座微调 ≈ 全精度微调"
@@ -34,11 +34,11 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- [LoRA分解](/explore/30-Formulas/LoRA分解) + [量化误差与异常值](/explore/30-Formulas/量化误差与异常值)（NF4）组合
+- [LoRA分解](/ai-fa/explore/30-Formulas/LoRA分解) + [量化误差与异常值](/ai-fa/explore/30-Formulas/量化误差与异常值)（NF4）组合
 
 ## 5. 与前作的关系
 
-- 组合了 [LoRA - Low-Rank Adaptation of Large Language Models](/explore/10-Papers/03-后处理/LoRA- Low-Rank Adaptation of Large Language Models（LoRA）) 与其作者自家 [LLM.int8() - 8-bit Matrix Multiplication for Transformers at Scale](/explore/10-Papers/03-后处理/LLM.int8()- 8-bit Matrix Multiplication for Transformers at Scale（LLM.int8）) 的异常值理论（NF4 双重量化处理）
+- 组合了 [LoRA - Low-Rank Adaptation of Large Language Models](/ai-fa/explore/10-Papers/03-后处理/LoRA- Low-Rank Adaptation of Large Language Models（LoRA）) 与其作者自家 [LLM.int8() - 8-bit Matrix Multiplication for Transformers at Scale](/ai-fa/explore/10-Papers/03-后处理/LLM.int8()- 8-bit Matrix Multiplication for Transformers at Scale（LLM.int8）) 的异常值理论（NF4 双重量化处理）
 
 ## 6. 影响与后续
 
@@ -48,6 +48,6 @@ pdf: 已下载（PDF/）
 
 ## 7. 读前须知
 
-[LoRA分解](/explore/30-Formulas/LoRA分解)、[量化](/explore/40-Concepts/量化)、[LLM.int8() - 8-bit Matrix Multiplication for Transformers at Scale](/explore/10-Papers/03-后处理/LLM.int8()- 8-bit Matrix Multiplication for Transformers at Scale（LLM.int8）)
+[LoRA分解](/ai-fa/explore/30-Formulas/LoRA分解)、[量化](/ai-fa/explore/40-Concepts/量化)、[LLM.int8() - 8-bit Matrix Multiplication for Transformers at Scale](/ai-fa/explore/10-Papers/03-后处理/LLM.int8()- 8-bit Matrix Multiplication for Transformers at Scale（LLM.int8）)
 
-> 近邻同族：[LoRA - Low-Rank Adaptation of Large Language Models](/explore/10-Papers/03-后处理/LoRA- Low-Rank Adaptation of Large Language Models（LoRA）) · [Parameter-Efficient Transfer Learning for NLP](/explore/10-Papers/03-后处理/Parameter-Efficient Transfer Learning for NLP（Adapter）)
+> 近邻同族：[LoRA - Low-Rank Adaptation of Large Language Models](/ai-fa/explore/10-Papers/03-后处理/LoRA- Low-Rank Adaptation of Large Language Models（LoRA）) · [Parameter-Efficient Transfer Learning for NLP](/ai-fa/explore/10-Papers/03-后处理/Parameter-Efficient Transfer Learning for NLP（Adapter）)

@@ -45,8 +45,8 @@ pdf: 已下载（PDF/）
 ## 6. 影响与后续
 
 - 神经网络科学（NN science）议程起点；子网发现（NAS/剪枝统一视角）
-- LLM 时代的 [A Simple and Effective Pruning Approach for Large Language Models](/explore/10-Papers/03-后处理/A Simple and Effective Pruning Approach for Large Language Models（SparseGPT）) 走另一路（训练后剪枝、不重训）
+- LLM 时代的 [A Simple and Effective Pruning Approach for Large Language Models](/ai-fa/explore/10-Papers/03-后处理/A Simple and Effective Pruning Approach for Large Language Models（SparseGPT）) 走另一路（训练后剪枝、不重训）
 
 ## 7. 读前须知
 
-[梯度](/explore/40-Concepts/梯度)（初始化敏感性）、[范数](/explore/40-Concepts/范数)（幅值剪枝）
+[梯度](/ai-fa/explore/40-Concepts/梯度)（初始化敏感性）、[范数](/ai-fa/explore/40-Concepts/范数)（幅值剪枝）

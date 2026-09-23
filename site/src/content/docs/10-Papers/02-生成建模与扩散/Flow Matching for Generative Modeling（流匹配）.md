@@ -34,21 +34,21 @@ pdf: 已下载（PDF/）
 
 ## 4. 核心公式
 
-- [条件流匹配损失](/explore/30-Formulas/条件流匹配损失) —— 本文灵魂
-- [概率流ODE](/explore/30-Formulas/概率流ODE) —— 采样载体
+- [条件流匹配损失](/ai-fa/explore/30-Formulas/条件流匹配损失) —— 本文灵魂
+- [概率流ODE](/ai-fa/explore/30-Formulas/概率流ODE) —— 采样载体
 
 ## 5. 与前作的关系
 
-- 对比 [Denoising Diffusion Probabilistic Models](/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Probabilistic Models（DDPM）)：同为回归，预测量从噪声换成速度（见 §2b 对偶表）
-- 与 [Flow Straight and Fast - Learning to Generate and Transfer Data with Rectified Flow](/explore/10-Papers/02-生成建模与扩散/Flow Straight and Fast- Learning to Generate and Transfer Data with Rectified Flow（矩形流）)、[Building Normalizing Flows with Stochastic Interpolants](/explore/10-Papers/02-生成建模与扩散/Building Normalizing Flows with Stochastic Interpolants（随机插值）) 同年独立提出、本质同构
-- 扩展了 [Score-Based Generative Modeling through Stochastic Differential Equations](/explore/10-Papers/02-生成建模与扩散/Score-Based Generative Modeling through Stochastic Differential Equations（Score-SDE）) 的 ODE 视角到"直接学速度场"
+- 对比 [Denoising Diffusion Probabilistic Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Denoising Diffusion Probabilistic Models（DDPM）)：同为回归，预测量从噪声换成速度（见 §2b 对偶表）
+- 与 [Flow Straight and Fast - Learning to Generate and Transfer Data with Rectified Flow](/ai-fa/explore/10-Papers/02-生成建模与扩散/Flow Straight and Fast- Learning to Generate and Transfer Data with Rectified Flow（矩形流）)、[Building Normalizing Flows with Stochastic Interpolants](/ai-fa/explore/10-Papers/02-生成建模与扩散/Building Normalizing Flows with Stochastic Interpolants（随机插值）) 同年独立提出、本质同构
+- 扩展了 [Score-Based Generative Modeling through Stochastic Differential Equations](/ai-fa/explore/10-Papers/02-生成建模与扩散/Score-Based Generative Modeling through Stochastic Differential Equations（Score-SDE）) 的 ODE 视角到"直接学速度场"
 
 ## 6. 影响与后续
 
 - SD3、Flux、Movie Gen 采用线性插值 FM 为骨干
-- 理论上连通 [Wasserstein距离](/explore/40-Concepts/Wasserstein距离) / 最优传输
+- 理论上连通 [Wasserstein距离](/ai-fa/explore/40-Concepts/Wasserstein距离) / 最优传输
 - 训练稳定性与少步采样优势使其成为 2024 后新默认
 
 ## 7. 读前须知
 
-[常微分方程](/explore/40-Concepts/常微分方程（ODE）)、[期望](/explore/40-Concepts/期望)、[流匹配](/explore/20-Algorithms/流匹配)、[概率流ODE](/explore/30-Formulas/概率流ODE)
+[常微分方程](/ai-fa/explore/40-Concepts/常微分方程（ODE）)、[期望](/ai-fa/explore/40-Concepts/期望)、[流匹配](/ai-fa/explore/20-Algorithms/流匹配)、[概率流ODE](/ai-fa/explore/30-Formulas/概率流ODE)

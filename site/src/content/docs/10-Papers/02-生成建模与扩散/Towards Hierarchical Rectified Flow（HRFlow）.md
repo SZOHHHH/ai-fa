@@ -37,16 +37,16 @@ $$
 
 ## 5. 与前作/矩阵关系
 
-🚩 占 FM×层级格；≡ [Diffusion Forcing- Next-token Prediction Meets Full-Sequence Diffusion](/explore/10-Papers/09-世界模型与JEPA/Diffusion Forcing- Next-token Prediction Meets Full-Sequence Diffusion（Diffusion Forcing）)（逐 token 噪声=另一种层级）
+🚩 占 FM×层级格；≡ [Diffusion Forcing- Next-token Prediction Meets Full-Sequence Diffusion](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Diffusion Forcing- Next-token Prediction Meets Full-Sequence Diffusion（Diffusion Forcing）)（逐 token 噪声=另一种层级）
 
 
 ## 6. 影响与占位意义
 
 RS 库 02-24 已有；时间粒度轴思想的 FM 实例。
 
-> 近邻同族：[Align Your Flow - Scaling Continuous-Time Flow Map Distillation](/explore/10-Papers/02-生成建模与扩散/Align Your Flow- Scaling Continuous-Time Flow Map Distillation（AYF）) · [Computational and Statistical Guarantees of the c-Rectified flow](/explore/10-Papers/02-生成建模与扩散/Computational and Statistical Guarantees of the c-Rectified flow（c-RF理论）)
-> 矩形流谱系环：[Flow Straight and Fast - Learning to Generate and Transfer Data with Rectified Flow](/explore/10-Papers/02-生成建模与扩散/Flow Straight and Fast- Learning to Generate and Transfer Data with Rectified Flow（矩形流）) ← 本卡 → [Variational Rectified Flow Matching](/explore/10-Papers/02-生成建模与扩散/Variational Rectified Flow Matching（VRFM）)
-> 数学根基（占位层）：[条件流匹配损失](/explore/30-Formulas/条件流匹配损失) · [概率流ODE](/explore/30-Formulas/概率流ODE) · [常微分方程（ODE）](/explore/40-Concepts/常微分方程（ODE）)
+> 近邻同族：[Align Your Flow - Scaling Continuous-Time Flow Map Distillation](/ai-fa/explore/10-Papers/02-生成建模与扩散/Align Your Flow- Scaling Continuous-Time Flow Map Distillation（AYF）) · [Computational and Statistical Guarantees of the c-Rectified flow](/ai-fa/explore/10-Papers/02-生成建模与扩散/Computational and Statistical Guarantees of the c-Rectified flow（c-RF理论）)
+> 矩形流谱系环：[Flow Straight and Fast - Learning to Generate and Transfer Data with Rectified Flow](/ai-fa/explore/10-Papers/02-生成建模与扩散/Flow Straight and Fast- Learning to Generate and Transfer Data with Rectified Flow（矩形流）) ← 本卡 → [Variational Rectified Flow Matching](/ai-fa/explore/10-Papers/02-生成建模与扩散/Variational Rectified Flow Matching（VRFM）)
+> 数学根基（占位层）：[条件流匹配损失](/ai-fa/explore/30-Formulas/条件流匹配损失) · [概率流ODE](/ai-fa/explore/30-Formulas/概率流ODE) · [常微分方程（ODE）](/ai-fa/explore/40-Concepts/常微分方程（ODE）)
 
 ## 7. 读前须知
 

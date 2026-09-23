@@ -12,7 +12,7 @@ tags: [concept]
 **直觉**：检查数学作业两种方式——只看最后答案对不对（**结果奖励 ORM**）vs 每一步都批改（**过程奖励 PRM**）。ORM 便宜但粗糙（蒙对也算对）；PRM 精确但贵（每步要人工标注）。
 
 **形式**：
-- **ORM**：$$r(y) = \mathbb{I}[\text{最终答案正确}]$$（或学习型打分）——[GRPO目标](/explore/30-Formulas/GRPO目标) 的 RLVR 默认
+- **ORM**：$$r(y) = \mathbb{I}[\text{最终答案正确}]$$（或学习型打分）——[GRPO目标](/ai-fa/explore/30-Formulas/GRPO目标) 的 RLVR 默认
 - **PRM**：$$r(z_t \mid x, z_{<t})$$——逐步骤打分（$$z_t$$ 为第 t 个推理步）
 - PRM 引导的搜索：$$p(\text{选路径}) \propto \prod_t \sigma(r(z_t))$$（best-of-N 加权）或束搜索剪枝
 
@@ -27,8 +27,8 @@ tags: [concept]
 
 | 出现场景 | 用法 |
 |---|---|
-| [Let's Verify Step by Step](/explore/10-Papers/07-推理模型/Let's Verify Step by Step（PRM）) | PRM 系统验证 |
-| [GRPO目标](/explore/30-Formulas/GRPO目标) | R1 的 ORM+规则路线对照 |
+| [Let's Verify Step by Step](/ai-fa/explore/10-Papers/07-推理模型/Let's Verify Step by Step（PRM）) | PRM 系统验证 |
+| [GRPO目标](/ai-fa/explore/30-Formulas/GRPO目标) | R1 的 ORM+规则路线对照 |
 | best-of-N 采样 | PRM 当 reranker |
 | o1（2024） | 推测采用 PRM 类密集信号（未公开） |
 
@@ -40,7 +40,7 @@ tags: [concept]
 
 ## 5. 相关概念
 
-- [贝尔曼方程](/explore/40-Concepts/贝尔曼方程)：$$V(z_t)$$ 即中间状态的价值函数——PRM 是"推理的 critic"
-- [思维链（CoT）](/explore/40-Concepts/思维链（CoT）)：作用对象
-- [The Imitation Game: When LLMs Learn to Reason Like Programs via Code-Centric Reasoning Data Synthesis](/explore/10-Papers/04-强化学习与对齐/The Imitation Game When LLMs Learn to Reason Like Programs via Code-Centric Reasoning Data Synthesis)（MIMIC 的 Code-Instrumented Reward：代码插桩的中间执行状态=免费过程监督，免外部 PRM 的另一路径，260916 挂）
-- [GRPO目标](/explore/30-Formulas/GRPO目标)：另一条路线
+- [贝尔曼方程](/ai-fa/explore/40-Concepts/贝尔曼方程)：$$V(z_t)$$ 即中间状态的价值函数——PRM 是"推理的 critic"
+- [思维链（CoT）](/ai-fa/explore/40-Concepts/思维链（CoT）)：作用对象
+- [The Imitation Game: When LLMs Learn to Reason Like Programs via Code-Centric Reasoning Data Synthesis](/ai-fa/explore/10-Papers/04-强化学习与对齐/The Imitation Game When LLMs Learn to Reason Like Programs via Code-Centric Reasoning Data Synthesis)（MIMIC 的 Code-Instrumented Reward：代码插桩的中间执行状态=免费过程监督，免外部 PRM 的另一路径，260916 挂）
+- [GRPO目标](/ai-fa/explore/30-Formulas/GRPO目标)：另一条路线

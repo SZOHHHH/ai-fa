@@ -113,10 +113,11 @@ for (const [p, slug] of slugOf) {
 // contentIndex：links 用站内有效 wikilink 目标（原始 slug 体系）；content=速览块（搜索+图谱面板摘要）
 const fmGet = (t, k) => { const m = t.match(new RegExp('^' + k + ':\\s*(.+)$', 'm')); return m ? m[1].trim() : ''; };
 for (const [slug, conv] of converted) {
+  const raw = fs.readFileSync(path.join(SRC, slug + '.md'), 'utf8');
   const links = [];
   const seen = new Set();
   let mm; WIKI.lastIndex = 0;
-  const segs = conv.split(/(```[\s\S]*?```)/g);
+  const segs = raw.split(/(```[\s\S]*?```)/g);
   for (let i = 0; i < segs.length; i += 2) {
     while ((mm = WIKI.exec(segs[i]))) {
       const t = mm[1].replace(/[\s\\]+$/, '').trim();
@@ -126,10 +127,11 @@ for (const [slug, conv] of converted) {
       if (r && r !== slug && !seen.has(r)) { seen.add(r); links.push(r); }
     }
   }
-  const raw = fs.readFileSync(path.join(SRC, slug + '.md'), 'utf8');
   const tagsRaw = fmGet(raw, 'tags');
   const tags = tagsRaw ? tagsRaw.replace(/[\[\]]/g, '').split(',').map(x => x.trim()).filter(Boolean) : [];
   const zhao = (conv.match(/>\s*\*\*中文速览\*\*[^\n]*\n([^\n]+)/) || [])[1] || '';
+  // links 必须从 raw 提取——260923 连线消失根因：conv 里 wikilink 已被转成 markdown 链接，
+  // 扫 conv 永远空 → 图谱/搜索入度全瞎（Quartz 时代数据是 Quartz 生成的所以旧版有边）
   index[slug] = {
     slug,
     filePath: slug + '.md',

@@ -58,6 +58,7 @@ tags: [section]
 - [Lipschitz连续](/ai-fa/explore/40-Concepts/Lipschitz连续)
 - [NFE](/ai-fa/explore/40-Concepts/NFE（函数求值次数）)
 - [on-policy](/ai-fa/explore/40-Concepts/on-policy与off-policy)
+- [ReLU](/ai-fa/explore/40-Concepts/ReLU)
 - [log导数技巧](/ai-fa/explore/40-Concepts/RL中的log导数技巧)
 - [Score函数](/ai-fa/explore/40-Concepts/Score函数)
 - [sigmoid函数](/ai-fa/explore/40-Concepts/sigmoid函数)

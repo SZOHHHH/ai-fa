@@ -19,7 +19,7 @@ $$
 
 概率门控线性单元
 
-**直觉**：ReLU 的软开关版（族谱定位见 [激活函数族](/ai-fa/explore/40-Concepts/激活函数族)：sigmoid→ReLU→Swish→GELU 的平滑化主线）
+**直觉**：[ReLU](/ai-fa/explore/40-Concepts/ReLU) 的软开关版（族谱定位见 [激活函数族](/ai-fa/explore/40-Concepts/激活函数族)：sigmoid→ReLU→Swish→GELU 的平滑化主线）
 
 ## 本命论文
 

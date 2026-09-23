@@ -1,0 +1,61 @@
+---
+type: algo
+aliases: [LSTM, 长短期记忆网络, Long Short-Term Memory, 门控RNN]
+line: 架构演进
+tags: [algo]
+---
+
+# LSTM（长短期记忆网络）
+
+## 1. 定义
+
+**非数学语言**：给 RNN 装一条**传送带**加三道**阀门**。传送带（细胞状态 $$c_t$$）沿时间直通，信息在上面原样流淌；三道门各自学会开多大——**遗忘门**（清掉传送带上没用的旧货）、**输入门**（放多少新货上车）、**输出门**（此刻对外展示多少）。"学会忘记"是它的全部哲学。
+
+**数学语言**：三道 [sigmoid](/ai-fa/explore/40-Concepts/sigmoid函数) 门 + 一条**加法更新**的状态线：
+$$f_t = \sigma(W_f[h_{t-1},x_t]+b_f), \quad i_t = \sigma(W_i[h_{t-1},x_t]+b_i), \quad \tilde{c}_t = \tanh(W_c[h_{t-1},x_t]+b_c)$$
+$$c_t = f_t \odot c_{t-1} + i_t \odot \tilde{c}_t, \qquad h_t = o_t \odot \tanh(c_t)$$
+
+**为什么这能治 RNN 的死刑**（[RNN](/ai-fa/explore/20-Algorithms/RNN) §3 的梯度连乘）：$$c_t = f_t \odot c_{t-1} + (\text{新货})$$ 是**加法**——反传时 $$\partial c_t/\partial c_{t-1} = f_t$$ 是**逐元素乘**而非矩阵连乘，且 $$f_t$$ 可学到接近 1 → 梯度沿传送带**近乎无衰减直通**。这正是 [残差连接](/ai-fa/explore/30-Formulas/残差连接)（2015）"恒等直通"思想在时间维的祖先（LSTM 早了 18 年）。
+
+## 2. 本命论文群
+
+| 论文 | 引入/发展了什么 | 年份 |
+|---|---|---|
+| Hochreiter & Schmidhuber（未建卡） | 原始 LSTM：细胞状态+输入/输出门 | 1997 |
+| Gers & Schmidhuber（未建卡） | 补遗忘门——现代形态定型 | 2000 |
+| [World Models](/ai-fa/explore/10-Papers/09-世界模型与JEPA/World Models（世界模型）) | MDN-RNN 用 LSTM 当世界模型动力学引擎 | 2018 |
+| [Learning Latent Dynamics for Planning from Pixels](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Learning Latent Dynamics for Planning from Pixels（PlaNet）) | RSSM 换 GRU（LSTM 简化版）建隐空间动力学 | 2019 |
+| [Attention Is All You Need](/ai-fa/explore/10-Papers/01-架构演进/Attention Is All You Need（Transformer）) | 掘墓人：注意力取代门控循环成为序列主干 | 2017 |
+
+## 3. 核心公式（逐门直觉）
+
+- **遗忘门 $$f_t$$**：$$\sigma$$ 输出 0~1 的"遗忘比例尺"——0=全清（这句读完了，上个句子的语法状态该扔了）、1=全留。**它就是后来 Mamba 选择门（[选择机制](/ai-fa/explore/30-Formulas/选择机制)）的直系祖先**：$$\odot$$ 门控状态线，一脉相承
+- **输入门 $$i_t$$ + 候选 $$\tilde c_t$$**：候选用 [tanh](/ai-fa/explore/40-Concepts/激活函数族)（零中心、有正有负的新内容），门用 sigmoid（0~1 的量）——**"写什么"与"写多少"分工**，见激活函数族卡的选型讨论
+- **输出门 $$o_t$$**：传送带是长期账本，$$h_t$$ 只是"本期摘要"——账本与对外发言分离，长期记忆不被单步任务污染
+- **初始化冷知识**：遗忘门偏置 $$b_f$$ 初始化为 1（而非 0）——开局"先都记住"，训练才稳（Gers 论文的实践贡献）
+
+## 4. 数学概念分解
+
+[sigmoid函数](/ai-fa/explore/40-Concepts/sigmoid函数)（三门的标准件）、[激活函数族](/ai-fa/explore/40-Concepts/激活函数族)（tanh 做候选/门控分工）、[梯度](/ai-fa/explore/40-Concepts/梯度)（加法更新=梯度高速路的机制）、[RNN](/ai-fa/explore/20-Algorithms/RNN)（被治理的本体）、[反向传播](/ai-fa/explore/20-Algorithms/反向传播)（BPTT 语境）
+
+## 5. 变体与演进
+
+| 变体 | 相比本算法改了什么 | 代表 |
+|---|---|---|
+| GRU | 三门并两门（更新/复位）、状态合一——参数少 1/4，效果大体持平 | PlaNet 的 RSSM 用它 |
+| Peephole | 门也看细胞状态 $$c$$ | 工程影响有限 |
+| 双层堆叠/双向 | 深度与上下文双向 | 语音时代标配 |
+| 注意力外挂 | 先给 LSTM 当辅助，后反客为主 | [注意力机制](/ai-fa/explore/40-Concepts/注意力机制) 前史 |
+| SSM 选择门 | 门控思想+并行训练两全 | [SSM序列架构（Mamba系）](/ai-fa/explore/20-Algorithms/SSM序列架构（Mamba系）) |
+
+## 6. 对比表（记忆机制三家）
+
+| | LSTM | Transformer | SSM (Mamba) |
+|---|---|---|---|
+| 长期记忆载体 | 细胞状态传送带（有损） | KV cache（精确检索） | 压缩隐状态（选择性有损） |
+| 记忆写入 | 门控加法 | 注意力加权求和 | 选择门控离散化写入 |
+| 有效跨度 | 数百步 | 上下文窗口内无限精确 | 数千~数万步 |
+| 训练并行 | ❌ 串行 | ✅ | ✅（扫描形式） |
+| 历史地位 | 1997-2017 序列之王 | 门控思想的"空间化" | 门控思想的"并行化" |
+
+**一句话总结**：LSTM 的贡献不是"记忆更长的网络"，而是**"梯度能活着穿过时间"的结构方案**——一条加法直通的状态线，让"控制信息流"变成可学习的能力；残差连接与 Mamba 选择门，都是这条传送带在不同维度的转世。

@@ -16,7 +16,9 @@ const CFG = { repelForce: 1.1, centerForce: 1, linkDistance: 30, fontSize: 0.5, 
 const INK = '#1a1a19', MUTED = '#898781', HAIR = '#e1e0d9', BLUE = '#104281', TEAL = '#1baf7a';
 const FONT = '"Noto Serif SC","Source Han Serif SC","Songti SC","SimSun",serif';
 
-export default function QuartzGraph({ onStats }) {
+// mode：'all'=全库 | 'papers'=论文谱系网络（只留 10-Papers，论文↔论文边）
+//       'math'=数学实体网络（20/30/40/60，纯数学连接——算法↔论文的"本命论文群"边两边都不出现，260923 用户令分图）
+export default function QuartzGraph({ onStats, mode = 'all' }) {
   const ref = useRef(null);
   const [err, setErr] = useState(null);
 
@@ -32,13 +34,18 @@ export default function QuartzGraph({ onStats }) {
         if (cancelled) return;
 
         // ── 数据（原始 slug；站内有效边；无 tags 虚拟节点）──
-        const ids = new Set(Object.keys(index));
+        const isPaper = (id) => id.startsWith('10-Papers/');
+        const inView = mode === 'papers' ? (id) => isPaper(id)
+                     : mode === 'math' ? (id) => !isPaper(id) && !id.startsWith('00-Meta/')
+                     : () => true;
+        const ids = new Set(Object.keys(index).filter(inView));
         const nodes = [...ids].map(id => ({ id, text: index[id].title || id.split('/').pop(),
           href: (index[id].filePath || id + '.md').replace(/\.md$/, '') }));   // 跳转用原始路径（Quartz slug 与 Astro 路由不同体系）
         const byId = new Map(nodes.map(n => [n.id, n]));
         const links = [];
         const degree = new Map();
         for (const [src, e] of Object.entries(index)) {
+          if (!ids.has(src)) continue;
           for (const t of e.links || []) {
             if (t !== src && ids.has(t)) { links.push({ source: src, target: t }); degree.set(t, (degree.get(t) || 0) + 1); }
           }
@@ -219,7 +226,7 @@ export default function QuartzGraph({ onStats }) {
     })();
 
     return () => { cancelled = true; if (cleanup) cleanup(); };
-  }, []);
+  }, [mode]);
 
   if (err) return <div className="qg-boot">图谱加载失败：{err}</div>;
   return <div ref={ref} className="qg-canvas" />;

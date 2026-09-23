@@ -56,3 +56,5 @@ tags: [algo]
 | 记忆方式 | 精确检索（位置寻址） | 隐式（衰减） | 压缩摘要 + 选择性 |
 
 **一句话总结**：Transformer 用"平方复杂度"买了"精确的全局检索"——过去八年的一切架构研究，都在问"这个价格能不能便宜点"。
+
+**对比对象实体卡**：[RNN](/ai-fa/explore/20-Algorithms/RNN)（被取代的串行范式）、[LSTM](/ai-fa/explore/20-Algorithms/LSTM)（门控记忆前朝）、[SSM序列架构（Mamba系）](/ai-fa/explore/20-Algorithms/SSM序列架构（Mamba系）)（循环思想的并行化复兴）

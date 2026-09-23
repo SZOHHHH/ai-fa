@@ -26,7 +26,7 @@
   border: 1px solid var(--hairline); background: var(--panel); color: var(--ink); cursor: pointer;
   display: grid; place-items: center; box-shadow: 0 3px 14px rgba(26,26,25,.13); }
 .lg-fab:hover { color: var(--ink-blue); border-color: var(--ink-blue); }
-.lg-panel { position: fixed; right: 26px; bottom: 96px; z-index: 60; width: 480px; max-width: calc(100vw - 40px);
+.lg-panel { position: fixed; right: 26px; bottom: 96px; z-index: 60; width: 576px; max-width: calc(100vw - 40px);
   background: var(--paper); border: 1px solid var(--hairline); border-radius: 12px;
   box-shadow: 0 10px 34px rgba(26,26,25,.16); overflow: hidden; }
 .lg-head { display: flex; align-items: center; gap: 10px; padding: 12px 16px; border-bottom: 1px solid var(--hairline); }
@@ -35,7 +35,7 @@
 .lg-close { margin-left: auto; flex: none; border: none; background: none; font-size: 26px; line-height: 1;
   color: var(--muted); cursor: pointer; padding: 0 4px; }
 .lg-close:hover { color: var(--ink); }
-.lg-body { height: 340px; }
+.lg-body { height: 408px; }
 .lg-canvas-wrap { width: 100%; height: 100%; }
 .lg-err { display: grid; place-items: center; height: 100%; font-family: var(--font-fs); font-size: 20px; color: var(--muted); }
 .lg-foot { padding: 8px 16px; border-top: 1px solid var(--hairline); font-family: var(--font-fs); font-size: 20px; color: var(--muted); }

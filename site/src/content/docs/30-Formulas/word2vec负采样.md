@@ -26,3 +26,4 @@ skip-gram 负采样损失
 [Efficient Estimation of Word Representations in Vector Space](/ai-fa/explore/10-Papers/01-架构演进/Efficient Estimation of Word Representations in Vector Space（word2vec）)
 
 > 待办：精读时补"表示对照表"（不同论文的符号差异换算）
+- [嵌入向量（Embedding）](/ai-fa/explore/40-Concepts/嵌入向量（Embedding）)：负采样在训练的这张表=嵌入空间本体

@@ -11,6 +11,7 @@ tags: [section]
 
 - [变分自编码器](/ai-fa/explore/20-Algorithms/变分自编码器)
 - [PEFT](/ai-fa/explore/20-Algorithms/参数高效微调（PEFT）)
+- [多层感知机](/ai-fa/explore/20-Algorithms/多层感知机（MLP）)
 - [反向传播](/ai-fa/explore/20-Algorithms/反向传播)
 - [混合专家](/ai-fa/explore/20-Algorithms/混合专家（MoE）)
 - [矩形流](/ai-fa/explore/20-Algorithms/矩形流)
@@ -19,6 +20,7 @@ tags: [section]
 - [潜在扩散模型](/ai-fa/explore/20-Algorithms/潜在扩散模型（LDM）)
 - [生成对抗网络](/ai-fa/explore/20-Algorithms/生成对抗网络)
 - [世界模型](/ai-fa/explore/20-Algorithms/世界模型)
+- [梯度下降](/ai-fa/explore/20-Algorithms/梯度下降与优化器谱系)
 - [一致性模型](/ai-fa/explore/20-Algorithms/一致性模型)
 - [CNN](/ai-fa/explore/20-Algorithms/CNN)
 - [DPO系](/ai-fa/explore/20-Algorithms/DPO系（离线偏好优化）)

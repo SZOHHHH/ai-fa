@@ -44,3 +44,4 @@ tags: [concept]
 - [sigmoid函数](/ai-fa/explore/40-Concepts/sigmoid函数)：二分类时 one-hot(2 维) 与"0/1 单标量 + sigmoid"等价
 - [word2vec负采样](/ai-fa/explore/30-Formulas/word2vec负采样)：从词表均匀采负例——one-hot 世界的 embedding 化起点
 - [VQ-VAE目标](/ai-fa/explore/30-Formulas/VQ-VAE目标)：镜像问题——把稠密连续编码拉向离散码本（最近邻≈"软 one-hot 化"隐空间）
+- [嵌入向量（Embedding）](/ai-fa/explore/40-Concepts/嵌入向量（Embedding）)：one-hot×E=查表——被替代者的进化终点

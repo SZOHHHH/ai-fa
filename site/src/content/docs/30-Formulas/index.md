@@ -18,6 +18,7 @@ tags: [section]
 - [交叉熵](/ai-fa/explore/30-Formulas/交叉熵)
 - [矩阵指数时间衰减](/ai-fa/explore/30-Formulas/矩阵指数时间衰减)
 - [均方根归一化](/ai-fa/explore/30-Formulas/均方根归一化)
+- [均方误差](/ai-fa/explore/30-Formulas/均方误差（MSE）)
 - [扩散条件去噪](/ai-fa/explore/30-Formulas/扩散条件去噪)
 - [量化误差](/ai-fa/explore/30-Formulas/量化误差与异常值)
 - [批归一化](/ai-fa/explore/30-Formulas/批归一化)

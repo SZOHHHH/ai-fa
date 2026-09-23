@@ -121,10 +121,11 @@ function GraphCanvas({ view, index }) {
       return { e, l };
     });
 
-    // ── 节点：拖拽（固定 fx/fy）+ 松手短按无位移=点击直达 ──
+    // ── 节点：按住 ≥1s 才进入拖拽（260923 用户令：点一下就动太灵敏）；短按松手=点击直达 ──
     const fsPx = view.mode === 'paper' ? 4 : 8;          // 论文窗名称全显（4px），数学窗截断（8px）
     const labelOf = (id) => index?.[id]?.title || id.split('/').pop();
-    let t0 = 0, p0 = null;
+    const HOLD_MS = 1000;
+    let t0 = 0, dragging = false;
     for (const n of nodes) {
       const g = mk('g', { style: 'cursor:pointer' });
       g.appendChild(mk('circle', { r: n.center ? 7 : 4.2, fill: n.center ? '#104281' : colorOf(n.id) }));
@@ -137,18 +138,24 @@ function GraphCanvas({ view, index }) {
       g.addEventListener('pointerdown', (ev) => ev.stopPropagation());
       select(g).datum(n).call(
         drag()
-          .on('start', (ev, d) => {
-            if (!ev.active) sim.alphaTarget(0.3).restart();
-            d.fx = d.x; d.fy = d.y; t0 = Date.now(); p0 = [ev.x, ev.y];
+          .on('start', (ev) => { t0 = Date.now(); dragging = false; })
+          .on('drag', (ev, d) => {
+            if (Date.now() - t0 < HOLD_MS) return;               // 按住不足 1s：忽略移动（节点留在力导向位置）
+            if (!dragging) {                                      // 满 1s：此刻接管节点
+              dragging = true;
+              if (!ev.active) sim.alphaTarget(0.3).restart();
+              d.fx = d.x; d.fy = d.y;
+            }
+            d.fx = zoomT.invertX(ev.x); d.fy = zoomT.invertY(ev.y);
           })
-          .on('drag', (ev, d) => { d.fx = zoomT.invertX(ev.x); d.fy = zoomT.invertY(ev.y); })
           .on('end', (ev, d) => {
-            if (!ev.active) sim.alphaTarget(0);
-            d.fx = null; d.fy = null;
-            const moved = p0 && Math.hypot(ev.x - p0[0], ev.y - p0[1]) > 5;
-            if (Date.now() - t0 < 350 && !moved && !n.center) {
+            if (dragging) {                                       // 拖过：释放回仿真
+              if (!ev.active) sim.alphaTarget(0);
+              d.fx = null; d.fy = null;
+            } else if (!n.center) {                               // 未进入拖拽=点击 → 直达
               window.location.href = `${import.meta.env.BASE_URL}explore/` + n.id;
             }
+            dragging = false;
           })
       );
     }

@@ -26,6 +26,7 @@ tags: [section]
 - [DPO系](/ai-fa/explore/20-Algorithms/DPO系（离线偏好优化）)
 - [GRPO](/ai-fa/explore/20-Algorithms/GRPO与RLVR)
 - [LSTM](/ai-fa/explore/20-Algorithms/LSTM)
+- [MDN-RNN](/ai-fa/explore/20-Algorithms/MDN-RNN)
 - [RLAIF](/ai-fa/explore/20-Algorithms/RLAIF与ConstitutionalAI)
 - [RLHF](/ai-fa/explore/20-Algorithms/RLHF)
 - [RNN](/ai-fa/explore/20-Algorithms/RNN)

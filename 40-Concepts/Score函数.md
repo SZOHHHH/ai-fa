@@ -23,6 +23,22 @@ $$s(x) = \nabla_x \log p(x)$$
 - **denoising score matching**：$\mathbb{E}_{x_0, \tilde{x}}\left[ \| s_\theta(\tilde x) - \nabla_{\tilde{x}} \log q(\tilde x \mid x_0) \|_2^2 \right]$——不用真 score（不可得）而用加噪条件分布的 score 当目标，等价化简后 = 预测所加噪声（DDPM 训练目标的孪生兄弟）
 - **与噪声预测的关系**：$s_\theta(x_t, t) \approx -\epsilon_\theta(x_t, t) / \sigma_t$——学 score 就是学噪声（差一个已知的尺度因子）
 
+## 教程：手算一个高斯的 score（并看懂朗之万怎么走）
+
+**第 1 步：一维高斯的 score。** $p(x)=\mathcal{N}(\mu, 1)$：$\log p(x) = -\frac{(x-\mu)^2}{2} + \text{常数}$；求导：
+$$s(x) = \nabla_x \log p(x) = -(x - \mu) = \mu - x$$
+**读法**：在 $x$ 处，score 是一个**指向均值 $\mu$ 的向量**，离得越远拉力越大——"回家弹簧"，劲度系数 1。
+
+**第 2 步：数值代入。** $\mu=3$：在 $x=5$ 处 $s=-2$（往左拉）；$x=0$ 处 $s=+3$（往右拉）；$x=3$ 处 $s=0$（山顶，静止）。**分布的峰=score 的零点**；多峰分布则有多个零点+分水岭（这就是"score 场的拓扑=分布的形状"）。
+
+**第 3 步：归一化常数 Z 消失的现场。** $p(x) = \tilde p(x)/Z$：$\log p = \log\tilde p - \log Z$，对 $x$ 求导 $\Rightarrow \nabla\log p = \nabla\log\tilde p$——**$Z$ 与 $x$ 无关，差个常数就被导数抹掉**（对比：直接算密度必须知道 Z=高维积分，不可行——score 绕开它是 score-based 生成的立身之本）。
+
+**第 4 步：朗之万走两步（手算）。** 从 $x_0=5$ 出发，步长 $\eta=1$：
+- 第一步：$x_1 = 5 + \frac{1}{2}(1)(3-5) + \sqrt{1}\,\epsilon_0$。设 $\epsilon_0=+0.5$：$x_1 = 5-1+0.5 = 4.5$
+- 第二步：$s(4.5) = -1.5$；设 $\epsilon_1=-0.3$：$x_2 = 4.5 - 0.75 - 0.3 = 3.45$——**确定性漂移拉向峰、随机项防止停在单点**；步数多了以后 $x$ 的分布收敛到 $p$ 本身（$\eta\to0$ 的理论保证）。生成=把纯噪声点灌进这个场里"顺坡滑向数据流形"。
+
+**第 5 步：score 与 ε 预测的关系（DDPM 的另一张脸）。** $q(x_t\mid x_0)=\mathcal{N}(\sqrt{\bar\alpha_t}x_0,\ 1-\bar\alpha_t)$，按第 1 步同法求 score：$\nabla_{x_t}\log q = -\frac{x_t-\sqrt{\bar\alpha_t}x_0}{1-\bar\alpha_t} = -\frac{\epsilon}{\sqrt{1-\bar\alpha_t}}\cdot\frac{1}{\sqrt{1-\bar\alpha_t}} = -\frac{\epsilon}{1-\bar\alpha_t}$——**预测 score ⇔ 预测所加噪声**（差尺度因子）——同一枚硬币，DDPM 训练目标（[[30-Formulas/DDPM训练目标]]）与 denoising score matching 在这里合流。
+
 ## 3. 为什么 AI 需要它
 
 | 出现场景 | 用法 |
@@ -38,7 +54,14 @@ $$s(x) = \nabla_x \log p(x)$$
 - **误区**：$p$ 未知时"∇log p 未知所以学不了"——denoising score matching 恰好绕开
 - **误区**：score 学得准 ≠ 密度能算出来，只保证采样方向正确
 
-## 5. 相关概念
+## 5. 自测
+
+1. $\mathcal{N}(\mu, \sigma^2)$ 的 score？（$(\mu-x)/\sigma^2$——劲度 $1/\sigma^2$：越尖的峰拉力越猛）
+2. score 的零点是什么？（密度峰/谷——多峰分布多个零点，朗之万会陷局部峰，这正是加噪退火要解决的）
+3. 为什么学 score 不用管配分函数？（$\nabla\log Z$ 对 $x$ 为零——差常数被导数消去）
+4. $s_\theta(x_t,t)$ 与 $\epsilon_\theta(x_t,t)$ 的换算？（$s=-\epsilon/\sigma_t$ 量级——同一目标的两种参数化）
+
+## 6. 相关概念
 
 - [[40-Concepts/概率分布]]：score 是分布的属性
 - [[40-Concepts/梯度]]：score 是梯度的特例用法

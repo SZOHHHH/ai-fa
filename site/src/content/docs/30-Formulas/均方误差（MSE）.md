@@ -52,6 +52,7 @@ $$\mathcal{L} = \frac{(0.5)^2 + (-1.0)^2}{2} = \frac{0.25+1.0}{2} = 0.625$$
 ## 6. 相关概念
 
 - [最大似然估计（MLE）](/ai-fa/explore/40-Concepts/最大似然估计（MLE）)：理论出身（高斯假设）
+- [MDN-RNN](/ai-fa/explore/20-Algorithms/MDN-RNN)：MSE 的多模态死穴（最优解=不存在的条件均值）与分布输出头的对照
 - [高斯分布](/ai-fa/explore/40-Concepts/高斯分布)：噪声模型本体
 - [交叉熵](/ai-fa/explore/30-Formulas/交叉熵)：分类侧的对手损失
 - [蒸馏损失](/ai-fa/explore/30-Formulas/蒸馏损失)：知识蒸馏里的 MSE 用法

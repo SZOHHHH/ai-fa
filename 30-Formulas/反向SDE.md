@@ -27,6 +27,20 @@ $$dx = \left[ f(x, t) - g^2(t)\, \nabla_x \log p_t(x) \right] dt + g(t)\, d\bar 
 | 离散祖先采样 | $x_{t-1} = \mu_\theta(x_t,t) + \sigma_t z$ | DDPM | 一阶离散化 |
 | predictor-corrector | ODE/SDE 预测 + 朗之万校正 | Score-SDE 采样器 | 效果最好的一族 |
 
+## 教程：反向一步全程手算（ε-代入还原后验均值）
+
+**第 0 步：接续玩具宇宙。** [[30-Formulas/DDPM训练目标]] 的考题 $x_2 = 2.056$；训练成材的网络 $\epsilon_\theta = 0.5$ 恰好猜中真值。现在反向走一步。
+
+**第 1 步：ε-代入均值公式。** $\mu_\theta = \frac{1}{\sqrt{\alpha_2}}\left(x_2 - \frac{\beta_2}{\sqrt{1-\bar\alpha_2}}\epsilon_\theta\right) = \frac{1}{0.990}\left(2.056 - \frac{0.02}{0.173}\times0.5\right) = \frac{2.056 - 0.058}{0.990} = \frac{1.998}{0.990} = 2.019$。
+
+**第 2 步：与 x₀-加权后验对账。** [[30-Formulas/DDPM后验分布]] 的系数（$0.668/0.332$）代入同一宇宙：$\tilde\mu_2 = 0.668\times2 + 0.332\times2.056 = 2.019$——**两法分毫不差**（尾差纯属舍入）。ε-代入不是新发明：把 $\hat{x}_0 = (x_t-\sqrt{1-\bar\alpha_t}\,\epsilon_\theta)/\sqrt{\bar\alpha_t}$ 塞进 $\tilde\mu_t$ 代数展开的结果。先反解干净图再折中，与直接加权折中，同一条路。
+
+**第 3 步：加噪声出样本。** $x_1 = \mu_\theta + \sqrt{\tilde\beta_2}\,z = 2.019 + 0.082\times0.5 = 2.060$（抽 $z=0.5$）——反向链走出一步，重复直到 $x_0$。
+
+**第 4 步：score 项在 SDE 语言里是谁。** 对照标准式 $dx = [f - g^2\nabla\log p_t]dt + g\,d\bar w$：均值里的修正项 $-\frac{\beta_t}{\sqrt{1-\bar\alpha_t}}\epsilon_\theta$ 正是 $-g^2 s_\theta$ 的离散化（换算 $s = -\epsilon/\sigma$，[[30-Formulas/DSM目标]] 第 4 步）——**"往数据密集处拽"的那只手**。没有它，反向 = 纯随机游走，永远回不了数据流形。
+
+**第 5 步：末项噪声的去留。** 留着（SDE 采样）：多样性强、误差自我修正；去掉（→ [[30-Formulas/概率流ODE]]）：确定性、可逆、大步长友好——同一模型两种采样法、边缘分布相同，训练完随取随换。
+
 ## 3. 直觉解释
 
 - 正向把数据"抹成"噪声；反向把噪声"雕回"数据——但反向的方程**不能白嫖**：需要知道每点的 score
@@ -49,7 +63,14 @@ $$dx = \left[ f(x, t) - g^2(t)\, \nabla_x \log p_t(x) \right] dt + g(t)\, d\bar 
 - [[40-Concepts/维纳过程]]：反向噪声
 - [[40-Concepts/采样器]]：离散化策略
 
-## 6. 与其他公式的关系
+## 6. 自测
+
+1. 反向 SDE 里唯一需要学的量？（score $\nabla_x\log p_t$——$f, g$ 由前向定死，全部知识浓缩在 score 里）
+2. 教程里两个 2.019 各怎么来的、为何相等？（ε-代入公式 / x₀-加权后验——$\hat{x}_0$ 代入 $\tilde\mu$ 的代数恒等）
+3. score 项去掉后反向过程变成什么？（纯扩散随机游走——推离数据、永不生成；它是"拽回流形"的方向盘）
+4. 反向 SDE 与概率流 ODE 怎么选？（要多样性与纠错→SDE；要确定性/可逆/少步→ODE——边缘同分布，免重训互换）
+
+## 7. 与其他公式的关系
 
 - → **由** [[30-Formulas/Score-SDE前向过程]] **推导**
 - ≡ **等价变形**（去噪声版）：[[30-Formulas/概率流ODE]]

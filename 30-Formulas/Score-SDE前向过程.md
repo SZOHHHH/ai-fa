@@ -37,6 +37,18 @@ $$dx = \left[ f(x,t) - \frac{1}{2} g^2(t)\, \nabla_x \log p_t(x) \right] dt$$
 | 概率流 ODE | 漂移减半、无噪声 | 同上 | 确定性采样、精确似然 |
 | EDM 重参数化 | $\sigma$-空间统一 + 预处理 $D_\theta$ | Karras 2022 | 把 VP/VE 两个参数空间合并成一个 $\sigma$ 轴 |
 
+## 教程：一步欧拉验证"DDPM = VP-SDE 离散"
+
+**第 1 步：VP-SDE 一步欧拉（Euler-Maruyama）。** $dx = -\frac12\beta x\,dt + \sqrt{\beta}\,dw$；取 $\beta = 0.02$，$x_0 = 2$，$dt = 1$，抽 $w = 0.4$：$x_1 = 2 - 0.5\times0.02\times2 + \sqrt{0.02}\times0.4 = 2 - 0.02 + 0.0566 = 2.037$。
+
+**第 2 步：DDPM 离散步同噪声对照。** $x_1 = \sqrt{0.98}\times2 + \sqrt{0.02}\times0.4 = 1.980 + 0.0566 = 2.036$——**小数点后两位一致**（差 $10^{-4}$ 量级）。
+
+**第 3 步：为什么这么近。** 泰勒展开：$\sqrt{1-\beta} = 1 - \beta/2 - \beta^2/8 - \cdots \approx 1 - \beta/2$（$\beta = 0.02$：$\sqrt{0.98} = 0.98995$ vs $1-0.01 = 0.99$，差 $5\times10^{-5}$）——**DDPM 的缩放系数就是 VP-SDE 漂移项的一阶泰勒**。离散模型与连续 SDE 不是两家人，是同一数学的两种采样密度。
+
+**第 4 步：VE 对照（另一极）。** $dx = \sqrt{d\sigma^2/dt}\,dw$，$\sigma: 0\to0.5$：$x_1 = 2 + 0.5\times0.4 = 2.2$——**信号系数纹丝不动**（2 还是 2），纯堆噪声。VP 把数据拉向原点再盖噪声（终点 $\mathcal{N}(0,I)$）；VE 原地埋噪声（终点 $\mathcal{N}(x_0, \sigma_{\max}^2)$）。**方向相反、目的相同**：终点分布已知、可采样。
+
+**第 5 步：统一框架买了什么。** DDPM（VP 脉）与 SMLD（VE 脉）原是两套记号两族论文；Score-SDE 证明它们只是 $f, g$ 的两个系数选择——**反向 SDE、概率流 ODE、Fokker-Planck 全套定理证一次、全族通用**（[[30-Formulas/反向SDE]]、[[30-Formulas/概率流ODE]] 直接继承）。
+
 ## 3. 直觉解释
 
 - **统一价值**：DDPM（VP）与 SMLD（VE）此前是两套记号，Score-SDE 证明它们是同一 SDE 的两个系数选择——**记号混乱的终结者**
@@ -60,7 +72,14 @@ $$dx = \left[ f(x,t) - \frac{1}{2} g^2(t)\, \nabla_x \log p_t(x) \right] dt$$
 - [[40-Concepts/常微分方程（ODE）|常微分方程]]：概率流 ODE
 - [[40-Concepts/马尔可夫链]]：离散极限与连续版本的桥
 
-## 6. 与其他公式的关系
+## 6. 自测
+
+1. VP 与 VE 对信号的处置差异？（VP 缩向原点（$\sqrt{1-\beta}$ 系数）；VE 不动信号纯加噪——终点各为 $\mathcal{N}(0,I)$ / $\mathcal{N}(x_0,\sigma^2_{\max})$）
+2. 欧拉一步 $-\frac12\beta x\,dt$ 对应 DDPM 的哪个系数？（$\sqrt{1-\beta}\approx1-\beta/2$ 一阶泰勒——差 $O(\beta^2)$）
+3. 统一框架的核心红利？（反向 SDE/概率流 ODE 定理一次证明覆盖 VP/VE 全族——记号战争终结）
+4. EDM 在这框架上做了什么？（重参数化把 VP/VE 两套调度合并到一条 σ 轴 + 预处理 $D_\theta$——设计空间系统消融）
+
+## 7. 与其他公式的关系
 
 - ⊃ **泛化于** [[30-Formulas/DDPM前向过程]]（VP 极限）与 SMLD 噪声链（VE 极限）
 - → **推导出** [[30-Formulas/反向SDE]]、[[30-Formulas/概率流ODE]]

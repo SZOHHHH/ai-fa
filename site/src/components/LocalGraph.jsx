@@ -17,6 +17,7 @@ export default function LocalGraph({ slug }) {
   const [index, setIndex] = useState(null);
 
   // 邻域数据（contentIndex 到手后一次性构建）
+  // 域分流（260923 用户令）：论文卡小窗=纯论文谱系（名称全显/4px）；数学卡小窗=纯数学实体（不含论文邻居，8px 截断）
   const view = useMemo(() => {
     if (!index || !index[slug]) return null;
     const inLinks = new Map();   // 反向入链索引
@@ -25,8 +26,11 @@ export default function LocalGraph({ slug }) {
         if (t !== src) { if (!inLinks.has(t)) inLinks.set(t, []); inLinks.get(t).push(src); }
       }
     }
-    const outs = (index[slug].links || []).filter(t => index[t] && t !== slug);
-    const ins = (inLinks.get(slug) || []).filter(s => index[s]);
+    const isPaper = (id) => id.startsWith('10-Papers/');
+    const paperMode = isPaper(slug);
+    const nbOk = paperMode ? isPaper : (id) => !isPaper(id) && !id.startsWith('00-Meta/');
+    const outs = (index[slug].links || []).filter(t => index[t] && t !== slug && nbOk(t));
+    const ins = (inLinks.get(slug) || []).filter(s => index[s] && nbOk(s));
     const deg = new Map();
     const nb = new Map();
     for (const t of outs) { nb.set(t, 'out'); deg.set(t, (deg.get(t) || 0) + 1); }
@@ -39,7 +43,7 @@ export default function LocalGraph({ slug }) {
     for (const s of ins) if (set.has(s)) links.push({ source: s, target: slug });
     // 邻居间互连（邻域内部结构，细边）
     for (const a of kept) for (const t of index[a].links || []) if (set.has(t) && t !== slug) links.push({ source: a, target: t, thin: true });
-    return { nodes, links, total: nb.size, title: index[slug].title || slug.split('/').pop() };
+    return { nodes, links, total: nb.size, title: index[slug].title || slug.split('/').pop(), mode: paperMode ? 'paper' : 'math' };
   }, [index, slug]);
 
   useEffect(() => {
@@ -69,7 +73,7 @@ export default function LocalGraph({ slug }) {
           <div className="lg-body">
             {err ? <div className="lg-err">加载失败：{err}</div>
               : !view ? <div className="lg-err">构建中…</div>
-              : view.nodes.length <= 1 ? <div className="lg-err">此卡暂无站内连接</div>
+              : view.nodes.length <= 1 ? <div className="lg-err">此卡暂无同域站内连接</div>
               : <GraphCanvas view={view} index={index} />}
           </div>
           <div className="lg-foot">点击节点直达 · 拖动节点 · 滚轮缩放 · 空白处平移</div>
@@ -118,12 +122,14 @@ function GraphCanvas({ view, index }) {
     });
 
     // ── 节点：拖拽（固定 fx/fy）+ 松手短按无位移=点击直达 ──
+    const fsPx = view.mode === 'paper' ? 4 : 8;          // 论文窗名称全显（4px），数学窗截断（8px）
+    const labelOf = (id) => index?.[id]?.title || id.split('/').pop();
     let t0 = 0, p0 = null;
     for (const n of nodes) {
       const g = mk('g', { style: 'cursor:pointer' });
       g.appendChild(mk('circle', { r: n.center ? 7 : 4.2, fill: n.center ? '#104281' : colorOf(n.id) }));
-      const t = mk('text', { y: -10, 'text-anchor': 'middle', style: 'font-size:8px;font-family:var(--font-fs);fill:#4a4944' });
-      t.textContent = (index?.[n.id]?.title || n.id.split('/').pop()).slice(0, 14);
+      const t = mk('text', { y: -8, 'text-anchor': 'middle', style: `font-size:${fsPx}px;font-family:var(--font-fs);fill:#4a4944` });
+      t.textContent = view.mode === 'paper' ? labelOf(n.id) : labelOf(n.id).slice(0, 14);
       g.appendChild(t);
       dotsG.appendChild(g);
       n.__el = g;

@@ -30,6 +30,18 @@ $$x_{k+1} = x_k + \frac{\eta_k}{2} s_\theta(x_k, \sigma_i) + \sqrt{\eta_k}\, \ep
 | 多尺度 NCSN | $$\sum_i \sigma_i^2\, \mathcal{L}_{\text{DSM}}(\sigma_i)$$ | SMLD | 多噪声档覆盖流形 |
 | 噪声条件 score | $$s_\theta(x, \sigma)$$ 单网多档 | SMLD | 一个网络吃所有噪声级 |
 
+## 教程：一次 score 回归 + 一步朗之万
+
+**第 1 步：造加噪样本。** $$x_0 = 2$$，$$\sigma = 0.5$$，抽 $$u = 0.4$$：$$\tilde x = 2 + 0.5\times0.4 = 2.2$$。
+
+**第 2 步：目标 score 是闭式。** $$\nabla_{\tilde x}\log q(\tilde x\mid x_0) = -(\tilde x - x_0)/\sigma^2 = -(2.2-2)/0.25 = -0.8$$——**这就是标签**：不用网络、不用蒙特卡洛，加性高斯直接求导可得（score 版训练的立身之本）。
+
+**第 3 步：回归判分。** 网络 $$s_\theta(2.2, 0.5) = -0.7$$：$$\mathcal{L}_{\text{DSM}} = \frac12(-0.7+0.8)^2 = 0.005$$。
+
+**第 4 步：与 ε-预测对账（两派合流的换算）。** $$s = -\epsilon/\sigma$$：真实 $$\epsilon = -\sigma s^* = 0.5\times0.8 = 0.4$$ ✓（**正是第 1 步抽的 $$u$$**）；网络隐含 $$\epsilon_\theta = -\sigma s_\theta = 0.35$$。去掉 ½ 因子对账：$$\|s_\theta-s^*\|^2 = 0.01$$ ↔ $$\|\epsilon_\theta-\epsilon\|^2 = 0.0025 = \sigma^2\times0.01$$ ✓——**同一目标的两种记账单位**（差 $$\sigma^2$$ 倍）。
+
+**第 5 步：朗之万走一步。** $$\eta = 0.1$$，抽 $$\epsilon_k = 0$$：$$x_1 = 2.2 + \frac{0.1}{2}(-0.8) + \sqrt{0.1}\times0 = 2.16$$——朝数据点 2 靠近 ✓。新点 score $$= -(2.16-2)/0.25 = -0.64$$，下一步只挪 $$0.05\times(-0.64) = -0.032$$——**步子自动变小**（越近数据拉力越弱）。噪声项 $$\sqrt\eta\,\epsilon_k$$ 必须留：纯梯度下降会让所有样本塌到众数一个点，噪声维持分布的宽度。
+
 ## 3. 直觉解释
 
 - **为什么叫"去噪"**：训练时先给 $$x_0$$ 加噪，再让网络学会指出"噪声从哪来"的方向——score 指向数据流形
@@ -52,7 +64,14 @@ $$x_{k+1} = x_k + \frac{\eta_k}{2} s_\theta(x_k, \sigma_i) + \sqrt{\eta_k}\, \ep
 - [高斯分布](/ai-fa/explore/40-Concepts/高斯分布)：加噪分布 score 闭式可算
 - [范数](/ai-fa/explore/40-Concepts/范数)：平方 L2
 
-## 6. 与其他公式的关系
+## 6. 自测
+
+1. DSM 的标签为什么不用学？（加性高斯的 score 闭式：$$-(\tilde x - x_0)/\sigma^2$$——直接可算）
+2. $$s_\theta = -0.7,\ s^* = -0.8,\ \sigma = 0.5$$：ε 侧误差多少？（$$\epsilon_\theta = 0.35$$ vs $$\epsilon = 0.4$$——$$\sigma\times$$score 误差，即 0.05）
+3. 朗之万更新为什么必须带 $$\sqrt\eta\,\epsilon_k$$ 噪声项？（纯确定性下降塌缩到众数；噪声维持分布覆盖）
+4. 为什么要多尺度退火？（单一大 σ：远离流形处 score 估计不可靠；大 σ 粗定位→小 σ 精修——SMLD 的 L 档 σ 链）
+
+## 7. 与其他公式的关系
 
 - ≡ **等价于** [DDPM训练目标](/ai-fa/explore/30-Formulas/DDPM训练目标)（线性换算 $$s_\theta \leftrightarrow \epsilon_\theta$$）——"score 派"与"扩散派"合流点
 - ⊂ **特化于** [Score-SDE前向过程](/ai-fa/explore/30-Formulas/Score-SDE前向过程)：VE-SDE 的离散多尺度版本

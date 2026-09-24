@@ -27,6 +27,18 @@ $$J_\eta(\pi)\;=\;\mathbb{E}\Big[\sum_t \big(r_t \;+\;\eta\,\mathcal{H}(\pi(\cdo
 | **鲁棒/可迁移** | 随机最优策略对环境扰动更稳（最大熵 RL 与鲁棒控制有形式对应） |
 | **训练稳定** | 概率不触零→对数不爆炸，梯度良态 |
 
+## 教程：软最优的闭式手算（softmax 即策略）
+
+**第 1 步：设定。** 玩具宇宙（[[40-Concepts/马尔可夫决策过程]]）：$Q(a_{慢}) = 0.783$、$Q(a_{赢}) = 1.0$；熵温度 $\alpha = 0.5$。
+
+**第 2 步：当前策略的熵。** $\pi = (0.6, 0.4)$：$\mathcal{H} = -0.6\ln0.6-0.4\ln0.4 = 0.307+0.367 = 0.673$——这笔"随机性存款"在硬目标里一文不值，软目标里按汇率 $\alpha$ 兑换。
+
+**第 3 步：软价值（log-sum-exp）。** $V_{\text{soft}} = \alpha\ln\sum_a e^{Q(a)/\alpha} = 0.5\times\ln(e^{1.566}+e^{2.0}) = 0.5\times\ln(4.79+7.39) = 0.5\times\ln 12.17 = 0.5\times2.499 = 1.249$——**高于硬最优 $\max Q = 1.0$**：多出的 0.249 是"保留选择权"的现金价值。
+
+**第 4 步：软最优策略就是 softmax。** $\pi^*(a_{赢}) = \dfrac{e^{2.0}}{12.17} = \dfrac{7.39}{12.17} = 0.607$、$\pi^*(a_{慢}) = 0.393$——**不塌缩到 100% 赢**：慢有 0.783 的价值（不是零），softmax 按指数汇率给它留 39% 的份额。多模态保护的实感：两条路都通向高分时，正则解是混合而不是死磕一条。
+
+**第 5 步：α 旋钮两端。** $\alpha \to 0$：softmax $\to$ argmax（退回硬最优，尖峰）；$\alpha$ 大：趋于均匀。$\alpha = 0.5$ 时赢只有 60.7%——**温度高一分，保留的选择权多一分**；SAC 的"自动温度"就是让机器自己找这个汇率。
+
 ## 3. 家族与系数
 
 | 成员 | 形态 | 熵的地位 |
@@ -44,7 +56,14 @@ $$J_\eta(\pi)\;=\;\mathbb{E}\Big[\sum_t \big(r_t \;+\;\eta\,\mathcal{H}(\pi(\cdo
 - **熵 vs 探索噪声**：ε-greedy 是外面撒噪声（策略不变）；熵正则是把随机性**长进策略本身**（策略自己学会保留随机）。
 - **加法合法性**：熵项并进目标后，策略梯度定理对**新目标**照常成立——它不是 trick，是换了一个（等价的）优化目标。
 
-## 5. 与库内实体的关系
+## 5. 自测
+
+1. $\mathcal{H}(0.6, 0.4) = ?$（$-0.6\ln0.6-0.4\ln0.4 = 0.673$）
+2. $\alpha = 0.5$ 时软最优 $\pi^*(a_{赢})$？（$\mathrm{softmax}(1/0.5,\ 0.783/0.5)$ 的赢分量 $= 0.607$——留 39% 给次优）
+3. $\alpha\to0$ 与 $\alpha\to\infty$ 各退化成什么？（argmax 硬最优 / 均匀随机）
+4. 软贝尔曼与硬贝尔曼差在哪一项？（$\max \to \alpha\log\sum\exp$——最优从尖峰变成分布，其余结构同构）
+
+## 6. 与库内实体的关系
 
 - ← 地基：[[40-Concepts/softmax函数]]（策略输出与熵的计算）、[[30-Formulas/交叉熵]]（$\mathcal{H}+\mathrm{KL}$ 语言同源）
 - → 用户：[[10-Papers/04-强化学习与对齐/Soft Actor-Critic- Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor（SAC）|SAC]]（一等公民版）、[[10-Papers/04-强化学习与对齐/Asynchronous Methods for Deep Reinforcement Learning（A3C）|A3C]]（二等公民版首挂）、[[30-Formulas/REINFORCE目标]]（未正则的裸目标对照）

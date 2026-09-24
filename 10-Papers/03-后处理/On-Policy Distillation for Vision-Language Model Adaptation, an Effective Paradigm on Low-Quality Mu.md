@@ -70,6 +70,8 @@ $L_{\text{OnPoKD}}=\frac{1}{B}\sum_{i=1}^{B} w_i\,\tau_i^2\, KL(q_i\,\|\,\text{s
 
 蒸馏方法论线"目标构造"轴的 VLM 数据点：此前 on-policy 蒸馏的证据集中在 LM（GKD/MiniLLM/EOPD/Any-OPD 族），本文证明"目标不该固定"在视觉-语言适配同样成立且只需验证反馈即可学到。对更广的蒸馏社区：固定 $\alpha$ 混合软硬目标的标准做法（[[30-Formulas/蒸馏损失]] 实操标配）被指出是次优的——混合比应是样本级决策。消融的关键警示：去掉验证反馈后 FGVCAircraft HM 从 47.66 **塌到 22.74**——自适应目标若无外部可靠性信号校准，比固定目标更危险。
 
+- → 后继补记（260924）：[[10-Papers/03-后处理/Ladders of Thought A Self-Evolving Curriculum of Progressively Simplified Reasoning Traces|LoT 课程蒸馏]]（同一痛点"中小模型蒸馏后仍推理脆"的另一答案：不改目标构造，改数据组织——问题改写降难+bandit 自进化课程）
+
 ## 7. 读前须知
 
 - 前置：[[40-Concepts/知识蒸馏]]（软标签/温度机制）→ [[30-Formulas/蒸馏损失]]（总损失形态）→ [[40-Concepts/KL散度]]（前向 KL 质量覆盖 vs 反向 KL 的区别，本文选前向但目标可换）

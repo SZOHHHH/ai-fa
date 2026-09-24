@@ -53,6 +53,7 @@ $$\mathcal{L}_{distill}\;=\;\tau^2\,\mathrm{KL}\Big(\mathrm{softmax}\big(z_T/\ta
 - 局限：软标签的信息量受教师质量封顶（教师错得自信→学生学错得深）；容量差距过大时蒸馏失效（容量鸿沟问题）。
 
 - → 后继补记（260914）：[[10-Papers/03-后处理/Breaking the Token Ceiling - Distilling Smaller Stronger Byte Models（字节蒸馏scaling）|Token Ceiling（字节蒸馏scaling）]]（蒸馏×表征选择的首个大规模 scaling 研究：byte 学生渐近天花板高于 token 学生）
+- → 后继补记（260924）：三条跨域应用入网——[[10-Papers/03-后处理/Knowledge Distillation for Intelligent Softwarized Networks Advances and Open Challenges|网络软化 KD 综述]]（SDN/NFV 域地图）、[[10-Papers/03-后处理/Towards Foundation Models on Hardware Accelerators for Particle Physics|粒子物理 FM 硬件蒸馏]]（亿级基础模型→微秒级触发硬件）、[[10-Papers/03-后处理/Ladders of Thought A Self-Evolving Curriculum of Progressively Simplified Reasoning Traces|LoT 课程蒸馏]]（问题改写降难+bandit 课程治中小模型推理脆）；另 [[10-Papers/03-后处理/Distilling Lexical Product Associations into Deep Transformers An Extreme Multi-Label Approach for N|电商 XMLC 蒸馏]] 示范"教师不必是模型"（词法统计关联作软标签）
 
 ## 7. 读前须知
 

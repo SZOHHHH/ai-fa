@@ -35,6 +35,18 @@ tags: [algo]
 - Switch 简化版：top-1 + 容量因子
 - DeepSeekMoE：$N$ 细专家中选 $k$ + $K_s$ 共享专家常开
 
+## 教程：一个 token 的一次路由（稀疏前向导览）
+
+**第 1 步：token 到达 FFN 层。** Transformer 块的 FFN 位换成 N 个并列专家 + 一个门控（本卡场景：N=4）。
+
+**第 2 步：门控打分。** 门控网络算 logits $(2.0,\ 1.0,\ 0.5,\ -1.0)$ → top-2 选中 $E_1, E_2$ → 局部 softmax 得 $G = (0.73,\ 0.27)$——**完整手算见 [[30-Formulas/MoE门控公式]] 教程**（$E_3, E_4$ 本步完全不计算）。
+
+**第 3 步：稀疏执行。** 输出 $y = 0.73\,E_1(x) + 0.27\,E_2(x)$——每 token 只算 2/N 的 FFN 参数：**总参数 ×N、每 token 计算 ×2/N**（"大而不贵"的解耦账）。
+
+**第 4 步：训练侧的两件保安装置。** ①噪声打破平局（训练早期 logits 并列防锁定）；②负载均衡损失 $\sum f_i P_i = 0.325$ vs 均衡 0.25 的"偏心税"（[[30-Formulas/MoE门控公式]] 教程第 5 步：马太效应的解药）。
+
+**第 5 步：谱系读法。** 稀疏 MoE（LSTM 时代）→ Switch（top-1 极简）→ GShard（进 Transformer）→ DeepSeekMoE（细粒度+共享专家）——路由粒度与专家设计两条演进轴；与 MLA 并列为 DeepSeek 系"省显存两大件"（[[30-Formulas/MLA多头潜在注意力]]）。
+
 ## 4. 数学概念分解
 
 [[40-Concepts/softmax函数]]（门控）、[[40-Concepts/期望]]（均衡损失的统计形式）、[[40-Concepts/梯度]]（不可导 top-k 的处理：直通估计，连 [[40-Concepts/重参数化]] 孪生话题）
@@ -63,3 +75,10 @@ tags: [algo]
 
 - → 后继补记（260916）：[[10-Papers/01-架构演进/ACE Adaptive Calibration-Free Expert Skipping for MoE-based LLMs|ACE]]（MoE 推理效率轴：免校准专家跳过）
 - → 后继补记（260918）：[[10-Papers/05-MoE/Higher-order pruning of experts in mixture-of-experts language models|HOPE]]（专家剪枝从一阶可加假设升级到二阶协作目标）、[[10-Papers/05-MoE/Infinite-Parameter LLMs Generating and Adapting Weights from Live Data|Infinite-Parameter LLMs]]（静态专家池→活数据生成权重的变体轴）
+
+## 自测
+
+1. 一个 token 的路由流程？（logits→top-2→局部 softmax G=(0.73,0.27)→加权输出，其余专家不算）
+2. 参数与计算的解耦账？（总参数 ×N、每 token 计算 ×2/N——大而不贵）
+3. 负载均衡损失治什么？（马太效应（中彩专家垄断）——偏心税 0.325 vs 均衡 0.25）
+4. MoE 与 MLA 并列的原因？（DeepSeek 系省显存两大件：省激活 FLOPs vs 省 KV cache）

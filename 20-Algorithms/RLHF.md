@@ -28,6 +28,18 @@ tags: [algo]
 - [[30-Formulas/PPO裁剪目标]] —— 优化引擎
 - [[40-Concepts/Bradley-Terry模型]] —— 奖励模型训练损失
 
+## 教程：三阶段流水线（一条偏好数据的旅程）
+
+**第 1 阶段：SFT。** 人工写示范 → 监督微调出 $\pi_{\mathrm{ref}}$——"先会说话，再谈听话"（没有这步，后续 KL 锚没有可依的参照）。
+
+**第 2 阶段：奖励模型。** 人类标 $(y^+, y^-)$ → BT 模型学 $r_\phi$（[[40-Concepts/Bradley-Terry模型]] 教程：sigmoid(r⁺−r⁻) 拟合偏好频率、Z 消元）；闭式视角见 [[30-Formulas/RLHF目标]] 教程（Boltzmann 重加权 (0.881, 0.119)——β 是奖励换概率的汇率）。
+
+**第 3 阶段：RL 微调。** PPO 优化 $r_\phi - \beta\mathrm{KL}$：组内 GAE 估计优势（[[40-Concepts/广义优势估计GAE]]）→ 裁剪更新（[[30-Formulas/PPO裁剪目标]] 教程四象限）→ KL 锚防 reward hacking（[[30-Formulas/RLHF目标]] 教程第 4 步：保险丝现场）。
+
+**第 4 步：全链读法。** 一条数据的两次身份：标注时是 $(y^+, y^-)$（教 RM），采样时是 rollout（教策略）；**RM 的偏见会被策略放大**（过拟合的漏洞被钻）——KL 锚 + 早期停止是工程保险。
+
+**第 5 步：简化史。** InstructGPT 定式（PPO+GAE+KL）→ DPO 跳过 RM 与采样（[[30-Formulas/DPO损失]] 教程：闭式解反推）→ GRPO 去 critic（[[30-Formulas/GRPO目标]] 教程：组内标准化）→ RLAIF 把人类也换成 AI（[[20-Algorithms/RLAIF与ConstitutionalAI]]）——**每一代都在砍流水线的一段**。
+
 ## 4. 数学概念分解
 
 [[40-Concepts/马尔可夫决策过程]]（LLM=策略）、[[40-Concepts/策略梯度定理]]、[[40-Concepts/KL散度]]（防漂移锚）、[[40-Concepts/重要性采样]]（PPO 内部）、[[40-Concepts/广义优势估计GAE]]（优势估计）
@@ -50,3 +62,10 @@ tags: [algo]
 | 奖励来源 | 学习的 RM | 隐式（策略内嵌） | 规则/可验证 |
 | 稳定性 | 中（4 模型同训） | 高 | 高 |
 | 适合场景 | 通用对齐 | 快速对齐、资源少 | 推理/可验证任务 |
+
+## 自测
+
+1. 三阶段各训练什么？（SFT 出参照 / BT 训 RM / PPO 微调策略）
+2. RM 的偏见如何被放大？（策略钻 reward model 漏洞——KL 锚+早停是保险）
+3. 一条数据的两次身份？（标注时 $(y^+,y^-)$ 教 RM / 采样时 rollout 教策略）
+4. 简化史主线？（每代砍一段流水线：DPO 砍 RM+采样、GRPO 砍 critic、RLAIF 砍人类标注）

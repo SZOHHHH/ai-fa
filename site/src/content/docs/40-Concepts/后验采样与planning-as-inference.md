@@ -29,6 +29,18 @@ $$p(a\mid s,\,x_{goal})\;=\;\frac{p(x_{goal}\mid s,\,a)\,p(a\mid s)}{p(x_{goal}\
 
 三条共用一句话：**"条件反过来用，就是采样器"**。
 
+## 教程：一行贝叶斯的"由果找因"落地（含多模态现场）
+
+**第 1 步：设定。** 当前局面 $$s$$；目标 = 想要的未来帧 $$x_{goal}$$；动作 $$a \in \{$$左, 右$$\}$$；先验 $$\pi(a|s) = (0.5, 0.5)$$（还没偏好）。
+
+**第 2 步：世界模型供似然。** $$p(x_{goal}|s, a{=}左) = 0.2$$、$$p(x_{goal}|s, a{=}右) = 0.8$$（走右更可能达成目标）。分母 $$p(x_{goal}|s) = 0.5\times0.2+0.5\times0.8 = 0.5$$。
+
+**第 3 步：算后验。** $$p(a{=}左|s, x_{goal}) = \frac{0.2\times0.5}{0.5} = 0.2$$；$$p(a{=}右|\cdot) = 0.8$$——先验均匀时**后验形状 = 似然形状**（贝叶斯只做了重新归一化）。采样执行：80% 概率出"右"。
+
+**第 4 步：多模态现场（与 argmax 的分水岭）。** 若两条路都通（$$p(x_{goal}|左) = p(x_{goal}|右) = 0.5$$）→ 后验 $$(0.5, 0.5)$$——**不选边，两条路各留一半**；argmax/MAP 会随便挑一条（实现细节决定），把"我其实不确定"的信息全部丢弃。后验采样每次掷骰——探索与多样性免费获得（[贝叶斯公式](/ai-fa/explore/40-Concepts/贝叶斯公式) 批 1 教程的 odds 拔河在此换成动作版）。
+
+**第 5 步：怎么算这个后验（工程三路）。** ①参数化直接学（[逆动力学（IDM）](/ai-fa/explore/40-Concepts/逆动力学（IDM）)：$$q_\theta(a|s, s_{goal})$$ 一步到位）；②引导采样（DPS：扩散先验 + 每步叠加 $$\nabla\log p(y|x)$$，无需重训）；③硬条件 inpainting（Diffuser：已知帧涂死、生成其余）——三路的取舍见 §3 工具箱。
+
 ## 3. 扩散时代的后验采样（工具箱）
 
 - **Inpainting 式**（[Diffuser](/ai-fa/explore/10-Papers/04-强化学习与对齐/Planning with Diffusion for Flexible Behavior Synthesis（Diffuser）)）：把已知量（当前态+目标态）当"已涂死"的像素，去噪生成其余（含动作序列）——硬条件版。
@@ -47,7 +59,14 @@ $$p(a\mid s,\,x_{goal})\;=\;\frac{p(x_{goal}\mid s,\,a)\,p(a\mid s)}{p(x_{goal}\
 - **"反推"不要求模型可逆**：是条件分布的学习/采样问题，不是把神经网络倒着跑。
 - **RL 里的 posterior 两个含义**：对模型的后验（PSRL）vs 对动作的后验（本文主角）——读文献先看它反推的对象。
 
-## 6. 与库内实体的关系
+## 6. 自测
+
+1. 似然 $$(0.2, 0.8)$$、先验均匀：后验？（$$(0.2, 0.8)$$——先验均匀时后验=似然形状）
+2. 两路等优（似然各 0.5）时后验采样 vs MAP 的差别？（$$(0.5,0.5)$$ 保留两路 vs argmax 随便挑一条——不确定信息全丢）
+3. PSRL 与目标条件后验采样的反推对象各是什么？（环境模型本身（"世界观"）/ 动作（"该做什么"））
+4. 工程三路？（参数化学 IDM / 引导采样 DPS / inpainting 式 Diffuser——重训成本与柔性各不同）
+
+## 7. 与库内实体的关系
 
 - ← 地基：[贝叶斯公式](/ai-fa/explore/40-Concepts/贝叶斯公式)、[条件概率](/ai-fa/explore/40-Concepts/条件概率)、[期望](/ai-fa/explore/40-Concepts/期望)
 - → 工具：[DPS](/ai-fa/explore/10-Papers/02-生成建模与扩散/Diffusion Posterior Sampling for General Noisy Inverse Problems（DPS）)、[Diffuser](/ai-fa/explore/10-Papers/04-强化学习与对齐/Planning with Diffusion for Flexible Behavior Synthesis（Diffuser）)、[无分类器引导（CFG）](/ai-fa/explore/30-Formulas/无分类器引导（CFG）)

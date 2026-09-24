@@ -45,7 +45,7 @@ bandit 调度骨架（按文中思想概括，具体形式待精读）：
 
 - ←[[Distilling the Knowledge in a Neural Network（KD）]]：起点是"KD 后中小模型仍脆"的痛点
 - ≡近邻 [[10-Papers/03-后处理/On-Policy Distillation for Vision-Language Model Adaptation, an Effective Paradigm on Low-Quality Mu|On-Policy Distillation]]：都在"怎么让小模型从大模型学到位"，这边答案是课程化数据组织而非训练范式切换
-- ↔课程学习思想与库内 RL 教学链（80-Lessons RL 系列课程化训练）呼应——难度调度从课程学习搬进蒸馏
+- ↔课程学习思想与库内 RL 教学链（RL 系列课程化训练）呼应——难度调度从课程学习搬进蒸馏
 
 ## 6. 影响后续
 
@@ -53,6 +53,6 @@ bandit 调度骨架（按文中思想概括，具体形式待精读）：
 
 ## 7. 读前须知
 
-- 课程学习直觉：由易到难 vs 混合难度之争（80-Lessons 知识链有对应节）
+- 课程学习直觉：由易到难 vs 混合难度之争（库内知识链有对应节）
 - bandit/UCB 基本式：估值+探索项的经典平衡
 - LLM 推理蒸馏背景：CoT 蒸馏为何对中小模型失效（步子跨太大）

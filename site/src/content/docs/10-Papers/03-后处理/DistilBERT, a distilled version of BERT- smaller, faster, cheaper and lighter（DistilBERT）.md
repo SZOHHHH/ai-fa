@@ -46,6 +46,7 @@ pdf: 已下载（PDF/）
 - TinyBERT（[TinyBERT - Distilling BERT for Natural Language Understanding](/ai-fa/explore/10-Papers/03-后处理/TinyBERT- Distilling BERT for Natural Language Understanding（TinyBERT）)）两层蒸馏进一步逼近
 
 - → 后继补记（260914）：[Token Ceiling（字节蒸馏scaling）](/ai-fa/explore/10-Papers/03-后处理/Breaking the Token Ceiling - Distilling Smaller Stronger Byte Models（字节蒸馏scaling）)（固定 tokenization 蒸馏（本卡路线） vs 学生表征可选择的蒸馏 scaling）
+- → 后继补记（260924）：两条下游应用入网——[FedTinyML-IoT](/ai-fa/explore/10-Papers/03-后处理/Reliable Federated TinyML Deployment for IoT Security)（联邦+微控制器级部署，压缩产物直接消费方）、[电商 XMLC 蒸馏](/ai-fa/explore/10-Papers/03-后处理/Distilling Lexical Product Associations into Deep Transformers An Extreme Multi-Label Approach for N)（直接以本卡为编码器的 54k 标签搜索方案）
 
 ## 7. 读前须知
 

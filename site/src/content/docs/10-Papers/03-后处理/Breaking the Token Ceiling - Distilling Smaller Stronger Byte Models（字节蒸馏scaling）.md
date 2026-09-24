@@ -49,6 +49,8 @@ layer: 精读层（PDF 前 12 页全读，9-14 ⑦推荐）
 - 工程直接可用：离线 logit 蒸馏选 byte 学生（存储 1/5、免 top-k 截断、数据效率 6 倍）；Meta FAIR+UW 出品，数字可信度高。
 - 敌情位：与 E1/E2 无域重叠（LM 蒸馏 scaling vs 像素扩散 WM×游戏），🟢 动机同盟/引用候选——E1 论文 related work"蒸馏 scaling 与容量"段的引用位。
 
+- → 后继补记（260924）：[粒子物理 FM 硬件蒸馏](/ai-fa/explore/10-Papers/03-后处理/Towards Foundation Models on Hardware Accelerators for Particle Physics)（同族"大预训练→可部署小网络"，约束更硬：离线精度换触发级微秒延迟，硬件算子级学生）
+
 ## 7. 读前须知
 - 前置：KD 蒸馏基本形（[KD 卡](/ai-fa/explore/10-Papers/03-后处理/Distilling the Knowledge in a Neural Network（KD）)）、BPB（bits-per-byte）与困惑度的关系、幂律缩放直觉（$$a\cdot x^{-\alpha}+b$$ 家族）。
 - 本文特殊性：三层 scaling law 级联（BPB→FLOPs、任务→FLOPs、任务→BPB）需要耐心区分"哪条曲线对哪条外推"；Feather Plots（等 FLOP 点连线）是作者自造可视化，读图先找交叉点。

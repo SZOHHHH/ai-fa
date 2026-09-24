@@ -168,7 +168,7 @@ tags: [section]
 - [WorldCrafter](/ai-fa/explore/10-Papers/02-生成建模与扩散/WorldCrafter Consistent Video World Model with Implicit 3D-aware Memory)
 - [ZYT-World: A Real-Time Controllable World Model for Closed-Loop Autonomous-Driving Simulation](/ai-fa/explore/10-Papers/02-生成建模与扩散/ZYT-World A Real-Time Controllable World Model for Closed-Loop Autonomous-Driving Simulation)
 
-### 后处理（31）
+### 后处理（36）
 
 - [DAGGER](/ai-fa/explore/10-Papers/03-后处理/A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning（DAGGER）)
 - [SparseGPT](/ai-fa/explore/10-Papers/03-后处理/A Simple and Effective Pruning Approach for Large Language Models（SparseGPT）)
@@ -178,10 +178,13 @@ tags: [section]
 - [Token Ceiling](/ai-fa/explore/10-Papers/03-后处理/Breaking the Token Ceiling - Distilling Smaller Stronger Byte Models（字节蒸馏scaling）)
 - [Deep Neural Networks for Learning Intent from sEMG Signals to Support Hardware Devices for Post-Stroke Neurorehabilitation](/ai-fa/explore/10-Papers/03-后处理/Deep Neural Networks for Learning Intent from sEMG Signals to Support Hardware Devices for Post-Stro)
 - [DistilBERT](/ai-fa/explore/10-Papers/03-后处理/DistilBERT, a distilled version of BERT- smaller, faster, cheaper and lighter（DistilBERT）)
+- [电商XMLC蒸馏](/ai-fa/explore/10-Papers/03-后处理/Distilling Lexical Product Associations into Deep Transformers An Extreme Multi-Label Approach for N)
 - [KD](/ai-fa/explore/10-Papers/03-后处理/Distilling the Knowledge in a Neural Network（KD）)
 - [DoRA](/ai-fa/explore/10-Papers/03-后处理/DoRA- Weight-Decomposed Low-Rank Adaptation（DoRA）)
 - [GPTQ](/ai-fa/explore/10-Papers/03-后处理/GPTQ- Accurate Post-Training Quantization for Generative Pre-trained Transformers（GPTQ）)
 - [KIVI](/ai-fa/explore/10-Papers/03-后处理/KIVI- A Tuning-Free Asymmetric 2bit Quantization for KV Cache（KIVI）)
+- [KD-Softwarized Networks 综述](/ai-fa/explore/10-Papers/03-后处理/Knowledge Distillation for Intelligent Softwarized Networks Advances and Open Challenges)
+- [LoT 课程蒸馏](/ai-fa/explore/10-Papers/03-后处理/Ladders of Thought A Self-Evolving Curriculum of Progressively Simplified Reasoning Traces)
 - [LLM.int8](/ai-fa/explore/10-Papers/03-后处理/LLM.int8()- 8-bit Matrix Multiplication for Transformers at Scale（LLM.int8）)
 - [LoRA](/ai-fa/explore/10-Papers/03-后处理/LoRA- Low-Rank Adaptation of Large Language Models（LoRA）)
 - [Multi-Teacher Distillation for Cross-Domain Streaming Electrolaryngeal Speech Encoding](/ai-fa/explore/10-Papers/03-后处理/Multi-Teacher Distillation for Cross-Domain Streaming Electrolaryngeal Speech Encoding)
@@ -192,12 +195,14 @@ tags: [section]
 - [Prefix-Tuning](/ai-fa/explore/10-Papers/03-后处理/Prefix-Tuning- Optimizing Continuous Prompts for Generation（Prefix-Tuning）)
 - [Pretraining and Distillation Matter More Than Architecture Family for Label-Free Single-Cell Classification](/ai-fa/explore/10-Papers/03-后处理/Pretraining and Distillation Matter More Than Architecture Family for Label-Free Single-Cell Classif)
 - [QLoRA](/ai-fa/explore/10-Papers/03-后处理/QLoRA- Efficient Finetuning of Quantized LLMs（QLoRA）)
+- [FedTinyML-IoT](/ai-fa/explore/10-Papers/03-后处理/Reliable Federated TinyML Deployment for IoT Security)
 - [Robust and Efficient AI Frameworks for Scalable Material Design and Property Prediction](/ai-fa/explore/10-Papers/03-后处理/Robust and Efficient AI Frameworks for Scalable Material Design and Property Prediction)
 - [Rollback the World, Keep the Reflection: Rollback-Induced Reflection for Long-Horizon LLM Agents](/ai-fa/explore/10-Papers/03-后处理/Rollback the World, Keep the Reflection Rollback-Induced Reflection for Long-Horizon LLM Agents)
 - [SmoothQuant](/ai-fa/explore/10-Papers/03-后处理/SmoothQuant- Accurate and Efficient Post-Training Quantization for Large Language Models（SmoothQuant）)
 - [SpQR](/ai-fa/explore/10-Papers/03-后处理/SpQR- A Sparse-Quantized Representation for Near-Lossless LLM Weight Compression（SpQR）)
 - [Lottery Ticket](/ai-fa/explore/10-Papers/03-后处理/The Lottery Ticket Hypothesis- Finding Sparse, Trainable Neural Networks（Lottery Ticket）)
 - [TinyBERT](/ai-fa/explore/10-Papers/03-后处理/TinyBERT- Distilling BERT for Natural Language Understanding（TinyBERT）)
+- [粒子物理FM硬件蒸馏](/ai-fa/explore/10-Papers/03-后处理/Towards Foundation Models on Hardware Accelerators for Particle Physics)
 - [Train Overcomplete, Deploy Compact: Scaling Recovery Capacity for Structured LLM Pruning](/ai-fa/explore/10-Papers/03-后处理/Train Overcomplete, Deploy Compact Scaling Recovery Capacity for Structured LLM Pruning)
 - [Uni-Light: An Ultra-Lightweight Framework via Uncertainty-Aware Knowledge Distillation for Brain Tumour Segmentation](/ai-fa/explore/10-Papers/03-后处理/Uni-Light An Ultra-Lightweight Framework via Uncertainty-Aware Knowledge Distillation for Brain Tumo)
 - [iVAE](/ai-fa/explore/10-Papers/03-后处理/Variational Autoencoders and Nonlinear ICA- A Unifying Framework（iVAE）)
@@ -407,10 +412,13 @@ tags: [section]
 - [VL-JEPA](/ai-fa/explore/10-Papers/08-多模态/VL-JEPA- Joint Embedding Predictive Architecture for Vision-language（VL-JEPA）)
 - [WaveNet](/ai-fa/explore/10-Papers/08-多模态/WaveNet- A Generative Model for Raw Audio（WaveNet）)
 
-### 世界模型与JEPA（43）
+### 世界模型与JEPA（50）
 
 - [矩闭合规划](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Analytic Planning under Uncertainty with Moment Closure（矩闭合规划）)
+- [AnyFlow](/ai-fa/explore/10-Papers/09-世界模型与JEPA/AnyFlow- 任意步视频扩散的在线策略流图蒸馏（AnyFlow）)
+- [Causal Forcing](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Causal Forcing- 自回归扩散蒸馏的正确姿势（Causal Forcing）)
 - [CoLA](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Co-Evolving Latent Action World Models（CoLA）)
+- [CoPRE](/ai-fa/explore/10-Papers/09-世界模型与JEPA/CoPRE Improving Sensitivity in Proprioceptive Contact Detection for Low-Cost Robot Arms)
 - [Decision-Metric Alignment in Latent World Models](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Decision-Metric Alignment in Latent World Models Diagnostics and Action-Conditioned Objectives for MPC Planning)
 - [Delta-JEPA](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Delta-JEPA- Learning Action-Sensitive World Models via Latent Difference Decoding（Delta-JEPA）)
 - [DexTacWAM](/ai-fa/explore/10-Papers/09-世界模型与JEPA/DexTacWAM A Visuo-Tactile World-Action Model for Dexterous Manipulation)
@@ -433,8 +441,10 @@ tags: [section]
 - [PlaNet](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Learning Latent Dynamics for Planning from Pixels（PlaNet）)
 - [MuZero](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model（MuZero）)
 - [DreamerV3](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Mastering Diverse Domains through World Models（DreamerV3）)
+- [minWM](/ai-fa/explore/10-Papers/09-世界模型与JEPA/minWM- 全栈实时交互世界模型框架（minWM）)
 - [MotionJEPA](/ai-fa/explore/10-Papers/09-世界模型与JEPA/MotionJEPA Preventing Temporal Feature Collapse by Capturing Visual Changes in Latent Space)
 - [Pelican-Sim](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Pelican-Sim 1.0 - A General World Model Simulator for Embodied Intelligence（具身WM仿真器）)
+- [PointCast](/ai-fa/explore/10-Papers/09-世界模型与JEPA/PointCast One World Model for Rigid, Articulated, and Deformable Object Manipulation)
 - [WM路线图](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Quo Vadis, World Modeling（WM路线图）)
 - [ACT-LAM](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Reconstructing Is Not Acting Action-Centric Latent Dynamics Modeling)
 - [V-JEPA](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Revisiting Feature Prediction for Learning Visual Representations from Video（V-JEPA）)
@@ -450,8 +460,10 @@ tags: [section]
 - [V-JEPA 2](/ai-fa/explore/10-Papers/09-世界模型与JEPA/V-JEPA 2- Self-Supervised Video Models Enable Understanding, Prediction and Planning（V-JEPA 2）)
 - [VideoTok4D](/ai-fa/explore/10-Papers/09-世界模型与JEPA/VideoTok4D - A 4D-Aware Video Tokenizer for Compact World Representation（4D视频分词器）)
 - [World Models](/ai-fa/explore/10-Papers/09-世界模型与JEPA/World Models（世界模型）)
+- [WorldCompass](/ai-fa/explore/10-Papers/09-世界模型与JEPA/WorldCompass- 强化学习训练长视野世界模型（WorldCompass）)
 - [WorldDynCache](/ai-fa/explore/10-Papers/09-世界模型与JEPA/WorldDynCache- Risk-Controlled Latent Dynamics Approximation for Diffusion World Models（WorldDynCache）)
 - [WorldExam](/ai-fa/explore/10-Papers/09-世界模型与JEPA/WorldExam- Benchmarking World Models from Apparent Appearance to Inherent Reactivity（WorldExam）)
+- [WorldPlay](/ai-fa/explore/10-Papers/09-世界模型与JEPA/WorldPlay- 长期几何一致的实时交互世界建模（HY-WorldPlay）)
 
 ### 标杆锚点（11）
 

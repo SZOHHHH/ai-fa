@@ -59,6 +59,8 @@ tags: [paper]
 - 预训练视觉先验→触觉的持续迁移（视觉数据富/触觉数据穷的不对称解法），可推广到力觉、音频等其他贫数据模态
 - 消融范式值得借鉴：区分"模态作条件"vs"模态作被预测状态"两类设计，前者增益小得多
 
+- → 后继补记（260924）：[CoPRE](/ai-fa/explore/10-Papers/09-世界模型与JEPA/CoPRE Improving Sensitivity in Proprioceptive Contact Detection for Low-Cost Robot Arms)（接触感知的分叉路线：本卡装触觉传感器走高保真，CoPRE 零额外传感器、只靠内置力矩估计+无接触参考模型残差检测弱接触）
+
 ## 7. 读前须知
 
 [条件流匹配损失](/ai-fa/explore/30-Formulas/条件流匹配损失)（去噪目标的形式来源）· [扩散模型](/ai-fa/explore/20-Algorithms/扩散模型)（潜空间扩散基础）· [世界模型](/ai-fa/explore/20-Algorithms/世界模型)（WM→WAM 谱系）；顺带了解 VAE 潜空间复用（[变分自编码器](/ai-fa/explore/20-Algorithms/变分自编码器)）与 RMSNorm（[均方根归一化](/ai-fa/explore/30-Formulas/均方根归一化)）。

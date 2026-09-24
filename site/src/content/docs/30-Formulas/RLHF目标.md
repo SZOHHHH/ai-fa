@@ -27,6 +27,18 @@ $$\max_{\pi_\theta}\ \mathbb{E}_{x \sim \mathcal{D},\ y \sim \pi_\theta(\cdot \m
 | RLAIF 版 | $$r_\phi$$ 换成 AI 评判（ Constitutional AI 系） | CAI 2022 | 人类 → AI 反馈 |
 | 闭式最优解 | $$\pi^*(y\mid x) = \frac{1}{Z(x)}\pi_{\mathrm{ref}}(y\mid x)\exp\!\left(\frac{1}{\beta}r(x,y)\right)$$ | DPO 推导用 | **Boltzmann 分布形态**——DPO 的起点 |
 
+## 教程：闭式最优解 = Boltzmann 重加权（汇率现场）
+
+**第 1 步：偏好宇宙。** prompt 下只有两个候选 $$y^+$$/$$y^-$$；奖励模型打分 $$r(y^+) = 1,\ r(y^-) = 0$$；SFT 参考模型 $$\pi_{\mathrm{ref}} = (0.5, 0.5)$$；$$\beta = 0.5$$。
+
+**第 2 步：套闭式解。** $$\pi^*(y) \propto \pi_{\mathrm{ref}}(y)\, e^{r(y)/\beta}$$：$$y^+$$ 的权 $$= 0.5\times e^{1/0.5} = 0.5\times e^2 = 3.695$$；$$y^-$$ 的权 $$= 0.5\times e^{0} = 0.5$$。归一化 $$Z = 4.195$$：$$\pi^* = (0.881,\ 0.119)$$——**奖励差 1 分被 β 兑换成 88:12 的概率比**。
+
+**第 3 步：β 就是汇率。** $$\beta\to\infty$$：$$e^{r/\beta}\to1$$ → $$\pi^* = (0.5, 0.5)$$（一分奖励换不动概率，模型不动）；$$\beta\to0$$：$$\pi^*(y^+)\to1$$（奖励几乎无限兑换，全押高分——语言崩坏）。$$\beta=0.5$$ 的中间态 = "信任奖励但保留语言能力"。
+
+**第 4 步：为什么 KL 锚不可省（保险丝现场）。** 奖励模型是从有限偏好数据学的——它爱听的话 ≠ 真话。若 $$\beta = 0$$ 直接追分：模型找到 reward model 的漏洞（比如说空话刷分），$$\pi^*$$ 塌到单点；KL 项把每一步的概率变化都记在账上（偏离参考要付费），漏洞收益 < 偏离成本时自动停。
+
+**第 5 步：这个闭式解的地位。** 它证明**奖励可以用策略比表达**：$$r = \beta\log\frac{\pi}{\pi_{\mathrm{ref}}} + \beta\log Z$$——DPO 把这个反解式代进 [Bradley-Terry模型](/ai-fa/explore/40-Concepts/Bradley-Terry模型) 的偏好似然，成对相减时 $$Z$$ 消掉，得到无需奖励模型、无需采样的纯监督损失（推导链见 [DPO损失](/ai-fa/explore/30-Formulas/DPO损失)；BT 侧的 Z 消元手算见 [Bradley-Terry模型](/ai-fa/explore/40-Concepts/Bradley-Terry模型) §教程）。
+
 ## 3. 直觉解释
 
 - 奖励模型会**过拟合**（reward hacking）：模型学会说奖励模型爱听的话而非真话——KL 锚是保险丝
@@ -50,7 +62,14 @@ $$\max_{\pi_\theta}\ \mathbb{E}_{x \sim \mathcal{D},\ y \sim \pi_\theta(\cdot \m
 - [期望](/ai-fa/explore/40-Concepts/期望)：目标骨架
 - [贝尔曼方程](/ai-fa/explore/40-Concepts/贝尔曼方程) / [策略梯度定理](/ai-fa/explore/40-Concepts/策略梯度定理)：优化路径（PPO）
 
-## 6. 与其他公式的关系
+## 6. 自测
+
+1. $$r = (1, 0)$$、$$\pi_{\mathrm{ref}} = (0.5,0.5)$$、$$\beta = 0.5$$：$$\pi^*$$？（softmax 权重 $$(e^2, e^0)$$ → $$(0.881, 0.119)$$）
+2. $$\beta\to\infty$$ 与 $$\beta\to0$$ 各退化成什么？（不动（$$\pi^* = \pi_{\mathrm{ref}}$$）/ 全押最高分（语言崩坏））
+3. KL 锚防的是什么病？（reward hacking——奖励模型过拟合，说它爱听的话；偏离要付费，漏洞收益不足时自动停）
+4. 闭式解为什么是 DPO 的地基？（$$r = \beta\log\frac{\pi}{\pi_{\mathrm{ref}}}+\beta\log Z$$——奖励可用策略比表达，成对相减 $$Z$$ 消元）
+
+## 7. 与其他公式的关系
 
 - → **由 PPO 优化**：[PPO裁剪目标](/ai-fa/explore/30-Formulas/PPO裁剪目标)（工程主路径）
 - → **闭式解反推**：[DPO损失](/ai-fa/explore/30-Formulas/DPO损失)（理论主路径）——"同一目标的两种解法"是 B2 线核心叙事

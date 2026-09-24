@@ -27,6 +27,18 @@ $$\text{正向（世界模型）}:\;p(s'\mid s,a)\qquad\longleftrightarrow\qquad
 | **imagine-then-act**（机器人 WAM） | 先扩散生成未来视频，再由未来帧反推动作 | Fast-WAM-IDM；[[10-Papers/09-世界模型与JEPA/GIFT Guided Intermediate Feature Training via Action-Oriented Structural Supervision for Robotic Man|GIFT]] 的 WAM-IDM 变体（未来条件 IDM + 表征监督）；[[10-Papers/09-世界模型与JEPA/GE-Act 2.0 Pretraining and Scaling a World-Action Model for Robotic Manipulation|GE-Act 2.0]]（单步流生成未来→IDM 反推 + KASO 兼容选择，2026 旗舰缩放） |
 | **正则/一致性** | "前向预测的帧反推回的动作应与条件动作一致"——当验钞机用 | 世界模型训练辅助件 |
 
+## 教程：同一帧对的三个世界（良定义性三档）
+
+**第 1 步：确定世界。** 台球：$s = $（球在左），$s' = $（球在右），物理唯一 → $q(a{=}右|s,s') \approx 1$（尖峰）——**果几乎锁定因**，反推可靠，IDM 当精确打标签机用（VPT 给 Minecraft 视频补按键）。
+
+**第 2 步：随机世界。** 格斗：$s\to s'$（对手倒地）可由 a=重拳（碰巧命中）或 a=轻拳+连招 → $q = (0.6,\ 0.4)$ 宽峰——同样的果多种因，**反推只能给分布**。软输出（交叉熵训练的概率向量）此时不是缺陷而是答案本身：**"哪些键都行"的完整描述**（CE 最优 = 真后验 $p(a|s,s')$，由 CE = KL + 熵恒等式直接给出，[[30-Formulas/交叉熵]] §2）。
+
+**第 3 步：无因果世界。** $s\to s'$ 是对手自走（agent 没按键）→ $q \approx$ 均匀（无信息）——**果对因的信息量 = 互信息**，零互信息时反推无解。良定义性地图：随机性与 $k$ 越大，果对因的信息越少。
+
+**第 4 步：k 步版的多模态。** $q(a_t|s_t, s_{t+k})$：$k$ 大时通向同一未来的路径极多（先绕路再到达也算）→ 后验天然多峰——与 [[20-Algorithms/MDN-RNN]]"未来本身多模态"是镜像问题（未来多模态 ↔ 原因多模态），E2 反推的设计张力全在这张地图上。
+
+**第 5 步：imagine-then-act 的用法。** WAM 系：扩散先生成目标未来帧 $s_{t+k}$，IDM 吃 $(s_t, s_{t+k})$ 反推第一步动作——**把"规划"拆成"想象+反推"两件标准件**；对照路线=goal 直接进生成器（Diffuser 一体化）——两条路的选择见 §2 家族表。
+
 ## 3. 什么时候"逆"得动（良定义性）
 
 | 场景 | 后验 $q(a\mid s,s')$ | 说明 |
@@ -44,7 +56,14 @@ $$\text{正向（世界模型）}:\;p(s'\mid s,a)\qquad\longleftrightarrow\qquad
 - **软输出才是宝**：用 [[30-Formulas/交叉熵|交叉熵]] 训练的 IDM，其总体最优=匹配真后验 $p(a\mid s,s')$（交叉熵=KL+熵的恒等式直接给出）——18 维概率向量（[[40-Concepts/独热编码（One-Hot）|one-hot]] 动作空间的软形态）本身就是"哪些按键都行"的完整答案，argmax 只是它的一个投影。
 - **逆强化学习（IRL）**：反推的是"奖励"不是"动作"，另一码事。
 
-## 5. 与库内实体的关系
+## 5. 自测
+
+1. 确定/随机/无因果三档的 $q(a|s,s')$ 形态？（尖峰（果锁因）/ 宽峰多模态（多因同果）/ 均匀（互信息为零））
+2. 交叉熵训 IDM 的最优解？（$q_\theta \to p(a|s,s')$ 真后验（CE = KL + 熵恒等式）——软输出即答案）
+3. k 步 IDM 为什么天然多模态？（通向同一未来的路径多（绕路也算）——k 越大峰越多）
+4. imagine-then-act 的两件标准件？（扩散想象未来帧 + IDM 反推首动作——对照 goal 直接进生成器的 Diffuser 路线）
+
+## 6. 与库内实体的关系
 
 - ← 地基：[[40-Concepts/贝叶斯公式]]与[[40-Concepts/条件概率]]（后验语言）、[[40-Concepts/马尔可夫决策过程]]（转移定义因果）
 - → 配套：[[40-Concepts/行为克隆与模仿学习]]（镜像零件）、[[10-Papers/03-后处理/A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning（DAGGER）|DAGGER]]（分布对齐同源）

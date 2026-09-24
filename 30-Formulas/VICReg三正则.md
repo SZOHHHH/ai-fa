@@ -1,28 +1,71 @@
 ---
 type: formula
-title: VICReg三正则
-status: active
+formula_id: VICREG
+aliases: [VICReg三正则, VICReg损失, 方差-不变-协方差正则]
+domain: 自监督学习
+loss_type: regression
 tags: [formula]
 ---
 
-# VICReg三正则
+# VICReg 三正则
 
-## 标准形式
+## 1. 标准形式
 
+$$\mathcal{L} = \underbrace{\lambda\, H(V)}_{\text{方差项}} + \underbrace{\mu\, C(V)}_{\text{协方差项}} + \underbrace{\mathbb{E}\,\|f(x) - f(x')\|^2}_{\text{不变项（拉近增广对）}}$$
 
-$$
-\mathcal{L}=\lambda H(v)+\nu V(v)+\mathbb{E}\|f(x)-f(x^{\prime})\|^2
-$$
+三项各有职责（$V$ = batch 的表征矩阵，$f$ = 编码器，$x'$ = 同图另一增广）：
+- **方差项** $H(V) = \frac{1}{d}\sum_j \max\!\big(0,\ 1 - \mathrm{Std}(v_{:j})\big)$：每维标准差不足 1 就罚——**防塌缩**（hinge 形式：标准差 ≥1 后不再奖）
+- **协方差项** $C(V) = \frac{1}{d}\sum_{i\ne j} [G]_{ij}^2$（$G$ = 去均值后的协方差）：**去相关**（各维携带不同信息，防冗余）
+- **不变项**：同一图的两个增广（裁剪/变色）的表征拉近——**语义不变性**
 
+## 2. 表示对照表
 
-## 一句话
+| 方法 | 防塌缩手段 | 出处 | 说明 |
+|---|---|---|---|
+| 对比学习 | 负样本推远 | SimCLR/CLIP | 需要大批/大字典 |
+| 非对称（EMA） | 教师慢速跟随 | BYOL/JEPA | 结构防塌缩 |
+| **VICReg（本卡）** | 显式方差+协方差正则 | [[10-Papers/08-多模态/VICReg- Variance-Invariance-Covariance Regularization for Self-Supervised Learning（VICReg）]] | 无负样本、无 EMA |
+| Barlow Twins | 对角 1 非对角 0（相关性版） | 2021 | 同思想（相关矩阵版） |
 
-方差-不变性-协方差
+## 教程：一维表征的三种死法与三项解药
 
-**直觉**：无负样本防坍缩三件套
+**第 1 步：设定。** batch 4 张图、表征一维（$d=1$，最简），增广对 $(x_i, x_i')$。
 
-## 本命论文
+**第 2 步：死法一——塌缩。** 编码器作弊输出常数 $f \equiv 0.5$：不变项 $= 0$（增广对完美一致）白拿满分——**没有方差项这就是全局最优**。方差项出手：$\mathrm{Std} = 0 < 1$ → 罚 $\max(0, 1-0) = 1$（满罚）。作弊解被三项联合判死刑。
 
-[[VICReg- Variance-Invariance-Covariance Regularization for Self-Supervised Learning（VICReg）]]
+**第 3 步：死法二——小抖动塌缩。** 聪明点的作弊：$f = 0.5 + 0.01\times(\text{图编号})$：Std $= 0.01\ll1$ → 罚 $0.99$；不变项仍近 0——**方差项的 hinge 保证表征必须"铺开"到单位标准差**。
 
-> 待办：精读时补"表示对照表"（不同论文的符号差异换算）
+**第 4 步：死法三——冗余维。** $d=2$ 但两维完全相同（$v_1 \equiv v_2$）：方差项满意（各自 Std=1）但信息量减半——协方差项出手：非对角 $[G]_{12} = 1$（完全相关）→ 罚 $1$。**去相关逼每维学新东西**。
+
+**第 5 步：三项的分工读法。** 不变项给"语义该稳定"的正信号；方差与协方差两项划"表征空间的下限形状"（每维活着 + 各干各的）——**无负样本、无 EMA、无大批依赖**，与 JEPA 的非对称路线（[[40-Concepts/JEPA联合嵌入预测架构]] 教程）并列为防塌缩的第二、三流派。
+
+## 3. 直觉解释
+
+- **防塌缩的三个流派**：推远负样本（对比）/ 结构非对称（EMA）/ 显式正则（VICReg）——同一问题的三种物理
+- hinge 方差的妙处：标准差超过 1 后不再奖励——**不鼓励无意义的发散**，只保底
+- 协方差项 = 表征空间的"去重审计"：白化（whitening）的可微近似
+
+## 4. 出处
+
+| 论文 | 贡献 |
+|---|---|
+| [[10-Papers/08-多模态/VICReg- Variance-Invariance-Covariance Regularization for Self-Supervised Learning（VICReg）]] | 提出（Meta，LeCun 系） |
+
+## 5. 数学概念分解
+
+- [[40-Concepts/方差与协方差]]：两个正则项的本体
+- [[40-Concepts/范数]]：不变项的 MSE
+- [[40-Concepts/期望]]：batch 期望近似
+
+## 6. 自测
+
+1. 常数作弊解被谁杀死？（方差项：Std=0 → hinge 罚 1（满罚）——不变项白拿也没用）
+2. hinge 形式为什么不是平方罚？（标准差超 1 后停止奖励——只保底不鼓励发散）
+3. 协方差项治什么？（维间冗余（$v_1 \equiv v_2$ 信息减半）——白化的可微近似）
+4. 防塌缩三流派？（负样本推远 / EMA 非对称 / 显式正则——VICReg 是第三种）
+
+## 7. 与其他公式的关系
+
+- ↔ 对照 [[30-Formulas/CLIP对比损失]]：负样本派 vs 正则派的自监督两路线
+- ↔ 对照 [[40-Concepts/JEPA联合嵌入预测架构]]：结构非对称派——三家防塌缩的完整地图
+- → 与 [[30-Formulas/自监督掩码重建]] 同属"无标注预训练"工具箱

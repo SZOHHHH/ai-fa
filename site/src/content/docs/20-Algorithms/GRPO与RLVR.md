@@ -30,6 +30,18 @@ tags: [algo]
 - [GRPO目标](/ai-fa/explore/30-Formulas/GRPO目标) —— 定义性公式
 - 继承：[PPO裁剪目标](/ai-fa/explore/30-Formulas/PPO裁剪目标)（裁剪）、[RLHF目标](/ai-fa/explore/30-Formulas/RLHF目标)（KL 锚）
 
+## 教程：R1 的一天（规则奖励的 RL 循环）
+
+**第 1 步：出题与采样。** prompt"证明 x"→ 模型**自己生成 G=8 个推理链**（温度采样）——同一道题八份答卷。
+
+**第 2 步：规则打分（RLVR）。** 不用奖励模型：答案对 = 1、错 = 0，格式分另计——$$r = (1,1,0,0,1,0,0,1)$$。
+
+**第 3 步：组内标准化。** mean = 0.5、std = 0.5 → $$\hat A = (\pm1)$$——**完整的 (1,1,0,0) 四样本手算见 [GRPO目标](/ai-fa/explore/30-Formulas/GRPO目标) 教程**；全对/全错组优势全零（梯度消失的退化病与 CGE 修法同卡）。
+
+**第 4 步：更新。** 组内每 token 走 PPO 裁剪（四象限见 [PPO裁剪目标](/ai-fa/explore/30-Formulas/PPO裁剪目标)）+ KL 锚住 SFT 参考防语言崩坏——**没有 critic 网络**（PPO 的 V 网络被 8 次采样替代：MC 基线，[贝尔曼方程](/ai-fa/explore/40-Concepts/贝尔曼方程) 误区区）。
+
+**第 5 步：涌现叙事。** R1-Zero 证明：跳过 SFT 的纯 RL + 规则奖励，模型自发长出反思/验证/长链行为——**可验证信号（数学/代码对错）足以驱动推理能力涌现**；蒸馏版再把大模型的长链能力转给小模型（[知识蒸馏](/ai-fa/explore/40-Concepts/知识蒸馏) §R1 行）。
+
 ## 4. 数学概念分解
 
 [重要性采样](/ai-fa/explore/40-Concepts/重要性采样)（比率）、[贝尔曼方程](/ai-fa/explore/40-Concepts/贝尔曼方程)（优势=组均值的替身）、[期望](/ai-fa/explore/40-Concepts/期望)、[KL散度](/ai-fa/explore/40-Concepts/KL散度)
@@ -63,3 +75,10 @@ tags: [algo]
 - → 后继补记（260923）：[Run-then-Walk](/ai-fa/explore/10-Papers/04-强化学习与对齐/Sometimes You Gotta Run Before You Can Walk Run-then-Walk Scheduling Strategy for VLM Autonomous Dri)（GRPO 的**目标函数课程**：同数据同算法只按阶段切换奖励——Run 进度探索→Walk 安全修复，VLM 驾驶 RL epoch 省 40-50%）
 
 - → 后继补记（260923）：[Video-HopChain](/ai-fa/explore/10-Papers/04-强化学习与对齐/Video-HopChain Multi-Hop Questions and Confidence-Gated Exploration for Video Reasoning Models)（RLVR 数据合成+零方差组第三条修法：CGE 屏蔽最自信 token 重采制造组内对照，与 ThinkPrior 的冷启动挑题互补）
+
+## 自测
+
+1. R1 的奖励从哪来？（规则（答案对错+格式）——RLVR 不用奖励模型）
+2. 组内标准化怎么算优势？（$$(r-\mathrm{mean})/\mathrm{std}$$：(1,1,0,0)→(±1)——MC 基线替 critic）
+3. 退化病与修法？（全对/全错组优势全零（梯度消失）——CGE 重采/Dr.GRPO 修偏置）
+4. R1-Zero 证明了什么？（纯 RL+可验证信号足以让推理行为涌现——反思/验证/长链自发长出）

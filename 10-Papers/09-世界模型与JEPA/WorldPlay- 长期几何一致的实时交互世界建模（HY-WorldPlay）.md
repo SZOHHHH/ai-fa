@@ -44,6 +44,7 @@ Context Forcing 的对齐目标（示意）：
 - ← HY-World 1.5 框架（腾讯混元系）；
 - ≡ 蒸馏侧与 [[10-Papers/09-世界模型与JEPA/Causal Forcing- 自回归扩散蒸馏的正确姿势（Causal Forcing）|Causal Forcing]] 平行（他们理论派、WorldPlay 工程派）；
 - → 后继：[[10-Papers/09-世界模型与JEPA/WorldCompass- 强化学习训练长视野世界模型（WorldCompass）|WorldCompass]]（RL 后训练宿主）、minWM（框架化适配）。
+- ≡ 驾驶域对应物（260925）：[[HelloWorld Towards Practical Applications of Generative Driving World Models|HelloWorld]]（2B 驾驶生成 WM 系统：块因果+自 rollout 对齐+20→4 步蒸馏——同款「因果教师→部署态对齐→少步蒸馏」配方在车队 rigs 约束下的实例）。
 
 ## 6. 影响后续
 

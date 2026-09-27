@@ -43,6 +43,7 @@ layer: 精化层（摘要级+摘要核实，PDF 待深读）
 ## 6. 影响后续
 - 训练后稀疏化从"模仿教师注意力"转向"端到端服务任务损失"，可能成为稀疏注意力选择器的默认训练法。
 - 跨域启示：任何"用中间量蒸馏教选择器/控制器"的场景（KV 淘汰、检索路由、早退）都适用同样的对齐批判。
+- 后续印证（260926）：[[10-Papers/06-长上下文/CompKV Compensation-Aware KV Selection for Long-Context LLM Inference|CompKV]] 把同一"目标对齐"批判推进到补偿式稀疏注意力（块选择应服务下游补偿误差，而非注意力质量本身）——跨域对齐批判再+1。
 
 ## 7. 读前须知
 - 前置：softmax 注意力计算流程（[[10-Papers/01-架构演进/Attention Is All You Need（Transformer）|Transformer]]）、Top-K 硬选择的梯度截断问题（重参数化/Gumbel 直觉有帮助）。

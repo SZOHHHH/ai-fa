@@ -49,6 +49,7 @@ $$
 
 ---
 
+> → 后继补记（260925）：[[AD-WM Action-Discriminative World Models for Counterfactual Model Predictive Control|AD-WM]]（本文被其引为最近亲[26]）——恢复目标从**观测到的**潜差分升级到**预测的**转移端点（predictor-level：梯度直达动力学），并配条件互信息下界版本；两卡合看=「从潜位移恢复动作」路线的观测级→预测级演进。
 > 谱系枢纽：[[Dream to Control- Learning Behaviors by Latent Imagination（Dreamer）]]（图谱连通入口）
 > 近邻同族：[[DF3- World Modeling via Decoder-Free Feature Forecasting in Autonomous Navigation（DF3）]] · [[Revisiting Feature Prediction for Learning Visual Representations from Video（V-JEPA）]]
 > 数学根基（占位层）：[[扩散条件去噪]] · [[贝尔曼方程]]

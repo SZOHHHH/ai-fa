@@ -18,6 +18,8 @@ $$G(x) = \mathrm{softmax}\!\left( \mathrm{top}\text{-}k( W_g x + \epsilon) \righ
 $$\mathcal{L}_{\text{aux}} = \alpha \sum_{i=1}^{N} f_i \cdot P_i, \qquad f_i = \frac{\text{token 数流向专家 } i}{\text{总 token}},\quad P_i = \mathbb{E}_x[\mathrm{softmax}(W_g x)_i]$$
 （$f_i \cdot P_i$ 之和在均匀分布时最小——逼路由"雨露均沾"）
 
+> 均衡机制三系补记（260925）：辅助损失（上式 GShard 系）→ 免损失偏置（[[Auxiliary-Loss-Free Load Balancing Strategy for Mixture-of-Experts（无辅助损失MoE）|无辅助损失MoE]]）→ 梯度注入（[[Exact Quantile Balancing and Load-Error Injection for Mixture-of-Experts|EQB+LEI]]：局部负载误差直接进路由分数梯度）。
+
 ## 2. 表示对照表
 
 | 表示名 | 公式核心 | 出处 | 说明 |

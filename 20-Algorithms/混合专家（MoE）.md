@@ -75,6 +75,7 @@ tags: [algo]
 
 - → 后继补记（260916）：[[10-Papers/01-架构演进/ACE Adaptive Calibration-Free Expert Skipping for MoE-based LLMs|ACE]]（MoE 推理效率轴：免校准专家跳过）
 - → 后继补记（260918）：[[10-Papers/05-MoE/Higher-order pruning of experts in mixture-of-experts language models|HOPE]]（专家剪枝从一阶可加假设升级到二阶协作目标）、[[10-Papers/05-MoE/Infinite-Parameter LLMs Generating and Adapting Weights from Live Data|Infinite-Parameter LLMs]]（静态专家池→活数据生成权重的变体轴）
+- → 后继补记（260925 轮换线五卡）：[[Exact Quantile Balancing and Load-Error Injection for Mixture-of-Experts|EQB+LEI]]（均衡机制：精确全局分位数+梯度注入）、[[Hunyuan-A13B Technical Report|Hunyuan-A13B]]（80B/13B 开放档位+双模 CoT）、[[Combining Hierarchical Cognitive Process with Process Supervision for Interpretable Scene Safety Und|层级认知×过程监督]]（MoE 当认知子过程分工器的应用支）、[[You Only Need 23 of the Chosen Experts An Empirical Study of Dynamic Expert Pruning in Fine-Grained|2/3 专家剪枝实证]]（2/3 均匀截断=细粒度剪枝强基线）、[[From Experts to Sub-experts Fine-grained Parameter-Efficient Fine-Tuning for MoE LLMs|NSFT]]（子专家级 PEFT）
 
 ## 自测
 

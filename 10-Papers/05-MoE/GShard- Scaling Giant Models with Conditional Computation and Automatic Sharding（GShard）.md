@@ -39,6 +39,7 @@ MoE 装进 Transformer（每两层替换 FFN 为 MoE）+ 自动分片编译器�
 
 - 扩展了 [[10-Papers/03-后处理/Outrageously Large Neural Networks- The Sparsely-Gated Mixture-of-Experts Layer（稀疏MoE）]] 到 Transformer 与机器翻译
 - 前置于 [[10-Papers/05-MoE/Switch Transformers- Scaling to Trillion Parameter Models with Simple and Efficient Spars（Switch）]]（简化其启发式）
+- → 后继（260925）：[[Exact Quantile Balancing and Load-Error Injection for Mixture-of-Experts|EQB+LEI]]——LEI 把局部负载误差直接注进路由分数梯度，同等质量下胜 GShard 损失（均衡机制从辅助损失走向梯度注入）
 
 ## 6. 影响与后续
 

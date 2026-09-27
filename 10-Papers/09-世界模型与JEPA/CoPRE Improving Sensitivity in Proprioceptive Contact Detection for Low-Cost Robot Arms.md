@@ -58,6 +58,7 @@ tags: [paper]
 - ↔与 [[40-Concepts/逆动力学（IDM）]] 同题异构：逆动力学基线（解析 $\tau=f(q,\dot q,\ddot q)$）在弱接触上完败（ARX 0%），本文用**学习式名义模型+残差**替代解析模型——正是 E2 IDM 头"学习式反推替代解析"路线在接触检测上的对应物
 - ↔"由果找因"思想与 E2 后验反推同族（从观测反推隐因），但此处反推的是**二值接触事件**而非动作序列，且是判别式残差检验、无生成式 WM——与 [[20-Algorithms/世界模型]] 谱系仅方法论擦边
 - ⊥划界 [[DexTacWAM A Visuo-Tactile World-Action Model for Dexterous Manipulation]]：那边装触觉传感器做视触觉 WM，这边明确"零额外传感器"只用电机内置信号——低成本路线与高保真路线的分叉
+- ↔ 触觉恢复线第三卡（260925）：[[DA-GRD Decision-Aware Grasp-Relevant Disambiguation for tactile recovery under perception-to-executi|DA-GRD]]——视觉失效后 SE(2) 粒子信念+决策感知触觉探针恢复抓取（不学习、显式信念路线）；与本卡「学习式残差」、DexTacWAM「视触觉 WM」合成三条技术路线。
 - ←残差检测传统（model-based 残差观测器/动量观测器）的学习化：模型误差与摩擦不再需要辨识，但保留运动学模型（雅可比）做聚合
 
 ## 6. 影响后续

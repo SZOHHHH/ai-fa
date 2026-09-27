@@ -39,6 +39,7 @@ $$
 ## 5. 与前作/矩阵关系
 
 🚩🚩 **占 [[60-Matrices/MoE路由矩阵]] "去偏置路由"机会格的主位**——B9 机会格"去偏置路由×理论"的工程实现已被 DeepSeek 占（理论保证侧仍薄但窗口窄）
+- 对照补记（260925）：[[Exact Quantile Balancing and Load-Error Injection for Mixture-of-Experts|EQB+LEI]] 反向路线——本文免损失偏置被其点名「token 无关保不住微批级均衡」，LEI 改走梯度注入（token/微批相关）——两卡合成「免辅助损失」之争的两极。
 
 
 ## 6. 影响与占位意义

@@ -31,6 +31,7 @@ layer: 占位
 
 ## 5. 与前作/矩阵关系
 - 线锚：[[40-Concepts/思维链（CoT）]] · [[40-Concepts/视觉语言模型（VLM）]]（占位挂链，Tier B 精化）
+- 同族：[[CinematicVQA Benchmarking Film-Grammar Reasoning in Large Vision-Language Models]]（视频模型能力基准近邻：本文测物理关系一致性，CinematicVQA 测电影语法叙事推理——都超越低层技巧识别层）
 
 ## 6. 影响后续
 （待精读）

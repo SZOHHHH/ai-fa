@@ -31,7 +31,7 @@ layer: 占位
 
 ## 5. 与前作/矩阵关系
 - 线锚：[[20-Algorithms/扩散模型]] · [[20-Algorithms/一致性模型]]（因果一致性蒸馏 CD 是其 40→1 步蒸馏链的第二段）
-- 同族：[[10-Papers/02-生成建模与扩散/Astronex-World 1.0 Real-Time Interactive World Model Foundation|Astronex-World 1.0]]（同为实时交互式 WM 基座） · [[10-Papers/09-世界模型与JEPA/Learning Interactive Real-World Simulators（UniSim）|UniSim]]（同为可交互真实世界仿真器，用于策略闭环评测）
+- 同族：[[10-Papers/02-生成建模与扩散/Astronex-World 1.0 Real-Time Interactive World Model Foundation|Astronex-World 1.0]]（同为实时交互式 WM 基座） · [[10-Papers/09-世界模型与JEPA/Learning Interactive Real-World Simulators（UniSim）|UniSim]]（同为可交互真实世界仿真器，用于策略闭环评测） · [[HelloWorld Towards Practical Applications of Generative Driving World Models|HelloWorld]]（同域开环侧：交互观察生成+少步蒸馏但显式不进 policy-in-the-loop——两卡合看=驾驶 WM 的开环/闭环分界线）
 - 蒸馏链同轴：[[10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）|DMD]]（其 self-rollout DMD 段的分布匹配根基） · [[10-Papers/02-生成建模与扩散/Improved Distribution Matching Distillation for Fast Image Synthesis（DMD2）|DMD2]]
 - 概念链：[[40-Concepts/知识蒸馏]]（教师→学生全链主题） · [[40-Concepts/量化]]（W8A8 部署侧） · [[40-Concepts/KV缓存]]（每步因果流式推理的载体）
 

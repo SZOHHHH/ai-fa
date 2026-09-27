@@ -28,6 +28,7 @@ $$\text{KV Cache} = 2 \times n_{\text{layers}} \times n_{\text{ctx}} \times h_{\
   3. 投机采样/前缀共享：系统层方案
 - **PagedAttention**：操作系统式分页管理碎片化 cache（vLLM 核心）
 - → 压缩极限新锚（260918）：[[10-Papers/05-MoE/DeepSeek-V4.1-Flash Pushing the Limits of KV Cache Compression|DeepSeek-V4.1-Flash]]（552B 多模态 MoE 正面攻坚 prefill 计算+HBM/SSD 存储+传输带宽三重瓶颈）
+- 驱逐/共享/补偿/跨环四支新锚（260926，06 线）：[[10-Papers/06-长上下文/DeltaS Reading the Gated Linear Attention State for KV Cache Eviction in Streaming Video|DeltaS]]（读线性注意力循环状态的 state drift 做 query-无关流式驱逐）、[[10-Papers/06-长上下文/HySparse2 Hybrid Sparse Attention with Two-Level KV Sharing|HySparse2]]（两级跨层 KV 共享+token 级稀疏，prefill 自解码器后提前退出）、[[10-Papers/06-长上下文/CompKV Compensation-Aware KV Selection for Long-Context LLM Inference|CompKV]]（补偿感知选择——按"补不准的块"而非注意力质量排序）、[[10-Papers/06-长上下文/FlashLoop Fast and Memory-Efficient Looped Transformers via Lazy Updates|FlashLoop]]（环形 Transformer 的跨环 KV 冗余：token 稀疏更新+残差量化，6× 显存缩减）
 - 与 [[30-Formulas/注意力计算复杂度]] 联动：prefill 是 compute-bound、decode 是 memory-bound
 
 ## 教程：7B 模型 cache 体积手算（一张真实账单）

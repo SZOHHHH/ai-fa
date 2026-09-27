@@ -47,6 +47,7 @@ pdf: 已下载（PDF/）
 - "共享专家"被 Qwen 等广泛采纳
 
 - → 后继补记（260914）：[[10-Papers/05-MoE/SMELT - Scaling Laws for Compute-Matched MoE Looped Transformers（循环MoE缩放律）|SMELT]]（MoE×循环深度复用的计算匹配 scaling）、[[10-Papers/09-世界模型与JEPA/Pelican-Sim 1.0 - A General World Model Simulator for Embodied Intelligence（具身WM仿真器）|Pelican-Sim 1.0]]（稀疏 MoE 吸收动作模态/异构动力学的具身 WM 实例）
+- → 后继补记（260925）：[[Hunyuan-A13B Technical Report|Hunyuan-A13B]]（细粒度开放 MoE 新档位 80B/13B 激活+双模 CoT）、[[You Only Need 23 of the Chosen Experts An Empirical Study of Dynamic Expert Pruning in Fine-Grained|2/3 专家剪枝实证]]（细粒度政权冗余度系统实测：留 2/3 保 98.8%）、[[From Experts to Sub-experts Fine-grained Parameter-Efficient Fine-Tuning for MoE LLMs|NSFT]]（粒度再下探：专家内通道组级微调）
 
 ## 7. 读前须知
 

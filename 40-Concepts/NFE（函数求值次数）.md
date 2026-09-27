@@ -28,6 +28,7 @@ $$\text{NFE} = \text{去噪步数} = \text{每生成一张图/一帧，调用了
 
 - **比"秒数"更本质**：秒数随硬件变，NFE 是架构级常数；采样是串行链（第 t+1 次调用依赖第 t 次输出），墙钟时间 ∝ NFE，GPU 并行救不了串行部分
 - **少步化两条路**：①更好的积分器/轨迹拉直（Rectified Flow 系）；②**蒸馏**——训练时用多步 teacher、推理用 1 步 student（本库蒸馏主线属②）
+- 工业级现役实例（260925）：[[HelloWorld Towards Practical Applications of Generative Driving World Models|HelloWorld]] 驾驶 WM 系统 20 步因果教师→4 步学生（一致性训练+自强制 DMD）——蒸馏进自回归世界模型时每窗小偏移会随窗累积，必须配自 rollout 分布匹配。
 
 ## 教程：一张图的 NFE 账单 + 串行链的墙钟账
 

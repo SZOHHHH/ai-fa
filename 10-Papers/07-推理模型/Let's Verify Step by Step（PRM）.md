@@ -45,6 +45,7 @@ pdf: 已下载（PDF/）
 
 - o1 的"推测配方"最接近的公开线索（OpenAI 时代推理 RL 的信号设计）
 - Math-Shepherd 等开源 PRM 复现路线
+- 系统侧后继：[[HeteroReason Heterogeneous FPGA-GPU Acceleration for Disaggregated Speculative Reasoning]]（PRM 作验证器进入 FPGA-GPU 异构投机推理流水线并加回溯，MICRO 2026）
 
 ## 7. 读前须知
 

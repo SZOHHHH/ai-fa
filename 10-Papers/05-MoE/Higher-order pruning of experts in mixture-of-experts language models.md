@@ -31,7 +31,7 @@ layer: 占位
 
 ## 5. 与前作/矩阵关系
 - 线锚：[[20-Algorithms/混合专家（MoE）]] · [[30-Formulas/MoE门控公式]]（HOPE 二阶目标作用于此层的专家子集选择）
-- 同族：↔ [[10-Papers/05-MoE/Data Scarcity and Model Sparsity Mixtures-of-Experts Overfit More to Repeated Data|MoE 过拟合实证]]（同属"专家冗余/风险"诊断轴——260918 处理段挂链，占位层待精读）
+- 同族：↔ [[10-Papers/05-MoE/Data Scarcity and Model Sparsity Mixtures-of-Experts Overfit More to Repeated Data|MoE 过拟合实证]]（同属"专家冗余/风险"诊断轴——260918 处理段挂链，占位层待精读） · [[You Only Need 23 of the Chosen Experts An Empirical Study of Dynamic Expert Pruning in Fine-Grained|2/3 专家剪枝实证]]（细粒度+生成侧评测的续作，260925 处理段挂链）
 
 ## 6. 影响后续
 （待精读）

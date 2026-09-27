@@ -48,6 +48,6 @@ $$
 
 undefined
 
-> 近邻同族：[[A Survey on In-context Learning（ICL Survey）]] · [[Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）]]
+> 近邻同族：[[A Survey on In-context Learning（ICL Survey）]] · [[Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）]] · [[Reasoning Instructions Can Break Answer Decoding in Vision--Language Models]]（评测接口病理同族：接口失真使测分系统性偏离真实能力）
 
 > 数学根基：[[思维链（CoT）]]

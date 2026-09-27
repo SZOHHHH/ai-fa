@@ -42,6 +42,7 @@ layer: 精化层（摘要级+摘要核实，PDF 待深读）
 
 ## 6. 影响后续
 - 长上下文 prefill 成本优化的新支线：从"更聪明的路由"转向"更便宜的路由维护"；行压缩内核若补齐，实用价值直接。
+- 后续同族（260926）：[[10-Papers/06-长上下文/HySparse2 Hybrid Sparse Attention with Two-Level KV Sharing|HySparse2]]（跨层 KV 共享推进到 YOCO 式两级结构+token 级稀疏——预训练期架构化而非训练后叠加，1M token prefill FLOPs 再降 2.92×）。
 - 与 E1/E2 无域重叠（LLM 推理工程 vs 像素扩散 WM），纯效率工程格。
 
 ## 7. 读前须知

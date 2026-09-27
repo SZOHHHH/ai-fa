@@ -44,6 +44,7 @@ tags: [paper]
 - ← 继承 [[10-Papers/09-世界模型与JEPA/Diffusion Forcing- Next-token Prediction Meets Full-Sequence Diffusion（Diffusion Forcing）]]（逐帧噪声框架）与 Self Forcing（AR 实时化，未入库）；
 - ≡ 平行于我们的 EMDMD 线：同为"DMD 系蒸馏+多模态保真"，差别=他们的考场是视频指标，我们的考场是 RL 分数；
 - → 后继：Causal Forcing++（2605.15141，规模化）、[[10-Papers/09-世界模型与JEPA/minWM- 全栈实时交互世界模型框架（minWM）|minWM]]（框架化）。
+- ≡ 驾驶域同配方（260925）：[[HelloWorld Towards Practical Applications of Generative Driving World Models|HelloWorld]]——块因果生成+打包一致性训练+自强制 DMD 的 20→4 步蒸馏，自认沿用 LingBot-World-Infinity 的「因果教师→一致性蒸馏→自 rollout DMD」高层序列。
 
 ## 6. 影响后续
 

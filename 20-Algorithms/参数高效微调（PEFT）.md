@@ -67,6 +67,7 @@ tags: [algo]
 | QLoRA | 同 LoRA | 零（基座量化） | 同 LoRA | 换 BA |
 
 **工业地位**：定制化时代的基础设施——一个基座 + 万个 LoRA（任务即插即用、存储 KB 级）。
+- 粒度补记（260925）：[[From Experts to Sub-experts Fine-grained Parameter-Efficient Fine-Tuning for MoE LLMs|NSFT]]——MoE 载体上「矩阵级（LoRA）→专家级→子专家（通道组）级」粒度谱系的最下端。
 
 ## 自测
 

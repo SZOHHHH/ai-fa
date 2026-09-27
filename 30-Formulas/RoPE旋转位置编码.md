@@ -75,4 +75,5 @@ $$\tilde k_2 = R_{\pi/2}(0,1)^\top = (-\sin\tfrac{\pi}{2},\ \cos\tfrac{\pi}{2}) 
 - → **作用于** [[30-Formulas/注意力核心公式]] 的打分项
 - ≡ **改进自** 正弦绝对编码（Transformer 原文）——绝对旋转实现相对语义
 - → **被改造**：PI（线性插值）、NTK-aware、YaRN（线 6 批次建链）——长上下文的"手术对象"
+- → **陷阱机制补记（260926）**：[[10-Papers/06-长上下文/The Sirens' Song When Proximal Background Context Overshadows Distant Evidence|Sirens' Song/LYRA]] 指出 RoPE 的距离衰减 × softmax 分母累积竞争 = "近端陷阱"（大量任务无关近端背景集体压过远距证据；遮蔽近端背景反而涨点）——用 t 分布方向匹配重塑打分，只换 QK 打分不动 RoPE 本体；RoPE 副作用的诊断与手术新例
 - 现代 LLM（LLaMA/Qwen/DeepSeek/Flux）默认位置方案

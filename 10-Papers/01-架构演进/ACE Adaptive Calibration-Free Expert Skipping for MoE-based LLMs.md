@@ -32,7 +32,7 @@ layer: 占位
 
 ## 5. 与前作/矩阵关系
 - 线锚：[[20-Algorithms/Transformer]] · [[30-Formulas/注意力核心公式]]（占位挂链，Tier B 精化）
-- 同族：[[20-Algorithms/混合专家（MoE）]]·[[30-Formulas/MoE门控公式]]（top-k 路由本体）；效率近邻：[[40-Concepts/NFE（函数求值次数）]]（"激活多少专家"与"调用几次网络"同族思想）
+- 同族：[[20-Algorithms/混合专家（MoE）]]·[[30-Formulas/MoE门控公式]]（top-k 路由本体）；效率近邻：[[40-Concepts/NFE（函数求值次数）]]（"激活多少专家"与"调用几次网络"同族思想） · 剪枝实证对照（260925）：[[You Only Need 23 of the Chosen Experts An Empirical Study of Dynamic Expert Pruning in Fine-Grained|2/3 专家剪枝实证]]（保守预算下动态规则增益 <1%——本文类跳过方法的定位结论）
 
 ## 6. 影响后续
 （待精读）

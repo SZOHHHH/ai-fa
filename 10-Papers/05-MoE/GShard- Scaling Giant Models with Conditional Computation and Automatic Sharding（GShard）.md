@@ -9,7 +9,7 @@ arxiv: "2006.16668"
 line: MoE
 matrix_coords: [token级, Top-K稀疏路由, 辅助均衡损失]
 tags: [paper]
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2006.16668
 ---
 
 # GShard
@@ -43,6 +43,7 @@ MoE 装进 Transformer（每两层替换 FFN 为 MoE）+ 自动分片编译器�
 
 ## 6. 影响与后续
 
+- → 后继补记（261009）：[[10-Papers/05-MoE/Zepp Accelerating Distributed MoE Serving under Relaxed Balance Constraints|Zepp]]——serving 侧把「均衡」从目标降为约束、直攻瓶颈通信（EP 均衡范式的系统级翻案）。
 - MoE 训练工程范式（容量/丢弃/辅助损失三件套）定型
 - 自动并行编译思想影响 GSPMD/Megatron 等
 

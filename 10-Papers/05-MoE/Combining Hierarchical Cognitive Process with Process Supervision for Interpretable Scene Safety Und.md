@@ -6,7 +6,7 @@ year: 2026
 authors: [Zhiyun Jiang, et al.]
 venue: arXiv 2026
 arxiv: "2609.26399v1"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.26399v1
 line: MoE
 matrix_coords: [应用MoE(场景安全), 层级认知过程建模, 过程监督数据集, LoRA+MoE专家分工]
 tags: [paper]

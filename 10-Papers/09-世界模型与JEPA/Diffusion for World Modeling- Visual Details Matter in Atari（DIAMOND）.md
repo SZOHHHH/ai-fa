@@ -6,7 +6,7 @@ year: 2024
 authors: [Eloi Alonso, Adam Jelley, Vincent Micheli, et al.]
 venue: NeurIPS 2024
 arxiv: "2405.12399"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2405.12399
 line: 世界模型与JEPA
 matrix_coords: [像素重建(生成式), 显式像素, 游戏控制(RL)]
 tags: [paper]

@@ -6,7 +6,7 @@ year: 2026
 authors: [Fred Zhangzhi Peng, Kaiwen Zheng, Anru R. Zhang]
 venue: arXiv 2609.04531（Duke+清华，2026-09-03）
 arxiv: "2609.04531v1"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.04531v1
 line: 生成建模与扩散
 matrix_coords: [扩散/连续状态, token嵌入空间, 蒸馏(分布匹配+配对轨迹)]
 tags: [paper]

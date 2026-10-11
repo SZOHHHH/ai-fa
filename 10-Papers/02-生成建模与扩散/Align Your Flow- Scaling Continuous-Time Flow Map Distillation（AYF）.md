@@ -9,7 +9,7 @@ arxiv: "2506.14603"
 line: 生成建模与扩散
 matrix_coords: [FM, flow map, 蒸馏预训练]
 tags: [paper]
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2506.14603
 ---
 
 # Align Your Flow（AYF）

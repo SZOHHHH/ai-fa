@@ -6,7 +6,7 @@ year: 2026
 authors: [Shaowen Wang, Ge Zhang, Kairong Luo, Yuhao Wu, Shaofan Liu, Jiaheng Liu, Wenhua Huang, Shen Yan, Jian Li]
 venue: arXiv v3 2026-09-11（cs.LG）
 arxiv: "2609.01343"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.01343
 line: MoE
 matrix_coords: 循环Transformer×MoE×scaling law
 tags: [paper, 轮换命中, MoE]

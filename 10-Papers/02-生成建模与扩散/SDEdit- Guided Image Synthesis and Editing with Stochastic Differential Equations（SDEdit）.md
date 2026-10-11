@@ -6,7 +6,7 @@ year: 2021
 authors: [Meng et al.]
 venue: ICLR 2022
 arxiv: "2108.01073"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2108.01073
 line: 生成建模与扩散
 matrix_coords: [扩散/score, 像素空间, 逆过程引导]
 tags: [paper]

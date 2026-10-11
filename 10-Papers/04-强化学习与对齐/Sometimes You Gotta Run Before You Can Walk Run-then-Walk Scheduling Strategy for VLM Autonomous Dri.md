@@ -6,7 +6,7 @@ year: 2026
 authors: [Yuqi Ye, Shangkun Sun, Junhong Lin, et al.]
 venue: arXiv 2026
 arxiv: "2609.25831v1"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.25831v1
 line: 强化学习与对齐
 matrix_coords: [GRPO奖励调度(两阶段), 课程(先探索后修复), VLM驾驶]
 tags: [paper]

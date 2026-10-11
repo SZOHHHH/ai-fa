@@ -6,7 +6,7 @@ year: 2026
 authors: [Ruochen, Jiao]
 venue: 待核（占位层，来自 arXiv 2026-09-24）
 arxiv: "2609.29109v1"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.29109v1
 line: 推理模型
 matrix_coords: 待评
 tags: [paper, 占位层]

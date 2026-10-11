@@ -6,7 +6,7 @@ year: 2016
 authors: [Ba, Kiros, Hinton]
 venue: arXiv 2016
 arxiv: "1607.06450"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/1607.06450
 line: 架构演进
 matrix_coords: [全注意力, 归一化/激活, 无状态]
 tags: [paper]

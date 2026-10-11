@@ -9,7 +9,7 @@ arxiv: "2306.11695"
 line: 后处理与压缩
 matrix_coords: [权重, 剪枝, 训练后]
 tags: [paper]
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2306.11695
 ---
 
 # SparseGPT（LLM 剪枝）

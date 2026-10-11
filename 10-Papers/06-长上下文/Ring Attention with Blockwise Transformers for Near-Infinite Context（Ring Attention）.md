@@ -9,7 +9,7 @@ arxiv: "2310.01889"
 line: 长上下文
 matrix_coords: [系统/流式, 注意力结构层, 分块分布式]
 tags: [paper]
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2310.01889
 ---
 
 # Ring Attention

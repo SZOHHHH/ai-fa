@@ -6,7 +6,7 @@ year: 2026
 authors: [Kohei Sendai, Tatsuya Matsushima, Yusuke Iwasawa]
 venue: 待核（arXiv 2609.03715，2026-09-03；东大 Matsuo-Iwasawa Lab）
 arxiv: "2609.03715v1"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.03715v1
 line: 生成建模与扩散
 matrix_coords: 部署效率×策略容量｜机器人操作｜基准批判轴
 tags: [paper, 精读层]

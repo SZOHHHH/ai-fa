@@ -6,7 +6,7 @@ year: 2026
 authors: [Hongzhou Zhu, Min Zhao, Guande He, Hang Su, Chongxuan Li, Jun Zhu]
 venue: ICML 2026
 arxiv: "2602.02214"
-pdf: 已下载（PDF/Causal Forcing（因果强制蒸馏）.pdf）
+pdf: https://arxiv.org/pdf/2602.02214
 line: 世界模型与JEPA
 matrix_coords: [蒸馏加速(扩散→少步AR), 显式像素, 可操作(动作条件)]
 tags: [paper]

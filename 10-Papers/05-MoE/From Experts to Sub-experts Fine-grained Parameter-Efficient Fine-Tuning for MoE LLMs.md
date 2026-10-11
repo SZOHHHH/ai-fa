@@ -6,7 +6,7 @@ year: 2026
 authors: [Zhentao Tan, et al.]
 venue: arXiv 2026
 arxiv: "2609.25655v1"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.25655v1
 line: MoE
 matrix_coords: [MoE微调粒度, 子专家(中间维通道组), 路由重要性×激活显著性, OLMoE/Ling实证]
 tags: [paper]

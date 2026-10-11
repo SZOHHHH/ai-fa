@@ -6,7 +6,7 @@ year: 2023
 authors: [Cui et al.]
 venue: ICML 2024
 arxiv: "2310.01377"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2310.01377
 line: 强化学习与对齐
 matrix_coords: [AI反馈, BT排序损失, 有]
 tags: [paper]

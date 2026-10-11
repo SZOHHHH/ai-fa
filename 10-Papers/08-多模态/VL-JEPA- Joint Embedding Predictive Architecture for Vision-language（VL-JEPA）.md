@@ -7,7 +7,7 @@ year: 2025
 authors: [（arXiv）]
 venue: arXiv 2025
 arxiv: "2512.10942"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2512.10942
 line: 多模态
 matrix_coords: [特征预测(JEPA系), 潜在状态, 纯离线视频]
 tags: [paper, 占位层]

@@ -6,7 +6,7 @@ year: 2026
 authors: [Haoran Yuan, Zekai Wang, Boning Shao, et al.]
 venue: arXiv 2026
 arxiv: "2609.24976v1"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.24976v1
 line: 世界模型与JEPA
 matrix_coords: [生成式WM(扩散系), 多模态(视觉+触觉), 可操作(动作条件)]
 tags: [paper]

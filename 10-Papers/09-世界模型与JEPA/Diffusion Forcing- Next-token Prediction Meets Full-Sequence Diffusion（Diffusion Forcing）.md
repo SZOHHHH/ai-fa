@@ -6,7 +6,7 @@ year: 2024
 authors: [Boyuan Chen, Diego Marti Mogino, Vincent Micheli, et al.]
 venue: NeurIPS 2024
 arxiv: "2407.01392"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2407.01392
 line: 世界模型与JEPA
 matrix_coords: [像素重建(生成式), 显式像素, 可操作(动作条件)]
 tags: [paper]

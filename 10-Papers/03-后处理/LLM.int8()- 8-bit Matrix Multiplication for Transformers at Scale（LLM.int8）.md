@@ -9,7 +9,7 @@ arxiv: "2208.07339"
 line: 后处理与压缩
 matrix_coords: [权重, 量化, 训练后]
 tags: [paper]
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2208.07339
 ---
 
 # LLM.int8()

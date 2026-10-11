@@ -6,7 +6,7 @@ year: 2026
 authors: [Isaac Kalidindi, Nivedita Rufus, Karmesh Patel, Yann LeCun, Ishita Verma, Amy Zhang]
 venue: arXiv 2026（2601.05230）
 arxiv: "2601.05230"
-pdf: 已下载
+pdf: https://arxiv.org/pdf/2601.05230
 line: 世界模型与JEPA
 matrix_coords: [隐式(视频自监督), 潜在状态+潜动作, 可操作(动作条件)]
 tags: [paper]

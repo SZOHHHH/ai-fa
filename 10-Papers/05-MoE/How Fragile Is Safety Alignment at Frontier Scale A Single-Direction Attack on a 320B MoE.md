@@ -6,7 +6,7 @@ year: 2026
 authors: [Yi, Shi]
 venue: 待核（占位层，来自 arXiv 2026-09-09）
 arxiv: "2609.09793v1"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.09793v1
 line: MoE
 matrix_coords: 待评
 tags: [paper, 占位层]

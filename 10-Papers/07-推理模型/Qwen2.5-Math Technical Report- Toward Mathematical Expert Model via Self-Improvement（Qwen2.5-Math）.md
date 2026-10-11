@@ -6,7 +6,7 @@ year: 2024
 authors: [Qwen Team]
 venue: arXiv 2024
 arxiv: "2409.12122"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2409.12122
 line: 推理模型
 matrix_coords: [训练注入, 链, 自举(自我改进)]
 tags: [paper]

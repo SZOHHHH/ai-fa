@@ -9,7 +9,7 @@ arxiv: "2210.17323"
 line: 后处理与压缩
 matrix_coords: [权重, 量化, 训练后]
 tags: [paper]
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2210.17323
 ---
 
 # GPTQ
@@ -44,6 +44,7 @@ pdf: 已下载（PDF/）
 
 - 4bit 生态（GPTQ-for-LLaMA → AutoGPTQ）消费级部署标配
 - AWQ（激活感知）同期竞品；ExLlama 等推理内核基于 GPTQ 格式
+- → 后继（260910）：[[10-Papers/01-架构演进/G$^2$PTQ Improving LLM Post-Training Quantization with Generalized Gradient Compensation|G²PTQ]]——块级全局监督+按块刷新梯度/Hessian+信赖域缩放，治"局部目标无全局监督/全局目标估计陈旧"两短板
 
 ## 7. 读前须知
 

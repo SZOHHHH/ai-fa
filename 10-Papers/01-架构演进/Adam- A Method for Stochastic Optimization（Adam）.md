@@ -6,7 +6,7 @@ year: 2014
 authors: [Kingma & Ba]
 venue: ICLR 2015（15万+引用）
 arxiv: "1412.6980"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/1412.6980
 line: 架构演进
 matrix_coords: [—, 优化器, —]
 tags: [paper]

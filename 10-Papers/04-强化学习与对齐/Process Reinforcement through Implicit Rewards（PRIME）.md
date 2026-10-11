@@ -6,7 +6,7 @@ year: 2025
 authors: [Ganqu Cui, Lifan Yuan, Zefan Wang, ... Bowen Zhou, Ning Ding]
 venue: arXiv 2025
 arxiv: "2502.01456"
-pdf: 已下载
+pdf: https://arxiv.org/pdf/2502.01456
 line: 强化学习与对齐
 matrix_coords: [学生轨迹+结果信号, 反向KL, token级]
 tags: [paper]

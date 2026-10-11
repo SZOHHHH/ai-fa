@@ -6,7 +6,7 @@ year: 2026
 authors: [Tencent Hunyuan Team]
 venue: arXiv 2026（腾讯）
 arxiv: "2609.27284v1"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.27284v1
 line: MoE
 matrix_coords: [开源MoE大模型, 80B总参/13B激活, 双模思维链, 20T token预训练]
 tags: [paper]

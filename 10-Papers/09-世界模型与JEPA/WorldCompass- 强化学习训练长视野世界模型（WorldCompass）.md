@@ -6,7 +6,7 @@ year: 2026
 authors: [Zehan Wang, Tengfei Wang, Haiyu Zhang, Xuhui Zuo, Junta Wu, Haoyuan Wang, et al.]
 venue: ICML 2026（腾讯）
 arxiv: "2602.09022"
-pdf: 已下载（PDF/WorldCompass（RL长视野世界模型）.pdf）
+pdf: https://arxiv.org/pdf/2602.09022
 line: 世界模型与JEPA
 matrix_coords: [RL后训练(修WM本身), 显式像素, 可操作(交互信号)]
 tags: [paper]
@@ -54,3 +54,4 @@ tags: [paper]
 
 RLHF 基础（reward model+KL 锚）；reward hacking（E1_实验数据台账 c 线节）；clip 级 rollout 与 frame 级 rollout 的效率差。
 
+- → 公式链补记（2601007）：[[30-Formulas/GRPO目标]]（RL 组相对优势）· [[40-Concepts/贝尔曼方程]]（长视野价值递归）

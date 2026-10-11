@@ -6,7 +6,7 @@ year: 2026
 authors: [Yuwen Hao, Menglin Yang]
 venue: arXiv 2609.07406（2026-09-07，HKUST 广州）
 arxiv: "2609.07406v1"
-pdf: 10-Papers/PDF/Think Wider - Mitigating Latent Rank Collapse in Implicit Chain-of-Thought Reasoning（WIDER）.pdf
+pdf: https://arxiv.org/pdf/2609.07406v1
 line: 推理模型
 matrix_coords: 待评（轮换线）
 tags: [paper]
@@ -41,6 +41,8 @@ tags: [paper]
 
 ## 6. 影响后续
 "潜子空间利用率"成为隐式推理的新诊断轴；有效秩/主方向能量可成为任何 latent 表征质量评估的标准仪表（对我们：蒸馏学生策略表征、WM 潜状态质量分析同款工具）。
+
+→ 后继补记（261011）：[[Lapras Latent Reasoning for Time Series Language Models]]——潜推理跨模态落地（TSLM 连续思维，F1 +10.79%、token −23.9×）；其潜态可解码性正合本文"潜轨迹质量仪表"的关注。
 
 ## 7. 读前须知
 需要 [[30-Formulas/VICReg三正则]]（方差-协方差正则的防坍缩思想）与奇异值/有效秩直觉（$erank = \exp(H(\sigma^2/\sum\sigma^2))$，熵加权的秩）；命题 1 证明在附录 A.1，只需懂"矩阵行都落在 r 维子空间 ⇒ 信息只剩 m×r 个坐标"。

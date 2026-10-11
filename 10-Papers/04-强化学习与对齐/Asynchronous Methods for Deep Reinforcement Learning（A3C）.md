@@ -6,7 +6,7 @@ year: 2016
 authors: [Volodymyr Mnih, Adrià Puigdomènech Badia, Mehdi Mirza, Alex Graves, Timothy P. Lillicrap, Tim Harley, David Silver, Koray Kavukcuoglu]
 venue: ICML 2016
 arxiv: "1602.01783"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/1602.01783
 line: 强化学习与对齐
 matrix_coords: [—(无模型控制), 策略学习(on-policy), 有]
 tags: [paper]

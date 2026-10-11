@@ -6,7 +6,7 @@ year: 2026
 authors: [Pit Neitemeier, et al.]
 venue: arXiv 2026
 arxiv: "2609.28053v1"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.28053v1
 line: MoE
 matrix_coords: [MoE训练系统, 全局/局部负载均衡, 分布式专家并行, BF16分位数]
 tags: [paper]

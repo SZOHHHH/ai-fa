@@ -6,7 +6,7 @@ year: 2026
 authors: [Haoran Wang, Yuteng Sun, Yuanjie Li, Ruofei Bai, Meng Yee (Michael) Chuah, Wenyu Liang, Jun Li, Wei-Yun Yau]
 venue: arXiv 2026（A*STAR 新加坡科技研究局+NTU+清华）
 arxiv: "2609.29065v1"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.29065v1
 line: 强化学习与对齐
 matrix_coords: [触觉主动感知, SE(2)粒子信念, 假设消歧(非完全重定位), 机器人抓取恢复]
 tags: [paper]

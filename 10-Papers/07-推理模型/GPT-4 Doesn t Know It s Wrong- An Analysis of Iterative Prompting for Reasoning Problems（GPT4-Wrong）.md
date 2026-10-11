@@ -6,7 +6,7 @@ year: 2023
 authors: [Stechly et al. (ASU)]
 venue: arXiv 2023
 arxiv: "2310.12397"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2310.12397
 line: 推理模型
 matrix_coords: [提示触发, 链, 自我纠错]
 tags: [paper]

@@ -7,7 +7,7 @@ year: 2025
 authors: [ByteDance Seed (Q. Yu et al.)]
 venue: arXiv 2025
 arxiv: "2503.14476"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2503.14476
 line: 强化学习与对齐
 matrix_coords: [GRPO, 硬裁剪, token级]
 tags: [paper, 占位层]

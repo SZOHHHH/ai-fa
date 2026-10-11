@@ -6,7 +6,7 @@ year: 2025
 authors: [（arXiv）]
 venue: arXiv 2025
 arxiv: "2502.09601"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2502.09601
 line: 推理模型
 matrix_coords: [训练注入, 链, 长度控制]
 tags: [paper]

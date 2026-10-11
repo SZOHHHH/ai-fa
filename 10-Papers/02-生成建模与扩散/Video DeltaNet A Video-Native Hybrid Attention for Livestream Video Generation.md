@@ -6,7 +6,7 @@ year: 2026
 authors: [Haocheng Xi, Yiming Xie, Hexu Zhao, et al.]
 venue: arXiv 2026
 arxiv: "2609.20744v1"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.20744v1
 line: 生成建模与扩散
 matrix_coords: [线性注意力(帧级delta规则), 混合注意力, 视频扩散效率]
 tags: [paper]

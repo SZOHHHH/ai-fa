@@ -6,7 +6,7 @@ year: 2023
 authors: [Bai et al. (Qwen)]
 venue: arXiv 2023
 arxiv: "2308.12966"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2308.12966
 line: 多模态
 matrix_coords: [投影接口, 生成(条件LM), 接口级]
 tags: [paper]

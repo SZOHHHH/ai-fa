@@ -6,7 +6,7 @@ year: 2016
 authors: [Selvaraju et al.]
 venue: ICCV 2017
 arxiv: "1610.02391"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/1610.02391
 line: 多模态
 matrix_coords: [—, —, —]
 tags: [paper]

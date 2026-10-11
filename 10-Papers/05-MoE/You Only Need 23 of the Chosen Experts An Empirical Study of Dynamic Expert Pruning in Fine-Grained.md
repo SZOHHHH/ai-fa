@@ -6,7 +6,7 @@ year: 2026
 authors: [Yuanteng Chen, et al.]
 venue: arXiv 2026
 arxiv: "2609.25809v1"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.25809v1
 line: MoE
 matrix_coords: [细粒度MoE, 动态专家剪枝, 推理加速, 12检查点×9架构族实证]
 tags: [paper]

@@ -7,7 +7,7 @@ year: 2024
 authors: [Wang et al. (DeepSeek)]
 venue: arXiv 2024
 arxiv: "2408.15664"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2408.15664
 line: MoE
 matrix_coords: [token级, Top-K稀疏路由, 去偏置]
 tags: [paper, 占位层]
@@ -44,6 +44,7 @@ $$
 
 ## 6. 影响与占位意义
 
+- → 后继补记（261009）：[[10-Papers/05-MoE/Smoothing the Top-k Exposure Boundary for Sparse Mixture-of-Experts|Smoothing Top-k]]——弹性专家预算采样软化 top-k 暴露边界，同修训练期路由信号的另一维。
 榜上格核查：去偏路由格 🚩 关闭。
 
 ---

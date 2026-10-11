@@ -6,7 +6,7 @@ year: 2026
 authors: [Chuanbo Yu, Mingyu Yue, Yan Lyu, Chuhan Song, Peng Wang]
 venue: arXiv 2026-09-10（cs.RO，山东大学系）
 arxiv: "2609.12103"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.12103
 line: 世界模型
 matrix_coords: WM×扩散策略×机器人装配（制造域）
 tags: [paper, 核心组命中, 世界模型]

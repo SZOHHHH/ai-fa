@@ -9,7 +9,7 @@ arxiv: "2305.20050"
 line: 推理模型
 matrix_coords: [训练注入, 链, 过程奖励(PRM)]
 tags: [paper]
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2305.20050
 ---
 
 # Let's Verify Step by Step（PRM）

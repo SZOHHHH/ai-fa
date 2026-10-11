@@ -9,7 +9,7 @@ arxiv: "2501.19393"
 line: 推理模型
 matrix_coords: [测试时延长, 链, 无奖励(调度)]
 tags: [paper]
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2501.19393
 ---
 
 # s1（简单测试时扩展）

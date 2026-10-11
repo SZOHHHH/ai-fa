@@ -6,7 +6,7 @@ year: 2026
 authors: Jiawei Wang, Ke Rui, Yushen Zuo, Yichun Feng, Minglei Li
 venue: arXiv
 arxiv: 2608.18746
-pdf: 10-Papers/PDF/Decision-Metric Alignment in Latent World Models Diagnostics and Action-Conditioned Objectives for MPC Planning.pdf
+pdf: https://arxiv.org/pdf/2608.18746
 line: 世界模型与JEPA
 matrix_coords: 待评
 tags: [paper, 占位, 0910补扫]
@@ -42,6 +42,7 @@ JEPA 世界模型解码再好，"到目标的 latent 欧氏距离"也不保证�
 
 ## 6. 影响后续
 
+- → 后继补记（261009）：[[10-Papers/09-世界模型与JEPA/KineWorld Action-Induced Transport Fields for Embodied World Modeling|KineWorld]]——同「生成目标与决策需求错位」动机的机器人版落地：用动作导出的传输场对生成监督做空间重加权。
 （待精读）
 
 ## 7. 读前须知

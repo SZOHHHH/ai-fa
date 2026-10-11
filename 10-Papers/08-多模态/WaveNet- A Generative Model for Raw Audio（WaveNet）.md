@@ -6,7 +6,7 @@ year: 2016
 authors: [van den Oord et al. (DeepMind)]
 venue: SSW 2016
 arxiv: "1609.03499"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/1609.03499
 line: 多模态
 matrix_coords: [生成接口, 生成(条件LM), —]
 tags: [paper]

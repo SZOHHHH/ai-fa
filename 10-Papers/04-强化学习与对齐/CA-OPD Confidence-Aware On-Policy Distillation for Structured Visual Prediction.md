@@ -6,7 +6,7 @@ year: 2026
 authors: Menghao Li, Linjie Mu, Yin Wang, et al.
 venue: arXiv
 arxiv: 2609.02401
-pdf: 10-Papers/PDF/CA-OPD Confidence-Aware On-Policy Distillation for Structured Visual Prediction.pdf
+pdf: https://arxiv.org/pdf/2609.02401
 line: 强化学习与对齐
 matrix_coords: 待评
 tags: [paper, 占位, 0910补扫]

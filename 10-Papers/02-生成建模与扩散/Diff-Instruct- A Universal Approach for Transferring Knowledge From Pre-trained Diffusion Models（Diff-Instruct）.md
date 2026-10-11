@@ -7,7 +7,7 @@ year: 2023
 authors: [Guanlong Jiao et al.]
 venue: arXiv 2023
 arxiv: "2305.18455"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2305.18455
 line: false
 matrix_coords: [扩散, 蒸馏(score/KL/对抗), 蒸馏预训练]
 tags: [paper, 占位层]

@@ -6,7 +6,7 @@ year: 2017
 authors: [Veličković et al.]
 venue: ICLR 2018
 arxiv: "1710.10903"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/1710.10903
 line: 架构演进
 matrix_coords: [—, —, —]
 tags: [paper]

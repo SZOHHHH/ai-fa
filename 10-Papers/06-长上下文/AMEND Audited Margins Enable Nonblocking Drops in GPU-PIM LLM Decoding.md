@@ -6,7 +6,7 @@ year: 2026
 authors: [Zuxiong, Tan]
 venue: 待核（占位层，来自 arXiv 2026-09-09）
 arxiv: "2609.09823v1"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.09823v1
 line: 长上下文
 matrix_coords: 待评
 tags: [paper, 占位层]

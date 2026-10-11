@@ -6,7 +6,7 @@ year: 2026
 authors: [Yupeng Zheng, Xiang Li, Songen Gu, Yuhang Zheng, Shuai Tian, Weize Li, Linbo Wang, Chaoyue Li, Qichao Zhang, Haoran Li, Zhongpu Xia, Ya-Qin Zhang, Shuicheng Yan, Dongbin Zhao]
 venue: arXiv 2026（自动化所/清华/复旦/NUS，赵冬斌组）
 arxiv: "2609.04193v1"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.04193v1
 line: 世界模型与JEPA
 matrix_coords: [表征监督(动作充分性), 中间特征, 机器人模仿(VLA/WAM)]
 tags: [paper]

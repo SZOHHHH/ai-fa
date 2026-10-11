@@ -54,6 +54,7 @@ $$\text{NFE} = \text{去噪步数} = \text{每生成一张图/一帧，调用了
 
 ## 5. 与库内实体的关系
 
+- 免蒸馏路线补记（261009）：[[10-Papers/02-生成建模与扩散/Bernoulli Flow Models Self-Consistent Generative Modeling for Binary Data|BFM]]——二值域连续概率流+任意区间闭式后验，换时间网格即少步（「拉直轨迹」路线的实例，不经蒸馏）。
 - ← 概念源头：[[40-Concepts/常微分方程（ODE）|常微分方程（ODE）]]（数值积分的计数单位）、[[40-Concepts/采样器]]
 - ← 采样语境：[[30-Formulas/概率流ODE]]（扩散采样=积分它，步数即 NFE）
 - ← 每次求值在问什么：[[40-Concepts/Score函数]]（调一次去噪网络 ≈ 问一次 score 场）

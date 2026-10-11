@@ -6,7 +6,7 @@ year: 2026
 authors: [Boyan Li]
 venue: 待核（占位层，来自 arXiv 2026-09-03）
 arxiv: "2609.04108v1"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.04108v1
 line: 推理模型
 matrix_coords: 待评
 tags: [paper, 占位层]
@@ -33,7 +33,7 @@ layer: 占位
 - 线锚：[[40-Concepts/思维链（CoT）]] · [[40-Concepts/视觉语言模型（VLM）]]（占位挂链，Tier B 精化）
 
 ## 6. 影响后续
-（待精读）
+- → 后继补记（261011）：[[SpatialOPSD Self-Distilling Spatial Intelligence from Verified Coding Agent Traces]]（在策略自蒸馏新例：特权轨迹内化，超 SFT 与 GRPO）· [[KDFP A first-principles approach to knowledge distillation in large language models]]（OPD 之外的白盒通用知识蒸馏方法论）。
 
 ## 7. 读前须知
 （待精读）自动下载备注：已下载（PDF/）

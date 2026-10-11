@@ -6,7 +6,7 @@ year: 2026
 authors: [Shuaiting Li 等]
 venue: 待核（arXiv 2609.04031，2026-09-03）
 arxiv: "2609.04031v1"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.04031v1
 line: 生成建模与扩散
 matrix_coords: 扩散×压缩｜视频生成｜量化轴
 tags: [paper, 精读层]

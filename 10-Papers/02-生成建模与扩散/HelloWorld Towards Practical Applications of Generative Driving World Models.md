@@ -6,7 +6,7 @@ year: 2026
 authors: [HelloWorld Team]
 venue: arXiv 2026（车队+系统论文，匿名团队署名）
 arxiv: "2609.28931v1"
-pdf: 已下载（PDF/，260925 处理段补档：采集段全通道失败后 cn.arxiv 直连重试成功，47.5MB）
+pdf: https://arxiv.org/pdf/2609.28931v1
 line: 生成建模与扩散
 matrix_coords: [驾驶生成WM(视频扩散系), 少步蒸馏(20→4步), 七相机多视+LiDAR, 无决策闭环指标]
 tags: [paper]

@@ -6,7 +6,7 @@ year: 2022
 authors: [Takeshi Kojima et al. (UTokyo)]
 venue: NeurIPS 2022
 arxiv: "2205.11916"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2205.11916
 line: 推理模型
 matrix_coords: [提示触发, 链, 无奖励(上下文)]
 tags: [paper]

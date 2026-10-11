@@ -6,7 +6,7 @@ year: 2026
 authors: [Zhiwei Li, Lei Zhu, Hao Gu, Xiang Hu, Yan Wang, Haitao Mi, Sirui Han, Leo Liang, Zhijiang Guo]
 venue: arXiv 2026-09-11（cs.CL）
 arxiv: "2609.13141"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.13141
 line: 长上下文
 matrix_coords: 注意力稀疏化×可训练选择器×端到端
 tags: [paper, 轮换命中, 长上下文]

@@ -28,6 +28,7 @@ $$y[i,j] = \sum_{k=1}^{K}\sum_{l=1}^{K} W[k,l]\, x[i+k-1,\, j+l-1] + b$$
 | [[10-Papers/01-架构演进/Encoder-Decoder with Atrous Separable Convolution for Semantic Image Segmentation（DeepLabv3+）]] | 空洞卷积+可分离卷积（CNN 精细化分支） | 2018 |
 | [[10-Papers/01-架构演进/An Image is Worth 16x16 Words- Transformers for Image Recognition at Scale（ViT）]] | 挑战者：纯注意力吃大数据超过 CNN | 2020 |
 | [[10-Papers/01-架构演进/Swin Transformer- Hierarchical Vision Transformer using Shifted Windows（Swin）]] | 注意力架构反过来模仿 CNN 的层次化 | 2021 |
+| [[10-Papers/01-架构演进/R-DEIM Net An Efficient Rationale-Augmented Dual-Expert Interaction Model for Paraphrase Detection\|R-DEIM Net]] | 多尺度 2D 卷积扫句对相似度图（CNN 跨域到 NLP 的轻量用例） | 2026 |
 
 ## 3. 教程：一张图怎么流过 CNN（从头算一遍）
 

@@ -6,7 +6,7 @@ year: 2023
 authors: [Peiyi Wang et al.]
 venue: ACL 2024
 arxiv: "2312.08935"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2312.08935
 line: 推理模型
 matrix_coords: [训练注入, 链, 过程奖励(PRM)]
 tags: [paper]

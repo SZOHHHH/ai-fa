@@ -9,7 +9,7 @@ arxiv: "2009.14794"
 line: 长上下文
 matrix_coords: [稀疏注意力, 注意力结构层, 核近似]
 tags: [paper]
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2009.14794
 ---
 
 # Performer（线性注意力）

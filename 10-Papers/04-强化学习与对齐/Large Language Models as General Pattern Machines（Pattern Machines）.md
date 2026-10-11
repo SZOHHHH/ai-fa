@@ -6,7 +6,7 @@ year: 2023
 authors: [Mirchandani et al. (Stanford/DeepMind)]
 venue: NeurIPS 2023
 arxiv: "2307.04721"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2307.04721
 line: 强化学习与对齐
 matrix_coords: [—, —, —]
 tags: [paper]

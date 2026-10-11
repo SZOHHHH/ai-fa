@@ -6,7 +6,7 @@ year: 2023
 authors: [Yang et al. (Google/DeepMind)]
 venue: NeurIPS 2023
 arxiv: "2310.06114"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2310.06114
 line: 世界模型与JEPA
 matrix_coords: [隐式(视频自监督), 显式像素, 交互模拟]
 tags: [paper]

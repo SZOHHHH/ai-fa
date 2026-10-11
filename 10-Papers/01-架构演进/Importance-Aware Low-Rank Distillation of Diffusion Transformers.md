@@ -6,7 +6,7 @@ year: 2026
 authors: [Denis Zavadski]
 venue: 待核（占位层，来自 arXiv 2026-09-04）
 arxiv: "2609.04646v1"
-pdf: none（待下载）
+pdf: https://arxiv.org/pdf/2609.04646v1
 line: 架构演进
 matrix_coords: 待评
 tags: [paper, 占位层]

@@ -9,7 +9,7 @@ arxiv: "2511.20347"
 line: 强化学习与对齐
 matrix_coords: [GRPO系, 软门控, 在线RL]
 tags: [paper]
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2511.20347
 ---
 
 # SAPO（软自适应策略优化）

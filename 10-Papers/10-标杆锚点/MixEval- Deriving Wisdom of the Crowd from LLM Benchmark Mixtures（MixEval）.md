@@ -6,7 +6,7 @@ year: 2024
 authors: [（arXiv）]
 venue: NeurIPS 2024
 arxiv: "2406.06565"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2406.06565
 line: 标杆锚点
 matrix_coords: [—, —, —]
 tags: [paper]

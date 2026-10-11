@@ -9,7 +9,7 @@ arxiv: "2502.13189"
 line: 长上下文
 matrix_coords: [稀疏注意力, 训练/数据层, 可学习路由]
 tags: [paper]
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2502.13189
 ---
 
 # MoBA（块注意力混合）

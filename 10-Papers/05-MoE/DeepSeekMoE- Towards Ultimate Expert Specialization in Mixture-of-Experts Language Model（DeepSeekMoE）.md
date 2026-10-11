@@ -9,7 +9,7 @@ arxiv: "2401.06066"
 line: MoE
 matrix_coords: [token级, 细粒度分段, 辅助均衡损失]
 tags: [paper]
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2401.06066
 ---
 
 # DeepSeekMoE
@@ -43,6 +43,7 @@ pdf: 已下载（PDF/）
 
 ## 6. 影响与后续
 
+- → 后继补记（261009）：[[10-Papers/05-MoE/RouterInterp Understanding Superposed Specialisation in Mixture of Experts Routing|RouterInterp]]（SSH：专家=细粒度特征的不相交并集，为细粒度特化补实证画像）、[[10-Papers/05-MoE/DivMoE Fine-Grained MoE Upcycling via Cross-Domain Expert Composition|DivMoE]]（细粒度 upcycling 塌陷病理+域特化解法）。
 - DeepSeek-V2/V3/R1 的 MoE 骨架——低成本训练的组件之一
 - "共享专家"被 Qwen 等广泛采纳
 

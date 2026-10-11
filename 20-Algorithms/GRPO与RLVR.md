@@ -54,6 +54,7 @@ tags: [algo]
 | DAPO 等 | 动态采样、解耦裁剪等工程修正 | 2024–25 |
 | On-policy 迭代 | 每轮全量重采样（严格同策略） | R1 流程 |
 | RLOO / ReMax | 另一种组基线（leave-one-out / max） | 2024 |
+| 奖励扩展：知识策展 | 互信息新颖性+边际成功奖励替代纯任务成功 | [[10-Papers/03-后处理/Learning to Accumulate Knowledge with Mutual Information\|Knowledge Weaver 2610]] |
 
 ## 6. 对比表
 

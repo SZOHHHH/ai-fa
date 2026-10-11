@@ -9,7 +9,7 @@ arxiv: "1505.04597"
 line: 生成建模与扩散
 matrix_coords: [骨干组件, 像素空间, —]
 tags: [paper]
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/1505.04597
 ---
 
 # U-Net

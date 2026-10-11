@@ -9,7 +9,7 @@ arxiv: "2301.12597"
 line: 多模态
 matrix_coords: [投影接口, 生成(条件LM), 接口级]
 tags: [paper]
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2301.12597
 ---
 
 # BLIP-2（Q-Former）

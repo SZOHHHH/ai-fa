@@ -6,7 +6,7 @@ year: 2017
 authors: [Sabour, Frosst, Hinton]
 venue: NeurIPS 2017
 arxiv: "1710.09829"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/1710.09829
 line: 架构演进
 matrix_coords: [—, —, —]
 tags: [paper]

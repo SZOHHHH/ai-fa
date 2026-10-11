@@ -6,7 +6,7 @@ year: 2026
 authors: [Bin Li, Sisi Liu, Chenyang Hu, Chaoyang Zhang, Wei Li, Hui Song]
 venue: arXiv 2026-09-07（cs.CL）
 arxiv: "2609.07306"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.07306
 line: 长上下文
 matrix_coords: 动态稀疏注意力×路由开销优化
 tags: [paper, 轮换命中, 长上下文]

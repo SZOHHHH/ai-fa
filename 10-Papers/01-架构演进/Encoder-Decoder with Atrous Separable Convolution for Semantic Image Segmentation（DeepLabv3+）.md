@@ -6,7 +6,7 @@ year: 2018
 authors: [Chen et al. (Google)]
 venue: ECCV 2018
 arxiv: "1802.02611"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/1802.02611
 line: 架构演进
 matrix_coords: [CNN, —, —]
 tags: [paper]

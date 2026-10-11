@@ -6,7 +6,7 @@ year: 2026
 authors: [Jiabin Qiu, Zixuan Chen, Hongye Cao, Jieqi Shi, Jing Huo, Yang Gao]
 venue: arXiv 2026（南京大学）
 arxiv: "2609.30264v1"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.30264v1
 line: 世界模型与JEPA
 matrix_coords: [JEPA潜空间WM(非像素扩散), IDM辅助正则(非反推任务), CEM-MPC规划, OGBench+Franka机器人]
 tags: [paper]

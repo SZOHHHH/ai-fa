@@ -6,7 +6,7 @@ year: 2026
 authors: [Eric, S., Qiu]
 venue: 待核（占位层，来自 arXiv 2026-09-16）
 arxiv: "2609.18176v2"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.18176v2
 line: MoE
 matrix_coords: 待评
 tags: [paper, 占位层]
@@ -34,6 +34,7 @@ layer: 占位
 - 同族：↔ [[10-Papers/05-MoE/SMELT - Scaling Laws for Compute-Matched MoE Looped Transformers（循环MoE缩放律）|SMELT]]（循环/层复用省参数同思想家族——SMELT 复用整层、MoRE 复用专家池，260918 处理段挂链，占位层待精读）
 
 ## 6. 影响后续
+- → 后继补记（261009）：[[10-Papers/05-MoE/DivMoE Fine-Grained MoE Upcycling via Cross-Domain Expert Composition|DivMoE]]——细粒度 upcycling 的域特化专家初始化+多样性约束路由。
 （待精读）
 
 ## 7. 读前须知

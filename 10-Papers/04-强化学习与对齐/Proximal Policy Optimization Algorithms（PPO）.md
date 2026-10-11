@@ -9,7 +9,7 @@ arxiv: "1707.06347"
 line: 强化学习与对齐
 matrix_coords: [—(RL基础设施), RL目标(在线), 有]
 tags: [paper]
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/1707.06347
 ---
 
 # PPO（近端策略优化：一行裁剪统治 RL）

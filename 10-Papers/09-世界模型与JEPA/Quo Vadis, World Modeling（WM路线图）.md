@@ -7,7 +7,7 @@ year: 2026
 authors: [arXiv]
 venue: arXiv 2026
 arxiv: "2608.02713"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2608.02713
 line: 世界模型与JEPA
 matrix_coords: [—, —, —]
 tags: [paper, 占位层]

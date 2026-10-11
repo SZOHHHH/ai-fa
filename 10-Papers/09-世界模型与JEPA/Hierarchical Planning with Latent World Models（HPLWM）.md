@@ -6,7 +6,7 @@ year: 2026
 authors: [（arXiv）]
 venue: arXiv 2026
 arxiv: "2604.03208"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2604.03208
 line: 世界模型与JEPA
 matrix_coords: [隐式(视频自监督), 潜在状态, 分层规划]
 tags: [paper]

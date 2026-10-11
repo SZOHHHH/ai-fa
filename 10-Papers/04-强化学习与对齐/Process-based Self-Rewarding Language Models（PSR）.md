@@ -7,7 +7,7 @@ year: 2025
 authors: [（arXiv，ACL Findings 2025）]
 venue: arXiv 2025
 arxiv: "2503.03746"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2503.03746
 line: 强化学习与对齐
 matrix_coords: [自我奖励, —, token级]
 tags: [paper, 占位层]

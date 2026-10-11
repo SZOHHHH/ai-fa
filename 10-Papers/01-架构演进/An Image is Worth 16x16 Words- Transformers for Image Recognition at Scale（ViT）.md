@@ -9,7 +9,7 @@ arxiv: "2010.11929"
 line: 架构演进
 matrix_coords: [全注意力, 位置编码, 无状态]
 tags: [paper]
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2010.11929
 ---
 
 # ViT（视觉 Transformer）

@@ -6,7 +6,7 @@ year: 2026
 authors: [Xiaoang Xu, Siyuan Liu, Shuo Wang, et al.]
 venue: arXiv 2609.07821（2026-09-07，北邮 + OpenBMB 等）
 arxiv: "2609.07821v1"
-pdf: 10-Papers/PDF/Astar-Thought-V2 - Efficient Latent Reasoning via Geometric Dynamics of LLM（Astar-Thought-V2）.pdf
+pdf: https://arxiv.org/pdf/2609.07821v1
 line: 推理模型
 matrix_coords: 待评（轮换线）
 tags: [paper]
@@ -48,3 +48,4 @@ tags: [paper]
 PCA 降到 3D 是大胆简化——需要接受"前 3 主成分够分辨推理动态"这一经验假设；其余只需 [[40-Concepts/思维链（CoT）]] 与均值池化常识。
 
 - → 后继补记（260923）：[[10-Papers/07-推理模型/Learn Your Own Thoughts Abstract Token Curriculum|Learn Your Own Thoughts]]（抽象 token 课程——潜推理的显式课程化路线）
+- → 后继补记（261011）：[[From Chain-of-Thought to Loops Non-Autoregressive Latent Reasoning via Looped Transformers]]（LLoCoT）——latent CoT 路线再分支：非自回归潜工作区迭代精炼（打破左到右潜链依赖），首 token 时延降 36×。

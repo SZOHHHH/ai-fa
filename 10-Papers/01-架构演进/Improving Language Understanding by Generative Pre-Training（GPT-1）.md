@@ -6,7 +6,7 @@ year: 2018
 authors: [Alec Radford, Karthik Narasimhan, Tim Salimans, Ilya Sutskever]
 venue: OpenAI 技术报告（未发会议/未上 arXiv）
 arxiv: "无（仅 OpenAI 官网）"
-pdf: 已下载（官方 CDN）
+pdf: https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf
 line: 架构演进
 matrix_coords: [全注意力, 缩放律, 无状态]
 tags: [paper]

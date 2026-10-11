@@ -6,7 +6,7 @@ year: 2012
 authors: [Alex Krizhevsky, Ilya Sutskever, Geoffrey E. Hinton]
 venue: NeurIPS 2012
 arxiv: "无（NeurIPS 会议论文，未上 arXiv）"
-pdf: 已下载（NeurIPS 官方 proceedings）
+pdf: https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html
 line: 架构演进
 matrix_coords: [CNN, —, 无状态]
 tags: [paper]

@@ -9,7 +9,7 @@ arxiv: "1910.01108"
 line: 后处理与压缩
 matrix_coords: [知识(行为), 蒸馏, 微调期]
 tags: [paper]
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/1910.01108
 ---
 
 # DistilBERT

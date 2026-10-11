@@ -6,7 +6,7 @@ year: 2026
 authors: [Ailing Zhang, Fan Gao, Song Zhang, Kawa Leong, Ziyu Wu, Yafei Wang]
 venue: arXiv 2026-09-14（cs.RO，Tsing-AI 上海+上海交大+上海海洋大学）
 arxiv: "2609.15382"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.15382
 line: 世界模型
 matrix_coords: WM×决策级评估×机器人挖掘（工程域）
 tags: [paper, 核心组命中, 世界模型]

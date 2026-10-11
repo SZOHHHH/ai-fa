@@ -6,7 +6,7 @@ year: 2026
 authors: [Yuxiao Zhu, Jinzhou Li, Yifei Dong, Muhammad Suhail, Chunyuan Yang, et al.]
 venue: arXiv 2026（Duke/KTH/CMU）
 arxiv: "2609.27381v1"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.27381v1
 line: 世界模型与JEPA
 matrix_coords: [残差式接触检测, 本体感知(无力/触传感器), 无接触数据自监督, 机器人操作]
 tags: [paper]

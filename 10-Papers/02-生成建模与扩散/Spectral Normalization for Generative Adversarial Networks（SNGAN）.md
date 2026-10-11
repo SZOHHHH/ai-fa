@@ -6,7 +6,7 @@ year: 2018
 authors: [Miyato et al.]
 venue: ICLR 2018
 arxiv: "1802.05957"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/1802.05957
 line: 生成建模与扩散
 matrix_coords: [对抗, 像素空间, 对抗(矩匹配)]
 tags: [paper]

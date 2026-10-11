@@ -6,7 +6,7 @@ year: 2026
 authors: [Yijun Yuan, Weicheng Zheng, Weibang Wang, Minghui Qin, Chang Sun, Junhao Huang, Kenan Li, Anmin Liu, Yicheng Yao, Hang Zhao]
 venue: arXiv 2026-09-24（清华 IIIS / MARS lab，Preprint）
 arxiv: "2609.29171v1"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.29171v1
 line: 世界模型与JEPA
 matrix_coords: [表征空间WM(非像素扩散), IDM几何监督+计划解码(非反推任务本体), 端点插值路径构造(免搜索免rollout), PushT/LIBERO机器人连续控制(非游戏RL)]
 tags: [paper]

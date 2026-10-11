@@ -7,7 +7,7 @@ year: 2026
 authors: [（arXiv）]
 venue: arXiv 2026
 arxiv: "2605.26108"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2605.26108
 line: 生成建模与扩散
 matrix_coords: [FM, 蒸馏+RL, 蒸馏预训练]
 tags: [paper, 占位层]

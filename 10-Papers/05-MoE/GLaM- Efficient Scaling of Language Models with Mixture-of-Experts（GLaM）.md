@@ -9,7 +9,7 @@ arxiv: "2112.06905"
 line: MoE
 matrix_coords: [token级, Top-K稀疏路由, 辅助均衡损失]
 tags: [paper]
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2112.06905
 ---
 
 # GLaM

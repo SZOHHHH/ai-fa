@@ -9,7 +9,7 @@ arxiv: "2306.15595"
 line: 长上下文
 matrix_coords: [位置外推, 位置表示层, 旋转角度缩放]
 tags: [paper]
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2306.15595
 ---
 
 # 位置插值 PI

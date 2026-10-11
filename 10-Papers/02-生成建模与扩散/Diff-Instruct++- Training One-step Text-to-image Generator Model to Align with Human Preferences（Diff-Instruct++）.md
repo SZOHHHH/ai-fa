@@ -6,7 +6,7 @@ year: 2024
 authors: [Luo et al.]
 venue: arXiv 2024
 arxiv: "2410.18881"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2410.18881
 line: 生成建模与扩散
 matrix_coords: [扩散, 蒸馏(score/KL/对抗), 蒸馏预训练]
 tags: [paper]
@@ -53,3 +53,5 @@ undefined
 > 数学根基：[[概率分布]]
 
 > 数学根基：[[蒸馏损失]] · [[DSM目标]]
+
+> → 后继补记（261011）：[[Enabling Preference-driven Unlearning in Few-step Distilled Text-to-Image Diffusion Models]]——偏好优化×少步蒸馏合流的延伸：DPO 式遗忘目标在少步模型上失效后的重对齐（一步生成器偏好训练的谱系后裔）。

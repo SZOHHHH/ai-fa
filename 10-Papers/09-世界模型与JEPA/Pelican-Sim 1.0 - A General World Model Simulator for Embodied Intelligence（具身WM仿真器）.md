@@ -6,7 +6,7 @@ year: 2026
 authors: [Shilong Zou, Shilin Zhang, Yingji Zhang, Yuhang Huang, Yi Zhang, Zeyuan Ding, Han Dong, Junwei Liao, Yong Dai, Jian Tang, Xiaozhu Ju]
 venue: arXiv 2026-09-10 技术报告（cs.RO+cs.AI）
 arxiv: "2609.12036"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.12036
 line: 世界模型
 matrix_coords: 通用WM仿真器×少步蒸馏×具身智能
 tags: [paper, 核心组命中, 世界模型, 敌情关注]

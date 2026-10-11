@@ -6,7 +6,7 @@ year: 2021
 authors: [Liu et al. (Microsoft)]
 venue: ICCV 2021 best paper
 arxiv: "2103.14030"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2103.14030
 line: 架构演进
 matrix_coords: [全注意力, 位置编码, —]
 tags: [paper]

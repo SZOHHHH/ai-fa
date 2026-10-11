@@ -7,7 +7,7 @@ year: 2026
 authors: [（arXiv）]
 venue: arXiv 2026
 arxiv: "2606.31232"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2606.31232
 line: 世界模型与JEPA
 matrix_coords: [特征预测(JEPA系), 潜在状态, 可操作(动作条件)]
 tags: [paper, 占位层]

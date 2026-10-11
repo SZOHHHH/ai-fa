@@ -9,7 +9,7 @@ arxiv: "2507.18071"
 line: 强化学习与对齐
 matrix_coords: [PPO系, 序列级重要性, 在线RL]
 tags: [paper]
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2507.18071
 ---
 
 # GSPO（组序列策略优化）

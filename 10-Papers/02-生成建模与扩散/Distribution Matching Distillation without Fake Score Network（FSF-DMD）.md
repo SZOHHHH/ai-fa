@@ -7,7 +7,7 @@ year: 2026
 authors: [arXiv]
 venue: arXiv 2026
 arxiv: "2605.19256"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2605.19256
 line: 生成建模与扩散
 matrix_coords: [扩散, 蒸馏(score/KL/对抗), 蒸馏预训练]
 tags: [paper, 占位层]
@@ -48,6 +48,7 @@ $$
 > 近邻同族：[[Diff-Instruct++- Training One-step Text-to-image Generator Model to Align with Human Preferences（Diff-Instruct++）]] · [[Diff-Instruct- A Universal Approach for Transferring Knowledge From Pre-trained Diffusion Models（Diff-Instruct）]]
 > 数学根基（占位层）：[[概率分布]]
 > 数学根基：[[蒸馏损失]] · [[DSM目标]]
+> 后继（260928）：[[DyMD Preserving Interaction Dynamics through Distribution Matching Distillation in Few-Step Video Wo|DyMD]]（DMD 蒸馏视频 WM 的交互动态病灶诊断+自适应重加噪/难度加权追踪——DMD 家族×具身 WM 的最新占位者，一等监控）
 
 ## 7. 读前须知
 

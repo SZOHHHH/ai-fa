@@ -6,7 +6,7 @@ year: 2026
 authors: [Xinyi Chen, Hanxin Zhu, Xijun Wang, Xingrui Wang, Sen Liang, Xin Li, Zhibo Chen]
 venue: arXiv 2026-09-11（cs.CV，中科大）
 arxiv: "2609.12874"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.12874
 line: 世界模型
 matrix_coords: 表征轴-视频tokenizer×4D场景
 tags: [paper, 轮换命中, 世界模型]

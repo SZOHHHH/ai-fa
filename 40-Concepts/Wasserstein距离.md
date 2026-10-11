@@ -69,3 +69,4 @@ $$W(P, Q) = \sup_{\|f\|_{L} \le 1} \left| \mathbb{E}_{x\sim P}[f(x)] - \mathbb{E
 - [[40-Concepts/Lipschitz连续]]：对偶形式里的约束
 - [[40-Concepts/概率分布]]：距离的作用对象
 - [[40-Concepts/范数]]：搬运代价里的距离定义
+- 应用补记（261008）：[[10-Papers/03-后处理/WASD Wasserstein-based Knowledge Distillation for Large Language Models|WASD]]（W 距离进 LLM 蒸馏——token 语义空间的最优传输对齐师生词表分布，WGAN 之后"W 进训练目标"的又一站）

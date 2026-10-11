@@ -6,7 +6,7 @@ year: 2017
 authors: [Gulrajani et al. (NYU)]
 venue: NeurIPS 2017
 arxiv: "1704.00028"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/1704.00028
 line: 生成建模与扩散
 matrix_coords: [对抗, 像素空间, 对抗(矩匹配)]
 tags: [paper]

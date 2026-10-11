@@ -6,7 +6,7 @@ year: 2026
 authors: [Dingjie Fu, Dianxing Shi, Yangyang Xu, Jun Yu]
 venue: arXiv 2609.15189（2026-09-14，哈工深+北航）
 arxiv: "2609.15189v1"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.15189v1
 line: 世界模型与JEPA
 matrix_coords: E2 邻格（LAM/IDM 设计层，潜空间无扩散无后验）
 tags: [paper, 精读层, E2哨兵, 每日推荐260917]

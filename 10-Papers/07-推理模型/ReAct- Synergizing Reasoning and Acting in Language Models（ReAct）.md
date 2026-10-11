@@ -9,7 +9,7 @@ arxiv: "2210.03629"
 line: 推理模型
 matrix_coords: [提示触发, 链, 无奖励(上下文)]
 tags: [paper]
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2210.03629
 ---
 
 # ReAct（推理+行动）

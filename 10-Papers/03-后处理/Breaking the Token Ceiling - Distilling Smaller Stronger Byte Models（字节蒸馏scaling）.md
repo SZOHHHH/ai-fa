@@ -6,7 +6,7 @@ year: 2026
 authors: [Kalyani Marathe, Artidoro Pagnoni, Tomasz Limisiewicz, Margaret Li, Mike Lewis, Luke Zettlemoyer, Srinivasan Iyer]
 venue: arXiv 2026-09-11（cs.CL，UW+Meta FAIR）
 arxiv: "2609.12303"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.12303
 line: 后处理
 matrix_coords: 蒸馏×scaling law×表征选择
 tags: [paper, 轮换命中, 蒸馏, 深读]

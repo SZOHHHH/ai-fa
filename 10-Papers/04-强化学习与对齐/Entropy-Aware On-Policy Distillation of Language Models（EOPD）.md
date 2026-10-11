@@ -6,7 +6,7 @@ year: 2026
 authors: [Woogyeol Jin, Taywon Min, Yongjin Yang, Dennis Wei, Yi Zhou, Swanand R. Kadhe, Nathalie Baracaldo, Kimin Lee]
 venue: ICML 2026
 arxiv: "2603.07079"
-pdf: 已下载
+pdf: https://arxiv.org/pdf/2603.07079
 line: 强化学习与对齐
 matrix_coords: [学生轨迹, JSD/混合, token级]
 tags: [paper]

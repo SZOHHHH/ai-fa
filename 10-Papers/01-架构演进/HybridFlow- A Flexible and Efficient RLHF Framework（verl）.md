@@ -6,7 +6,7 @@ year: 2024
 authors: [Sheng et al. (伯克利 vLLM 团队)]
 venue: EuroSys 2025
 arxiv: "2409.19256"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2409.19256
 line: 架构演进
 matrix_coords: [—, —, —]
 tags: [paper]

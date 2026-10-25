@@ -9,7 +9,7 @@ arxiv: "2408.03314"
 line: 推理模型
 matrix_coords: [测试时延长, 采样聚合, 算力调度]
 tags: [paper]
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2408.03314
 ---
 
 # 测试时计算扩展（Snell）

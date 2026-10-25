@@ -7,7 +7,7 @@ year: 2024
 authors: [Z. Liu et al.]
 venue: arXiv 2024
 arxiv: "2402.02750"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2402.02750
 line: 后处理与压缩
 matrix_coords: [KV cache, 量化, 训练后]
 tags: [paper, 占位层]

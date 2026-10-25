@@ -33,7 +33,6 @@ layer: 占位
 - 线锚：[[40-Concepts/知识蒸馏]] · [[40-Concepts/Wasserstein距离]]（核心工具——token 语义空间的最优传输对齐）· [[30-Formulas/蒸馏损失]]
 - ← Wasserstein 进训练目标同族：[[10-Papers/02-生成建模与扩散/Wasserstein GAN（WGAN）|WGAN]]（开山对照）· [[30-Formulas/WGAN目标]]
 - ≡ token 级 LLM KD 对照：[[10-Papers/03-后处理/TinyBERT- Distilling BERT for Natural Language Understanding（TinyBERT）|TinyBERT]]（逐索引散度路线的经典——WASD 的批判对象）
-- 2601008 挂链：轮换线 postprocess；LLM 词表分布对齐，与 E1 蒸馏的差＝对象（token 分布 vs 像素生成动态）⚪
 
 ## 6. 影响后续
 （待精读）

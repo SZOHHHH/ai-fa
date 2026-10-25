@@ -76,6 +76,7 @@ tags: [algo]
 - → 后继补记（260923）：[[10-Papers/04-强化学习与对齐/Sometimes You Gotta Run Before You Can Walk Run-then-Walk Scheduling Strategy for VLM Autonomous Dri|Run-then-Walk]]（GRPO 的**目标函数课程**：同数据同算法只按阶段切换奖励——Run 进度探索→Walk 安全修复，VLM 驾驶 RL epoch 省 40-50%）
 
 - → 后继补记（260923）：[[10-Papers/04-强化学习与对齐/Video-HopChain Multi-Hop Questions and Confidence-Gated Exploration for Video Reasoning Models|Video-HopChain]]（RLVR 数据合成+零方差组第三条修法：CGE 屏蔽最自信 token 重采制造组内对照，与 ThinkPrior 的冷启动挑题互补）
+- → 后继补记（261025）：[[10-Papers/07-推理模型/MOER Mix-Policy Optimization under Expert Prefix Guidance with Selective Rollback|MOER]]（mix-policy RL 的调和设计：衰减专家 CoT 前缀+选择性回滚保 off-policy 轨迹正确性——on-policy 段 GRPO、专家段信赖域 SFT 双损失稳训练）
 
 ## 自测
 

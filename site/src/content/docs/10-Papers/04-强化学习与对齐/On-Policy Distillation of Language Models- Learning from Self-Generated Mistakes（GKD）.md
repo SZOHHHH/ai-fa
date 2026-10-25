@@ -6,7 +6,7 @@ year: 2023
 authors: [Rishabh Agarwal, Nino Vieillard, Yongchao Zhou, Piotr Stanczak, Ouafi Mansouri, Vladislav Kolesnikov, Matteo Hessel, Luca Zappella]
 venue: arXiv 2023 / OpenReview（821+ 引用）
 arxiv: "2306.13649"
-pdf: 已下载
+pdf: https://arxiv.org/pdf/2306.13649
 line: 强化学习与对齐
 matrix_coords: [学生轨迹, JSD/混合, token级]
 tags: [paper]

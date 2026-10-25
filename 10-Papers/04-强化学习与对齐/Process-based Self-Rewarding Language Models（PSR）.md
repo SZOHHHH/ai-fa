@@ -43,7 +43,6 @@ $$
 
 ## 6. 影响与占位意义
 
-B9 机会格 5 号的敌情：已被 ACL Findings 2025 占半格。
 
 > 近邻同族：[[Self-Rewarding Language Models]] · [[A General Language Assistant as a Laboratory for Alignment（Assistant Lab）]]
 > 数学根基（占位层）：[[策略梯度定理]]

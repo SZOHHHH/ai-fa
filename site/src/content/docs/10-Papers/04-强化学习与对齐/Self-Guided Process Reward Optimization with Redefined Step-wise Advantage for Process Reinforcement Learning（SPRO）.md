@@ -7,7 +7,7 @@ year: 2025
 authors: [（arXiv）]
 venue: arXiv 2025
 arxiv: "2507.01551"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2507.01551
 line: 强化学习与对齐
 matrix_coords: [GRPO, 组基线, 步级]
 tags: [paper, 占位层]

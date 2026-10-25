@@ -6,7 +6,7 @@ year: 2026
 authors: [Zehan Wang, Tengfei Wang, Haiyu Zhang, Xuhui Zuo, Junta Wu, Haoyuan Wang, et al.]
 venue: ICML 2026（腾讯）
 arxiv: "2602.09022"
-pdf: 已下载（PDF/WorldCompass（RL长视野世界模型）.pdf）
+pdf: https://arxiv.org/pdf/2602.09022
 line: 世界模型与JEPA
 matrix_coords: [RL后训练(修WM本身), 显式像素, 可操作(交互信号)]
 tags: [paper]
@@ -43,14 +43,13 @@ tags: [paper]
 ## 5. 与前作/矩阵关系
 
 - ← 宿主 [WorldPlay](/ai-fa/explore/10-Papers/09-世界模型与JEPA/WorldPlay- 长期几何一致的实时交互世界建模（HY-WorldPlay）)；RLHF/视频 RLHF（如 VideoScore 系）思想移植；
-- ≡ 与我们 E1 的镜像：我们"RL 考场测 WM 质量"，他们"RL 信号修 WM 质量"——**一测一修，互补**；
 - → 潜在方向：蒸馏损伤的 RL 修复术（见 §6）。
 
 ## 6. 影响后续
 
-**对我们的新工具箱**：②面修复的候选路线 ③——用 RL 后训练直接修蒸馏学生的缺陷（我们试过换损失/闭环匹配，从未试过"用 RL 修 WM"）。若走 E2/B 形态，"RL 可修 WM"也是 WM 实用性的论据。风险：Atari 域的奖励信号远弱于视频美学模型（我们的 r_quality 没有现成裁判——可能要用 teacher WM 当裁判，呼应蒸馏桥）。
 
 ## 7. 读前须知
 
 RLHF 基础（reward model+KL 锚）；reward hacking（E1_实验数据台账 c 线节）；clip 级 rollout 与 frame 级 rollout 的效率差。
 
+- → 公式链补记（2601007）：[GRPO目标](/ai-fa/explore/30-Formulas/GRPO目标)（RL 组相对优势）· [贝尔曼方程](/ai-fa/explore/40-Concepts/贝尔曼方程)（长视野价值递归）

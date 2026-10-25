@@ -7,7 +7,7 @@ year: 2019
 authors: [Ilyes Khemakhem, Diederik P. Kingma, Ricardo Pio Monti, Aapo Hyvärinen]
 venue: AISTATS 2020（1045+ 引用）
 arxiv: "1907.04809"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/1907.04809
 line: 后处理与压缩
 matrix_coords: [—, 理论, —]
 ---

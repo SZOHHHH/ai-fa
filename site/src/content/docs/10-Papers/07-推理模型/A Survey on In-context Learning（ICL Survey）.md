@@ -6,7 +6,7 @@ year: 2022
 authors: [Dong et al.]
 venue: arXiv 2022
 arxiv: "2301.00234"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2301.00234
 line: 推理模型
 matrix_coords: [提示触发, —, —]
 tags: [paper]

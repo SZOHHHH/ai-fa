@@ -32,7 +32,6 @@ layer: 占位
 ## 5. 与前作/矩阵关系
 - 概念链：[[40-Concepts/稀疏与线性注意力]]（核心机制在 gated-delta 线性注意力的循环状态更新——只写入"新输入减去状态可检索部分"的残差）、[[40-Concepts/KV缓存]]（混合骨干中全注意力层的流式驱逐）。
 - 同族：[[10-Papers/06-长上下文/Video-HolmesV2 Can MLLMs Reason with Spatio-Temporal Audio-Visual Evidence in Long Videos|Video-HolmesV2]]（长视频多模态推理，06 线邻居）。
-- 与 E1/E2 对照：无域重叠（流式视频理解工程），"两种记忆协同"思想可作库内参照。
 
 ## 6. 影响后续
 （待精读）

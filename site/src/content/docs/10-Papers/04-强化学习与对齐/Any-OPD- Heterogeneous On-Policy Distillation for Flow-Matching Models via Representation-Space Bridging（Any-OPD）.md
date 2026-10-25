@@ -7,7 +7,7 @@ year: 2026
 authors: [Siming Fu et al.]
 venue: arXiv 2026
 arxiv: "2608.03316"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2608.03316
 line: 强化学习与对齐
 matrix_coords: [学生轨迹, 表示空间散度, 连续域]
 tags: [paper, 占位层]

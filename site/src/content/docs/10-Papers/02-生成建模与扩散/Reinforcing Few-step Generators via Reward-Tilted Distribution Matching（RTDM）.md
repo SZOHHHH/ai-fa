@@ -7,7 +7,7 @@ year: 2026
 authors: [（arXiv）]
 venue: arXiv 2026
 arxiv: "2605.26108"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2605.26108
 line: 生成建模与扩散
 matrix_coords: [FM, 蒸馏+RL, 蒸馏预训练]
 tags: [paper, 占位层]
@@ -43,7 +43,6 @@ $$
 
 ## 6. 影响与占位意义
 
-RS 库 05-25 已有；**这个格的敌情对 RS 主线（蒸馏服务 RL）直接相关**。
 
 > 近邻同族：[Align Your Flow - Scaling Continuous-Time Flow Map Distillation](/ai-fa/explore/10-Papers/02-生成建模与扩散/Align Your Flow- Scaling Continuous-Time Flow Map Distillation（AYF）) · [Computational and Statistical Guarantees of the c-Rectified flow](/ai-fa/explore/10-Papers/02-生成建模与扩散/Computational and Statistical Guarantees of the c-Rectified flow（c-RF理论）)
 > 数学根基（占位层）：[概率分布](/ai-fa/explore/40-Concepts/概率分布)

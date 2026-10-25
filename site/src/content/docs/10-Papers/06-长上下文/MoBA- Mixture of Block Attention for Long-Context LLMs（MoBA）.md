@@ -9,7 +9,7 @@ arxiv: "2502.13189"
 line: 长上下文
 matrix_coords: [稀疏注意力, 训练/数据层, 可学习路由]
 tags: [paper]
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2502.13189
 ---
 
 # MoBA（块注意力混合）
@@ -48,6 +48,7 @@ pdf: 已下载（PDF/）
 
 - → 后继补记（260914）：[SAS](/ai-fa/explore/10-Papers/06-长上下文/SAS - Simple Attention Sparsification via End-to-End Optimization of Context Ranking（端到端稀疏注意力）)（块路由选择器的端到端训练路线）、[RouteRelay](/ai-fa/explore/10-Papers/06-长上下文/RouteRelay - Event-Triggered Cross-Layer Route Reuse for Efficient Dynamic Sparse Attention（跨层路由复用）)（块路由的跨层复用省打分）
 - → 后继补记（260919）：[On-Demand Attention](/ai-fa/explore/10-Papers/06-长上下文/On-Demand Attention Language Models Know When to Recall)（"何时读全局"的收益预测路线：轻量 recall 头按预测收益触发全局注意力——MoBA 选读哪些块，ODA 先决要不要读）
+- → 后继补记（261024）：[UlaCache](/ai-fa/explore/10-Papers/06-长上下文/UlaCache Unified Logical Addressing for Sparse LLM Serving)（块选择的系统化落地：统一逻辑地址空间横跨 GPU 池与 CPU 内存，让稀疏注意力的分配/选择独立于物理位置——投机解码下 H200 峰值吞吐 1.16×/1.70×（DP/TP）、B300 1.73×/2.51×）
 
 ## 7. 读前须知
 

@@ -43,7 +43,6 @@ $$
 
 ## 6. 影响与占位意义
 
-RS 库 10-15 已有；**对 MFD 类蒸馏的竞争**：如果微调头够便宜，完整蒸馏的价值叙事受压——敌情价值高。
 
 > 近邻同族：[[Align Your Flow- Scaling Continuous-Time Flow Map Distillation（AYF）]] · [[Computational and Statistical Guarantees of the c-Rectified flow（c-RF理论）]]
 > 数学根基（占位层）：[[条件流匹配损失]] · [[注意力核心公式]]

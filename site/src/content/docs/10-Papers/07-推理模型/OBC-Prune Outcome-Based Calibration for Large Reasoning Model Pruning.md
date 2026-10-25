@@ -6,7 +6,7 @@ year: 2026
 authors: [Ha Lan Nguyen, Huy Hoang Tran, Trac-Duy Tran, Dung D. Le]
 venue: arXiv（VinUniversity+Johns Hopkins，2026-09-15）
 arxiv: "2609.17890v1"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.17890v1
 line: 推理模型
 matrix_coords: 模型压缩×校准（推理模型剪枝的结果导向校准格）
 tags: [paper]
@@ -46,9 +46,7 @@ tags: [paper]
 - 同日同族：[SKIP: a Self-knowledge-guided Step-wise Preference Learning Framework for Concise Reasoning](/ai-fa/explore/10-Papers/07-推理模型/SKIP a Self-knowledge-guided Step-wise Preference Learning Framework for Concise Reasoning)（推理开销削减两条路：训练侧少想 vs 压缩侧少参数）；干预度量来自 Thought Anchors（Bogdan et al. 2025，注意力抑制打分）从解释工具转为压缩目标
 
 ## 6. 影响后续
-"校准数据的组成与剪枝准则同等重要"的又一实证（接 Ji et al. 2025《Beware of Calibration Data》）；压缩-保真目标错配（统计显著性 ≠ 功能贡献）谱系的 LRM 实例，量化侧同类结果分层可期（Lotfi 2026 已示量化推理模型"以为要想更久"）。对库内价值：E1"保什么比怎么保重要"叙事的外部佐证卡——同一"代理目标≠功能目标"病理在 LRM 剪枝域的落地。
 
 ## 7. 读前须知
 - 逐层重建框架 $$\min_{\hat{W}} \lVert W X - \hat{W} X\rVert_2^2 \ \text{s.t.} \ \lVert \hat{W} \rVert_0 \le S$$：一次性剪枝的标准形——需要 [范数](/ai-fa/explore/40-Concepts/范数)（L0 稀疏约束）与 [注意力机制](/ai-fa/explore/40-Concepts/注意力机制)（理解 attention 屏蔽干预）；OBS 显著性 $$w_q^2/(\mathbf{H}^{-1})_{qq}$$ 的直觉=二阶曲率加权的权重敏感度（Hessian 逆对角元大=该方向曲率低=剪了罚轻）。
 - KL 散度直觉见 [KL散度](/ai-fa/explore/40-Concepts/KL散度)（屏蔽前后两个预测分布的偏离度量）。
-- 配对设计的统计直觉：同题对错 rollout 是天然双向对照（消难度混杂）——与 E1/E2 实验台账"同游戏同预算只变损伤源"同一手法。

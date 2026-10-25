@@ -43,7 +43,6 @@ layer: 精读
 
 - 线锚：[[20-Algorithms/扩散模型]] · [[40-Concepts/知识蒸馏]]
 - ← 前身：ACT（chunk+时间集成）、Diffusion Policy（生成式动作头）、π₀/π₀.₅（流匹配 VLA、teacher 参照系）、LIBERO-PRO（"LIBERO=记忆测试"论断的出处，本文把它推到容量极致）。
-- ≡ 对话位：与 E1 决策保真蒸馏**同题异域**——都在问"压到多小还能保任务表现"，但 MINERVA 压**策略本体**（机器人操作、容量地板），E1 压**世界模型**（游戏 RL、蒸馏目标保真）；其"种子带 ±1 点淹没多数单跑消融"是我们评估纪律的直接参照（E1 六线每线多 seed 的做法被印证必要）。
 - 近邻：[[10-Papers/09-世界模型与JEPA/Toward Physically Grounded JEPA World Models for Goal-Conditioned Robotic Planning|Physically Grounded JEPA]]——同周机器人域，一个做策略容量地板、一个做 WM 表征接地。
 
 ## 6. 影响后续

@@ -7,7 +7,7 @@ year: 2025
 authors: [（arXiv）]
 venue: arXiv 2025
 arxiv: "2506.03719"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2506.03719
 line: 生成建模与扩散
 matrix_coords: [FM, —, 理论]
 tags: [paper, 占位层]

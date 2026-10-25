@@ -31,7 +31,6 @@ layer: 精化占位
 
 ## 5. 与前作/矩阵关系
 - 线锚：[[20-Algorithms/混合专家（MoE）]] · [[30-Formulas/MoE门控公式]]（占位挂链，处理段精化）
-- 研判：⚪ MoE 线安全轴参考（架构本体与主线正交）
 - MoE 实例谱系：[[10-Papers/05-MoE/Mixtral of Experts（Mixtral）|Mixtral]]
 
 ## 6. 影响后续

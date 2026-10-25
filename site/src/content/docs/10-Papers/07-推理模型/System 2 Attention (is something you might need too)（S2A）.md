@@ -6,7 +6,7 @@ year: 2023
 authors: [Weston & Sukhbaatar (Meta)]
 venue: arXiv 2023
 arxiv: "2311.11829"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2311.11829
 line: 推理模型
 matrix_coords: [提示触发, —, —]
 tags: [paper]

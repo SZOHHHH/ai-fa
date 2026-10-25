@@ -6,7 +6,7 @@ year: 2026
 authors: [Hojin Lee, Sizhe Lester Li, Maximilian Hilger, Susie Lu, Achim J. Lilienthal, Vincent Sitzmann, Daniel A. Duecker]
 venue: arXiv 2026-09-15（cs.RO，TUM MIRMI+MIT CSAIL，MIT-TUM 合作项目）
 arxiv: "2609.16737v1"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.16737v1
 line: 世界模型与JEPA
 matrix_coords: 视频扩散规划器×光流IDM反演×机器人导航(非游戏域)
 tags: [paper, 核心组命中(e2-inversion-sentry), 世界模型与JEPA]
@@ -40,11 +40,9 @@ layer: 精读层（PDF 前 8 页全读，260916）
 ## 5. 与前作/矩阵关系
 - 线锚：[世界模型](/ai-fa/explore/20-Algorithms/世界模型) · [逆动力学（IDM）](/ai-fa/explore/40-Concepts/逆动力学（IDM）)（方法核心实体：光流中介、MSE 点估计、embodiment 专用）
 - 近邻同族：[Diffusion Forcing- Next-token Prediction Meets Full-Sequence Diffusion](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Diffusion Forcing- Next-token Prediction Meets Full-Sequence Diffusion（Diffusion Forcing）)（其后训练即 diffusion forcing 式自回归视频预测）· [From Prediction to Decision: World-Model-Guided Action Selection for Continuous Pile Excavation](/ai-fa/explore/10-Papers/09-世界模型与JEPA/From Prediction to Decision - World-Model-Guided Action Selection for Continuous Pile Excavation（挖掘WAM）)（同周对照组：WAM"撒动作候选+WM 正演排序"vs CueNav"生成未来视频+IDM 反演"——imagine-then-act 族的正演/反演两条落地路径，已互挂）· [Diffusion for World Modeling- Visual Details Matter in Atari](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Diffusion for World Modeling- Visual Details Matter in Atari（DIAMOND）)（像素扩散 WM 的游戏域对应物——同为"扩散视频预测当动力学"，用途分叉在规划器 vs 可玩环境）
-- ↔ E2 划界（占位研判 260916 详见当日晨报⑤）：其 IDM 是帧对条件确定性回归（流中介、MSE 点估计、无后验），goal 走视频规划器不进 IDM 本体；E2 是 goal 条件下从像素直接反推**全后验** $$p(a\mid x_t,\text{goal})$$ 并以闭环 goal-hit 评命中——反演深度与条件结构两维都不同格，域=机器人导航非游戏。
 
 ## 6. 影响后续
 - video-planning+IDM 族再添一员（ImagiNav/NavDreamer/ImagineUAV/SparseVideoNav 之后），本文补上"全局任务线索+具身线索+流 IDM"三件并给跨平台共享规划器的实例。
-- 作者自列 future work=**少步/潜空间蒸馏**缓解 4s/步推理瓶颈——视频规划器的蒸馏需求被点名但未做，恰是 E1 轴与该族的交叉空位。
 - 局限：IDM 绑定固定相机配置（自列）；短视野+有限观测窗；模拟域仅 DeepMind Lab 迷宫。
 
 ## 7. 读前须知

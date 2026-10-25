@@ -7,7 +7,7 @@ year: 2026
 authors: [arXiv]
 venue: arXiv 2026
 arxiv: "2608.01845"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2608.01845
 line: 世界模型与JEPA
 matrix_coords: [像素重建(生成式), 潜在状态, 加速]
 tags: [paper, 占位层]
@@ -43,7 +43,8 @@ $$
 
 ## 6. 影响与占位意义
 
-RS 库 08-03 情报（rel=3 但敌情价值高）：缓存路线 vs 蒸馏路线的竞争关系。
+
+→ 后继补记（261011）：[AtomWorld-Mirror: Macro-Step World Modeling of Critical Evolution Backbones for Materials Dynamics](/ai-fa/explore/10-Papers/09-世界模型与JEPA/AtomWorld-Mirror Macro-Step World Modeling of Critical Evolution Backbones for Materials Dynamics)——摊销动机的跨域镜像：材料动力学把微观事件段蒸馏成宏观步转移（10³–10⁴×），与缓存路线同答"跳过昂贵逐步模拟"之问（不同域不同格）。
 
 ---
 

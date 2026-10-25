@@ -38,7 +38,6 @@ layer: 精化层（摘要级+摘要核实，PDF 待深读）
 ## 5. 与前作/矩阵关系
 - ← 谱系：可训练稀疏注意力族 [[10-Papers/06-长上下文/Native Sparse Attention- Hardware-Aligned and Natively Trainable Sparse Attention（NSA）|NSA]]（原生可训练稀疏注意力）、[[10-Papers/06-长上下文/MoBA- Mixture of Block Attention for Long-Context LLMs（MoBA）|MoBA]]（块级混合注意力路由）——SAS 定位是其"训练后+端到端目标对齐"改进。
 - 概念链：[[40-Concepts/稀疏与线性注意力]]（稀疏化两大范式：训练时原生 vs 训练后改造，SAS 属后者）。
-- ↔ **E1 方法论镜像**（库内对话位）：SAS 批判"蒸馏中间量（注意力分布）无法保证最终目标（预测质量）"与 E1 红线"蒸馏目标只用像素/生成质量指标无法保证决策保真"同构——**代理目标与真实目标的错位在不同领域反复出现**，E1 论文 Discussion 可引作跨域证据。
 
 ## 6. 影响后续
 - 训练后稀疏化从"模仿教师注意力"转向"端到端服务任务损失"，可能成为稀疏注意力选择器的默认训练法。

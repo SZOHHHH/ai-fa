@@ -9,7 +9,7 @@ arxiv: "2305.20050"
 line: 推理模型
 matrix_coords: [训练注入, 链, 过程奖励(PRM)]
 tags: [paper]
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2305.20050
 ---
 
 # Let's Verify Step by Step（PRM）
@@ -45,6 +45,7 @@ pdf: 已下载（PDF/）
 
 - o1 的"推测配方"最接近的公开线索（OpenAI 时代推理 RL 的信号设计）
 - Math-Shepherd 等开源 PRM 复现路线
+- 系统侧后继：[HeteroReason: Heterogeneous FPGA-GPU Acceleration for Disaggregated Speculative Reasoning](/ai-fa/explore/10-Papers/07-推理模型/HeteroReason Heterogeneous FPGA-GPU Acceleration for Disaggregated Speculative Reasoning)（PRM 作验证器进入 FPGA-GPU 异构投机推理流水线并加回溯，MICRO 2026）
 
 ## 7. 读前须知
 

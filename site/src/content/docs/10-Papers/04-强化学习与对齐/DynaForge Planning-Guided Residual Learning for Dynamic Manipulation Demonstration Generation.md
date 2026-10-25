@@ -6,7 +6,7 @@ year: 2026
 authors: [Yiyang Jin, Yu Zheng, Xiao He, et al.]
 venue: arXiv 2026
 arxiv: "2609.25631v1"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.25631v1
 line: 强化学习与对齐
 matrix_coords: [残差学习(规划先验), 组相对RL(隐式课程), 示范生成]
 tags: [paper]

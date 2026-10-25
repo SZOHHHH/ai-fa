@@ -6,7 +6,7 @@ year: 2026
 authors: [Satoshi Hayakawa]
 venue: 待核（占位层，来自 arXiv 2026-09-01）
 arxiv: "2609.01043v1"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.01043v1
 line: 生成建模与扩散
 matrix_coords: 待评
 tags: [paper, 占位层]

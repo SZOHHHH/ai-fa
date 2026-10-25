@@ -6,7 +6,7 @@ year: 2026
 authors: [Yuxi Liu, Haoyu Li, Yixiang Cai, Tengxu Sun, Kun Yuan, Kai Zhang]
 venue: arXiv 2026-09-13（北大 Melon+清华+阿里，实验在 Wan2.1-T2V 1.3B/14B）
 arxiv: "2609.14725v1"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.14725v1
 line: 生成建模与扩散
 matrix_coords: 扩散/少步蒸馏×视频生成域×蒸馏(轨迹+分布的噪声段调度)
 tags: [paper, 核心组命中(wm-distill-fewstep), 生成建模与扩散]
@@ -42,11 +42,9 @@ layer: 精读层（PDF 前 12 页全读，260916 ⑦推荐）
 - 线锚：[一致性模型](/ai-fa/explore/20-Algorithms/一致性模型)（TD 支路本源）· [扩散模型](/ai-fa/explore/20-Algorithms/扩散模型)
 - 数学根基：[概率流ODE](/ai-fa/explore/30-Formulas/概率流ODE)（流图 $$\Psi$$ 是全部轨迹语言的地基）· [NFE（函数求值次数）](/ai-fa/explore/40-Concepts/NFE（函数求值次数）)（1+3 步预算分配是调度的落点）
 - 近邻同族：[One-step Diffusion with Distribution Matching Distillation](/ai-fa/explore/10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）)（DM 支路本源，被本文装进低噪段区间化使用）· [Consistency Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Consistency Models（一致性模型）)（TD 支路本源：轨迹自洽保模式覆盖）· [AnyFlow- Any-Step Video Diffusion Model with On-Policy Flow Map Distillation](/ai-fa/explore/10-Papers/02-生成建模与扩散/AnyFlow- Any-Step Video Diffusion Model with On-Policy Flow Map Distillation（AnyFlow）)（训练时序两段式路线代表+本文直接对照基线：AnyFlow 切训练阶段、不切噪声支撑）
-- ↔ E1 对话位（划界与借鉴）：E1 的 EMDMD=分布匹配家族在 WM 蒸馏里的实例——本文实证"DM 类目标全程/过早施加会压掉轨迹分支"（Fig 2：纯 DMD 在 $$t\approx0.94$$ 已把不同种子拉到相近状态），与 E1"分布伤↔EMDMD+剂量曲线单峰"同向；但其评估全用 VBench/种子多样性=纯生成指标，**决策/任务级口径完全空白**——E1"决策保真"命题的空位仍在。域=文生视频，无动作条件、无游戏 RL，不撞格。
 
 ## 6. 影响后续
 - 噪声段调度成为少步蒸馏的显式设计轴（与 NFE 预算分配耦合）；对 Wan 系视频蒸馏管线即插即用（PCM/DMD 皆为现成件）。
-- 方法论范本："四组合全有效+反向对照全输"的论证结构，把"调度 vs 损失"的归因做干净——值得 E1 写消融时借鉴。
 - 局限：只在生成域验证（T2V/I2V），无动作/决策条件；$$\tau^\star$$ 的跨模型族泛化只在 Wan2.1 内验证；多样性度量依赖冻结编码器距离（V-JEPA2/VideoMAE V2）。
 
 ## 7. 读前须知

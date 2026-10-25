@@ -6,7 +6,7 @@ year: 2024
 authors: [Boyuan Chen, Diego Marti Mogino, Vincent Micheli, et al.]
 venue: NeurIPS 2024
 arxiv: "2407.01392"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2407.01392
 line: 世界模型与JEPA
 matrix_coords: [像素重建(生成式), 显式像素, 可操作(动作条件)]
 tags: [paper]
@@ -56,6 +56,7 @@ $$\tilde x_t=\mathrm{noise}\big(x_t,\,\sigma_{k_t}\big),\qquad \mathcal{L}=\math
 - → 后继补记（260914）：[VideoTok4D](/ai-fa/explore/10-Papers/09-世界模型与JEPA/VideoTok4D - A 4D-Aware Video Tokenizer for Compact World Representation（4D视频分词器）)（"在什么粒度组织序列+扩散"的又一数据点：解耦 token 空间上的扩散先验）
 - → 后继补记（260924）：[PointCast](/ai-fa/explore/10-Papers/09-世界模型与JEPA/PointCast One World Model for Rigid, Articulated, and Deformable Object Manipulation)（整窗一次去噪的点集版：全窗无因果 mask+flow matching 单步部署；其消融"逐帧 block-causal token +33%～+248%"为"整窗 vs 逐帧"之争补几何域证据）
 - → 后继补记（260924-2 批）：[Causal Forcing](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Causal Forcing- 自回归扩散蒸馏的正确姿势（Causal Forcing）)（把本框架蒸馏到实时少步：AR teacher 初始化+非对称 DMD，"蒸馏 done right"的理论版）与 [AnyFlow](/ai-fa/explore/10-Papers/09-世界模型与JEPA/AnyFlow- 任意步视频扩散的在线策略流图蒸馏（AnyFlow）)（任意区间流图转移替代终点一致，on-policy 蒸馏压曝光偏差）——实时交互 WM 蒸馏家族（另见 WorldPlay/minWM/WorldCompass 三卡）
+- → 后继补记（261025）：[Looking Ahead/FCP](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Looking Ahead Modeling Future Evolution in Autoregressive Video Generation)（本框架 teacher forcing 的"防捷径"补丁：时间冗余让局部连续性足以支撑当前 chunk 去噪、模型不学演化——FCP 用屏蔽中间上下文的未来 chunk 辅助预测逼 h_k 编码演化；Physics-IQ IQ 27.6→30.9@1.3B，推理零开销）
 
 ## 7. 读前须知
 

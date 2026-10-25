@@ -67,3 +67,6 @@ tags: [concept]
 - [[20-Algorithms/世界模型]]：视频理解的世界模型视角
 
 - → 后继补记（260916）：[[10-Papers/07-推理模型/CORE Improving Compositional Reasoning in MLLM Embedding via Reranker Distillation|CORE]]（MLLM 嵌入的组合推理：重排器蒸馏）
+- → 后继补记（261012）：[[10-Papers/01-架构演进/DVD Dynamic Vector Decoding for Efficient MLLM-based Perception|DVD]]（感知输出侧表示：2D/3D 坐标统一动态向量化+离散 token，绕开文本坐标的 token 开销）
+- → 后继补记（261025）：[[10-Papers/07-推理模型/RECAP Looking Once Is Not Enough for Vision-Language Reasoning|RECAP]]（长 CoT 的视觉接地：visual revisit 峰因果相关（遮/注入双干预验证），GRPO 上加 revisit 条件化优势+动态折扣+门控价值——HallusionBench +6.1~6.5）
+- → 后继补记（261025）：[[10-Papers/07-推理模型/Measuring the Reasoning-Action Coupling in Driving Vision-Language-Action Models through Counterfact|驾驶 VLA 反事实审计]]（VLA 可解释性上限：扰动自推理轨迹几乎不动、置空相机轨迹大动——推理与行为仅弱耦合）

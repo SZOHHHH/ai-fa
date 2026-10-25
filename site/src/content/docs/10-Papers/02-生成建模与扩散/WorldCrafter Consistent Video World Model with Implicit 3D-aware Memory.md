@@ -6,7 +6,7 @@ year: 2026
 authors: [Wangbo Yu, Kunhao Liu, Wenbo Hu, et al.]
 venue: arXiv 2026
 arxiv: "2609.24984v1"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.24984v1
 line: 生成建模与扩散
 matrix_coords: [生成式WM(扩散系), 显式记忆(隐式3D), 可交互(相机控制)]
 tags: [paper]
@@ -58,7 +58,6 @@ tags: [paper]
 
 - "固定 token 预算的隐式记忆"为长程 WM 提供了介于全注意力与显式 3D 重建之间的第三条路，对交互式游戏/仿真 WM 的长程一致性直接可用
 - 位姿引导读出的思想（目标条件塑造记忆分配）可迁移到目标条件规划：按目标读出历史经验
-- 与我们 E1 的对话点在"少步蒸馏×实时交互 WM"：蒸馏目标是视觉一致性而非决策质量（见敌情研判）
 
 ## 7. 读前须知
 

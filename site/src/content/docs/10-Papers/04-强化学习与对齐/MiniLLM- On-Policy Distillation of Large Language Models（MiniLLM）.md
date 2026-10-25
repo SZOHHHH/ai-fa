@@ -6,7 +6,7 @@ year: 2023
 authors: [Yuxian Gu, Li Dong, Furu Wei, Minlie Huang]
 venue: ICLR 2024
 arxiv: "2306.08543"
-pdf: 已下载
+pdf: https://arxiv.org/pdf/2306.08543
 line: 强化学习与对齐
 matrix_coords: [学生轨迹, 反向KL, token级]
 tags: [paper]

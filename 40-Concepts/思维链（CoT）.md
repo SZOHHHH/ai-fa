@@ -69,3 +69,6 @@ $$p(y \mid x) = \frac{p(y, z \mid x)}{p(z \mid x, y)} \le p(y, z \mid x)$$
 
 - → 后继补记（260916）：[[10-Papers/07-推理模型/Legibility is Not Interpretability Comparing Judged and Actual Importance in Chain-Of-Thought Reason|Legibility is Not Interpretability]]（CoT 语义审计：可读≠可解释）
 - → 后继补记（260917）：[[10-Papers/03-后处理/Rollback the World, Keep the Reflection Rollback-Induced Reflection for Long-Horizon LLM Agents|RIR]]（反思记忆=CoT 的经验固化形态：回滚环境状态但保留从被弃轨迹蒸馏的结构化反思，指导后续决策）
+- → 后继补记（261012）：[[10-Papers/01-架构演进/The Dichotomy Between Pattern Recognition and Step-by-Step Reasoning|Dichotomy]]（CoT 的谱系理论：下一 token 依赖上下文长度 c 谱系化模式识别↔逐步推理，De Bruijn 图+边数幂律证明逐步推理样本高效）
+- → 后继补记（261025）：[[10-Papers/07-推理模型/Causal Chain of Thought Mitigating Attention Leakage via Context Isolation|CausalCoT]]（CoT 忠实度的架构修复：稠密注意力允许"查表答题+事后辩护"——原子子问题 DAG+隔离上下文求值切断泄漏，因果敏感度 +12~21pt）
+- → 后继补记（261025）：[[10-Papers/07-推理模型/Transformers with CoT Discover Heavy-Ball Acceleration Through Training|Heavy-Ball]]（CoT 理论新样本：GD 老师启蒙后换真值轨迹监督，CoT 自发发现 Heavy-Ball 动量加速——超越老师算法而非模仿）

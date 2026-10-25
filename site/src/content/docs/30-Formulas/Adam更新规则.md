@@ -62,3 +62,4 @@ $$v_1 = 0.001\times4 = 0.004 \quad\Rightarrow\quad \hat v_1 = \frac{0.004}{1-0.9
 - ⊂ 属于 [梯度下降与优化器谱系](/ai-fa/explore/20-Algorithms/梯度下降与优化器谱系)（含五级手算进化史）
 - ↔ 对照 [Decoupled Weight Decay Regularization](/ai-fa/explore/10-Papers/01-架构演进/Decoupled Weight Decay Regularization（AdamW）)：衰减项的位置（进梯度 vs 出梯度）
 - ↔ 一切训练循环的"消费者"：[反向传播](/ai-fa/explore/20-Algorithms/反向传播) 算梯度 → 本公式用梯度
+- → 应用（260928）：[LayerCheck](/ai-fa/explore/10-Papers/01-架构演进/LayerCheck Adaptive Layer-wise Checkpointing for Large Language Model Post-training)——其"混合时间戳恢复引入有界陈旧扰动"的理论护栏正是建在标准 Adam 假设上（重启后损失偏差 ≤0.54%）

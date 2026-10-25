@@ -35,7 +35,6 @@ $$\text{正向（世界模型）}:\;p(s'\mid s,a)\qquad\longleftrightarrow\qquad
 
 **第 3 步：无因果世界。** $s\to s'$ 是对手自走（agent 没按键）→ $q \approx$ 均匀（无信息）——**果对因的信息量 = 互信息**，零互信息时反推无解。良定义性地图：随机性与 $k$ 越大，果对因的信息越少。
 
-**第 4 步：k 步版的多模态。** $q(a_t|s_t, s_{t+k})$：$k$ 大时通向同一未来的路径极多（先绕路再到达也算）→ 后验天然多峰——与 [[20-Algorithms/MDN-RNN]]"未来本身多模态"是镜像问题（未来多模态 ↔ 原因多模态），E2 反推的设计张力全在这张地图上。
 
 **第 5 步：imagine-then-act 的用法。** WAM 系：扩散先生成目标未来帧 $s_{t+k}$，IDM 吃 $(s_t, s_{t+k})$ 反推第一步动作——**把"规划"拆成"想象+反推"两件标准件**；对照路线=goal 直接进生成器（Diffuser 一体化）——两条路的选择见 §2 家族表。
 
@@ -68,12 +67,7 @@ $$\text{正向（世界模型）}:\;p(s'\mid s,a)\qquad\longleftrightarrow\qquad
 - ← 地基：[[40-Concepts/贝叶斯公式]]与[[40-Concepts/条件概率]]（后验语言）、[[40-Concepts/马尔可夫决策过程]]（转移定义因果）
 - → 配套：[[40-Concepts/行为克隆与模仿学习]]（镜像零件）、[[10-Papers/03-后处理/A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning（DAGGER）|DAGGER]]（分布对齐同源）
 - 论文侧：[[10-Papers/09-世界模型与JEPA/Latent Action Pretraining from Videos（LAPA）|LAPA]]/[[10-Papers/09-世界模型与JEPA/Genie- Generative Interactive Environments（Genie）|Genie]]（latent action 家族）、[[10-Papers/04-强化学习与对齐/Planning with Diffusion for Flexible Behavior Synthesis（Diffuser）|Diffuser]]（目标条件生成的对照路线：不用 IDM、由扩散直接生成动作）
-- IDM 用法分岔补记（260925）：[[AD-WM Action-Discriminative World Models for Counterfactual Model Predictive Control|AD-WM]] 把 IDM 当**训练正则**（恢复头约束潜动力学保动作信息、测试即丢）——与 E2 的 IDM 当**反推任务本体**构成同一工具的两种用法分岔；同簇另见 [[Decision-Metric Alignment in Latent World Models Diagnostics and Action-Conditioned Objectives for MPC Planning|DMA]]（IDM+goal-action 头修 latent 几何）。
 - 正演对照补记（260914）：[[10-Papers/09-世界模型与JEPA/RodForesight - A World Model Enhanced Diffusion Policy for Slender and Material Agnostic Rod Insertion（杆件插装）|RodForesight]]（动作条件 WM 当**正演评估器** p(对齐效果|s,a)——与本概念的反演 p(a|x,goal) 一正一反同构）
 - 表征侧补记（260914）：[[10-Papers/09-世界模型与JEPA/VideoTok4D - A 4D-Aware Video Tokenizer for Compact World Representation（4D视频分词器）|VideoTok4D]]（轨迹对齐的 4D 世界 token——IDM 反推的理想潜空间形态候选）
 - 正演对照补记二（260915）：[[10-Papers/09-世界模型与JEPA/From Prediction to Decision - World-Model-Guided Action Selection for Continuous Pile Excavation（挖掘WAM）|WAM 挖掘]]（goal 条件扩散提案+冻结 WM 正演排序——"按目标撒候选、用正演挑"以 5 次前向近似一次反演的工程路线，与 RodForesight 同族成对）
 - 光流中介补记（260916）：[[10-Papers/09-世界模型与JEPA/Seeing What Matters Visual Cue Guided Video Planning for Generalizable Robot Navigation|CueNav]]（视频规划器生成未来帧→AllTracker 密集光流→embodiment 专用 transformer IDM 回归 15 步动作——**帧对条件的流中介实现**：MSE 点估计、无后验，goal 走规划器不进 IDM 本体；与 WAM 同周构成 imagine-then-act 族的正演/反演对偶）
-- 查询读出补记（260917）：[[10-Papers/09-世界模型与JEPA/Reconstructing Is Not Acting Action-Centric Latent Dynamics Modeling|ACT-LAM]]（LAM 族指认**重构-动作失配**：重构误差更低≠潜动作更好；其 AQ-IDM 用可学习动作查询+门控聚合选择性读出动作线索——**帧对条件的查询读出实现**：连续潜动作点估计、无后验、无 goal 条件，DINOv2 潜空间非像素扩散；IDM 设计从"信息瓶颈逼动作相关"转向"选择性读出"的范式信号，E2 引用矩阵 IDM 设计轴新增支线）
-- 残差检验补记（260924）：[[10-Papers/09-世界模型与JEPA/CoPRE Improving Sensitivity in Proprioceptive Contact Detection for Low-Cost Robot Arms|CoPRE]]（学习式**名义模型+残差**替代解析逆动力学做弱接触检测——解析 IDM 基线在弱接触上召回 0%，学习式参考模型+噪声加权雅可比聚合拉到 74-82%；"由果找因"但反推的是二值事件非动作序列，E2 判别式残差路线的域外表亲）
-- 几何监督补记（260926）：[[10-Papers/09-世界模型与JEPA/Representation World Model Learning States, Transition and Executable Plans in Representation|RWM]]（IDM 当**表征几何塑造器+计划解码器**——沿端点插值构造的潜路径逐点还原动作，监督经端点反传把"几何插值"变成"可执行计划"；免 FDM/免搜索/免 SIGReg，防坍缩靠 IDM 本身；机器人连续控制宏平均 98.25%）——IDM 用法分岔第四支：非打标签/非反推本体（E2）/非训练正则（AD-WM），是**几何监督**；E2 related work 必引（潜空间 IDM 摊销规划当前最强基准）
-- 端点反推补记（261008）：[[10-Papers/09-世界模型与JEPA/Preserving Unstable Modes Through Inverse Dynamics in JEPA World Models|EP-IDM]]（IDM 当**可镇定性监督**——从首末潜状态重建整段 H 步动作；LeCun 组证明预测+SIGReg 可在损失最优下丢光不稳定模态，引理级病理+定理级修复：精确重建⇒编码器在 H 步可达子空间单射；CartPole 潜 LQR 0%→100%）——分岔第五支；理论工具（可控 Gramian 主特征空间→不稳定子空间收敛）可迁移为"决策敏感子空间"分析，E1 评估缺口叙事的非生成式对照、E2 IDM 头端点变体的理论依据

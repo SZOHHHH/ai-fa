@@ -38,7 +38,6 @@ tags: [paper]
 ## 5. 与前作/矩阵关系
 - 线锚：[[40-Concepts/思维链（CoT）]] · [[40-Concepts/马尔可夫链]]（随机动力学视角）· [[40-Concepts/KL散度]]（分布演化度量的近亲 TV）
 - ← 前作：熵曲线线（熵只告诉你"多不确定"，不告诉你"谁在和谁竞争"）——本文是它的严格细化
-- 对话位（E2 形式同构）：$p(\text{答案}|\text{前缀})$ 的前向轨迹 vs 我们 E2 的 $p(a\mid x_t, \text{goal})$ 后验反推——一个顺着推理看信念演化，一个拿着果反推因；"分布轨迹"工具可借给闭环 goal-hit 的诊断
 - 同日同族：[[Astar-Thought-V2 - Efficient Latent Reasoning via Geometric Dynamics of LLM（Astar-Thought-V2）]]（同把推理当动力学系统读：一个读几何、一个读分布）
 - 后续同族：[[Chain-of-Thought Entropy as a Reliability Signal A Preregistered Reproduction]]（轨迹统计量作可靠性信号一族成型：本文读答案分布轨迹并分机制桶，它读熵轨迹并预注册复现"形状预测对错、幅度不预测"）
 

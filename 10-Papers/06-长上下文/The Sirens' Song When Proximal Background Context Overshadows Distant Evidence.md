@@ -32,7 +32,7 @@ layer: 占位
 ## 5. 与前作/矩阵关系
 - 公式链：[[30-Formulas/RoPE旋转位置编码]]（距离衰减 × softmax 累积竞争 = "近端陷阱"的机制源头——本文正是对 RoPE 副作用的诊断与手术）、[[30-Formulas/注意力核心公式]]（softmax 分母的注意力质量分配）。
 - 概念链：[[40-Concepts/注意力机制]]、[[40-Concepts/softmax函数]]（t 分布重塑打分=重尾化检索分布）。
-- 与 E1/E2 对照：无域重叠（LLM 长上下文行为分析）。
+- 同族补记（261024）：[[10-Papers/06-长上下文/Mixing Matters Evidence Position Bias Across Sequence Mixers in Long-Context Question Answering|Mixing Matters]]（位置偏差的跨家族横断面：金文档在 9 干扰文档中移动位置系统对比 Transformer/SSM/hybrid Mamba——Transformer 有开头优势而 SSM 无、两族都偏爱末尾证据；本文诊断的"近端陷阱"在混合器家族间不同形）。
 
 ## 6. 影响后续
 （待精读）

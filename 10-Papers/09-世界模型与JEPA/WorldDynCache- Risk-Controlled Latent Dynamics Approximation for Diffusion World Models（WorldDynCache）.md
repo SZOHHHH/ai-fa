@@ -43,7 +43,6 @@ $$
 
 ## 6. 影响与占位意义
 
-RS 库 08-03 情报（rel=3 但敌情价值高）：缓存路线 vs 蒸馏路线的竞争关系。
 
 → 后继补记（261011）：[[AtomWorld-Mirror Macro-Step World Modeling of Critical Evolution Backbones for Materials Dynamics]]——摊销动机的跨域镜像：材料动力学把微观事件段蒸馏成宏观步转移（10³–10⁴×），与缓存路线同答"跳过昂贵逐步模拟"之问（不同域不同格）。
 

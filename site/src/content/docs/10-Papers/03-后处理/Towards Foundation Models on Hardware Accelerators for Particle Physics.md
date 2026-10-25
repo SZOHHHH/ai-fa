@@ -6,7 +6,7 @@ year: 2026
 authors: [Maya Benyas, et al.]
 venue: arXiv 2026
 arxiv: "2609.26899v1"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.26899v1
 line: 后处理
 matrix_coords: [基础模型蒸馏, 硬件加速器部署, 粒子物理/喷注标记, 实时约束]
 tags: [paper]
@@ -47,7 +47,6 @@ tags: [paper]
 
 ## 6. 影响后续
 
-"基础模型能力下沉到触发级硬件"的模板，粒子物理外（工业实时检测、边缘设备）可复用；对库内主线的价值=E1 蒸馏叙事的又一外部域平行案例（离线大模型→实时小模型，容量换延迟）。
 
 ## 7. 读前须知
 

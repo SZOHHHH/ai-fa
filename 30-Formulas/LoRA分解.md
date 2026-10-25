@@ -73,4 +73,5 @@ $$W' = W_0 + \Delta W = W_0 + \frac{\alpha}{r}\, B A$$
 - ≡ **形态同族** [[30-Formulas/残差连接]]（加性修正）
 - ↔ **同数学异用途** [[30-Formulas/MLA多头潜在注意力]]：低秩分解用于"减"（压缩 KV）
 - → **家族**：QLoRA（+量化）、DoRA（+分解幅度）、LoRA+（AB 不对称学习率）
+- → **放置策略后继（261012）**：[[10-Papers/01-架构演进/Where to Adapt Matters Layer-Selective Fine-Tuning for Capability Retention|LS-LoRA]]（用前向余弦相似度选层，只放低相似层）、[[10-Papers/01-架构演进/Stability-Plasticity Balance via Singular-Vector Selection in LLM Continual Learning|SVC]]（持续学习：在奇异向量通道粒度选可训练子空间）
 - 与 [[30-Formulas/蒸馏损失]] 正交可组合

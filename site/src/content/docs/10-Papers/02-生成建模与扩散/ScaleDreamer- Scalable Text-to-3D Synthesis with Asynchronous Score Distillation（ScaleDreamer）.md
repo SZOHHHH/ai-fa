@@ -7,7 +7,7 @@ year: 2024
 authors: [arXiv]
 venue: arXiv 2024
 arxiv: "2407.02040"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2407.02040
 line: 生成建模与扩散
 matrix_coords: [扩散, 蒸馏(score/KL/对抗), 3D域]
 tags: [paper, 占位层]

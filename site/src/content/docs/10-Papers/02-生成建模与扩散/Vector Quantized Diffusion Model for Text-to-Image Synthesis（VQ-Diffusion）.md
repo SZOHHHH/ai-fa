@@ -6,7 +6,7 @@ year: 2022
 authors: [Gu et al.]
 venue: CVPR 2022
 arxiv: "2111.14822"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2111.14822
 line: 生成建模与扩散
 matrix_coords: [变分, 离散码本, 扩散离散化]
 tags: [paper]

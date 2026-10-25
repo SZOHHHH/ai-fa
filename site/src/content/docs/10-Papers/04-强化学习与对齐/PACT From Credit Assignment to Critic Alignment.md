@@ -6,7 +6,7 @@ year: 2026
 authors: [Jiayan Fu, Hang Xu, Yong Zhang, et al.]
 venue: arXiv 2026
 arxiv: "2609.26355v1"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.26355v1
 line: 强化学习与对齐
 matrix_coords: [信用分配理论(唯一表示), actor-critic(对齐更新), LLM后训练]
 tags: [paper]

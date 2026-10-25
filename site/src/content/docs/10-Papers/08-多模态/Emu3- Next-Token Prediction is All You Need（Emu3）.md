@@ -6,7 +6,7 @@ year: 2024
 authors: [BAAI]
 venue: arXiv 2024
 arxiv: "2409.18869"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2409.18869
 line: 多模态
 matrix_coords: [生成接口, 生成(条件LM), 完全早期融合]
 tags: [paper]

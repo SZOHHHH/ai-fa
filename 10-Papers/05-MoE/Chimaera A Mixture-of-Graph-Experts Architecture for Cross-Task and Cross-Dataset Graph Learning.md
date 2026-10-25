@@ -31,7 +31,6 @@ layer: 精化占位
 
 ## 5. 与前作/矩阵关系
 - 线锚：[[20-Algorithms/混合专家（MoE）]] · [[30-Formulas/MoE门控公式]]（占位挂链，处理段精化）
-- 研判：⚪ 架构多样性参考，与主线正交
 - MoE 架构谱系：[[10-Papers/05-MoE/GShard- Scaling Giant Models with Conditional Computation and Automatic Sharding（GShard）|GShard]] · [[10-Papers/05-MoE/Switch Transformers- Scaling to Trillion Parameter Models with Simple and Efficient Spars（Switch）|Switch]]
 
 ## 6. 影响后续

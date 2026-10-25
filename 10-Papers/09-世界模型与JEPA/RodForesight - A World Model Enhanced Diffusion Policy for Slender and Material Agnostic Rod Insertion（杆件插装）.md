@@ -36,13 +36,11 @@ layer: 精化层（摘要级+摘要核实，PDF 待深读）
 
 ## 5. 与前作/矩阵关系
 - ↔ 机器人 WM 族：[[10-Papers/09-世界模型与JEPA/GE-Act 2.0 Pretraining and Scaling a World-Action Model for Robotic Manipulation|GE-Act 2.0]]（世界-动作统一预训练）、[[10-Papers/09-世界模型与JEPA/GIFT Guided Intermediate Feature Training via Action-Oriented Structural Supervision for Robotic Man|GIFT]]（动作导向结构监督）——同"机器人操作×动作条件预测"格，RodForesight 特点是 WM 只做评估不做生成训练信号。
-- ↔ E2 对偶位：[[40-Concepts/逆动力学（IDM）|逆动力学（IDM）]]——RodForesight 是**正演**评估器 p(对齐效果 | 状态, 动作)，E2 反推 p(a | x_t, goal) 是**反演**；一正一反共享"用模型内知识连接动作与目标状态"的问题结构。E2 论文 related work 可引作正演侧对照。
 - ↔ 想象评估谱系：[[10-Papers/09-世界模型与JEPA/Dream to Control- Learning Behaviors by Latent Imagination（Dreamer）|Dreamer]]（在想象中训练策略）——RodForesight 是"在想象中做选择"，想象用途从训练挪到决策。
 - ↔ 同族续接（260915）：[[10-Papers/09-世界模型与JEPA/From Prediction to Decision - World-Model-Guided Action Selection for Continuous Pile Excavation（挖掘WAM）|WAM 挖掘]]——"扩散提案+WM 预演筛选"第二例（连续堆料耗尽+真机部署，matched-candidate 消融隔离选择规则贡献，实证更干净）。
 
 ## 6. 影响后续
 - "扩散策略生成 + WM 预演筛选"的可移植结构：任何需要候选评估的连续控制任务都能套。
-- 对库内：制造域外缘参考，不进 E1/E2 主线叙事；占"WM×扩散策略×装配"格。
 
 ## 7. 读前须知
 - 前置：diffusion policy 的去噪采样直觉（可借 [[10-Papers/09-世界模型与JEPA/Diffusion for World Modeling- Visual Details Matter in Atari（DIAMOND）|DIAMOND]] 的扩散基础）、MPC 中"模型预测代价评估"思想。

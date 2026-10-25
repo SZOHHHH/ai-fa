@@ -6,7 +6,7 @@ year: 2026
 authors: [Kalyani Marathe, Artidoro Pagnoni, Tomasz Limisiewicz, Margaret Li, Mike Lewis, Luke Zettlemoyer, Srinivasan Iyer]
 venue: arXiv 2026-09-11（cs.CL，UW+Meta FAIR）
 arxiv: "2609.12303"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.12303
 line: 后处理
 matrix_coords: 蒸馏×scaling law×表征选择
 tags: [paper, 轮换命中, 蒸馏, 深读]
@@ -42,12 +42,10 @@ layer: 精读层（PDF 前 12 页全读，9-14 ⑦推荐）
 - ← 蒸馏谱系：[KD 奠基](/ai-fa/explore/10-Papers/03-后处理/Distilling the Knowledge in a Neural Network（KD）)（软目标优于硬标签）、[DistilBERT](/ai-fa/explore/10-Papers/03-后处理/DistilBERT, a distilled version of BERT- smaller, faster, cheaper and lighter（DistilBERT）)（固定表征蒸馏的工程标杆）——本文把"蒸馏学生"从固定 tokenization 解放出来，问"表征本身对蒸馏天花板的影响"。
 - 公式链：[蒸馏损失](/ai-fa/explore/30-Formulas/蒸馏损失)（KD/CE 混合的标准形态——本文蒸馏臂即 KL 对教师分布，无 α 混合）、[归一化温度与蒸馏](/ai-fa/explore/30-Formulas/归一化温度与蒸馏)（温度在这类 top-k logit 蒸馏里的角色）。
 - 概念链：[知识蒸馏](/ai-fa/explore/40-Concepts/知识蒸馏)（蒸馏 scaling 专项：此前蒸馏 scaling 研究基本在 token 域内，byte 域首个系统对照）。
-- ↔ **E1 对话位（H5 容量归因）**：E1 说六线失败归因学生容量不足（H5）；本文实证"容量"不只是参数量——**同层参数下换表征（byte vs token）就能改变蒸馏天花板 ±4%**。给 E1 的启示：容量归因应显式包含"表征效率"维度；且 byte 模型"起步差、天花板高"与 E1 学生"低样本期尚可、训练后期塌"的动态画像不同——蒸馏目标与表征的相互作用值得在 E1 台账补一列"潜表征有效秩/词表效率"诊断（呼应 9/13 WIDER 卡的有效秩度量）。
 
 ## 6. 影响后续
 - 蒸馏 scaling law 的表征轴被打开：后续会扫"其他表征选择"（多语/代码/模态混合词表、动态 tokenization）对蒸馏天花板的影响。
 - 工程直接可用：离线 logit 蒸馏选 byte 学生（存储 1/5、免 top-k 截断、数据效率 6 倍）；Meta FAIR+UW 出品，数字可信度高。
-- 敌情位：与 E1/E2 无域重叠（LM 蒸馏 scaling vs 像素扩散 WM×游戏），🟢 动机同盟/引用候选——E1 论文 related work"蒸馏 scaling 与容量"段的引用位。
 
 - → 后继补记（260924）：[粒子物理 FM 硬件蒸馏](/ai-fa/explore/10-Papers/03-后处理/Towards Foundation Models on Hardware Accelerators for Particle Physics)（同族"大预训练→可部署小网络"，约束更硬：离线精度换触发级微秒延迟，硬件算子级学生）
 

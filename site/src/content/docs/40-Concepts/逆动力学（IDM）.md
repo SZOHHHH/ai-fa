@@ -35,7 +35,6 @@ $$\text{正向（世界模型）}:\;p(s'\mid s,a)\qquad\longleftrightarrow\qquad
 
 **第 3 步：无因果世界。** $$s\to s'$$ 是对手自走（agent 没按键）→ $$q \approx$$ 均匀（无信息）——**果对因的信息量 = 互信息**，零互信息时反推无解。良定义性地图：随机性与 $$k$$ 越大，果对因的信息越少。
 
-**第 4 步：k 步版的多模态。** $$q(a_t|s_t, s_{t+k})$$：$$k$$ 大时通向同一未来的路径极多（先绕路再到达也算）→ 后验天然多峰——与 [MDN-RNN](/ai-fa/explore/20-Algorithms/MDN-RNN)"未来本身多模态"是镜像问题（未来多模态 ↔ 原因多模态），E2 反推的设计张力全在这张地图上。
 
 **第 5 步：imagine-then-act 的用法。** WAM 系：扩散先生成目标未来帧 $$s_{t+k}$$，IDM 吃 $$(s_t, s_{t+k})$$ 反推第一步动作——**把"规划"拆成"想象+反推"两件标准件**；对照路线=goal 直接进生成器（Diffuser 一体化）——两条路的选择见 §2 家族表。
 
@@ -72,5 +71,3 @@ $$\text{正向（世界模型）}:\;p(s'\mid s,a)\qquad\longleftrightarrow\qquad
 - 表征侧补记（260914）：[VideoTok4D](/ai-fa/explore/10-Papers/09-世界模型与JEPA/VideoTok4D - A 4D-Aware Video Tokenizer for Compact World Representation（4D视频分词器）)（轨迹对齐的 4D 世界 token——IDM 反推的理想潜空间形态候选）
 - 正演对照补记二（260915）：[WAM 挖掘](/ai-fa/explore/10-Papers/09-世界模型与JEPA/From Prediction to Decision - World-Model-Guided Action Selection for Continuous Pile Excavation（挖掘WAM）)（goal 条件扩散提案+冻结 WM 正演排序——"按目标撒候选、用正演挑"以 5 次前向近似一次反演的工程路线，与 RodForesight 同族成对）
 - 光流中介补记（260916）：[CueNav](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Seeing What Matters Visual Cue Guided Video Planning for Generalizable Robot Navigation)（视频规划器生成未来帧→AllTracker 密集光流→embodiment 专用 transformer IDM 回归 15 步动作——**帧对条件的流中介实现**：MSE 点估计、无后验，goal 走规划器不进 IDM 本体；与 WAM 同周构成 imagine-then-act 族的正演/反演对偶）
-- 查询读出补记（260917）：[ACT-LAM](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Reconstructing Is Not Acting Action-Centric Latent Dynamics Modeling)（LAM 族指认**重构-动作失配**：重构误差更低≠潜动作更好；其 AQ-IDM 用可学习动作查询+门控聚合选择性读出动作线索——**帧对条件的查询读出实现**：连续潜动作点估计、无后验、无 goal 条件，DINOv2 潜空间非像素扩散；IDM 设计从"信息瓶颈逼动作相关"转向"选择性读出"的范式信号，E2 引用矩阵 IDM 设计轴新增支线）
-- 残差检验补记（260924）：[CoPRE](/ai-fa/explore/10-Papers/09-世界模型与JEPA/CoPRE Improving Sensitivity in Proprioceptive Contact Detection for Low-Cost Robot Arms)（学习式**名义模型+残差**替代解析逆动力学做弱接触检测——解析 IDM 基线在弱接触上召回 0%，学习式参考模型+噪声加权雅可比聚合拉到 74-82%；"由果找因"但反推的是二值事件非动作序列，E2 判别式残差路线的域外表亲）

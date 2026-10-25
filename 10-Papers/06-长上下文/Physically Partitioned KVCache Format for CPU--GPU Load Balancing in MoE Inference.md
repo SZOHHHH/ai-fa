@@ -32,6 +32,7 @@ layer: 占位
 ## 5. 与前作/矩阵关系
 - 线锚：[[40-Concepts/KV缓存]]（本卡对象=KVCache 的物理布局抽象）· [[20-Algorithms/混合专家（MoE）]]
 - 同族：↔ [[10-Papers/05-MoE/DeepSeek-V4.1-Flash Pushing the Limits of KV Cache Compression|DeepSeek-V4.1-Flash]]（同攻 MoE 长上下文 KV 部署：一个压 KV 体积、一个做单卡 CPU-GPU 物理布局与负载均衡——压缩轴与调度轴，260919 处理段挂链，占位层待精读）· [[10-Papers/06-长上下文/KVQuant- Towards 10 Million Context Length LLM Inference with KV Cache Quantization（KVQuant）|KVQuant]]（KV 落 CPU/极限压缩同族）
+- 同族补记（261024）：[[10-Papers/06-长上下文/SARIA Persistence-Aware KV Caching with Coordinated DRAM--SSD Reload for LLM Agents|SARIA]]（存储层级再下探一层：CPU-GPU 之外加 SSD——选择性准入管写寿命、协调重载管带宽，SSD 写 −57.1~58.9%、TTFT −42.3~79.7%）。
 
 ## 6. 影响后续
 （待精读）

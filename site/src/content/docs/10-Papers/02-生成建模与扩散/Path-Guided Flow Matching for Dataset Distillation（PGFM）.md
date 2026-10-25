@@ -7,7 +7,7 @@ year: 2026
 authors: [（arXiv）]
 venue: arXiv 2026
 arxiv: "2602.05616"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2602.05616
 line: 生成建模与扩散
 matrix_coords: [FM, —, 数据集蒸馏]
 tags: [paper, 占位层]

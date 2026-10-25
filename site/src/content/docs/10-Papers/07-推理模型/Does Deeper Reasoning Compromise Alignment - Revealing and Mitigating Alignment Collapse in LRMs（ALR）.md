@@ -6,7 +6,7 @@ year: 2026
 authors: [Yu-Hang Wu, Yu-Jie Xiong, Henghua Zhang, et al.]
 venue: arXiv 2609.08186（2026-09-08，上海工程技大学 + HKUST + A*STAR）
 arxiv: "2609.08186v1"
-pdf: 10-Papers/PDF/Does Deeper Reasoning Compromise Alignment - Revealing and Mitigating Alignment Collapse in LRMs（ALR）.pdf
+pdf: https://arxiv.org/pdf/2609.08186v1
 line: 推理模型
 matrix_coords: 待评（轮换线）
 tags: [paper]

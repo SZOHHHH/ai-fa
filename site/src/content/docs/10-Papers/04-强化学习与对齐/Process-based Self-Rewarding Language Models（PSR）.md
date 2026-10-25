@@ -7,7 +7,7 @@ year: 2025
 authors: [（arXiv，ACL Findings 2025）]
 venue: arXiv 2025
 arxiv: "2503.03746"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2503.03746
 line: 强化学习与对齐
 matrix_coords: [自我奖励, —, token级]
 tags: [paper, 占位层]
@@ -43,7 +43,6 @@ $$
 
 ## 6. 影响与占位意义
 
-B9 机会格 5 号的敌情：已被 ACL Findings 2025 占半格。
 
 > 近邻同族：[Self-Rewarding Language Models](/ai-fa/explore/10-Papers/04-强化学习与对齐/Self-Rewarding Language Models) · [A General Language Assistant as a Laboratory for Alignment](/ai-fa/explore/10-Papers/04-强化学习与对齐/A General Language Assistant as a Laboratory for Alignment（Assistant Lab）)
 > 数学根基（占位层）：[策略梯度定理](/ai-fa/explore/40-Concepts/策略梯度定理)

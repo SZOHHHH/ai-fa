@@ -6,7 +6,7 @@ year: 2026
 authors: [Atindra, Jha]
 venue: 待核（占位层，来自 arXiv 2026-09-10）
 arxiv: "2609.11917v1"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.11917v1
 line: MoE
 matrix_coords: 待评
 tags: [paper, 占位层]
@@ -31,7 +31,6 @@ layer: 精化占位
 
 ## 5. 与前作/矩阵关系
 - 线锚：[混合专家（MoE）](/ai-fa/explore/20-Algorithms/混合专家（MoE）) · [MoE门控公式](/ai-fa/explore/30-Formulas/MoE门控公式)（占位挂链，处理段精化）
-- 研判：⚪ 与主线正交（数据-架构交互议题）；对族 2（EDELINE，Atari 100k 极小数据体制）有提示价值
 - 同族谱系：[Mixtral](/ai-fa/explore/10-Papers/05-MoE/Mixtral of Experts（Mixtral）) · [Switch](/ai-fa/explore/10-Papers/05-MoE/Switch Transformers- Scaling to Trillion Parameter Models with Simple and Efficient Spars（Switch）)
 
 ## 6. 影响后续

@@ -6,7 +6,7 @@ year: 2026
 authors: [Sunnidhya Roy, et al.]
 venue: arXiv 2026
 arxiv: "2609.26921v1"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.26921v1
 line: 后处理
 matrix_coords: [极端多标签分类, DistilBERT蒸馏, 电商搜索, 词汇失配]
 tags: [paper]

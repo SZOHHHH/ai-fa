@@ -6,7 +6,7 @@ year: 2026
 authors: Andy Zeyi Liu, Haoran Sun, Lucas Baker, Randall Balestriero, John Sous
 venue: arXiv
 arxiv: 2609.10464
-pdf: 10-Papers/PDF/Semigroup-JEPA Latent Dynamics Consistency for Zero-Shot Physics Generalization.pdf
+pdf: https://arxiv.org/pdf/2609.10464
 line: 世界模型与JEPA
 matrix_coords: 待评
 tags: [paper, 占位, 0910补扫]
@@ -34,7 +34,6 @@ tags: [paper, 占位, 0910补扫]
 ## 5. 与前作/矩阵关系
 
 - 谱系锚：[世界模型](/ai-fa/explore/20-Algorithms/世界模型)，[扩散模型](/ai-fa/explore/20-Algorithms/扩散模型)
-- **哨兵研判（9/10 补扫）**：🟡 E2 相关：物理参数条件化+表征由动力学塑形，与 E2"确定动态下反推良定义"的分析互补；但它是 JEPA 潜空间（非像素扩散）、无反推问题、无少步化、域是物理仿真非游戏——正交，可作 E2 理论章引用素材。
 
 ## 6. 影响后续
 

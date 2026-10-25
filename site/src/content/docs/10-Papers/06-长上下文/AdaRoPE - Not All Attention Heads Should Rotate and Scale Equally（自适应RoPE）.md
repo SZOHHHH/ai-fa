@@ -6,7 +6,7 @@ year: 2026
 authors: [Shaowen Wang, Yuke Zheng, Tansheng Zhu, Shuang Chen, Shaofan Liu, Suncong Zheng, Jian Li]
 venue: arXiv v3 2026-09-11（cs.AI+cs.CL，蚂蚁/清华系）
 arxiv: "2607.19363"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2607.19363
 line: 长上下文
 matrix_coords: 位置编码×逐头自适应×长度外推
 tags: [paper, 轮换命中, 长上下文]
@@ -40,7 +40,6 @@ RoPE 的"统一频率表"批判：每个注意力头学自己的旋转频率与�
 
 ## 6. 影响后续
 - 位置编码从"全局设计"走向"逐头学习"，新模型可能默认逐头频率；YaRN 类统一外推法引用时需注明次优边界。
-- 与 E1/E2 无域重叠（LLM 位置编码 vs 像素扩散 WM），arch 线教学参考。
 
 ## 7. 读前须知
 - 前置：RoPE 旋转机制（[RoPE旋转位置编码](/ai-fa/explore/30-Formulas/RoPE旋转位置编码) 的复数旋转直觉 + [位置编码](/ai-fa/explore/40-Concepts/位置编码) 总览；论文细节先看 [RoFormer](/ai-fa/explore/10-Papers/01-架构演进/RoFormer- Enhanced Transformer with Rotary Position Embedding（RoPE）) 卡）、频率-波长的直觉（低频=长程、高频=局部）。

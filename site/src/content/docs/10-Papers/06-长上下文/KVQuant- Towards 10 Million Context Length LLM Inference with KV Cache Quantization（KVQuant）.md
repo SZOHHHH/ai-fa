@@ -7,7 +7,7 @@ year: 2024
 authors: [SqueezeAILab (UC Berkeley)]
 venue: NeurIPS 2024
 arxiv: "2401.18079"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2401.18079
 line: 长上下文
 matrix_coords: [系统/流式, 注意力结构层, 压缩状态]
 ---

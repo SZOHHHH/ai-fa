@@ -31,7 +31,6 @@ layer: 精化占位
 
 ## 5. 与前作/矩阵关系
 - 线锚：[[20-Algorithms/混合专家（MoE）]] · [[30-Formulas/MoE门控公式]]（占位挂链，处理段精化）
-- 研判：⚪ 与主线正交（数据-架构交互议题）；对族 2（EDELINE，Atari 100k 极小数据体制）有提示价值
 - 同族谱系：[[10-Papers/05-MoE/Mixtral of Experts（Mixtral）|Mixtral]] · [[10-Papers/05-MoE/Switch Transformers- Scaling to Trillion Parameter Models with Simple and Efficient Spars（Switch）|Switch]]
 
 ## 6. 影响后续

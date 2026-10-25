@@ -7,7 +7,7 @@ year: 2023
 authors: [arXiv]
 venue: arXiv 2023
 arxiv: "2306.17563"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2306.17563
 line: 推理模型
 matrix_coords: [提示触发, 采样聚合, —]
 tags: [paper, 占位层]

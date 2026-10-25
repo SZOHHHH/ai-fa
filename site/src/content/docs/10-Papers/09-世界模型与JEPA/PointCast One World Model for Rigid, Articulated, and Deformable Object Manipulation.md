@@ -6,7 +6,7 @@ year: 2026
 authors: [Hantao Ye, Ross Worobel, Zhuoli Xie, Mingen Li, Houjian Yu, Youngjin Hong, Changhyun Choi]
 venue: arXiv 2026（明尼苏达大学）
 arxiv: "2609.28393v1"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.28393v1
 line: 世界模型与JEPA
 matrix_coords: [生成式WM(扩散系), 几何点集状态(非像素), 单步采样, 机器人操作+MPC]
 tags: [paper]
@@ -62,16 +62,13 @@ tags: [paper]
 
 ## 5. 与前作/矩阵关系
 
-- ≡同格对照 [Diffusion for World Modeling- Visual Details Matter in Atari](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Diffusion for World Modeling- Visual Details Matter in Atari（DIAMOND）)：同是"扩散生成式 WM+下游决策消费"，但状态载体=几何点集 vs 像素——本文开篇即打像素路线："像素把运动与外观纠缠、生成成本高于规划器要用的几何状态"，是 E1 像素路线的**显式反方证词**
 - ←整窗一次去噪思想同源于 [Diffusion Forcing- Next-token Prediction Meets Full-Sequence Diffusion](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Diffusion Forcing- Next-token Prediction Meets Full-Sequence Diffusion（Diffusion Forcing）)（全序列扩散 vs 逐帧自回归），且消融"block-causal per-frame tokens +33%～+248%"直接给该争论补了点集域证据
 - ←DiT+AdaLN+flow matching 工具链承自 [潜在扩散模型（LDM）](/ai-fa/explore/20-Algorithms/潜在扩散模型（LDM）) 家族
-- ⊥近邻划界：ParticleFormer（最近亲：set-level 形状损失+逐粒子材质标签，无代码自实现）、PointWorld（点+DINOv3 外观特征）、PGND（粒子-网格物理嵌入）、[Spatially Aware World Action Model via Geometric Latent Diffusion](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Spatially Aware World Action Model via Geometric Latent Diffusion)（几何潜扩散）——本文主张"只告诉模型点在哪，其余全靠注意力学"
 - ↔与 [World Models](/ai-fa/explore/10-Papers/09-世界模型与JEPA/World Models（世界模型）) 经典定义同题：学环境动力学供规划，但把状态从图像/潜空间换成可解释几何点
 
 ## 6. 影响后续
 
 - 几何状态 WM 的新基准点：单一配方打通 rigid/articulated/deformable 三态，后续工作大概率沿"点集+扩散 DiT+逐点监督"变体展开（对应像素侧 DIAMOND→Genie 谱系的位置）
-- 对"扩散 WM 少步化"提供了**非蒸馏路径**：flow matching 目标下 $$S=1$$ 单步部署是原生能力（且 $$S=25$$ 更差），与 E1"多步教师蒸馏成少步学生"构成方法论对照——少步不必都是蒸馏出来的
 - 逐点恒等监督 vs 形状级监督的 trade-off（articulated↑ 刚体↓）预示后续"两阶段/双头"组合方案的空间
 - MPC 消费方式（冻结 WM、每窗一次网络评估）是"WM 不训练策略只当模型"用法的干净参照
 

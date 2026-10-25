@@ -6,7 +6,7 @@ year: 2021
 authors: [Shleifer et al. (Meta)]
 venue: arXiv 2021
 arxiv: "2110.09456"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2110.09456
 line: 架构演进
 matrix_coords: [全注意力, 归一化/激活, 无状态]
 tags: [paper]

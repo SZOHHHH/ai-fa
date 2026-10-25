@@ -9,7 +9,7 @@ arxiv: "2103.00020"
 line: 多模态
 matrix_coords: [对比接口, 对比(InfoNCE), 接口级]
 tags: [paper]
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2103.00020
 ---
 
 # CLIP

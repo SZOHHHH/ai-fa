@@ -7,7 +7,7 @@ year: 2024
 authors: [Meta / NYU]
 venue: arXiv 2024
 arxiv: "2410.19310"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2410.19310
 line: 生成建模与扩散
 matrix_coords: [FM, 蒸馏(score/KL/对抗), 蒸馏预训练]
 tags: [paper, 占位层]

@@ -6,7 +6,7 @@ year: 2017
 authors: [Henderson et al.]
 venue: AAAI 2018
 arxiv: "1709.06560"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/1709.06560
 line: DRL 复现性危机的系统解剖：随机种子/超参/实现差异导致结果剧变——**DRL 科学的地基检测报告**（本库 RL 线的"实验方法论锚点"）。
 matrix_coords: 强化学习与对齐
 tags: [paper]

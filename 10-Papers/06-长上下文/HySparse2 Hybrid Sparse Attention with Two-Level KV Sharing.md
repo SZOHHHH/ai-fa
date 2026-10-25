@@ -32,7 +32,6 @@ layer: 占位
 ## 5. 与前作/矩阵关系
 - 概念链：[[40-Concepts/KV缓存]]（跨层共享把 KV 存储与 prefill 计算同步压缩——层维压缩新支）、[[40-Concepts/稀疏与线性注意力]]（混合注意力+token 级稀疏选择）。
 - 同族：[[10-Papers/06-长上下文/RouteRelay - Event-Triggered Cross-Layer Route Reuse for Efficient Dynamic Sparse Attention（跨层路由复用）|RouteRelay]]（同跨层复用支线；RouteRelay 训练后叠加 vs HySparse2 预训练期架构化）。
-- 与 E1/E2 对照：无域重叠（agent 推理工程），纯效率工程格。
 
 ## 6. 影响后续
 （待精读）

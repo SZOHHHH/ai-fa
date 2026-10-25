@@ -6,7 +6,7 @@ year: 2026
 authors: [Kun, Xu]
 venue: 待核（占位层，来自 arXiv 2026-09-08）
 arxiv: "2609.08517v1"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.08517v1
 line: 强化学习与对齐
 matrix_coords: 待评
 tags: [paper, 占位层]
@@ -31,7 +31,6 @@ layer: 精化占位
 
 ## 5. 与前作/矩阵关系
 - 线锚：[世界模型](/ai-fa/explore/20-Algorithms/世界模型) · [策略梯度定理](/ai-fa/explore/40-Concepts/策略梯度定理)（占位挂链，处理段精化）
-- 研判：⚪ 词族假阳性（decision-aware 哨兵撞 risk/calibration 词；同 TreeFI 入台账）
 - 治理轴参考
 
 ## 6. 影响后续

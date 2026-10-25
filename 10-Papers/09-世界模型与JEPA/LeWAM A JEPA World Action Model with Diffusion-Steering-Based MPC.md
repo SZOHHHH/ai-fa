@@ -9,7 +9,6 @@ arxiv: "2610.12407v1"
 pdf: https://arxiv.org/pdf/2610.12407v1
 line: 世界模型（e2-inversion-sentry 哨兵组命中）
 matrix_coords: [JEPA潜空间WM(免解码器), 四模式(前向/后向/逆动力学/策略), 噪声空间MPC(Diffusion Steering), 机器人操作(PushT+robomimic)]
-tags: [paper, 精读层, E2哨兵, 每日推荐261009]
 layer: 精化层（在线全文精读）
 ---
 # LeWAM: A JEPA World Action Model with Diffusion-Steering-Based MPC
@@ -45,12 +44,11 @@ layer: 精化层（在线全文精读）
 - ← 前身：LeWM/LeJEPA（免解码器 JEPA 世界模型，SIGReg 端到端防塌缩）——LeWAM = 其潜空间 + UWM/Cosmos Policy 式多模式骨架；库内近亲（潜空间 WAM 族）：[[10-Papers/09-世界模型与JEPA/LaWAM- Latent World Action Models for Efficient Dynamics-Aware Robot Policies（LaWAM）|LaWAM]]；
 - ≡ 同构对话：[[10-Papers/09-世界模型与JEPA/Preserving Unstable Modes Through Inverse Dynamics in JEPA World Models|Preserving Unstable Modes]]（JEPA+逆动力学，那里 IDM 用于稳定化表征，这里 Inverse 模式是任务侧四模式之一）；
 - 规划族：[[10-Papers/09-世界模型与JEPA/TD-MPC2- Scalable, Robust World Models for Continuous Control（TD-MPC2）|TD-MPC2]]（免解码器潜空间 MPPI——但搜动作空间，正是 DS 要修的失败模式）；
-- 像素对照：[[10-Papers/09-世界模型与JEPA/Diffusion for World Modeling- Visual Details Matter in Atari（DIAMOND）|DIAMOND]]（像素扩散 WM+游戏 RL——我们 E1/E2 的格；LeWAM 反其道弃像素重建）；
 - 概念锚：[[40-Concepts/逆动力学（IDM）]] · [[40-Concepts/JEPA联合嵌入预测架构]] · [[20-Algorithms/矩形流]] · [[20-Algorithms/世界模型]]。
 
 ## 6. 影响后续
 - "免解码器表征 + 四模式 WAM"范式的系统证据；DS（噪声空间规划）是对一切流匹配/扩散策略头通用的纯推理期修复，Golden Ticket/DSRL 一系的推广；
-- **E2 邻域最近邻（🟡，见晨报 2026-10-09 ⑤）**：Inverse 模式 = 潜空间流匹配逆动力学 $p(a \mid z_t, z_{t+1})$，与 E2 后验反推同族；但表征（JEPA 非像素扩散）、域（机器人演示非游戏 RL）、goal 机制（演示目标潜距离非事件/奖励锚定）三维皆异，无蒸馏/决策保真维度。
+- → 后继补记（261012）：[[10-Papers/09-世界模型与JEPA/H-JEPA End-to-End Learning of Hierarchical World Models for Visual Planning|H-JEPA]]（同出 LeWM/LeJEPA 系——那边堆层级，这里加扩散转向 MPC；两文互为 JEPA WM 的"深度轴/控制轴"延展）。
 
 ## 7. 读前须知
 - 前置：[[40-Concepts/JEPA联合嵌入预测架构]]、[[30-Formulas/条件流匹配损失]]/[[20-Algorithms/矩形流]]、[[40-Concepts/逆动力学（IDM）]]；采样式 MPC（CEM/MPPI 的 propose-update-select 循环）常识。

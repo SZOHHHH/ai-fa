@@ -29,7 +29,9 @@ const patterns = [
   ["私有目录", /70-Ideas|80-Lessons/],
   ["内部代号", /AutoDL|autodl|seetacloud|bjb1|diamond-archive|connect\.bjb1/],
   ["口令", /YNfvn|ssh -p 2\d{4}/],
-  ["实验私有", /Boxing|boxing_[abcv]|E1实验|E1 实验|distill_Boxing/],
+  // 261025 收窄：裸 Boxing 误伤公开论文 benchmark 报分（EDELINE 表 1"Boxing 88.1 vs 86.9"被拦致周日发布中止）。
+  // Boxing/Breakout 是 Atari 公开游戏名——禁的是私有实验语言特征，不是游戏名本身。
+  ["实验私有", /boxing_[abcv]|E1\s*(实验|台账)|E2\s*台账|E[12].{0,8}Boxing|Boxing.{0,8}E[12]|distill_Boxing/],
   ["内部流程", /批次报告|敌方核查|敌情报告|B1\d#\d|B\d\d 报告/],
   ["内部工具", /CLAUDE\.md|Claudian/],
   ["红线标记", /竞品红线|组内.{0,6}竞品/],

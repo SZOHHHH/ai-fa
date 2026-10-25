@@ -7,7 +7,7 @@ year: 2025
 authors: [Michael Sullivan, Alexander Koller (Saarland)]
 venue: arXiv 2025
 arxiv: "2509.21154"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2509.21154
 line: 强化学习与对齐
 matrix_coords: [GRPO, 组基线, 步级]
 tags: [paper, 占位层]
@@ -44,7 +44,6 @@ $$
 
 ## 6. 影响与占位意义
 
-**敌情结论**：PRM×GRPO 格的理论与机制双线已被占；残留仅在"频率偏置修复"等次生问题。
 
 > 近邻同族：[DAPO- An Open-Source LLM Reinforcement Learning System at Scale](/ai-fa/explore/10-Papers/04-强化学习与对齐/DAPO- An Open-Source LLM Reinforcement Learning System at Scale（DAPO）) · [DCPO- Dynamic Clipping Policy Optimization](/ai-fa/explore/10-Papers/04-强化学习与对齐/DCPO- Dynamic Clipping Policy Optimization（DCPO）)
 > 数学根基（占位层）：[策略梯度定理](/ai-fa/explore/40-Concepts/策略梯度定理)

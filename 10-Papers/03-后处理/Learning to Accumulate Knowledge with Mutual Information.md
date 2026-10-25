@@ -32,7 +32,6 @@ layer: 占位
 ## 5. 与前作/矩阵关系
 - 线锚：[[40-Concepts/知识蒸馏]]（经验→知识库的"轨迹蒸馏"形态）· [[20-Algorithms/GRPO与RLVR]] · [[30-Formulas/GRPO目标]]
 - → 同族 LLM 智能体经验线：[[10-Papers/03-后处理/Rollback the World, Keep the Reflection Rollback-Induced Reflection for Long-Horizon LLM Agents|Rollback-Induced Reflection]]（长视野智能体经验复用的对照路线：反思 vs 策展）
-- 2601008 挂链：轮换线 postprocess；互信息×GRPO 的知识策展，与 E1/E2 无格重叠 ⚪
 
 ## 6. 影响后续
 （待精读）

@@ -7,7 +7,7 @@ year: 2025
 authors: [NVIDIA]
 venue: arXiv 2025
 arxiv: "2502.15681"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2502.15681
 line: 生成建模与扩散
 matrix_coords: [扩散, 蒸馏(score/KL/对抗), 蒸馏预训练]
 tags: [paper, 占位层]

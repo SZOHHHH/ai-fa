@@ -6,7 +6,7 @@ year: 2024
 authors: [Qwen Team]
 venue: arXiv 2024
 arxiv: "2412.15115"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2412.15115
 line: 标杆锚点
 matrix_coords: [—, —, —]
 tags: [paper]

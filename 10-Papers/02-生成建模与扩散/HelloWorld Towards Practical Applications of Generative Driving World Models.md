@@ -50,14 +50,12 @@ tags: [paper]
 - ≡蒸馏配方同构 [[Causal Forcing- 自回归扩散蒸馏的正确姿势（Causal Forcing）]]：都是"因果状态定义→教师训练→部署态对齐→少步蒸馏"四步曲（HelloWorld 自认沿用 LingBot-World-Infinity 的高层序列：因果教师→一致性蒸馏→自 rollout DMD）
 - ↔蒸馏工具箱 [[Consistency Models（一致性模型）]]、[[One-step Diffusion with Distribution Matching Distillation（DMD）]]/[[Improved Distribution Matching Distillation for Fast Image Synthesis（DMD2）]]；步数概念见 [[40-Concepts/NFE（函数求值次数）]]
 - ≡同域对照 [[ZYT-World A Real-Time Controllable World Model for Closed-Loop Autonomous-Driving Simulation]]：ZYT-World 主打闭环驾驶仿真（policy-in-the-loop），HelloWorld 明确停在"交互观察生成"不进闭环——两卡合看正好标出驾驶 WM 的开环/闭环分界线
-- ⊥划界 [[Diffusion for World Modeling- Visual Details Matter in Atari（DIAMOND）]]：同为"扩散 WM+少步推理"，但本系统无 RL agent、无决策保真命题、评测零闭环指标——E1 红线（蒸馏目标只用像素/生成质量指标）的工业级现役实例
 - 谱系锚 [[20-Algorithms/扩散模型]]
 
 ## 6. 影响后续
 
 - 驾驶生成 WM 的系统级新标杆：渐进特化+解耦位姿/布局控制+块因果接口+少步蒸馏将成为该域后续系统的默认骨架（对应游戏侧 DIAMOND→Genie 谱系的位置）
 - "自回归世界模型少步蒸馏必须配自 rollout 分布匹配"这条工程结论对所有序贯生成 WM（含游戏侧）有直接参考价值——**误差累积是蒸馏进 AR 系统的第一杀手**
-- 对 E1 的证据价值（详见晨报 ⑤）：工业界顶配系统做少步蒸馏仍只查生成侧指标，且显式把 policy-in-the-loop 划出自己的范围——"少步蒸馏×决策保真"组合在驾驶域同样无人占位
 
 ## 7. 读前须知
 

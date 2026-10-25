@@ -6,7 +6,7 @@ year: 2026
 authors: [Bin Li, Sisi Liu, Chenyang Hu, Chaoyang Zhang, Wei Li, Hui Song]
 venue: arXiv 2026-09-07（cs.CL）
 arxiv: "2609.07306"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.07306
 line: 长上下文
 matrix_coords: 动态稀疏注意力×路由开销优化
 tags: [paper, 轮换命中, 长上下文]
@@ -42,7 +42,7 @@ layer: 精化层（摘要级+摘要核实，PDF 待深读）
 
 ## 6. 影响后续
 - 长上下文 prefill 成本优化的新支线：从"更聪明的路由"转向"更便宜的路由维护"；行压缩内核若补齐，实用价值直接。
-- 与 E1/E2 无域重叠（LLM 推理工程 vs 像素扩散 WM），纯效率工程格。
+- 后续同族（260926）：[HySparse2](/ai-fa/explore/10-Papers/06-长上下文/HySparse2 Hybrid Sparse Attention with Two-Level KV Sharing)（跨层 KV 共享推进到 YOCO 式两级结构+token 级稀疏——预训练期架构化而非训练后叠加，1M token prefill FLOPs 再降 2.92×）。
 
 ## 7. 读前须知
 - 前置：动态稀疏注意力基本流程（query 块→key 块路由）——先看 [MoBA](/ai-fa/explore/10-Papers/06-长上下文/MoBA- Mixture of Block Attention for Long-Context LLMs（MoBA）) 卡；top-k 选择的概念。

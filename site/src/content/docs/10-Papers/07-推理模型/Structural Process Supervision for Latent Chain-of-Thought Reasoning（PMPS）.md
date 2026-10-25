@@ -6,7 +6,7 @@ year: 2026
 authors: [Yiqi Li, Xu Chen, Chen Ju, Jiangchao Yao, et al.]
 venue: arXiv 2609.09928（2026-09-09，SJTU + 淘天集团）
 arxiv: "2609.09928v1"
-pdf: 10-Papers/PDF/Structural Process Supervision for Latent Chain-of-Thought Reasoning（PMPS）.pdf
+pdf: https://arxiv.org/pdf/2609.09928v1
 line: 推理模型
 matrix_coords: 待评（轮换线）
 tags: [paper]

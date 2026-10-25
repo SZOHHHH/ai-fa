@@ -9,7 +9,7 @@ arxiv: "2405.14734"
 line: 强化学习与对齐
 matrix_coords: [成对比较, 无参考, 无]
 tags: [paper]
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2405.14734
 ---
 
 # SimPO

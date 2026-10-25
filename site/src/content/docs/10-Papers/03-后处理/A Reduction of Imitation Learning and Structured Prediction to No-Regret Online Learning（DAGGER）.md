@@ -7,7 +7,7 @@ year: 2011
 authors: [Stéphane Ross, Geoffrey Gordon, J. Andrew Bagnell]
 venue: AISTATS 2011（3000+ 引用）
 arxiv: "1011.0686"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/1011.0686
 line: 后处理与压缩
 matrix_coords: [—, —, —]
 ---

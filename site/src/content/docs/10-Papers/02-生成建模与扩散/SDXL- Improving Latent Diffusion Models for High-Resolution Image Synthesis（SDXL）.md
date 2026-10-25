@@ -6,7 +6,7 @@ year: 2023
 authors: [Podell et al. (Stability)]
 venue: ICLR 2024
 arxiv: "2307.01952"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2307.01952
 line: 生成建模与扩散
 matrix_coords: [扩散/score, 潜空间, score匹配]
 tags: [paper]

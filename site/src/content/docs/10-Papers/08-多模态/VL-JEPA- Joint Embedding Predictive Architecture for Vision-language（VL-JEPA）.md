@@ -7,7 +7,7 @@ year: 2025
 authors: [（arXiv）]
 venue: arXiv 2025
 arxiv: "2512.10942"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2512.10942
 line: 多模态
 matrix_coords: [特征预测(JEPA系), 潜在状态, 纯离线视频]
 tags: [paper, 占位层]
@@ -43,7 +43,6 @@ $$
 
 ## 6. 影响与占位意义
 
-榜 8 敌情：理解侧解码已做，生成侧（按需生成像素）仍开放但最近邻已踩。
 
 ---
 

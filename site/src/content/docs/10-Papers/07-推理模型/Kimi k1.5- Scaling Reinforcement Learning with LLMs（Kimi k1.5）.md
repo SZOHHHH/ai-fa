@@ -6,7 +6,7 @@ year: 2025
 authors: [Kimi Team (Moonshot)]
 venue: arXiv 2025
 arxiv: "2501.12599"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2501.12599
 line: 推理模型
 matrix_coords: [训练注入, 链, RLVR(可验证)]
 tags: [paper]

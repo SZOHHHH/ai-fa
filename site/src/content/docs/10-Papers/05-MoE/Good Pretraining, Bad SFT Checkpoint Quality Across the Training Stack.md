@@ -6,7 +6,7 @@ year: 2026
 authors: [Sohir, Maskey]
 venue: 待核（占位层，来自 arXiv 2026-09-08）
 arxiv: "2609.08966v1"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.08966v1
 line: MoE
 matrix_coords: 待评
 tags: [paper, 占位层]
@@ -31,7 +31,6 @@ layer: 精化占位
 
 ## 5. 与前作/矩阵关系
 - 线锚：[混合专家（MoE）](/ai-fa/explore/20-Algorithms/混合专家（MoE）) · [MoE门控公式](/ai-fa/explore/30-Formulas/MoE门控公式)（占位挂链，处理段精化）
-- 研判：🟢 E1 同盟/可操作——蒸馏源选择（E550 峰 94.0 vs E600 终值 90.0）是未测自变量 → e2-line 消融提案（见当日晨报⑦）
 - 直连：E1_实验数据台账 · 蒸馏谱系 [KD](/ai-fa/explore/10-Papers/03-后处理/Distilling the Knowledge in a Neural Network（KD）) · [知识蒸馏](/ai-fa/explore/40-Concepts/知识蒸馏)
 
 ## 6. 影响后续

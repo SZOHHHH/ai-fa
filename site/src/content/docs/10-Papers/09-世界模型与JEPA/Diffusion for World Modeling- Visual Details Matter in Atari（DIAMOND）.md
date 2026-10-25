@@ -6,7 +6,7 @@ year: 2024
 authors: [Eloi Alonso, Adam Jelley, Vincent Micheli, et al.]
 venue: NeurIPS 2024
 arxiv: "2405.12399"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2405.12399
 line: 世界模型与JEPA
 matrix_coords: [像素重建(生成式), 显式像素, 游戏控制(RL)]
 tags: [paper]
@@ -20,7 +20,7 @@ tags: [paper]
 
 ## 2. 核心贡献
 
-- **像素级动作条件扩散世界模型**：去噪网络吃 4 帧上下文+动作（AdaGroupNorm 注入），直接生成下一帧 84×84 RGB——**不建潜空间、不建 tokenizer**，信息无损通道；
+- **像素级动作条件扩散世界模型**：去噪网络吃 4 帧上下文+动作（AdaGroupNorm 注入），直接生成下一帧 64×64 RGB（261013 据原文译卡 L175 修正，此前误写 84×84）——**不建潜空间、不建 tokenizer**，信息无损通道；
 - **"细节即价值"双证据**：①正面——像素扩散 WM 在 Atari 100k 上超 DreamerV3（潜路线）与 IRIS（token 路线）：若细节无用，更紧凑的表征本该赢；②反面——去噪步数消融（附录 L）：步数 3→1 生成变糊、RL 掉分，多模态游戏（对手位置二选一）掉得最狠——**单步均值化=两个半透明对手叠影**（论文图 4）；
 - **完整想象训练管线**：扩散 WM + 独立奖励/终止头（读帧对出 r 与 done）+ actor-critic 在梦里训练——EDM 式预条件化 + 3 步确定性 Euler 采样把成本压到可训；
 - **多模态的证据级呈现**：黑方（对手）位置多模态→少步插值出叠影；白方（自己）位置已知→少步也不糊——把"多模态动态"从概念变成帧级可视化。
@@ -45,7 +45,7 @@ $$x_{t+1}\;\sim\;p_\theta\big(x\,\big|\,x_{t-3:t},\,a_{t-3:t}\big)\ \text{（扩
 
 - ← [Dreamer](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Dream to Control- Learning Behaviors by Latent Imagination（Dreamer）) 系（想象训练骨架）+ [EDM](/ai-fa/explore/10-Papers/02-生成建模与扩散/Elucidating the Design Space of Diffusion-Based Generative Models（EDM）)（扩散工程）——"Dreamer 的发动机换成 EDM 扩散"；
 - ↔ 对照 [DreamerV3](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Mastering Diverse Domains through World Models（DreamerV3）)（正面对手：细节丢失方）；对照 [MuZero](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model（MuZero）)（"不用重建"哲学的反命题——重建本身即信道）；
-- → 后续：EDELINE（Mamba 记忆增强，家族新 SOTA）、少步蒸馏与决策保真类工作（"3 NFE 慢"与"1 NFE 糊"的双重压力正成为该家族的核心问题轴）。
+- → 后继（261013 建卡）：[EDELINE](/ai-fa/explore/10-Papers/09-世界模型与JEPA/EDELINE- Enhancing Memory in Diffusion-based World Models via Linear-Time Sequence Modeling（EDELINE）)（台大+NVIDIA 外部接力：Mamba 无界记忆替换本作 4 帧窗口 + 判头并入统一架构，无搜索 MBRL 新 SOTA mean 1.866 HNS；**Breakout 250.5 vs 本作 132.5** 近翻倍——记忆是本作的隐藏短板）；少步蒸馏与决策保真类工作仍空（"3 NFE 慢"与"1 NFE 糊"的双重压力正成为该家族的核心问题轴）。
 
 ## 6. 影响与后续
 
@@ -55,7 +55,6 @@ $$x_{t+1}\;\sim\;p_\theta\big(x\,\big|\,x_{t-3:t},\,a_{t-3:t}\big)\ \text{（扩
 
 - → 后继补记（260914）：[Pelican-Sim 1.0](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Pelican-Sim 1.0 - A General World Model Simulator for Embodied Intelligence（具身WM仿真器）)（像素级动作条件 WM 在机器人域的对应物；其少步蒸馏目标仍是生成指标——对照本卡"视觉细节决策相关"论点的反面镜）
 - → 后继补记（260924）：[PointCast](/ai-fa/explore/10-Papers/09-世界模型与JEPA/PointCast One World Model for Rigid, Articulated, and Deformable Object Manipulation)（像素路线的显式反方：状态=几何点集，"像素把运动与外观纠缠、生成成本高于规划器要用的几何状态"；其 flow matching 原生单步（S=1 且 S=25 更差）是"少步不必靠蒸馏"的外部证词）
-- → 后继补记（260918）：[Astronex-World 1.0](/ai-fa/explore/10-Papers/02-生成建模与扩散/Astronex-World 1.0 Real-Time Interactive World Model Foundation)（"扩散当动力学"从游戏域放大到 5B 视频先验的基础模型化对应物；其少步蒸馏配运动保持正则但目标仍是生成指标——E1 决策保真格仍空）
 
 ## 7. 读前须知
 

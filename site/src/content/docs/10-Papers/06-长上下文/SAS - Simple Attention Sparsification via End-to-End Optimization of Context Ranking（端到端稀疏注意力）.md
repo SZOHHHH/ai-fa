@@ -6,7 +6,7 @@ year: 2026
 authors: [Zhiwei Li, Lei Zhu, Hao Gu, Xiang Hu, Yan Wang, Haitao Mi, Sirui Han, Leo Liang, Zhijiang Guo]
 venue: arXiv 2026-09-11（cs.CL）
 arxiv: "2609.13141"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.13141
 line: 长上下文
 matrix_coords: 注意力稀疏化×可训练选择器×端到端
 tags: [paper, 轮换命中, 长上下文]
@@ -38,11 +38,11 @@ layer: 精化层（摘要级+摘要核实，PDF 待深读）
 ## 5. 与前作/矩阵关系
 - ← 谱系：可训练稀疏注意力族 [NSA](/ai-fa/explore/10-Papers/06-长上下文/Native Sparse Attention- Hardware-Aligned and Natively Trainable Sparse Attention（NSA）)（原生可训练稀疏注意力）、[MoBA](/ai-fa/explore/10-Papers/06-长上下文/MoBA- Mixture of Block Attention for Long-Context LLMs（MoBA）)（块级混合注意力路由）——SAS 定位是其"训练后+端到端目标对齐"改进。
 - 概念链：[稀疏与线性注意力](/ai-fa/explore/40-Concepts/稀疏与线性注意力)（稀疏化两大范式：训练时原生 vs 训练后改造，SAS 属后者）。
-- ↔ **E1 方法论镜像**（库内对话位）：SAS 批判"蒸馏中间量（注意力分布）无法保证最终目标（预测质量）"与 E1 红线"蒸馏目标只用像素/生成质量指标无法保证决策保真"同构——**代理目标与真实目标的错位在不同领域反复出现**，E1 论文 Discussion 可引作跨域证据。
 
 ## 6. 影响后续
 - 训练后稀疏化从"模仿教师注意力"转向"端到端服务任务损失"，可能成为稀疏注意力选择器的默认训练法。
 - 跨域启示：任何"用中间量蒸馏教选择器/控制器"的场景（KV 淘汰、检索路由、早退）都适用同样的对齐批判。
+- 后续印证（260926）：[CompKV](/ai-fa/explore/10-Papers/06-长上下文/CompKV Compensation-Aware KV Selection for Long-Context LLM Inference) 把同一"目标对齐"批判推进到补偿式稀疏注意力（块选择应服务下游补偿误差，而非注意力质量本身）——跨域对齐批判再+1。
 
 ## 7. 读前须知
 - 前置：softmax 注意力计算流程（[Transformer](/ai-fa/explore/10-Papers/01-架构演进/Attention Is All You Need（Transformer）)）、Top-K 硬选择的梯度截断问题（重参数化/Gumbel 直觉有帮助）。

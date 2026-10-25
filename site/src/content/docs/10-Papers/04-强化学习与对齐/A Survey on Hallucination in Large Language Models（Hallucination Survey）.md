@@ -6,7 +6,7 @@ year: 2023
 authors: [Ji et al.]
 venue: ACM TOIS 2024
 arxiv: "2311.05232"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2311.05232
 line: 强化学习与对齐
 matrix_coords: [—, —, —]
 tags: [paper]

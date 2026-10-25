@@ -6,7 +6,7 @@ year: 2018
 authors: [Tuomas Haarnoja, Aurick Zhou, Pieter Abbeel, Sergey Levine]
 venue: ICML 2018
 arxiv: "1801.01290"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/1801.01290
 line: 强化学习与对齐
 matrix_coords: [—(无模型控制), 策略学习(off-policy)+熵正则, 有]
 tags: [paper]

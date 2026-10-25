@@ -44,7 +44,6 @@ $$
 
 ## 6. 影响与占位意义
 
-**敌情结论**：PRM×GRPO 格的理论与机制双线已被占；残留仅在"频率偏置修复"等次生问题。
 
 > 近邻同族：[[DAPO- An Open-Source LLM Reinforcement Learning System at Scale（DAPO）]] · [[DCPO- Dynamic Clipping Policy Optimization（DCPO）]]
 > 数学根基（占位层）：[[策略梯度定理]]

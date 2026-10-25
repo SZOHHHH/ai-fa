@@ -9,7 +9,7 @@ arxiv: "2503.07565"
 line: 生成建模与扩散
 matrix_coords: [FM, 矩匹配, 从头训练]
 tags: [paper]
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2503.07565
 ---
 
 # IMM（归纳矩匹配）

@@ -6,7 +6,7 @@ year: 2023
 authors: [Tim Dettmers, Ruslan Svirschevski, Vage Egiazarian, Denis Kuznedelev, Elias Frantar, Saleh Ashkboos, Alexander Borzunov, Torsten Hoefler, Dan Alistarh]
 venue: arXiv 2023-06（NeurIPS 2023；Dettmers=LLM.int8 作者，ISTA/ETH 系量化线）
 arxiv: "2306.03078"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2306.03078
 line: 后处理
 matrix_coords: 量化×异常值稀疏隔离×近无损压缩(3-4bit)
 tags: [paper, 后处理, 量化]

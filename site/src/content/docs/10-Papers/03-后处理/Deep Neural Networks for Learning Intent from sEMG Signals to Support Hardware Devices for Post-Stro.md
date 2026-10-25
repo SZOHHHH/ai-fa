@@ -6,7 +6,7 @@ year: 2026
 authors: [Zakariyya, Brewster]
 venue: 待核（占位层，来自 arXiv 2026-09-09）
 arxiv: "2609.09971v1"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.09971v1
 line: 后处理
 matrix_coords: 待评
 tags: [paper, 占位层]
@@ -32,7 +32,6 @@ layer: 占位
 ## 5. 与前作/矩阵关系
 - 线锚：[知识蒸馏](/ai-fa/explore/40-Concepts/知识蒸馏) · [KD 奠基](/ai-fa/explore/10-Papers/03-后处理/Distilling the Knowledge in a Neural Network（KD）)
 - 蒸馏形态：**跨通道蒸馏**（cross-channel KD）——teacher 吃 64 通道 HD-sEMG，学生只吃 4 通道（ECRB/ECRL/FDS/FDP，匹配四传感器硬件设计），蒸馏补回通道压缩损失（五种子均值 0.5219±0.0114 子集准确率，优于直接训练）。这是"压缩**输入维**"而非"压缩模型"的蒸馏用法，与量化/剪枝压缩正交。
-- 对我们：医疗嵌入式域的外缘参考（LSTM/CNN/GNN 架构对比 + Optuna 搜 compact CNN + 123K 参数 ONNX 导出），与 E1/E2 无轴重叠，不进主线叙事。
 
 ## 6. 影响后续
 （待精读）

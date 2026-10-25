@@ -6,7 +6,7 @@ year: 2026
 authors: Menghao Li, Linjie Mu, Yin Wang, et al.
 venue: arXiv
 arxiv: 2609.02401
-pdf: 10-Papers/PDF/CA-OPD Confidence-Aware On-Policy Distillation for Structured Visual Prediction.pdf
+pdf: https://arxiv.org/pdf/2609.02401
 line: 强化学习与对齐
 matrix_coords: 待评
 tags: [paper, 占位, 0910补扫]
@@ -34,7 +34,6 @@ on-policy 蒸馏中学生早期不可靠预测会带偏自己的 rollout——�
 ## 5. 与前作/矩阵关系
 
 - 谱系锚：[知识蒸馏](/ai-fa/explore/40-Concepts/知识蒸馏)，[on-policy与off-policy](/ai-fa/explore/40-Concepts/on-policy与off-policy)
-- **哨兵研判（9/10 补扫）**：🟢 E1 同盟：核心思想"监督密度对齐学生实际状态分布"与我们读出对齐同族；置信度门控≈用判头读数当监督滤波器（监督只走梯度、不进推理的同款设计）。域是 VLM 非游戏，无撞车。可引作 on-policy 蒸馏家族证据。
 
 ## 6. 影响后续
 

@@ -6,7 +6,7 @@ year: 2019
 authors: [Alec Radford, Jeffrey Wu, Rewon Child, et al.]
 venue: OpenAI 技术报告（未上 arXiv）
 arxiv: "无（OpenAI 官网）"
-pdf: 已下载（OpenAI CDN）
+pdf: https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
 line: 架构演进
 matrix_coords: [全注意力, 缩放律, 无状态]
 tags: [paper]

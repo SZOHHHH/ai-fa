@@ -9,7 +9,7 @@ arxiv: "1503.02531"
 line: 后处理与压缩
 matrix_coords: [知识(行为), 蒸馏, 训练后]
 tags: [paper]
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/1503.02531
 ---
 
 # 蒸馏（Hinton KD：暗知识的发现）

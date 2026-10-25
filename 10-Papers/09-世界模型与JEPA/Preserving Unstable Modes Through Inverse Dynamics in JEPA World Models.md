@@ -32,8 +32,6 @@ layer: 占位
 ## 5. 与前作/矩阵关系
 - 线锚：[[20-Algorithms/世界模型]] · [[40-Concepts/逆动力学（IDM）]] · [[30-Formulas/VICReg三正则]]（SIGReg 防坍缩同族——本文证明它不保控制方向）
 - ← JEPA WM 主线：[[10-Papers/09-世界模型与JEPA/V-JEPA 2- Self-Supervised Video Models Enable Understanding, Prediction and Planning（V-JEPA 2）|V-JEPA 2]]（基座谱系）；动作敏感表征近邻 [[10-Papers/09-世界模型与JEPA/Delta-JEPA- Learning Action-Sensitive World Models via Latent Difference Decoding（Delta-JEPA）|Delta-JEPA]]；goal 条件 JEPA 规划 [[10-Papers/09-世界模型与JEPA/Toward Physically Grounded JEPA World Models for Goal-Conditioned Robotic Planning|Physically Grounded JEPA]]
-- IDM 用法分岔：本文＝**训练正则支**（保不稳定模态，与 AD-WM/Ivashkov 2026 同支）；E2＝**反推任务本体支**（goal 条件后验反推）——分岔谱系详见 [[40-Concepts/逆动力学（IDM）]] §6
-- 2601008 挂链：E2 正邻域 🟡——JEPA 潜空间×机器人镇定 vs 我们像素扩散 WM×游戏闭环；理论工具（可控 Gramian/PBH 检测）可借
 
 ## 6. 影响后续
 - → 后继补记（261009）：[[10-Papers/09-世界模型与JEPA/LeWAM A JEPA World Action Model with Diffusion-Steering-Based MPC|LeWAM]]——JEPA+逆动力学的任务侧用法：Inverse 模式=由前后状态反推动作（流匹配头）。

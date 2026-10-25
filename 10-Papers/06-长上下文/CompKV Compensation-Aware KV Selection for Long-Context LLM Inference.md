@@ -32,7 +32,7 @@ layer: 占位
 ## 5. 与前作/矩阵关系
 - 概念链：[[40-Concepts/KV缓存]]（固定读预算下"读哪些块"的决策问题）、[[40-Concepts/KL散度]]（选择损失=补偿分布对全注意力的 KL，推出"质量×方差"双因子残差准则）。
 - 同族：[[10-Papers/06-长上下文/SAS - Simple Attention Sparsification via End-to-End Optimization of Context Ranking（端到端稀疏注意力）|SAS]]（同一"目标对齐"批判家族——SAS 批蒸馏中间量、CompKV 批选择与补偿解耦）。
-- 与 E1/E2 对照：无域重叠（LLM 推理工程）；其"选择应服务下游补偿误差"的论证方式是跨域方法论参考。
+- 同族补记（261024）：[[10-Papers/06-长上下文/RIFT KV Cache Compression for Draft Models with Complementary Compressibility Training|RIFT]]（选择式压缩跨到 draft 模型侧：decode staleness 诊断（prefill 信息随输出变长失效）+解码中自适应刷新+稀疏掩码可压缩性训练，8K KV 预算保留 >98% 全缓存接受长度）。
 
 ## 6. 影响后续
 （待精读）

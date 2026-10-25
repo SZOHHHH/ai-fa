@@ -7,7 +7,7 @@ year: 2025
 authors: [（NVIDIA）]
 venue: arXiv 2025
 arxiv: "2510.17858"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2510.17858
 line: 生成建模与扩散
 matrix_coords: [FM, flow map, 免训练]
 tags: [paper, 占位层]
@@ -43,7 +43,6 @@ $$
 
 ## 6. 影响与占位意义
 
-RS 库 10-15 已有；**对 MFD 类蒸馏的竞争**：如果微调头够便宜，完整蒸馏的价值叙事受压——敌情价值高。
 
 > 近邻同族：[Align Your Flow - Scaling Continuous-Time Flow Map Distillation](/ai-fa/explore/10-Papers/02-生成建模与扩散/Align Your Flow- Scaling Continuous-Time Flow Map Distillation（AYF）) · [Computational and Statistical Guarantees of the c-Rectified flow](/ai-fa/explore/10-Papers/02-生成建模与扩散/Computational and Statistical Guarantees of the c-Rectified flow（c-RF理论）)
 > 数学根基（占位层）：[条件流匹配损失](/ai-fa/explore/30-Formulas/条件流匹配损失) · [注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)

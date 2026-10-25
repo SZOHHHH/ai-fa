@@ -6,7 +6,7 @@ year: 2024
 authors: [Luo et al.]
 venue: arXiv 2024
 arxiv: "2410.18881"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2410.18881
 line: 生成建模与扩散
 matrix_coords: [扩散, 蒸馏(score/KL/对抗), 蒸馏预训练]
 tags: [paper]
@@ -53,3 +53,7 @@ undefined
 > 数学根基：[概率分布](/ai-fa/explore/40-Concepts/概率分布)
 
 > 数学根基：[蒸馏损失](/ai-fa/explore/30-Formulas/蒸馏损失) · [DSM目标](/ai-fa/explore/30-Formulas/DSM目标)
+
+> → 后继补记（261011）：[Enabling Preference-driven Unlearning in Few-step Distilled Text-to-Image Diffusion Models](/ai-fa/explore/10-Papers/02-生成建模与扩散/Enabling Preference-driven Unlearning in Few-step Distilled Text-to-Image Diffusion Models)——偏好优化×少步蒸馏合流的延伸：DPO 式遗忘目标在少步模型上失效后的重对齐（一步生成器偏好训练的谱系后裔）。
+
+> → 后继补记（261024）：[DualHeads](/ai-fa/explore/10-Papers/02-生成建模与扩散/DualHeads Reward-tilted few-step diffusion made simple)——少步生成器奖励对齐的"零依赖"极简路线：冻结骨干+双二分类头（reward/reference），head 最优时目标=KL 正则化奖励最大化，免 score field/可微奖励/teacher，任务奖励接近 40 步 RL 水平。

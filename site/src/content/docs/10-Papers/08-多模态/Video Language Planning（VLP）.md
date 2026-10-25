@@ -6,7 +6,7 @@ year: 2023
 authors: [Lin et al. (Meta)]
 venue: arXiv 2023
 arxiv: "2310.10625"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2310.10625
 line: 多模态
 matrix_coords: [投影接口, 生成(条件LM), —]
 tags: [paper]

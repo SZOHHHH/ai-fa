@@ -6,7 +6,7 @@ year: 2026
 authors: [Jiamian Wang]
 venue: 待核（占位层，来自 arXiv 2026-09-03）
 arxiv: "2609.04063v1"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.04063v1
 line: 推理模型
 matrix_coords: 待评
 tags: [paper, 占位层]
@@ -33,7 +33,7 @@ layer: 占位
 - 线锚：[思维链（CoT）](/ai-fa/explore/40-Concepts/思维链（CoT）) · [视觉语言模型（VLM）](/ai-fa/explore/40-Concepts/视觉语言模型（VLM）)（占位挂链，Tier B 精化）
 
 ## 6. 影响后续
-（待精读）
+- → 后继补记（261011）：[SPLIT-RL: Staged Perception-Language Reasoning Training with Claim-Level Advantages](/ai-fa/explore/10-Papers/07-推理模型/SPLIT-RL Staged Perception-Language Reasoning Training with Claim-Level Advantages)——优势粒度精细化的正面路线：主张级优势分解（claim-level advantage）正面处理本文指出的"序列级优势混淆能力特异性错误"。
 
 ## 7. 读前须知
 （待精读）自动下载备注：已下载（PDF/）

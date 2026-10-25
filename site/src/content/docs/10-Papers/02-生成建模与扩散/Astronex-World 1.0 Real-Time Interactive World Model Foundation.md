@@ -6,7 +6,7 @@ year: 2026
 authors: [Xin Zhou, Cong Miao]
 venue: 技术报告（Astronex Robotics + 南京信息工程大学，2026-09-17）
 arxiv: "2609.20034v1"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.20034v1
 line: 生成建模与扩散
 matrix_coords: 扩散蒸馏×世界模型（交叉格）
 tags: [paper]
@@ -43,7 +43,6 @@ tags: [paper]
 - **I2V 帧掩码**（式 2/3）：$$z_t = m \odot z_{\text{ref}} + (1-m) \odot \left((1-\sigma_t) z_0 + \sigma_t \epsilon\right)$$，$$m_1=1$$ 其余 0——直觉：参考帧恒为时间 0 的干净上下文，每步采样后重置回 $$z_{\text{ref}}$$，损失只算生成帧；外观/身份来自 $$I_0$$，演化由文本/相机/动作决定。
 - **CFG 引导速度**：$$\hat{v} = v^\emptyset_\theta + w\,(v^c_\theta - v^\emptyset_\theta)$$，$$w=3$$——直觉：无条件（固定负提示）与有条件速度外推，放大条件方向。
 - **DMD 伪梯度**（Stage V）：$$g_{\text{DMD}} = (\hat{x}^f_0 - \hat{x}^r_0)\,/\,\left(\mathrm{mean}\lvert x_g - \hat{x}^r_0 \rvert + \epsilon\right)$$，$$L_{\text{DMD}} = \tfrac{1}{2}\lVert x_g - \mathrm{sg}(x_g - g_{\text{DMD}}) \rVert_2^2$$——直觉：真/假两个分数网络各自"猜"干净样本，两猜之差即分布级 KL 梯度方向，逐样本归一化后用 stop-gradient 包成代理损失（不回传进分数网络）。
-- **运动保持正则**（防坍缩，E1 镜像点）：$$L_{\text{motion}} = \lvert \mathrm{mean}\lvert x^i_g - x^{i-1}_g \rvert - \mathrm{sg}(\mathrm{mean}\lvert x^i_{\text{data}} - x^{i-1}_{\text{data}} \rvert) \rvert$$，$$L_G = L_{\text{DMD}} + \lambda_m L_{\text{motion}}$$——直觉：分布匹配会把生成器拉向"低运动的条件均值"（多模态分布的均值处最安静），此项把相邻帧平均变化量钉在真数据水平——**像素版"蒸馏保真正则"：与 E1 决策保真同一思想投影在像素层**。
 
 ## 5. 与前作/矩阵关系
 
@@ -51,13 +50,11 @@ tags: [paper]
 - → 家族放大：[DIAMOND](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Diffusion for World Modeling- Visual Details Matter in Atari（DIAMOND）)（游戏域像素扩散 WM 的基础模型化对应物——"扩散当动力学"从 1 亿参数游戏域放大到 5B 视频先验）；[Genie 2](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Genie 2- A Large-Scale Foundation World Model（Genie 2）)（基础世界模型轴：闭源大算力 vs 开源两卡后训练）；[UniSim](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Learning Interactive Real-World Simulators（UniSim）)（视频学交互模拟器同目标）；
 - 方法链：块因果×扩散沿 [Diffusion Forcing](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Diffusion Forcing- Next-token Prediction Meets Full-Sequence Diffusion（Diffusion Forcing）)（逐 token 噪声级的另一统一路径）；少步化沿 [DMD](/ai-fa/explore/10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）)→[DMD2](/ai-fa/explore/10-Papers/02-生成建模与扩散/Improved Distribution Matching Distillation for Fast Image Synthesis（DMD2）)→本卡非对称 DMD；与 [一致性模型](/ai-fa/explore/10-Papers/02-生成建模与扩散/Consistency Models（一致性模型）) 同属 [NFE（函数求值次数）](/ai-fa/explore/40-Concepts/NFE（函数求值次数）) 压缩家族；
 - → 同族补记（260919）：[AlayaVista](/ai-fa/explore/10-Papers/02-生成建模与扩散/AlayaVista Streaming World Modeling from Panoramic States to Perspective Video)（同底座 Wan2.2-5B 流式视频 WM 的全景表征支线：世界演化放 360° 潜状态、只对被查询视口做高保真读出——与 Astronex 的透视+动作接口路线成对，蒸馏配方几乎同款：一致性初始化+Self-Forcing+++分布匹配+像素层防坍缩锚（稀疏谱锚 vs L_motion））
-- ↔ E1/E2 对照位：与 E1 重叠"像素扩散 WM×少步蒸馏"两维，但蒸馏目标与评测全线为生成质量（WBench/VBench+运动保持），无决策保真轴；预留 IDM 头对 E2 仅接口占位（无 goal 条件、无反推结果）——详见当日敌情研判。
 
 ## 6. 影响后续
 
 - 开源可控视频 WM 基础模型新锚点（权重+代码+HF）；"两卡 L20 后训练即入 14–22B 俱乐部"把基础 WM 后训练门槛打到普通实验室级，预期催生一批域后训练衍生工作（其接口明示留给具身/驾驶）。
 - 事件提示（causal 独有的局部文本编辑）与 attention sink 流式记忆，大概率成交互 WM 工程标配。
-- 对本库：E1 论文 related work 的"蒸馏目标只用生成指标"对照组再添一实锤（基础模型级的蒸馏仍只配运动保持正则，决策保真无人做）；其 action_output 头结构（池化+LayerNorm-MLP→[B,F,64]，掩码输入动作+MSE）与 E2 IDM 头设计文档互参。
 
 ## 7. 读前须知
 

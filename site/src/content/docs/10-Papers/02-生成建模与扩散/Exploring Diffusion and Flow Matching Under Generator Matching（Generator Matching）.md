@@ -7,7 +7,7 @@ year: 2024
 authors: [Li et al. (Meta)]
 venue: arXiv 2024
 arxiv: "2412.11024"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2412.11024
 line: 生成建模与扩散
 matrix_coords: [FM, 统一框架, —]
 tags: [paper, 占位层]

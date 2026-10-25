@@ -6,7 +6,7 @@ year: 2026
 authors: [Haoran Yuan, Zekai Wang, Boning Shao, et al.]
 venue: arXiv 2026
 arxiv: "2609.24976v1"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.24976v1
 line: 世界模型与JEPA
 matrix_coords: [生成式WM(扩散系), 多模态(视觉+触觉), 可操作(动作条件)]
 tags: [paper]
@@ -50,7 +50,6 @@ tags: [paper]
 ## 5. 与前作/矩阵关系
 
 - 同族 WAM（视频扩散世界模型 + 动作生成耦合）：[GE-Act 2.0: Pretraining and Scaling a World-Action Model for Robotic Manipulation](/ai-fa/explore/10-Papers/09-世界模型与JEPA/GE-Act 2.0 Pretraining and Scaling a World-Action Model for Robotic Manipulation) · [LaWAM- Latent World Action Models for Efficient Dynamics-Aware Robot Policies](/ai-fa/explore/10-Papers/09-世界模型与JEPA/LaWAM- Latent World Action Models for Efficient Dynamics-Aware Robot Policies（LaWAM）)——两者纯视觉，本文补上"接触动力学部分可观测"这一格
-- 与 [Diffusion for World Modeling- Visual Details Matter in Atari](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Diffusion for World Modeling- Visual Details Matter in Atari（DIAMOND）) 同为"视频扩散 WM"（我们的 E1 基座同族）：游戏侧像素即全态，机器人侧触觉补上视觉看不见的接触态——同一个"世界状态该包含什么"的问题在两个域的不同答案
 - 数学根基：[世界模型](/ai-fa/explore/20-Algorithms/世界模型) · [流匹配](/ai-fa/explore/20-Algorithms/流匹配)（速度预测形式）· [Scalable Diffusion Models with Transformers](/ai-fa/explore/10-Papers/02-生成建模与扩散/Scalable Diffusion Models with Transformers（DiT）)（视图轴扩展的宿主架构）
 
 ## 6. 影响后续

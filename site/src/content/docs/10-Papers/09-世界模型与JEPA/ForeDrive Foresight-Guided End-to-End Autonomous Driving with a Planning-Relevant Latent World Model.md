@@ -6,7 +6,7 @@ year: 2026
 authors: [Sinuo Wang, Zichong Gu, Yuhan Huang, et al.]
 venue: arXiv 2026
 arxiv: "2609.26299v1"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.26299v1
 line: 世界模型与JEPA
 matrix_coords: [特征预测(JEPA系), 潜在状态, 规划消费(非辅助损失)]
 tags: [paper]

@@ -8,8 +8,6 @@ venue: arXiv 2609.15189（2026-09-14，哈工深+北航）
 arxiv: "2609.15189v1"
 pdf: https://arxiv.org/pdf/2609.15189v1
 line: 世界模型与JEPA
-matrix_coords: E2 邻格（LAM/IDM 设计层，潜空间无扩散无后验）
-tags: [paper, 精读层, E2哨兵, 每日推荐260917]
 layer: 精读
 ---
 
@@ -51,9 +49,7 @@ layer: 精读
 ## 6. 影响后续
 - 设计范式转移信号：LAM 的 IDM 从"信息瓶颈逼动作相关"（VQ/容量正则）转向"查询选择性读出"（保留富表征、聚合时才做选择）——潜动作质量与重构质量解耦的正式化。
 - 为 VLA 预训练提供更干净的潜动作监督（SSv2/RT-1/RECON/LoopNav 预训练→VP² 迁移），轻量化（55M/CPU 级 FLOPs）利于具身端侧部署。
-- 对本库：E1/E2 引言的**外部同盟证据**——"重构/生成指标不预测动作质量"在 LAM 域的正式实证（Fig 1 三指标失联+Tab 4 重构弱但规划强），与本库"像素指标不保决策"命题跨域互证；E2 引用矩阵 IDM 设计轴新增"查询读出"支线。
 
 ## 7. 读前须知
 - 前置：[[40-Concepts/逆动力学（IDM）]]（正逆动力学镜像与良定义性——本文 k=1 帧对版，确定动态下点估计合理，多峰场景未处理）·[[40-Concepts/注意力机制]]（learnable query 读出，DETR object query/BLIP-2 Q-Former 血统）·teacher forcing vs rollout 训练之分。
 - 评测口径：VP² benchmark（RoboDesk 5 任务+RoboSuite，MPPI 采样规划，聚合成功率按模拟器上限归一）；linear probing MSE/Push-T、奇异值谱（RankME）量潜动作质量；"动作利用率"实验=冻 IDM 换 FDM 后用常数动作替换真动作测 MSE 增幅。
-- 读时提醒：其潜动作是**连续向量点估计**（无后验无 goal 条件），与 E2 的全后验反推不同格；长视野 rollout MSE 与生成指标并不占优——作者明言这正是论点（重构强≠动力学强）。

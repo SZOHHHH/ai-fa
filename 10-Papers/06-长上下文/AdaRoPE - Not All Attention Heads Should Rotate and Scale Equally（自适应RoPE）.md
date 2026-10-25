@@ -40,7 +40,6 @@ RoPE 的"统一频率表"批判：每个注意力头学自己的旋转频率与�
 
 ## 6. 影响后续
 - 位置编码从"全局设计"走向"逐头学习"，新模型可能默认逐头频率；YaRN 类统一外推法引用时需注明次优边界。
-- 与 E1/E2 无域重叠（LLM 位置编码 vs 像素扩散 WM），arch 线教学参考。
 
 ## 7. 读前须知
 - 前置：RoPE 旋转机制（[[30-Formulas/RoPE旋转位置编码]] 的复数旋转直觉 + [[40-Concepts/位置编码]] 总览；论文细节先看 [[10-Papers/01-架构演进/RoFormer- Enhanced Transformer with Rotary Position Embedding（RoPE）|RoFormer]] 卡）、频率-波长的直觉（低频=长程、高频=局部）。

@@ -6,7 +6,7 @@ year: 2026
 authors: [Sara Rizwan, Samaanah Abdus Salam]
 venue: arXiv 2609.08574（cs.CL，2026-09-08）
 arxiv: "2609.08574v1"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.08574v1
 line: 长上下文
 matrix_coords: 待评
 tags: [paper, 每日推荐]

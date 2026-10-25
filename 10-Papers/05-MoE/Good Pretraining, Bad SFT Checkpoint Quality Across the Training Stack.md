@@ -31,7 +31,6 @@ layer: 精化占位
 
 ## 5. 与前作/矩阵关系
 - 线锚：[[20-Algorithms/混合专家（MoE）]] · [[30-Formulas/MoE门控公式]]（占位挂链，处理段精化）
-- 研判：🟢 E1 同盟/可操作——蒸馏源选择（E550 峰 94.0 vs E600 终值 90.0）是未测自变量 → e2-line 消融提案（见当日晨报⑦）
 - 直连：E1_实验数据台账 · 蒸馏谱系 [[10-Papers/03-后处理/Distilling the Knowledge in a Neural Network（KD）|KD]] · [[40-Concepts/知识蒸馏]]
 
 ## 6. 影响后续

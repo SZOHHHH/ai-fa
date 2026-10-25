@@ -6,7 +6,7 @@ year: 2026
 authors: [Minghui Liu, et al.]
 venue: arXiv 2026
 arxiv: "2609.26243v1"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.26243v1
 line: 后处理
 matrix_coords: [推理蒸馏, 自进化课程, 问题改写降难, LLM]
 tags: [paper]
@@ -56,3 +56,5 @@ bandit 调度骨架（按文中思想概括，具体形式待精读）：
 - 课程学习直觉：由易到难 vs 混合难度之争（库内知识链有对应节）
 - bandit/UCB 基本式：估值+探索项的经典平衡
 - LLM 推理蒸馏背景：CoT 蒸馏为何对中小模型失效（步子跨太大）
+
+- → 公式链补记（2601007）：课程学习视角呼应：[蒸馏损失](/ai-fa/explore/30-Formulas/蒸馏损失)（易→难的蒸馏课程化）与 [过程奖励与结果奖励（PRM-ORM）](/ai-fa/explore/40-Concepts/过程奖励与结果奖励（PRM-ORM）)（难度调度=过程监督）

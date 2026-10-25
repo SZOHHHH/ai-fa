@@ -6,7 +6,7 @@ year: 2024
 authors: [Singh et al. (Cohere)]
 venue: arXiv 2024
 arxiv: "2402.06619"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2402.06619
 line: 强化学习与对齐
 matrix_coords: [隐式偏好, —, —]
 tags: [paper]

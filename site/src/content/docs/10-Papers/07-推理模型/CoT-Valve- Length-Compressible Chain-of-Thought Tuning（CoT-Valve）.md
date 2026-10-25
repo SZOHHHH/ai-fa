@@ -6,7 +6,7 @@ year: 2025
 authors: [（arXiv）]
 venue: arXiv 2025
 arxiv: "2502.09601"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2502.09601
 line: 推理模型
 matrix_coords: [训练注入, 链, 长度控制]
 tags: [paper]
@@ -49,6 +49,6 @@ $$
 
 undefined
 
-> 近邻同族：[Kimi k1.5- Scaling Reinforcement Learning with LLMs](/ai-fa/explore/10-Papers/07-推理模型/Kimi k1.5- Scaling Reinforcement Learning with LLMs（Kimi k1.5）) · [Let's Verify Step by Step](/ai-fa/explore/10-Papers/07-推理模型/Let's Verify Step by Step（PRM）) · 后续压缩线：[Structural Process Supervision for Latent Chain-of-Thought Reasoning](/ai-fa/explore/10-Papers/07-推理模型/Structural Process Supervision for Latent Chain-of-Thought Reasoning（PMPS）) · [Astar-Thought-V2: Efficient Latent Reasoning via Geometric Dynamics of LLM](/ai-fa/explore/10-Papers/07-推理模型/Astar-Thought-V2 - Efficient Latent Reasoning via Geometric Dynamics of LLM（Astar-Thought-V2）) · 长度的隐藏代价见 [Does Deeper Reasoning Compromise Alignment? Revealing and Mitigating of Alignment Collapse in Large Reasoning Models](/ai-fa/explore/10-Papers/07-推理模型/Does Deeper Reasoning Compromise Alignment - Revealing and Mitigating Alignment Collapse in LRMs（ALR）)
+> 近邻同族：[Kimi k1.5- Scaling Reinforcement Learning with LLMs](/ai-fa/explore/10-Papers/07-推理模型/Kimi k1.5- Scaling Reinforcement Learning with LLMs（Kimi k1.5）) · [Let's Verify Step by Step](/ai-fa/explore/10-Papers/07-推理模型/Let's Verify Step by Step（PRM）) · 后续压缩线：[Structural Process Supervision for Latent Chain-of-Thought Reasoning](/ai-fa/explore/10-Papers/07-推理模型/Structural Process Supervision for Latent Chain-of-Thought Reasoning（PMPS）) · [Astar-Thought-V2: Efficient Latent Reasoning via Geometric Dynamics of LLM](/ai-fa/explore/10-Papers/07-推理模型/Astar-Thought-V2 - Efficient Latent Reasoning via Geometric Dynamics of LLM（Astar-Thought-V2）) · 长度的隐藏代价见 [Does Deeper Reasoning Compromise Alignment? Revealing and Mitigating of Alignment Collapse in Large Reasoning Models](/ai-fa/explore/10-Papers/07-推理模型/Does Deeper Reasoning Compromise Alignment - Revealing and Mitigating Alignment Collapse in LRMs（ALR）) · 交互轨迹侧的在线历史遗忘见 [When Can Agents Forget Their Reasoning? ICLR for Long-Horizon Agent Context Compression](/ai-fa/explore/10-Papers/07-推理模型/When Can Agents Forget Their Reasoning ICLR for Long-Horizon Agent Context Compression)
 
 > 数学根基：[思维链（CoT）](/ai-fa/explore/40-Concepts/思维链（CoT）)

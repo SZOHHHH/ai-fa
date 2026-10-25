@@ -6,7 +6,7 @@ year: 2024
 authors: [Ma et al. (Microsoft)]
 venue: arXiv 2024
 arxiv: "2402.17764"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2402.17764
 line: 架构演进
 matrix_coords: [全注意力, 量化, 无状态]
 tags: [paper]

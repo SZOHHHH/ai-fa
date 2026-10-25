@@ -9,7 +9,7 @@ arxiv: "2405.04434"
 line: 架构演进
 matrix_coords: [全注意力, KV压缩, 无状态]
 tags: [paper]
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2405.04434
 ---
 
 # DeepSeek-V2（MLA 出处）

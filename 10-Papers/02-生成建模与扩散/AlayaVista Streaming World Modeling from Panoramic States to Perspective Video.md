@@ -45,11 +45,9 @@ tags: [paper]
 - → 同族最强近亲：[[10-Papers/02-生成建模与扩散/Astronex-World 1.0 Real-Time Interactive World Model Foundation|Astronex-World]]（同底座同配方家族——块因果+KV 缓存+一致性初始化+Self-Forcing+++分布匹配，几乎同周发布；分岔在表征：Astronex 透视+动作接口，AlayaVista 全景状态×视口读出）；
 - 方法链：块因果×扩散沿 [[10-Papers/09-世界模型与JEPA/Diffusion Forcing- Next-token Prediction Meets Full-Sequence Diffusion（Diffusion Forcing）|Diffusion Forcing]]；少步化沿 [[10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）|DMD]]→[[10-Papers/02-生成建模与扩散/Improved Distribution Matching Distillation for Fast Image Synthesis（DMD2）|DMD2]]→本卡分布匹配；一致性蒸馏初始化 ↔ [[10-Papers/02-生成建模与扩散/Consistency Models（一致性模型）|一致性模型]]；同属 [[40-Concepts/NFE（函数求值次数）]] 压缩家族；
 - 家族对照：[[10-Papers/09-世界模型与JEPA/Genie 2- A Large-Scale Foundation World Model（Genie 2）|Genie 2]]（基础 WM 闭源轴）/[[10-Papers/09-世界模型与JEPA/Diffusion for World Modeling- Visual Details Matter in Atari（DIAMOND）|DIAMOND]]（游戏域像素扩散 WM——决策侧对应物）；
-- ↔ E1/E2 对照位：与 E1 重叠"像素扩散 WM×少步蒸馏"两维，但蒸馏目标与评测全线生成质量（视觉质量/相机可控/长horizon稳定/流式效率），稀疏谱锚=像素层防坍缩正则；对 E2 仅"状态演化×按参数读出"架构思想擦边，无反推无 goal 条件——详见当日敌情研判。
 
 ## 6. 影响后续
 - 给交互 WM 表征之争开出第三条路（透视+记忆 vs 显式 3D vs 全景潜状态×视口渲染）；MUGEN（1318h 4K 全景+轨迹/深度/掩码）预计成全景生成与世界模型的事实数据基准；"全局粗/局部精"不对称计算与人类视觉（周边粗视场+中央凹高敏）同构，可能外溢到具身/机器人观测设计。
-- 对本库：E1 related work"蒸馏目标只用生成指标"对照组再+1（与 Astronex 运动保持正则、StrucPhysVideo 组成跨层证据链——连全景低频布局都要显式锚住，决策信号更不会被自动保住）；E2 侧"内部状态+条件读出"思想亲戚（视口参数 κ 条件的观测读出 ↔ goal 条件的动作读出）。
 - → 后继补记（260922）：[[WorldCrafter Consistent Video World Model with Implicit 3D-aware Memory]]——"透视+记忆 vs 显式 3D vs 全景潜状态"三角里的**隐式 3D 记忆**新代表：新视角重建预训练编码器写记忆+按目标视角读出固定预算 token（重访一致性 +47.6%）；仍是生成质量轴，无决策接口。
 
 ## 7. 读前须知

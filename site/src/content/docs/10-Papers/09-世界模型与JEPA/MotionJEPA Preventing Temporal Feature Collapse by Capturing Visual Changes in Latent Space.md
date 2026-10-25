@@ -6,7 +6,7 @@ year: 2026
 authors: [Markus Karmann, Shile Li, Christian Internò, et al.]
 venue: arXiv 2026
 arxiv: "2609.23881v1"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.23881v1
 line: 世界模型与JEPA
 matrix_coords: [特征预测(JEPA系), 潜在状态, 免标签(差分自监督)]
 tags: [paper]
@@ -51,7 +51,6 @@ tags: [paper]
 
 - ←修复对象：[Revisiting Feature Prediction for Learning Visual Representations from Video](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Revisiting Feature Prediction for Learning Visual Representations from Video（V-JEPA）) / [Self-Supervised Learning from Images with a Joint-Embedding Predictive Architecture](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Self-Supervised Learning from Images with a Joint-Embedding Predictive Architecture（I-JEPA）) 一系（SIGReg 防坍缩=慢特征偏置来源）与 SMWM/Delta-JEPA 系（IDM 防坍缩=动作标签依赖）
 - ↔对偶近邻：[Delta-JEPA- Learning Action-Sensitive World Models via Latent Difference Decoding](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Delta-JEPA- Learning Action-Sensitive World Models via Latent Difference Decoding（Delta-JEPA）)——两者都在"差分"上做文章：Delta-JEPA 预测**潜差分**（动作效应显式化），MotionJEPA 预测**差分图像的嵌入**（视觉变化显式化）；一个动作条件、一个免标签，正好互补
-- ↔与我们 E2 的 IDM 头直接对话：[逆动力学（IDM）](/ai-fa/explore/40-Concepts/逆动力学（IDM）) 的"免动作标签变体"——DiffPred 结构上就是从 $$(z_t, z_{t+1})$$ 反推观测变化的逆模块，与 p(a|x_t, goal) 后验反推共享"由果找因"的骨架，但其"果"是差分图像而非目标达成
 - 概念/公式根基：[JEPA联合嵌入预测架构](/ai-fa/explore/40-Concepts/JEPA联合嵌入预测架构) · [VICReg三正则](/ai-fa/explore/30-Formulas/VICReg三正则)（SIGReg 属同族分布正则，用 Epps-Pulley 检验替代协方差矩阵）· [世界模型](/ai-fa/explore/20-Algorithms/世界模型)
 
 ## 6. 影响后续

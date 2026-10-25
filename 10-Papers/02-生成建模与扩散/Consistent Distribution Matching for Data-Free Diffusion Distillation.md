@@ -32,8 +32,6 @@ layer: 占位
 ## 5. 与前作/矩阵关系
 - 线锚：[[20-Algorithms/扩散模型]] · [[20-Algorithms/一致性模型]] · [[30-Formulas/蒸馏损失]]
 - ← 直系 DMD 家族：[[10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）|DMD]]（分布匹配蒸馏开山）→ CDM 去掉其数据集与代理网络依赖，学生一网双任（采样＋分数估计）
-- ≡ 同代"无数据/去代理"路线：[[10-Papers/02-生成建模与扩散/Distribution Matching Distillation without Fake Score Network（FSF-DMD）|FSF-DMD]]（去 fake score 网络）/[[10-Papers/02-生成建模与扩散/EM Distillation for One-step Diffusion Models（EMD）|EMD]]（E1 的蒸馏引擎）/[[10-Papers/02-生成建模与扩散/Inductive Moment Matching（IMM）|IMM]]（simulation-free 自蒸馏）
-- 2601008 挂链：蒸馏对象＝图像生成本身、指标＝FID——共通红线"蒸馏目标只用像素/生成质量指标"命中；与 E1 的差＝无 WM rollout、无决策保真，🟡 格不同轴同须划界
 
 ## 6. 影响后续
 （待精读）

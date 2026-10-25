@@ -6,7 +6,7 @@ year: 2026
 authors: [Xinyi Chen, Hanxin Zhu, Xijun Wang, Xingrui Wang, Sen Liang, Xin Li, Zhibo Chen]
 venue: arXiv 2026-09-11（cs.CV，中科大）
 arxiv: "2609.12874"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.12874
 line: 世界模型
 matrix_coords: 表征轴-视频tokenizer×4D场景
 tags: [paper, 轮换命中, 世界模型]
@@ -37,11 +37,9 @@ layer: 精化层（摘要级+摘要核实，PDF 待深读）
 ## 5. 与前作/矩阵关系
 - ← 谱系前身：[Genie](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Genie- Generative Interactive Environments（Genie）)（视频→离散潜 token 驱动交互环境生成的 tokenizer 路线源头）——VideoTok4D 把该路线从 2D 观察 token 推向 4D 世界 token。
 - ↔ 同域对照：[Diffusion Forcing](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Diffusion Forcing- Next-token Prediction Meets Full-Sequence Diffusion（Diffusion Forcing）)（在什么粒度上组织"序列+扩散"——DF 逐帧扩散、VideoTok4D 在解耦 token 上扩散）。
-- 概念链：[逆动力学（IDM）](/ai-fa/explore/40-Concepts/逆动力学（IDM）)（4D 表征的意义侧：轨迹级世界表征正是 IDM 反推动作的理想潜空间——E2 侧参考）。
 
 ## 6. 影响后续
 - 视频 tokenizer 从"压缩工具"转向"世界先验载体"的一步；后续 4D 生成/世界模型可能直接吃这类 token。
-- 对库内：占据"表征轴×4D"格，与 E1/E2 的像素扩散 WM（帧级 2D 观察）形成表征粒度对照位。
 
 ## 7. 读前须知
 - 前置：视频自编码/tokenizer 基本流程、扩散模型去噪（可先看 [知识蒸馏](/ai-fa/explore/40-Concepts/知识蒸馏) 之外的概念卡与 [DIAMOND](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Diffusion for World Modeling- Visual Details Matter in Atari（DIAMOND）) 的扩散 WM 直觉）。

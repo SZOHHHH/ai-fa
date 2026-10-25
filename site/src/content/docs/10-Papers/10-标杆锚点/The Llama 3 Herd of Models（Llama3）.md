@@ -6,7 +6,7 @@ year: 2024
 authors: [Meta AI]
 venue: arXiv 2024
 arxiv: "2407.21783"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2407.21783
 line: 标杆锚点
 matrix_coords: [—, —, —]
 tags: [paper]

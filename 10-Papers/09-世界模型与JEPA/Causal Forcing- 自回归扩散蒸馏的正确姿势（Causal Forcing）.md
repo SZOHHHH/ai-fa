@@ -37,13 +37,13 @@ tags: [paper]
 
 `$D^*(z_t) = \mathbb{E}[z_0 \mid z_t]$`
 
-**直觉解释**：这正是**条件期望=均值塌缩**——多模态未来被平均。**与我们 E1 的 L2 探针实测（teacher 事件态方差 16.5× → MSE 蒸馏后塌 172×）是同一现象：他们给了理论证明，我们给了 RL 下游的实测读数，两边互证**。
 
 ## 5. 与前作/矩阵关系
 
 - ← 继承 [[10-Papers/09-世界模型与JEPA/Diffusion Forcing- Next-token Prediction Meets Full-Sequence Diffusion（Diffusion Forcing）]]（逐帧噪声框架）与 Self Forcing（AR 实时化，未入库）；
 - ≡ 平行于我们的 EMDMD 线：同为"DMD 系蒸馏+多模态保真"，差别=他们的考场是视频指标，我们的考场是 RL 分数；
 - → 后继：Causal Forcing++（2605.15141，规模化）、[[10-Papers/09-世界模型与JEPA/minWM- 全栈实时交互世界模型框架（minWM）|minWM]]（框架化）。
+- → 后继补记（261024）：[[10-Papers/09-世界模型与JEPA/Rethinking Video Autoencoders for Interactive World Models|CADRE]]（蒸馏对象从 WM 挪到解码器：一阶段渐进自蒸馏流图做单/少步解码、WM 本体仍走 DF——与本文"AR 蒸馏踩单射性坑"互补：解码器蒸馏无 teacher-student 架构 gap，故无此坑）。
 - ≡ 驾驶域同配方（260925）：[[HelloWorld Towards Practical Applications of Generative Driving World Models|HelloWorld]]——块因果生成+打包一致性训练+自强制 DMD 的 20→4 步蒸馏，自认沿用 LingBot-World-Infinity 的「因果教师→一致性蒸馏→自 rollout DMD」高层序列。
 
 ## 6. 影响后续

@@ -44,6 +44,8 @@ pdf: https://arxiv.org/pdf/2506.09985
 
 - LeCun 世界模型纲领的最完整公开实现
 - 具身智能"视频预训练+少量机器人数据"范式获得强证据
+- → 后继补记（261012）：[[10-Papers/09-世界模型与JEPA/H-JEPA End-to-End Learning of Hierarchical World Models for Visual Planning|H-JEPA]]（同一纲领的分层化延展：每层独立潜空间+多时间尺度，AntMaze 三层成功率 18%→73%）
+- → 后继补记（261024）：[[10-Papers/09-世界模型与JEPA/Inside-JEPA From Prediction to Relational Grounding in Latent World Models|Inside-JEPA]]（同一纲领的"状态可解释化"延展：潜状态内加实体对关系通道，用逆动力学损失接地——纯潜预测不接地、反推监督才接地，符号接地问题进了 JEPA）
 
 ## 7. 读前须知
 

@@ -6,7 +6,7 @@ year: 2026
 authors: [Shuaiting Li 等]
 venue: 待核（arXiv 2609.04031，2026-09-03）
 arxiv: "2609.04031v1"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.04031v1
 line: 生成建模与扩散
 matrix_coords: 扩散×压缩｜视频生成｜量化轴
 tags: [paper, 精读层]
@@ -38,12 +38,10 @@ layer: 精读
 ## 5. 与前作/矩阵关系
 
 - 线锚：[扩散模型](/ai-fa/explore/20-Algorithms/扩散模型) · [量化](/ai-fa/explore/40-Concepts/量化)
-- 谱系：QAT for Diffusion 家族（图像扩散量化→视频扩散量化）；与 [SelfLift](/ai-fa/explore/10-Papers/02-生成建模与扩散/SelfLift Accelerating Few-Step Diffusion via Self-Recovering Resolution Transition) 同属"扩散部署效率"战线的两条正交轴——SelfLift 压**空间**（分辨率），DSAQuant 压**位宽**（精度），E1 压**步数**（NFE）。
 - 对我们：Related Work"扩散压缩三轴（步数/空间/位宽）"的位宽轴代表，一句话引用位。
 
 ## 6. 影响后续
 
-扩散模型部署效率线的位宽轴最新数据点；若其"阶段敏感度不均"论断成立，可能与少步化交互（步数越少每步越关键→量化容差越小），是 E1 落地讨论段可引的工程约束。
 
 ## 7. 读前须知
 

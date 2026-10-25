@@ -32,7 +32,7 @@ layer: 占位
 ## 5. 与前作/矩阵关系
 - 概念链：[[40-Concepts/KV缓存]]（环形 Transformer 的 KV 膨胀新形态——每多一环就多一整套 KV，跨环冗余压缩是缓存优化的新轴）、[[40-Concepts/注意力机制]]（惰性更新=注意力增量的稀疏化）。
 - 同族：[[10-Papers/06-长上下文/SAS - Simple Attention Sparsification via End-to-End Optimization of Context Ranking（端到端稀疏注意力）|SAS]]（同属推理时稀疏化/效率工程支线；SAS 训练门控 vs FlashLoop 免训练）。
-- 与 E1/E2 对照：无域重叠（LLM 推理工程 vs 像素扩散 WM），纯效率工程格。
+- 同族补记（261024）：[[10-Papers/06-长上下文/BeNice! Closing Looping's Inference-Memory Gap via KV-Sharing|BeNice!]]（同攻 looped 架构 KV 膨胀，走训练路线而非免训练：预训练随机深度诱导收缩残差+后训练广播末环 KV 进首环——KV-shareability 从运气变设计，命中率+31.4%/p90 TTFT −83.6%）。
 
 ## 6. 影响后续
 （待精读）

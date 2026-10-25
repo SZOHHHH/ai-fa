@@ -33,6 +33,7 @@ GPU-PIM 体系上的块稀疏解码设计：以"已审计 margin 预测当前判
 - 概念/公式锚：[[40-Concepts/KV缓存]]（解码带宽瓶颈的主体，正是被复用+复核的对象）· [[40-Concepts/稀疏与线性注意力]]（块稀疏"保留家族"的硬件行）· [[30-Formulas/注意力计算复杂度]]
 - 同族：[[MoBA- Mixture of Block Attention for Long-Context LLMs（MoBA）]]（同为块级选择，MoBA 在模型侧门控、AMEND 在体系结构侧预测）· [[Native Sparse Attention- Hardware-Aligned and Natively Trainable Sparse Attention（NSA）]]（"硬件对齐"路线从 tensor core 推进到 PIM 存内计算层）
 - 现象锚：[[Efficient Streaming Language Models with Attention Sinks（StreamingLLM）]]——BLASST 选择器恒保 block 0，正是对 attention sink 位置的结构性保护（对比 [[Do New Attention Mechanisms Actually Fix Attention Sinks at Million-Token Context]] 的诊断视角）
+- 同族补记（261024）：[[10-Papers/04-强化学习与对齐/SnakeCharmer Orchestrating Utility, Timeliness, and Placement in GPU Prefetching|SnakeCharmer]]（GPU 硬件访存优化再添一路：预取侧"utility×timeliness×placement"三维联合后端控制（A100 模型 vs Snake +12.8%/+20.8%）——与 AMEND 同属"体系结构侧替模型侧扛效率"路线）。
 
 ## 6. 影响后续
 （待精读）

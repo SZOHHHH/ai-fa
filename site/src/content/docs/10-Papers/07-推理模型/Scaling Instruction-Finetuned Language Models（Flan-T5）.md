@@ -6,7 +6,7 @@ year: 2022
 authors: [Longpre et al. (Google)]
 venue: JMLR 2023
 arxiv: "2210.11416"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2210.11416
 line: 推理模型
 matrix_coords: [隐式偏好, —, —]
 tags: [paper]

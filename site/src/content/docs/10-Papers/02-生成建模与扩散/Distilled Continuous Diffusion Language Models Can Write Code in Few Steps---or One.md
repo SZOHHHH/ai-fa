@@ -6,7 +6,7 @@ year: 2026
 authors: [Fred Zhangzhi Peng, Kaiwen Zheng, Anru R. Zhang]
 venue: arXiv 2609.04531（Duke+清华，2026-09-03）
 arxiv: "2609.04531v1"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2609.04531v1
 line: 生成建模与扩散
 matrix_coords: [扩散/连续状态, token嵌入空间, 蒸馏(分布匹配+配对轨迹)]
 tags: [paper]
@@ -51,12 +51,10 @@ tags: [paper]
 - ← 蒸馏骨架：[DMD](/ai-fa/explore/10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）) + [DMD2](/ai-fa/explore/10-Papers/02-生成建模与扩散/Improved Distribution Matching Distillation for Fast Image Synthesis（DMD2）)（on-policy critic+推理对齐训练）——图像域 DMD 的语言域移植
 - → 后继方向：作者展望把更多连续蒸馏工具（consistency、flow map）搬进语言
 - ≡ 谱系对照：与 [一致性模型](/ai-fa/explore/10-Papers/02-生成建模与扩散/Consistency Models（一致性模型）)/[MeanFlow](/ai-fa/explore/10-Papers/02-生成建模与扩散/Mean Flows for One-step Generative Modeling（MeanFlow）) 同属"学短轨迹"家族但走分布匹配+配对路线；与 [FS-DFM](/ai-fa/explore/10-Papers/02-生成建模与扩散/Trajectory as the Teacher- Few-Step Discrete Flow Matching via Energy-Navigated Distillation（FS-DFM）)（离散侧轨迹蒸馏）构成"轨迹当教师"的连续/离散双版本
-- ↔ 与 E1 对话：同轴不同域——他们蒸馏目标=生成质量（pass@k，执行正确性），我们 E1 蒸馏目标=决策保真（价值/奖励头读出匹配）；见⑦解读与 RL05.5
 
 ## 6. 影响后续
 
 - 首次证明**全连续扩散 LM 在通用代码生成上可比同规模离散扩散**且可被激进蒸馏到 1 步仍有功能正确性——"连续状态是语言模型接入扩散加速基建的接口"这个论点的最强实证
-- 对少步蒸馏谱系的意义：DMD 在 K=1 失效、需要配对监督补位——**步数压到极致时监督形态要换**，这个结论对一切 DMD 家族（含 E1 的 v3 线）是预警
 - SWVR 流式词表读出可复用于任何"softmax×码本"结构（等价于词表注意力）
 
 ## 7. 读前须知
@@ -68,3 +66,5 @@ tags: [paper]
 > 谱系枢纽：[DMD](/ai-fa/explore/10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）)（蒸馏骨架入口）
 > 近邻同族：[DMD2](/ai-fa/explore/10-Papers/02-生成建模与扩散/Improved Distribution Matching Distillation for Fast Image Synthesis（DMD2）) · [FS-DFM](/ai-fa/explore/10-Papers/02-生成建模与扩散/Trajectory as the Teacher- Few-Step Discrete Flow Matching via Energy-Navigated Distillation（FS-DFM）) · [连续/离散扩散 LM 邻居](/ai-fa/explore/10-Papers/02-生成建模与扩散/From Truncation to Commitment Persistent Context in Uniform Discrete Diffusion)
 > 数学根基：[知识蒸馏](/ai-fa/explore/40-Concepts/知识蒸馏) · [NFE](/ai-fa/explore/40-Concepts/NFE（函数求值次数）) · [Score函数](/ai-fa/explore/40-Concepts/Score函数) · [重参数化](/ai-fa/explore/40-Concepts/重参数化)
+
+- → 后继补记（261025）：[Lafa](/ai-fa/explore/10-Papers/02-生成建模与扩散/Large Flow Language Models)（连续流 LM 的 8B 级落地：AR 适配+块内异步流+流图蒸馏，<30B token 训练、自投机解码 2.54× 吞吐——本文 DMD 系蒸馏之外的另一条少步化路线：不蒸馏多步流，而是原生训练+semigroup 流图自蒸馏）

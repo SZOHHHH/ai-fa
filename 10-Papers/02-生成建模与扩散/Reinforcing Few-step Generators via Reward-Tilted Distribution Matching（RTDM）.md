@@ -43,7 +43,6 @@ $$
 
 ## 6. 影响与占位意义
 
-RS 库 05-25 已有；**这个格的敌情对 RS 主线（蒸馏服务 RL）直接相关**。
 
 > 近邻同族：[[Align Your Flow- Scaling Continuous-Time Flow Map Distillation（AYF）]] · [[Computational and Statistical Guarantees of the c-Rectified flow（c-RF理论）]]
 > 数学根基（占位层）：[[概率分布]]

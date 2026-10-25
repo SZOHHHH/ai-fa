@@ -6,7 +6,7 @@ year: 2023
 authors: [Lin et al.]
 venue: NeurIPS 2023
 arxiv: "2305.08891"
-pdf: 已下载（PDF/）
+pdf: https://arxiv.org/pdf/2305.08891
 line: 生成建模与扩散
 matrix_coords: [扩散/score, 像素空间, 调度修正]
 tags: [paper]

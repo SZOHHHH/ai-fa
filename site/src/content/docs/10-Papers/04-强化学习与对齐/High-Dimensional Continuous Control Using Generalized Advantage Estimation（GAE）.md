@@ -9,7 +9,7 @@ arxiv: "1506.02438"
 line: 强化学习与对齐
 matrix_coords: [—(RL基础设施), RL目标(在线), 有]
 tags: [paper]
-pdf: https://arxiv.org/pdf/1506.02438
+pdf: 已下载（PDF/）
 ---
 
 # GAE（广义优势估计：偏差-方差之间的平滑旋钮）

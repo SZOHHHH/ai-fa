@@ -6,7 +6,7 @@ year: 2018
 authors: [Danijar Hafner, Timothy Lillicrap, Ian Fischer, Ruben Villegas, David Ha, Harri Edwards, Vincent Vanhoucke]
 venue: ICML 2019
 arxiv: "1811.04551"
-pdf: https://arxiv.org/pdf/1811.04551
+pdf: 已下载（PDF/）
 line: 世界模型与JEPA
 matrix_coords: [奖励驱动(RL内部模型), 潜在状态, 游戏控制(RL)]
 tags: [paper]

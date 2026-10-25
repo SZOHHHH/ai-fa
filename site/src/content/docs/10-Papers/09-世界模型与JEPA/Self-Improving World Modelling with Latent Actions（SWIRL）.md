@@ -7,7 +7,7 @@ year: 2026
 authors: [arXiv]
 venue: arXiv 2026
 arxiv: "2602.06130"
-pdf: https://arxiv.org/pdf/2602.06130
+pdf: 已下载（PDF/）
 line: 世界模型与JEPA
 matrix_coords: [隐式, 潜在状态, 自提升]
 tags: [paper, 占位层]

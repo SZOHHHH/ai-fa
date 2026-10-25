@@ -6,7 +6,7 @@ year: 2015
 authors: [Ioffe & Szegedy]
 venue: ICML 2015（7万+引用）
 arxiv: "1502.03167"
-pdf: https://arxiv.org/pdf/1502.03167
+pdf: 已下载（PDF/）
 line: 架构演进
 matrix_coords: [—, 归一化/激活, —]
 tags: [paper]

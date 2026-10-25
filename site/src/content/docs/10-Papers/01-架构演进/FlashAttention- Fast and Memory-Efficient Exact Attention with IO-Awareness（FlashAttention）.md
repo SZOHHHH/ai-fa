@@ -9,7 +9,7 @@ arxiv: "2205.14135"
 line: 架构演进
 matrix_coords: [全注意力, IO感知, 无状态]
 tags: [paper]
-pdf: https://arxiv.org/pdf/2205.14135
+pdf: 已下载（PDF/）
 ---
 
 # FlashAttention

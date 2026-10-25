@@ -84,4 +84,3 @@ $$\rho_t(\theta) = \frac{\pi_\theta(a_t \mid s_t)}{\pi_{\text{old}}(a_t \mid s_t
 - → **服务于** [RLHF目标](/ai-fa/explore/30-Formulas/RLHF目标)：LLM 对齐的优化引擎
 - → **被简化为** [GRPO目标](/ai-fa/explore/30-Formulas/GRPO目标)：去 critic + 组内基线（LLM 时代重构）
 - 对比 [DPO损失](/ai-fa/explore/30-Formulas/DPO损失)：PPO 路线"显式奖励+在线采样" vs DPO 路线"闭式离线"——对齐两大范式
-- → **应用后继（261012）**：[Ask the Expert](/ai-fa/explore/10-Papers/01-架构演进/Ask the Expert LLM-Guided Reinforcement Learning for Autonomous Cyber Defense)（训练期 LLM 建议转分层奖励塑形喂给 PPO，部署期零 LLM 依赖——PPO 在网络防御域的样本效率改造）

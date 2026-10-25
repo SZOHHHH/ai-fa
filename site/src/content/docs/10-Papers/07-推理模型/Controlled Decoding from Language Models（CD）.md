@@ -6,7 +6,7 @@ year: 2023
 authors: [Mudgal et al. (Google)]
 venue: ICLR 2024
 arxiv: "2310.17022"
-pdf: https://arxiv.org/pdf/2310.17022
+pdf: 已下载（PDF/）
 line: 推理模型
 matrix_coords: [测试时延长, 链, 推理期控制]
 tags: [paper]

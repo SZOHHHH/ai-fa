@@ -6,7 +6,7 @@ year: 2026
 authors: [Wangbo Yu, Kunhao Liu, Wenbo Hu, et al.]
 venue: arXiv 2026
 arxiv: "2609.24984v1"
-pdf: https://arxiv.org/pdf/2609.24984v1
+pdf: 已下载（PDF/）
 line: 生成建模与扩散
 matrix_coords: [生成式WM(扩散系), 显式记忆(隐式3D), 可交互(相机控制)]
 tags: [paper]

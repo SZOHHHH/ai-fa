@@ -9,7 +9,7 @@ arxiv: "1803.03635"
 line: 后处理与压缩
 matrix_coords: [权重, 剪枝, 预训练]
 tags: [paper]
-pdf: https://arxiv.org/pdf/1803.03635
+pdf: 已下载（PDF/）
 ---
 
 # 彩票假说（Lottery Ticket）

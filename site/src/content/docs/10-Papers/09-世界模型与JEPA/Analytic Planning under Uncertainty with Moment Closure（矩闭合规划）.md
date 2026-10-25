@@ -7,7 +7,7 @@ year: 2026
 authors: [arXiv]
 venue: arXiv 2026
 arxiv: "2608.02519"
-pdf: https://arxiv.org/pdf/2608.02519
+pdf: 已下载（PDF/）
 line: 世界模型与JEPA
 matrix_coords: [奖励驱动(RL内部模型), —, 规划]
 tags: [paper, 占位层]

@@ -9,7 +9,7 @@ arxiv: "2202.09368"
 line: MoE
 matrix_coords: [token级, 专家自选, 天然均衡]
 tags: [paper]
-pdf: https://arxiv.org/pdf/2202.09368
+pdf: 已下载（PDF/）
 ---
 
 # Expert Choice Routing

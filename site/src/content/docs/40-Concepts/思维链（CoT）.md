@@ -21,18 +21,6 @@ $$p(y \mid x) = \frac{p(y, z \mid x)}{p(z \mid x, y)} \le p(y, z \mid x)$$
 - **涌现性**：CoT 增益随模型规模阶跃（小模型 CoT 反而降分）——[Language Models are Few-Shot Learners](/ai-fa/explore/10-Papers/01-架构演进/Language Models are Few-Shot Learners（GPT-3）) 规模叙事的延续
 - **测试时计算**（2024–25 主线）：答案质量随"思考预算"（采样条数/步长）提升——o1/R1/s1 的经济学
 
-## 教程：一道乘法的两种算法（时间换深度现场）
-
-**第 1 步：直答模式。** 问"34 × 17 =？"直接答——模型须在**一次前向**（固定深度电路）里完成全部进位乘法：常数深度电路连多个任意位数的数相加都做不到（复杂度类 TC⁰ 的限制）——长算式直答必错不是"不认真"，是**架构级算力不够**。
-
-**第 2 步：CoT 模式。** 生成中间 token：`34×17 = 34×10 + 34×7 = 340 + 238 = 578`——三个中间步 = **把计算展开成 3 次前向**（每步只用电路做一小段加/乘）。生成 $$k$$ 个推理 token = $$k$$ 层深度的计算图：**深度不够，时间来凑**。
-
-**第 3 步：中间 token 的身份。** 它们是**草稿**：不进最终答案、但把"不可一步解"拆成"每步可解"——且草稿写进上下文后，后续步**能看见**（自回归的免费记忆）。
-
-**第 4 步：涌现阈值。** 小模型用 CoT 反而降分（草稿自己都写不对）；规模过阈值后增益阶跃——"会打草稿"是涌现能力（[Language Models are Few-Shot Learners](/ai-fa/explore/10-Papers/01-架构演进/Language Models are Few-Shot Learners（GPT-3）) 规模叙事的延续）。
-
-**第 5 步：测试时计算的经济学。** 同一模型：直答 = 1 NFE 级；CoT 长链 = 数百 token；Self-Consistency 采 40 条投票 = 40 倍预算——**答案质量随思考预算上升**（o1/R1 时代把"买多少思考"变成显式旋钮，[GRPO目标](/ai-fa/explore/30-Formulas/GRPO目标) 的 RL 塑形训练让模型自己学会分配草稿）。
-
 ## 3. 为什么 AI 需要它
 
 | 出现场景 | 用法 |
@@ -52,14 +40,7 @@ $$p(y \mid x) = \frac{p(y, z \mid x)}{p(z \mid x, y)} \le p(y, z \mid x)$$
 - **误区**：中间步骤写出来=模型"真的在推理"——可解释性与忠实度是两个问题（CoT 忠实度研究是独立方向）
 - **误区**：所有任务受益——简单任务 CoT 无益甚至有害（涌现阈值以下）
 
-## 5. 自测
-
-1. 34×17 直答为什么错？（常数深度电路算不动多位进位乘法——架构级算力不够，非态度问题）
-2. CoT 怎么绕过限制？（中间 token 把计算展开成 k 次前向——时间换深度）
-3. 草稿 token 的两个身份？（不进答案的中间产物 + 写进上下文供后续步看见（自回归免费记忆））
-4. 测试时计算指什么？（答案质量随思考预算（链长/采样条数）上升——o1/R1 的经济学）
-
-## 6. 相关概念
+## 5. 相关概念
 
 - [马尔可夫链](/ai-fa/explore/40-Concepts/马尔可夫链)：生成即逐步展开
 - [期望](/ai-fa/explore/40-Concepts/期望)：Self-Consistency 的边缘化视角
@@ -69,6 +50,3 @@ $$p(y \mid x) = \frac{p(y, z \mid x)}{p(z \mid x, y)} \le p(y, z \mid x)$$
 
 - → 后继补记（260916）：[Legibility is Not Interpretability](/ai-fa/explore/10-Papers/07-推理模型/Legibility is Not Interpretability Comparing Judged and Actual Importance in Chain-Of-Thought Reason)（CoT 语义审计：可读≠可解释）
 - → 后继补记（260917）：[RIR](/ai-fa/explore/10-Papers/03-后处理/Rollback the World, Keep the Reflection Rollback-Induced Reflection for Long-Horizon LLM Agents)（反思记忆=CoT 的经验固化形态：回滚环境状态但保留从被弃轨迹蒸馏的结构化反思，指导后续决策）
-- → 后继补记（261012）：[Dichotomy](/ai-fa/explore/10-Papers/01-架构演进/The Dichotomy Between Pattern Recognition and Step-by-Step Reasoning)（CoT 的谱系理论：下一 token 依赖上下文长度 c 谱系化模式识别↔逐步推理，De Bruijn 图+边数幂律证明逐步推理样本高效）
-- → 后继补记（261025）：[CausalCoT](/ai-fa/explore/10-Papers/07-推理模型/Causal Chain of Thought Mitigating Attention Leakage via Context Isolation)（CoT 忠实度的架构修复：稠密注意力允许"查表答题+事后辩护"——原子子问题 DAG+隔离上下文求值切断泄漏，因果敏感度 +12~21pt）
-- → 后继补记（261025）：[Heavy-Ball](/ai-fa/explore/10-Papers/07-推理模型/Transformers with CoT Discover Heavy-Ball Acceleration Through Training)（CoT 理论新样本：GD 老师启蒙后换真值轨迹监督，CoT 自发发现 Heavy-Ball 动量加速——超越老师算法而非模仿）

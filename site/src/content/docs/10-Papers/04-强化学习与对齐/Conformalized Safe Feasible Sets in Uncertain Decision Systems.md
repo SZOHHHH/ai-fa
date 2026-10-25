@@ -6,7 +6,7 @@ year: 2026
 authors: [Yajie Bao, Yinjie Min, Haojie Ren, Changliang Zou]
 venue: arXiv 2026
 arxiv: "2609.24496v1"
-pdf: https://arxiv.org/pdf/2609.24496v1
+pdf: 已下载（PDF/）
 line: 强化学习与对齐
 matrix_coords: [安全决策(保形校准), 集值输出, 下游优化感知]
 tags: [paper]

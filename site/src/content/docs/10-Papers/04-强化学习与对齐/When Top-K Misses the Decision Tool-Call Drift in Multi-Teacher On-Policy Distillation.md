@@ -6,7 +6,7 @@ year: 2026
 authors: Jiabin Shen, Guang Chen, Chengjun Mao
 venue: arXiv
 arxiv: 2607.07050
-pdf: https://arxiv.org/pdf/2607.07050
+pdf: 10-Papers/PDF/When Top-K Misses the Decision Tool-Call Drift in Multi-Teacher On-Policy Distillation.pdf
 line: 强化学习与对齐
 matrix_coords: 待评
 tags: [paper, 占位, 0910补扫]

@@ -7,7 +7,7 @@ year: 2025
 authors: [Y. Wang et al.]
 venue: arXiv 2025
 arxiv: "2505.20755"
-pdf: https://arxiv.org/pdf/2505.20755
+pdf: 已下载（PDF/）
 line: false
 matrix_coords: [扩散, 蒸馏(score/KL/对抗), 蒸馏预训练]
 tags: [paper, 占位层]

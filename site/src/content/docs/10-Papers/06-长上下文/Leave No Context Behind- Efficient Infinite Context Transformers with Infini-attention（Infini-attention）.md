@@ -9,7 +9,7 @@ arxiv: "2404.07143"
 line: 长上下文
 matrix_coords: [系统/流式, 注意力结构层, 压缩状态]
 tags: [paper]
-pdf: https://arxiv.org/pdf/2404.07143
+pdf: 已下载（PDF/）
 ---
 
 # Infini-attention

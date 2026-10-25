@@ -6,7 +6,7 @@ year: 2026
 authors: [Zukang Xu]
 venue: 待核（占位层，来自 arXiv 2026-09-04）
 arxiv: "2609.05228v1"
-pdf: https://arxiv.org/pdf/2609.05228v1
+pdf: 已下载（PDF/）
 line: 架构演进
 matrix_coords: 待评
 tags: [paper, 占位层]
@@ -32,7 +32,7 @@ layer: 占位
 
 ## 5. 与前作/矩阵关系
 - 线锚：[Transformer](/ai-fa/explore/20-Algorithms/Transformer) · [注意力核心公式](/ai-fa/explore/30-Formulas/注意力核心公式)（占位挂链，Tier B 精化）
-- 同族：[混合专家（MoE）](/ai-fa/explore/20-Algorithms/混合专家（MoE）)·[MoE门控公式](/ai-fa/explore/30-Formulas/MoE门控公式)（top-k 路由本体）；效率近邻：[NFE（函数求值次数）](/ai-fa/explore/40-Concepts/NFE（函数求值次数）)（"激活多少专家"与"调用几次网络"同族思想） · 剪枝实证对照（260925）：[2/3 专家剪枝实证](/ai-fa/explore/10-Papers/05-MoE/You Only Need 23 of the Chosen Experts An Empirical Study of Dynamic Expert Pruning in Fine-Grained)（保守预算下动态规则增益 <1%——本文类跳过方法的定位结论）
+- 同族：[混合专家（MoE）](/ai-fa/explore/20-Algorithms/混合专家（MoE）)·[MoE门控公式](/ai-fa/explore/30-Formulas/MoE门控公式)（top-k 路由本体）；效率近邻：[NFE（函数求值次数）](/ai-fa/explore/40-Concepts/NFE（函数求值次数）)（"激活多少专家"与"调用几次网络"同族思想）
 
 ## 6. 影响后续
 （待精读）

@@ -7,7 +7,7 @@ year: 2025
 authors: [（arXiv）]
 venue: arXiv 2025
 arxiv: "2505.18825"
-pdf: https://arxiv.org/pdf/2505.18825
+pdf: 已下载（PDF/）
 line: 生成建模与扩散
 matrix_coords: [FM, 一致性, 从头训练]
 tags: [paper, 占位层]

@@ -9,7 +9,7 @@ arxiv: "2212.08073"
 line: 强化学习与对齐
 matrix_coords: [AI反馈, BT排序损失, 有]
 tags: [paper]
-pdf: https://arxiv.org/pdf/2212.08073
+pdf: 已下载（PDF/）
 ---
 
 # Constitutional AI（RLAIF）

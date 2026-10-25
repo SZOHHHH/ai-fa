@@ -6,7 +6,7 @@ year: 2026
 authors: [Dingjie Fu, Dianxing Shi, Yangyang Xu, Jun Yu]
 venue: arXiv 2609.15189（2026-09-14，哈工深+北航）
 arxiv: "2609.15189v1"
-pdf: https://arxiv.org/pdf/2609.15189v1
+pdf: 已下载（PDF/）
 line: 世界模型与JEPA
 layer: 精读
 ---

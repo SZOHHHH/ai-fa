@@ -9,7 +9,7 @@ arxiv: "2111.07991"
 line: 多模态
 matrix_coords: [对比接口, 匹配, 接口级]
 tags: [paper]
-pdf: https://arxiv.org/pdf/2111.07991
+pdf: 已下载（PDF/）
 ---
 
 # LiT（锁定图像调文本）

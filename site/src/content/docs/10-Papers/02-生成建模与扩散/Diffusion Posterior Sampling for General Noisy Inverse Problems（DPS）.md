@@ -6,7 +6,7 @@ year: 2022
 authors: [Hyungjin Chung, Jeongsol Kim, Michael T. McCann, Marc L. Klasky, Jong Chul Ye]
 venue: ICLR 2023 Spotlight
 arxiv: "2209.14687"
-pdf: https://arxiv.org/pdf/2209.14687
+pdf: 已下载（PDF/）
 line: 生成建模与扩散
 matrix_coords: [—(采样与推断), 后验采样(引导式), 有]
 tags: [paper]

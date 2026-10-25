@@ -7,7 +7,7 @@ year: 2026
 authors: [NVIDIA / NUS / MIT]
 venue: arXiv 2026
 arxiv: "2605.13724"
-pdf: https://arxiv.org/pdf/2605.13724
+pdf: 已下载（PDF/）
 line: 生成建模与扩散
 matrix_coords: [FM(视频), flow map, 蒸馏预训练]
 tags: [paper, 占位层]

@@ -7,7 +7,7 @@ year: 2024
 authors: [Wang et al. (DeepSeek)]
 venue: arXiv 2024
 arxiv: "2408.15664"
-pdf: https://arxiv.org/pdf/2408.15664
+pdf: 已下载（PDF/）
 line: MoE
 matrix_coords: [token级, Top-K稀疏路由, 去偏置]
 tags: [paper, 占位层]
@@ -39,12 +39,10 @@ $$
 ## 5. 与前作/矩阵关系
 
 🚩🚩 **占 [MoE 路由矩阵](/ai-fa/explore/60-Matrices/MoE路由矩阵) "去偏置路由"机会格的主位**——B9 机会格"去偏置路由×理论"的工程实现已被 DeepSeek 占（理论保证侧仍薄但窗口窄）
-- 对照补记（260925）：[EQB+LEI](/ai-fa/explore/10-Papers/05-MoE/Exact Quantile Balancing and Load-Error Injection for Mixture-of-Experts) 反向路线——本文免损失偏置被其点名「token 无关保不住微批级均衡」，LEI 改走梯度注入（token/微批相关）——两卡合成「免辅助损失」之争的两极。
 
 
 ## 6. 影响与占位意义
 
-- → 后继补记（261009）：[Smoothing Top-k](/ai-fa/explore/10-Papers/05-MoE/Smoothing the Top-k Exposure Boundary for Sparse Mixture-of-Experts)——弹性专家预算采样软化 top-k 暴露边界，同修训练期路由信号的另一维。
 榜上格核查：去偏路由格 🚩 关闭。
 
 ---

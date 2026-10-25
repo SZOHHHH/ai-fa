@@ -6,7 +6,7 @@ year: 2024
 authors: [Xiangyu Chen, Xinghao Chen, Jianmin Wang, Mingsheng Long]
 venue: NeurIPS 2024
 arxiv: "2410.11758"
-pdf: https://arxiv.org/pdf/2410.11758
+pdf: 已下载
 line: 世界模型与JEPA
 matrix_coords: [隐式(视频自监督), 离散码本(latent action), 纯离线视频]
 tags: [paper]

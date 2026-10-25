@@ -7,7 +7,7 @@ year: 2024
 authors: [arXiv]
 venue: arXiv 2024
 arxiv: "2404.04475"
-pdf: https://arxiv.org/pdf/2404.04475
+pdf: 已下载（PDF/）
 line: 标杆锚点
 matrix_coords: [评分/排序, —, —]
 tags: [paper, 占位层]

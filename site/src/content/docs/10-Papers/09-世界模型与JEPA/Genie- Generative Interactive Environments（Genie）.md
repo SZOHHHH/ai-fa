@@ -9,7 +9,7 @@ arxiv: "2402.15391"
 line: 世界模型与JEPA
 matrix_coords: [像素重建(生成式), 显式像素, 可操作(动作条件)]
 tags: [paper]
-pdf: https://arxiv.org/pdf/2402.15391
+pdf: 已下载（PDF/）
 ---
 
 # Genie（生成式交互环境）

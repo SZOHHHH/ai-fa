@@ -7,7 +7,7 @@ year: 2026
 authors: [Renmin Univ / Tencent]
 venue: arXiv 2026
 arxiv: "2602.12125"
-pdf: https://arxiv.org/pdf/2602.12125
+pdf: 已下载（PDF/）
 line: 强化学习与对齐
 matrix_coords: [学生轨迹+结果信号, 混合散度, token+序列级]
 tags: [paper, 占位层]

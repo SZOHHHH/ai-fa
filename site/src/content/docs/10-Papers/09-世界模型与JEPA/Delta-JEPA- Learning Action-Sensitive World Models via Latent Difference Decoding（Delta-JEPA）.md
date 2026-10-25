@@ -7,7 +7,7 @@ year: 2026
 authors: [（arXiv）]
 venue: arXiv 2026
 arxiv: "2606.31232"
-pdf: https://arxiv.org/pdf/2606.31232
+pdf: 已下载（PDF/）
 line: 世界模型与JEPA
 matrix_coords: [特征预测(JEPA系), 潜在状态, 可操作(动作条件)]
 tags: [paper, 占位层]
@@ -49,7 +49,6 @@ $$
 
 ---
 
-> → 后继补记（260925）：[AD-WM](/ai-fa/explore/10-Papers/09-世界模型与JEPA/AD-WM Action-Discriminative World Models for Counterfactual Model Predictive Control)（本文被其引为最近亲[26]）——恢复目标从**观测到的**潜差分升级到**预测的**转移端点（predictor-level：梯度直达动力学），并配条件互信息下界版本；两卡合看=「从潜位移恢复动作」路线的观测级→预测级演进。
 > 谱系枢纽：[Dream to Control - Learning Behaviors by Latent Imagination](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Dream to Control- Learning Behaviors by Latent Imagination（Dreamer）)（图谱连通入口）
 > 近邻同族：[DF3- World Modeling via Decoder-Free Feature Forecasting in Autonomous Navigation](/ai-fa/explore/10-Papers/09-世界模型与JEPA/DF3- World Modeling via Decoder-Free Feature Forecasting in Autonomous Navigation（DF3）) · [Revisiting Feature Prediction for Learning Visual Representations from Video](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Revisiting Feature Prediction for Learning Visual Representations from Video（V-JEPA）)
 > 数学根基（占位层）：[扩散条件去噪](/ai-fa/explore/30-Formulas/扩散条件去噪) · [贝尔曼方程](/ai-fa/explore/40-Concepts/贝尔曼方程)

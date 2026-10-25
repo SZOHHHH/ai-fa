@@ -6,7 +6,7 @@ year: 2024
 authors: [Kambhampati et al. (ASU)]
 venue: ICML 2024
 arxiv: "2402.01817"
-pdf: https://arxiv.org/pdf/2402.01817
+pdf: 已下载（PDF/）
 line: 推理模型
 matrix_coords: [提示触发, 树/图, 无奖励(外部验证)]
 tags: [paper]

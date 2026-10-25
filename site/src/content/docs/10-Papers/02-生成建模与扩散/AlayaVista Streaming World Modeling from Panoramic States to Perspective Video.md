@@ -6,7 +6,7 @@ year: 2026
 authors: [Jiaming Tan, Mingliang Zhai, Kaipeng Zhang]
 venue: arXiv（Alaya Lab+北京理工大学+东京大学，2026-09-13）
 arxiv: "2609.14462v1"
-pdf: https://arxiv.org/pdf/2609.14462v1
+pdf: 已下载（PDF/）
 line: 生成建模与扩散
 matrix_coords: 扩散蒸馏×世界模型（全景表征交叉格）
 tags: [paper]

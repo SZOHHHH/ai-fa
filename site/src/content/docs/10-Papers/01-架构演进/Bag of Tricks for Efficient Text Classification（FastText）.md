@@ -6,7 +6,7 @@ year: 2016
 authors: [Joulin et al. (Meta)]
 venue: EACL 2017
 arxiv: "1607.01759"
-pdf: https://arxiv.org/pdf/1607.01759
+pdf: 已下载（PDF/）
 line: 架构演进
 matrix_coords: [—, —, —]
 tags: [paper]

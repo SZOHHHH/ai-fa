@@ -7,7 +7,7 @@ year: 2024
 authors: [Esser et al. (Stability AI)]
 venue: arXiv 2024
 arxiv: "2403.03206"
-pdf: https://arxiv.org/pdf/2403.03206
+pdf: 已下载（PDF/）
 line: false
 matrix_coords: [FM, 潜空间, —]
 tags: [paper, 占位层]

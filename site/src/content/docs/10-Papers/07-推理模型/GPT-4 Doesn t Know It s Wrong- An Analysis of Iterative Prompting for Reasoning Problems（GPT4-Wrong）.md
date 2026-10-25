@@ -6,7 +6,7 @@ year: 2023
 authors: [Stechly et al. (ASU)]
 venue: arXiv 2023
 arxiv: "2310.12397"
-pdf: https://arxiv.org/pdf/2310.12397
+pdf: 已下载（PDF/）
 line: 推理模型
 matrix_coords: [提示触发, 链, 自我纠错]
 tags: [paper]
@@ -48,6 +48,6 @@ $$
 
 undefined
 
-> 近邻同族：[A Survey on In-context Learning](/ai-fa/explore/10-Papers/07-推理模型/A Survey on In-context Learning（ICL Survey）) · [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](/ai-fa/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）) · [Reasoning Instructions Can Break Answer Decoding in Vision--Language Models](/ai-fa/explore/10-Papers/07-推理模型/Reasoning Instructions Can Break Answer Decoding in Vision--Language Models)（评测接口病理同族：接口失真使测分系统性偏离真实能力）
+> 近邻同族：[A Survey on In-context Learning](/ai-fa/explore/10-Papers/07-推理模型/A Survey on In-context Learning（ICL Survey）) · [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](/ai-fa/explore/10-Papers/07-推理模型/Chain-of-Thought Prompting Elicits Reasoning in Large Language Models（CoT）)
 
 > 数学根基：[思维链（CoT）](/ai-fa/explore/40-Concepts/思维链（CoT）)

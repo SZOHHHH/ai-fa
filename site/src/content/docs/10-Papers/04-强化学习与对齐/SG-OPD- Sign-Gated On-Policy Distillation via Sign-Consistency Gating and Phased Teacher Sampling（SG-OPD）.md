@@ -7,7 +7,7 @@ year: 2026
 authors: [Haoran Xu, Hongyu Wang et al.]
 venue: arXiv 2026
 arxiv: "2606.09304"
-pdf: https://arxiv.org/pdf/2606.09304
+pdf: 已下载（PDF/）
 line: 强化学习与对齐
 matrix_coords: [学生轨迹+结果信号, 反向KL, token级]
 tags: [paper, 占位层]

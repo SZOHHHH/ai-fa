@@ -6,7 +6,7 @@ year: 2022
 authors: [Hertz et al.]
 venue: ICLR 2023
 arxiv: "2208.01626"
-pdf: https://arxiv.org/pdf/2208.01626
+pdf: 已下载（PDF/）
 line: 生成建模与扩散
 matrix_coords: [扩散/score, 潜空间, 引导编辑]
 tags: [paper]

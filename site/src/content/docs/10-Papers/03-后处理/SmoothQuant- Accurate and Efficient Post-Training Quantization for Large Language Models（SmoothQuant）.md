@@ -9,7 +9,7 @@ arxiv: "2211.10438"
 line: 后处理与压缩
 matrix_coords: [权重, 量化, 训练后]
 tags: [paper]
-pdf: https://arxiv.org/pdf/2211.10438
+pdf: 已下载（PDF/）
 ---
 
 # SmoothQuant

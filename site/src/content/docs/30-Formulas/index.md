@@ -71,4 +71,4 @@ tags: [section]
 - [VQ-VAE目标](/ai-fa/explore/30-Formulas/VQ-VAE目标)
 - [WGAN目标](/ai-fa/explore/30-Formulas/WGAN目标)
 - [word2vec负采样](/ai-fa/explore/30-Formulas/word2vec负采样)
-- [μ-law量化](/ai-fa/explore/30-Formulas/μ-law量化音频)
+- [μ-law量化音频](/ai-fa/explore/30-Formulas/μ-law量化音频)

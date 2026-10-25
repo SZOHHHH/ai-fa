@@ -9,7 +9,7 @@ arxiv: "2305.10601"
 line: 推理模型
 matrix_coords: [提示触发, 树/图, 无奖励(上下文)]
 tags: [paper]
-pdf: https://arxiv.org/pdf/2305.10601
+pdf: 已下载（PDF/）
 ---
 
 # Tree of Thoughts（ToT）

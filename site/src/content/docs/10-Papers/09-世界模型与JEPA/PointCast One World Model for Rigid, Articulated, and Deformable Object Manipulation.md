@@ -6,7 +6,7 @@ year: 2026
 authors: [Hantao Ye, Ross Worobel, Zhuoli Xie, Mingen Li, Houjian Yu, Youngjin Hong, Changhyun Choi]
 venue: arXiv 2026（明尼苏达大学）
 arxiv: "2609.28393v1"
-pdf: https://arxiv.org/pdf/2609.28393v1
+pdf: 已下载（PDF/）
 line: 世界模型与JEPA
 matrix_coords: [生成式WM(扩散系), 几何点集状态(非像素), 单步采样, 机器人操作+MPC]
 tags: [paper]

@@ -9,7 +9,7 @@ arxiv: "2206.00364"
 line: 生成建模与扩散
 matrix_coords: [扩散/score, 像素空间, score匹配]
 tags: [paper]
-pdf: https://arxiv.org/pdf/2206.00364
+pdf: 已下载（PDF/）
 ---
 
 # EDM（设计空间解构）

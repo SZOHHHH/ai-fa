@@ -7,7 +7,7 @@ year: 2024
 authors: [DeepSeek-AI]
 venue: arXiv 2024
 arxiv: "2412.19437"
-pdf: https://arxiv.org/pdf/2412.19437
+pdf: 已下载（PDF/）
 line: MoE
 matrix_coords: [token级, 细粒度分段, 去偏置]
 ---

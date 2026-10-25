@@ -6,7 +6,7 @@ year: 2013
 authors: [Volodymyr Mnih, Koray Kavukcuoglu, David Silver, Alex Graves, Ioannis Antonoglou, Daan Wierstra, Martin Riedmiller]
 venue: NIPS Deep Learning Workshop 2013（扩展版 Nature 2015《Human-level control》）
 arxiv: "1312.5602"
-pdf: https://arxiv.org/pdf/1312.5602
+pdf: 已下载（PDF/）
 line: 强化学习与对齐
 matrix_coords: [—(无模型控制), 价值学习(off-policy), 有]
 tags: [paper]

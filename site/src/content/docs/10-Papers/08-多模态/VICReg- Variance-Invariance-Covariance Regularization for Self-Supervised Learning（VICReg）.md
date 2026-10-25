@@ -6,7 +6,7 @@ year: 2021
 authors: [Adrien Bardes, Jean Ponce, Yann LeCun]
 venue: ICLR 2022
 arxiv: "2105.04906"
-pdf: https://arxiv.org/pdf/2105.04906
+pdf: 已下载（PDF/）
 line: 多模态
 matrix_coords: [对比接口, 对比(InfoNCE), 接口级]
 tags: [paper]

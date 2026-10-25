@@ -9,7 +9,7 @@ arxiv: "1912.01603"
 line: 世界模型与JEPA
 matrix_coords: [奖励驱动(RL内部模型), 潜在状态, 游戏控制(RL)]
 tags: [paper]
-pdf: https://arxiv.org/pdf/1912.01603
+pdf: 已下载（PDF/）
 ---
 
 # Dreamer（潜空间想象 RL：世界模型成为通用 RL 引擎）

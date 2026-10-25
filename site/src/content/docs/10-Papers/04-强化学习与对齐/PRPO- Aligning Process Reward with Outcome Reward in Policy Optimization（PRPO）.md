@@ -7,7 +7,7 @@ year: 2026
 authors: [（arXiv）]
 venue: arXiv 2026
 arxiv: "2601.07182"
-pdf: https://arxiv.org/pdf/2601.07182
+pdf: 已下载（PDF/）
 line: 强化学习与对齐
 matrix_coords: [GRPO, 组基线, 步级]
 tags: [paper, 占位层]

@@ -9,7 +9,7 @@ arxiv: "2104.09864"
 line: 架构演进
 matrix_coords: [全注意力, 位置编码, 无状态]
 tags: [paper]
-pdf: https://arxiv.org/pdf/2104.09864
+pdf: 已下载（PDF/）
 ---
 
 # RoFormer（RoPE 旋转位置编码）

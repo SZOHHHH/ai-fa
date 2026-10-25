@@ -6,7 +6,7 @@ year: 2026
 authors: [Ha Lan Nguyen, Huy Hoang Tran, Trac-Duy Tran, Dung D. Le]
 venue: arXiv（VinUniversity+Johns Hopkins，2026-09-15）
 arxiv: "2609.17890v1"
-pdf: https://arxiv.org/pdf/2609.17890v1
+pdf: 已下载（PDF/）
 line: 推理模型
 matrix_coords: 模型压缩×校准（推理模型剪枝的结果导向校准格）
 tags: [paper]

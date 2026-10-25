@@ -7,7 +7,7 @@ year: 2026
 authors: [（arXiv）]
 venue: arXiv 2026
 arxiv: "2604.01411"
-pdf: https://arxiv.org/pdf/2604.01411
+pdf: 已下载（PDF/）
 line: 推理模型
 matrix_coords: [测试时延长, 采样聚合, 算力调度]
 tags: [paper, 占位层]

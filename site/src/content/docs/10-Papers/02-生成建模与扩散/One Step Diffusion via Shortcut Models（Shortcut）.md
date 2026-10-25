@@ -7,7 +7,7 @@ year: 2024
 authors: [Kevin Frans, Danijar Hafner, Sergey Levine, Pieter Abbeel]
 venue: arXiv 2024
 arxiv: "2410.12557"
-pdf: https://arxiv.org/pdf/2410.12557
+pdf: 已下载（PDF/）
 line: 生成建模与扩散
 matrix_coords: [FM, flow map, 从头训练]
 tags: [paper, 占位层]

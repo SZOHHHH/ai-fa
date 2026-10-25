@@ -6,7 +6,7 @@ year: 2023
 authors: [Zheng et al. (UC Berkeley)]
 venue: NeurIPS 2023
 arxiv: "2306.05685"
-pdf: https://arxiv.org/pdf/2306.05685
+pdf: 已下载（PDF/）
 line: 强化学习与对齐
 matrix_coords: [评分/排序, —, —]
 tags: [paper]

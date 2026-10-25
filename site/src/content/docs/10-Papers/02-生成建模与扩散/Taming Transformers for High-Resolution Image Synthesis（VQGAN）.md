@@ -9,7 +9,7 @@ arxiv: "2012.09841"
 line: 生成建模与扩散
 matrix_coords: [变分, 离散码本, 对抗(矩匹配)]
 tags: [paper]
-pdf: https://arxiv.org/pdf/2012.09841
+pdf: 已下载（PDF/）
 ---
 
 # Taming Transformers（VQGAN）

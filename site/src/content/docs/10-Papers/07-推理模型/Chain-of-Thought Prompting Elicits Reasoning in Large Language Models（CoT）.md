@@ -9,7 +9,7 @@ arxiv: "2201.11903"
 line: 推理模型
 matrix_coords: [提示触发, 链, 无奖励(上下文)]
 tags: [paper]
-pdf: https://arxiv.org/pdf/2201.11903
+pdf: 已下载（PDF/）
 ---
 
 # 思维链 CoT

@@ -6,7 +6,7 @@ year: 2013
 authors: [Mikolov et al. (Google)]
 venue: NeurIPS 2013
 arxiv: "1301.3781"
-pdf: https://arxiv.org/pdf/1301.3781
+pdf: 已下载（PDF/）
 line: 架构演进
 matrix_coords: [—, —, 预训练原点]
 tags: [paper]

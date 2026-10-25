@@ -6,7 +6,7 @@ year: 2026
 authors: [Hojin Lee, Sizhe Lester Li, Maximilian Hilger, Susie Lu, Achim J. Lilienthal, Vincent Sitzmann, Daniel A. Duecker]
 venue: arXiv 2026-09-15（cs.RO，TUM MIRMI+MIT CSAIL，MIT-TUM 合作项目）
 arxiv: "2609.16737v1"
-pdf: https://arxiv.org/pdf/2609.16737v1
+pdf: 已下载（PDF/）
 line: 世界模型与JEPA
 matrix_coords: 视频扩散规划器×光流IDM反演×机器人导航(非游戏域)
 tags: [paper, 核心组命中(e2-inversion-sentry), 世界模型与JEPA]

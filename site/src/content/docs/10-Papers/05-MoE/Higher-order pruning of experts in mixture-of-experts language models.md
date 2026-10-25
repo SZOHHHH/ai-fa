@@ -6,7 +6,7 @@ year: 2026
 authors: [Alex, M., Tseng]
 venue: 待核（占位层，来自 arXiv 2026-09-16）
 arxiv: "2609.18916v1"
-pdf: https://arxiv.org/pdf/2609.18916v1
+pdf: 已下载（PDF/）
 line: MoE
 matrix_coords: 待评
 tags: [paper, 占位层]
@@ -31,7 +31,7 @@ layer: 占位
 
 ## 5. 与前作/矩阵关系
 - 线锚：[混合专家（MoE）](/ai-fa/explore/20-Algorithms/混合专家（MoE）) · [MoE门控公式](/ai-fa/explore/30-Formulas/MoE门控公式)（HOPE 二阶目标作用于此层的专家子集选择）
-- 同族：↔ [MoE 过拟合实证](/ai-fa/explore/10-Papers/05-MoE/Data Scarcity and Model Sparsity Mixtures-of-Experts Overfit More to Repeated Data)（同属"专家冗余/风险"诊断轴——260918 处理段挂链，占位层待精读） · [2/3 专家剪枝实证](/ai-fa/explore/10-Papers/05-MoE/You Only Need 23 of the Chosen Experts An Empirical Study of Dynamic Expert Pruning in Fine-Grained)（细粒度+生成侧评测的续作，260925 处理段挂链）
+- 同族：↔ [MoE 过拟合实证](/ai-fa/explore/10-Papers/05-MoE/Data Scarcity and Model Sparsity Mixtures-of-Experts Overfit More to Repeated Data)（同属"专家冗余/风险"诊断轴——260918 处理段挂链，占位层待精读）
 
 ## 6. 影响后续
 （待精读）

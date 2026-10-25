@@ -6,7 +6,7 @@ year: 2026
 authors: [Min Zhao, Hongzhou Zhu, Bokai Yan, Zihan Zhou, Yimin Chen, et al.]
 venue: arXiv 2026-05（生数科技）
 arxiv: "2605.30263"
-pdf: https://arxiv.org/pdf/2605.30263
+pdf: 已下载（PDF/minWM（全栈实时交互框架）.pdf）
 line: 世界模型与JEPA
 matrix_coords: [实时交互(全栈框架), 显式像素, 可操作(相机控制)]
 tags: [paper]

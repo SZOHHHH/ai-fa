@@ -9,7 +9,7 @@ arxiv: "1706.03741"
 line: 强化学习与对齐
 matrix_coords: [成对比较, RL目标(在线), 有]
 tags: [paper]
-pdf: https://arxiv.org/pdf/1706.03741
+pdf: 已下载（PDF/）
 ---
 
 # Deep RL from Human Preferences（RLHF 开山）

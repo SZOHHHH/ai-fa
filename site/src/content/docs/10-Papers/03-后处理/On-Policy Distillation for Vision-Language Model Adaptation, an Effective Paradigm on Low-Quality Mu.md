@@ -6,7 +6,7 @@ year: 2026
 authors: [Hongyuan Zhang, Xianda Guo, Yanlun Peng 等]
 venue: arXiv 2609.10321（Elsevier 模板预印本，港大/长城汽车等）
 arxiv: "2609.10321v1"
-pdf: https://arxiv.org/pdf/2609.10321v1
+pdf: 10-Papers/PDF/On-Policy Distillation for Vision-Language Model Adaptation, an Effective Paradigm on Low-Quality Mu.pdf
 line: 后处理
 matrix_coords: 蒸馏×后处理｜VLM 适配｜目标构造轴
 tags: [paper, 精读层]

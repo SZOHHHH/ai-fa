@@ -6,7 +6,7 @@ year: 2024
 authors: [Apple]
 venue: arXiv 2024
 arxiv: "2403.09611"
-pdf: https://arxiv.org/pdf/2403.09611
+pdf: 已下载（PDF/）
 line: 多模态
 matrix_coords: [投影接口, 生成(条件LM), 接口级]
 tags: [paper]

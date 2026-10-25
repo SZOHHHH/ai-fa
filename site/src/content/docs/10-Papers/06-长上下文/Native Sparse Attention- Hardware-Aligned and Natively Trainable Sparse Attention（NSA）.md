@@ -6,7 +6,7 @@ year: 2025
 authors: [DeepSeek (Jingyang Yuan et al.)]
 venue: arXiv 2025 / ACL 2025（482+ 引用）
 arxiv: "2502.11089"
-pdf: https://arxiv.org/pdf/2502.11089
+pdf: 已下载
 line: 长上下文
 matrix_coords: [稀疏注意力, 注意力结构层, 原生训练]
 tags: [paper]

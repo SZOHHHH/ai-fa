@@ -6,7 +6,7 @@ year: 2026
 authors: [Shilong Zou, Shilin Zhang, Yingji Zhang, Yuhang Huang, Yi Zhang, Zeyuan Ding, Han Dong, Junwei Liao, Yong Dai, Jian Tang, Xiaozhu Ju]
 venue: arXiv 2026-09-10 技术报告（cs.RO+cs.AI）
 arxiv: "2609.12036"
-pdf: https://arxiv.org/pdf/2609.12036
+pdf: 已下载（PDF/）
 line: 世界模型
 matrix_coords: 通用WM仿真器×少步蒸馏×具身智能
 layer: 精化层（摘要级+摘要核实，PDF 待深读；wm-distill-fewstep 组命中）

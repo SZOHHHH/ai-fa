@@ -7,7 +7,7 @@ year: 2026
 authors: [（arXiv）]
 venue: arXiv 2026
 arxiv: "2605.22791"
-pdf: https://arxiv.org/pdf/2605.22791
+pdf: 已下载（PDF/）
 line: 架构演进
 matrix_coords: [线性注意力, —, 有状态]
 tags: [paper, 占位层]

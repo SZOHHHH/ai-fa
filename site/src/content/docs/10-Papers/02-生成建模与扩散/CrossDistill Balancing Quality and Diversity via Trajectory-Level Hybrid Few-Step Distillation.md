@@ -6,7 +6,7 @@ year: 2026
 authors: [Yuxi Liu, Haoyu Li, Yixiang Cai, Tengxu Sun, Kun Yuan, Kai Zhang]
 venue: arXiv 2026-09-13（北大 Melon+清华+阿里，实验在 Wan2.1-T2V 1.3B/14B）
 arxiv: "2609.14725v1"
-pdf: https://arxiv.org/pdf/2609.14725v1
+pdf: 已下载（PDF/）
 line: 生成建模与扩散
 matrix_coords: 扩散/少步蒸馏×视频生成域×蒸馏(轨迹+分布的噪声段调度)
 tags: [paper, 核心组命中(wm-distill-fewstep), 生成建模与扩散]

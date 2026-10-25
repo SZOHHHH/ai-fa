@@ -6,7 +6,7 @@ year: 2026
 authors: [Yuchao Gu, Guian Fang, Yuxin Jiang, Weijia Mao, Song Han, Han Cai]
 venue: arXiv 2026-05（NVIDIA）
 arxiv: "2605.13724"
-pdf: https://arxiv.org/pdf/2605.13724
+pdf: 已下载（PDF/AnyFlow（任意步流图蒸馏）.pdf）
 line: 世界模型与JEPA
 matrix_coords: [蒸馏加速(任意步流图), 显式像素, 可操作(动作条件)]
 tags: [paper]
@@ -52,4 +52,3 @@ tags: [paper]
 
 flow matching/流图（ODE 视角）；exposure bias（对比 E1_实验数据台账 尸检节的开环 covariate shift）；一致性蒸馏的 test-time scaling 缺陷。
 
-- → 公式链补记（2601007）：[DDIM更新规则](/ai-fa/explore/30-Formulas/DDIM更新规则)（任意步采样的离散基础）· [条件流匹配损失](/ai-fa/explore/30-Formulas/条件流匹配损失)（流图蒸馏的目标场）

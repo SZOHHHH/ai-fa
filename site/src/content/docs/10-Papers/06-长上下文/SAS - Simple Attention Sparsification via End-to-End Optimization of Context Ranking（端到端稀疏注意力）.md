@@ -6,7 +6,7 @@ year: 2026
 authors: [Zhiwei Li, Lei Zhu, Hao Gu, Xiang Hu, Yan Wang, Haitao Mi, Sirui Han, Leo Liang, Zhijiang Guo]
 venue: arXiv 2026-09-11（cs.CL）
 arxiv: "2609.13141"
-pdf: https://arxiv.org/pdf/2609.13141
+pdf: 已下载（PDF/）
 line: 长上下文
 matrix_coords: 注意力稀疏化×可训练选择器×端到端
 tags: [paper, 轮换命中, 长上下文]
@@ -42,7 +42,6 @@ layer: 精化层（摘要级+摘要核实，PDF 待深读）
 ## 6. 影响后续
 - 训练后稀疏化从"模仿教师注意力"转向"端到端服务任务损失"，可能成为稀疏注意力选择器的默认训练法。
 - 跨域启示：任何"用中间量蒸馏教选择器/控制器"的场景（KV 淘汰、检索路由、早退）都适用同样的对齐批判。
-- 后续印证（260926）：[CompKV](/ai-fa/explore/10-Papers/06-长上下文/CompKV Compensation-Aware KV Selection for Long-Context LLM Inference) 把同一"目标对齐"批判推进到补偿式稀疏注意力（块选择应服务下游补偿误差，而非注意力质量本身）——跨域对齐批判再+1。
 
 ## 7. 读前须知
 - 前置：softmax 注意力计算流程（[Transformer](/ai-fa/explore/10-Papers/01-架构演进/Attention Is All You Need（Transformer）)）、Top-K 硬选择的梯度截断问题（重参数化/Gumbel 直觉有帮助）。

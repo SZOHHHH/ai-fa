@@ -7,7 +7,7 @@ year: 2025
 authors: [arXiv]
 venue: arXiv 2025
 arxiv: "2510.19356"
-pdf: https://arxiv.org/pdf/2510.19356
+pdf: 已下载（PDF/）
 line: 生成建模与扩散
 matrix_coords: [FM, flow map, 免疫学习]
 tags: [paper, 占位层]

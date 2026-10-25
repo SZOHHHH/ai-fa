@@ -9,7 +9,7 @@ arxiv: "2212.09748"
 line: 生成建模与扩散
 matrix_coords: [扩散/score, 潜空间, score匹配]
 tags: [paper]
-pdf: https://arxiv.org/pdf/2212.09748
+pdf: 已下载（PDF/）
 ---
 
 # DiT（扩散 Transformer）

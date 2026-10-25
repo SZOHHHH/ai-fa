@@ -7,7 +7,7 @@ year: 2026
 authors: [（arXiv）]
 venue: arXiv 2026
 arxiv: "2608.03632"
-pdf: https://arxiv.org/pdf/2608.03632
+pdf: 已下载（PDF/）
 line: 强化学习与对齐
 matrix_coords: [学生轨迹, 反向KL, token级]
 tags: [paper, 占位层]

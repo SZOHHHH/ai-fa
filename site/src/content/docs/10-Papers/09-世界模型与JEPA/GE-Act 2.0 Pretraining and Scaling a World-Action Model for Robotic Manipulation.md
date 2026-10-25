@@ -6,7 +6,7 @@ year: 2026
 authors: [AgiBot Research Team]
 venue: arXiv 2026（项目页 ge-act-v2.github.io）
 arxiv: "2609.05588v1"
-pdf: https://arxiv.org/pdf/2609.05588v1
+pdf: 已下载（PDF/）
 line: 世界模型与JEPA
 matrix_coords: [单步流生成(MeanFlow), 压缩潜变量(CoAE), 机器人操作(动作反推)]
 tags: [paper, 占位层]

@@ -6,7 +6,7 @@ year: 2026
 authors: Andy Zeyi Liu, Haoran Sun, Lucas Baker, Randall Balestriero, John Sous
 venue: arXiv
 arxiv: 2609.10464
-pdf: https://arxiv.org/pdf/2609.10464
+pdf: 10-Papers/PDF/Semigroup-JEPA Latent Dynamics Consistency for Zero-Shot Physics Generalization.pdf
 line: 世界模型与JEPA
 matrix_coords: 待评
 tags: [paper, 占位, 0910补扫]

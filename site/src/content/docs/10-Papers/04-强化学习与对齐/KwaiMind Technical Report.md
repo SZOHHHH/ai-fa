@@ -6,7 +6,7 @@ year: 2026
 authors: [Junlong Wu, Zijun Li, Yuting Hu, et al.]
 venue: arXiv 2026
 arxiv: "2609.26375v1"
-pdf: https://arxiv.org/pdf/2609.26375v1
+pdf: 已下载（PDF/——处理段补档：31.8MB、EOF=1）
 line: 强化学习与对齐
 matrix_coords: [偏好对齐(DPO+在线RL), 扩散策略(MMDiT编辑), on-policy蒸馏合并]
 tags: [paper]

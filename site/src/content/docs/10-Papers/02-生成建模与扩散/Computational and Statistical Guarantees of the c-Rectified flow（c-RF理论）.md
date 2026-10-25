@@ -7,7 +7,7 @@ year: 2026
 authors: [（arXiv）]
 venue: arXiv 2026
 arxiv: "2608.02487"
-pdf: https://arxiv.org/pdf/2608.02487
+pdf: 已下载（PDF/）
 line: 生成建模与扩散
 matrix_coords: [FM, —, 计算统计理论]
 tags: [paper, 占位层]

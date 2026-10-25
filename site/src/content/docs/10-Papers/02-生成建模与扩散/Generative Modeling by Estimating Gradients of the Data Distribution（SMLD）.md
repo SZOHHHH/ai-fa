@@ -9,7 +9,7 @@ arxiv: "1907.05600"
 line: 生成建模与扩散
 matrix_coords: [扩散/score, 像素空间, score匹配]
 tags: [paper]
-pdf: https://arxiv.org/pdf/1907.05600
+pdf: 已下载（PDF/）
 ---
 
 # SMLD（噪声条件分数网络）

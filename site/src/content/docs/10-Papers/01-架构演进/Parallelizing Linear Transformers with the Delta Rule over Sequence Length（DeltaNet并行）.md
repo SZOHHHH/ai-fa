@@ -7,7 +7,7 @@ year: 2024
 authors: [Songlin Yang et al.]
 venue: arXiv 2024
 arxiv: "2406.06484"
-pdf: https://arxiv.org/pdf/2406.06484
+pdf: 已下载（PDF/）
 line: 架构演进
 matrix_coords: [线性注意力, IO感知, 有状态]
 tags: [paper, 占位层]

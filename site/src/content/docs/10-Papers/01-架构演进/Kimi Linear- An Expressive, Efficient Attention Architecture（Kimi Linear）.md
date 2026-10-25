@@ -7,7 +7,7 @@ year: 2025
 authors: [Moonshot AI]
 venue: arXiv 2025
 arxiv: "2510.26692"
-pdf: https://arxiv.org/pdf/2510.26692
+pdf: 已下载（PDF/）
 line: 架构演进
 matrix_coords: [混合, IO感知, 混合状态]
 tags: [paper, 占位层]

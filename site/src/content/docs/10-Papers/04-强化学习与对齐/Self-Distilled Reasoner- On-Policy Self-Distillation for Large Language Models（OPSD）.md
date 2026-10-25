@@ -7,7 +7,7 @@ year: 2026
 authors: [Siyan Zhao et al.]
 venue: arXiv 2026
 arxiv: "2601.18734"
-pdf: https://arxiv.org/pdf/2601.18734
+pdf: 已下载（PDF/）
 line: 强化学习与对齐
 matrix_coords: [学生轨迹(自), 反向KL, token级]
 tags: [paper, 占位层]

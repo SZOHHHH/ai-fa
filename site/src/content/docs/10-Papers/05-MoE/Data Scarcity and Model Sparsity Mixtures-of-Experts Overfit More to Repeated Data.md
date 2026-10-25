@@ -6,7 +6,7 @@ year: 2026
 authors: [Atindra, Jha]
 venue: 待核（占位层，来自 arXiv 2026-09-10）
 arxiv: "2609.11917v1"
-pdf: https://arxiv.org/pdf/2609.11917v1
+pdf: 已下载（PDF/）
 line: MoE
 matrix_coords: 待评
 tags: [paper, 占位层]

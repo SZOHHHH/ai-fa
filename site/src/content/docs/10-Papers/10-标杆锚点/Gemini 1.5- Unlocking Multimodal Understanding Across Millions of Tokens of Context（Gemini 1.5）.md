@@ -6,7 +6,7 @@ year: 2024
 authors: [Gemini Team (Google)]
 venue: arXiv 2024
 arxiv: "2403.05530"
-pdf: https://arxiv.org/pdf/2403.05530
+pdf: 已下载（PDF/）
 line: 标杆锚点
 matrix_coords: [—, —, —]
 tags: [paper]

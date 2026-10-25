@@ -6,7 +6,7 @@ year: 2017
 authors: [Zoph et al. (Google)]
 venue: CVPR 2018
 arxiv: "1707.07012"
-pdf: https://arxiv.org/pdf/1707.07012
+pdf: 已下载（PDF/）
 line: 架构演进
 matrix_coords: [CNN, —, 搜索]
 tags: [paper]

@@ -6,7 +6,7 @@ year: 2026
 authors: [Muyuan Liu]
 venue: 待核（占位层，来自 arXiv 2026-09-03）
 arxiv: "2609.03565v1"
-pdf: https://arxiv.org/pdf/2609.03565v1
+pdf: 已下载（PDF/）
 line: 世界模型与JEPA
 matrix_coords: 待评
 tags: [paper, 占位层]

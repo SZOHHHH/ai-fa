@@ -6,7 +6,7 @@ year: 2023
 authors: [Nicklas Hansen, Hao Su, Xiaolong Wang]
 venue: ICLR 2024
 arxiv: "2310.16828"
-pdf: https://arxiv.org/pdf/2310.16828
+pdf: 已下载（PDF/）
 line: 世界模型与JEPA
 matrix_coords: [奖励驱动(RL内部模型), 潜在状态, 游戏控制(RL)]
 tags: [paper]

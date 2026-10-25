@@ -7,7 +7,7 @@ year: 2026
 authors: [（arXiv）]
 venue: arXiv 2026
 arxiv: "2607.03524"
-pdf: https://arxiv.org/pdf/2607.03524
+pdf: 已下载（PDF/）
 line: 生成建模与扩散
 matrix_coords: [FM, 矩匹配(感知), 从头训练]
 tags: [paper, 占位层]

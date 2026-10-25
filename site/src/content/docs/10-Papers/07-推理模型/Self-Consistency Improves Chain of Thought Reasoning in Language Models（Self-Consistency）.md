@@ -9,7 +9,7 @@ arxiv: "2203.11171"
 line: 推理模型
 matrix_coords: [提示触发, 采样聚合, 无奖励(投票)]
 tags: [paper]
-pdf: https://arxiv.org/pdf/2203.11171
+pdf: 已下载（PDF/）
 ---
 
 # Self-Consistency（自洽性）

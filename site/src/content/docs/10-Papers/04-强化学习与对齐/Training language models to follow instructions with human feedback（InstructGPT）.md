@@ -9,7 +9,7 @@ arxiv: "2203.02155"
 line: 强化学习与对齐
 matrix_coords: [成对比较, RL目标(在线), 有]
 tags: [paper]
-pdf: https://arxiv.org/pdf/2203.02155
+pdf: 已下载（PDF/）
 ---
 
 # InstructGPT

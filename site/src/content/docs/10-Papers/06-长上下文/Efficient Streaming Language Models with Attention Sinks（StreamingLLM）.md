@@ -9,7 +9,7 @@ arxiv: "2309.17453"
 line: 长上下文
 matrix_coords: [系统/流式, 注意力结构层, 注意力汇]
 tags: [paper]
-pdf: https://arxiv.org/pdf/2309.17453
+pdf: 已下载（PDF/）
 ---
 
 # StreamingLLM（Attention Sink）

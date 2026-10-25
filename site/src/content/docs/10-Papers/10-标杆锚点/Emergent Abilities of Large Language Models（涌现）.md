@@ -9,7 +9,7 @@ arxiv: "2206.07682"
 line: 标杆锚点
 matrix_coords: [全注意力, 缩放律, 无状态]
 tags: [paper]
-pdf: https://arxiv.org/pdf/2206.07682
+pdf: 已下载（PDF/）
 ---
 
 # 涌现能力（Emergent Abilities）

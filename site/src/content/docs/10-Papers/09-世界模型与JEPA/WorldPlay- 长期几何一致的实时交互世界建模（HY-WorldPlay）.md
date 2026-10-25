@@ -6,7 +6,7 @@ year: 2025
 authors: [Wenqiang Sun, Haiyu Zhang, Haoyuan Wang, Junta Wu, Zehan Wang, Zhenwei Wang, et al.]
 venue: arXiv 2025-12（腾讯混元）
 arxiv: "2512.14614"
-pdf: https://arxiv.org/pdf/2512.14614
+pdf: 已下载（PDF/WorldPlay（HY-WorldPlay）.pdf）
 line: 世界模型与JEPA
 matrix_coords: [实时交互(流式扩散), 显式像素, 可操作(键鼠)]
 tags: [paper]
@@ -44,8 +44,6 @@ Context Forcing 的对齐目标（示意）：
 - ← HY-World 1.5 框架（腾讯混元系）；
 - ≡ 蒸馏侧与 [Causal Forcing](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Causal Forcing- 自回归扩散蒸馏的正确姿势（Causal Forcing）) 平行（他们理论派、WorldPlay 工程派）；
 - → 后继：[WorldCompass](/ai-fa/explore/10-Papers/09-世界模型与JEPA/WorldCompass- 强化学习训练长视野世界模型（WorldCompass）)（RL 后训练宿主）、minWM（框架化适配）。
-- ≡ 驾驶域对应物（260925）：[HelloWorld](/ai-fa/explore/10-Papers/02-生成建模与扩散/HelloWorld Towards Practical Applications of Generative Driving World Models)（2B 驾驶生成 WM 系统：块因果+自 rollout 对齐+20→4 步蒸馏——同款「因果教师→部署态对齐→少步蒸馏」配方在车队 rigs 约束下的实例）；
-- ≡ 蒸馏失配第三家处方（260928）：[DyMD](/ai-fa/explore/10-Papers/02-生成建模与扩散/DyMD Preserving Interaction Dynamics through Distribution Matching Distillation in Few-Step Video Wo)（DMD 蒸馏压交互动态的机制诊断：教师模式锁死+批评家拟合滞后→自适应重加噪+难度加权追踪——与 Context Forcing 同治「开环蒸馏失配」病根）。
 
 ## 6. 影响后续
 
@@ -55,4 +53,3 @@ Context Forcing 的对齐目标（示意）：
 
 流式 AR 扩散（[Diffusion Forcing- Next-token Prediction Meets Full-Sequence Diffusion](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Diffusion Forcing- Next-token Prediction Meets Full-Sequence Diffusion（Diffusion Forcing）)）；上下文记忆与误差漂移（对比我们的 E1_实验数据台账 尸检节）。
 
-- → 公式链补记（2601007）：[扩散条件去噪](/ai-fa/explore/30-Formulas/扩散条件去噪)（动作条件去噪=实时交互 WM 的转移核）

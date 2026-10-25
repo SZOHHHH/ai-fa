@@ -9,7 +9,7 @@ arxiv: "1909.10351"
 line: 后处理与压缩
 matrix_coords: [知识(行为), 蒸馏, 微调期]
 tags: [paper]
-pdf: https://arxiv.org/pdf/1909.10351
+pdf: 已下载（PDF/）
 ---
 
 # TinyBERT

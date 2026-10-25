@@ -6,7 +6,7 @@ year: 2026
 authors: [Zakariyya, Brewster]
 venue: 待核（占位层，来自 arXiv 2026-09-09）
 arxiv: "2609.09971v1"
-pdf: https://arxiv.org/pdf/2609.09971v1
+pdf: 已下载（PDF/）
 line: 后处理
 matrix_coords: 待评
 tags: [paper, 占位层]

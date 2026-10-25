@@ -6,7 +6,7 @@ year: 2026
 authors: [Quoc-Vinh, Lai-Dang]
 venue: 待核（占位层，来自 arXiv 2026-09-14）
 arxiv: "2609.15471v1"
-pdf: https://arxiv.org/pdf/2609.15471v1
+pdf: 已下载（PDF/）
 line: 强化学习与对齐
 matrix_coords: 待评
 tags: [paper, 占位层]

@@ -7,7 +7,7 @@ year: 2024
 authors: [（arXiv，NeurIPS 2025）]
 venue: arXiv 2024
 arxiv: "2411.19477"
-pdf: https://arxiv.org/pdf/2411.19477
+pdf: 已下载（PDF/）
 line: 推理模型
 matrix_coords: [测试时延长, 采样聚合, 理论]
 tags: [paper, 占位层]

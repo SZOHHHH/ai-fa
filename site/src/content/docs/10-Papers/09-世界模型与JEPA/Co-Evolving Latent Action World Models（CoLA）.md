@@ -7,7 +7,7 @@ year: 2025
 authors: [（arXiv）]
 venue: arXiv 2025
 arxiv: "2510.26433"
-pdf: https://arxiv.org/pdf/2510.26433
+pdf: 已下载（PDF/）
 line: 世界模型与JEPA
 matrix_coords: [隐式(视频自监督), 潜在状态, 可操作(动作条件)]
 tags: [paper, 占位层]

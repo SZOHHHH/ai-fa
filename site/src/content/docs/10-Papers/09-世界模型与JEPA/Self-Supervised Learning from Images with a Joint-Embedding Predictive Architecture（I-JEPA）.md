@@ -6,7 +6,7 @@ year: 2023
 authors: [Mahmoud Assran et al. (Meta)]
 venue: CVPR 2024
 arxiv: "2301.08243"
-pdf: https://arxiv.org/pdf/2301.08243
+pdf: 已下载（PDF/）
 line: 世界模型与JEPA
 matrix_coords: [特征预测(JEPA系), 潜在状态, 纯离线]
 tags: [paper]

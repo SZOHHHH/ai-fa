@@ -9,7 +9,7 @@ arxiv: "2102.05918"
 line: 多模态
 matrix_coords: [对比接口, 对比(InfoNCE), 接口级]
 tags: [paper]
-pdf: https://arxiv.org/pdf/2102.05918
+pdf: 已下载（PDF/）
 ---
 
 # ALIGN

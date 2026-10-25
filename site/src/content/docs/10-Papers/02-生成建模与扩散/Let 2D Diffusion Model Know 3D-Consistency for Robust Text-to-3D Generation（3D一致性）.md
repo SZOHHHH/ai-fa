@@ -7,7 +7,7 @@ year: 2023
 authors: [arXiv]
 venue: arXiv 2023
 arxiv: "2303.07937"
-pdf: https://arxiv.org/pdf/2303.07937
+pdf: 已下载（PDF/）
 line: 生成建模与扩散
 matrix_coords: [扩散, —, 3D域]
 tags: [paper, 占位层]

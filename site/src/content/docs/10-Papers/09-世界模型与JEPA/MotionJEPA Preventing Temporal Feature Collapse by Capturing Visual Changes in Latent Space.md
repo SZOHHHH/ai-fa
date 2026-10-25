@@ -6,7 +6,7 @@ year: 2026
 authors: [Markus Karmann, Shile Li, Christian Internò, et al.]
 venue: arXiv 2026
 arxiv: "2609.23881v1"
-pdf: https://arxiv.org/pdf/2609.23881v1
+pdf: 已下载（PDF/）
 line: 世界模型与JEPA
 matrix_coords: [特征预测(JEPA系), 潜在状态, 免标签(差分自监督)]
 tags: [paper]

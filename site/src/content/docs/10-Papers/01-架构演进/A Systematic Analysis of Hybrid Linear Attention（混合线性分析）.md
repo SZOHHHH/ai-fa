@@ -7,7 +7,7 @@ year: 2025
 authors: [（arXiv）]
 venue: arXiv 2025
 arxiv: "2507.06457"
-pdf: https://arxiv.org/pdf/2507.06457
+pdf: 已下载（PDF/）
 line: 架构演进
 matrix_coords: [混合, —, —]
 tags: [paper, 占位层]

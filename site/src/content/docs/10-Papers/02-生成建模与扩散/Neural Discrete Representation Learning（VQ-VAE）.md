@@ -9,7 +9,7 @@ arxiv: "1711.00937"
 line: 生成建模与扩散
 matrix_coords: [变分, 离散码本, ELBO重加权]
 tags: [paper]
-pdf: https://arxiv.org/pdf/1711.00937
+pdf: 已下载（PDF/）
 ---
 
 # Neural Discrete Representation Learning（VQ-VAE）

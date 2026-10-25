@@ -9,7 +9,7 @@ arxiv: "2209.03003"
 line: 生成建模与扩散
 matrix_coords: [流, 像素空间, 回归(CFM)]
 tags: [paper]
-pdf: https://arxiv.org/pdf/2209.03003
+pdf: 已下载（PDF/）
 ---
 
 # Rectified Flow（矩形流）

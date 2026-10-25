@@ -6,7 +6,7 @@ year: 2026
 authors: [Xin Zhou, Cong Miao]
 venue: 技术报告（Astronex Robotics + 南京信息工程大学，2026-09-17）
 arxiv: "2609.20034v1"
-pdf: https://arxiv.org/pdf/2609.20034v1
+pdf: 已下载（PDF/）
 line: 生成建模与扩散
 matrix_coords: 扩散蒸馏×世界模型（交叉格）
 tags: [paper]

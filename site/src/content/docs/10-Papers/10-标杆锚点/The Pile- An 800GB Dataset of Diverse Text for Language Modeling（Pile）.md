@@ -7,7 +7,7 @@ year: 2021
 authors: [arXiv]
 venue: arXiv 2021
 arxiv: "2101.00027"
-pdf: https://arxiv.org/pdf/2101.00027
+pdf: 已下载（PDF/）
 line: 标杆锚点
 matrix_coords: [—, —, —]
 tags: [paper, 占位层]

@@ -9,7 +9,7 @@ arxiv: "2401.10020"
 line: 强化学习与对齐
 matrix_coords: [自我奖励, BT排序损失, 有]
 tags: [paper]
-pdf: https://arxiv.org/pdf/2401.10020
+pdf: 已下载（PDF/）
 ---
 
 # Self-Rewarding Language Models

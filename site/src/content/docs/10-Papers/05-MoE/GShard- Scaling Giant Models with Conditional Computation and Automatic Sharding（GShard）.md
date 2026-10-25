@@ -9,7 +9,7 @@ arxiv: "2006.16668"
 line: MoE
 matrix_coords: [token级, Top-K稀疏路由, 辅助均衡损失]
 tags: [paper]
-pdf: https://arxiv.org/pdf/2006.16668
+pdf: 已下载（PDF/）
 ---
 
 # GShard
@@ -39,11 +39,9 @@ MoE 装进 Transformer（每两层替换 FFN 为 MoE）+ 自动分片编译器�
 
 - 扩展了 [Outrageously Large Neural Networks - The Sparsely-Gated Mixture-of-Experts Layer](/ai-fa/explore/10-Papers/03-后处理/Outrageously Large Neural Networks- The Sparsely-Gated Mixture-of-Experts Layer（稀疏MoE）) 到 Transformer 与机器翻译
 - 前置于 [Switch Transformers - Scaling to Trillion Parameter Models with Simple and Efficient Sparsity](/ai-fa/explore/10-Papers/05-MoE/Switch Transformers- Scaling to Trillion Parameter Models with Simple and Efficient Spars（Switch）)（简化其启发式）
-- → 后继（260925）：[EQB+LEI](/ai-fa/explore/10-Papers/05-MoE/Exact Quantile Balancing and Load-Error Injection for Mixture-of-Experts)——LEI 把局部负载误差直接注进路由分数梯度，同等质量下胜 GShard 损失（均衡机制从辅助损失走向梯度注入）
 
 ## 6. 影响与后续
 
-- → 后继补记（261009）：[Zepp](/ai-fa/explore/10-Papers/05-MoE/Zepp Accelerating Distributed MoE Serving under Relaxed Balance Constraints)——serving 侧把「均衡」从目标降为约束、直攻瓶颈通信（EP 均衡范式的系统级翻案）。
 - MoE 训练工程范式（容量/丢弃/辅助损失三件套）定型
 - 自动并行编译思想影响 GSPMD/Megatron 等
 

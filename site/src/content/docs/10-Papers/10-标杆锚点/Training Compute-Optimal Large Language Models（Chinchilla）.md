@@ -9,7 +9,7 @@ arxiv: "2203.15556"
 line: 标杆锚点
 matrix_coords: [全注意力, 缩放律, 无状态]
 tags: [paper]
-pdf: https://arxiv.org/pdf/2203.15556
+pdf: 已下载（PDF/）
 ---
 
 # Chinchilla（算力最优）

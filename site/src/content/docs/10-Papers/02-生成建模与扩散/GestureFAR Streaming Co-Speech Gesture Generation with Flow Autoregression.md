@@ -6,7 +6,7 @@ year: 2026
 authors: [Pinxin Liu, Haiyang Liu, Jiahao Luo, et al.]
 venue: arXiv 2026
 arxiv: "2609.21576v1"
-pdf: https://arxiv.org/pdf/2609.21576v1
+pdf: 已下载（PDF/）
 line: 生成建模与扩散
 matrix_coords: [流匹配(AR连续潜变量), 少步蒸馏(仅头部), 流式生成]
 tags: [paper]

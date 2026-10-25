@@ -6,7 +6,7 @@ year: 2024
 authors: [Lu et al. (Sakana)]
 venue: arXiv 2024
 arxiv: "2408.06292"
-pdf: https://arxiv.org/pdf/2408.06292
+pdf: 已下载（PDF/）
 line: 推理模型
 matrix_coords: [—, —, —]
 tags: [paper]

@@ -6,7 +6,7 @@ year: 2026
 authors: [An Zhao, Shengyuan Zhang, Zhongjian Sun, Yixiang Zhou, Zejian Li, Ling Yang, Tianrun Chen, Lingyun Sun]
 venue: ICML 2026（PMLR 306）
 arxiv: "（投稿版，GitHub: happyw1nd/MFD）"
-pdf: ICML 2026（PMLR 306）proceedings（用户为本文三作，参与实验部分）
+pdf: 已入库（用户为本文三作，参与实验部分）
 line: 生成建模与扩散
 matrix_coords: [FM, 蒸馏, 蒸馏预训练]
 tags: [paper]

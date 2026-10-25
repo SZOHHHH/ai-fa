@@ -9,7 +9,7 @@ arxiv: "2304.06767"
 line: 强化学习与对齐
 matrix_coords: [隐式偏好, RL目标(在线), 有]
 tags: [paper]
-pdf: https://arxiv.org/pdf/2304.06767
+pdf: 已下载（PDF/）
 ---
 
 # RAFT（奖励排序微调）

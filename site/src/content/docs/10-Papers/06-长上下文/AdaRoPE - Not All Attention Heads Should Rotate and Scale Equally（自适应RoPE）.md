@@ -6,7 +6,7 @@ year: 2026
 authors: [Shaowen Wang, Yuke Zheng, Tansheng Zhu, Shuang Chen, Shaofan Liu, Suncong Zheng, Jian Li]
 venue: arXiv v3 2026-09-11（cs.AI+cs.CL，蚂蚁/清华系）
 arxiv: "2607.19363"
-pdf: https://arxiv.org/pdf/2607.19363
+pdf: 已下载（PDF/）
 line: 长上下文
 matrix_coords: 位置编码×逐头自适应×长度外推
 tags: [paper, 轮换命中, 长上下文]

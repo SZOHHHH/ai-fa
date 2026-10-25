@@ -6,7 +6,7 @@ year: 2024
 authors: [De et al. (DeepMind)]
 venue: ICML 2024
 arxiv: "2402.19427"
-pdf: https://arxiv.org/pdf/2402.19427
+pdf: 已下载（PDF/）
 line: 架构演进
 matrix_coords: [混合, —, 混合状态]
 tags: [paper]

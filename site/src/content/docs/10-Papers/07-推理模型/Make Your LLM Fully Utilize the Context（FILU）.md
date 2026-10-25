@@ -6,7 +6,7 @@ year: 2024
 authors: [Li et al.]
 venue: arXiv 2024
 arxiv: "2404.16811"
-pdf: https://arxiv.org/pdf/2404.16811
+pdf: 已下载（PDF/）
 line: 推理模型
 matrix_coords: [提示触发, —, —]
 tags: [paper]

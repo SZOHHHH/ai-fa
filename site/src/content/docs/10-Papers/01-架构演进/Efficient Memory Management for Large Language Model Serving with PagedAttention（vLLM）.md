@@ -6,7 +6,7 @@ year: 2023
 authors: [Woosuk Kwon et al. (UC Berkeley)]
 venue: SOSP 2023
 arxiv: "2309.06180"
-pdf: https://arxiv.org/pdf/2309.06180
+pdf: 已下载（PDF/）
 line: 架构演进
 matrix_coords: [全注意力, IO感知, 无状态]
 tags: [paper]

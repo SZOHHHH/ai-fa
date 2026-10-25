@@ -6,7 +6,7 @@ year: 2026
 authors: [Abderrahmane, Issam]
 venue: 待核（占位层，来自 arXiv 2026-09-16）
 arxiv: "2609.18516v1"
-pdf: https://arxiv.org/pdf/2609.18516v1
+pdf: 已下载（PDF/）
 line: 后处理
 matrix_coords: 待评
 tags: [paper, 占位层]

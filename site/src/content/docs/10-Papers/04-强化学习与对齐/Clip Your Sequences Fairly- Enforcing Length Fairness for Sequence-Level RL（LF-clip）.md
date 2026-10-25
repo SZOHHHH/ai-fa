@@ -7,7 +7,7 @@ year: 2025
 authors: [（arXiv）]
 venue: arXiv 2025
 arxiv: "2509.09177"
-pdf: https://arxiv.org/pdf/2509.09177
+pdf: 已下载（PDF/）
 line: 强化学习与对齐
 matrix_coords: [GSPO, 硬裁剪, 序列级]
 tags: [paper, 占位层]

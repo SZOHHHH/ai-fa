@@ -6,7 +6,7 @@ year: 2026
 authors: [Hongzhou Zhu, Min Zhao, Guande He, Hang Su, Chongxuan Li, Jun Zhu]
 venue: ICML 2026
 arxiv: "2602.02214"
-pdf: https://arxiv.org/pdf/2602.02214
+pdf: 已下载（PDF/Causal Forcing（因果强制蒸馏）.pdf）
 line: 世界模型与JEPA
 matrix_coords: [蒸馏加速(扩散→少步AR), 显式像素, 可操作(动作条件)]
 tags: [paper]
@@ -43,8 +43,6 @@ tags: [paper]
 - ← 继承 [Diffusion Forcing- Next-token Prediction Meets Full-Sequence Diffusion](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Diffusion Forcing- Next-token Prediction Meets Full-Sequence Diffusion（Diffusion Forcing）)（逐帧噪声框架）与 Self Forcing（AR 实时化，未入库）；
 - ≡ 平行于我们的 EMDMD 线：同为"DMD 系蒸馏+多模态保真"，差别=他们的考场是视频指标，我们的考场是 RL 分数；
 - → 后继：Causal Forcing++（2605.15141，规模化）、[minWM](/ai-fa/explore/10-Papers/09-世界模型与JEPA/minWM- 全栈实时交互世界模型框架（minWM）)（框架化）。
-- → 后继补记（261024）：[CADRE](/ai-fa/explore/10-Papers/09-世界模型与JEPA/Rethinking Video Autoencoders for Interactive World Models)（蒸馏对象从 WM 挪到解码器：一阶段渐进自蒸馏流图做单/少步解码、WM 本体仍走 DF——与本文"AR 蒸馏踩单射性坑"互补：解码器蒸馏无 teacher-student 架构 gap，故无此坑）。
-- ≡ 驾驶域同配方（260925）：[HelloWorld](/ai-fa/explore/10-Papers/02-生成建模与扩散/HelloWorld Towards Practical Applications of Generative Driving World Models)——块因果生成+打包一致性训练+自强制 DMD 的 20→4 步蒸馏，自认沿用 LingBot-World-Infinity 的「因果教师→一致性蒸馏→自 rollout DMD」高层序列。
 
 ## 6. 影响后续
 

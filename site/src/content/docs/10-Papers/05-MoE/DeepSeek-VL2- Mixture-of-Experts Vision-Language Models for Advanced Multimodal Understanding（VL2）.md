@@ -6,7 +6,7 @@ year: 2024
 authors: [Wang et al. (DeepSeek)]
 venue: arXiv 2024
 arxiv: "2412.10302"
-pdf: https://arxiv.org/pdf/2412.10302
+pdf: 已下载（PDF/）
 line: MoE
 matrix_coords: [投影接口, 生成(条件LM), 接口级]
 tags: [paper]

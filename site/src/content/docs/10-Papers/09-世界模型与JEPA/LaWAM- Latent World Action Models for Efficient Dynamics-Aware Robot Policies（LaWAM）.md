@@ -7,7 +7,7 @@ year: 2026
 authors: [（arXiv）]
 venue: arXiv 2026
 arxiv: "2606.15768"
-pdf: https://arxiv.org/pdf/2606.15768
+pdf: 已下载（PDF/）
 line: 世界模型与JEPA
 matrix_coords: [隐式(视频自监督), 潜在状态, 可操作(动作条件)]
 tags: [paper, 占位层]
@@ -43,8 +43,6 @@ $$
 
 ## 6. 影响与占位意义
 
-- → 后继补记（261009）：[LeWAM](/ai-fa/explore/10-Papers/09-世界模型与JEPA/LeWAM A JEPA World Action Model with Diffusion-Steering-Based MPC)——潜空间 WAM 再进一步：四模式（前向/后向/逆动力学/策略）联训 + 噪声空间 MPC（Diffusion Steering）。
-- → 后继补记（261011）：[MiniWAM: Learning Compact Future Targets for Efficient World-Action Modeling](/ai-fa/explore/10-Papers/09-世界模型与JEPA/MiniWAM Learning Compact Future Targets for Efficient World-Action Modeling)——潜目标 WAM 效率线的直接推进：PRISM 用逆动力学+重建塑形紧凑未来表征（65× token 压缩、0.25B 打平 6B、训练最高 8× 提速）。
 潜空间规划的 2026 占位（避像素生成的工程路线）。
 
 ---

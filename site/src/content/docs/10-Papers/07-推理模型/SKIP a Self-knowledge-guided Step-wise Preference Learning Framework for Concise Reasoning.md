@@ -6,7 +6,7 @@ year: 2026
 authors: [Qinhong, Lin]
 venue: 待核（占位层，来自 arXiv 2026-09-15）
 arxiv: "2609.17019v1"
-pdf: https://arxiv.org/pdf/2609.17019v1
+pdf: 已下载（PDF/）
 line: 推理模型
 matrix_coords: 待评
 tags: [paper, 占位层]
@@ -30,7 +30,7 @@ layer: 占位
 （待精读）
 
 ## 5. 与前作/矩阵关系
-- 线锚：[思维链（CoT）](/ai-fa/explore/40-Concepts/思维链（CoT）)（压缩对象：过度思考）· [CoT-Valve- Length-Compressible Chain-of-Thought Tuning](/ai-fa/explore/10-Papers/07-推理模型/CoT-Valve- Length-Compressible Chain-of-Thought Tuning（CoT-Valve）)（长度压缩同族：CoT-Valve 学连续阀门参数控长，本文用步级偏好按"自我知识"自适应）· [Sequential Beats Joint: On the Interplay between On-Policy Distillation and RLVR](/ai-fa/explore/10-Papers/07-推理模型/Sequential Beats Joint On the Interplay between On-Policy Distillation and RLVR)（训练范式近邻：偏好学习与蒸馏/RL 的组合）· [OBC-Prune: Outcome-Based Calibration for Large Reasoning Model Pruning](/ai-fa/explore/10-Papers/07-推理模型/OBC-Prune Outcome-Based Calibration for Large Reasoning Model Pruning)（同日同族：推理开销削减的两条路——训练侧少想 vs 压缩侧少参数）· [CounterRoute: Self-Routed Reasoning via Hierarchical Counterfactual Credit Assignment](/ai-fa/explore/10-Papers/07-推理模型/CounterRoute Self-Routed Reasoning via Hierarchical Counterfactual Credit Assignment)（后继同题：RL 单策略联合学"深思/直答"模式路由——从步级偏好到在线路由）
+- 线锚：[思维链（CoT）](/ai-fa/explore/40-Concepts/思维链（CoT）)（压缩对象：过度思考）· [CoT-Valve- Length-Compressible Chain-of-Thought Tuning](/ai-fa/explore/10-Papers/07-推理模型/CoT-Valve- Length-Compressible Chain-of-Thought Tuning（CoT-Valve）)（长度压缩同族：CoT-Valve 学连续阀门参数控长，本文用步级偏好按"自我知识"自适应）· [Sequential Beats Joint: On the Interplay between On-Policy Distillation and RLVR](/ai-fa/explore/10-Papers/07-推理模型/Sequential Beats Joint On the Interplay between On-Policy Distillation and RLVR)（训练范式近邻：偏好学习与蒸馏/RL 的组合）· [OBC-Prune: Outcome-Based Calibration for Large Reasoning Model Pruning](/ai-fa/explore/10-Papers/07-推理模型/OBC-Prune Outcome-Based Calibration for Large Reasoning Model Pruning)（同日同族：推理开销削减的两条路——训练侧少想 vs 压缩侧少参数）
 
 ## 6. 影响后续
 （待精读）

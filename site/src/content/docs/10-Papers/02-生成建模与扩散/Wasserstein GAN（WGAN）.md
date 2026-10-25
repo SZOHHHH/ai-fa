@@ -9,7 +9,7 @@ arxiv: "1701.07875"
 line: 生成建模与扩散
 matrix_coords: [对抗, 像素空间, 对抗(矩匹配)]
 tags: [paper]
-pdf: https://arxiv.org/pdf/1701.07875
+pdf: 已下载（PDF/）
 ---
 
 # Wasserstein GAN（WGAN）

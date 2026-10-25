@@ -6,7 +6,7 @@ year: 2019
 authors: [Julian Schrittwieser, Ioannis Antonoglou, Rosemary Jane Silva, David Silver 等]
 venue: Nature 2020
 arxiv: "1911.08265"
-pdf: https://arxiv.org/pdf/1911.08265
+pdf: 已下载（PDF/）
 line: 世界模型与JEPA
 matrix_coords: [奖励驱动(RL内部模型), 潜在状态, 游戏控制(RL)]
 tags: [paper]

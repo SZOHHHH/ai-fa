@@ -6,7 +6,7 @@ year: 2023
 authors: [Zhou et al. (Meta)]
 venue: NeurIPS 2023
 arxiv: "2305.11206"
-pdf: https://arxiv.org/pdf/2305.11206
+pdf: 已下载（PDF/）
 line: 强化学习与对齐
 matrix_coords: [隐式偏好, RL目标(在线), 有]
 tags: [paper]

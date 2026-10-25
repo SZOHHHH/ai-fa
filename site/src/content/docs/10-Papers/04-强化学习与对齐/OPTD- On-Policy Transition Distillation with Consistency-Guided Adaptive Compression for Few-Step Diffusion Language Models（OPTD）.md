@@ -7,7 +7,7 @@ year: 2026
 authors: [Xiaocheng Lu et al.]
 venue: arXiv 2026
 arxiv: "2608.02942"
-pdf: https://arxiv.org/pdf/2608.02942
+pdf: 已下载（PDF/）
 line: 强化学习与对齐
 matrix_coords: [学生轨迹, 前缀选择, token级]
 tags: [paper, 占位层]

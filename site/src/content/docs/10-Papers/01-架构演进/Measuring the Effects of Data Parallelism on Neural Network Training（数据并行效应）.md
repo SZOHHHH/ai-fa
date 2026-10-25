@@ -6,7 +6,7 @@ year: 2018
 authors: [Shallue et al. (Google)]
 venue: arXiv 2018
 arxiv: "1811.03600"
-pdf: https://arxiv.org/pdf/1811.03600
+pdf: 已下载（PDF/）
 line: 架构演进
 matrix_coords: [全注意力, —, —]
 tags: [paper]

@@ -9,7 +9,7 @@ arxiv: "2310.12036"
 line: 强化学习与对齐
 matrix_coords: [成对比较, 闭式/单侧, 有]
 tags: [paper]
-pdf: https://arxiv.org/pdf/2310.12036
+pdf: 已下载（PDF/）
 ---
 
 # IPO（偏好学习的一般理论范式）

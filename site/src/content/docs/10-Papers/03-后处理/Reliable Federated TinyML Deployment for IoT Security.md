@@ -6,7 +6,7 @@ year: 2026
 authors: [Younsoo Park, et al.]
 venue: arXiv 2026
 arxiv: "2609.27202v1"
-pdf: https://arxiv.org/pdf/2609.27202v1
+pdf: 已下载（PDF/）
 line: 后处理
 matrix_coords: [联邦学习×TinyML, 模型压缩, IoT入侵检测, 隐私]
 tags: [paper]

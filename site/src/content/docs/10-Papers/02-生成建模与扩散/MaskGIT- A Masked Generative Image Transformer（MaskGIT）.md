@@ -6,7 +6,7 @@ year: 2022
 authors: [Chang et al. (Google)]
 venue: CVPR 2022
 arxiv: "2202.04200"
-pdf: https://arxiv.org/pdf/2202.04200
+pdf: 已下载（PDF/）
 line: 生成建模与扩散
 matrix_coords: [变分, 离散码本, AR先验]
 tags: [paper]

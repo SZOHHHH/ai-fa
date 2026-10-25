@@ -6,7 +6,7 @@ year: 2024
 authors: [Lambert et al. (AI2)]
 venue: NeurIPS 2024 D&B
 arxiv: "2403.13787"
-pdf: https://arxiv.org/pdf/2403.13787
+pdf: 已下载（PDF/）
 line: 强化学习与对齐
 matrix_coords: [评分/排序, —, —]
 tags: [paper]

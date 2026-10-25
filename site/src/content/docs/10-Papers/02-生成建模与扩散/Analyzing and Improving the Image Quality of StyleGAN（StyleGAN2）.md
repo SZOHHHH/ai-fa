@@ -7,7 +7,7 @@ year: 2019
 authors: [Tero Karras, Samuli Laine, Miika Aittala, Janne Hellsten, Jaakko Lehtinen, Timo Aila]
 venue: arXiv 2019
 arxiv: "1912.04958"
-pdf: https://arxiv.org/pdf/1912.04958
+pdf: 已下载（PDF/）
 line: false
 matrix_coords: [对抗, 潜空间, —]
 tags: [paper, 占位层]

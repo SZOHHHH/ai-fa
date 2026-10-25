@@ -6,7 +6,7 @@ year: 2026
 authors: [Fred Zhangzhi Peng, Kaiwen Zheng, Anru R. Zhang]
 venue: arXiv 2609.04531（Duke+清华，2026-09-03）
 arxiv: "2609.04531v1"
-pdf: https://arxiv.org/pdf/2609.04531v1
+pdf: 已下载（PDF/）
 line: 生成建模与扩散
 matrix_coords: [扩散/连续状态, token嵌入空间, 蒸馏(分布匹配+配对轨迹)]
 tags: [paper]
@@ -66,5 +66,3 @@ tags: [paper]
 > 谱系枢纽：[DMD](/ai-fa/explore/10-Papers/02-生成建模与扩散/One-step Diffusion with Distribution Matching Distillation（DMD）)（蒸馏骨架入口）
 > 近邻同族：[DMD2](/ai-fa/explore/10-Papers/02-生成建模与扩散/Improved Distribution Matching Distillation for Fast Image Synthesis（DMD2）) · [FS-DFM](/ai-fa/explore/10-Papers/02-生成建模与扩散/Trajectory as the Teacher- Few-Step Discrete Flow Matching via Energy-Navigated Distillation（FS-DFM）) · [连续/离散扩散 LM 邻居](/ai-fa/explore/10-Papers/02-生成建模与扩散/From Truncation to Commitment Persistent Context in Uniform Discrete Diffusion)
 > 数学根基：[知识蒸馏](/ai-fa/explore/40-Concepts/知识蒸馏) · [NFE](/ai-fa/explore/40-Concepts/NFE（函数求值次数）) · [Score函数](/ai-fa/explore/40-Concepts/Score函数) · [重参数化](/ai-fa/explore/40-Concepts/重参数化)
-
-- → 后继补记（261025）：[Lafa](/ai-fa/explore/10-Papers/02-生成建模与扩散/Large Flow Language Models)（连续流 LM 的 8B 级落地：AR 适配+块内异步流+流图蒸馏，<30B token 训练、自投机解码 2.54× 吞吐——本文 DMD 系蒸馏之外的另一条少步化路线：不蒸馏多步流，而是原生训练+semigroup 流图自蒸馏）

@@ -9,7 +9,7 @@ arxiv: "2309.00071"
 line: 长上下文
 matrix_coords: [位置外推, 位置表示层, 旋转角度缩放]
 tags: [paper]
-pdf: https://arxiv.org/pdf/2309.00071
+pdf: 已下载（PDF/）
 ---
 
 # YaRN

@@ -7,7 +7,7 @@ year: 2024
 authors: [Zhao et al.]
 venue: arXiv 2024
 arxiv: "2406.03293"
-pdf: https://arxiv.org/pdf/2406.03293
+pdf: 已下载（PDF/）
 line: 生成建模与扩散
 matrix_coords: [FM, 潜空间, —]
 tags: [paper, 占位层]

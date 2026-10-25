@@ -6,7 +6,7 @@ year: 2017
 authors: [Loshchilov & Hutter]
 venue: ICLR 2019
 arxiv: "1711.05101"
-pdf: https://arxiv.org/pdf/1711.05101
+pdf: 已下载（PDF/）
 line: 架构演进
 matrix_coords: [—, 优化器, —]
 tags: [paper]

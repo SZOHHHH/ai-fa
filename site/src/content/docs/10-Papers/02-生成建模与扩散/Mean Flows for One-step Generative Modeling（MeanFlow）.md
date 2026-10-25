@@ -9,7 +9,7 @@ arxiv: "2505.13447"
 line: 生成建模与扩散
 matrix_coords: [FM, 平均速度, 从头训练]
 tags: [paper]
-pdf: https://arxiv.org/pdf/2505.13447
+pdf: 已下载（PDF/）
 ---
 
 # MeanFlow（平均流一步生成）

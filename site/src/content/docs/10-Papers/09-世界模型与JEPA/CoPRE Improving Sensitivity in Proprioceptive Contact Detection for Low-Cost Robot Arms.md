@@ -6,7 +6,7 @@ year: 2026
 authors: [Yuxiao Zhu, Jinzhou Li, Yifei Dong, Muhammad Suhail, Chunyuan Yang, et al.]
 venue: arXiv 2026（Duke/KTH/CMU）
 arxiv: "2609.27381v1"
-pdf: https://arxiv.org/pdf/2609.27381v1
+pdf: 已下载（PDF/）
 line: 世界模型与JEPA
 matrix_coords: [残差式接触检测, 本体感知(无力/触传感器), 无接触数据自监督, 机器人操作]
 tags: [paper]
@@ -55,7 +55,6 @@ tags: [paper]
 
 ## 5. 与前作/矩阵关系
 
-- ↔ 触觉恢复线第三卡（260925）：[DA-GRD](/ai-fa/explore/10-Papers/04-强化学习与对齐/DA-GRD Decision-Aware Grasp-Relevant Disambiguation for tactile recovery under perception-to-executi)——视觉失效后 SE(2) 粒子信念+决策感知触觉探针恢复抓取（不学习、显式信念路线）；与本卡「学习式残差」、DexTacWAM「视触觉 WM」合成三条技术路线。
 - ←残差检测传统（model-based 残差观测器/动量观测器）的学习化：模型误差与摩擦不再需要辨识，但保留运动学模型（雅可比）做聚合
 
 ## 6. 影响后续

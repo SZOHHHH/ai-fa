@@ -9,7 +9,7 @@ arxiv: "2509.25127"
 line: 生成建模与扩散
 matrix_coords: [FM, score蒸馏, 蒸馏预训练]
 tags: [paper]
-pdf: https://arxiv.org/pdf/2509.25127
+pdf: 已下载（PDF/）
 ---
 
 # Score Distillation for FM

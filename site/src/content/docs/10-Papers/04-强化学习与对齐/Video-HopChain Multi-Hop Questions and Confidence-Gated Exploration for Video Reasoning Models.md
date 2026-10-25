@@ -6,7 +6,7 @@ year: 2026
 authors: [Trung Nguyen Quang, Yuhao Dong, Shuo Sun, et al.]
 venue: arXiv 2026
 arxiv: "2609.25773v1"
-pdf: https://arxiv.org/pdf/2609.25773v1
+pdf: 已下载（PDF/）
 line: 强化学习与对齐
 matrix_coords: [RLVR数据合成(多跳可验证), GRPO修复(零方差组), 视频推理]
 tags: [paper]

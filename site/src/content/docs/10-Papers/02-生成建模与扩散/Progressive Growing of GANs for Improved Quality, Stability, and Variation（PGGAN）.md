@@ -6,7 +6,7 @@ year: 2017
 authors: [Karras et al. (NVIDIA)]
 venue: ICLR 2018
 arxiv: "1710.10196"
-pdf: https://arxiv.org/pdf/1710.10196
+pdf: 已下载（PDF/）
 line: 生成建模与扩散
 matrix_coords: [对抗, 像素空间, 渐进训练]
 tags: [paper]

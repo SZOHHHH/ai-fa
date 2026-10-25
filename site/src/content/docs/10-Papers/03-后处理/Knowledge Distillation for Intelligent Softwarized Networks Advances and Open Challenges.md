@@ -6,7 +6,7 @@ year: 2026
 authors: [Mohamed Ali Zormati, et al.]
 venue: arXiv 2026
 arxiv: "2609.27551v1"
-pdf: https://arxiv.org/pdf/2609.27551v1
+pdf: 已下载（PDF/）
 line: 后处理
 matrix_coords: [知识蒸馏(综述), 网络/边缘部署, 轻量化]
 tags: [paper]

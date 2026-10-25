@@ -6,7 +6,7 @@ year: 2026
 authors: [Mar Gonzàlez I Català, Haitz Sáez de Ocáriz Borde, Davide Murari, et al.]
 venue: arXiv 2609.09030（2026-09-08，剑桥 + Harvey Mudd）
 arxiv: "2609.09030v1"
-pdf: https://arxiv.org/pdf/2609.09030v1
+pdf: 10-Papers/PDF/Answer-Distribution Trajectories - A Stochastic-Dynamics View of LLM Reasoning（ADT）.pdf
 line: 推理模型
 matrix_coords: 待评（轮换线）
 tags: [paper]

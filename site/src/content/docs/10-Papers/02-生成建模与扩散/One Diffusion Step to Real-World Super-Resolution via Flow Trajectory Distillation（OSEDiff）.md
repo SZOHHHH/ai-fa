@@ -7,7 +7,7 @@ year: 2025
 authors: [Wu et al.]
 venue: arXiv 2025
 arxiv: "2502.01993"
-pdf: https://arxiv.org/pdf/2502.01993
+pdf: 已下载（PDF/）
 line: 生成建模与扩散
 matrix_coords: [FM, 蒸馏(轨迹), 蒸馏预训练]
 tags: [paper, 占位层]

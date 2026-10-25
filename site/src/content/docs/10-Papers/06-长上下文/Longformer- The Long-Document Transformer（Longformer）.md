@@ -9,7 +9,7 @@ arxiv: "2004.05150"
 line: 长上下文
 matrix_coords: [稀疏注意力, 注意力结构层, 分块]
 tags: [paper]
-pdf: https://arxiv.org/pdf/2004.05150
+pdf: 已下载（PDF/）
 ---
 
 # Longformer

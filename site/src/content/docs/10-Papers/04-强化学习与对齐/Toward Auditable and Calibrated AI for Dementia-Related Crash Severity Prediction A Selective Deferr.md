@@ -6,7 +6,7 @@ year: 2026
 authors: [Gaurab Chhetri, Anika Baitullah, Subasish Das]
 venue: arXiv 2026
 arxiv: "2609.22694v1"
-pdf: https://arxiv.org/pdf/2609.22694v1
+pdf: 已下载（PDF/）
 line: 强化学习与对齐
 matrix_coords: [决策感知评测(分诊), 校准与选择性推迟, 应用统计(交通安全)]
 tags: [paper]

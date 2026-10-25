@@ -9,7 +9,7 @@ arxiv: "2306.00978"
 line: 后处理与压缩
 matrix_coords: [激活, 量化, 训练后]
 tags: [paper]
-pdf: https://arxiv.org/pdf/2306.00978
+pdf: 已下载（PDF/）
 ---
 
 # AWQ（激活感知量化）

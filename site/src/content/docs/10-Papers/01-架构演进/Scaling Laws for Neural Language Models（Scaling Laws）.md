@@ -9,7 +9,7 @@ arxiv: "2001.08361"
 line: 架构演进
 matrix_coords: [全注意力, 缩放律, 无状态]
 tags: [paper]
-pdf: https://arxiv.org/pdf/2001.08361
+pdf: 已下载（PDF/）
 ---
 
 # Scaling Laws（Kaplan 缩放定律）

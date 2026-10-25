@@ -6,7 +6,7 @@ year: 2022
 authors: [Michael Janner, Yilun Du, Joshua B. Tenenbaum, Sergey Levine]
 venue: ICML 2022（long talk）
 arxiv: "2205.09991"
-pdf: https://arxiv.org/pdf/2205.09991
+pdf: 已下载（PDF/）
 line: 强化学习与对齐
 matrix_coords: [—(决策生成), 规划(扩散序列), 有]
 tags: [paper]

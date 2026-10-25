@@ -7,7 +7,7 @@ year: 2024
 authors: [（arXiv）]
 venue: arXiv 2024
 arxiv: "2412.16906"
-pdf: https://arxiv.org/pdf/2412.16906
+pdf: 已下载（PDF/）
 line: 生成建模与扩散
 matrix_coords: [FM(潜), 蒸馏, 蒸馏预训练]
 tags: [paper, 占位层]

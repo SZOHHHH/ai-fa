@@ -6,7 +6,7 @@ year: 2023
 authors: [Timo Schick et al. (Meta)]
 venue: NeurIPS 2023
 arxiv: "2302.04761"
-pdf: https://arxiv.org/pdf/2302.04761
+pdf: 已下载（PDF/）
 line: 多模态
 matrix_coords: [提示触发, 链, 无奖励(上下文)]
 tags: [paper]

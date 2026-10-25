@@ -9,7 +9,7 @@ arxiv: "2303.08774"
 line: 标杆锚点
 matrix_coords: [全注意力, 缩放律, 无状态]
 tags: [paper]
-pdf: https://arxiv.org/pdf/2303.08774
+pdf: 已下载（PDF/）
 ---
 
 # GPT-4 技术报告

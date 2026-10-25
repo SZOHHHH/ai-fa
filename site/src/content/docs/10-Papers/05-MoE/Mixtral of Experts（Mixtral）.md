@@ -9,7 +9,7 @@ arxiv: "2401.04088"
 line: MoE
 matrix_coords: [token级, Top-K稀疏路由, 辅助均衡损失]
 tags: [paper]
-pdf: https://arxiv.org/pdf/2401.04088
+pdf: 已下载（PDF/）
 ---
 
 # Mixtral

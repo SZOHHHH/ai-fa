@@ -6,7 +6,7 @@ year: 2026
 authors: [Maya Benyas, et al.]
 venue: arXiv 2026
 arxiv: "2609.26899v1"
-pdf: https://arxiv.org/pdf/2609.26899v1
+pdf: 已下载（PDF/）
 line: 后处理
 matrix_coords: [基础模型蒸馏, 硬件加速器部署, 粒子物理/喷注标记, 实时约束]
 tags: [paper]

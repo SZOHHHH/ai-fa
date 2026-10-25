@@ -7,7 +7,7 @@ year: 2025
 authors: [L. Tao et al. (Meta FAIR)]
 venue: arXiv 2025
 arxiv: "2510.07242"
-pdf: https://arxiv.org/pdf/2510.07242
+pdf: 已下载（PDF/）
 line: 强化学习与对齐
 matrix_coords: [学生轨迹+结果信号, 混合散度, 序列级]
 tags: [paper, 占位层]

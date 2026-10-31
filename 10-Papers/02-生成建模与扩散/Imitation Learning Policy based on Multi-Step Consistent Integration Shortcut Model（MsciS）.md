@@ -39,6 +39,7 @@ $$
 ## 5. 与前作/矩阵关系
 
 🚩 shortcut×模仿学习交叉格；→ RS 主线邻域（世界模型蒸馏×策略）
+- ≡ 同问实证（261027）：[[When One Step Is Enough An Empirical Study of Euler Integration in Flow-Matching Policies|When One Step Is Enough]]（跨 6 个流匹配 VLA：训练充分+容量足够时一步 Euler 追平多步——专门的多步一致性目标在大 VLA 域非必需）
 
 
 ## 6. 影响与占位意义

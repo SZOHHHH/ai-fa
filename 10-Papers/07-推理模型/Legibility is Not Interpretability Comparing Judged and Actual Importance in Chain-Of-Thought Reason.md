@@ -33,6 +33,7 @@ layer: 占位
 - 线锚：[[40-Concepts/思维链（CoT）]] · [[40-Concepts/视觉语言模型（VLM）]]（占位挂链，Tier B 精化）
 
 ## 6. 影响后续
+- [[10-Papers/07-推理模型/Does Chain-of-Thought Reliance Follow a Scaling LawLarger Models Follow Their Steps More, Independen|CoT 依赖标度律]]（2026）：25 模型步级篡改实验——CoT 依赖随规模上升并饱和（0.6B 16–18%→14B 97–100%），忠实性测量再下一城
 （待精读）
 
 ## 7. 读前须知

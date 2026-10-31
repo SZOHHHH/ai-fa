@@ -50,6 +50,7 @@ tags: [paper]
 - ≡蒸馏配方同构 [[Causal Forcing- 自回归扩散蒸馏的正确姿势（Causal Forcing）]]：都是"因果状态定义→教师训练→部署态对齐→少步蒸馏"四步曲（HelloWorld 自认沿用 LingBot-World-Infinity 的高层序列：因果教师→一致性蒸馏→自 rollout DMD）
 - ↔蒸馏工具箱 [[Consistency Models（一致性模型）]]、[[One-step Diffusion with Distribution Matching Distillation（DMD）]]/[[Improved Distribution Matching Distillation for Fast Image Synthesis（DMD2）]]；步数概念见 [[40-Concepts/NFE（函数求值次数）]]
 - ≡同域对照 [[ZYT-World A Real-Time Controllable World Model for Closed-Loop Autonomous-Driving Simulation]]：ZYT-World 主打闭环驾驶仿真（policy-in-the-loop），HelloWorld 明确停在"交互观察生成"不进闭环——两卡合看正好标出驾驶 WM 的开环/闭环分界线
+- ≡表征侧近邻（261027）：[[10-Papers/09-世界模型与JEPA/DriveUniTok A Unified Multimodal Tokenizer for Driving World-Action Models|DriveUniTok]]（驾驶 WAM 统一 tokenizer：外观+LiDAR 深度+自车轨迹压进单一可解码连续 latent，扩散预测未来 latent，RL 后训练 PDMS 91.54——「统一表征服务下游规划」路线，同样不做少步蒸馏/决策保真命题）
 - 谱系锚 [[20-Algorithms/扩散模型]]
 
 ## 6. 影响后续

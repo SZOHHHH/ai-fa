@@ -35,6 +35,7 @@ layer: 占位
 - 同日同题：[[KDFP A first-principles approach to knowledge distillation in large language models]]（蒸馏方法论泛论）
 
 ## 6. 影响后续
+- [[10-Papers/07-推理模型/SelfThinker Self-Evolving Reasoning via Reliability-Verified Intrinsic Visual Thoughts|SelfThinker]]（2026）：「自产训练信号＋可靠度验证」范式延伸到自进化视觉思维（条件逐点互信息筛自生成辅助图）
 （待精读）
 
 ## 7. 读前须知

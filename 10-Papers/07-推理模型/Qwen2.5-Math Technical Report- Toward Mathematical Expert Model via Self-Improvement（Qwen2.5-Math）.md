@@ -40,6 +40,7 @@ $$
 数学推理数据管线的标准参考；OPD/蒸馏实验的常用基座
 
 ## 6. 影响后续
+- [[10-Papers/07-推理模型/H$^2$R Hierarchical Hint-Based Reward for Mathematical Reasoning via Reinforcement Learning|H²R]]（2026）：分层提示奖励把 Qwen2.5-Math-7B 在 HiMath 从 30.4% 提到 39.1%（Oracle 提示下 45.6%）
 
 需要：maj@k 投票；自我改进=Self-Rewarding 的 SFT 版前身
 

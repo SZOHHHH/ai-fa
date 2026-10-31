@@ -46,6 +46,8 @@ Context Forcing 的对齐目标（示意）：
 - → 后继：[[10-Papers/09-世界模型与JEPA/WorldCompass- 强化学习训练长视野世界模型（WorldCompass）|WorldCompass]]（RL 后训练宿主）、minWM（框架化适配）。
 - ≡ 驾驶域对应物（260925）：[[HelloWorld Towards Practical Applications of Generative Driving World Models|HelloWorld]]（2B 驾驶生成 WM 系统：块因果+自 rollout 对齐+20→4 步蒸馏——同款「因果教师→部署态对齐→少步蒸馏」配方在车队 rigs 约束下的实例）；
 - ≡ 蒸馏失配第三家处方（260928）：[[DyMD Preserving Interaction Dynamics through Distribution Matching Distillation in Few-Step Video Wo|DyMD]]（DMD 蒸馏压交互动态的机制诊断：教师模式锁死+批评家拟合滞后→自适应重加噪+难度加权追踪——与 Context Forcing 同治「开环蒸馏失配」病根）。
+- ≡ 蒸馏失配第四家处方·**表征侧**（261027）：[[10-Papers/02-生成建模与扩散/Beyond Distribution Matching Self-Supervised Representation Forcing for Few-Step Video Generation|SF²]]（输出监督不足→EMA 教师表征强制；把本文输出空间蒸馏管线升级后，相机/动作条件 adherence 显著提升——同治「蒸馏失配」病根的表征层处方）。
+- → 同门后继（261028）：[[10-Papers/09-世界模型与JEPA/Hy-Nomas Towards Free-form Interactive World Generation|Hy-Nomas]]（混元系续作：8B 扩散骨干+自由格式文本指令+连续相机控制——结构化字幕×动作感知因果注意力（描述跨段可访问、动作限定时间窗）+多阶段课程后接扩散蒸馏；评测=人工评估，交互生成侧不涉决策训练）。
 
 ## 6. 影响后续
 

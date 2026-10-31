@@ -38,6 +38,7 @@ $$
 ## 5. 与前作/矩阵关系
 
 🚩 FM×数据集蒸馏格（蒸馏概念的另一种含义——数据而非模型）
+- ≡ 同族（261027）：[[S$^2$-RL Sample-Set Dual Reinforcement Learning for Generative Semantic Segmentation Dataset Distill|S²-RL]]（数据集蒸馏的 RL 化：扩散文生图+GRPO 双重奖励，分割域——「蒸馏数据」家族扩张）
 
 
 ## 6. 影响与占位意义

@@ -47,6 +47,7 @@ pdf: https://arxiv.org/pdf/1910.01108
 
 - → 后继补记（260914）：[[10-Papers/03-后处理/Breaking the Token Ceiling - Distilling Smaller Stronger Byte Models（字节蒸馏scaling）|Token Ceiling（字节蒸馏scaling）]]（固定 tokenization 蒸馏（本卡路线） vs 学生表征可选择的蒸馏 scaling）
 - → 后继补记（260924）：两条下游应用入网——[[10-Papers/03-后处理/Reliable Federated TinyML Deployment for IoT Security|FedTinyML-IoT]]（联邦+微控制器级部署，压缩产物直接消费方）、[[10-Papers/03-后处理/Distilling Lexical Product Associations into Deep Transformers An Extreme Multi-Label Approach for N|电商 XMLC 蒸馏]]（直接以本卡为编码器的 54k 标签搜索方案）
+- → 后继补记（261029）：[[10-Papers/03-后处理/What Survives Distillation A Mechanistic Interpretability Study of GPT-2 and DistilGPT-2|What Survives Distillation]]（同家族 GPT-2 版学生 DistilGPT-2 的机制解剖：IOI 电路全塌（35.2% vs 94.8%）而 GT 电路主动重映射存活（87.7%，r=0.945）——"电路可压缩性决定机制存活"，聚合指标测不出的深度裁剪代价首次量化）
 
 ## 7. 读前须知
 

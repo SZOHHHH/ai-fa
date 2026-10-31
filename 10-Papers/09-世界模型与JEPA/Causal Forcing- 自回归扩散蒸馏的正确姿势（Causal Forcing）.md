@@ -45,6 +45,7 @@ tags: [paper]
 - → 后继：Causal Forcing++（2605.15141，规模化）、[[10-Papers/09-世界模型与JEPA/minWM- 全栈实时交互世界模型框架（minWM）|minWM]]（框架化）。
 - → 后继补记（261024）：[[10-Papers/09-世界模型与JEPA/Rethinking Video Autoencoders for Interactive World Models|CADRE]]（蒸馏对象从 WM 挪到解码器：一阶段渐进自蒸馏流图做单/少步解码、WM 本体仍走 DF——与本文"AR 蒸馏踩单射性坑"互补：解码器蒸馏无 teacher-student 架构 gap，故无此坑）。
 - ≡ 驾驶域同配方（260925）：[[HelloWorld Towards Practical Applications of Generative Driving World Models|HelloWorld]]——块因果生成+打包一致性训练+自强制 DMD 的 20→4 步蒸馏，自认沿用 LingBot-World-Infinity 的「因果教师→一致性蒸馏→自 rollout DMD」高层序列。
+- → 后继补记（261027）：[[10-Papers/02-生成建模与扩散/Mix Forcing Causal Pre-Training via Mixture Attention for Interactive World Models|Mix Forcing]]（同一问题「双向→AR 不毁先验」的**预训练期**路线：双向+自回归混合注意力联合训练，14B→4 步、1 小时 rollout 无衰减）与 [[10-Papers/02-生成建模与扩散/Beyond Distribution Matching Self-Supervised Representation Forcing for Few-Step Video Generation|SF²]]（**表征侧**补丁：因果学生从本文 ODE 回归 ckpt 初始化，DMD 之上加 EMA 教师表征强制）
 
 ## 6. 影响后续
 

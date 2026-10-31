@@ -60,6 +60,7 @@ tags: [algo]
 | 骨干替换 | 注意力→SSM | [[10-Papers/01-架构演进/Mamba- Linear-Time Sequence Modeling with Selective State Spaces（Mamba）]] |
 | 稀疏化 | FFN→MoE | [[20-Algorithms/混合专家（MoE）]] |
 | 视觉化 | patch 化进 Transformer | [[10-Papers/01-架构演进/An Image is Worth 16x16 Words- Transformers for Image Recognition at Scale（ViT）]] |
+| 循环层（2610） | 去噪步内递归复用早期层，省训练/推理 FLOP | [[10-Papers/01-架构演进/Looped Uniform Diffusion Language Models\|Looped UDLM]] |
 
 ## 6. 对比表
 

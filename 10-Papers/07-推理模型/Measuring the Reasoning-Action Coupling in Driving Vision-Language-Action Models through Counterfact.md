@@ -37,6 +37,7 @@ layer: 占位
 - ≡ 同族（解释忠实性/证据接地家族）：[[10-Papers/07-推理模型/Causal Chain of Thought Mitigating Attention Leakage via Context Isolation|CausalCoT]]（泄漏的架构修复）· [[10-Papers/07-推理模型/RECAP Looking Once Is Not Enough for Vision-Language Reasoning|RECAP]]（接地失败的训练修复）——本卡=家族的测量/诊断位
 
 ## 6. 影响后续
+- [[10-Papers/07-推理模型/From Reasoning to Action Consequence-Grounded Alignment for Vision-Language-Action Models|CoRAct]]（2026）：从测量推理-动作耦合走向显式优化对齐（后果接地奖励＋组相对优化引导初始噪声）
 （待精读）
 
 ## 7. 读前须知

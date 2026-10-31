@@ -39,6 +39,7 @@ $$
 ## 5. 与前作/矩阵关系
 
 🚩 占 FM×蒸馏×超分格；[[Mean Flow Distillation - Robust and Stable Distillation for Flow Matching Models（MFD）|MFD]] 管线的任务面证据
+- ≡ 像素空间对照（261027）：[[HiFiPix Bringing High-Fidelity Real-World Super-Resolution Back to Pixel Space|HiFiPix]]（把 Real-ISR 拉回像素空间：论 VAE 压缩是保真瓶颈——本卡 latent 一步路线的对立面）
 
 
 ## 6. 影响与占位意义

@@ -77,6 +77,7 @@ tags: [algo]
 
 - → 后继补记（260923）：[[10-Papers/04-强化学习与对齐/Video-HopChain Multi-Hop Questions and Confidence-Gated Exploration for Video Reasoning Models|Video-HopChain]]（RLVR 数据合成+零方差组第三条修法：CGE 屏蔽最自信 token 重采制造组内对照，与 ThinkPrior 的冷启动挑题互补）
 - → 后继补记（261025）：[[10-Papers/07-推理模型/MOER Mix-Policy Optimization under Expert Prefix Guidance with Selective Rollback|MOER]]（mix-policy RL 的调和设计：衰减专家 CoT 前缀+选择性回滚保 off-policy 轨迹正确性——on-policy 段 GRPO、专家段信赖域 SFT 双损失稳训练）
+- → 后继补记（261028）：GRPO 鲁棒性/预算侧五连——[[10-Papers/04-强化学习与对齐/SetGRPO Calibrating Grader-Induced Policy Optimization|SetGRPO]]（评分器随机性→系数集合校准+风险门控选择性执行）、[[10-Papers/04-强化学习与对齐/Audit Where Hacks Pay Budgeted Strong-Verifier Audits Against Reward Hacking in GRPO|Audit]]（强验证器预算最优分配：低通过数组先审+作弊奖励反射清零优势）、[[10-Papers/04-强化学习与对齐/When All Rollouts Fail Policy-Compatible Joint Decoding for Hard-Problem Reasoning|PICO]]（全败组学习悬崖→分布约束联合解码造「可验证且策略兼容」轨迹）、[[10-Papers/04-强化学习与对齐/FOCUS Active Critic Learning for Long-Horizon Language Model Agents|FOCUS]]（长程智能体 critic 主动学习：选择性分支+TD(λ) 段打分）、[[10-Papers/04-强化学习与对齐/RPSD Retrieval-Privileged On-Policy Self-Distillation with Optimal Transport|RPSD]]（序列推荐域 GRPO 的 token 级信用+OT 跨用户证据自蒸馏）
 
 ## 自测
 

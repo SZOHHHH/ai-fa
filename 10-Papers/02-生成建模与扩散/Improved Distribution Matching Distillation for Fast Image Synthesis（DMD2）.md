@@ -42,9 +42,11 @@ pdf: https://arxiv.org/pdf/2405.14867
 - 对照 [[10-Papers/02-生成建模与扩散/Consistency Models（一致性模型）]]：分布级 vs 轨迹自洽的两条一步生成路线齐头并进
 
 ## 6. 影响与后续
+- [[10-Papers/02-生成建模与扩散/sDMD Sinkhorn Distribution Matching Distillation|sDMD]]（2026）：复用 DMD2 判别器做门控、Sinkhorn 传输修 mode 塌缩——多样性全面收复而开销仅 +3.5%（118 vs 114 GPU 时）
 
 - 一步生成的开源主流方案之一（SDXL-Lightning/Turbo 系）
 - "蒸馏 + 对抗"混合配方成为少步扩散标配
+- → 后继（261027）：[[10-Papers/02-生成建模与扩散/Beyond Distribution Matching Self-Supervised Representation Forcing for Few-Step Video Generation|SF²]]（视频域诊断：输出空间监督在极少步下不足→叠加 EMA 教师表征强制修补——DMD 家族的**表征侧**补丁，与 DyMD 的**力场侧**补丁平行）
 
 ## 7. 读前须知
 

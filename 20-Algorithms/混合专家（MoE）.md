@@ -61,6 +61,7 @@ tags: [algo]
 | 专家选择 | 反向分配 | Expert Choice |
 | 细粒度+共享 | 专家拆小 + 常驻共享 | DeepSeekMoE |
 | 软混合 | 连续化端到端 | Soft MoE |
+| 注意力侧嵌套（2610） | 条件计算推广到注意力算子，与 MoE 稀疏层级复合 | [[10-Papers/01-架构演进/Nested Sparsity for Scalable Pretraining and Continual Learning\|Nestor]] |
 
 ## 6. 对比表
 

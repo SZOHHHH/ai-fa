@@ -39,6 +39,7 @@ JEPA 世界模型解码再好，"到目标的 latent 欧氏距离"也不保证�
 ## 6. 影响后续
 
 - → 后继补记（261009）：[[10-Papers/09-世界模型与JEPA/KineWorld Action-Induced Transport Fields for Embodied World Modeling|KineWorld]]——同「生成目标与决策需求错位」动机的机器人版落地：用动作导出的传输场对生成监督做空间重加权。
+- ≡ 同族补记（261026）：[[10-Papers/09-世界模型与JEPA/Events, Not Pixels Where World Models Get the Return Wrong|Events, Not Pixels]]——同一病理的像素侧穿刺：DMA 诊潜空间 WM（决策-度量错位→动作条件目标修复），Events 诊像素 WM（return 误差事件集中→网络类修复），两卡在"评测错位"母题下成对。
 （待精读）
 
 ## 7. 读前须知

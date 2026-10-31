@@ -55,6 +55,7 @@ tags: [paper]
 - 数学根基：[[20-Algorithms/扩散模型]] · [[20-Algorithms/流匹配]] · [[Scalable Diffusion Models with Transformers（DiT）]]
 
 ## 6. 影响后续
+- [[10-Papers/09-世界模型与JEPA/L3G-World Real-Time Infinite World Generation with Latent 3D Gaussian Memory|L3G-World]]（2026）：显式 3D 高斯记忆＋潜空间直渲染，把 3D 记忆交互 WM 推到 9 FPS 实时（渲染快 359×）
 
 - "固定 token 预算的隐式记忆"为长程 WM 提供了介于全注意力与显式 3D 重建之间的第三条路，对交互式游戏/仿真 WM 的长程一致性直接可用
 - 位姿引导读出的思想（目标条件塑造记忆分配）可迁移到目标条件规划：按目标读出历史经验

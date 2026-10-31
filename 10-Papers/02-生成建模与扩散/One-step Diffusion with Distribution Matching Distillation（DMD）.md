@@ -46,6 +46,7 @@ pdf: https://arxiv.org/pdf/2311.18828
 - 复活了 [[10-Papers/02-生成建模与扩散/Generative Adversarial Networks（GAN）]] 的对抗项作细节增强
 
 ## 6. 影响与后续
+- [[10-Papers/02-生成建模与扩散/sDMD Sinkhorn Distribution Matching Distillation|sDMD]]（2026）：把 DMD 连上 Wasserstein 梯度流（IKL 不动点形式）并加判别器门控的 Sinkhorn 传输修反 KL 塌缩——直系后继
 
 - [[Improved Distribution Matching Distillation for Fast Image Synthesis（DMD2）|DMD2]]（2024）：加教师CFG、少步扩展，效果再上台阶
 - 语言域移植：[[Distilled Continuous Diffusion Language Models Can Write Code in Few Steps---or One|PlaidQ]]（2026）把 DMD+DMD2 配方搬进连续扩散 LM 的 4/8/16 步蒸馏，并发现 K=1 时 DMD 失效需换配对轨迹监督

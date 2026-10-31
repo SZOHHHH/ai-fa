@@ -57,6 +57,7 @@ $$\tilde x_t=\mathrm{noise}\big(x_t,\,\sigma_{k_t}\big),\qquad \mathcal{L}=\math
 - → 后继补记（260924）：[[10-Papers/09-世界模型与JEPA/PointCast One World Model for Rigid, Articulated, and Deformable Object Manipulation|PointCast]]（整窗一次去噪的点集版：全窗无因果 mask+flow matching 单步部署；其消融"逐帧 block-causal token +33%～+248%"为"整窗 vs 逐帧"之争补几何域证据）
 - → 后继补记（260924-2 批）：[[10-Papers/09-世界模型与JEPA/Causal Forcing- 自回归扩散蒸馏的正确姿势（Causal Forcing）|Causal Forcing]]（把本框架蒸馏到实时少步：AR teacher 初始化+非对称 DMD，"蒸馏 done right"的理论版）与 [[10-Papers/09-世界模型与JEPA/AnyFlow- 任意步视频扩散的在线策略流图蒸馏（AnyFlow）|AnyFlow]]（任意区间流图转移替代终点一致，on-policy 蒸馏压曝光偏差）——实时交互 WM 蒸馏家族（另见 WorldPlay/minWM/WorldCompass 三卡）
 - → 后继补记（261025）：[[10-Papers/09-世界模型与JEPA/Looking Ahead Modeling Future Evolution in Autoregressive Video Generation|Looking Ahead/FCP]]（本框架 teacher forcing 的"防捷径"补丁：时间冗余让局部连续性足以支撑当前 chunk 去噪、模型不学演化——FCP 用屏蔽中间上下文的未来 chunk 辅助预测逼 h_k 编码演化；Physics-IQ IQ 27.6→30.9@1.3B，推理零开销）
+- → 后继补记（261029）：[[10-Papers/09-世界模型与JEPA/FlockWorld Toward Population-Scale Multi-Agent Video World Models through Artificial Life Simulation|FlockWorld/FlockDiT]]（种群规模多智能体视频 WM 测试床：七配置机制对比里 DF 是唯一一致改善 rollout 保真与跨视角一致性的干预（贴真值渲染密度+最低位移/运动误差）——DF 有效性在"多视角联合生成"新轴上的外部佐证；另其动作开环重放的局限自认=需要从生成状态重算动作的闭环）
 
 ## 7. 读前须知
 

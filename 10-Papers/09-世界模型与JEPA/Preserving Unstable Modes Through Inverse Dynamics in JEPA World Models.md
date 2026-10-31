@@ -35,6 +35,7 @@ layer: 占位
 
 ## 6. 影响后续
 - → 后继补记（261009）：[[10-Papers/09-世界模型与JEPA/LeWAM A JEPA World Action Model with Diffusion-Steering-Based MPC|LeWAM]]——JEPA+逆动力学的任务侧用法：Inverse 模式=由前后状态反推动作（流匹配头）。
+- → 后继补记（261028）：[[10-Papers/09-世界模型与JEPA/SWIM Learning What Matters from Behaviors for JEPA World Models|SWIM]]——IDM 修「该保什么」的**行为版**：本文保不稳定模态（镇定监督），SWIM 学逐坐标状态权重（行为相关度量，SCALE 宿主、学完即弃）；IDM×JEPA 分岔谱系又一支（详见 [[40-Concepts/逆动力学（IDM）]] §6）。
 （待精读）
 
 ## 7. 读前须知

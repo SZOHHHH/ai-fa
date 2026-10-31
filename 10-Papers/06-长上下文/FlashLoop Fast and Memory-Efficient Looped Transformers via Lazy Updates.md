@@ -35,7 +35,7 @@ layer: 占位
 - 同族补记（261024）：[[10-Papers/06-长上下文/BeNice! Closing Looping's Inference-Memory Gap via KV-Sharing|BeNice!]]（同攻 looped 架构 KV 膨胀，走训练路线而非免训练：预训练随机深度诱导收缩残差+后训练广播末环 KV 进首环——KV-shareability 从运气变设计，命中率+31.4%/p90 TTFT −83.6%）。
 
 ## 6. 影响后续
-（待精读）
+- → 同族补记（261026）：[[10-Papers/01-架构演进/Looped Uniform Diffusion Language Models|Looped UDLM]]（循环层的效率收益从长上下文推理复制到离散扩散 LM 训练：等 NLL 省训练 FLOP、等 NFE 生成更优——两侧互证"循环=免费深度"）
 
 ## 7. 读前须知
 （待精读）自动下载备注：已下载（PDF/）

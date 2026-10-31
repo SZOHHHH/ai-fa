@@ -55,6 +55,7 @@ tags: [algo]
 | LoRA+ | A/B 学习率解耦 | 2024 |
 | rsLoRA | α/r 改 α/√r | 2024 |
 | MoE-LoRA | 多 LoRA 专家混合 | 2024–25 |
+| 部分参数 CPT（2610） | RS-LoRA 全网 + 尾部 block/embedding 解冻的持续预训练中点 | [[10-Papers/01-架构演进/AQL-Lite Enabling Efficient Knowledge Acquisition for Arabic LLMs via Data-Centric Continual Pretrai\|AQL-Lite]] |
 
 ## 6. 对比表
 

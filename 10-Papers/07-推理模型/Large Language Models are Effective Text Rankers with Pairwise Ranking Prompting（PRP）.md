@@ -42,6 +42,7 @@ $$
 
 
 ## 6. 影响与占位意义
+- [[10-Papers/07-推理模型/Prompt Lottery in LLM-as-a-Judge Measuring and Mitigating Sensitivity to Syntactic Rephrasing|Prompt Lottery]]（2026）：保持语义的同义改写即可让 LLMaJ 判决漂移甚至反转排名——评测提示敏感性定量化
 
 LLM-as-ranker 路线起点。
 

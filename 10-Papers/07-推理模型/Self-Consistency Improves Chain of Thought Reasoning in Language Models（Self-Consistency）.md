@@ -44,6 +44,7 @@ pdf: https://arxiv.org/pdf/2203.11171
 
 - 测试时计算范式的先声：算力花在推理时
 - R1 时代 [[GRPO与RLVR|GRPO]] 的组采样（G 条轨迹）与它形式同构——**组基线思想的推理版前身**
+- 步级效率化后作（261108）：[[10-Papers/07-推理模型/StepBack Step-Level Error-Localized Resampling for Efficient Test-Time Reasoning|StepBack]]——不再整条重采，用轻量信号定位首个错误步只重采后缀，token 省 41% 而精度持平 SC
 
 ## 7. 读前须知
 

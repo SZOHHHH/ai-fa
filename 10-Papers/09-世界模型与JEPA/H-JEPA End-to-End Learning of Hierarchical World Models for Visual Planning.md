@@ -49,3 +49,5 @@ layer: 精化层（在线全文精读）
 ## 7. 读前须知
 - 前置：[[40-Concepts/JEPA联合嵌入预测架构]]、[[40-Concepts/逆动力学（IDM）]]、[[30-Formulas/VICReg三正则]]（理解 SIGReg 为何只能管边缘分布）、梯度优化式 MPC（规划=对动作序列做梯度下降）常识；慢特征分析（slow-feature analysis）背景可跳读。
 - 原文：https://arxiv.org/pdf/2610.06805v1 ｜ 在线全文：https://arxiv.org/html/2610.06805v1
+
+> 近邻同族补记（261102）：[[10-Papers/09-世界模型与JEPA/Hierarchical World Models with Implicit Dynamics|ID-WM]]（同为 LeCun 署名分层 WM 的并置路线：本卡走 JEPA 时间尺度自监督端到端，ID-WM 走扩散高层采样+显式双层规划——分层 WM 的两条路，2610 同期）

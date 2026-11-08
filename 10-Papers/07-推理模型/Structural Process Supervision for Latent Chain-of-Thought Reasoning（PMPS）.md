@@ -43,6 +43,7 @@ $\hat{M}_{c2l}^{(j,i)} = M_{c2l}^{(j,i)} - \alpha\cdot\big(\frac{j}{N_c-1} - \fr
 - ← 前身：CODI（答案位置自蒸馏，无过程监督）/ SIM-CoT（辅助解码器一对一硬配）——本文诊断出二者各自的坍缩形态（奇偶 / 尾部）
 - 同族（CoT 长度压缩线）：[[10-Papers/07-推理模型/CoT-Valve- Length-Compressible Chain-of-Thought Tuning（CoT-Valve）]]
 - 同日同题：[[Think Wider - Mitigating Latent Rank Collapse in Implicit Chain-of-Thought Reasoning（WIDER）]]（治几何坍缩，与本文治语义坍缩互补）· [[Astar-Thought-V2 - Efficient Latent Reasoning via Geometric Dynamics of LLM（Astar-Thought-V2）]]（显隐交替压缩）
+- 后续泛化（261108，推荐系统域）：[[10-Papers/07-推理模型/Do Recommenders Need to Think in Words Latent Reasoning for Efficient LLM-Based Recommendation|LatentRec]]——逐步头监督（PRL）搬到推荐 Semantic ID 首 token 上，训练后丢弃推理模块，HR@10 相对 +4-5% 且延迟降 18.3×
 
 ## 6. 影响后续
 过程监督（PRM 线）从离散推理步迁入连续潜空间的第一站；原型/Sinkhorn 工具箱（SwAV 系）被引入推理压缩。坍缩诊断方法（逐对余弦相似度热图）是所有 latent reasoning 工作的通用体检项。

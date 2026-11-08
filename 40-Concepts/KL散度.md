@@ -49,6 +49,7 @@ $$D_{\mathrm{KL}}\big(\mathcal{N}(\mu_1,\sigma_1^2)\,\|\,\mathcal{N}(\mu_2,\sigm
 | [[30-Formulas/DDPM训练目标]] | 变分界 = 逐步 KL 之和，化简后得 MSE |
 | RLHF/PPO | KL 惩罚防止策略偏离参考策略 |
 | 蒸馏（线 3） | 学生模仿教师的软标签 = 最小化 KL |
+| [[10-Papers/04-强化学习与对齐/Where Did the Update Go Certifying Declared Change Envelopes for Model Updates\|模型更新泄漏认证]] | 更新泄漏幅度与域外 KL 高相关（Spearman 0.94）——KL 做「更新走了多远」的示性量 |
 
 ## 4. 常见误区
 

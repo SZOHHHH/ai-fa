@@ -53,3 +53,5 @@ PTQ 从"逐层贪心"进化到"块级全局+在线刷新"的代表作之一；�
 ## 7. 读前须知
 
 [[10-Papers/03-后处理/GPTQ- Accurate Post-Training Quantization for Generative Pre-trained Transformers（GPTQ）|GPTQ]] 的 Hessian 补偿推导；[[30-Formulas/量化误差与异常值]]；信赖域直觉看 [[40-Concepts/信赖域]]（为何限幅：无再训练兜底的不可逆操作）。
+
+> 近邻同族补记（261102）：[[10-Papers/01-架构演进/A Unified Hessian-Guided Framework for Post-Training Quantization|Hessian PTQ]]（Hessian 引导的输出敏感度目标把范围/变换/舍入三组件联合优化——PTQ 联合优化新框架，通道级+块级全面超 SOTA）

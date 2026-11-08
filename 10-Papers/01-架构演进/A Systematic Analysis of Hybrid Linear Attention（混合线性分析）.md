@@ -49,6 +49,7 @@ $$
 
 > 谱系枢纽：[[Attention Is All You Need（Transformer）]]（图谱连通入口）
 > 近邻同族：[[Griffin- Mixing Gated Linear Recurrences with Local Attention for Efficient Language Models（Griffin）]] · [[Jamba- A Hybrid Transformer-Mamba Language Model（Jamba）]]
+> 近邻同族补记（261102）：[[10-Papers/01-架构演进/Attention, Dynamic Wave and Hybrid Sequence Mixers in Language Models|Dynamic Wave 混合器]]（Wave 循环层 vs 注意力的小规模系统对比：质量上混合最优（ppl 5.95）、效率结论须相对指名的注意力后端陈述——对融合核零优势）
 > 相关：[[FlashAttention- Fast and Memory-Efficient Exact Attention with IO-Awareness（FlashAttention）]]
 > 相关：[[Gaussian Error Linear Units（GELU）]]
 > 相关：[[Graph Attention Networks（GAT）]]

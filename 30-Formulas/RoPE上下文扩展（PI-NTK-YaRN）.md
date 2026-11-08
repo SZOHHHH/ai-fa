@@ -79,3 +79,4 @@ $$\theta_i' = \text{base}'^{-2i/d}, \qquad \text{base}' = \text{base} \times s^{
 - → **改造** [[30-Formulas/RoPE旋转位置编码]]（不改架构只改频率/位置）
 - → **作用于** [[30-Formulas/注意力核心公式]] 的打分项
 - 与 [[30-Formulas/注意力计算复杂度]] 的两条战线互补：外推解决"位置编码没见过"，稀疏/线性注意力解决"算不起"——长上下文问题的两个正交维度
+- → 另路对照（261107 补）：[[10-Papers/06-长上下文/ConvPE Convolutional Position Embedding Improves Transformers|ConvPE]]（第三条路：不改 RoPE 频率，对隐状态低维投影做因果卷积生成**窗口化内容相关偏置**直接加进打分——窗口外偏置恒零=不惩罚远距（NoPE 系立场）；与 RoPE 叠加而非取代，插 8K 外推训练后差距拉大）

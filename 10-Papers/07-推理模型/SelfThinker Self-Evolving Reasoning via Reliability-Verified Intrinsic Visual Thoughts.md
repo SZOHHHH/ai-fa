@@ -31,7 +31,7 @@ layer: 占位
 
 ## 5. 与前作/矩阵关系
 - ← 谱系：视觉思维链（[[40-Concepts/思维链（CoT）]] 的图示化）＋特权信息蒸馏（自生成图当教师上下文——[[40-Concepts/知识蒸馏]]）
-- ≡ 同族自蒸馏范式：[[10-Papers/07-推理模型/SpatialOPSD Self-Distilling Spatial Intelligence from Verified Coding Agent Traces|SpatialOPSD]]（验证轨迹自蒸馏空间智能——同为「自产训练信号＋可靠度验证」）、[[10-Papers/07-推理模型/RECAP Looking Once Is Not Enough for Vision-Language Reasoning|RECAP]]（VLM 多次看图推理）
+- ≡ 同族自蒸馏范式：[[10-Papers/07-推理模型/SpatialOPSD Self-Distilling Spatial Intelligence from Verified Coding Agent Traces|SpatialOPSD]]（验证轨迹自蒸馏空间智能——同为「自产训练信号＋可靠度验证」）、[[10-Papers/07-推理模型/RECAP Looking Once Is Not Enough for Vision-Language Reasoning|RECAP]]（VLM 多次看图推理）、[[10-Papers/07-推理模型/Where and Why is Grounded Reasoning Useful|Grounded Reasoning]]（261108——反例路线：CoT 里输出文本坐标，实证增益仅限计数类，锚还是该往内部视觉走）
 - ⊃ 生成器精炼走 [[10-Papers/02-生成建模与扩散/Flow Matching for Generative Modeling（流匹配）|流匹配]]；评分用条件逐点互信息（可靠度验证）
 
 ## 6. 影响后续

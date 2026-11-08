@@ -48,7 +48,7 @@ any-step 三连（DFM/AYF/AnyFlow）把 flexible-NFE 战场封顶的关键一篇
 ---
 
 > 谱系枢纽：[[Denoising Diffusion Probabilistic Models（DDPM）]]（图谱连通入口）
-> 近邻同族：[[DUO-VSR- Dual-Stream Distillation for One-Step Video Super-Resolution（DUO-VSR）]] · [[Align Your Flow- Scaling Continuous-Time Flow Map Distillation（AYF）]]
+> 近邻同族：[[DUO-VSR- Dual-Stream Distillation for One-Step Video Super-Resolution（DUO-VSR）]] · [[Align Your Flow- Scaling Continuous-Time Flow Map Distillation（AYF）]] · [[Training-Free Predictive Spatio-Temporal Token Pruning for Few-Step Autoregressive Video Diffusion|PreSTP]]（261108——training-free token 剪枝，在 AnyFlow 上收益最大 3.20×：全历史 KV 重编码留下的跨帧冗余被剪）
 > 数学根基（占位层）：[[条件流匹配损失]] · [[注意力核心公式]]
 
 ## 7. 读前须知

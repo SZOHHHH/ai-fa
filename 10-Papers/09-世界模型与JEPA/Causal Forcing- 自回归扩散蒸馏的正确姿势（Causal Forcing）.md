@@ -46,6 +46,7 @@ tags: [paper]
 - → 后继补记（261024）：[[10-Papers/09-世界模型与JEPA/Rethinking Video Autoencoders for Interactive World Models|CADRE]]（蒸馏对象从 WM 挪到解码器：一阶段渐进自蒸馏流图做单/少步解码、WM 本体仍走 DF——与本文"AR 蒸馏踩单射性坑"互补：解码器蒸馏无 teacher-student 架构 gap，故无此坑）。
 - ≡ 驾驶域同配方（260925）：[[HelloWorld Towards Practical Applications of Generative Driving World Models|HelloWorld]]——块因果生成+打包一致性训练+自强制 DMD 的 20→4 步蒸馏，自认沿用 LingBot-World-Infinity 的「因果教师→一致性蒸馏→自 rollout DMD」高层序列。
 - → 后继补记（261027）：[[10-Papers/02-生成建模与扩散/Mix Forcing Causal Pre-Training via Mixture Attention for Interactive World Models|Mix Forcing]]（同一问题「双向→AR 不毁先验」的**预训练期**路线：双向+自回归混合注意力联合训练，14B→4 步、1 小时 rollout 无衰减）与 [[10-Papers/02-生成建模与扩散/Beyond Distribution Matching Self-Supervised Representation Forcing for Few-Step Video Generation|SF²]]（**表征侧**补丁：因果学生从本文 ODE 回归 ckpt 初始化，DMD 之上加 EMA 教师表征强制）
+- → 后继补记（261103）：[[10-Papers/09-世界模型与JEPA/History Forcing Distilling History-Dependent Continuations for Long-Horizon Video World Models|History Forcing]]（**目标侧**新轴：直接用本文 ckpt 当学生/AR teacher，对同一噪声块「带史/无史」两次预测的 score 差按 CFG 式修正 DMD 参考目标——历史监督与画质监督解耦，1.3B 学生 60s 外推 VBench-Long 79.82）与 [[10-Papers/02-生成建模与扩散/Disen-Forcing Disentangling Semantic Anchoring from Motion for Autoregressive Video Diffusion|Disen-Forcing]]（**注意力结构侧**发现：frame sink 稳长 rollout 的真实机制=稀疏头锚定语义而非 LLM 式 sink，蒸馏期解耦上下文路由防运动塌向低动态模式）
 
 ## 6. 影响后续
 

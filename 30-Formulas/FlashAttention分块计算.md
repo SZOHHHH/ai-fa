@@ -72,3 +72,4 @@ $$O_{\text{new}} = \frac{e^{m_{\text{old}} - m_{\text{new}}} l_{\text{old}}\, O_
 - ≡ **等价变形**（数学不变）：[[30-Formulas/注意力核心公式]]
 - → 被所有训练/推理框架默认采用；长上下文可行性的工程基石
 - 对比线性注意力（Performer 等）：它们改**数学**（近似），Flash 不改数学只改**计算图**——两条路线正交可叠加
+- → 家族新成员（261107 补）：[[10-Papers/06-长上下文/ZYFA Speed and Accuracy of FP8 FlashAttention on AMD CDNA4|ZYFA]]（AMD MI355X 上的 FP8 版：在线账本里的指数用"FP8 位型≈缩放底 2 对数"的位技巧替代（一次乘加+整型转换），乒乓调度让一组线程的 softmax 与另一组的矩阵乘重叠；实测真模型激活上 1.16–1.76× 于 AMD 官方 AITER，误差反而低 62–78%）

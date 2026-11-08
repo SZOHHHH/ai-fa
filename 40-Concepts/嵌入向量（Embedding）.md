@@ -64,3 +64,4 @@ $$E = \begin{bmatrix} 0.9 & 0.8 & 0.1 & -0.9 \\ 0.1 & 0.2 & -0.8 & -0.1 \end{bma
 - [[40-Concepts/内积]]：嵌入空间一切相似度运算的原语
 - [[30-Formulas/CLIP对比损失]]：跨模态对齐到同一嵌入空间
 - [[30-Formulas/VQ-VAE目标]]：嵌入的离散化反向操作（向量→码本）
+- [[10-Papers/06-长上下文/Reducing Representational Interference in Retrieval Embeddings with Trainable Prefix Tokens|[DUMP] 前缀]]（261107 补）：压缩瓶颈的解法之一——可训练前缀位当"语义垃圾桶"吸收 attention sink 类非语义残信号，目标/池化/架构全不动，六模型平均 +2.46%

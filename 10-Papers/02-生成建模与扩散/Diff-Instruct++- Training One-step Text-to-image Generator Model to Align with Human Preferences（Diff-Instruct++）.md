@@ -57,3 +57,5 @@ undefined
 > → 后继补记（261011）：[[Enabling Preference-driven Unlearning in Few-step Distilled Text-to-Image Diffusion Models]]——偏好优化×少步蒸馏合流的延伸：DPO 式遗忘目标在少步模型上失效后的重对齐（一步生成器偏好训练的谱系后裔）。
 
 > → 后继补记（261024）：[[DualHeads Reward-tilted few-step diffusion made simple|DualHeads]]——少步生成器奖励对齐的"零依赖"极简路线：冻结骨干+双二分类头（reward/reference），head 最优时目标=KL 正则化奖励最大化，免 score field/可微奖励/teacher，任务奖励接近 40 步 RL 水平。
+
+> → 后继补记（261104）：[[10-Papers/02-生成建模与扩散/StepX-OPD Rethinking Multi-Teacher On-Policy Distillation in Diffusion Models|StepX-OPD]]——OPD 谱系对"两阶段"的再思考：多教师能力整合与步蒸馏合并为单阶段（冻结专家在学生少步 rollout 状态上直接监督+源路由+低噪速度回归），4 步 0.8901/0.8902 超 40 步 Flow-OPD 且省 37% GPU 时——「能力必须在学生自己的少步状态上教」的定调之作。

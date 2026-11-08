@@ -52,5 +52,6 @@ undefined
 > 谱系枢纽：[[Dream to Control- Learning Behaviors by Latent Imagination（Dreamer）]]（图谱连通入口）
 
 > 近邻同族：[[Co-Evolving Latent Action World Models（CoLA）]] · [[Factored Latent Action World Models（FLAM）]]
+> 近邻同族补记（261102）：[[10-Papers/09-世界模型与JEPA/Hierarchical World Models with Implicit Dynamics|ID-WM]]（NYU+FAIR 分层规划新作：高层扩散采样 Δ 步内可达子目标（高斯噪声=隐式高层动作）+低层 WM 当逆动力学求解器——潜动作族的"免学潜动作"路线，PushT 随机目标 0.77 vs HWM 0.20）
 
 > 数学根基：[[扩散条件去噪]] · [[贝尔曼方程]]

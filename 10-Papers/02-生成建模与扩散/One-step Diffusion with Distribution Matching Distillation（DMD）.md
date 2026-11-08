@@ -53,6 +53,7 @@ pdf: https://arxiv.org/pdf/2311.18828
 - SDXL-Turbo / SD-Turbo 商用一步生成的主要技术来源
 - 噪声段调度（260916）：[[CrossDistill Balancing Quality and Diversity via Trajectory-Level Hybrid Few-Step Distillation|CrossDistill]]（2026）把 DMD 装进低噪段 $[0,\tau^\star]$、高噪段留给轨迹保持目标——"DM 只管细节锐化、不管全局模式"的区间化用法（其反向调度对照证明 DM 放高噪段会压掉种子级分支）
 - 蒸馏边界最小化（260922）：[[GestureFAR Streaming Co-Speech Gesture Generation with Flow Autoregression]]（2026）把 DMD 系分布匹配+一致性用于"仅流头"单步蒸馏——冻结 AR 骨干与分词器、只蒸逐 token 流匹配头，流式手势实时生成；蒸馏粒度从整网缩到一个头
+- 区间理论化（261103）：[[10-Papers/02-生成建模与扩散/Efficient Hybrid Distillation Synergizing Score and Adversarial Objectives for One-Step Diffusion|EASD]]（2026）证明 score 蒸馏与对抗蒸馏同源（GAN 非饱和损失的生成器梯度≈Reverse KL 梯度=score 差）且生效噪声段互补（SD 高噪/AD 低噪），用 logit-normal 区间自适应采样各归其位——「DMD 系该在哪段噪声上发力」的首个系统化答案（与 CrossDistill 的调度实践互证；SiT-XL/2+REPA 一步 FID 1.39）
 - "分布级蒸馏 + 对抗补细节"配方被广泛复制
 
 ## 7. 读前须知

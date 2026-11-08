@@ -45,6 +45,7 @@ pdf: https://arxiv.org/pdf/2202.00512
 
 - v-预测因此扩散开（视频扩散/Sora 主用）
 - 蒸馏加速范式：CM → [[Latent Consistency Models- Synthesizing High-Resolution Images with Few-Step Inference（LCM）]]
+- 特化变体（261103）：[[10-Papers/02-生成建模与扩散/Efficient Covariance-Aware Vicinal Latent Diffusion for Continuous Conditional Image Generation|CAViLD]]（2026）把渐进蒸馏做成「协方差感知+标签依赖 PF-ODE」版，配合 CFG 内化（EMA 教师）把连续条件生成压到 4 NFE——本范式在 CCGM 域的最新后继
 - 少步生成的商业价值（实时生成）自此路线展开
 
 ## 7. 读前须知

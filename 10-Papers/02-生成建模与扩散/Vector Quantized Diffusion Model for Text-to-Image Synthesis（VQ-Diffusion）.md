@@ -52,7 +52,7 @@ undefined
 
 > 谱系枢纽：[[Denoising Diffusion Probabilistic Models（DDPM）]]（图谱连通入口）
 
-> 近邻同族：[[Auto-Encoding Variational Bayes（VAE）]] · [[MaskGIT- A Masked Generative Image Transformer（MaskGIT）]]
+> 近邻同族：[[Auto-Encoding Variational Bayes（VAE）]] · [[MaskGIT- A Masked Generative Image Transformer（MaskGIT）]] · [[An ODE-based Sampler for Discrete Diffusion Models|ERF 离散 ODE 采样器]]
 
 > 数学根基：[[概率分布]]
 

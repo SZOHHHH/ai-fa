@@ -43,6 +43,7 @@ tags: [paper]
 ## 6. 影响后续
 - 预注册规则（召回 <0.4 ⇒ 扩散修复有效）是"可预测修复"方法论范本，可迁移到蒸馏修复链的先验登记。
 - 倡议：WM 评测应加"return 误差在哪里发生"，不止"帧画得多好"——评测规范级影响。
+- 同族补记（261107）：[[10-Papers/02-生成建模与扩散/Seeing Beyond the Next Step World-Model-Guided Human-Like Navigation in Multi-Agent Scenes|Seeing Beyond the Next Step]]（"像素接口错位"的**部署级**版本：本文证像素目标错位于 return（目标级），它直接拒绝预测 RGB、只训"决策要读的量"预测器（状态+语义分割，接口级）——同一句"纹理是策略永远不读的容量浪费"的两种证据形态）。
 - References 里近邻待跟踪：Not all errors matter（2609.32322，决策相关误差预测规划质量）、Cloning Deterministic Worlds、kinematic null 诊断（2607.05966）、event-aware WM（2601.19336）。
 
 ## 7. 读前须知

@@ -73,3 +73,4 @@ $$2 \times 32 \times 4096 \times 32 \times 128 \times 2\ \text{B} = 2\times32\ti
 - [[30-Formulas/注意力计算复杂度]]：性能模型
 - [[20-Algorithms/混合专家（MoE）]]：参数显存优化的另一极（权重稀疏 vs 缓存压缩）
 - [[40-Concepts/Tokenization（分词）]]：缓存与计价以 token 为单位
+- [[10-Papers/06-长上下文/HyFlash A Prefix-Memory Prior for On-Device Speculative Decoding|HyFlash]]（261107 补）：draft 侧的第三条路——局部注意力+循环前缀记忆（已提交目标特征压成定长状态、只读共享）替代增长 KV，端侧接受率反超全上下文注意力

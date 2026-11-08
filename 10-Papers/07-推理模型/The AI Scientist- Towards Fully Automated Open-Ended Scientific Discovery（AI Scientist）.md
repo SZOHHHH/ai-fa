@@ -44,6 +44,8 @@ $$
 
 需要：无；读作系统能力探针而非方法论
 
+→ 后续谱系（261108）：[[10-Papers/07-推理模型/SwarmEvolve Latent Agent Swarms for Evolutionary Discovery and Optimization|SwarmEvolve]]——LLM 程序搜索从"单 LLM 长文本链"进化到"数百低耗 agent 潜空间群体+KV 互传"，3-8 分钟达 SOTA 框架 60 分钟水平（Qwen3-8B 群在若干题上改进 AlphaEvolve 前沿 LLM 的解）
+
 ## 7. 读前须知
 
 undefined

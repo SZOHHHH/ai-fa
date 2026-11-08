@@ -23,6 +23,10 @@ tags: [algo]
 | [[10-Papers/04-强化学习与对齐/ThinkPrior Zero-Rollout Difficulty Priors for Cold-Start Prompt Selection in RLVR]] | 零 rollout 难度先验：冷启动挑 prompt，避开零优势静默组（省 39% rollout 浪费） | 2026 |
 | [[10-Papers/04-强化学习与对齐/Eliciting Self-Verification in Multimodal Reasoning Agents with Reinforcement Learning]] | GRPO 训多模态智能体自发自我验证（SVRL） | 2026 |
 | [[10-Papers/04-强化学习与对齐/Salesforce Koa An Enterprise Language Model for Agentic Tool Use]] | GRPO 工业化：Agent Script 规格展开成仿真任务+接地任务解决奖励（企业智能体工具使用） | 2026 |
+| [[10-Papers/04-强化学习与对齐/Density-Aware Reward Scaling A Reinforcement Learning Framework for Reward-Proportional Sampling|DARS]] | 组内密度反比奖励缩放：保多样性的奖励整形（无密度模型/critic） | 2026 |
+| [[10-Papers/04-强化学习与对齐/What Drives the Zero-to-One Jump Diagnosing and Steering Hard-Prompt Learning in RLVR|NAPO]] | 未解决组负样本分级优势：零到一跳变的诊断（TTFP）与导航 | 2026 |
+| [[10-Papers/04-强化学习与对齐/BrainwashedLLM Jailbreaking via Automated Adversarial Chain of Thoughts Discovery|BrainwashedLLM]] | GRPO 反用：规则奖励微调白盒源模型自动产对抗 CoT（弱到强零样本迁移） | 2026 |
+| [[10-Papers/04-强化学习与对齐/Axion 1.0 Open Agent Foundation Models, Simplified|Axion 1.0]] | agent 基座三阶段配方的 RL 段：可验证奖励长程推理与工具/环境交互 | 2026 |
 | （概念源）Karpathy 2025 趋势论：RLVR = LLM 训练新阶段 | — |
 
 ## 3. 核心公式

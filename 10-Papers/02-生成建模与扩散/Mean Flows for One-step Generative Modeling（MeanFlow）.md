@@ -50,3 +50,5 @@ pdf: https://arxiv.org/pdf/2505.13447
 ## 7. 读前须知
 
 [[30-Formulas/条件流匹配损失]]、[[10-Papers/02-生成建模与扩散/Flow Matching for Generative Modeling（流匹配）]]、[[10-Papers/02-生成建模与扩散/Mean Flow Distillation - Robust and Stable Distillation for Flow Matching Models（MFD）]]
+
+> 近邻补记（261102）：[[10-Papers/02-生成建模与扩散/Asynchronous Flow Map Language Models|aFMLM]]（语言域把流图一步跳做成"异步"：tokenwise 时间调度定义预测顺序，顺序效应内化进单次前向——一步流图族的顺序轴扩展）
